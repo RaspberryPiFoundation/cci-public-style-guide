@@ -2,8 +2,9 @@ ruby '2.2.2'
 
 source 'https://rubygems.org'
 
-gem 'puma',  '~> 2.14.0'
-gem 'rails', '4.2.4'
+gem 'jquery-rails', '~> 4.0.5'
+gem 'puma',         '~> 2.14.0'
+gem 'rails',        '4.2.4'
 
 group :development, :test do
   gem 'byebug'
