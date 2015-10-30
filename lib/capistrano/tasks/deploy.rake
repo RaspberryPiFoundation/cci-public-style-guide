@@ -7,10 +7,6 @@ namespace :deploy do
     end
   end
 
-  desc "Skip ActiveRecord Migration"
-  task :migrate do
-  end
-
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
@@ -18,7 +14,6 @@ namespace :deploy do
     end
   end
 
-  after :finishing, :compile_assets
   after :finishing, :cleanup
   after :finishing, :restart
 end
