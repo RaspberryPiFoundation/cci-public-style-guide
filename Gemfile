@@ -15,6 +15,7 @@ end
 
 group :development do
   gem 'foreman',     '~> 0.78.0'
+  gem 'sqlite3',     '~> 1.3.11'
   gem 'web-console', '~> 2.0'
 
   gem 'capistrano',       require: false
