@@ -2,8 +2,9 @@ ruby '2.2.2'
 
 source 'https://rubygems.org'
 
-gem 'puma',  '~> 2.14.0'
-gem 'rails', '4.2.4'
+gem 'puma',    '~> 2.14.0'
+gem 'rails',   '4.2.4'
+gem 'sqlite3', '~> 1.3.11'
 
 group :development, :test do
   gem 'byebug'
@@ -15,7 +16,6 @@ end
 
 group :development do
   gem 'foreman',     '~> 0.78.0'
-  gem 'sqlite3',     '~> 1.3.11'
   gem 'web-console', '~> 2.0'
 
   gem 'capistrano',       require: false
