@@ -30,7 +30,8 @@ set :puma_workers,        2
 
 # Linked Files & Directories (Default None):
 #set :linked_files, fetch(:linked_files, []).push('public/robots.txt')
-set :linked_dirs,  fetch(:linked_dirs,  []).push('log', 'tmp/pids', 'tmp/sockets', 'public/assets', 'public/system')
+set :linked_files,  fetch(:linked_files, []).push('config/database.yml')
+set :linked_dirs,   fetch(:linked_dirs,  []).push('log', 'tmp/pids', 'tmp/sockets', 'public/assets', 'public/system')
 
 # Notifications
 #set :slack_webhook,      'https://hooks.slack.com/services/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'
