@@ -1,0 +1,44 @@
+<div class="nav_left">
+
+  <h1 class="brand">
+    <a href="/">
+      <span>Code Club</span>
+      <small>Style guide</small>
+    </a>
+  </h1>
+
+  <a class="toggle_drawer">tog</a>
+
+  <ul>
+      <li <%= current_page_class('home') %>><a href="/">How to use</a></li>
+      <li <%= current_page_class('brand') %>><a href="/brand">Brand & logo guidelines</a></li>
+  </ul>
+
+  <h5>Style</h5>
+
+  <ul>
+      <li <%= current_page_class('typography') %>><a href="/typography">Typography</a></li>
+      <li <%= current_page_class('colour') %>><a href="/colour">Colour</a></li>
+      <li <%= current_page_class('icons') %>><a href="/icons">Icons</a></li>
+  </ul>
+
+  <h5>Structure</h5>
+
+  <ul>
+      <li <%= current_page_class('grid') %>><a href="/grid">Layout grid</a></li>
+      <li <%= current_page_class('blocks') %>><a href="/blocks">Page layout</a></li>
+      <li <%= current_page_class('hero') %>><a href="/hero">Hero blocks</a></li>
+      <li <%= current_page_class('nav') %>><a href="/nav">Navigation</a></li>
+  </ul>
+
+  <h5>Modules</h5>
+
+  <ul>
+      <li <%= current_page_class('forms') %>><a href="/forms">Forms</a></li>
+      <li <%= current_page_class('cards') %>><a href="/cards">Cards</a></li>
+      <li <%= current_page_class('listings') %>><a href="/listings">Listings & tables</a></li>
+      <li <%= current_page_class('alerts') %>><a href="/alerts">Alerts</a></li>
+      <li <%= current_page_class('buttons') %>><a href="/buttons">Buttons</a></li>
+  </ul>
+
+</div>
