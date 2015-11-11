@@ -1,0 +1,68 @@
+<?php
+    $page = 'cards';
+    include('_start.php');
+?>
+
+    <div class="content_wrap">
+
+        <h1>Cards</h1>
+
+        <p>Cards are devices that link to a piece content or an action. Housed in a neat box-out is a combination of titles, imagery, summary and a direct action links.</p>
+
+        <p>Cards come in a number of variations: (need to agnostify these names)</p>
+        <p>(in order of simplicity)</p>
+        <ul>
+            <li>Info cards</li>
+            <li>Contact cards</li>
+            <li>Course cards (plus Subtle version)</li>
+            <li>Project cards</li>
+        </ul>
+
+        <p>The are aligned to the grid in 3 columns (web,tablet) or 1 (mobile)</p>
+
+        <hr>
+
+        <h3>Info cards</h3>
+
+        <p>Include a title and some short copy that can be displayed in a list with bullet points and a link CTA. (Need to figure out layout of these guys)</p>
+
+        <div class="card">
+            <h4>Beware of</h4>
+            <div class="content">
+                <ul class="alt">
+                    <li>The dog</li>
+                    <li>The lion</li>
+                    <li>The hulk</li>
+                </ul>
+            </div>
+            <div class="action">
+                <a href="">Find out more</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>[Contact] cards</h3>
+
+        <p>These come in two variations, 1) the simple card that has a title, some short copy and a link CTA and 2) the detailed card that has a title, more copy, a button CTA and secondary link CTA.</p> 
+
+        <div class="card">
+            <h4>London Fields Primary School</h4>
+            <p class="meta">0.8 miles away</p>
+            <a href="" class="button">Contact venue</a>
+        </div>
+
+        <div class="card">
+            <h4>London Fields Primary School</h4>
+            <p class="meta">0.8 miles away</p>
+            <a href="" class="button">Contact venue</a>
+            <div class="sub_action">
+                <a href="">Add to club</a>
+            </div>
+        </div>
+
+    </div>
+
+<?php
+    include('_end.php');
+?>

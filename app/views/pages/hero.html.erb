@@ -1,0 +1,89 @@
+<?php
+    $page = 'hero';
+    include('_start.php');
+?>
+
+	<div class="content_wrap">
+
+		<h2>Hero blocks</h2>
+
+		<p>Hero blocks sit at the top of each page across our websites. They act as a way to introduce the content below. Hero blocks can vary from a simple block colour to an image background, they can also include buttons and download resources (for pages that contain projects). These blocks are full width.</p>
+
+		<p>A hero block can be made up from the following elements:</p>
+
+		<ul>
+			<li>A background block. Default is Codeclub green, can be an image or a different colour as long as white text is readable</li>
+			<li>A background image. An illustrative image that is placed either/both side of the text. Cannot overlap the text. Not rendered on mobile.</li>
+			<li>Title. A short h1 page heading</li>
+			<li>An introductory sentence. Describing briefly the content of the page</li>
+			<li>A useful list of button links. For linking to key downloads/resources. Not section navigation (see <a href="navigation.html")>Navigation</a>)</li>
+		</ul>
+
+		<p>Following are example of hero blocks that feature different elements</p>
+
+		<p>Simple hero block:</p>
+
+	</div>
+
+	<div class="hero">
+		<div class="hero_image">
+			<h1>The title of a page</h1>
+		</div>
+	</div>
+
+	<pre>
+		<code>&#60;div class="hero"&#62;
+	&#60;div class="hero_image"&#62;
+		&#60;h1>The title of a page&#60;/h1&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</code>
+	</pre>
+
+	<div class="content_wrap">
+
+		<p>Hero block with an introductory paragraph and a background image:</p>
+
+	</div>
+
+	<div class="hero">
+		<div class="hero_image books">
+			<h1>Hero block!</h1>
+			<p>This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
+		</div>
+	</div>
+
+	<pre>
+		<code>&#60;div class="hero"&#62;
+	&#60;div class="hero_image books"&#62;
+		&#60;h1>Hero block!&#60;/h1&#62;
+		&#60;p>This hero block has a brief sentence which is great for introducing the content that will feature on the below page.&#60;/p&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</code>
+	</pre>
+
+	<div class="content_wrap">
+
+		<p>Hero block with all the elements:</p>
+
+	</div>
+
+	<div class="hero flash">
+		<div class="hero_image dancingrobots">
+			<h1>All the things</h1>
+			<p>Hero blocks sit at the top of each page across our websites. They act as a way to introduce the content below.</p>
+			<ul class="">
+				<li><a href="" class="button invert white">A download</a></li>
+				<li><a href="" class="button invert white ">A link to a PDF</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content_wrap">
+
+		<p></p>
+
+	</div>
+
+<?php
+    include('_end.php');
+?>
