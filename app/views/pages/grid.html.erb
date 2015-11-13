@@ -1,215 +1,116 @@
-<?php
-    $page = 'grid';
-    $body_class = 'grid';
-    include('_start.php');
-?>
+<h2 class="center pad1">Layout grid</h2>
 
-	<h2 class="center pad1">Layout grid</h2>
+<div class="layout">
+	<div class="col col1of1 pad2 bubble">
+  	<h4>Break points:</h4>
 
-	<div class="layout">	
+		<ul>
+			<li>Lower than 768px; mobile layout</li>
+			<li>Betweem 768px and 900px; tablet layout</li>
+			<li>Above 900px; desktop layout</li>
+		</ul>
 
-		<div class="col col1of1 pad2 bubble">
+		<ul>
+			<li>Lay out content to the grids</li>
+			<li>Use combinations of <a href="blocks.php">Layout blocks</a> to arrange & break up content vertically</li>
+		</ul>
 
-			<h4>Break points:</h4>
+		<hr>
 
-			<ul>
-				<li>Lower than 768px; mobile layout</li>
-				<li>Betweem 768px and 900px; tablet layout</li>
-				<li>Above 900px; desktop layout</li>
-			</ul>
+		<p>Horizontally, use any of the following column rules:</p>
 
-			<ul>
-				<li>Lay out content to the grids</li>
-				<li>Use combinations of <a href="blocks.php">Layout blocks</a> to arrange & break up content vertically</li>
-			</ul>
+		<ul>
+			<li>Need to define how system shrinks (or expands)</li>
+		</ul>
+	</div>
+</div>
 
-			<hr>
+<div class="layout">
+  <% 12.times do %>
+	  <div class="col pad1 col1of12"></div>
+  <% end %>
+</div>
 
-			<p>Horizontally, use any of the following column rules:</p>
+<div class="layout">
+  <% 6.times do %>
+  	<div class="col pad1 col1of6">
+  		<code>.col1of6</code>
+  	</div>
+  <% end %>
+</div>
 
-			<ul>
-				<li>Need to define how system shrinks (or expands)</li>
-			</ul>
+<div class="layout">
+  <% 4.times do %>
+  	<div class="col pad1 col1of4">
+  		<code>.col1of4</code>
+  	</div>
+  <% end %>
+</div>
 
-		</div>
+<div class="layout">
+  <% 3.times do %>
+  	<div class="col pad1 col1of3">
+  		<code>.col1of3</code>
+  		<code>.pad1</code>
+  	</div>
+  <% end %>
+</div>
 
+<div class="layout">
+  <% 2.times do %>
+  	<div class="col pad2 col1of2">
+  		<code>.col1of2</code>
+  		<code>.pad2</code>
+  	</div>
+  <% end %>
+</div>
+
+<div class="layout">
+	<div class="col pad3 col1of1">
+		<code>.col1of1</code>
+		<code>.pad3</code>
+	</div>
+</div>
+
+<h3 class="pad1 center">Mixed</h3>
+
+<div class="layout">
+	<div class="col pad1 col3of4">
+		<code>.col3of4</code>
+		<code>.pad1</code>
 	</div>
 
-	<div class="layout">
+	<div class="col pad1 col1of4">
+		<code>.col1of4</code>
+		<code>.pad1</code>
+	</div>
+</div>
 
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
-		<div class="col pad1 col1of12">
-		</div>
-
+<div class="layout">
+	<div class="col pad1 col1of4">
+		<code>.col1of4</code>
+		<code>.pad1</code>
 	</div>
 
-	<div class="layout">
-
-		<div class="col pad1 col1of6">
-			<code>.col1of6</code>
-		</div>
-
-		<div class="col pad1 col1of6">
-			<code>.col1of6</code>
-		</div>
-
-		<div class="col pad1 col1of6">
-			<code>.col1of6</code>
-		</div>
-
-		<div class="col pad1 col1of6">
-			<code>.col1of6</code>
-		</div>
-
-		<div class="col pad1 col1of6">
-			<code>.col1of6</code>
-		</div>
-
-		<div class="col pad1 col1of6">
-			<code>.col1of6</code>
-		</div>
-
+	<div class="col pad1 col1of4">
+		<code>.col1of4</code>
+		<code>.pad1</code>
 	</div>
 
-	<div class="layout">
+  <div class="col pad1 col2of4">
+		<code>.col2of4</code>
+		<code>.pad1</code>
+	</div>
+</div>
 
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-		</div>
-
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-		</div>
-
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-		</div>
-
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-		</div>
-
+<div class="layout">
+	<div class="col pad1 col1of3">
+		<code>.col1of3</code>
+		<code>.pad1</code>
 	</div>
 
-	<div class="layout">
-
-		<div class="col pad1 col1of3">
-			<code>.col1of3</code>
-			<code>.pad1</code>
-		</div>
-
-		<div class="col pad1 col1of3">
-			<code>.col1of3</code>
-			<code>.pad1</code>
-		</div>
-
-		<div class="col pad1 col1of3">
-			<code>.col1of3</code>
-			<code>.pad1</code>
-		</div>
-
+	<div class="col pad1 col2of3">
+		<code>.col2of3</code>
+		<code>.pad1</code>
 	</div>
-
-	<div class="layout">
-
-		<div class="col pad2 col1of2">
-			<code>.col1of2</code> 
-			<code>.pad2</code>
-		</div>
-
-		<div class="col pad1 col1of2">
-			<code>.col1of2</code>
-			<code>.pad1</code>
-		</div>
-
-	</div>
-
-	<div class="layout">
-
-		<div class="col pad3 col1of1">
-			<code>.col1of1</code>
-			<code>.pad3</code>
-		</div>
-
-	</div>
-
-	<h3 class="pad1 center">Mixed</h3>
-
-	<div class="layout">
-
-		<div class="col pad1 col3of4">
-			<code>.col3of4</code>
-			<code>.pad1</code>
-		</div>
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-			<code>.pad1</code>
-		</div>
-
-	</div>
-
-	<div class="layout">
-
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-			<code>.pad1</code>
-		</div>
-		<div class="col pad1 col1of4">
-			<code>.col1of4</code>
-			<code>.pad1</code>
-		</div>
-		<div class="col pad1 col2of4">
-			<code>.col2of4</code>
-			<code>.pad1</code>
-		</div>
-
-	</div>
-
-	<div class="layout">
-
-		<div class="col pad1 col1of3">
-			<code>.col1of3</code>
-			<code>.pad1</code>
-		</div>
-		<div class="col pad1 col2of3">
-			<code>.col2of3</code>
-			<code>.pad1</code>
-		</div>
-
-	</div>
-
-<?php
-    include('_end.php');
-?>
+</div>

@@ -1,63 +1,51 @@
-<?php
-    $page = 'nav';
-    include('_start.php');
-?>
+<div id="nav_pri" class="clear">
+	<h1 class="brand">
+		<a href="#">
+			<span>Code Club</span>
+			<small>Style guide</small>
+		</a>
+	</h1>
 
-	<div id="nav_pri" class="clear">
+	<nav>
+		<h4 class="toggle">Menu</h4>
 
-		<h1 class="brand">
-			<a href="">
-				<span>Code Club</span>
-				<small>Style guide</small>
-			</a>
-		</h1>
-		<nav>
-			<h4 class="toggle">Menu</h4>
-			<ul>
-				<li><a href="">Link to a page</a></li>
-				<li><a href="">Another one</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-				<li class="expanded">
-					<h4 class="toggle">Logged in as Greg Wood</h4>
-					<ul>
-						<li><a href="">Your Club Hub</a></li>
-						<li><a href="">Your Profile</a></li>
-						<li><a href="">Sign out</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-
-	</div>
-
-	<div class="content_wrap">
-
-		<h4>^ Brand, brand appendix & site-wide navigation</h4>
-
-	</div>
-
-	<nav class="section">
 		<ul>
-			<li><a href="">Sub navigation</a></li>
-			<li><a href="">For pages within</a></li>
-			<li><a href="">This top-level section</a></li>
+			<li><a href="#">Link to a page</a></li>
+			<li><a href="#">Another one</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li class="expanded">
+				<h4 class="toggle">Logged in as Greg Wood</h4>
+
+				<ul>
+					<li><a href="#">Your Club Hub</a></li>
+					<li><a href="#">Your Profile</a></li>
+					<li><a href="#">Sign out</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
+</div>
 
-	<div class="content_wrap">
+<div class="content_wrap">
+	<h4>^ Brand, brand appendix & site-wide navigation</h4>
+</div>
 
-		<h4>^ Sub-section navigation</h4>
+<nav class="section">
+	<ul>
+		<li><a href="#">Sub navigation</a></li>
+		<li><a href="#">For pages within</a></li>
+		<li><a href="#">This top-level section</a></li>
+	</ul>
+</nav>
 
-		<ul>
-			<li>Lives directly below a hero block</li>
-			<li>Used for links within a section (in an About section for example, this may feature 'Team','History','Contact')</li>
-		</ul>
+<div class="content_wrap">
+	<h4>^ Sub-section navigation</h4>
 
-		<p>For sections without a hero block, use the <a href="blocks.php">menu layout</a> if you need section-navigation.</p>
+	<ul>
+		<li>Lives directly below a hero block</li>
+		<li>Used for links within a section (in an About section for example, this may feature 'Team','History','Contact')</li>
+	</ul>
 
-	</div>
-
-<?php
-    include('_end.php');
-?>
+	<p>For sections without a hero block, use the <a href="blocks.php">menu layout</a> if you need section-navigation.</p>
+</div>
