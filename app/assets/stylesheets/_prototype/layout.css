@@ -83,7 +83,7 @@ h1.brand span {
 	text-indent:-9999em;
 	width:60px;
 	height:60px;
-	background:url(/assets/images/brand_circle.svg) no-repeat center center;
+	background:url("/assets/brand_circle.svg") no-repeat center center;
 	background-size:100%;
 }
 h1.brand small {
@@ -174,7 +174,7 @@ li.expanded ul li:first-child {
 	background-repeat:no-repeat;
 }
 .hero.flash {
-	background-image:url(/assets/images/hero_flash.png);
+	background-image:url("/assets/hero_flash.png");
 	background-color:#291629;
 }
 
@@ -350,8 +350,8 @@ footer a:focus {
 
 @media (min-width: 768px) {
 
-	/*body.grid {
-		background-image:url(/assets/images/grid_tablet.svg);
+	/*.page--grid {
+		background-image:url("/assets/grid_tablet.svg");
 	}*/
 
 	#nav_pri {
@@ -448,23 +448,23 @@ footer a:focus {
 		background-size:95%;
 		background-position:center 70%;
 		background-repeat:no-repeat;
-		
+
 	}
 	.hero {
 		background-size:100% 100%;
 	}
 	.books {
-		background-image:url(/assets/images/hero_books.png);
+		background-image:url("/assets/hero_books.png");
 	}
 	.dancingrobots {
-		background-image:url(/assets/images/dancingrobots.png);
+		background-image:url("/assets/dancingrobots.png");
 	}
 
 	.content_wrap {
 		padding:5% 7%;
 	}
 
-	section,footer { 
+	section,footer {
 		padding-left:7%;
 		padding-right:7%;
 	}
@@ -482,8 +482,8 @@ footer a:focus {
 
 @media (min-width: 900px) {
 
-	/*body.grid {
-		background-image:url(/assets/images/grid_desktop.svg);
+	/*.page--grid {
+		background-image:url("/assets/grid_desktop.svg");
 	}*/
 
 	#nav_pri {
@@ -492,9 +492,9 @@ footer a:focus {
 	}
 
 	.hero {
-		
+
 	}
-	.hero_image { 
+	.hero_image {
 		padding:7% 22%;
 	}
 
@@ -502,7 +502,7 @@ footer a:focus {
 		padding:5% 9%;
 	}
 
-	/*section,footer { 
+	/*section,footer {
 		padding-left:9%;
 		padding-right:9%;
 	}*/

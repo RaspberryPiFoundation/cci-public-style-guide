@@ -57,11 +57,11 @@
 	background-size:1em;
 }
 .calendar {
-	background-image:url(/assets/images/icons/calendar_white.svg);
+	background-image:url("/assets/icons/calendar_white.svg");
 }
 .calendar:hover,
 .calendar:focus {
-	background-image:url(/assets/images/icons/calendar_green.svg);
+	background-image:url("/assets/icons/calendar_green.svg");
 }
 
 .link {
@@ -79,11 +79,11 @@
 	padding-right:1.4em;
 }
 .link.icon.calendar {
-	background-image:url(/assets/images/icons/calendar_green.svg);
+	background-image:url("/assets/icons/calendar_green.svg");
 }
 .link.icon.calendar:hover,
 .link.icon.calendar:focus {
-	background-image:url(/assets/images/icons/calendar.svg);
+	background-image:url("/assets/icons/calendar.svg");
 }
 
 .button.square {
