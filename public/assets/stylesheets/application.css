@@ -101,7 +101,7 @@ table {
   /*background:#e0e0e0;*/ }
 
 .grid .body_wrap {
-  background-image: url("/assets/grid_mobile.svg");
+  background-image: url("/assets/images/grid_mobile.svg");
   background-repeat: repeat-y;
   background-position: center 0;
   background-size: 100%; }
@@ -110,7 +110,7 @@ table {
   display: block;
   width: 40px;
   height: 40px;
-  background: #333 url("/assets/icons/arrow-fill-left.svg") no-repeat center center;
+  background: #333 url("/assets/images/icons/arrow-fill-left.svg") no-repeat center center;
   background-size: 70%;
   color: #fff;
   text-indent: -9999em;
@@ -122,7 +122,7 @@ table {
 
 .drawer_toggle .toggle_drawer {
   right: -35px;
-  background-image: url("/assets/icons/arrow-fill-right.svg"); }
+  background-image: url("/assets/images/icons/arrow-fill-right.svg"); }
 
 .drawer_toggle .nav_left {
   margin-left: -250px; }
@@ -155,21 +155,21 @@ table {
 
 @media (min-width: 768px) {
   .grid .body_wrap {
-    background-image: url("/assets/grid_tablet.svg"); } }
+    background-image: url("/assets/images/grid_tablet.svg"); } }
 
 @media (min-width: 900px) {
   .grid .body_wrap {
-    background-image: url("/assets/grid_desktop.svg"); } }
+    background-image: url("/assets/images/grid_desktop.svg"); } }
 
 @font-face {
   font-family: Museo Sans Rounded;
   font-weight: 300;
-  src: url("/assets/MuseoSansRounded-300.otf") format("opentype"); }
+  src: url("/assets/fonts/MuseoSansRounded-300.otf") format("opentype"); }
 
 @font-face {
   font-family: Museo Sans Rounded;
   font-weight: 500;
-  src: url("/assets/MuseoSansRounded-500.otf") format("opentype"); }
+  src: url("/assets/fonts/MuseoSansRounded-500.otf") format("opentype"); }
 
 html, * {
   box-sizing: border-box; }
@@ -219,7 +219,7 @@ a.close {
   text-indent: -9999em;
   width: 13px;
   height: 13px;
-  background: url("/assets//icons/close.svg") no-repeat center center;
+  background: url("/assets/images/icons/close.svg") no-repeat center center;
   opacity: 0.5; }
 
 a.close:hover,
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2em; }
 
 ul li {
-  background: url("/assets/bullet.svg") no-repeat 0 0.2em;
+  background: url("/assets/images/bullet.svg") no-repeat 0 0.2em;
   background-size: 0.8em;
   padding-left: 1.2em; }
 
@@ -464,7 +464,7 @@ h1.brand span {
   text-indent: -9999em;
   width: 60px;
   height: 60px;
-  background: url("/assets/brand_circle.svg") no-repeat center center;
+  background: url("/assets/images/brand_circle.svg") no-repeat center center;
   background-size: 100%; }
 
 h1.brand small {
@@ -553,7 +553,7 @@ li.expanded ul li:first-child {
   background-repeat: no-repeat; }
 
 .hero.flash {
-  background-image: url("/assets/hero_flash.png");
+  background-image: url("/assets/images/hero_flash.png");
   background-color: #291629; }
 
 nav.section {
@@ -721,7 +721,7 @@ footer a:focus {
 
 @media (min-width: 768px) {
   /*.page--grid {
-		background-image:url("/assets/grid_tablet.svg");
+		background-image:url("/assets/images/grid_tablet.svg");
 	}*/
   #nav_pri {
     padding-left: 7%;
@@ -800,9 +800,9 @@ footer a:focus {
   .hero {
     background-size: 100% 100%; }
   .books {
-    background-image: url("/assets/hero_books.png"); }
+    background-image: url("/assets/images/hero_books.png"); }
   .dancingrobots {
-    background-image: url("/assets/dancingrobots.png"); }
+    background-image: url("/assets/images/dancingrobots.png"); }
   .content_wrap {
     padding: 5% 7%; }
   section, footer {
@@ -817,7 +817,7 @@ footer a:focus {
 
 @media (min-width: 900px) {
   /*.page--grid {
-		background-image:url("/assets/grid_desktop.svg");
+		background-image:url("/assets/images/grid_desktop.svg");
 	}*/
   #nav_pri {
     padding-left: 9%;
@@ -931,13 +931,13 @@ input[type="submit"]:hover {
   line-height: 22px;
   padding: 14px;
   padding-left: 50px;
-  background: url("/assets/checkbox_empty.svg") no-repeat 15px center; }
+  background: url("/assets/images/checkbox_empty.svg") no-repeat 15px center; }
 
 .checklist label:hover {
   background-color: #f6f6f6; }
 
 .checklist input:checked + label {
-  background-image: url("/assets/checkbox_checked.svg"); }
+  background-image: url("/assets/images/checkbox_checked.svg"); }
 
 /* DROPDOWN */
 .field_dropdown {
@@ -951,7 +951,7 @@ input[type="submit"]:hover {
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   cursor: pointer;
-  background: url("/assets/icon_arrow_down.svg") no-repeat 95% center;
+  background: url("/assets/images/icon_arrow_down.svg") no-repeat 95% center;
   background-size: 0.8em;
   position: relative; }
 
@@ -996,7 +996,7 @@ input[type="submit"]:hover {
 .error_content_wrap {
   margin-top: 5px;
   padding-top: 5px;
-  background: url("/assets/icon_arrow_up_red.svg") no-repeat center 0.5em;
+  background: url("/assets/images/icon_arrow_up_red.svg") no-repeat center 0.5em;
   background-size: 0.8em; }
 
 .error_content {
@@ -1073,11 +1073,11 @@ input[type="submit"]:hover {
   background-size: 1em; }
 
 .calendar {
-  background-image: url("/assets/icons/calendar_white.svg"); }
+  background-image: url("/assets/images/icons/calendar_white.svg"); }
 
 .calendar:hover,
 .calendar:focus {
-  background-image: url("/assets/icons/calendar_green.svg"); }
+  background-image: url("/assets/images/icons/calendar_green.svg"); }
 
 .link {
   text-decoration: none; }
@@ -1094,11 +1094,11 @@ input[type="submit"]:hover {
   padding-right: 1.4em; }
 
 .link.icon.calendar {
-  background-image: url("/assets/icons/calendar_green.svg"); }
+  background-image: url("/assets/images/icons/calendar_green.svg"); }
 
 .link.icon.calendar:hover,
 .link.icon.calendar:focus {
-  background-image: url("/assets/icons/calendar.svg"); }
+  background-image: url("/assets/images/icons/calendar.svg"); }
 
 .button.square {
   border-radius: 0.4em !important; }
