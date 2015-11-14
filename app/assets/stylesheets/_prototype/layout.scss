@@ -83,7 +83,7 @@ h1.brand span {
 	text-indent:-9999em;
 	width:60px;
 	height:60px;
-	background:url("/assets/brand_circle.svg") no-repeat center center;
+	background:url("/assets/images/brand_circle.svg") no-repeat center center;
 	background-size:100%;
 }
 h1.brand small {
@@ -174,7 +174,7 @@ li.expanded ul li:first-child {
 	background-repeat:no-repeat;
 }
 .hero.flash {
-	background-image:url("/assets/hero_flash.png");
+	background-image:url("/assets/images/hero_flash.png");
 	background-color:#291629;
 }
 
@@ -351,7 +351,7 @@ footer a:focus {
 @media (min-width: 768px) {
 
 	/*.page--grid {
-		background-image:url("/assets/grid_tablet.svg");
+		background-image:url("/assets/images/grid_tablet.svg");
 	}*/
 
 	#nav_pri {
@@ -454,10 +454,10 @@ footer a:focus {
 		background-size:100% 100%;
 	}
 	.books {
-		background-image:url("/assets/hero_books.png");
+		background-image:url("/assets/images/hero_books.png");
 	}
 	.dancingrobots {
-		background-image:url("/assets/dancingrobots.png");
+		background-image:url("/assets/images/dancingrobots.png");
 	}
 
 	.content_wrap {
@@ -483,7 +483,7 @@ footer a:focus {
 @media (min-width: 900px) {
 
 	/*.page--grid {
-		background-image:url("/assets/grid_desktop.svg");
+		background-image:url("/assets/images/grid_desktop.svg");
 	}*/
 
 	#nav_pri {

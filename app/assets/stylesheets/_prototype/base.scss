@@ -1,13 +1,13 @@
 @font-face {
 	font-family: Museo Sans Rounded;
 	font-weight:300;
-	src: url("/assets/MuseoSansRounded-300.otf") format("opentype");
+	src: url("/assets/fonts/MuseoSansRounded-300.otf") format("opentype");
 }
 
 @font-face {
 	font-family: Museo Sans Rounded;
 	font-weight: 500;
-	src: url("/assets/MuseoSansRounded-500.otf") format("opentype");
+	src: url("/assets/fonts/MuseoSansRounded-500.otf") format("opentype");
 }
 
 html, * {
@@ -63,7 +63,7 @@ a.close {
 	text-indent:-9999em;
 	width:13px;
 	height:13px;
-	background:url("/assets//icons/close.svg") no-repeat center center;
+	background:url("/assets/images/icons/close.svg") no-repeat center center;
 	opacity:0.5;
 }
 a.close:hover,
@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5 {
 ul {
 }
 ul li {
-	background:url("/assets/bullet.svg") no-repeat 0 0.2em;
+	background:url("/assets/images/bullet.svg") no-repeat 0 0.2em;
 	background-size:0.8em;
 	padding-left:1.2em;
 }
