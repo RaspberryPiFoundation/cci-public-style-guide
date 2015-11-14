@@ -25,7 +25,12 @@ Rails.application.configure do
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Do not compress assets using the Asset Pipeline
-  config.assets.enabled = true
+  config.assets.enabled = false
+
+  # Do not generate assets via Rails' generators
+  config.generators do |g|
+    g.assets false
+  end
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
