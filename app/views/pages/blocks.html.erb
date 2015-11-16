@@ -1,86 +1,89 @@
-<div class="content_wrap">
-	<h1>Page layout</h1>
+<h2 class="center">Page layout</h2>
 
-	<section class="bubble">
-		<h2>Page recipe</h2>
+<div class="layout">
 
-		<p>Pages on Code Club websites are made from following ingredients:</p>
+  <section class="bubble pad2 col1 col1of1">
 
-		<ul>
-			<li>Header & nav</li>
-			<li>Hero block</li>
-			<li>Content blocks</li>
-			<li>Footer</li>
-		</ul>
+    <h3>Default content page layout</h3>
 
-		<hr>
+    <p>Content pages on Code Club websites are made from following ingredients:</p>
 
-		<h3>Content blocks</h3>
+    <div class="diagram clear">
 
-		<p>Use a combination of the following content blocks to break up your page content</p>
-	</section>
+      <%= image_tag '/assets/images/layout-01.svg' %>
+
+      <dl>
+        <li>
+          <dt><span class="number">1</span> Header</dt>
+          <dd>Houses the Code Club logo &amp; primary navigation. <a href="nav.php">Navigation usage &amp; styles</a></dd>
+        </li>
+        <li>
+          <dt><span class="number">2</span> Hero block</dt>
+          <dd>Sits directly under the Header. <a href="hero.php">Hero block usage &amp; styles</a></dd>
+        </li>
+        <li>
+          <dt><span class="number">3</span> Section nav</dt>
+          <dd>Optional. Sits directly under the Hero block</dd>
+        </li>
+        <li>
+          <dt><span class="number">4</span> Content blocks</dt>
+          <dd>Used to layout and break up chunks of content. See below for usage &amp; styles.</dd>
+        </li>
+        <li>
+          <dt><span class="number">5</span> Action block</dt>
+          <dd>Optional. Used to feature a pages primary action</dd>
+        </li>
+        <li>
+          <dt><span class="number">6</span> Footer</dt>
+          <dd>Present on every screen, the footer contains useful links, icon links to social media accounts &amp; any official/copyright statements</dd>
+        </li>
+      </dl>
+
+    </div>
+
+    <p><a href="layout-content.php">View example content page layout</a></p>
+
+  </section>
+
 </div>
 
-<section>
-	<h3>White block</h3>
+<br><br><br><br>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="layout">
 
-	<p><a href="#">Example link</a></p>
-</section>
+  <section class="bubble pad2 col1 col1of1">
 
-<div class="content_wrap">
-	<section class="bubble">
-		<h3>White rounded block</h3>
+    <h3>Menu layout</h3>
 
-		<p>This one is useful for hosting longer passages of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>The Menu layout is useful for sections where there is more user-interaction than content, for example logged-in account pages.</p>
 
-		<p><a href="#">Example link</a></p>
-	</section>
+    <div class="diagram clear">
+
+      <%= image_tag '/assets/images/layout-02.svg' %>
+
+      <dl>
+        <li>
+          <dt><span class="number">1</span> Header</dt>
+          <dd>Same as content layout</dd>
+        </li>
+        <li>
+          <dt><span class="number">2</span> Menu items</dt>
+          <dd></dd>
+        </li>
+        <li>
+          <dt><span class="number">3</span> Content</dt>
+          <dd></dd>
+        </li>
+        <li>
+          <dt><span class="number">4</span> Footer</dt>
+          <dd>Same as content layout</dd>
+        </li>
+      </dl>
+
+    </div>
+
+    <p><a href="layout-menu.php">View example menu layout</a></p>
+
+  </section>
+
 </div>
-
-<div class="content_wrap clear">
-	<div class="menu_menu">
-		<ul>
-			<li><a href="#">Menu item</a></li>
-			<li><a href="#">A list of sub pages</a></li>
-			<li><a href="#">Menu system</a></li>
-		</ul>
-	</div>
-
-	<div class="menu_content">
-		<section class="bubble">
-			<h3>Menu layout</h3>
-
-			<p>This layout block should be used for areas where the user needs easy access to a number of formal pages/interactions. The items in the menu should correspend to the content hosted in this area. </p>
-		</section>
-	</div>
-</div>
-
-<section class="blue">
-	<h3>Blue block</h3>
-
-	<p>This one should be used for hosting the primary page actions on a page. For example on a page whose content is about Teacher Training, this block could be used at the bottom of the page (but still above the dark grey footer) to show a graphic on how to apply for Teacher Training, plus a big button that would link to a contact form.</p>
-
-	<p><a href="#">Example link</a></p>
-</section>
-
-<footer>
-	<h3>Footer</h3>
-
-	<p>All site footers must be in this dark grey colour</p>
-
-	<p>The content of the footer is dependent on what's useful. There could be useful links down here, social media accounts, an email newsletter form, or copyright information.</p>
-
-	<p><a href="#">Example link</a></p>
-</footer>

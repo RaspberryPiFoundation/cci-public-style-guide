@@ -3,95 +3,104 @@
 .button,
 .button.invert:hover,
 .button.invert:focus {
-	display:inline-block;
-	text-decoration:none;
-	border:0.1875em solid #339933;
-	background:#339933;
-	color:#fff;
-	padding:0.5em 2em;
-	border-radius:1.5em;
+  display:inline-block;
+  text-decoration:none;
+  border:0.1875em solid #339933;
+  background:#339933;
+  color:#fff;
+  padding:0.5em 2em;
+  border-radius:1.5em;
 }
 .button:hover,
 .button:focus,
 .button.invert {
-	background:transparent;
-	color:#339933;
+  background:transparent;
+  color:#339933;
 }
 
 .button.white {
-	background-color:#fff;
-	border-color:#fff;
-	color:#333;
+  background-color:#fff;
+  border-color:#fff;
+  color:#333;
 }
 .button.white:hover {
-	background-color:transparent;
-	color:#fff;
+  background-color:transparent;
+  color:#fff;
 }
 
 .button.invert.white {
-	color:#fff;
-	border-color:#fff;
-	background-color:transparent;
+  color:#fff;
+  border-color:#fff;
+  background-color:transparent;
 }
 .button.invert.white:hover,
 .button.invert.white:focus {
-	background-color:#fff;
-	color:#333;
+  background-color:#fff;
+  color:#333;
 }
 
 .button.subtle {
-	background:#fff;
-	border-color:#666;
-	color:#333;
-	opacity:0.6;
+  background:#fff;
+  border-color:#666;
+  color:#333;
+  opacity:0.6;
 }
 .button.subtle:hover,
 .button.subtle:focus {
-	opacity:1;
+  opacity:1;
 }
 
-.button.icon {
-	background-repeat:no-repeat;
-	background-position:2em center;
-	padding-left:3.5em;
-	background-size:1em;
+.button.large {
+  font-size:1.1em;
+}
+
+.button.icon,
+.button.icon:hover {
+  background-repeat:no-repeat;
+  background-position:2em center;
+  padding-left:3.5em;
+  background-size:1em;
 }
 .calendar {
-	background-image:url("/assets/images/icons/calendar_white.svg");
+  background-image:url(/assets/images/icons/calendar_white.svg);
 }
 .calendar:hover,
 .calendar:focus {
-	background-image:url("/assets/images/icons/calendar_green.svg");
+  background-image:url(/assets/images/icons/calendar_green.svg);
+}
+
+.document {
+  background-image:url(/assets/images/icons/document.svg);
 }
 
 .link {
-	text-decoration:none;
+  text-decoration:none;
 }
 .link.icon {
-	background-repeat:no-repeat;
-	background-position:0 center;
-	padding-left:1.4em;
-	background-size:1em;
+  background-repeat:no-repeat;
+  background-position:0 center;
+  padding-left:1.4em !important;
+  background-size:1em;
 }
 .link.icon.right {
-	background-position:right center;
-	padding-left:0;
-	padding-right:1.4em;
+  background-position:right center;
+  padding-left:0;
+  padding-right:1.4em;
 }
 .link.icon.calendar {
-	background-image:url("/assets/images/icons/calendar_green.svg");
+  background-image:url(/assets/images/icons/calendar_green.svg);
 }
 .link.icon.calendar:hover,
 .link.icon.calendar:focus {
-	background-image:url("/assets/images/icons/calendar.svg");
+  background-image:url(/assets/images/icons/calendar.svg);
 }
 
 .button.square {
-	border-radius:0.4em !important;
+  border-radius:0.4em !important;
 }
 
 .disabled {
-	opacity:0.3;
-	cursor:default;
-	pointer-events: none;
+  opacity:0.3;
+  cursor:default;
+  pointer-events: none;
 }

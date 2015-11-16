@@ -1,135 +1,156 @@
 /* STYLES FOR STYLE GUIDE HOUSING */
 
 .nav_left {
-	width:250px;
-	background:#333;
-	color:#fff;
-	min-height:100%;
-	font-size:14px;
-	float:left;
-	position:relative;
-	z-index:100;
-	padding-bottom:3em;
+  width:250px;
+  background:#333;
+  color:#fff;
+  min-height:100%;
+  font-size:14px;
+  float:left;
+  position:relative;
+  z-index:100;
+  padding-bottom:3em;
 }
 .nav_left .brand {
-	padding:14px;
-	margin-bottom:7px;
+  padding:14px;
+  margin-bottom:7px;
+  float:none;
 }
 .nav_left .brand {
-	color:#fff;
+  color:#fff;
 }
 .nav_left h2 {
-	font-size:1.4em;
+  font-size:1.4em;
 }
 .nav_left h5 {
-	margin-top:28px;
-	margin-left:14px;
+  margin-top:28px;
+  margin-left:14px;
 }
 .nav_left ul {
-	border-top:1px solid #222;
+  border-top:1px solid #222;
 }
 .nav_left ul li {
-	background:none;
-	border-bottom:1px solid #222;
-	padding:0;
+  background:none;
+  border-bottom:1px solid #222;
+  padding:0;
 }
 .nav_left ul li a {
-	text-decoration: none;
-	color:#999;
-	padding:7px 14px;
-	display:block;
+  text-decoration: none;
+  color:#999;
+  padding:7px 14px;
+  display:block;
 }
 .nav_left ul li a:hover {
-	color:#ccc;
-	background:#222;
+  color:#ccc;
+  background:#222;
 }
 .nav_left ul li.cur a {
-	border-left:5px solid #339933;
-	padding-left:9px;
-	color:#fff;
+  border-left:5px solid #339933;
+  padding-left:9px;
+  color:#fff;
 }
 
 .body_wrap {
-	border-left:250px solid #333;
-	position:relative;
-	z-index:1;
-	/*background:#e0e0e0;*/
+  border-left:250px solid #333;
+  padding:5% 0;
+  position:relative;
+  z-index:1;
+  /*background:#e0e0e0;*/
 }
 
+.example .body_wrap {
+  padding:0;
+  border-left:0;
+}
+.example .nav_left {
+  margin-left:-250px;
+
+}
+
+.diagram {
+  padding-left:300px;
+  margin:2em 0;
+}
+.diagram > img {
+  float:left;
+  margin-left:-300px;
+  width:260px;
+  border:1px solid #e0e0e0;
+}
 
 .grid .body_wrap {
-	background-image:url("/assets/images/grid_mobile.svg");
-	background-repeat:repeat-y;
-	background-position:center 0;
-	background-size:100%;
+  background-image:url(/assets/images/grid_mobile.svg);
+  background-repeat:repeat-y;
+  background-position:center 0;
+  background-size:100%;
 }
 
 .toggle_drawer {
-	display:block;
-	width:40px;
-	height:40px;
-	background:#333 url("/assets/images/icons/arrow-fill-left.svg") no-repeat center center;
-	background-size:70%;
-	color:#fff;
-	text-indent:-9999em;
-	cursor:pointer;
-	position:absolute;
-	top:25px;
-	right:0;
-	border-radius:5px;
+  display:block;
+  width:40px;
+  height:40px;
+  background:#333 url(/assets/images/icons/arrow-fill-left.svg) no-repeat center center;
+  background-size:70%;
+  color:#fff;
+  text-indent:-9999em;
+  cursor:pointer;
+  position:absolute;
+  top:25px;
+  right:0;
+  border-radius:5px;
 }
 .drawer_toggle .toggle_drawer {
-	right:-35px;
-	background-image:url("/assets/images/icons/arrow-fill-right.svg");
+  right:-35px;
+  background-image:url(/assets/images/icons/arrow-fill-right.svg);
 }
 
 .drawer_toggle .nav_left {
-	margin-left:-250px;
+  margin-left:-250px;
 }
 .drawer_toggle .body_wrap {
-	border-left:0;
+  border-left:0;
 }
 
 .colourblock {
-	border-radius:5px;
-	padding:2em;
-	display:inline-block;
-	text-align:center;
-	min-width:8em;
-	margin:0.5em;
+  border-radius:5px;
+  padding:2em;
+  display:inline-block;
+  text-align:center;
+  min-width:8em;
+  margin:0.5em;
 }
 
 
 .img_desc {
-	padding:2em 0 2em 350px;
-	border-bottom:1px solid #e0e0e0;
-	overflow:hidden;
+  padding:2em 0 2em 350px;
+  border-bottom:1px solid #e0e0e0;
+  overflow:hidden;
 
 }
 .img_desc .image {
-	float:left;
-	margin-left:-350px;
-	width:320px;
+  float:left;
+  margin-left:-350px;
+  width:320px;
 }
 .img_desc img {
-	max-width:100%;
-	display:block;
-	margin:0 auto;
+  max-width:100%;
+  display:block;
+  margin:0 auto;
 }
 
 
 @media (min-width: 768px) {
 
-	.grid .body_wrap {
-		background-image:url("/assets/images/grid_tablet.svg");
-	}
+  .grid .body_wrap {
+    background-image:url(/assets/images/grid_tablet.svg);
+  }
 
 }
 
 @media (min-width: 900px) {
 
-	.grid .body_wrap {
-		background-image:url("/assets/images/grid_desktop.svg");
-	}
+  .grid .body_wrap {
+    background-image:url(/assets/images/grid_desktop.svg);
+  }
 
 }

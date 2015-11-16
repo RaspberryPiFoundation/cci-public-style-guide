@@ -1,51 +1,83 @@
-<div id="nav_pri" class="clear">
-	<h1 class="brand">
-		<a href="#">
-			<span>Code Club</span>
-			<small>Style guide</small>
-		</a>
-	</h1>
+<h2 class="center">Navigation</h2>
 
-	<nav>
-		<h4 class="toggle">Menu</h4>
+<div class="layout">
 
-		<ul>
-			<li><a href="#">Link to a page</a></li>
-			<li><a href="#">Another one</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-			<li class="expanded">
-				<h4 class="toggle">Logged in as Greg Wood</h4>
+  <section class="bubble pad2 col col1of1">
 
-				<ul>
-					<li><a href="#">Your Club Hub</a></li>
-					<li><a href="#">Your Profile</a></li>
-					<li><a href="#">Sign out</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
+    <p>There are three different types of navigation menus that can be employed:</p>
+    <br>
+    <dl>
+      <li>
+        <dt>Primary navigation</dt>
+        <dd>Top-level site-wide navigation; always present at the very top of every page. Also houses the Code Club logo.</dd>
+      </li>
+      <li>
+        <dt>Section navigation</dt>
+        <dd>In-section navigation; for providing links to sub-pages within a section (eg in the About section, there may be sub-pages for Team, Contact &amp; Jobs)</dd>
+      </li>
+      <li>
+        <dt>Menu navigation</dt>
+        <dd>Navigation for screens using the <a href="blocks.php#menu">menu layout</a></dd>
+      </li>
+    </dl>
+
+  </section>
+
 </div>
 
-<div class="content_wrap">
-	<h4>^ Brand, brand appendix & site-wide navigation</h4>
-</div>
+<br><h3 class="center pad1">Primary navigation</h3>
 
-<nav class="section">
-	<ul>
-		<li><a href="#">Sub navigation</a></li>
-		<li><a href="#">For pages within</a></li>
-		<li><a href="#">This top-level section</a></li>
-	</ul>
-</nav>
+<header id="nav_pri">
 
-<div class="content_wrap">
-	<h4>^ Sub-section navigation</h4>
+  <h1 class="brand">
+    <a href="">
+      <span>Code Club</span>
+      <small>Style guide</small>
+    </a>
+  </h1>
+  <nav class="pri">
+    <ul>
+      <li><a href="">Link to a page</a></li>
+      <li><a href="">Another one</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li class="emphasis"><a href="">Logged in as Greg Wood</a></li>
+    </ul>
+  </nav>
 
-	<ul>
-		<li>Lives directly below a hero block</li>
-		<li>Used for links within a section (in an About section for example, this may feature 'Team','History','Contact')</li>
-	</ul>
+</header>
 
-	<p>For sections without a hero block, use the <a href="blocks.php">menu layout</a> if you need section-navigation.</p>
+<br><br>
+
+<div class="layout">
+
+  <section class="bubble pad2 col col1of1">
+
+    <ul>
+      <li>Consistent on every Code Club website</li>
+      <li>Use the logo anchor to link to the homepage, no need for a link</li>
+      <li>On handheld devices the menu condenses into a hamburger menu interface, which when triggered slides the menu in from the left</li>
+      <li>Use only one instance of the emphasis style if required</li>
+    </ul>
+
+    <pre><code>&lt;header id=&quot;nav_pri&quot;&gt;
+  &lt;h1 class=&quot;brand&quot;&gt;
+      &lt;a href=&quot;&quot;&gt;
+          &lt;span&gt;Code Club&lt;/span&gt;
+          &lt;small&gt;Style guide&lt;/small&gt;
+      &lt;/a&gt;
+  &lt;/h1&gt;
+  &lt;nav class=&quot;pri&quot;&gt;
+      &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link to a page&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Another one&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;emphasis&quot;&gt;&lt;a href=&quot;&quot;&gt;Logged in as Greg Wood&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+
+  </section>
+
 </div>
