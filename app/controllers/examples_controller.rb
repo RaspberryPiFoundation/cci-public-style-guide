@@ -1,7 +1,7 @@
 class ExamplesController < ApplicationController
 
   def show
-    render "examples/#{params[:page]}", :layout => false
+    render params[:page]
   end
 
 end
