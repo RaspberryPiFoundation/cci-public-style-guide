@@ -1,29 +1,30 @@
 navigation_sections :
   - title : 'The Basics'
     pages :
-      - path  : 'about'
-      - path  : 'brand'
+      about :
+      brand :
         title : 'Brand & Logo Guidelines'
   - title : 'Style'
     pages :
-      - path  : 'typography'
-      - path  : 'colour'
-      - path  : 'icons'
+      typography :
+      colour :
+      icons :
   - title : 'Structure'
     pages :
-      - path  : 'grid'
+      grid :
         title : 'Layout Grid'
-      - path  : 'layout'
+      layout :
         title : 'Page Layout'
-      - path  : 'hero'
+      hero :
         title : 'Hero Blocks'
-      - path  : 'nav'
+      nav :
         title : 'Navigation'
   - title : 'Modules'
     pages :
-      - path  : 'forms'
-      - path  : 'cards'
-      - path  : 'listings'
+      forms :
+      cards :
+      listings :
         title : 'Listings & Tables'
-      - path  : 'Alerts'
-      - path  : 'buttons'
+      alerts :
+      buttons :
+

@@ -23,11 +23,11 @@ module NavigationHelper
   def get_navigation_pages(pages)
     list_items = ""
 
-    pages.each do |page|
-      list_items << content_tag(:li, :class => current_page_class(page[:path])) do
-        page_title = page[:title] || page[:path].capitalize
+    pages.each do |path, attributes|
+      list_items << content_tag(:li, :class => current_page_class(path)) do
+        page_title = (attributes.present? && attributes[:title]) || path.capitalize
 
-        link_to(page_title, pages_show_path(page[:path]))
+        link_to(page_title, pages_show_path(path))
       end
     end
 
