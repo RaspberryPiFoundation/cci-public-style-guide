@@ -1,7 +1,7 @@
 module NavigationHelper
 
   def render_navigation
-    @html       = ""
+    @html = ""
 
     NAV_CONFIG['sections'].each do |section|
       get_navigation_section(section)
@@ -41,6 +41,5 @@ module NavigationHelper
   def current_page_class(page)
     'cur' if page == @page
   end
-
 
 end
