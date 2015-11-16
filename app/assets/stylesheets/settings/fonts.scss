@@ -1,0 +1,24 @@
+//	Font Families
+$font-family-primary:   "museo-sans-rounded", sans-serif;
+$font-family-secondary: "museo-sans-rounded", sans-serif;
+$font-family-monospace: Consolas, monaco, monospace;
+
+//	Font Sizes - in px, converted to rems. Don't use 'px' unit!
+$font-size:       16;
+$font-size-small: 14;
+$font-size-large: 20;
+
+$font-size-h1: 48;
+$font-size-h2: 36;
+$font-size-h3: 24;
+$font-size-h4: 18;
+
+//	Font Weights
+$font-weight-light: 100;
+$font-weight:       300;
+$font-weight-bold:  700;
+
+$font-weight-h1: $font-weight-bold;
+$font-weight-h2: $font-weight-bold;
+$font-weight-h3: $font-weight-bold;
+$font-weight-h4: $font-weight-bold;

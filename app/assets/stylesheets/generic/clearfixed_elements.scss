@@ -1,0 +1,14 @@
+article,
+div,
+dl,
+fieldset,
+footer,
+form,
+header,
+main,
+ol,
+section,
+nav,
+ul {
+	@extend .clearfix;
+}

@@ -1,0 +1,39 @@
+/*
+  These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
+  http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
+*/
+
+//  Settings
+@import 'settings/colors';
+@import 'settings/fonts';
+@import 'settings/responsive_breakpoints';
+@import 'settings/typography';
+
+//  Tools
+@import 'tools/functions';
+@import 'tools/mixins';
+
+//  Generic Styles
+@import 'generic/normalize';
+@import 'generic/box_sizing';
+@import 'generic/clearfixed_elements';
+
+//  Objects
+@import 'objects/grid';
+
+//  Elements
+@import 'elements/block_elements';
+@import 'elements/blockquotes';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/page';
+@import 'elements/tables';
+
+//  Components
+
+//  Utilities
+@import 'utilities/clearfix';
+@import 'utilities/element_visibility';
+@import 'utilities/links';
+@import 'utilities/text';

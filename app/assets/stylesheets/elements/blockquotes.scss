@@ -1,0 +1,18 @@
+blockquote {
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+
+	p:before,
+	p:after {
+		display:     inline-block;
+		line-height: 0;
+	}
+
+	p:first-child:before {
+		content: '\201C';
+	}
+
+	p:last-of-type:after {
+		content: '\201D';
+	}
+}

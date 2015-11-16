@@ -1,0 +1,37 @@
+a {
+	.text-success &,
+	&.text-success {
+		color: $color-success;
+
+		&:active,
+		&:focus,
+		&:hover,
+		&:visited {
+			color: $color-success-d;
+		}
+	}
+
+	.text-warning &,
+	&.text-warning {
+		color: $color-warning;
+
+		&:active,
+		&:focus,
+		&:hover,
+		&:visited {
+			color: $color-warning-d;
+		}
+	}
+
+	.text-danger &,
+	&.text-danger {
+		color: $color-danger;
+
+		&:active,
+		&:focus,
+		&:hover,
+		&:visited {
+			color: $color-danger-d;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+dl {
+  @extend .clearfix;
+
+	margin: 0;
+	margin-bottom: $baseline-unit-px;
+
+	dd {
+		margin-left: $baseline-unit-px;
+	}
+
+	dt {
+		margin: 0;
+	}
+}
+
+ol {
+  @extend .clearfix;
+
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+
+	li {
+		list-style: decimal;
+	}
+
+	ol, ul {
+		margin-bottom: 0;
+	}
+}
+
+ul {
+  @extend .clearfix;
+
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+
+	li {
+		list-style: disc;
+	}
+
+	ol, ul {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,17 @@
+a {
+	color:           $color-links;
+	cursor:          pointer;
+	text-decoration: underline;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color:           $color-links-active;
+		text-decoration: none;
+	}
+
+	&:visited {
+		color:           $color-links-visited;
+		text-decoration: none;
+	}
+}

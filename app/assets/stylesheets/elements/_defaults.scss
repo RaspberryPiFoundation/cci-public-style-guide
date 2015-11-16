@@ -1,0 +1,103 @@
+
+address {
+	font-style: normal;
+}
+
+b {
+	font-weight: $font-weight-bold;
+}
+
+
+
+button {
+	border:      none;
+	font-family: $font-family-primary;
+}
+
+cite {
+	display:    block;
+	text-align: right;
+}
+
+code {
+	font-family: $font-family-primary;
+}
+
+em {
+	font-style: italic;
+}
+
+figure {
+	display:       block;
+	margin-bottom: $baseline-unit-px;
+
+	img {
+		display:   block;
+		max-width: 100%;
+	}
+
+	figcaption {
+		font-style: italic;
+	}
+}
+
+i {
+	font-style: italic;
+}
+
+input {
+	font-family: $font-family-primary;
+
+	::-webkit-input-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+
+	:-moz-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+
+	::-moz-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+
+	:-ms-input-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+}
+
+label {
+	margin: 0;
+}
+
+p {
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+}
+
+	.lead {
+		font-size:  $font-size-large;
+		font-style: italic;
+	}
+
+pre {
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+}
+
+select {
+	font-family: $font-family-primary;
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}
+
+textarea {
+	font-family: $font-family-primary;
+	resize:      vertical;
+}
+
+time {
+	display:   inline-block;
+	font-size: $font-size-small;
+}

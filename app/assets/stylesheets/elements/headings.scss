@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font-weight;
+	margin:      0;
+	@include rem('margin-bottom', 28);
+	padding:     0;
+}
+
+h1 {
+	@include font-size($font-size-h1);
+	font-weight: $font-weight-h1;
+	@include line-height($font-size-h1, $line-height-h1);
+}
+
+h2 {
+	@include font-size($font-size-h2);
+	font-weight: $font-weight-h2;
+	@include line-height($font-size-h2, $line-height-h2);
+}
+
+h3 {
+	@include font-size($font-size-h3);
+	font-weight: $font-weight-h3;
+	@include line-height($font-size-h3, $line-height-h3);
+}
+
+h4 {
+	@include font-size($font-size-h4);
+	font-weight: $font-weight-h4;
+	@include line-height($font-size-h4, $line-height-h4);
+}
