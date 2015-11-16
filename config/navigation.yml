@@ -13,7 +13,7 @@ sections :
     pages :
       - path  : 'grid'
         title : 'Layout Grid'
-      - path  : 'blocks'
+      - path  : 'layout'
         title : 'Page Layout'
       - path  : 'hero'
         title : 'Hero Blocks'
