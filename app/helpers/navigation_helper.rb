@@ -3,7 +3,7 @@ module NavigationHelper
   def render_navigation
     @html = ""
 
-    NAV_CONFIG['sections'].each do |section|
+    CC_CONFIG['navigation_sections'].each do |section|
       get_navigation_section(section)
     end
 

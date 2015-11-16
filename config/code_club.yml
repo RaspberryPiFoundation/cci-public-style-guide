@@ -1,4 +1,4 @@
-sections :
+navigation_sections :
   - title : 'The Basics'
     pages :
       - path  : 'about'
