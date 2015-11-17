@@ -3,8 +3,8 @@ module NavigationHelper
   def render_navigation
     @html = ""
 
-    CC_CONFIG['navigation_sections'].each do |section|
-      get_navigation_section(section)
+    @cc_config[:navigation_sections].each do |path, attributes|
+      make_navigation_section(path, attributes)
     end
 
     @html.html_safe
@@ -12,22 +12,24 @@ module NavigationHelper
 
   private
 
-  def get_navigation_section(section)
-    @html << content_tag(:h5, section[:title])
+  def make_navigation_section(section, section_attributes)
+    section_title = (section_attributes.present? && section_attributes[:title]) || section.capitalize
 
-    get_navigation_pages(section[:pages])
+    @html << content_tag(:h5, section_title)
+
+    make_navigation_pages_list(section, section_attributes[:pages])
 
     return
   end
 
-  def get_navigation_pages(pages)
+  def make_navigation_pages_list(section, pages)
     list_items = ""
 
-    pages.each do |path, attributes|
-      list_items << content_tag(:li, :class => current_page_class(path)) do
-        page_title = (attributes.present? && attributes[:title]) || path.capitalize
+    pages.each do |page, page_attributes|
+      list_items << content_tag(:li, :class => current_page_class(section, page)) do
+        page_title = (page_attributes.present? && page_attributes[:title]) || page.capitalize
 
-        link_to(page_title, pages_show_path(path))
+        link_to(page_title, pages_show_path(section, page))
       end
     end
 
@@ -38,8 +40,12 @@ module NavigationHelper
     return
   end
 
-  def current_page_class(page)
-    'cur' if page == @page
+  def get_navigation_config_for(page)
+    #@cc_config[:navigation_sections]
+  end
+
+  def current_page_class(section, page)
+    'cur' if section == @section && page == @page
   end
 
 end
