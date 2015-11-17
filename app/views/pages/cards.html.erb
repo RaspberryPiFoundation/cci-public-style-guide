@@ -1,31 +1,46 @@
-<div class="content_wrap">
-  <h1>Cards</h1>
+<h2 class="center">Cards</h2>
 
-  <p>Cards are devices that link to a piece content or an action. Housed in a neat box-out is a combination of titles, imagery, summary and a direct action links.</p>
+<div class="layout">
+  <div class="col col1of1 pad2 bubble">
 
-  <p>Cards come in a number of variations: (need to agnostify these names)</p>
+    <p>Cards are devices that link to a piece content or an action. Housed in a neat box-out is a combination of titles, imagery, summary and a direct action links.</p>
 
-  <p>(in order of simplicity)</p>
+    <p>Cards come in a number of variations: (need to agnostify these names)</p>
 
-  <ul>
-    <li>Info cards</li>
-    <li>Contact cards</li>
-    <li>Course cards (plus Subtle version)</li>
-    <li>Project cards</li>
-  </ul>
+    <p>(in order of simplicity)</p>
 
-  <p>The are aligned to the grid in 3 columns (web,tablet) or 1 (mobile)</p>
+    <ul>
+      <li>Info cards</li>
+      <li>Contact cards</li>
+      <li>Course cards (plus Subtle version)</li>
+      <li>Project cards</li>
+    </ul>
 
-  <hr>
+    <p>Use layout classes to aligned then to the grid in 3 or 4 columns</p>
 
-  <h3>Info cards</h3>
+    <p>Cards can be built using a bunch of existing layout &amp; style classes</p>
 
-  <p>Include a title and some short copy that can be displayed in a list with bullet points and a link CTA. (Need to figure out layout of these guys)</p>
+  </div>
+</div>
 
-  <div class="card">
-      <h4>Beware of</h4>
+<br><br>
 
-      <div class="content">
+<div class="layout">
+  <div class="col col1of1">
+
+    <h3>Info cards</h3>
+
+    <p>Include a title and some short copy that can be displayed in a list with bullet points and a link CTA.</p>
+
+  </div>
+</div>
+
+<div class="layout">
+
+  <div class="card bubble center pad1 col col1of3">
+      <h4 class="title">Beware of:</h4>
+
+      <div class="content pad1">
         <ul class="alt">
           <li>The dog</li>
           <li>The lion</li>
@@ -34,33 +49,204 @@
       </div>
 
       <div class="action">
-        <a href="#">Find out more</a>
+        <a href="#" class="link icon arrow-circle-right right">Find out more</a>
       </div>
   </div>
 
-  <hr>
+  <div class="card bubble center pad1 col col1of3">
+      <h4 class="title">Teacher Training</h4>
 
-  <h3>[Contact] cards</h3>
+      <div class="content pad1">
+        <p>Code Club builds a community of volunteers who share their passion for digital making with children and teachers across the UK.</p>
+      </div>
 
-  <p>These come in two variations, 1) the simple card that has a title, some short copy and a link CTA and 2) the detailed card that has a title, more copy, a button CTA and secondary link CTA.</p>
-
-  <div class="card">
-    <h4>London Fields Primary School</h4>
-
-    <p class="meta">0.8 miles away</p>
-
-    <a href="#" class="button">Contact venue</a>
+      <div class="action">
+        <a href="#" class="link icon arrow-circle-right right">Find out more</a>
+      </div>
   </div>
 
-  <div class="card">
-    <h4>London Fields Primary School</h4>
+  <div class="card bubble center pad1 col col1of3">
+      <h4 class="title">Beware of:</h4>
 
-    <p class="meta">0.8 miles away</p>
+      <div class="content pad1">
+        <ul class="alt">
+          <li>The dog</li>
+          <li>The lion</li>
+          <li>The hulk</li>
+        </ul>
+      </div>
 
-    <a href="#" class="button">Contact venue</a>
+      <div class="action">
+        <a href="#" class="link icon arrow-circle-right right">Find out more</a>
+      </div>
+  </div>
 
-    <div class="sub_action">
-      <a href="#">Add to club</a>
+</div>
+
+<br>
+
+<div class="layout">
+  <div class="col col1of1 pad2 bubble">
+
+    <pre><code>&lt;div class=&quot;card bubble center pad1 col col1of3&quot;&gt;
+      &lt;h4 class=&quot;title&quot;&gt;Beware of:&lt;/h4&gt;
+
+      &lt;div class=&quot;content pad1&quot;&gt;
+        &lt;ul class=&quot;alt&quot;&gt;
+          &lt;li&gt;The dog&lt;/li&gt;
+          &lt;li&gt;The lion&lt;/li&gt;
+          &lt;li&gt;The hulk&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;action&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;link icon arrow-circle-right right&quot;&gt;Find out more&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
+  </div>
+</div>
+
+<br><hr><br>
+
+<div class="layout">
+  <div class="col col1of1">
+
+    <h3>[Contact] cards</h3>
+
+    <p>These come in two variations, 1) the simple card that has a title, some short copy and a link CTA and 2) the detailed card that has a title, more copy, a button CTA and secondary link CTA.</p>
+
+  </div>
+</div>
+
+<div class="layout">
+
+  <div class="card bubble col col1of4 pad1">
+    <h4 class="margin-half">St Mary's Catholic Primary School</h4>
+
+    <p class="meta margin-double">0.4 miles away</p>
+
+    <div class="action">
+      <a href="#" class="link icon email">Contact club host</a>
     </div>
   </div>
+
+  <div class="card bubble col col1of4 pad1">
+    <h4 class="margin-half">Radford Primary School</h4>
+
+    <p class="meta margin-double">1.3 miles away</p>
+
+    <div class="action">
+      <a href="#" class="link icon email">Contact club host</a>
+    </div>
+  </div>
+
+  <div class="card bubble col col1of4 pad1">
+    <h4 class="margin-half">Walter Halls Primary & Early Years School</h4>
+
+    <p class="meta margin-double">1.3 miles away</p>
+
+    <div class="action">
+      <a href="#" class="link icon email">Contact club host</a>
+    </div>
+  </div>
+
+  <div class="card bubble col col1of4 pad1">
+    <h4 class="margin-half">Top Valley Academy</h4>
+
+    <p class="meta margin-double">2.6 miles away</p>
+
+    <div class="action">
+      <a href="#" class="link icon email">Contact club host</a>
+    </div>
+  </div>
+
+</div>
+
+<br> <br>
+
+<div class="layout">
+
+  <div class="card bubble col col1of3">
+
+    <div class="pad1">
+      <h4 class="margin-half">Laura Benedict</h4>
+
+      <p class="meta margin-double">0.4 miles away</p>
+
+      <a href="#" class="button center invert margin-one full">Contact volunteer</a>
+    </div>
+
+    <div class="action meta center divide pad1">
+      <a href="#i" class="link icon plus-circle">Add to club</a>
+    </div>
+
+  </div>
+
+  <div class="card bubble col col1of3">
+
+    <div class="pad1">
+      <h4 class="margin-half">Brian Carlson</h4>
+
+      <p class="meta margin-double">1.3 miles away</p>
+
+      <a href="#" class="button center invert margin-one full">Contact volunteer</a>
+    </div>
+
+    <div class="action meta center divide pad1">
+      <a href="#" class="link icon plus-circle">Add to club</a>
+    </div>
+
+  </div>
+
+  <div class="card bubble col col1of3">
+
+    <div class="pad1">
+      <h4 class="margin-half">Amanda Sybert</h4>
+
+      <p class="meta margin-double">1.3 miles away</p>
+
+      <a href="#" class="button center invert margin-one full">Contact volunteer</a>
+    </div>
+
+    <div class="action meta center divide pad1">
+      <a href="#" class="link icon plus-circle">Add to club</a>
+    </div>
+
+  </div>
+
+</div>
+
+<br><hr><br>
+
+<div class="layout">
+  <div class="col col1of1">
+
+    <h3>[Course] Image cards</h3>
+
+    <ul>
+      <li>A background image/pattern</li>
+      <li>A block colour</li>
+      <li>A title</li>
+      <li>Meta info</li>
+      <li>The whole card is a link</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="layout">
+
+  <div class="card bubble col col1of3 center link">
+    <a href="#">
+
+      <h2>Scratch</h2>
+
+      <div class="action">
+        32 projects
+      </div>
+
+    </a>
+  </div>
+
 </div>

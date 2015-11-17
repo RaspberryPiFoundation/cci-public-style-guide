@@ -18,6 +18,10 @@
   color:#339933;
 }
 
+.button.full {
+  width:100%;
+}
+
 .button.white {
   background-color:#fff;
   border-color:#fff;
@@ -84,7 +88,7 @@
 }
 .link.icon.right {
   background-position:right center;
-  padding-left:0;
+  padding-left:0 !important;
   padding-right:1.4em;
 }
 .link.icon.calendar {
@@ -93,6 +97,19 @@
 .link.icon.calendar:hover,
 .link.icon.calendar:focus {
   background-image:url(/assets/images/icons/calendar.svg);
+}
+
+
+
+.email {
+  background-image:url(/assets/images/icons/email.svg);
+}
+
+.arrow-circle-right {
+  background-image:url(/assets/images/icons/arrow-circle-right.svg);
+}
+.plus-circle {
+  background-image:url(/assets/images/icons/plus-circle.svg);
 }
 
 .button.square {
