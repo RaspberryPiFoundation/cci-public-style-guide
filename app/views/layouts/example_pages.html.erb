@@ -1,0 +1,25 @@
+<html>
+  <head>
+  	<%= render 'shared/head' %>
+  </head>
+
+  <body class="example">
+    <div class="body_wrap">
+      <header id="nav_pri">
+      	<h1 class="brand">
+      		<a href="#"><span>Code Club</span> <small>Example menu layout</small></a>
+      	</h1>
+
+      	<nav class="pri">
+      		<ul>
+      			<li><a href="layout.php">Back to Page layout</a></li>
+      		</ul>
+      	</nav>
+      </header>
+
+      <%= yield %>
+    </div>
+
+    <%= render 'shared/footer' %>
+  </body>
+</html>
