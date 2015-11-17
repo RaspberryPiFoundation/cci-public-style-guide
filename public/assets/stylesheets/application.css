@@ -705,7 +705,7 @@ footer a:focus {
   .card.link:hover, .card .link:focus {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-color: #ccc; }
-  .card a:first-child {
+  .card > a:first-child {
     display: block; }
   .card .title {
     border-bottom: 1px solid #e0e0e0;
