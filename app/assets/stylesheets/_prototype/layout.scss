@@ -310,6 +310,11 @@ footer a:focus {
   display:flex;
   flex-direction:column;
 
+
+  img {
+    max-width:100%;
+  }
+
   &.link  {
 
     &:hover,.link:focus {
@@ -340,7 +345,12 @@ footer a:focus {
     a {
       color:#fff;
     }
+  }
 
+  &.grey {
+    a {
+      color:#666
+    }
   }
 
   &.course-scratch {

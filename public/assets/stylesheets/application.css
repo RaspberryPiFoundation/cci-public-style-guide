@@ -706,6 +706,8 @@ footer a:focus {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .card img {
+    max-width: 100%; }
   .card.link:hover, .card.link .link:focus {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-color: #ccc; }
@@ -723,6 +725,8 @@ footer a:focus {
       border-top: 1px solid #e0e0e0; }
   .card.image a {
     color: #fff; }
+  .card.grey a {
+    color: #666; }
   .card.course-scratch {
     background: #ec8313 url(/assets/images/tile_scratch.svg); }
     .card.course-scratch .action {
