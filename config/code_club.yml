@@ -1,15 +1,16 @@
 navigation_sections :
-  - title : 'The Basics'
+  the-basics :
+    title : 'The Basics'
     pages :
       about :
       brand :
         title : 'Brand & Logo Guidelines'
-  - title : 'Style'
+  style :
     pages :
       typography :
       colour :
       icons :
-  - title : 'Structure'
+  structure :
     pages :
       grid :
         title : 'Layout Grid'
@@ -19,7 +20,7 @@ navigation_sections :
         title : 'Hero Blocks'
       nav :
         title : 'Navigation'
-  - title : 'Modules'
+  modules :
     pages :
       forms :
       cards :
@@ -28,3 +29,6 @@ navigation_sections :
       alerts :
       buttons :
 
+example_pages :
+  - menu :
+      back_link : 'layout'
