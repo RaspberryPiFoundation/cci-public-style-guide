@@ -397,14 +397,9 @@ hr {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
   padding: 0 8%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
 
 .col {
   margin: 1%;
@@ -475,22 +470,28 @@ hr {
   padding: 17%; }
 
 .pady1 {
-  padding: 1em 0; }
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .pady2 {
-  padding: 5% 0; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
 
 .pady3 {
-  padding: 9% 0; }
+  padding-top: 9%;
+  padding-bottom: 9%; }
 
 .padx1 {
-  padding: 0 1em; }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .padx2 {
-  padding: 0 9%; }
+  padding-left: 9%;
+  padding-right: 9%; }
 
 .padx3 {
-  padding: 0 17%; }
+  padding-left: 17%;
+  padding-right: 17%; }
 
 .margin-one {
   margin-bottom: 1em; }
@@ -500,6 +501,9 @@ hr {
 
 .margin-double {
   margin-bottom: 2em; }
+
+.margin-zero {
+  margin-bottom: 0; }
 
 /* PRIMARY NAV */
 #nav_pri {
@@ -702,11 +706,12 @@ footer a:focus {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .card.link:hover, .card .link:focus {
+  .card.link:hover, .card.link .link:focus {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-color: #ccc; }
   .card > a:first-child {
-    display: block; }
+    display: block;
+    text-decoration: none; }
   .card .title {
     border-bottom: 1px solid #e0e0e0;
     padding: 1em; }
@@ -716,6 +721,21 @@ footer a:focus {
     margin-top: auto; }
     .card .action.divide {
       border-top: 1px solid #e0e0e0; }
+  .card.image a {
+    color: #fff; }
+  .card.course-scratch {
+    background: #ec8313 url(/assets/images/tile_scratch.svg); }
+    .card.course-scratch .action {
+      background: #ec8313; }
+  .card.course-html {
+    background: #2396dd url(/assets/images/tile_html.png) center center; }
+    .card.course-html .action {
+      background: #2396dd; }
+  .card.course-python {
+    background: #00c394 url(/assets/images/tile_python.svg);
+    background-size: 40em; }
+    .card.course-python .action {
+      background: #00c394; }
 
 @media (min-width: 768px) {
   #nav_pri {
