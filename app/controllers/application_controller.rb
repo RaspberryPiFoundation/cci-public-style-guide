@@ -4,9 +4,31 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_filter :authenticate_user!
   before_filter :set_cc_config
 
   private
+
+  def authenticate_user!
+    Rails.logger.info('before_filter :authenticate_user!')
+    # if no session
+    #   redirect to login
+    # end
+  end
+
+  def authenticate_admin_user!
+    Rails.logger.info('before_filter :authenticate_admin_user!')
+
+    authenticate_user!
+
+    # if user is not admin
+    #
+    # end
+  end
+
+  def not_found
+    raise ActionController::RoutingError.new('Not Found')
+  end
 
   def set_cc_config
     @cc_config = CC_CONFIG
