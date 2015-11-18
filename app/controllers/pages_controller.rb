@@ -5,10 +5,6 @@ class PagesController < ApplicationController
 
   private
 
-  def post_params
-    params[:page]
-  end
-
   def set_page
     @page = Page.where(:path => @page_path).first || not_found
   end
