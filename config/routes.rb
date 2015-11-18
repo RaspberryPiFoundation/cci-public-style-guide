@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    resources :pages
+    resources :sections
+  end
+
   get '/example_pages/:page' => 'example_pages#show', :as => 'example_pages_show'
 
   get '/:section'       => 'sections#show', :as => 'sections_show'
