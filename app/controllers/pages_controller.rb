@@ -1,15 +1,24 @@
 class PagesController < ApplicationController
 
-  def home
-    #@page = Page.find('foo', 'bar')
-    @page = 'home'
+  before_filter :set_path
+  before_filter :set_page
+
+  private
+
+  def post_params
+    params[:page]
   end
 
-  def show
-    @section = params[:section]
-    @page    = params[:page]
+  def set_page
+    @page = Page.where(:path => @page_path).first || not_found
+  end
 
-    render "pages/#{@section}/#{@page}"
+  def set_path
+    if params[:section].present?
+      @page_path = [params[:section], params[:page]].join('/')
+    else
+      @page_path = params[:page]
+    end
   end
 
 end
