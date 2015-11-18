@@ -1,13 +1,10 @@
 class Admin::PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_sections, only: [:new, :edit]
 
   # GET /admin/pages
   def index
     @pages = Page.all
-  end
-
-  # GET /admin/pages/1
-  def show
   end
 
   # GET /admin/pages/new
@@ -24,7 +21,7 @@ class Admin::PagesController < ApplicationController
     @page = Page.new(page_params)
 
     if @page.save
-      redirect_to @page, notice: 'Page was successfully created.'
+      redirect_to :admin_pages, notice: 'Page was successfully created.'
     else
       render :new
     end
@@ -51,8 +48,12 @@ class Admin::PagesController < ApplicationController
       @page = Page.find(params[:id])
     end
 
+    def set_sections
+      @sections = Section.all
+    end
+
     # Only allow a trusted parameter "white list" through.
     def page_params
-      params[:page]
+      params.require(:page).permit(:title, :path, :order, :section_id)
     end
 end

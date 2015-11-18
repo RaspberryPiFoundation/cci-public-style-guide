@@ -6,10 +6,6 @@ class Admin::SectionsController < ApplicationController
     @sections = Section.all
   end
 
-  # GET /admin/sections/1
-  def show
-  end
-
   # GET /admin/sections/new
   def new
     @section = Section.new
@@ -33,7 +29,7 @@ class Admin::SectionsController < ApplicationController
   # PATCH/PUT /admin/sections/1
   def update
     if @section.update(section_params)
-      redirect_to @section, notice: 'Section was successfully updated.'
+      redirect_to :admin_sections, notice: 'Section was successfully updated.'
     else
       render :edit
     end
@@ -53,6 +49,6 @@ class Admin::SectionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def section_params
-      params[:section]
+      params.require(:section).permit(:title, :path, :order)
     end
 end
