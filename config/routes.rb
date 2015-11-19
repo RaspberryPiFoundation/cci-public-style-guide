@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   get '/:section/:page' => 'pages#show',    :as => 'page'
   get '/:section'       => 'sections#show', :as => 'section'
 
-  get '/' => 'pages#show', :as => 'home', defaults: { page: 'home' }
+  get '/' => 'sections#show', :as => 'home', defaults: { section: 'home' }
 
 end
