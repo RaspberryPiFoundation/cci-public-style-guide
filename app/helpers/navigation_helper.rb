@@ -23,7 +23,7 @@ module NavigationHelper
   def make_navigation_pages_list(section)
     list_items = ""
 
-    section.pages.each do |page|
+    section.pages.shown_in_nav.each do |page|
       list_items << content_tag(:li, :class => current_page_class(section.path, page.path)) do
         link_to(page.title, page_path(section.path, page.path))
       end
