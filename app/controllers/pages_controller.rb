@@ -1,10 +1,11 @@
 class PagesController < ApplicationController
 
-  before_filter :set_section_exists, :only => [:show]
-  before_filter :set_page_path,      :only => [:show]
-  before_filter :set_page,           :only => [:show]
-  before_filter :set_page_has_view,  :only => [:show]
-  before_filter :set_layout,         :only => [:show]
+  before_filter :set_section_exists
+  before_filter :set_page_path
+  before_filter :set_page
+  before_filter :set_back_page_for_examples
+  before_filter :set_page_has_view
+  before_filter :set_layout
 
   def show
     if @page_has_view
@@ -16,6 +17,12 @@ class PagesController < ApplicationController
   end
 
   private
+
+  def set_back_page_for_examples
+    if @page.is_example_page?
+      @back_page = Page.find(@page.back_page_id)
+    end
+  end
 
   def set_layout
     if @page.is_example_page?
