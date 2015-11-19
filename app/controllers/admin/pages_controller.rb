@@ -2,11 +2,6 @@ class Admin::PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   before_action :set_sections, only: [:new, :edit]
 
-  # GET /admin/pages
-  def index
-    @pages = Page.all
-  end
-
   # GET /admin/pages/new
   def new
     @page = Page.new

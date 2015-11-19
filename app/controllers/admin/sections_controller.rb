@@ -1,11 +1,6 @@
 class Admin::SectionsController < ApplicationController
   before_action :set_section, only: [:show, :edit, :update, :destroy]
 
-  # GET /admin/sections
-  def index
-    @sections = Section.all
-  end
-
   # GET /admin/sections/new
   def new
     @section = Section.new
