@@ -14,11 +14,11 @@
         <li>
           <dt><span class="number">1</span> Header</dt>
           <dd>Houses the Code Club logo &amp; primary navigation.
-          <%= link_to("Navigation usage & styles", pages_show_path('structure', 'nav')) %></dd>
+          <%= link_to("Navigation usage & styles", page_path('structure', 'nav')) %></dd>
         </li>
         <li>
           <dt><span class="number">2</span> Hero block</dt>
-          <dd>Sits directly under the Header. <%= link_to("Hero block usage & styles", pages_show_path('structure', 'hero')) %></dd>
+          <dd>Sits directly under the Header. <%= link_to("Hero block usage & styles", page_path('structure', 'hero')) %></dd>
         </li>
         <li>
           <dt><span class="number">3</span> Section nav</dt>
@@ -40,7 +40,9 @@
 
     </div>
 
-    <p><a href="">View example content page layout</a></p>
+    <p>
+      <%= link_to "View example content page layout", page_path('examples', 'page-layout') %>
+    </p>
 
   </section>
 
@@ -81,7 +83,9 @@
 
     </div>
 
-    <p><a href="">View example menu layout</a></p>
+    <p>
+      <%= link_to "View example menu layout", page_path('examples', 'menu') %>
+    </p>
 
   </section>
 
