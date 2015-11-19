@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/admin' => 'admin#index', :as => 'admin'
+
   namespace :admin do
     resources :pages,    :except => [:show]
     resources :sections, :except => [:show]
