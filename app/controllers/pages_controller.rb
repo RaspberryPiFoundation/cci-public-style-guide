@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   before_filter :set_page_path,     :only => [:show]
   before_filter :set_page,          :only => [:show]
   before_filter :set_page_has_view, :only => [:show]
+  before_filter :set_section_exists, :only => [:show]
 
   def show
     if @page_has_view
@@ -26,6 +27,10 @@ class PagesController < ApplicationController
 
   def set_page_path
     @page_path = params[:page]
+  end
+
+  def set_section_exists
+    Section.where(:path => params[:section]).exists? || not_found
   end
 
 end
