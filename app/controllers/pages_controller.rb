@@ -1,13 +1,14 @@
 class PagesController < ApplicationController
 
-  before_filter :set_page_path,     :only => [:show]
-  before_filter :set_page,          :only => [:show]
-  before_filter :set_page_has_view, :only => [:show]
   before_filter :set_section_exists, :only => [:show]
+  before_filter :set_page_path,      :only => [:show]
+  before_filter :set_page,           :only => [:show]
+  before_filter :set_page_has_view,  :only => [:show]
+  before_filter :set_layout,         :only => [:show]
 
   def show
     if @page_has_view
-      return render :show
+      return render :show, :layout => @layout
     end
 
     # Still here? 404.
@@ -15,6 +16,14 @@ class PagesController < ApplicationController
   end
 
   private
+
+  def set_layout
+    if @page.is_example_page?
+      @layout = 'examples'
+    else
+      @layout = 'application'
+    end
+  end
 
   def set_page
     @page    = Page.where(:path => @page_path).first || not_found
