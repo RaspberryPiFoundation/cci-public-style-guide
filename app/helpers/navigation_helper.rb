@@ -36,10 +36,6 @@ module NavigationHelper
     return
   end
 
-  def get_navigation_config_for(page)
-    #@cc_config[:navigation_sections]
-  end
-
   def current_page_class(section, page)
     'cur' if section == @section && page == @page
   end
