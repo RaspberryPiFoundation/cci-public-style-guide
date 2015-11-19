@@ -7,8 +7,6 @@ Rails.application.routes.draw do
     resources :sections, :except => [:index, :show]
   end
 
-  get '/example_pages/:page' => 'example_pages#show', :as => 'example_page'
-
   get '/:section/:page' => 'pages#show',    :as => 'page'
   get '/:section'       => 'sections#show', :as => 'section'
 
