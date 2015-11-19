@@ -1,8 +1,7 @@
-<h1>Editing Admin Page</h1>
+<h1>Editing Page - <%= @page.title %></h1>
 
-<%= form_for(@page, edit_admin_page_path(@page)) do |f| %>
+<%= form_for(@page, :url => edit_admin_page_path(@page)) do |f| %>
   <%= render :partial => 'form', :locals => { :f => f } %>
 <% end %>
 
-<%= link_to 'Show', @page %> |
-<%= link_to 'Back', pages_path %>
+<%= link_to 'Back', admin_path %>
