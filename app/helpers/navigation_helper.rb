@@ -37,7 +37,7 @@ module NavigationHelper
   end
 
   def current_page_class(section, page)
-    'cur' if section == @section && page == @page
+    'cur' if section == @section.path && page == @page.path
   end
 
 end
