@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_filter :authenticate_user!
-  before_filter :set_cc_config
 
   private
 
@@ -28,10 +27,6 @@ class ApplicationController < ActionController::Base
 
   def not_found
     raise ActionController::RoutingError.new('Not Found')
-  end
-
-  def set_cc_config
-    @cc_config = CC_CONFIG
   end
 
 end
