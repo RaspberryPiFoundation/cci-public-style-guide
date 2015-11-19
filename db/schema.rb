@@ -11,25 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151118181846) do
+ActiveRecord::Schema.define(version: 20151119164717) do
 
   create_table "pages", force: :cascade do |t|
-    t.string   "path",       limit: 255
-    t.string   "title",      limit: 255
-    t.integer  "order",      limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.integer  "section_id", limit: 4
+    t.string   "path",        limit: 255
+    t.string   "title",       limit: 255
+    t.integer  "order",       limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.integer  "section_id",  limit: 4
+    t.boolean  "show_in_nav"
   end
 
   add_index "pages", ["section_id"], name: "index_pages_on_section_id", using: :btree
 
   create_table "sections", force: :cascade do |t|
-    t.string   "path",       limit: 255
-    t.string   "title",      limit: 255
-    t.integer  "order",      limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "path",        limit: 255
+    t.string   "title",       limit: 255
+    t.integer  "order",       limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.boolean  "show_in_nav"
   end
 
 end
