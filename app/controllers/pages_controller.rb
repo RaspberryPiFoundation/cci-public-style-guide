@@ -16,7 +16,8 @@ class PagesController < ApplicationController
   private
 
   def set_page
-    @page = Page.where(:path => @page_path).first || not_found
+    @page    = Page.where(:path => @page_path).first || not_found
+    @section = @page.section
   end
 
   def set_page_has_view
