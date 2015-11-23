@@ -201,6 +201,60 @@ hr {
   line-height:26px;
 }
 
+img.icon {
+  width:10px;
+}
+
+// Pinched from Projects site CSS
+table {
+  img {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  thead {
+    font-size: 14px;
+  }
+}
+
+table {
+  thead {
+    th:last-child {
+      border-right: 1px solid white;
+    }
+  }
+}
+
+table th:first-child {
+  border-style: none !important;
+}
+
+.table > thead > tr > th {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+th {
+  text-align: center;
+}
+
+.table > tbody > tr > th {
+  padding-right: 20px;
+  vertical-align: middle;
+  line-height: 1.42857;
+  font-size: 14px;
+}
+
+.table > tbody > tr > td {
+  border: 1px solid #ddd !important;
+  height: 46px;
+}
+.table > thead > tr > th {
+  border-bottom-style: none;
+}
+
+
 
 @media (min-width: 768px) {
 
