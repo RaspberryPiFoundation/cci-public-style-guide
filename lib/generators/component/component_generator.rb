@@ -10,6 +10,13 @@ class ComponentGenerator < Rails::Generators::NamedBase
     :type     => :string
   }
 
+  argument :title, {
+    :banner   => "title:string",
+    :desc     => "A human-friendly title for the component",
+    :required => true,
+    :type     => :string
+  }
+
   argument :description, {
     :banner   => "description:string",
     :desc     => "Briefly describe what your component is for",
