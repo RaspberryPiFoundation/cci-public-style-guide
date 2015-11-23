@@ -2,18 +2,13 @@
 <h2><%= title %></h2>
 
 <% if description.present? %>
-  <p><%= description %></p>
+  <%= markdown(description) %>
 <% end %>
-
-<%= ui(name, { :content => content }) %>
 
 <% if variants.present? && variants.any? %>
   <hr>
 
-  <h3>Variants</h3>
-
   <% for variant in variants do %>
     <%= ui(name, variant) %>
-    <%= ui_code(name, variant) %>
   <% end %>
 <% end %>
