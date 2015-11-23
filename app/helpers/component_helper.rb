@@ -35,7 +35,7 @@ module ComponentHelper
   def default_ui_options
     {
       :content      => nil,
-      :html_classes => nil
+      :classes => nil
     }
   end
 
