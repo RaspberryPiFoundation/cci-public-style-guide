@@ -1,15 +1,2 @@
-'use strict';
-
-/**
- * application.js
- *
- *= require_self
- */
-
-$(document).ready(function () {
-  $('.toggle_drawer').click(function () {
-    $('body').toggleClass('drawer_toggle');
-    return false;
-  });
-});
+"use strict";$(document).ready(function(){$(".toggle_drawer").click(function(){return $("body").toggleClass("drawer_toggle"),!1})});
 //# sourceMappingURL=application.js.map

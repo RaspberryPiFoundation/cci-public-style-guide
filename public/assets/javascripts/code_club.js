@@ -1,8 +1,2 @@
-'use strict';
-
-var _another = require('components/another');
-
-var another = _interopRequireWildcard(_another);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+"use strict";function _interopRequireWildcard(r){if(r&&r.__esModule)return r;var e={};if(null!=r)for(var t in r)Object.prototype.hasOwnProperty.call(r,t)&&(e[t]=r[t]);return e["default"]=r,e}var _another=require("components/another"),another=_interopRequireWildcard(_another);
 //# sourceMappingURL=code_club.js.map
