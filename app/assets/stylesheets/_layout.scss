@@ -326,6 +326,7 @@ footer a:focus {
   > a:first-child {
     display:block;
     text-decoration:none;
+    font-weight:300;
   }
   .title {
     border-bottom:1px solid #e0e0e0;
@@ -338,6 +339,9 @@ footer a:focus {
     margin-top:auto;
     &.divide {
       border-top:1px solid #e0e0e0;
+    }
+    &.right {
+      text-align:right;
     }
   }
 
@@ -371,6 +375,16 @@ footer a:focus {
     .action {
       background:#00c394;
     }
+  }
+
+  &.feature {
+    a {
+      color:#666;
+    }
+    h3 {
+      color:#333;
+    }
+
   }
 
 }

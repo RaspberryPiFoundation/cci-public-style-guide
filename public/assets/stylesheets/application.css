@@ -217,6 +217,12 @@ body {
 .block {
   display: block; }
 
+.small {
+  font-size: 0.9em; }
+
+.weight-300 {
+  font-weight: 300; }
+
 .number {
   font-weight: 700;
   color: #fff;
@@ -713,7 +719,8 @@ footer a:focus {
     border-color: #ccc; }
   .card > a:first-child {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 300; }
   .card .title {
     border-bottom: 1px solid #e0e0e0;
     padding: 1em; }
@@ -723,6 +730,8 @@ footer a:focus {
     margin-top: auto; }
     .card .action.divide {
       border-top: 1px solid #e0e0e0; }
+    .card .action.right {
+      text-align: right; }
   .card.image a {
     color: #fff; }
   .card.grey a {
@@ -740,6 +749,10 @@ footer a:focus {
     background-size: 40em; }
     .card.course-python .action {
       background: #00c394; }
+  .card.feature a {
+    color: #666; }
+  .card.feature h3 {
+    color: #333; }
 
 @media (min-width: 768px) {
   #nav_pri {
@@ -1093,7 +1106,8 @@ input[type="submit"]:hover {
   background-image: url(/assets/images/icons/document.svg); }
 
 .link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #339933; }
 
 .link.icon {
   background-repeat: no-repeat;
