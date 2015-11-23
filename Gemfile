@@ -2,9 +2,10 @@ ruby '2.2.2'
 
 source 'https://rubygems.org'
 
-gem 'puma',   '~> 2.14.0'
-gem 'rails',  '4.2.4'
-gem 'mysql2', '~> 0.3.18'
+gem 'puma',      '~> 2.14.0'
+gem 'redcarpet', '~> 3.3.3'
+gem 'rails',     '4.2.4'
+gem 'mysql2',    '~> 0.3.18'
 
 group :development, :test do
   gem 'byebug'
