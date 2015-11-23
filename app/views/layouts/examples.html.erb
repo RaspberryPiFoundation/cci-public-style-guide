@@ -7,12 +7,16 @@
     <div class="body_wrap">
       <header id="nav_pri">
       	<h1 class="brand">
-      		<a href="#"><span>Code Club</span> <small>Example menu layout</small></a>
+          <%= link_to :home do %>
+      		  <span>Code Club</span> <small>Example menu layout</small>
+          <% end %>
       	</h1>
 
       	<nav class="pri">
       		<ul>
-      			<li><a href="layout.php">Back to Page layout</a></li>
+      			<li>
+              <%= link_to "Back to #{@back_page.title}", page_path(@back_page.section.path, @back_page.path) %>
+            </li>
       		</ul>
       	</nav>
       </header>

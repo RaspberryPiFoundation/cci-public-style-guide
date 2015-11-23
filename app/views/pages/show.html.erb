@@ -1,0 +1,6 @@
+
+<% if !@page.is_example_page? %>
+  <h2 class="center"><%= @page.title %></h2>
+<% end %>
+
+<%= render "pages/content/#{@page.section.path}/#{@page_path}" %>

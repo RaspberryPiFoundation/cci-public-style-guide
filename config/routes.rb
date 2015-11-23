@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
-  get '/example_pages/:page' => 'example_pages#show', :as => 'example_pages_show'
-  get '/:section/:page'      => 'pages#show',         :as => 'pages_show'
-  get '/'                    => 'pages#home',         :as => 'home'
+  get '/admin' => 'admin#index', :as => 'admin'
+
+  namespace :admin do
+    resources :pages,    :except => [:index, :show]
+    resources :sections, :except => [:index, :show]
+  end
+
+  get '/:section/:page' => 'pages#show',    :as => 'page'
+  get '/:section'       => 'sections#show', :as => 'section'
+
+  get '/' => 'sections#show', :as => 'home', defaults: { section: 'home' }
 
 end

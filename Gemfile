@@ -16,6 +16,7 @@ end
 
 group :development do
   gem 'foreman',     '~> 0.78.0'
+  gem 'quiet_assets'
   gem 'web-console', '~> 2.0'
 
   gem 'capistrano',       require: false
