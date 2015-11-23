@@ -1,0 +1,9 @@
+//
+// <%= @name %>.scss
+//<% if !@description.nil? %>
+// <%= @description %>
+//<% end %>
+
+.<%= @name %> {
+  // Your styles go here...
+}
