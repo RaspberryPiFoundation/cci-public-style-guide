@@ -1,13 +1,16 @@
 <p>Home</p>
 
 <%= ui_variants('button') %>
+<hr>
+<%= ui_variants_code('button') %>
 
 <hr>
 
-<%= ui('button', { :content => "Whatever", :html_classes => 'icon calendar' }) %>
+<%= ui('button', { :content => "Whatever", :html_classes => 'button icon calendar' }) %>
+<%= ui_code('button', { :content => "Whatever", :html_classes => 'button icon calendar' }) %>
 
 <hr>
 
-<%= ui('button', { :html_classes => 'invert' }) do %>
+<%= ui('button', { :html_classes => 'button invert' }, show_code = true ) do %>
   This should override the "Whatever" text
 <% end %>
