@@ -1,15 +1,16 @@
 name: button
 title: Buttons
-content: Baseline button
-description:
+description: Button styles and that
 variants:
-  - html_classes: invert
+  - html_classes: button
+    content: Default
+  - html_classes: button invert
     content: Inverted colours
-  - html_classes: subtle
+  - html_classes: button subtle
     content: A subtle button
-  - html_classes: icon calendar
+  - html_classes: button icon calendar
     content: Icon button
-  - html_classes: disabled
+  - html_classes: button disabled
     content: Disabled button
-  - html_classes: square
+  - html_classes: button square
     content: A squarer button
