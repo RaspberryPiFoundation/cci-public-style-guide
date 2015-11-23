@@ -1,13 +1,21 @@
 module ComponentHelper
 
-  def ui_variants(name)
+  def ui_variants(name, show_code = false)
     component_config = get_component_config_for(name)
 
-    render :partial => "shared/component_variants", :locals => component_config
+    html_buffer = render :partial => "shared/component_variants", :locals => component_config
+
+    if show_code
+      html_buffer << ui_variants_code(name, component_config)
+    end
+
+    return html_buffer
   end
 
-  def ui_variants_code(name)
-    component_config = get_component_config_for(name)
+  def ui_variants_code(name, component_config = nil)
+    if component_config.nil?
+      component_config = get_component_config_for(name)
+    end
 
     render :partial => "shared/component_variants_code", :locals => component_config
   end
