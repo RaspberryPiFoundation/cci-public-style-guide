@@ -51,50 +51,59 @@ function handleError(error) {
     message: error
   });
 
-  this.emit('end');
+  return this.emit('end');
 }
 
-function is_production() {
-  return undefined != util.env.rails_env && (util.env.rails_env = 'production');
+function env_is(env) {
+  return undefined != util.env.rails_env && (util.env.rails_env == env);
 }
 
-function log(main, message) {
-  util.log('- ' + main + ' - ' + message);
+function env_is_production() {
+  return env_is('production');
+}
+
+function progress(main, message) {
+  return util.log('- ' + main + ' - ' + message);
 }
 
 //  Master JavaScript processing function
 function process_javascripts(config) {
-  var babel  = require("gulp-babel");
+  var babel  = require('gulp-babel');
   var uglify = require('gulp-uglify');
 
   var main   = config.main;
   var dest   = config.dest;
 
-  log(main, 'Begin Compilation');
-
   var stream = gulp.src(config.source + '/' + main)
     .pipe(plumber({
       errorHandler: handleError
-    }))
+    })).on('end', function () {
+      progress(main, 'Begin Compilation');
+    });
 
-  stream = stream.pipe(sourcemaps.init())
-    .on('end', function () { log(main, 'Init Sourcemap'); });
+  stream = stream.pipe(sourcemaps.init()).on('end', function () {
+    progress(main, 'Init Sourcemap');
+  });
 
   stream = stream.pipe(babel({
     presets: ['es2015']
-  })).on('end', function () { log(main, 'Transpiling ES6'); });
+  })).on('end', function () {
+    progress(main, 'Transpiling ES6');
+  });
 
-  if (is_production()) {
-    stream = stream.pipe(uglify())
-      .on('end', function () { log(main, 'Uglifying'); });
+  if (env_is_production()) {
+    stream = stream.pipe(uglify()).on('end', function () {
+      progress(main, 'Uglifying');
+    });
   }
 
-  stream = stream.pipe(sourcemaps.write('.'))
-    .on('end', function () { log(main, 'Generating Sourcemap'); });
+  stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
+    progress(main, 'Generating Sourcemap');
+  });
 
-  stream = stream.pipe(gulp.dest(dest))
-    .on('end', function () { log(main, 'Writing file to ' + dest); })
-    .on('error', handleError);
+  stream = stream.pipe(gulp.dest(dest)).on('end', function () {
+    progress(main, 'Writing file to ' + dest);
+  }).on('error', handleError);
 
   return stream;
 }
@@ -102,39 +111,44 @@ function process_javascripts(config) {
 //  Master Stylesheet processing function
 function process_stylesheets(config) {
   var autoprefixer = require('gulp-autoprefixer');
-  var minify_css   = require("gulp-minify-css");
+  var minify_css   = require('gulp-minify-css');
   var sass         = require('gulp-sass');
 
   var main = config.main;
   var dest = config.dest;
 
-  log(main, 'Begin Compilation');
-
   var stream = gulp.src(config.source + '/' + main)
     .pipe(plumber({
       errorHandler: handleError
-    }));
+    })).on('end', function () {
+      progress(main, 'Begin Compilation');
+    });
 
-  stream = stream.pipe(sourcemaps.init())
-    .on('end', function () { log(main, 'Init Sourcemap'); });
+  stream = stream.pipe(sourcemaps.init()).on('end', function () {
+    progress(main, 'Init Sourcemap');
+  });
 
-  stream = stream.pipe(sass())
-    .on('end', function () { log(main, 'Compile Sass'); });
+  stream = stream.pipe(sass()).on('end', function () {
+    progress(main, 'Compile Sass');
+  });
 
-  stream = stream.pipe(autoprefixer())
-    .on('end', function () { log(main, 'Autoprefixing'); });
+  stream = stream.pipe(autoprefixer()).on('end', function () {
+    progress(main, 'Autoprefixing');
+  });
 
-  if (is_production()) {
-    stream = stream.pipe(minify_css())
-      .on('end', function () { log(main, 'Minifying Compiled Styles'); });
+  if (env_is_production()) {
+    stream = stream.pipe(minify_css()).on('end', function () {
+      progress(main, 'Minifying Compiled Styles');
+    });
   }
 
-  stream = stream.pipe(sourcemaps.write('.'))
-    .on('end', function () { log(main, 'Generating Sourcemap'); });
+  stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
+    progress(main, 'Generating Sourcemap');
+  });
 
-  stream = stream.pipe(gulp.dest(dest))
-    .on('end', function () { log(main, 'Writing file to ' + dest); })
-    .on('error', handleError);
+  stream = stream.pipe(gulp.dest(dest)).on('end', function () {
+    progress(main, 'Writing file to ' + dest);
+  }).on('error', handleError);
 
   return stream;
 }
@@ -160,8 +174,8 @@ gulp.task('cc_stylesheets', function () {
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
-  gulp.watch(app_assets.javascripts.source + '/*.js',   ['app_javascripts']);
-  gulp.watch(app_assets.stylesheets.source + '/*.scss', ['app_stylesheets']);
+  gulp.watch(app_assets.javascripts.source + '/*.js',     ['app_javascripts']);
+  gulp.watch(app_assets.stylesheets.source + '/*.scss',   ['app_stylesheets']);
 
   //  Style guide assets
   gulp.watch(cc_assets.javascripts.source + '/**/*.js',   ['cc_javascripts']);
