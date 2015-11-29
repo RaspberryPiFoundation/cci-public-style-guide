@@ -89,7 +89,16 @@ function env_is_production() {
 }
 
 function progress(main, message) {
-  return util.log('- ' + main + ' - ' + message);
+  var output = '';
+
+  if (undefined !== message) {
+    output = util.log('- ' + message);
+  }
+  else {
+    output = util.log('- ' + main + ' - ' + message);
+  }
+
+  return output;
 }
 
 //  Master JavaScript processing function
