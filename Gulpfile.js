@@ -8,12 +8,27 @@
 
 //  Load Gulp Dependencies
 var gulp        = require('gulp');
+var header      = require('gulp-header');
 var notify      = require('gulp-notify');
 var plumber     = require('gulp-plumber');
 var require_dir = require('require-dir');
 var rev_all     = require('gulp-rev-all');
 var sourcemaps  = require('gulp-sourcemaps');
 var util        = require('gulp-util');
+
+
+
+//  Set banner template
+var banner = ['/**',
+  ' * <%= dest_file %>',
+  ' * ',
+  ' * <%= pkg.friendly_name %> - <%= pkg.description %>',
+  ' * @version v<%= pkg.version %>',
+  ' * @link <%= pkg.homepage %>',
+  ' */',
+  ''].join('\n');
+
+
 
 //  Set website assets configuration
 var app_assets = {
@@ -97,6 +112,10 @@ function process_javascripts(config) {
     });
   }
 
+  stream = stream.pipe(header(banner, { dest_file: dest_file, pkg: pkg } )).on('end', function () {
+    progress(main, 'Creating banner');
+  });
+
   stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
     progress(main, 'Generating Sourcemap');
   });
@@ -141,6 +160,10 @@ function process_stylesheets(config) {
       progress(main, 'Minifying Compiled Styles');
     });
   }
+
+  stream = stream.pipe(header(banner, { dest_file: dest_file, pkg: pkg } )).on('end', function () {
+    progress(main, 'Creating banner');
+  });
 
   stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
     progress(main, 'Generating Sourcemap');
