@@ -35,6 +35,10 @@ var banner = ['/**',
 
 //  Set website assets configuration
 var app_assets = {
+  images: {
+    source:    'app/assets/images',
+    dest_dir:  'public/assets/images'
+  },
   javascripts: {
     source: 'app/assets/javascripts',
     main:   'application.js',
@@ -49,6 +53,10 @@ var app_assets = {
 
 //  Set style guide assets configuration
 var cc_assets = {
+  images: {
+    source:    'app/assets/code_club/images',
+    dest_dir:  'public/assets/code_club/images'
+  },
   javascripts: {
     source: 'app/assets/javascripts/code_club',
     main:   'code_club.js',
