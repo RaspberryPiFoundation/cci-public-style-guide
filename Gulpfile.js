@@ -6,6 +6,9 @@
 
 'use strict';
 
+//  Load package.json as JSON object
+var pkg = require('./package.json');
+
 //  Load Gulp Dependencies
 var gulp        = require('gulp');
 var header      = require('gulp-header');
