@@ -210,6 +210,10 @@ gulp.task('bump_version_number', function () {
     .pipe(gulp.dest('./'));
 });
 
+
+gulp.task('set_release_vars', function () {
+  util.env.rails_env = 'production';
+});
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
