@@ -40,14 +40,16 @@ var app_assets = {
     dest_dir:  'public/assets/images'
   },
   javascripts: {
-    source: 'app/assets/javascripts',
-    main:   'application.js',
-    dest:   'public/assets/javascripts'
+    source:    'app/assets/javascripts',
+    main:      'application.js',
+    dest_dir:  'public/assets/javascripts',
+    dest_file: 'application.js'
   },
   stylesheets: {
-    source: 'app/assets/stylesheets',
-    main:   'application.scss',
-    dest:   'public/assets/stylesheets'
+    source:    'app/assets/stylesheets',
+    main:      'application.scss',
+    dest_dir:  'public/assets/stylesheets',
+    dest_file: 'application.css'
   }
 };
 
@@ -58,16 +60,20 @@ var cc_assets = {
     dest_dir:  'public/assets/code_club/images'
   },
   javascripts: {
-    source: 'app/assets/javascripts/code_club',
-    main:   'code_club.js',
-    dest:   'public/assets/javascripts'
+    source:    'app/assets/code_club/javascripts',
+    main:      'code_club.js',
+    dest_dir:  'public/assets/code_club/javascripts',
+    dest_file: 'code_club.js'
   },
   stylesheets: {
-    source: 'app/assets/stylesheets/code_club',
-    main:   'code_club.scss',
-    dest:   'public/assets/stylesheets'
+    source:    'app/assets/code_club/stylesheets',
+    main:      'code_club.scss',
+    dest_dir:  'public/assets/code_club/stylesheets',
+    dest_file: 'code_club.css'
   }
 };
+
+
 
 //  Utility functions
 function handleError(error) {
@@ -143,8 +149,9 @@ function process_javascripts(config) {
   var babel  = require('gulp-babel');
   var uglify = require('gulp-uglify');
 
-  var main   = config.main;
-  var dest   = config.dest;
+  var main      = config.main;
+  var dest_dir  = config.dest_dir;
+  var dest_file = config.dest_file;
 
   var stream = gulp.src(config.source + '/' + main)
     .pipe(plumber({
@@ -177,12 +184,14 @@ function process_javascripts(config) {
     progress(main, 'Generating Sourcemap');
   });
 
-  stream = stream.pipe(gulp.dest(dest)).on('end', function () {
-    progress(main, 'Writing file to ' + dest);
+  stream = stream.pipe(gulp.dest(dest_dir)).on('end', function () {
+    progress(main, 'Writing file to ' + dest_dir);
   }).on('error', handleError);
 
   return stream;
 }
+
+
 
 //  Master Stylesheet processing function
 function process_stylesheets(config) {
@@ -190,8 +199,9 @@ function process_stylesheets(config) {
   var minify_css   = require('gulp-minify-css');
   var sass         = require('gulp-sass');
 
-  var main = config.main;
-  var dest = config.dest;
+  var main      = config.main;
+  var dest_dir  = config.dest_dir;
+  var dest_file = config.dest_file;
 
   var stream = gulp.src(config.source + '/' + main)
     .pipe(plumber({
@@ -226,8 +236,8 @@ function process_stylesheets(config) {
     progress(main, 'Generating Sourcemap');
   });
 
-  stream = stream.pipe(gulp.dest(dest)).on('end', function () {
-    progress(main, 'Writing file to ' + dest);
+  stream = stream.pipe(gulp.dest(dest_dir)).on('end', function () {
+    progress(main, 'Writing file to ' + dest_dir);
   }).on('error', handleError);
 
   return stream;
