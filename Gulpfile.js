@@ -194,6 +194,22 @@ gulp.task('cc_stylesheets', function () {
   return process_stylesheets(cc_assets.stylesheets);
 });
 
+gulp.task('bump_version_number', function () {
+  var bump = require('gulp-bump');
+
+  var release_type = 'patch';
+
+  if (undefined !== util.env.release_type) {
+    release_type = util.env.release_type;
+  }
+
+  gulp.src('./package.json')
+    .pipe(bump({
+      type: release_type
+    }))
+    .pipe(gulp.dest('./'));
+});
+
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
