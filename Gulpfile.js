@@ -214,6 +214,20 @@ gulp.task('bump_version_number', function () {
 gulp.task('set_release_vars', function () {
   util.env.rails_env = 'production';
 });
+
+gulp.task('release', [
+  'set_release_vars',
+  'bump_version_number',
+  'app_javascripts',
+  'app_stylesheets',
+  'cc_javascripts',
+  'cc_stylesheets'
+], function () {
+  util.log('all done!');
+});
+
+
+
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
