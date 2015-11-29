@@ -101,6 +101,43 @@ function progress(main, message) {
   return output;
 }
 
+
+
+//  Master Images processing function
+function process_images(config) {
+  var imagemin = require('gulp-imagemin');
+  var pngquant = require('imagemin-pngquant');
+
+  var dest_dir = config.dest_dir;
+
+  var stream = gulp.src(config.source + '/**/*')
+    .pipe(plumber({
+      errorHandler: handleError
+    })).on('end', function () {
+      progress('Begin Compilation');
+    });
+
+  stream = stream.pipe(imagemin({
+    progressive: true,
+    svgoPlugins: [{
+      removeViewBox: false
+    }],
+    use: [
+      pngquant()
+    ]
+  })).on('end', function () {
+    progress('Images Compressed');
+  });
+
+  stream = stream.pipe(gulp.dest(dest_dir)).on('end', function () {
+    progress('Writing files to ' + dest_dir);
+  }).on('error', handleError);
+
+  return stream;
+};
+
+
+
 //  Master JavaScript processing function
 function process_javascripts(config) {
   var babel  = require('gulp-babel');
@@ -196,7 +233,13 @@ function process_stylesheets(config) {
   return stream;
 }
 
+
+
 //  Application assets tasks
+gulp.task('app_images', function () {
+  return process_images(app_assets.images);
+});
+
 gulp.task('app_javascripts', function () {
   return process_javascripts(app_assets.javascripts);
 });
@@ -206,6 +249,10 @@ gulp.task('app_stylesheets', function () {
 });
 
 //  Style guide assets tasks
+gulp.task('cc_images', function () {
+  return process_images(cc_assets.images);
+});
+
 gulp.task('cc_javascripts', function () {
   return process_javascripts(cc_assets.javascripts);
 });
@@ -213,6 +260,10 @@ gulp.task('cc_javascripts', function () {
 gulp.task('cc_stylesheets', function () {
   return process_stylesheets(cc_assets.stylesheets);
 });
+
+
+
+//  Release tasks
 
 gulp.task('bump_version_number', function () {
   var bump = require('gulp-bump');
@@ -251,10 +302,12 @@ gulp.task('release', [
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
-  gulp.watch(app_assets.javascripts.source + '/*.js',     ['app_javascripts']);
-  gulp.watch(app_assets.stylesheets.source + '/*.scss',   ['app_stylesheets']);
+  gulp.watch(app_assets.images.source      + '/*',      ['app_images']);
+  gulp.watch(app_assets.javascripts.source + '/*.js',   ['app_javascripts']);
+  gulp.watch(app_assets.stylesheets.source + '/*.scss', ['app_stylesheets']);
 
   //  Style guide assets
+  gulp.watch(cc_assets.images.source      + '/*',         ['cc_images']);
   gulp.watch(cc_assets.javascripts.source + '/**/*.js',   ['cc_javascripts']);
   gulp.watch(cc_assets.stylesheets.source + '/**/*.scss', ['cc_stylesheets']);
 });
