@@ -278,7 +278,7 @@ gulp.task('cc_stylesheets', function () {
 gulp.task('bump_version_number', function () {
   var bump = require('gulp-bump');
 
-  var release_type = 'patch';
+  var release_type = 'prerelease';
 
   if (undefined !== util.env.release_type) {
     release_type = util.env.release_type;
