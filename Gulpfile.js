@@ -81,7 +81,7 @@ function handleError(error) {
 }
 
 function env_is(env) {
-  return undefined != util.env.rails_env && (util.env.rails_env == env);
+  return undefined !== util.env.rails_env && (util.env.rails_env === env);
 }
 
 function env_is_production() {
