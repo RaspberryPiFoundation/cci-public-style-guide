@@ -130,7 +130,7 @@ h1.brand span {
   text-indent:-9999em;
   width:60px;
   height:60px;
-  background:url(/assets/images/brand_circle.svg) no-repeat center center;
+  background:url(../images/brand_circle.svg) no-repeat center center;
   background-size:100%;
 }
 h1.brand small {
@@ -141,7 +141,7 @@ h1.brand small {
 }
 nav.pri {
   float:right;
-  background:url(/assets/images/icons/menu.svg) no-repeat center center;
+  background:url(../images/icons/menu.svg) no-repeat center center;
   width:40px;
   height:40px;
   margin-top:10px;
@@ -197,7 +197,7 @@ nav ul li a:focus {
   background-repeat:no-repeat;
 }
 .hero.flash {
-  background-image:url(/assets/images/hero_flash.png);
+  background-image:url(../images/hero_flash.png);
   background-color:#291629;
 }
 
@@ -276,7 +276,7 @@ footer a:focus {
   padding:0.8em 1em;
 }
 .menu_menu ul li.current a {
-  background:url(/assets/images/icons/arrow-right.svg) no-repeat right 10px center;
+  background:url(../images/icons/arrow-right.svg) no-repeat right 10px center;
   background-size:0.5em;
 }
 
@@ -358,19 +358,19 @@ footer a:focus {
   }
 
   &.course-scratch {
-    background:#ec8313 url(/assets/images/tile_scratch.svg);
+    background:#ec8313 url(../images/tile_scratch.svg);
     .action {
       background:#ec8313;
     }
   }
   &.course-html {
-    background:#2396dd url(/assets/images/tile_html.png) center center;
+    background:#2396dd url(../images/tile_html.png) center center;
     .action {
       background:#2396dd;
     }
   }
   &.course-python {
-    background:#00c394 url(/assets/images/tile_python.svg);
+    background:#00c394 url(../images/tile_python.svg);
     background-size:40em;
     .action {
       background:#00c394;
@@ -425,10 +425,10 @@ footer a:focus {
     background-size:100% 100%;
   }
   .books {
-    background-image:url(/assets/images/hero_books.png);
+    background-image:url(../images/hero_books.png);
   }
   .dancingrobots {
-    background-image:url(/assets/images/dancingrobots.png);
+    background-image:url(../images/dancingrobots.png);
   }
 
   .content_wrap {
@@ -454,7 +454,7 @@ footer a:focus {
 @media (min-width: 900px) {
 
   /*body.grid {
-    background-image:url(/assets/images/grid_desktop.svg);
+    background-image:url(../images/grid_desktop.svg);
   }*/
 
   #nav_pri {

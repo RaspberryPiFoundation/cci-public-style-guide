@@ -79,7 +79,7 @@
 }
 
 .grid .body_wrap {
-  background-image:url(/assets/images/grid_mobile.svg);
+  background-image:url(../images/grid_mobile.svg);
   background-repeat:repeat-y;
   background-position:center 0;
   background-size:100%;
@@ -89,7 +89,7 @@
   display:block;
   width:40px;
   height:40px;
-  background:#333 url(/assets/images/icons/arrow-fill-left.svg) no-repeat center center;
+  background:#333 url(../images/icons/arrow-fill-left.svg) no-repeat center center;
   background-size:70%;
   color:#fff;
   text-indent:-9999em;
@@ -101,7 +101,7 @@
 }
 .drawer_toggle .toggle_drawer {
   right:-35px;
-  background-image:url(/assets/images/icons/arrow-fill-right.svg);
+  background-image:url(../images/icons/arrow-fill-right.svg);
 }
 
 .drawer_toggle .nav_left {
@@ -142,7 +142,7 @@
 @media (min-width: 768px) {
 
   .grid .body_wrap {
-    background-image:url(/assets/images/grid_tablet.svg);
+    background-image:url(../images/grid_tablet.svg);
   }
 
 }
@@ -150,7 +150,7 @@
 @media (min-width: 900px) {
 
   .grid .body_wrap {
-    background-image:url(/assets/images/grid_desktop.svg);
+    background-image:url(../images/grid_desktop.svg);
   }
 
 }
