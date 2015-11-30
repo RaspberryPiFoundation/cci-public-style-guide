@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  get '/admin' => 'admin#index', :as => 'admin'
+  scope '/admin', :as => 'admin' do
+    get '/'      => 'admin#index', :as => 'index'
+    get '/login' => 'admin#login', :as => 'login'
+  end
 
   namespace :admin do
     resources :pages,    :except => [:index, :show]
