@@ -1,4 +1,4 @@
-class Admin::PagesController < ApplicationController
+class Admin::PagesController < AdminController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   before_action :set_sections, only: [:new, :edit]
 
