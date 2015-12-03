@@ -1,32 +1,7 @@
-<!-- <div class="layout">
-	<div class="col col1of1 pad2 bubble">
-  	<h4>Break points:</h4>
-
-		<ul>
-			<li>Lower than 768px; mobile layout</li>
-			<li>Betweem 768px and 900px; tablet layout</li>
-			<li>Above 900px; desktop layout</li>
-		</ul>
-
-		<ul>
-			<li>Lay out content to the grids</li>
-			<li>Use <%= link_to("Layout blocks", page_path('structure', 'layout')) %> to arrange & break up content vertically</li>
-		</ul>
-
-		<hr>
-
-		<p>Horizontally, use any of the following column rules:</p>
-
-		<ul>
-			<li>Need to define how system shrinks (or expands)</li>
-		</ul>
-	</div>
-</div> -->
-
 <div class="layout">
   <div class="col col1of1 pad2 bubble margin-double">
 
-    <p>There are three class groups that can be used to build or modify layouts. They each affect different axis and have different functions.
+    <p>There are three class groups that can be used to build or modify layouts. They each affect different axis and have different functions.</p>
 
     <dl>
       <li>
@@ -55,7 +30,9 @@
 
     <p>There are 3 states to the horizontal grid: mobile, tablet-portrait and tablet-landscape/desktop.</p>
 
-    <p>Blocks are laid along the horizontal grid from the left using the Flexbox Layout CSS module; an understanding of this is presumed.</p>
+    <p>The grid breaks between these states when the browser is at 600px wide and then again at 720px.</p>
+
+    <p>Blocks are laid along the horizontal grid from the left using the Flexbox Layout CSS module &ndash; an understanding of this is presumed.</p>
 
     <ol>
       <li><p>On tablet-landscape/desktop, the horizontal grid is a 12-column structure. Content blocks can be arranged across it as demonstrated below.</p></li>
@@ -151,6 +128,45 @@
 	<div class="col pad1 col2of3">
 		<code>.col2of3</code>
 	</div>
+</div>
+
+<br>
+
+<div class="layout">
+  <div class="col col1of1 pad2 bubble margin-double">
+
+    <p>To trigger the layout columns, use a wrapper class of <code>layout</code> and then arrange the columns within that wrapper. This is for a 3-column layout:</p>
+
+    <pre><code>&#60;div class="layout"&#62;
+  &#60;div class="col col1of3"&#62;
+
+  &#60;/div&#62;
+  &#60;div class="col col1of3"&#62;
+
+  &#60;/div&#62;
+  &#60;div class="col col1of3"&#62;
+
+  &#60;/div&#62;
+&#60;/div&#62;</code></pre>
+
+    <p>This would render a 4-column layout:</p>
+
+    <pre><code>&#60;div class="layout"&#62;
+  &#60;div class="col col1of4"&#62;
+
+  &#60;/div&#62;
+  &#60;div class="col col1of4"&#62;
+
+  &#60;/div&#62;
+  &#60;div class="col col1of4"&#62;
+
+  &#60;/div&#62;
+  &#60;div class="col col1of4"&#62;
+
+  &#60;/div&#62;
+&#60;/div&#62;</code></pre>
+
+  </div>
 </div>
 
 <br><br><br>
