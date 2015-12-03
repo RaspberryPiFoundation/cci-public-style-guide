@@ -2,7 +2,7 @@
  * application.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.2
+ * @version v0.0.0
  * @link https://styleguide.codeclubworld.org/
  */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -324,7 +324,7 @@ dl dt {
 
 code, .mono {
   font-family: "Consolas","Andale Mono",monospace;
-  font-size: 12px;
+  font-size: 0.75em;
   color: #666; }
 
 code {
@@ -428,74 +428,108 @@ th {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  padding: 0 8%;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start; }
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .col {
-  margin: 1%;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 5%; }
 
-.grid .col {
+.demo .col {
   background: coral; }
 
-.col1of12 {
-  -webkit-flex-basis: 6%;
-      -ms-flex-preferred-size: 6%;
-          flex-basis: 6%; }
+.grid {
+  background: url(/assets/images/grid_mobile.svg) no-repeat 0 0;
+  background-size: 100%; }
 
-.col1of6 {
-  -webkit-flex-basis: 14.5%;
-      -ms-flex-preferred-size: 14.5%;
-          flex-basis: 14.5%; }
+@media (min-width: 600px) {
+  .layout {
+    padding: 0 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .grid {
+    background-image: url(/assets/images/grid_tablet.svg); }
+  .col {
+    margin: 2%; }
+  .col1of6 {
+    -webkit-flex-basis: 29%;
+        -ms-flex-preferred-size: 29%;
+            flex-basis: 29%; }
+  .col1of4,
+  .col1of3,
+  .col1of2 {
+    -webkit-flex-basis: 46%;
+        -ms-flex-preferred-size: 46%;
+            flex-basis: 46%; }
+  .col1of1,
+  .col2of3,
+  .col3of4,
+  .col2of4 {
+    -webkit-flex-basis: 96%;
+        -ms-flex-preferred-size: 96%;
+            flex-basis: 96%; } }
 
-.col1of4 {
-  -webkit-flex-basis: 23%;
-      -ms-flex-preferred-size: 23%;
-          flex-basis: 23%; }
-
-.col2of4 {
-  -webkit-flex-basis: 48%;
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%; }
-
-.col3of4 {
-  -webkit-flex-basis: 74%;
-      -ms-flex-preferred-size: 74%;
-          flex-basis: 74%; }
-
-.col1of3 {
-  -webkit-flex-basis: 31%;
-      -ms-flex-preferred-size: 31%;
-          flex-basis: 31%; }
-
-.col2of3 {
-  -webkit-flex-basis: 64.5%;
-      -ms-flex-preferred-size: 64.5%;
-          flex-basis: 64.5%; }
-
-.col1of2 {
-  -webkit-flex-basis: 48%;
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%; }
-
-.col1of1 {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; }
+@media (min-width: 720px) {
+  .layout {
+    padding: 0 8%; }
+  .grid {
+    background-image: url(/assets/images/grid_desktop.svg); }
+  .col {
+    margin: 1%; }
+  .col1of12 {
+    -webkit-flex-basis: 6%;
+        -ms-flex-preferred-size: 6%;
+            flex-basis: 6%; }
+  .col1of6 {
+    -webkit-flex-basis: 14.5%;
+        -ms-flex-preferred-size: 14.5%;
+            flex-basis: 14.5%; }
+  .col1of4 {
+    -webkit-flex-basis: 23%;
+        -ms-flex-preferred-size: 23%;
+            flex-basis: 23%; }
+  .col2of4 {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%; }
+  .col3of4 {
+    -webkit-flex-basis: 73%;
+        -ms-flex-preferred-size: 73%;
+            flex-basis: 73%; }
+  .col1of3 {
+    -webkit-flex-basis: 31%;
+        -ms-flex-preferred-size: 31%;
+            flex-basis: 31%; }
+  .col2of3 {
+    -webkit-flex-basis: 64.5%;
+        -ms-flex-preferred-size: 64.5%;
+            flex-basis: 64.5%; }
+  .col1of2 {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%; }
+  .col1of1 {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
 
 .pad0 {
   padding: 0; }
@@ -509,18 +543,6 @@ th {
 .pad3 {
   padding: 17%; }
 
-.pady1 {
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
-.pady2 {
-  padding-top: 5%;
-  padding-bottom: 5%; }
-
-.pady3 {
-  padding-top: 9%;
-  padding-bottom: 9%; }
-
 .padx1 {
   padding-left: 1em;
   padding-right: 1em; }
@@ -532,6 +554,18 @@ th {
 .padx3 {
   padding-left: 17%;
   padding-right: 17%; }
+
+.pady1 {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.pady2 {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.pady3 {
+  padding-top: 9%;
+  padding-bottom: 9%; }
 
 .margin-one {
   margin-bottom: 1em; }

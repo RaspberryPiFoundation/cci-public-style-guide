@@ -2,55 +2,109 @@
 
 .layout {
   display:flex;
-  flex-direction:row;
-  flex-wrap: nowrap;
-  padding:0 8%;
-  // justify-content:space-between;
-  align-content: flex-start;
+  flex-direction:column;
+  padding:0 5%;
+  justify-content:space-between;
 }
 .col {
-
-  margin:1%;
   flex-grow:0;
   overflow:hidden;
+  margin-bottom:5%;
 }
-.grid .col{
+.demo .col{
   background:coral;
 }
 
-.col1of12 {
-  flex-basis:6%;
+.grid {
+  background:url(/assets/images/grid_mobile.svg) no-repeat 0 0;
+  background-size:100%;
 }
-.col1of6 {
-  flex-basis:14.5%;
+
+// tablet-portait
+@media (min-width: 600px) {
+
+  .layout {
+    padding:0 5%;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+
+  .grid {
+    background-image:url(/assets/images/grid_tablet.svg);
+  }
+
+  .col {
+    margin:2%;
+  }
+
+  .col1of6 {
+    flex-basis:29%;
+  }
+  .col1of4,
+  .col1of3,
+  .col1of2 {
+    flex-basis:46%;
+  }
+
+  .col1of1,
+  .col2of3,
+  .col3of4,
+  .col2of4  {
+    flex-basis:96%;
+  }
+
 }
-.col1of4 {
-  flex-basis:23%;
+
+// tablet-landscape/desktop
+@media (min-width: 720px) {
+
+  .layout {
+    padding:0 8%;
+  }
+
+  .grid {
+    background-image:url(/assets/images/grid_desktop.svg);
+  }
+
+  .col {
+    margin:1%;
+  }
+
+  .col1of12 {
+    flex-basis:6%;
+  }
+  .col1of6 {
+    flex-basis:14.5%;
+  }
+  .col1of4 {
+    flex-basis:23%;
+  }
+  .col2of4 {
+    flex-basis:48%;
+  }
+  .col3of4 {
+    flex-basis:73%;
+  }
+  .col1of3 {
+    flex-basis:31%;
+  }
+  .col2of3 {
+    flex-basis:64.5%;
+  }
+  .col1of2 {
+    flex-basis:48%;
+  }
+  .col1of1 {
+    flex-basis:100%;
+  }
+
 }
-.col2of4 {
-  flex-basis:48%;
-}
-.col3of4 {
-  flex-basis:74%;
-}
-.col1of3 {
-  flex-basis:31%;
-}
-.col2of3 {
-  flex-basis:64.5%;
-}
-.col1of2 {
-  flex-basis:48%;
-}
-.col1of1 {
-  flex-basis:100%;
-}
+
 
 
 .pad0 {
   padding:0;
 }
-
 .pad1 {
   padding:1em;
 }
@@ -59,19 +113,6 @@
 }
 .pad3 {
   padding:17%;
-}
-
-.pady1 {
-  padding-top:1em;
-  padding-bottom:1em;
-}
-.pady2 {
-  padding-top:5%;
-  padding-bottom:5%;
-}
-.pady3 {
-  padding-top:9%;
-  padding-bottom:9%;
 }
 
 .padx1 {
@@ -85,6 +126,19 @@
 .padx3 {
   padding-left:17%;
   padding-right:17%;
+}
+
+.pady1 {
+  padding-top:1em;
+  padding-bottom:1em;
+}
+.pady2 {
+  padding-top:5%;
+  padding-bottom:5%;
+}
+.pady3 {
+  padding-top:9%;
+  padding-bottom:9%;
 }
 
 .margin-one {

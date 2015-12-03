@@ -1,4 +1,4 @@
-<div class="layout">
+<!-- <div class="layout">
 	<div class="col col1of1 pad2 bubble">
   	<h4>Break points:</h4>
 
@@ -21,15 +21,63 @@
 			<li>Need to define how system shrinks (or expands)</li>
 		</ul>
 	</div>
+</div> -->
+
+<div class="layout">
+  <div class="col col1of1 pad2 bubble margin-double">
+
+    <p>There are three class groups that can be used to build or modify layouts. They each affect different axis and have different functions.
+
+    <dl>
+      <li>
+        <dt><code>.col</code></dt>
+        <dd>The <code>.col</code> group of classes deals with the X axis only. It lets you lay out larger chunks of content that aligns to the horizontal grid.</dd>
+      </li>
+      <li>
+        <dt><code>.pad</code></dt>
+        <dd>The <code>.pad</code> group of classes deals with the padding of elements, large and small, on both the X and Y axis.</dd>
+      </li>
+      <li>
+        <dt><code>.margin</code></dt>
+        <dd>The <code>.margin</code> group of classes deals with margins. All margins are in the Y axis only, and only attached to the bottom of elements.</dd>
+      </li>
+    </dl>
+
+  </div>
 </div>
 
-<div class="layout grid">
+
+
+<div class="layout">
+  <div class="col col1of1 pad2 bubble margin-double">
+
+    <h3 class="center"><code>.col</code></h3>
+
+    <p>There are 3 states to the horizontal grid: mobile, tablet-portrait and tablet-landscape/desktop.</p>
+
+    <p>Blocks are laid along the horizontal grid from the left using the Flexbox Layout CSS module; an understanding of this is presumed.</p>
+
+    <ol>
+      <li><p>On tablet-landscape/desktop, the horizontal grid is a 12-column structure. Content blocks can be arranged across it as demonstrated below.</p></li>
+      <li><p>On tablet-portrait, the grid changes to a 6-column grid. <code>.col1of6</code> blocks change to a 3-column layout, <code>.col1of4</code> blocks change to a 3-column layout, <code>.col1of3</code> blocks change to a 2-column layout.</p></li>
+      <li><p>On mobile, everything subscribes to a single-column grid.</p></li>
+    </ol>
+
+  </div>
+</div>
+
+
+<h3 class="center">Grid columns</h3>
+<div class="layout grid demo pady2 margin-double">
   <% 12.times do %>
-	  <div class="col pad1 col1of12"></div>
+	  <!-- <div class="col pad1 col1of12"></div> -->
+
   <% end %>
 </div>
 
-<div class="layout grid">
+<h3 class="center">Content block widths</h3>
+
+<div class="layout demo">
   <% 6.times do %>
   	<div class="col pad1 col1of6">
   		<code>.col1of6</code>
@@ -37,7 +85,7 @@
   <% end %>
 </div>
 
-<div class="layout grid">
+<div class="layout demo">
   <% 4.times do %>
   	<div class="col pad1 col1of4">
   		<code>.col1of4</code>
@@ -45,70 +93,217 @@
   <% end %>
 </div>
 
-<div class="layout grid">
+<div class="layout demo">
   <% 3.times do %>
   	<div class="col pad1 col1of3">
   		<code>.col1of3</code>
-  		<code>.pad1</code>
   	</div>
   <% end %>
 </div>
 
-<div class="layout grid">
+<div class="layout demo">
   <% 2.times do %>
-  	<div class="col pad2 col1of2">
+  	<div class="col pad1 col1of2">
   		<code>.col1of2</code>
-  		<code>.pad2</code>
   	</div>
   <% end %>
 </div>
 
-<div class="layout grid">
-	<div class="col pad3 col1of1">
+<div class="layout demo">
+	<div class="col pad1 col1of1">
 		<code>.col1of1</code>
-		<code>.pad3</code>
 	</div>
 </div>
 
 <h3 class="pad1 center">Mixed</h3>
 
-<div class="layout grid">
+<p class="center">If required, the following mixes of block widths can be used.</p>
+
+<div class="layout demo">
 	<div class="col pad1 col3of4">
 		<code>.col3of4</code>
-		<code>.pad1</code>
 	</div>
 
 	<div class="col pad1 col1of4">
 		<code>.col1of4</code>
-		<code>.pad1</code>
 	</div>
 </div>
 
-<div class="layout grid">
+<div class="layout demo">
 	<div class="col pad1 col1of4">
 		<code>.col1of4</code>
-		<code>.pad1</code>
 	</div>
 
 	<div class="col pad1 col1of4">
 		<code>.col1of4</code>
-		<code>.pad1</code>
 	</div>
 
   <div class="col pad1 col2of4">
 		<code>.col2of4</code>
-		<code>.pad1</code>
 	</div>
 </div>
 
-<div class="layout grid">
+<div class="layout demo">
 	<div class="col pad1 col1of3">
 		<code>.col1of3</code>
-		<code>.pad1</code>
 	</div>
 
 	<div class="col pad1 col2of3">
 		<code>.col2of3</code>
-		<code>.pad1</code>
 	</div>
+</div>
+
+<br><br><br>
+
+<div class="layout">
+  <div class="col col1of1 pad2 bubble margin-double">
+
+    <h3 class="center"><code>.pad</code></h3>
+
+    <p>The <code>.pad</code> group of classes deals with the padding of elements, large and small, on both the X and Y axis.</p>
+
+    <p>For each axis, there are four <code>.pad</code> values.</p>
+
+    <hr>
+
+    <h4>Both X and Y axis</h4>
+
+    <div class="layout demo margin-one">
+
+      <div class="col pad0 col1of6">
+        <code>.pad0</code>
+      </div>
+
+      <div class="col pad1 col1of6">
+        <code>.pad1</code>
+      </div>
+
+      <div class="col pad2 col1of6">
+        <code>.pad2</code>
+      </div>
+
+      <div class="col pad3 col1of6">
+        <code>.pad3</code>
+      </div>
+
+    </div>
+
+    <pre><code>.pad0 {
+  padding:0;
+}
+.pad1 {
+  padding:1em;
+}
+.pad2 {
+  padding:9%;
+}
+.pad3 {
+  padding:17%;
+}</code></pre>
+
+    <hr>
+
+    <h4>X axis only</h4>
+
+    <div class="layout demo margin-one">
+
+      <div class="col padx1 col1of1">
+        <code>.padx1</code>
+      </div>
+
+    </div>
+
+    <div class="layout demo margin-one">
+
+      <div class="col padx2 col1of1">
+        <code>.padx2</code>
+      </div>
+
+    </div>
+
+    <div class="layout demo margin-one">
+
+      <div class="col padx3 col1of1">
+        <code>.padx3</code>
+      </div>
+
+    </div>
+
+    <pre><code>.padx1 {
+  padding-left:1em;
+  padding-right:1em;
+}
+.padx2 {
+  padding-left:9%;
+  padding-right:9%;
+}
+.padx3 {
+  padding-left:17%;
+  padding-right:17%;
+}</code></pre>
+
+
+    <hr>
+
+    <h4>Y axis only</h4>
+
+    <div class="layout demo margin-one">
+
+      <div class="col pady1 col1of3">
+        <code>.pady1</code>
+      </div>
+
+      <div class="col pady2 col1of3">
+        <code>.pady2</code>
+      </div>
+
+      <div class="col pady3 col1of3">
+        <code>.pady3</code>
+      </div>
+
+    </div>
+
+    <pre><code>.pady1 {
+  padding-top:1em;
+  padding-bottom:1em;
+}
+.pady2 {
+  padding-top:5%;
+  padding-bottom:5%;
+}
+.pady3 {
+  padding-top:9%;
+  padding-bottom:9%;
+}</code></pre>
+
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="layout">
+  <div class="col col1of1 pad2 bubble margin-double">
+
+    <h3 class="center"><code>.margin</code></h3>
+
+    <p>The <code>.margin</code> group of classes deals with margins. All margins are in the Y axis only, and only attached to the bottom of elements.</p>
+
+    <p>This is useful for modifying an existing margin or adding a margin to an element.</p>
+
+    <p>All typographic elements already feature thier own set of margins, the base size of these margins is 1em.</p>
+
+    <pre><code>.margin-one {
+  margin-bottom:1em;
+}
+.margin-half {
+  margin-bottom:0.5em;
+}
+.margin-double {
+  margin-bottom:2em;
+}
+.margin-zero {
+  margin-bottom:0;
+}</code></pre>
+
+  </div>
 </div>
