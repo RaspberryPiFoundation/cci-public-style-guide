@@ -29,6 +29,10 @@
     flex-wrap:wrap;
   }
 
+  .height-inherit {
+    align-items: flex-start;
+  }
+
   .grid {
     background-image:url(/assets/images/grid_tablet.svg);
   }

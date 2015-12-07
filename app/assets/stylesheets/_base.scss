@@ -115,11 +115,13 @@ h1,h2,h3,h4,h5 {
 }
 
 ul {
+  list-style:none;
 }
 ul li {
   background:url(../images/bullet.svg) no-repeat 0 0.2em;
   background-size:0.8em;
   padding-left:1.2em;
+  list-style:none;
 }
 
 ul.alt li {
