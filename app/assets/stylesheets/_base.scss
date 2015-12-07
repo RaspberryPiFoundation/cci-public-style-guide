@@ -2,9 +2,25 @@ html, * {
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Palanquin";
+    src: url('/assets/fonts/Palanquin/Palanquin-Regular.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Palanquin";
+    src: url('/assets/fonts/Palanquin/Palanquin-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Palanquin";
+    src: url('/assets/fonts/Palanquin/Palanquin-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
 body {
   background-color:#f5f6f9;
-  font-family:"museo-sans-rounded", 'Palanquin', 'Calibri', 'Roboto', Verdana, sans-serif;
+  font-family:'museo-sans-rounded','Palanquin', 'Calibri', 'Roboto', Verdana, sans-serif;
   font-size:16px;
   line-height:22px;
   color:#333;
@@ -180,6 +196,13 @@ hr {
   border:0;
   margin:2em 0;
   border-top:1px solid #e0e0e0;
+}
+
+em {
+  font-style:italic;
+}
+strong {
+  font-weight:700;
 }
 
 .meta {
