@@ -344,7 +344,10 @@ gulp.task('bump_version_number', function () {
     .pipe(bump({
       type: release_type
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./')).on('end', function () {
+      //  Get package again because the one in memory now has an old version number
+      pkg = require('./package.json');
+    });
 
   return stream;
 });
@@ -374,8 +377,6 @@ gulp.task('copy_to_dist', ['release_assets_compile'], function () {
 });
 
 gulp.task('git_actions', ['copy_to_dist'], function (callback) {
-  //  Get package again because the one in memory now has an old version number
-  var pkg         = require('./package.json');
   console.log(pkg.version);
   var tag_version = 'v' + pkg.version;
   var commit_msg  = 'Committing changes for ' + tag_version;
