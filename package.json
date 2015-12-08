@@ -17,7 +17,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.7",
-    "imagemin-pngquant": "^4.2.0"
+    "imagemin-pngquant": "^4.2.0",
+    "require-reload": "^0.2.2"
   },
   "homepage": "https://styleguide.codeclubworld.org/",
   "name": "Code-Club-Style-Guide",
@@ -26,5 +27,5 @@
     "type": "git",
     "url": "git+https://github.com/style-guide.git"
   },
-  "version": "0.0.1-5"
+  "version": "0.0.1-6"
 }

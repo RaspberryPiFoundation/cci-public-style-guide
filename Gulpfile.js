@@ -6,8 +6,9 @@
 
 'use strict';
 
-//  Load generic process executor
-var exec = require('child_process').exec;
+//  Load generic node stuff
+var exec   = require('child_process').exec;
+var reload = require('require-reload')(require);
 
 //  Load package.json as JSON object
 var pkg  = require('./package.json');
@@ -346,7 +347,7 @@ gulp.task('bump_version_number', function () {
     }))
     .pipe(gulp.dest('./')).on('end', function () {
       //  Get package again because the one in memory now has an old version number
-      pkg = require('./package.json');
+      pkg = reload('./package.json');
     });
 
   return stream;
