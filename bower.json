@@ -1,0 +1,33 @@
+{
+  "name": "Code-Club-Style-Guide",
+  "description": "A collection of UI components for styling Code Club websites",
+  "main": "",
+  "authors": [
+    "Code Club World Ltd"
+  ],
+  "homepage": "https://github.com/CodeClub/style-guide",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "Capfile",
+    "config.ru",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gulpfile.js",
+    "packages.json",
+    "Procfile",
+    "Rakefile",
+    "README.rdoc",
+    "bower_components",
+    "app",
+    "bin",
+    "config",
+    "db",
+    "lib",
+    "node_modules",
+    "public",
+    "test",
+    "vendor"
+  ]
+}
