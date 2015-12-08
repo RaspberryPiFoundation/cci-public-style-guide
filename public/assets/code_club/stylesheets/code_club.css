@@ -2,13 +2,28 @@
  * code_club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.2
+ * @version v0.0.1-0
  * @link https://styleguide.codeclubworld.org/
  */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
 */
+@font-face {
+  font-family: 'Palanquin';
+  font-weight: 300;
+  src: url("../fonts/Palanquin/Palanquin-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Palanquin';
+  font-weight: 500;
+  src: url("../fonts/Palanquin/Palanquin-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Palanquin';
+  font-weight: 700;
+  src: url("../fonts/Palanquin/Palanquin-Bold.ttf") format("truetype"); }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -453,7 +468,7 @@ html {
 
 body {
   color: #666;
-  font-family: "museo-sans-rounded", sans-serif;
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
   font-size: 16;
   font-size: 16px;
   font-size: 1rem;

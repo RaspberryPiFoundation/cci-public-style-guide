@@ -2,7 +2,7 @@
  * application.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.0
+ * @version v0.0.1-0
  * @link https://styleguide.codeclubworld.org/
  */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -189,21 +189,6 @@ table {
 
 html, * {
   box-sizing: border-box; }
-
-@font-face {
-  font-family: "Palanquin";
-  src: url("/assets/fonts/Palanquin/Palanquin-Regular.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Palanquin";
-  src: url("/assets/fonts/Palanquin/Palanquin-Medium.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Palanquin";
-  src: url("/assets/fonts/Palanquin/Palanquin-Bold.ttf") format("truetype");
-  font-weight: 700; }
 
 body {
   background-color: #f5f6f9;
@@ -801,6 +786,7 @@ footer a:focus {
     display: block;
     margin: auto; }
 
+<<<<<<< ccf8939d75ff6dd14d5596cc2bdf7a53f720f680
 /* FAQ */
 .faq h4 {
   font-weight: 700;
@@ -819,6 +805,19 @@ footer a:focus {
   background-image: url(../code_club/images/icons/arrow-down-green.svg);
   background-position: 0 center;
   background-size: 0.7em; }
+=======
+.image_grid.icons .img img {
+  max-width: 20px;
+  max-height: 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+>>>>>>> Generated all public assets
 
 /* CARDS */
 .card {
