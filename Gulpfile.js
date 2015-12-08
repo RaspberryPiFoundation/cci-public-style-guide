@@ -383,7 +383,7 @@ gulp.task('git_actions', ['copy_to_dist'], function (callback) {
     'git add .',
     'git commit -m "' + commit_msg + '"',
     'git tag -a ' + tag_version + ' -m "Tagging as ' + tag_version + '"',
-    'git push origin test_branch --tags'
+    'git push origin master --tags'
   ].join(' && ');
 
   return exec(git_commands, function(err, stdout, stderr) {
