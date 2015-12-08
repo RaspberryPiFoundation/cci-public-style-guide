@@ -14,21 +14,7 @@ html, * {
   box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Palanquin";
-    src: url('/assets/fonts/Palanquin/Palanquin-Regular.ttf') format('truetype');
-    font-weight: 300;
-}
-@font-face {
-    font-family: "Palanquin";
-    src: url('/assets/fonts/Palanquin/Palanquin-Medium.ttf') format('truetype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: "Palanquin";
-    src: url('/assets/fonts/Palanquin/Palanquin-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
+
 
 body {
   background-color:$page_bg;
