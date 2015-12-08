@@ -378,7 +378,6 @@ gulp.task('copy_to_dist', ['release_assets_compile'], function () {
 });
 
 gulp.task('git_actions', ['copy_to_dist'], function (callback) {
-  console.log(pkg.version);
   var tag_version = 'v' + pkg.version;
   var commit_msg  = 'Committing changes for ' + tag_version;
 
