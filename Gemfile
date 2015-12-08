@@ -21,7 +21,6 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   gem 'capistrano',             require: false
-  gem 'capistrano-deploytags',  require: false
   gem 'capistrano-rvm',         require: false
   gem 'capistrano3-puma',       require: false
   gem 'slackistrano',           require: false

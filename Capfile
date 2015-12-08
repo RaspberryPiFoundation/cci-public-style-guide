@@ -3,7 +3,6 @@ require 'capistrano/setup'
 require 'capistrano/deploy'
 
 require 'capistrano/bundler'
-require 'capistrano/deploytags'
 require 'capistrano/rbenv'
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
