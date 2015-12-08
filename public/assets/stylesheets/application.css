@@ -323,6 +323,18 @@ ul.alt li {
   padding-left: 2em;
   margin-bottom: 0.7em; }
 
+.simple_list li {
+  background-image: none;
+  padding-left: 0; }
+
+.row_listing {
+  border-top: 1px solid #e0e0e0; }
+  .row_listing li {
+    background-image: none; }
+    .row_listing li h4 {
+      margin: 0;
+      font-size: 1em; }
+
 ol {
   list-style: decimal; }
 
@@ -458,11 +470,13 @@ th {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 5%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.body_wrap > .layout {
+  padding: 0 5%; }
 
 .col {
   -webkit-box-flex: 0;
@@ -481,7 +495,6 @@ th {
 
 @media (min-width: 600px) {
   .layout {
-    padding: 0 5%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -490,6 +503,8 @@ th {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+  .body_wrap > .layout {
+    padding: 0 5%; }
   .height-inherit {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -518,7 +533,7 @@ th {
             flex-basis: 96%; } }
 
 @media (min-width: 720px) {
-  .layout {
+  .body_wrap > .layout {
     padding: 0 8%; }
   .grid {
     background-image: url(/assets/images/grid_desktop.svg); }
@@ -798,6 +813,25 @@ footer a:focus {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
+
+/* FAQ */
+.faq h4 {
+  font-weight: 700;
+  font-size: 1em;
+  color: #545454;
+  cursor: pointer;
+  background: url(../code_club/images/icons/arrow-right-green.svg) no-repeat 0.2em center;
+  padding-left: 1.2em;
+  margin-left: -1.2em;
+  background-size: 0.4em; }
+
+.faq:hover {
+  color: #333; }
+
+.faq .down {
+  background-image: url(../code_club/images/icons/arrow-down-green.svg);
+  background-position: 0 center;
+  background-size: 0.7em; }
 
 /* CARDS */
 .card {
@@ -1205,13 +1239,14 @@ input[type="submit"]:hover {
 
 .link {
   text-decoration: none;
-  color: #339933; }
+  color: #339933;
+  font-weight: 500; }
 
 .link.icon {
   background-repeat: no-repeat;
   background-position: 0 center;
   padding-left: 1.4em !important;
-  background-size: 1em; }
+  background-size: 0.8em; }
 
 .link.icon.right {
   background-position: right center;
@@ -1224,6 +1259,11 @@ input[type="submit"]:hover {
 .link.icon.calendar:hover,
 .link.icon.calendar:focus {
   background-image: url(../images/icons/calendar.svg); }
+
+.link.icon.document {
+  background-image: url(../images/icons/document-green.svg); }
+  .link.icon.document:hover {
+    background-image: url(../images/icons/document.svg); }
 
 .email {
   background-image: url(../images/icons/email.svg); }

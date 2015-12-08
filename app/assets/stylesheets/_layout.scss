@@ -3,8 +3,10 @@
 .layout {
   display:flex;
   flex-direction:column;
-  padding:0 5%;
   justify-content:space-between;
+}
+.body_wrap > .layout {
+   padding:0 5%;
 }
 .col {
   flex-grow:0;
@@ -24,9 +26,11 @@
 @media (min-width: 600px) {
 
   .layout {
-    padding:0 5%;
     flex-direction:row;
     flex-wrap:wrap;
+  }
+  .body_wrap > .layout {
+    padding:0 5%;
   }
 
   .height-inherit {
@@ -62,7 +66,7 @@
 // tablet-landscape/desktop
 @media (min-width: 720px) {
 
-  .layout {
+  .body_wrap > .layout {
     padding:0 8%;
   }
 
@@ -360,6 +364,29 @@ footer a:focus {
     left:50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
+}
+
+
+/* FAQ */
+.faq {
+  h4 {
+    font-weight:700;
+    font-size:1em;
+    color:#545454;
+    cursor:pointer;
+    background:url(../code_club/images/icons/arrow-right-green.svg) no-repeat 0.2em center;
+    padding-left:1.2em;
+    margin-left:-1.2em;
+    background-size:0.4em
+  }
+  &:hover {
+    color:#333;
+  }
+  .down {
+    background-image:url(../code_club/images/icons/arrow-down-green.svg);
+    background-position:0 center;
+    background-size:0.7em
+  }
 }
 
 

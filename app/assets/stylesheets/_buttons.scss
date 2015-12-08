@@ -80,12 +80,13 @@
 .link {
   text-decoration:none;
   color:#339933;
+  font-weight:500;
 }
 .link.icon {
   background-repeat:no-repeat;
   background-position:0 center;
   padding-left:1.4em !important;
-  background-size:1em;
+  background-size:0.8em;
 }
 .link.icon.right {
   background-position:right center;
@@ -98,6 +99,12 @@
 .link.icon.calendar:hover,
 .link.icon.calendar:focus {
   background-image:url(../images/icons/calendar.svg);
+}
+.link.icon.document {
+  background-image:url(../images/icons/document-green.svg);
+  &:hover {
+    background-image:url(../images/icons/document.svg);
+  }
 }
 
 
