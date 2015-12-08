@@ -2,7 +2,7 @@
  * code_club.js
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-1
+ * @version v0.0.1-2
  * @link https://styleguide.codeclubworld.org/
  */
 'use strict';
