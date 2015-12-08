@@ -1,3 +1,15 @@
+// Colour vars
+$page_bg: #f5f6f9;    //page bg
+$dark-grey: #333333;  //text colour
+$light_grey: #e0e0e0; //borders
+$green: #339933;      //brand, buttons, heros, interaction points
+$blue: #5290d2;       //primary page action blocks
+$white: #ffffff;
+$warning: #fff578;
+$warning-alt: #fff578;
+$error: #ff5252;
+
+
 html, * {
   box-sizing: border-box;
 }
@@ -19,11 +31,11 @@ html, * {
 }
 
 body {
-  background-color:#f5f6f9;
+  background-color:$page_bg;
   font-family:'museo-sans-rounded','Palanquin', 'Calibri', 'Roboto', Verdana, sans-serif;
   font-size:16px;
   line-height:22px;
-  color:#333;
+  color:$dark-grey;
   font-weight:300;
 }
 
@@ -31,7 +43,7 @@ body {
   text-align:center;
 }
 .rule {
-  border-bottom:1px solid #e0e0e0;
+  border-bottom:1px solid $light_grey;
   padding-bottom:0.8em;
 }
 .light {
@@ -154,7 +166,7 @@ ul.alt li {
   }
 }
 .row_listing {
-  border-top:1px solid #e0e0e0;
+  border-top:1px solid $light_grey;
   li {
     background-image:none;
     h4 {
@@ -169,11 +181,11 @@ ol {
 }
 
 dl {
-  border-top:1px solid #e0e0e0;
+  border-top:1px solid $light_grey;
   list-style:none;
 }
 dl li {
-  border-bottom:1px solid #e0e0e0;
+  border-bottom:1px solid $light_grey;
   overflow:hidden;
   padding:0.6em 0 0.6em 10em;
 }
@@ -192,8 +204,8 @@ code,.mono {
 }
 code {
   display:inline-block;
-  border:1px solid #e0e0e0;
-  background:#f6f6f6;
+  border:1px solid $light_grey;
+  background:$page_bg;
   padding:0.5em;
   border-radius:4px;
 }
@@ -212,7 +224,7 @@ pre code {
 hr {
   border:0;
   margin:2em 0;
-  border-top:1px solid #e0e0e0;
+  border-top:1px solid $light_grey;
 }
 
 em {
