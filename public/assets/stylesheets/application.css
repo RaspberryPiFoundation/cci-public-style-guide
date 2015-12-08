@@ -787,32 +787,19 @@ footer a:focus {
   background: url(../images/icons/arrow-right.svg) no-repeat right 10px center;
   background-size: 0.5em; }
 
-.image_grid > div {
-  float: left;
-  margin: 0 0 5% 0;
-  width: 130px;
-  overflow: visible; }
-
-.image_grid .img {
+.img {
   border: 1px solid #e0e0e0;
-  width: 100px;
   height: 100px;
   border-radius: 5px;
-  position: relative; }
-
-.image_grid.icons .img img {
-  max-width: 20px;
-  max-height: 20px;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .img img {
+    max-width: 20px;
+    max-height: 20px;
+    display: block;
+    margin: auto; }
 
 /* FAQ */
 .faq h4 {
