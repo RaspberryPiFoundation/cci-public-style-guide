@@ -6,7 +6,7 @@
 //  Settings
 @import 'settings/colors';
 @import 'settings/fonts';
-@import 'settings/responsive_breakpoints';
+@import 'settings/responsive-breakpoints';
 @import 'settings/typography';
 
 //  Tools
@@ -15,8 +15,8 @@
 
 //  Generic Styles
 @import 'generic/normalize';
-@import 'generic/box_sizing';
-@import 'generic/clearfixed_elements';
+@import 'generic/box-sizing';
+@import 'generic/clearfixed-elements';
 
 //  Objects
 @import 'objects/grid';
@@ -52,7 +52,7 @@
 
 //  Utilities
 @import 'utilities/clearfix';
-@import 'utilities/element_visibility';
+@import 'utilities/element-visibility';
 @import 'utilities/links-color';
 @import 'utilities/text-alignment';
 @import 'utilities/text-color';
