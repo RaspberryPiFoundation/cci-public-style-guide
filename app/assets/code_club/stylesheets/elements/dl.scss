@@ -1,0 +1,13 @@
+dl {
+	margin: 0;
+	margin-bottom: $baseline-unit-px;
+
+	dd {
+    margin: 0;
+	}
+
+	dt {
+    font-weight: $font-weight-bold;
+		margin:      0;
+	}
+}

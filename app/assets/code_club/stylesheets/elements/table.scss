@@ -2,6 +2,10 @@ table {
 	border-collapse: collapse;
 	margin-bottom:   $baseline-unit-px;
 
+	thead {
+		font-weight: bold;
+	}
+
 	td, th {
 		margin: 0;
 	}

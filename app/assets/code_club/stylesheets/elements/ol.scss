@@ -1,0 +1,12 @@
+ol {
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+
+	li {
+		list-style: decimal;
+	}
+
+	ol, ul {
+		margin-bottom: 0;
+	}
+}

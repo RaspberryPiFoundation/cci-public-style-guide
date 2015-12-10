@@ -1,19 +1,30 @@
-.hide-text {
+.u-hide-text {
 	overflow:    hidden;
 	text-indent: 100%;
 	white-space: nowrap;
 }
 
-.hidden {
+.u-hidden {
 	display:    none !important;
 	visibility: hidden;
 }
 
-.invisible {
+.u-invisible {
 	visibility: hidden;
 }
 
-.visually-hidden {
+.u-sr-only {
+  position: absolute;
+  width:    1px;
+  height:   1px;
+  padding:  0;
+  margin:   -1px;
+  overflow: hidden;
+  clip:     rect(0, 0, 0, 0);
+  border:   0;
+}
+
+.u-visually-hidden {
 	border:   0;
 	clip:     rect(0 0 0 0);
 	height:   1px;

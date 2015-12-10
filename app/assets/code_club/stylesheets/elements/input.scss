@@ -1,0 +1,19 @@
+input {
+	font-family: $font-family-primary;
+
+	::-webkit-input-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+
+	:-moz-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+
+	::-moz-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+
+	:-ms-input-placeholder {
+		color: rgba($color-default, 0.25);
+	}
+}

@@ -22,13 +22,30 @@
 @import 'objects/grid';
 
 //  Elements
-@import 'elements/block_elements';
-@import 'elements/blockquotes';
-@import 'elements/headings';
-@import 'elements/links';
-@import 'elements/lists';
-@import 'elements/page';
-@import 'elements/tables';
+@import 'elements/_html-body';
+@import 'elements/a';
+@import 'elements/address';
+@import 'elements/b';
+@import 'elements/blockquote';
+@import 'elements/button';
+@import 'elements/cite';
+@import 'elements/code';
+@import 'elements/dl';
+@import 'elements/em';
+@import 'elements/figure';
+@import 'elements/h1-6';
+@import 'elements/i';
+@import 'elements/input';
+@import 'elements/label';
+@import 'elements/ol';
+@import 'elements/p';
+@import 'elements/pre';
+@import 'elements/select';
+@import 'elements/strong';
+@import 'elements/table';
+@import 'elements/textarea';
+@import 'elements/time';
+@import 'elements/ul';
 
 //  Components
 @import 'components/button';
@@ -36,5 +53,6 @@
 //  Utilities
 @import 'utilities/clearfix';
 @import 'utilities/element_visibility';
-@import 'utilities/links';
-@import 'utilities/text';
+@import 'utilities/links-color';
+@import 'utilities/text-alignment';
+@import 'utilities/text-color';

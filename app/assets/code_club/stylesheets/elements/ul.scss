@@ -1,0 +1,12 @@
+ul {
+	margin:        0;
+	margin-bottom: $baseline-unit-px;
+
+	li {
+		list-style: disc;
+	}
+
+	ol, ul {
+		margin-bottom: 0;
+	}
+}

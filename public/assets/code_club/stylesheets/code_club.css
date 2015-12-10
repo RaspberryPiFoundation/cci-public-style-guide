@@ -384,7 +384,7 @@ th {
 
 blockquote {
   margin: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 22px; }
   blockquote p:before,
   blockquote p:after {
     display: inline-block;
@@ -395,7 +395,7 @@ blockquote {
     content: '\201D'; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 700;
   margin: 0;
   margin-bottom: 28px;
   margin-bottom: 1.75rem;
@@ -405,25 +405,36 @@ h1 {
   font-size: 48px;
   font-size: 3rem;
   font-weight: 700;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 1em; }
 
 h2 {
   font-size: 36px;
   font-size: 2.25rem;
   font-weight: 700;
-  line-height: 1; }
+  line-height: 1;
+  margin-bottom: 1em; }
 
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 1em; }
 
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 2; }
+  line-height: 2;
+  margin-bottom: 1em; }
+
+h4 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 2.57143;
+  margin-bottom: 1em; }
 
 a {
   color: #2d862d;
@@ -438,15 +449,16 @@ a {
 
 dl {
   margin: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 22px; }
   dl dd {
-    margin-left: 24px; }
+    margin: 0; }
   dl dt {
+    font-weight: 700;
     margin: 0; }
 
 ol {
   margin: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 22px; }
   ol li {
     list-style: decimal; }
   ol ol, ol ul {
@@ -454,7 +466,7 @@ ol {
 
 ul {
   margin: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 22px; }
   ul li {
     list-style: disc; }
   ul ol, ul ul {
@@ -463,19 +475,17 @@ ul {
 html {
   background: #f5f6f9;
   font-size: 16px;
+  font-size: 1rem;
   height: 100%;
   width: 100%; }
 
 body {
-  color: #666;
+  color: #333;
   font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
-  font-size: 16;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  padding: 4rem;
+  line-height: 1.375;
   position: relative;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -485,63 +495,42 @@ body {
 
 table {
   border-collapse: collapse;
-  margin-bottom: 24px; }
+  margin-bottom: 22px; }
+  table thead {
+    font-weight: bold; }
   table td, table th {
     margin: 0; }
 
-.clearfix:before, article:before,
-div:before,
-dl:before,
-fieldset:before,
-footer:before,
-form:before,
-header:before,
-main:before,
-ol:before,
-section:before,
-nav:before,
-ul:before, .clearfix:after, article:after,
-div:after,
-dl:after,
-fieldset:after,
-footer:after,
-form:after,
-header:after,
-main:after,
-ol:after,
-section:after,
-nav:after,
-ul:after {
+.u-clearfix:before, .u-clearfix:after {
   content: " " !important;
   display: table !important; }
 
-.clearfix:after, article:after,
-div:after,
-dl:after,
-fieldset:after,
-footer:after,
-form:after,
-header:after,
-main:after,
-ol:after,
-section:after,
-nav:after,
-ul:after {
+.u-clearfix:after {
   clear: both !important; }
 
-.hide-text {
+.u-hide-text {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap; }
 
-.hidden {
+.u-hidden {
   display: none !important;
   visibility: hidden; }
 
-.invisible {
+.u-invisible {
   visibility: hidden; }
 
-.visually-hidden {
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.u-visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -551,43 +540,43 @@ ul:after {
   position: absolute;
   width: 1px; }
 
-.text-success a, a.text-success {
+.u-text-success a, a.u-text-success {
   color: #54ba54; }
-  .text-success a:active, .text-success a:focus, .text-success a:hover, .text-success a:visited, a.text-success:active, a.text-success:focus, a.text-success:hover, a.text-success:visited {
+  .u-text-success a:active, .u-text-success a:focus, .u-text-success a:hover, .u-text-success a:visited, a.u-text-success:active, a.u-text-success:focus, a.u-text-success:hover, a.u-text-success:visited {
     color: #3f9c3f; }
 
-.text-warning a, a.text-warning {
+.u-text-warning a, a.u-text-warning {
   color: #fff578; }
-  .text-warning a:active, .text-warning a:focus, .text-warning a:hover, .text-warning a:visited, a.text-warning:active, a.text-warning:focus, a.text-warning:hover, a.text-warning:visited {
+  .u-text-warning a:active, .u-text-warning a:focus, .u-text-warning a:hover, .u-text-warning a:visited, a.u-text-warning:active, a.u-text-warning:focus, a.u-text-warning:hover, a.u-text-warning:visited {
     color: #fff145; }
 
-.text-danger a, a.text-danger {
+.u-text-danger a, a.u-text-danger {
   color: #ff5252; }
-  .text-danger a:active, .text-danger a:focus, .text-danger a:hover, .text-danger a:visited, a.text-danger:active, a.text-danger:focus, a.text-danger:hover, a.text-danger:visited {
+  .u-text-danger a:active, .u-text-danger a:focus, .u-text-danger a:hover, .u-text-danger a:visited, a.u-text-danger:active, a.u-text-danger:focus, a.u-text-danger:hover, a.u-text-danger:visited {
     color: #ff1f1f; }
 
-.text-center {
-  text-align: center; }
+.u-text-center {
+  text-align: center  !important; }
 
-.text-justify {
-  text-align: justify; }
+.u-text-justify {
+  text-align: justify !important; }
 
-.text-left {
-  text-align: left; }
+.u-text-left {
+  text-align: left    !important; }
 
-.text-right {
-  text-align: right; }
+.u-text-right {
+  text-align: right   !important; }
 
-.text-danger {
-  color: #ff5252; }
+.u-text-danger {
+  color: #ff5252 !important; }
 
-.text-primary {
-  color: #5290d2; }
+.u-text-primary {
+  color: #5290d2 !important; }
 
-.text-success {
-  color: #54ba54; }
+.u-text-success {
+  color: #54ba54 !important; }
 
-.text-warning {
-  color: #fff578; }
+.u-text-warning {
+  color: #fff578 !important; }
 
 /*# sourceMappingURL=code_club.css.map */

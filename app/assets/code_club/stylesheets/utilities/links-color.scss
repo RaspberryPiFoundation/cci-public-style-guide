@@ -1,6 +1,6 @@
 a {
-	.text-success &,
-	&.text-success {
+	.u-text-success &,
+	&.u-text-success {
 		color: $color-success;
 
 		&:active,
@@ -11,8 +11,8 @@ a {
 		}
 	}
 
-	.text-warning &,
-	&.text-warning {
+	.u-text-warning &,
+	&.u-text-warning {
 		color: $color-warning;
 
 		&:active,
@@ -23,8 +23,8 @@ a {
 		}
 	}
 
-	.text-danger &,
-	&.text-danger {
+	.u-text-danger &,
+	&.u-text-danger {
 		color: $color-danger;
 
 		&:active,

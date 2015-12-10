@@ -11,12 +11,8 @@
   }
 }
 
-@mixin font-size($font-size, $line-height: false) {
+@mixin font-size($font-size) {
 	@include rem('font-size', $font-size);
-
-	@if $line-height == true {
-		@include line-height();
-	}
 }
 
 @mixin hidpi-styles {
@@ -33,7 +29,7 @@
 @mixin image-2x($image, $width: auto, $height: auto) {
 	@include hidpi-styles {
 		background-image: url($image);
-		background-size: $width $height;
+		background-size:  $width $height;
 	}
 }
 
@@ -42,33 +38,24 @@
 }
 
 @mixin mq($measurement, $value) {
-	@media only screen and ($measurement: $value + px) {
+	@media only screen and ($measurement: ($value * 1px)) {
 		@content;
 	}
 }
 
+//  Includes px value for fallback in browsers with no support for rem units
 @mixin rem($property, $value) {
 	#{$property}: #{$value}px;
 	#{$property}: ($value / $font-size) * 1rem;
 }
 
-
-//	http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32#variables_in_queries_using_content
 @mixin respond-to($media) {
 	$measurement: min-width !default;
 	$value:       $break-wide !default;
 
-	@if $media == tiny {
+	@if $media == narrow {
 		$measurement: max-width;
-		$value:       $break-narrow;
-	}
-	@else if $media == narrow {
-		$measurement: min-width;
-		$value:       $break-narrow;
-	}
-	@else if $media == medium {
-		$measurement: min-width;
-		$value:       $break-medium;
+		$value:       $break-regular;
 	}
 	@else if $media == regular {
 		$measurement: min-width;
