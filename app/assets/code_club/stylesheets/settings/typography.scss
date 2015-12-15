@@ -1,12 +1,20 @@
 //	Baseline stuff
-$baseline-unit:    22;
-$baseline-unit-px: #{$baseline-unit}px;
+$baseline-unit: 22;
 
 //	Line Heights
 $line-height:    $baseline-unit;
-$line-height-h1: 36;
-$line-height-h2: 36;
-$line-height-h3: 36;
-$line-height-h4: 36;
-$line-height-h5: 36;
-$line-height-h6: 36;
+$line-height-h1: 34;
+$line-height-h2: 29;
+$line-height-h3: 24;
+$line-height-h4: 19;
+$line-height-h5: 17;
+$line-height-h6: 17;
+
+//  Margins
+$margin-bottom:    16;
+$margin-bottom-h1: 14;
+$margin-bottom-h2: 14;
+$margin-bottom-h3: 16;
+$margin-bottom-h4: 16;
+$margin-bottom-h5: 14;
+$margin-bottom-h6: 14;

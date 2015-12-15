@@ -10,11 +10,11 @@ $color-default-l:   #ccc;
 $color-primary:     #5290d2;
 $color-primary-d:   darken($color-primary, 10);
 
-$color-success:     #54ba54;
+$color-success:     #393;
 $color-success-d:   darken($color-success, 10);
 
 $color-warning:     #fff578;
-$color-warning-d:   darken($color-warning, 10);
+$color-warning-d:   #f17f1a;
 
 //	Colors
 $color-text:      $color-default;
@@ -23,6 +23,6 @@ $color-borders:   #e0e0e0;
 
 $color-highlight: $color-primary;
 
-$color-links:         #2d862d;
+$color-links:         #393;
 $color-links-active:  $color-links;
 $color-links-visited: $color-links;
