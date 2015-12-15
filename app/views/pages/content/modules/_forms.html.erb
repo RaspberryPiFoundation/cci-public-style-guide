@@ -1,10 +1,6 @@
-<div class="content_wrap">
+<div class="layout margin-double">
+  <div class="col col1of1 pad2 padx3 bubble">
 
-	<ul>
-		<li>Should talk about layout of forms (structure, headings, dividers)</li>
-	</ul>
-
-	<section class="bubble">
 		<form>
 			<h3>Basic elements</h3>
 
@@ -13,10 +9,20 @@
 				<input type="text" id="text_input1">
 			</div>
 
+      <pre><code>&#x3C;div&#x3E;
+  &#x3C;label for=&#x22;text_input1&#x22;&#x3E;Text input&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_input1&#x22;&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+
 			<div>
 				<label for="text_input2">Text input with placeholder text</label>
 				<input type="text" id="text_input2" placeholder="A simple instruction">
 			</div>
+
+      <pre><code>&#x3C;div&#x3E;
+  &#x3C;label for=&#x22;text_input2&#x22;&#x3E;Text input with placeholder text&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_input2&#x22; placeholder=&#x22;A simple instruction&#x22;&#x3E;
+&#x3C;/div&#x3E;</code></pre>
 
 			<div>
 				<label for="text_input1">A field with a additional info</label>
@@ -63,9 +69,7 @@
 				</div>
 			</div>
 	  </form>
-	</section>
 
-	<section class="bubble">
 		<form>
 			<h3>More advanced elements</h3>
 
@@ -130,9 +134,7 @@
 				</div>
 			</div>
 		</form>
-	</section>
 
-	<section class="bubble">
 		<h3>Alternative styles</h3>
 
 		<h4>Label-in text fields</h4>
@@ -150,9 +152,7 @@
 	  		<input type="password" id="labelin_input2">
 			</div>
 		</form>
-	</section>
 
-	<section class="bubble">
 		<h3>End of form bits</h3>
 
 		<form>
@@ -164,5 +164,6 @@
 				<p>Some small print, By clicking Continue, you acknowledge that you have read and agree to the Code Club Terms & Conditions.</p>
 			</div>
 		</form>
-	</section>
+
+  </div>
 </div>

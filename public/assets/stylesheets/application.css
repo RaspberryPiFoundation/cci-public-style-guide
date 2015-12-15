@@ -609,6 +609,34 @@ th {
 .margin-zero {
   margin-bottom: 0; }
 
+.alert {
+  background: #339933;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.9em; }
+  .alert.info {
+    background: #5290d2; }
+  .alert.warning {
+    background: #fff578;
+    color: #333333; }
+  .alert.error {
+    background: #ff5252; }
+  .alert img {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0 6px -3px 0; }
+  .alert.inline {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 3em;
+    position: relative; }
+    .alert.inline img {
+      position: absolute;
+      left: 1em;
+      top: 1em; }
+
 /* PRIMARY NAV */
 #nav_pri {
   background: #fff;
