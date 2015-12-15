@@ -1,6 +1,6 @@
 blockquote {
 	margin:        0;
-	margin-bottom: $baseline-unit-px;
+	@include rem('margin-bottom', $margin-bottom);
 
 	p:before,
 	p:after {

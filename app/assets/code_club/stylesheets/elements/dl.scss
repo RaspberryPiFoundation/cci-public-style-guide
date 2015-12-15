@@ -1,6 +1,6 @@
 dl {
 	margin: 0;
-	margin-bottom: $baseline-unit-px;
+	@include rem('margin-bottom', $margin-bottom);
 
 	dd {
     margin: 0;

@@ -1,0 +1,11 @@
+form {
+  @include rem('margin-bottom', $margin-bottom);
+}
+
+  fieldset {
+    @include rem('margin-bottom', $margin-bottom);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }

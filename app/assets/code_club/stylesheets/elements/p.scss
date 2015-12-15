@@ -1,4 +1,5 @@
 p {
-	margin:        0;
-	margin-bottom: $baseline-unit-px;
+	margin:    0;
+	@include rem('margin-bottom', $margin-bottom);
+	max-width: 40em;
 }
