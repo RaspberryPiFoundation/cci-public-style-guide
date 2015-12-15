@@ -6,7 +6,8 @@
   justify-content:space-between;
 }
 .body_wrap > .layout {
-   padding:0 5%;
+   padding-left:5%;
+   padding-right:5%;
 }
 .col {
   flex-grow:0;
@@ -28,9 +29,6 @@
   .layout {
     flex-direction:row;
     flex-wrap:wrap;
-  }
-  .body_wrap > .layout {
-    padding:0 5%;
   }
 
   .height-inherit {
@@ -67,7 +65,8 @@
 @media (min-width: 720px) {
 
   .body_wrap > .layout {
-    padding:0 8%;
+    padding-left:8%;
+    padding-right:8%;
   }
 
   .grid {
