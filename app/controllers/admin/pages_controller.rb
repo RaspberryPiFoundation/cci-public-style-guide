@@ -16,7 +16,7 @@ class Admin::PagesController < AdminController
     @page = Page.new(page_params)
 
     if @page.save
-      redirect_to :admin_pages, notice: 'Page was successfully created.'
+      redirect_to :admin_index, notice: 'Page was successfully created.'
     else
       render :new
     end
@@ -25,7 +25,7 @@ class Admin::PagesController < AdminController
   # PATCH/PUT /admin/pages/1
   def update
     if @page.update(page_params)
-      redirect_to @page, notice: 'Page was successfully updated.'
+      redirect_to :admin_index, notice: 'Page was successfully updated.'
     else
       render :edit
     end
@@ -34,7 +34,7 @@ class Admin::PagesController < AdminController
   # DELETE /admin/pages/1
   def destroy
     @page.destroy
-    redirect_to pages_url, notice: 'Page was successfully destroyed.'
+    redirect_to :admin_index, notice: 'Page was successfully destroyed.'
   end
 
   private

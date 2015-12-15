@@ -15,7 +15,7 @@ class Admin::SectionsController < AdminController
     @section = Section.new(section_params)
 
     if @section.save
-      redirect_to @section, notice: 'Section was successfully created.'
+      redirect_to :admin_index, notice: 'Section was successfully created.'
     else
       render :new
     end
@@ -24,7 +24,7 @@ class Admin::SectionsController < AdminController
   # PATCH/PUT /admin/sections/1
   def update
     if @section.update(section_params)
-      redirect_to :admin_sections, notice: 'Section was successfully updated.'
+      redirect_to :admin_index, notice: 'Section was successfully updated.'
     else
       render :edit
     end
@@ -33,7 +33,7 @@ class Admin::SectionsController < AdminController
   # DELETE /admin/sections/1
   def destroy
     @section.destroy
-    redirect_to sections_url, notice: 'Section was successfully destroyed.'
+    redirect_to :admin_index, notice: 'Section was successfully destroyed.'
   end
 
   private
