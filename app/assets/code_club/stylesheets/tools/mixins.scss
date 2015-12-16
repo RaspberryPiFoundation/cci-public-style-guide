@@ -38,7 +38,7 @@
 }
 
 @mixin mq($measurement, $value) {
-	@media only screen and ($measurement: ($value * 1px)) {
+	@media only screen and ($measurement: ($value * 1em)) {
 		@content;
 	}
 }
@@ -50,19 +50,23 @@
 }
 
 @mixin respond-to($media) {
-	$measurement: min-width !default;
+	$measurement: 'min-width' !default;
 	$value:       $break-wide !default;
 
-	@if $media == narrow {
-		$measurement: max-width;
+  @if $media == 'tiny' {
+    $measurement: 'max-width';
+		$value:       $break-narrow;
+  }
+	@else if $media == 'narrow' {
+		$measurement: 'min-width';
+		$value:       $break-narrow;
+	}
+	@else if $media == 'regular' {
+		$measurement: 'min-width';
 		$value:       $break-regular;
 	}
-	@else if $media == regular {
-		$measurement: min-width;
-		$value:       $break-regular;
-	}
-	@else if $media == wide {
-		$measurement: min-width;
+	@else if $media == 'wide' {
+		$measurement: 'min-width';
 		$value:       $break-wide;
 	}
 
