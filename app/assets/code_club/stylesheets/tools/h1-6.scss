@@ -1,0 +1,41 @@
+@mixin h1 {
+	@include font-size($font-size-h1);
+	font-weight: $font-weight-h1;
+	@include line-height($font-size-h1, $line-height-h1);
+	@include rem('margin-bottom', $margin-bottom-h1);
+}
+
+@mixin h2 {
+	@include font-size($font-size-h2);
+	font-weight: $font-weight-h2;
+	@include line-height($font-size-h2, $line-height-h2);
+	@include rem('margin-bottom', $margin-bottom-h2);
+}
+
+@mixin h3 {
+	@include font-size($font-size-h3);
+	font-weight: $font-weight-h3;
+	@include line-height($font-size-h3, $line-height-h3);
+	@include rem('margin-bottom', $margin-bottom-h3);
+}
+
+@mixin h4 {
+	@include font-size($font-size-h4);
+	font-weight: $font-weight-h4;
+	@include line-height($font-size-h4, $line-height-h4);
+	@include rem('margin-bottom', $margin-bottom-h4);
+}
+
+@mixin h5 {
+	@include font-size($font-size-h5);
+	font-weight: $font-weight-h5;
+	@include line-height($font-size-h5, $line-height-h5);
+	@include rem('margin-bottom', $margin-bottom-h5);
+}
+
+@mixin h6 {
+	@include font-size($font-size-h6);
+	font-weight: $font-weight-h6;
+	@include line-height($font-size-h6, $line-height-h6);
+	@include rem('margin-bottom', $margin-bottom-h6);
+}
