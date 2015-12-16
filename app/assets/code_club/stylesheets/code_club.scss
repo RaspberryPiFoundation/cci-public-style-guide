@@ -15,11 +15,11 @@
 
 //  Generic Styles
 @import 'generic/normalize';
+@import 'generic/flexbox-grid';
 @import 'generic/box-sizing';
 @import 'generic/clearfixed-elements';
 
 //  Objects
-@import 'objects/grid';
 
 //  Elements
 @import 'elements/_html-body';
