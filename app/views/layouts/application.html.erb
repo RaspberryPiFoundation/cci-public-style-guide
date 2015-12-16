@@ -4,12 +4,12 @@
   	<%= render 'shared/head' %>
   </head>
 
-  <body class="<%= body_class %>">
+  <body class="sg-body <%= body_class %>">
     <%= render 'shared/navigation' %>
 
-    <div class="body_wrap">
+    <main class="sg-content-wrapper">
       <%= yield %>
-    </div>
+    </main>
 
     <%= render 'shared/footer' %>
   </body>
