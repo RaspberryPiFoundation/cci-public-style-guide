@@ -1,0 +1,68 @@
+<div class="sg-panel">
+	<h2>Fonts</h2>
+
+	<p>Our main font is Museo Sans Rounded and is used in weights 300 (default) and 500 (bold, headings, links, buttons).</p>
+
+	<p>Museo is not a system font, so it must be purchased and licensed for web use. It is available to license from the following vendors, as well as many others:</p>
+
+	<ul>
+		<li><a href="https://typekit.com/fonts/museo-sans-rounded">Museo Sans Rounded on Typekit</a></li>
+		<li><a href="https://www.myfonts.com/fonts/exljbris/museo-sans-rounded/">Museo Sans Rounded on MyFonts</a></li>
+		<li><a href="http://www.fonts.com/font/exljbris/museo-sans/rounded-300/web-font">Museo Sans Rounded on fonts.com</a></li>
+	</ul>
+
+	<p>For Cryllic alphabets, we use <a href="https://www.myfonts.com/fonts/exljbris/museo-sans-cyrillic/webfont_preview.html">Museo Sans Cyrillic</a>.</p>
+
+	<hr>
+
+	<h2>Headings</h2>
+
+	<div class="sg-example">
+		<h3 class="sg-example-heading">Example</h3>
+
+		<% for header in 1..6 do %>
+			<h<%= header %>>h<%= header %>. Heading Level <%= header %></h<%= header %>>
+		<% end %>
+
+		<code class="sg-code">
+			<% for header in 1..6 do %>
+				&lt;h<%= header %>&gt;h<%= header %>. Heading Level <%= header %>&lt;/h<%= header %>&gt;<br>
+			<% end %>
+		</code>
+	</div>
+
+	<hr>
+
+	<h2>Body copy</h2>
+
+	<p>Paragraphs are set at 16px with a 22px leading. For legibility, the maximum line-length is 40em. This is the base font sizing. On larger screens, the relative em value will increase.</p>
+	<p>On smaller devices the base font sizing remains the same but the headings will decrease in relative size.</p>
+
+	<code class="sg-code">
+		&lt;p&gt;...&lt;/p&gt;
+	</code>
+
+	<p class="meta">Smaller items can be set in 14px. Useful for meta information, notes, etc</p>
+
+	<code class="sg-code">
+		&lt;p class="meta"&gt;...&lt;/p&gt;
+	</code>
+
+	<p class="big">There is a larger class which is useful for presenting introductory pieces of text, callouts, or similar.</p>
+
+	<code class="sg-code">
+		&lt;p class="big"&gt;...&lt;/p&gt;
+	</code>
+
+	<hr>
+
+	<h3>Alignment classes</h3>
+
+	<p><code>.center</code> Centers text</p>
+
+	<p><code>.rule</code> Adds a horizontal rule under a block-level piece of text</p>
+
+	<p><code>.light</code> White text for darker backgrounds</p>
+
+	<p><code>.subtle</code> Text with a 60% opacity</p>
+</div>

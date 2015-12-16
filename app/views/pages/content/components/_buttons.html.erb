@@ -10,6 +10,22 @@
 
     <br><br>
 
+		<%= ui_variants('button', show_code = true) %>
+		<hr>
+		<%= ui_variants_code('button') %>
+
+		<hr>
+
+		<%= ui('button', { :content => "Whatever", :classes => 'button icon calendar' }) %>
+		<%= ui_code('button', { :content => "Whatever", :classes => 'button icon calendar' }) %>
+
+		<hr>
+
+		<%= ui('button', { :classes => 'button invert' }, show_code = true ) do %>
+		  This should override the "Whatever" text
+		<% end %>
+
+
     <p>
       <a class="button" href="#">Baseline button</a>
     </p>
