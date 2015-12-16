@@ -1,0 +1,9 @@
+
+hr {
+  background: $color-borders;
+  border:     0;
+  color:      $color-borders;
+  height:     1px;
+  @include rem('margin-bottom', $margin-bottom * 2);
+  @include rem('margin-top',    $margin-bottom * 3);
+}
