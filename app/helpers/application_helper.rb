@@ -1,7 +1,13 @@
 module ApplicationHelper
 
   def body_class
-    "page page--#{@page}"
+    class_name = 'page'
+
+    if @page.present?
+      class_name << " page--#{@page.path}"
+    end
+
+    class_name
   end
 
   def markdown(text)
