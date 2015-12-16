@@ -1,4 +1,28 @@
 a {
+	.u-text-danger &,
+	&.u-text-danger {
+		color: $color-danger;
+
+		&:active,
+		&:focus,
+		&:hover,
+		&:visited {
+			color: $color-danger-d;
+		}
+	}
+
+	.u-text-primary &,
+	&.u-text-primary {
+		color: $color-primary;
+
+		&:active,
+		&:focus,
+		&:hover,
+		&:visited {
+			color: $color-primary-d;
+		}
+	}
+
 	.u-text-success &,
 	&.u-text-success {
 		color: $color-success;
@@ -20,18 +44,6 @@ a {
 		&:hover,
 		&:visited {
 			color: $color-warning-d;
-		}
-	}
-
-	.u-text-danger &,
-	&.u-text-danger {
-		color: $color-danger;
-
-		&:active,
-		&:focus,
-		&:hover,
-		&:visited {
-			color: $color-danger-d;
 		}
 	}
 }

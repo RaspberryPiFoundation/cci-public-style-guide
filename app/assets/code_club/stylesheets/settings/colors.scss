@@ -4,8 +4,8 @@ $color-danger:      #ff5252;
 $color-danger-d:    darken($color-danger, 10);
 
 $color-default:     #333;
-$color-default-m:   #999;
-$color-default-l:   #ccc;
+$color-default-m:   #e0e0e0;
+$color-default-l:   #f5f6f9;
 
 $color-primary:     #5290d2;
 $color-primary-d:   darken($color-primary, 10);
@@ -18,11 +18,11 @@ $color-warning-d:   #f17f1a;
 
 //	Colors
 $color-text:      $color-default;
-$color-bg:        #f5f6f9;
-$color-borders:   #e0e0e0;
+$color-bg:        $color-default-l;
+$color-borders:   $color-default-m;
 
 $color-highlight: $color-primary;
 
-$color-links:         #393;
-$color-links-active:  $color-links;
-$color-links-visited: $color-links;
+$color-links:         $color-success;
+$color-links-active:  $color-success-d;
+$color-links-visited: $color-success-d;
