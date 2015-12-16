@@ -11,7 +11,7 @@ label {
 }
 
 form hr {
-	margin:3em -5%;
+	margin:3em 0;
 }
 
 p.info {
@@ -151,36 +151,16 @@ input[type="submit"]:hover {
 
 
 /* MESSAGING & ERRORS */
-.message {
-	color:#fff;
-	padding:1em 5.5% 1px 5.5%;
-	margin:0 -5.5% 2em -5.5%;
-}
-.message.error {
-	background:#ff5252;
-}
-
-.error_highlight label {
-	color:#ff5252;
-
-}
-.error_highlight input,
-.error_highlight textarea {
-	border-color:#ff5252;
-}
-.error_content_wrap {
-	margin-top:5px;
-	padding-top:5px;
-	background:url(../images/icon_arrow_up_red.svg) no-repeat center 0.5em;
-	background-size: 0.8em;
-}
-.error_content {
-	background:#ff5252;
-	color:#fff;
-	border-radius:5px;
-	font-size:14px;
-	padding:0.5em 1em;
-	margin:0.5em;
+.error_highlight {
+  label {
+    color:$error;
+  }
+  input,textarea {
+    border-color:$error;
+  }
+  .alert {
+    margin-top:1em
+  }
 }
 
 .fieldwithbutton {
