@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   before_filter :set_section_exists
   before_filter :set_page_path
   before_filter :set_page
+  before_filter :set_page_partial
   before_filter :set_back_page_for_examples
   before_filter :set_page_has_view
   before_filter :set_layout
@@ -38,7 +39,11 @@ class PagesController < ApplicationController
   end
 
   def set_page_has_view
-    @page_has_view = File.exists?(Rails.root.join("app", "views", "pages", "content", "#{@page.section.path}", "_#{@page_path}.html.erb"))
+    @page_has_view = File.exists?(Rails.root.join("app", "views", "pages", "content", "#{@page.section.path}", "_#{@page_partial}.html.erb"))
+  end
+
+  def set_page_partial
+    @page_partial = @page_path.gsub("-", "_")
   end
 
   def set_page_path

@@ -1,6 +1,6 @@
 
 <% if !@page.is_example_page? %>
-  <h2 class="center"><%= @page.title %></h2>
+  <h1><%= @page.title %></h1>
 <% end %>
 
-<%= render "pages/content/#{@page.section.path}/#{@page_path}" %>
+<%= render "pages/content/#{@page.section.path}/#{@page_partial}" %>
