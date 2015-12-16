@@ -1,14 +1,8 @@
-<div class="nav_left">
-
-  <h1 class="brand">
-    <a href="/">
-      <span>Code Club</span>
-      <small>Style guide</small>
-    </a>
-  </h1>
-
-  <a class="toggle_drawer">tog</a>
+<header class="sg-header" role="banner">
+  <%= link_to :home, :class => 'sg-home-link' do %>
+    <span class="sg-brand u-hide-text">Code Club</span>
+    <small class="sg-site-title u-h4">Style Guide</small>
+  <% end %>
 
   <%= render_navigation %>
-
-</div>
+</header>
