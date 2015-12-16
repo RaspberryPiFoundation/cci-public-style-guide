@@ -1,0 +1,14 @@
+
+.sg-body {
+  display: flex;
+}
+
+  .sg-header {
+    background: #333;
+    flex-basis: 20%;
+  }
+
+  .sg-content-wrapper {
+    flex-basis: 80%;
+    padding:    2em 4rem;
+  }
