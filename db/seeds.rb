@@ -1,33 +1,32 @@
+Section.create!([
+  { path: "home",       title: "Home",       order: 10,  show_in_nav: false },
+  { path: "the-basics", title: "The Basics", order: 20,  show_in_nav: true  },
+  { path: "layout",     title: "Layout",     order: 30,  show_in_nav: true  },
+  { path: "styles",     title: "Styles",     order: 40,  show_in_nav: true  },
+  { path: "components", title: "Components", order: 50,  show_in_nav: true  },
+  { path: "modules",    title: "Modules",    order: 60,  show_in_nav: true  },
+  { path: "examples",   title: "Examples",   order: 100, show_in_nav: false }
+])
 
-# Sections
-home       = Section.create({ :path => 'home',       :title => 'Home',       :order => 1, :show_in_nav => false })
-the_basics = Section.create({ :path => 'the-basics', :title => 'The Basics', :order => 2 })
-style      = Section.create({ :path => 'style',      :title => 'Style',      :order => 3 })
-structure  = Section.create({ :path => 'structure',  :title => 'Structure',  :order => 4 })
-modules    = Section.create({ :path => 'modules',    :title => 'Modules',    :order => 5 })
-examples   = Section.create({ :path => 'examples',   :title => 'Examples',   :order => 6, :show_in_nav => false })
+Page.create!([
+  { path: "brand-guidelines", title: "Brand Guidelines", order: 10, section_id: 2, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "colour-palette",   title: "Colour Palette",   order: 20, section_id: 2, show_in_nav: true, example_page: false, back_page_id: nil },
 
-# Pages for "The Basics"
-basics_about = the_basics.pages.create({ :path => 'about', :title => 'About',                   :order => 1 })
-basics_brand = the_basics.pages.create({ :path => 'brand', :title => 'Brand & Logo Guidelines', :order => 2 })
+  { path: "grid-system",      title: "Grid System",      order: 10, section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "sample-pages",     title: "Sample Pages",     order: 20, section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
 
-# Pages for "Style"
-style_typography = style.pages.create({ :path => 'typography', :title => 'Typography', :order => 1 })
-style_colour     = style.pages.create({ :path => 'colour',     :title => 'Colour',     :order => 2 })
-style_icons      = style.pages.create({ :path => 'icons',      :title => 'Icons',      :order => 3 })
+  { path: "typography",       title: "Typography",       order: 10, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "lists",            title: "Lists",            order: 20, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "tables",           title: "Tables",           order: 30, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
 
-# Pages for "Structure"
-structure_grid   = structure.pages.create({ :path => 'grid',   :title => 'Layout Grid', :order => 1 })
-structure_layout = structure.pages.create({ :path => 'layout', :title => 'Page Layout', :order => 2 })
-structure_hero   = structure.pages.create({ :path => 'hero',   :title => 'Hero Blocks', :order => 3 })
-structure_nav    = structure.pages.create({ :path => 'nav',    :title => 'Navigation',  :order => 4 })
+  { path: "icons",            title: "Icons",            order: 10, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "buttons",          title: "Buttons",          order: 20, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "forms",            title: "Forms",            order: 30, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "alerts",           title: "Alerts",           order: 40, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
 
-# Pages for "Modules"
-modules_forms    = modules.pages.create({ :path => 'forms',    :title => 'Forms',             :order => 1 })
-modules_cards    = modules.pages.create({ :path => 'cards',    :title => 'Cards',             :order => 2 })
-modules_listings = modules.pages.create({ :path => 'listings', :title => 'Listings & Tables', :order => 3 })
-modules_alerts   = modules.pages.create({ :path => 'alerts',   :title => 'Alerts',            :order => 4 })
-modules_buttons  = modules.pages.create({ :path => 'buttons',  :title => 'Buttons',           :order => 5 })
+  { path: "cards",            title: "Cards",            order: 10, section_id: 6, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "hero-blocks",      title: "Hero Blocks",      order: 20, section_id: 6, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "navigation",       title: "Navigation",       order: 30, section_id: 6, show_in_nav: true, example_page: false, back_page_id: nil },
 
-# Pages for "Example Pages"
-examples.pages.create({ :path => 'menu', :title => 'Menu', :example_page => true, :back_page_id => structure_layout.id, :order => 1 })
+  { path: "menu",             title: "Menu",             order: 10, section_id: 7, show_in_nav: true, example_page: true,  back_page_id: 7   }
+])
