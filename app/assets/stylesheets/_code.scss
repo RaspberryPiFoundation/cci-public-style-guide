@@ -3,6 +3,7 @@
   border:        1px solid #e0e0e0;
   border-radius: 0.5rem;
   color:         #666;
+  @include rem('border-radius', $border-radius-subtler);
   display:       block;
   font-family:   Consolas, "Andale Mono", monospace;
   margin-bottom: 1rem;
