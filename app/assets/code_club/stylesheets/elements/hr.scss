@@ -1,8 +1,8 @@
 
 hr {
-  background: $alto;
+  background: $grey-light;
   border:     0;
-  color:      $alto;
+  color:      $grey-light;
   height:     1px;
   @include rem('margin-bottom', $margin-big);
   @include rem('margin-top',    $margin-bigger);

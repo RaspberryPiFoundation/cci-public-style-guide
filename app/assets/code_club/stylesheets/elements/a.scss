@@ -1,17 +1,17 @@
 a {
-	color:           $apple;
+	color:           $green;
 	cursor:          pointer;
 	text-decoration: underline;
 
 	&:active,
 	&:focus,
 	&:hover {
-		color:           $apple-light;
+		color:           $green-light;
 		text-decoration: none;
 	}
 
 	&:visited {
-		color:           $apple-dark;
+		color:           $green-dark;
 		text-decoration: none;
 	}
 }
