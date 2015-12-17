@@ -1,29 +1,25 @@
-<div class="layout">
+<div class="sg-panel">
+  <h2>Logo Pack</h2>
 
-  <div class="col col1of1 pad2 bubble">
+  <p>The Code Club logo pack contains all the variations of the Code Club logo in a number of useful formats.</p>
 
-      <h3>Logo pack</h3>
-
-      <p>The Code Club logo pack contains all the variations of the Code Club logo in a number of useful formats.</p>
-
-      <a href="" class="button icon document">
-          Download Code Club logo pack
-      </a>
-
-  </div>
-
+  <p>
+    <a href="#" class="c-button icon document">
+      Download Code Club logo pack
+    </a>
+  </p>
 </div>
 
-<br>
+<div class="sg-panel">
+  <h2>How to use the Logo</h2>
 
-<div class="layout">
-	<div class="col col1of1 pad2 bubble">
-    <div class="img_desc">
-      <div class="image">
-        <%= image_tag '/assets/images/brand_1.svg' %>
-      </div>
+  <div class="sg-logo-usage">
+    <figure class="sg-logo-usage-figure">
+      <%= image_tag '/assets/images/brand_1.svg', :class => 'sg-logo-usage-image' %>
+    </figure>
 
-      <h4>General usage</h4>
+    <div class="sg-logo-usage-description">
+      <h3>General usage</h3>
 
       <ul>
         <li>Don't alter logo colours or text</li>
@@ -31,26 +27,30 @@
         <li>Always place the circle mark on a plain background, either <code>$white</code> or <code>$dark-grey</code></li>
       </ul>
     </div>
+  </div>
 
-    <div class="img_desc">
-      <div class="image">
-        <%= image_tag '/assets/images/brand_2.svg' %>
-      </div>
+  <div class="sg-logo-usage">
+    <figure class="sg-logo-usage-figure">
+      <%= image_tag '/assets/images/brand_2.svg', :class => 'sg-logo-usage-image' %>
+    </figure>
 
-      <h4>Size and spacing</h4>
+    <div class="sg-logo-usage-description">
+      <h3>Size and spacing</h3>
 
       <ul>
         <li>Allow 10% whitespace around the circle mark</li>
         <li>Minimum size for web: 60x60 pixels</li>
       </ul>
     </div>
+  </div>
 
-    <div class="img_desc">
-      <div class="image">
-        <%= image_tag '/assets/images/brand_3.svg' %>
-      </div>
+  <div class="sg-logo-usage">
+    <figure class="sg-logo-usage-figure">
+      <%= image_tag '/assets/images/brand_3.svg', :class => 'sg-logo-usage-image' %>
+    </figure>
 
-      <h4>Circle mark with appendix</h4>
+    <div class="sg-logo-usage-description">
+      <h3>Circle mark with appendix</h3>
 
       <ul>
         <li>Minimum circle size: 60x60 pixels</li>
@@ -59,13 +59,15 @@
         <li>Text colour should be the same green as the circle mark</li>
       </ul>
     </div>
+  </div>
 
-    <div class="img_desc">
-      <div class="image">
-        <%= image_tag '/assets/images/brand_4.svg' %>
-      </div>
+  <div class="sg-logo-usage">
+    <figure class="sg-logo-usage-figure">
+      <%= image_tag '/assets/images/brand_4.svg', :class => 'sg-logo-usage-image' %>
+    </figure>
 
-      <h4>Stacked appendix usage</h4>
+    <div class="sg-logo-usage-description">
+      <h3>Stacked appendix usage</h3>
 
       <ul>
         <li>Minimum circle size: 60x60 pixels</li>
@@ -73,12 +75,14 @@
         <li>Text should scale up with circle</li>
       </ul>
     </div>
+  </div>
 
-    <div class="img_desc">
-      <div class="image">
-        <%= image_tag '/assets/images/brand_5.svg' %>
-      </div>
+  <div class="sg-logo-usage">
+    <figure class="sg-logo-usage-figure">
+      <%= image_tag '/assets/images/brand_5.svg', :class => 'sg-logo-usage-image' %>
+    </figure>
 
+    <div class="sg-logo-usage-description">
       <ul>
         <li>Text flows to multiple lines if it exceeds the width of the circle by 25%</li>
         <li>Relative leading: 1.2em</li>
