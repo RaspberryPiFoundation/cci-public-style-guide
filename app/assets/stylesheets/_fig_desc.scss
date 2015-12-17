@@ -15,3 +15,31 @@
     float: left;
     width: 33rem;
   }
+
+    .sg-fig-desc__description-list {}
+
+      .sg-fig-desc__description-list-title {
+        border-top:    1px solid #e0e0e0;
+        clear:         both;
+        float:         left;
+        margin-bottom: 0.5rem;
+        padding:       0.5rem;
+        width:         10rem;
+      }
+
+      .sg-fig-desc__description-list-content {
+        border-top:    1px solid #e0e0e0;
+        float:         left;
+        margin-bottom: 0.5rem;
+        padding:       0.5rem 0;
+        width:         23rem;
+      }
+
+        .sg-fig-desc__badge {
+          background:    #f17f1a;
+          border-radius: 100%;
+          color:         #fff;
+          display:       inline-block;
+          text-align:    center;
+          width:         1.375em;
+        }

@@ -1,92 +1,68 @@
-<div class="layout">
+<div class="sg-panel">
+  <h2>Default content page layout</h2>
 
-  <section class="bubble pad2 col1 col1of1">
+  <p>Content pages on Code Club websites are made from following ingredients:</p>
 
-    <h3>Default content page layout</h3>
+  <div class="sg-fig-desc">
+    <figure class="sg-fig-desc__figure">
+      <%= image_tag '/assets/images/layout-01.svg', :class => 'sg-fig-desc__image' %>
+    </figure>
 
-    <p>Content pages on Code Club websites are made from following ingredients:</p>
-
-    <div class="diagram clear">
-
-      <%= image_tag '/assets/images/layout-01.svg' %>
-
+    <div class="sg-fig-desc__description">
       <dl>
-        <li>
-          <dt><span class="number">1</span> Header</dt>
-          <dd>Houses the Code Club logo &amp; primary navigation.
-          <%= link_to("Navigation usage & styles", page_path('structure', 'nav')) %></dd>
-        </li>
-        <li>
-          <dt><span class="number">2</span> Hero block</dt>
-          <dd>Sits directly under the Header. <%= link_to("Hero block usage & styles", page_path('structure', 'hero')) %></dd>
-        </li>
-        <li>
-          <dt><span class="number">3</span> Section nav</dt>
-          <dd>Optional. Sits directly under the Hero block</dd>
-        </li>
-        <li>
-          <dt><span class="number">4</span> Content blocks</dt>
-          <dd>Used to layout and break up chunks of content. See below for usage &amp; styles.</dd>
-        </li>
-        <li>
-          <dt><span class="number">5</span> Action block</dt>
-          <dd>Optional. Used to feature a pages primary action</dd>
-        </li>
-        <li>
-          <dt><span class="number">6</span> Footer</dt>
-          <dd>Present on every screen, the footer contains useful links, icon links to social media accounts &amp; any official/copyright statements</dd>
-        </li>
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">1</span> Header</dt>
+        <dd class="sg-fig-desc__description-list-content">
+          Houses the Code Club logo &amp; primary navigation.
+          <%= link_to("Navigation usage & styles", page_path('structure', 'nav')) %>
+        </dd>
+
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">2</span> Hero block</dt>
+        <dd class="sg-fig-desc__description-list-content">Sits directly under the Header. <%= link_to("Hero block usage & styles", page_path('structure', 'hero')) %></dd>
+
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">3</span> Section nav</dt>
+        <dd class="sg-fig-desc__description-list-content">Optional. Sits directly under the Hero block</dd>
+
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">4</span> Content blocks</dt>
+        <dd class="sg-fig-desc__description-list-content">Used to layout and break up chunks of content. See below for usage &amp; styles.</dd>
+
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">5</span> Action block</dt>
+        <dd class="sg-fig-desc__description-list-content">Optional. Used to feature a pages primary action</dd>
+
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">6</span> Footer</dt>
+        <dd class="sg-fig-desc__description-list-content">Present on every screen, the footer contains useful links, icon links to social media accounts &amp; any official/copyright statements</dd>
       </dl>
-
     </div>
+  </div>
 
-    <p>
-      <%= link_to "View example content page layout", page_path('examples', 'page-layout') %>
-    </p>
-
-  </section>
-
+  <p><%= link_to "View example content page layout", page_path('examples', 'page-layout') %></p>
 </div>
 
-<br><br><br><br>
+<div class="sg-panel">
+  <h2>Menu layout</h2>
 
-<div class="layout">
+  <p>The Menu layout is useful for sections where there is more user-interaction than content, for example logged-in account pages.</p>
 
-  <section class="bubble pad2 col1 col1of1">
+  <div class="sg-fig-desc">
+    <figure class="sg-fig-desc__figure">
+      <%= image_tag '/assets/images/layout-02.svg', :class => 'sg-fig-desc__image' %>
+    </figure>
 
-    <h3>Menu layout</h3>
+    <div class="sg-fig-desc__description">
+      <dl class="sg-fig-desc__description-list">
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">1</span> Header</dt>
+        <dd class="sg-fig-desc__description-list-content">Same as content layout</dd>
 
-    <p>The Menu layout is useful for sections where there is more user-interaction than content, for example logged-in account pages.</p>
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">2</span> Menu items</dt>
+        <dd class="sg-fig-desc__description-list-content">E.g. Section-specific navigation list, or information panels</dd>
 
-    <div class="diagram clear">
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">3</span> Content</dt>
+        <dd class="sg-fig-desc__description-list-content">Stacked boxes of content</dd>
 
-      <%= image_tag '/assets/images/layout-02.svg' %>
-
-      <dl>
-        <li>
-          <dt><span class="number">1</span> Header</dt>
-          <dd>Same as content layout</dd>
-        </li>
-        <li>
-          <dt><span class="number">2</span> Menu items</dt>
-          <dd></dd>
-        </li>
-        <li>
-          <dt><span class="number">3</span> Content</dt>
-          <dd></dd>
-        </li>
-        <li>
-          <dt><span class="number">4</span> Footer</dt>
-          <dd>Same as content layout</dd>
-        </li>
+        <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">4</span> Footer</dt>
+        <dd class="sg-fig-desc__description-list-content">Same as content layout</dd>
       </dl>
-
     </div>
+  </div>
 
-    <p>
-      <%= link_to "View example menu layout", page_path('examples', 'menu') %>
-    </p>
-
-  </section>
-
+  <p><%= link_to "View example menu layout", page_path('examples', 'menu') %></p>
 </div>
