@@ -1,6 +1,6 @@
 html {
-	@include font-size($font-size);
 	background: $athens-grey;
+	@include font-size($font-size-base);
 	height:     100%;
 	width:      100%;
 }
@@ -8,9 +8,9 @@ html {
 	body {
 		color:            $mine-shaft;
 		font-family:      $font-family-primary;
-		@include font-size($font-size);
-		font-weight:      $font-weight;
-		@include line-height($font-size, $line-height);
+		@include font-size($font-size-base);
+		font-weight:      $font-weight-base;
+		@include line-height($font-size-base, $line-height-base);
 		position:         relative;
 		text-rendering:   optimizeLegibility;
 		text-size-adjust: 100%;

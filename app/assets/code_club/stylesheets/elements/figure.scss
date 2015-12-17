@@ -1,7 +1,7 @@
 figure {
 	display: block;
 	margin:  0;
-	@include rem('margin-bottom', $margin-bottom);
+	@include rem('margin-bottom', $margin-base);
 
 	img {
 		display:   block;

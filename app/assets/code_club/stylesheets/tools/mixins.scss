@@ -42,7 +42,7 @@
 //  Includes px value for fallback in browsers with no support for rem units
 @mixin rem($property, $value) {
 	#{$property}: #{$value}px;
-	#{$property}: ($value / $font-size) * 1rem;
+	#{$property}: ($value / $font-size-base) * 1rem;
 }
 
 @mixin respond-to($media) {

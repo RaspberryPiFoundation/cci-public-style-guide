@@ -1,6 +1,6 @@
 table {
 	border-collapse: collapse;
-	@include rem('margin-bottom', $margin-bottom);
+	@include rem('margin-bottom', $margin-base);
 
 	thead {
 		font-weight: bold;
