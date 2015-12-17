@@ -1,13 +1,9 @@
 
 @mixin clearfix {
-  &:before,
   &:after {
-    content: " "   !important;
-    display: table !important;
-  }
-
-  &:after {
-    clear: both !important;
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
