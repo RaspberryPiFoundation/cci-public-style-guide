@@ -1,12 +1,12 @@
 html {
-	background: $color-bg;
 	@include font-size($font-size);
+	background: $athens-grey;
 	height:     100%;
 	width:      100%;
 }
 
 	body {
-		color:            $color-text;
+		color:            $mine-shaft;
 		font-family:      $font-family-primary;
 		@include font-size($font-size);
 		font-weight:      $font-weight;

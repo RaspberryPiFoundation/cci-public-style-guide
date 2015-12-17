@@ -1,6 +1,70 @@
-.u-text-danger  { color: $color-danger          !important; }
-.u-text-primary { color: $color-primary         !important; }
-.u-text-success { color: $color-success         !important; }
-.u-text-warning { color: $color-warning         !important; }
-.u-text-light   { color: #fff                   !important; }
-.u-text-muted   { color: rgba($color-text, 0.6) !important; }
+//  Text color modifiers
+.u-text-danger  { color: $sunset-orange     !important; }
+.u-text-primary { color: $havelock-blue     !important; }
+.u-text-success { color: $apple             !important; }
+.u-text-warning { color: $paris-daisy       !important; }
+.u-text-light   { color: $athens-grey-light !important; }
+.u-text-muted   { color: $mine-shaft-light  !important; }
+
+//	Link color modifiers
+a {
+	.u-text-danger &,
+	&.u-text-danger {
+		color: $sunset-orange !important;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $sunset-orange-light !important;
+		}
+
+		&:visited {
+			color: $sunset-orange-dark !important;
+		}
+	}
+
+	.u-text-primary &,
+	&.u-text-primary {
+		color: $havelock-blue !important;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $havelock-blue-light !important;
+		}
+
+		&:visited {
+			color: $havelock-blue-dark !important;
+		}
+	}
+
+	.u-text-success &,
+	&.u-text-success {
+		color: $apple !important;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $apple-light !important;
+		}
+
+		&:visited {
+			color: $apple-dark !important;
+		}
+	}
+
+	.u-text-warning &,
+	&.u-text-warning {
+		color: $paris-daisy !important;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $paris-daisy-light !important;
+		}
+
+		&:visited {
+			color: $paris-daisy-dark !important;
+		}
+	}
+}
