@@ -21,12 +21,12 @@
 		<h3 class="sg-example-heading">Example</h3>
 
 		<% for header in 1..6 do %>
-			<h<%= header %>>h<%= header %>. Heading Level <%= header %></h<%= header %>>
+			<%= "<h#{header}>Heading Level #{header}</h#{header}>".html_safe %>
 		<% end %>
 
 		<code class="sg-code">
 			<% for header in 1..6 do %>
-				&lt;h<%= header %>&gt;h<%= header %>. Heading Level <%= header %>&lt;/h<%= header %>&gt;<br>
+				<%= "&lt;h#{header}&gt;Heading Level #{header}&lt;/h#{header}&gt;".html_safe %><br>
 			<% end %>
 		</code>
 	</div>
@@ -48,21 +48,43 @@
 		&lt;p class="meta"&gt;...&lt;/p&gt;
 	</code>
 
-	<p class="big">There is a larger class which is useful for presenting introductory pieces of text, callouts, or similar.</p>
+	<p class="lede">There is a larger class which is useful for presenting introductory pieces of text, callouts, or similar.</p>
 
 	<code class="sg-code">
-		&lt;p class="big"&gt;...&lt;/p&gt;
+		&lt;p class="lede"&gt;...&lt;/p&gt;
 	</code>
 
 	<hr>
 
-	<h3>Alignment classes</h3>
+	<h2>Alignment Utilities</h2>
 
-	<p><code>.center</code> Centers text</p>
+	<p class="u-text-left">Left aligned text</p>
+	<p class="u-text-center">Center aligned text</p>
+	<p class="u-text-right">Right aligned text</p>
+	<p class="u-text-justify">Justified text</p>
 
-	<p><code>.rule</code> Adds a horizontal rule under a block-level piece of text</p>
+	<code class="sg-code">
+		&lt;p class="u-text-left"&gt;Left aligned text&lt;/p&gt;<br>
+		&lt;p class="u-text-center"&gt;Center aligned text&lt;/p&gt;<br>
+		&lt;p class="u-text-right"&gt;Right aligned text&lt;/p&gt;<br>
+		&lt;p class="u-text-justify"&gt;Justified text&lt;/p&gt;
+	</code>
 
-	<p><code>.light</code> White text for darker backgrounds</p>
+	<h2>Colour Adjustment Utilities</h2>
 
-	<p><code>.subtle</code> Text with a 60% opacity</p>
+	<p class="u-text-danger">Danger text colour</p>
+	<p class="u-text-primary">Primary text colour</p>
+	<p class="u-text-success">Success text colour</p>
+	<p class="u-text-warning">Warning text colour</p>
+	<p class="u-text-light" style="background: #333;">Light text colour</p>
+	<p class="u-text-muted">Muted text colour</p>
+
+	<code class="sg-code">
+		&lt;p class="u-text-danger"&gt;Danger text colour&lt;/p&gt;<br>
+		&lt;p class="u-text-primary"&gt;Primary text colour&lt;/p&gt;<br>
+		&lt;p class="u-text-success"&gt;Success text colour&lt;/p&gt;<br>
+		&lt;p class="u-text-warning"&gt;Warning text colour&lt;/p&gt;<br>
+		&lt;p class="u-text-light"&gt;Light text colour&lt;/p&gt;<br>
+		&lt;p class="u-text-muted"&gt;Muted text colour&lt;/p&gt;
+	</code>
 </div>
