@@ -1,20 +1,67 @@
-//	Baseline stuff
-$baseline-unit: 22;
 
-//	Line Heights
-$line-height:    $baseline-unit;
-$line-height-h1: 34;
-$line-height-h2: 29;
-$line-height-h3: 24;
-$line-height-h4: 19;
-$line-height-h5: 17;
-$line-height-h6: 17;
+//	Font Weights
+$font-weight-light: 100;
+$font-weight-base:  300;
+$font-weight-bold:  700;
+
+//	Basic elements configuration
+$font-size-base:     16;
+$font-size-small:    14;
+$font-size-large:    20;
+
+//  Line heights
+$line-height-base:   22;
 
 //  Margins
-$margin-bottom:    16;
-$margin-bottom-h1: 14;
-$margin-bottom-h2: 14;
-$margin-bottom-h3: 16;
-$margin-bottom-h4: 16;
-$margin-bottom-h5: 14;
-$margin-bottom-h6: 14;
+$margin-base:     16;
+$margin-small:    $margin-base * 0.75;
+$margin-smaller:  $margin-base * 0.5;
+$margin-smallest: $margin-base * 0.25;
+$margin-big:      $margin-base * 2;
+$margin-bigger:   $margin-base * 3;
+$margin-biggest:  $margin-base * 3;
+
+//  Paddings
+$padding-base:     16;
+$padding-small:    $padding-base * 0.75;
+$padding-smaller:  $padding-base * 0.5;
+$padding-smallest: $padding-base * 0.25;
+$padding-big:      $padding-base * 2;
+$padding-bigger:   $padding-base * 3;
+$padding-biggest:  $padding-base * 4;
+
+//  H1
+$font-size-h1:       48;
+$font-weight-h1:     $font-weight-base;
+$line-height-h1:     48;
+$margin-bottom-h1:   14;
+
+//  H2
+$font-size-h2:       36;
+$font-weight-h2:     $font-weight-base;
+$line-height-h2:     34;
+$margin-bottom-h2:   14;
+
+//  H3
+$font-size-h3:       24;
+$font-weight-h3:     $font-weight-base;
+$line-height-h3:     29;
+$margin-bottom-h3:   16;
+
+//  H4
+$font-size-h4:       18;
+$font-weight-h4:     $font-weight-base;
+$line-height-h4:     19;
+$margin-bottom-h4:   16;
+
+//  H5
+$font-size-h5:       14;
+$font-weight-h5:     $font-weight-base;
+$line-height-h5:     17;
+$margin-bottom-h5:   14;
+
+//  H6
+$font-size-h6:       11;
+$font-weight-h6:     $font-weight-base;
+$line-height-h6:     17;
+$margin-bottom-h6:   14;
