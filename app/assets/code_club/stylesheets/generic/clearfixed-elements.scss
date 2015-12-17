@@ -35,5 +35,5 @@ table,
 tfoot,
 ul,
 video {
-	@extend .clearfix;
+	@include clearfix;
 }
