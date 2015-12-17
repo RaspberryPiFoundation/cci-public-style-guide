@@ -1,255 +1,170 @@
-<div class="layout margin-double">
-  <div class="col col1of1 pad2 padx3 bubble">
+<div class="sg-panel">
+	<h2>Basic elements</h2>
 
-		<form>
-			<h3 class="center">Basic elements</h3>
+	<div>
+		<label for="text_input1">Text input</label>
+		<input type="text" id="text_input1">
+	</div>
 
-			<div>
-				<label for="text_input1">Text input</label>
-				<input type="text" id="text_input1">
-			</div>
+  <code>EXAMPLE</code>
 
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label for=&#x22;text_input1&#x22;&#x3E;Text input&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_input1&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
+	<div>
+		<label for="text_input2">Text input with placeholder text</label>
+		<input type="text" id="text_input2" placeholder="A simple instruction">
+	</div>
 
-			<div>
-				<label for="text_input2">Text input with placeholder text</label>
-				<input type="text" id="text_input2" placeholder="A simple instruction">
-			</div>
+  <code>EXAMPLE</code>
 
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label for=&#x22;text_input2&#x22;&#x3E;Text input with placeholder text&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_input2&#x22; placeholder=&#x22;A simple instruction&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
+  <div>
+  	<label for="text_input1">A field with a additional info</label>
 
-      <div>
-      	<label for="text_input1">A field with a additional info</label>
-      	<div class="alert inline info">
-          <%= image_tag 'images/icons/info-fill-white.svg' %>
-          If you are a teacher please use your school email address
-        </div>
-      	<input type="text" id="text_input1">
-      </div>
+    <div class="alert inline info">
+      <%= image_tag 'images/icons/info-fill-white.svg' %>
+      If you are a teacher please use your school email address
+    </div>
 
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label for=&#x22;text_input1&#x22;&#x3E;A field with a additional info&#x3C;/label&#x3E;
-  &#x3C;div class=&#x22;alert inline info&#x22;&#x3E;
-    &#x3C;%= image_tag &#x27;images/icons/info-fill-white.svg&#x27; %&#x3E;
-    If you are a teacher please use your school email address
-  &#x3C;/div&#x3E;
-  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_input1&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <div>
-      	<label for="text_password1">Password</label>
-      	<input type="password" id="text_password1">
-      </div>
-
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label for=&#x22;text_password1&#x22;&#x3E;Password&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;password&#x22; id=&#x22;text_password1&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <div>
-      	<label for="textarea1">Textarea</label>
-      	<textarea id="textarea1"></textarea>
-      </div>
-
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label for=&#x22;textarea1&#x22;&#x3E;Textarea&#x3C;/label&#x3E;
-  &#x3C;textarea id=&#x22;textarea1&#x22;&#x3E;&#x3C;/textarea&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-			<div>
-				<label for="file1">Upload a file</label>
-				<input type="file" id="file1">
-			</div>
-
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label for=&#x22;file1&#x22;&#x3E;Upload a file&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;file&#x22; id=&#x22;file1&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <div class="fieldwithbutton">
-      	<label for="text_button1">Field with button</label>
-      	<input type="text" id="text_button1">
-      	<input type="submit" class="button square" value="Press">
-      </div>
-
-      <pre><code>&#x3C;div class=&#x22;fieldwithbutton&#x22;&#x3E;
-  &#x3C;label for=&#x22;text_button1&#x22;&#x3E;Field with button&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_button1&#x22;&#x3E;
-  &#x3C;input type=&#x22;submit&#x22; class=&#x22;button square&#x22; value=&#x22;Press&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-			<hr>
-
-			<h3 class="center">Error highlighting</h3>
-
-			<div class="error_highlight">
-				<label for="text_input1">Email address</label>
-				<input type="text" id="text_input1" value="greg@codeclub">
-
-				<div class="alert inline error">
-          <%= image_tag 'images/icons/error-white.svg' %>
-				  Please enter a valid email address
-				</div>
-			</div>
-
-      <pre><code>&#x3C;div class=&#x22;error_highlight&#x22;&#x3E;
-  &#x3C;label for=&#x22;text_input1&#x22;&#x3E;Email address&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;text&#x22; id=&#x22;text_input1&#x22; value=&#x22;greg@codeclub&#x22;&#x3E;
-  &#x3C;div class=&#x22;alert inline error&#x22;&#x3E;
-    &#x3C;%= image_tag &#x27;images/icons/error-white.svg&#x27; %&#x3E;
-    Please enter a valid email address
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <hr>
-
-			<h3 class="center">More advanced elements</h3>
-
-			<div>
-				<label>Select one from a list</label>
-
-				<div class="checklist">
-        	<ul>
-          	<li>
-          		<input id="checklist1" type="radio" name="checklist1">
-          		<label class="collection_radio_buttons" for="checklist1">Yes</label>
-          	</li>
-          	<li>
-          		<input id="checklist2" type="radio" name="checklist1">
-          		<label class="collection_radio_buttons" for="checklist2">No</label>
-         		</li>
-        	</ul>
-        </div>
-			</div>
-
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label&#x3E;Select one from a list&#x3C;/label&#x3E;
-  &#x3C;div class=&#x22;checklist&#x22;&#x3E;
-    &#x3C;ul&#x3E;
-      &#x3C;li&#x3E;
-        &#x3C;input id=&#x22;checklist1&#x22; type=&#x22;radio&#x22; name=&#x22;checklist1&#x22;&#x3E;
-        &#x3C;label class=&#x22;collection_radio_buttons&#x22; for=&#x22;checklist1&#x22;&#x3E;Yes&#x3C;/label&#x3E;
-      &#x3C;/li&#x3E;
-      &#x3C;li&#x3E;
-        &#x3C;input id=&#x22;checklist2&#x22; type=&#x22;radio&#x22; name=&#x22;checklist1&#x22;&#x3E;
-        &#x3C;label class=&#x22;collection_radio_buttons&#x22; for=&#x22;checklist2&#x22;&#x3E;No&#x3C;/label&#x3E;
-      &#x3C;/li&#x3E;
-    &#x3C;/ul&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <br>
-
-			<div>
-				<label>Select multiples from a list</label>
-
-				<div class="checklist">
-        	<ul>
-          	<li>
-          		<input id="multi_checklist1" type="checkbox" name="checklist2">
-          		<label class="collection_radio_buttons" for="multi_checklist1">Yes</label>
-          	</li>
-          	<li>
-          		<input id="multi_checklist2" type="checkbox" name="checklist2">
-          		<label class="collection_radio_buttons" for="multi_checklist2">No</label>
-         		</li>
-        	</ul>
-        </div>
-			</div>
-
-      <pre><code>&#x3C;div&#x3E;
-  &#x3C;label&#x3E;Select multiples from a list&#x3C;/label&#x3E;
-
-  &#x3C;div class=&#x22;checklist&#x22;&#x3E;
-    &#x3C;ul&#x3E;
-      &#x3C;li&#x3E;
-        &#x3C;input id=&#x22;multi_checklist1&#x22; type=&#x22;checkbox&#x22; name=&#x22;checklist2&#x22;&#x3E;
-        &#x3C;label class=&#x22;collection_radio_buttons&#x22; for=&#x22;multi_checklist1&#x22;&#x3E;Yes&#x3C;/label&#x3E;
-      &#x3C;/li&#x3E;
-      &#x3C;li&#x3E;
-        &#x3C;input id=&#x22;multi_checklist2&#x22; type=&#x22;checkbox&#x22; name=&#x22;checklist2&#x22;&#x3E;
-        &#x3C;label class=&#x22;collection_radio_buttons&#x22; for=&#x22;multi_checklist2&#x22;&#x3E;No&#x3C;/label&#x3E;
-      &#x3C;/li&#x3E;
-    &#x3C;/ul&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <br>
-
-			<div>
-				<label>Select one option dropdown</label>
-
-        <div class="field_dropdown">
-					<h4 class="toggle">Select one</h4>
-
-          <ul class="checklist">
-						<li>
-							<input id="dropdown1" type="radio" name="dropdown">
-							<label for="dropdown1" class="collection_radio_buttons">Select this option</label>
-						</li>
-
-          	<li>
-							<input id="dropdown2" type="radio" name="dropdown">
-							<label for="dropdown2" class="collection_radio_buttons">Select an option</label>
-						</li>
-
-          	<li>
-							<input id="dropdown3" type="radio" name="dropdown">
-							<label for="dropdown3" class="collection_radio_buttons">Select another option</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-      <hr>
-
-  		<h3 class="center">Alternative styles</h3>
-
-  		<h4>Label-in text fields</h4>
-
-  		<p>Useful for when you want to condense the form layout, like on a login form. Succinct labels must be used.</p>
-
-      <div class="label-in">
-      	<label for="labelin_input1">Email</label>
-      	<input type="text" id="labelin_input1" placeholder="john@example.com">
-      </div>
-
-      <div class="label-in">
-      	<label for="labelin_input2">Password</label>
-      	<input type="password" id="labelin_input2">
-      </div>
-
-      <pre><code>&#x3C;div class=&#x22;label-in&#x22;&#x3E;
-  &#x3C;label for=&#x22;labelin_input1&#x22;&#x3E;Email&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;text&#x22; id=&#x22;labelin_input1&#x22; placeholder=&#x22;john@example.com&#x22;&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;label-in&#x22;&#x3E;
-  &#x3C;label for=&#x22;labelin_input2&#x22;&#x3E;Password&#x3C;/label&#x3E;
-  &#x3C;input type=&#x22;password&#x22; id=&#x22;labelin_input2&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-      <hr>
-
-		  <h3 class="center">Submit button</h3>
-
-      <br>
-
-      <div class="submit">
-      	<input type="submit" value="Submit button">
-      </div>
-
-      <pre><code>&#x3C;div class=&#x22;submit&#x22;&#x3E;
-  &#x3C;input type=&#x22;submit&#x22; value=&#x22;Submit button&#x22;&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-		</form>
-
+    <input type="text" id="text_input1">
   </div>
+
+  <code>EXAMPLE</code>
+
+  <div>
+  	<label for="text_password1">Password</label>
+  	<input type="password" id="text_password1">
+  </div>
+
+  <code>EXAMPLE</code>
+
+  <div>
+  	<label for="textarea1">Textarea</label>
+  	<textarea id="textarea1"></textarea>
+  </div>
+
+  <code>EXAMPLE</code>
+
+	<div>
+		<label for="file1">Upload a file</label>
+		<input type="file" id="file1">
+	</div>
+
+  <code>EXAMPLE</code>
+
+  <div class="fieldwithbutton">
+  	<label for="text_button1">Field with button</label>
+  	<input type="text" id="text_button1">
+  	<input type="submit" class="button square" value="Press">
+  </div>
+
+  <code>EXAMPLE</code>
+
+	<hr>
+
+	<h2>Error highlighting</h2>
+
+	<div class="error_highlight">
+		<label for="text_input1">Email address</label>
+		<input type="text" id="text_input1" value="greg@codeclub">
+
+		<div class="alert inline error">
+      <%= image_tag 'images/icons/error-white.svg' %>
+		  Please enter a valid email address
+		</div>
+	</div>
+
+  <code>EXAMPLE</code>
+
+  <hr>
+
+	<h2>More advanced elements</h2>
+
+	<div>
+		<label>Select one from a list</label>
+
+		<div class="checklist">
+    	<ul>
+      	<li>
+      		<input id="checklist1" type="radio" name="checklist1">
+      		<label class="collection_radio_buttons" for="checklist1">Yes</label>
+      	</li>
+      	<li>
+      		<input id="checklist2" type="radio" name="checklist1">
+      		<label class="collection_radio_buttons" for="checklist2">No</label>
+     		</li>
+    	</ul>
+    </div>
+	</div>
+
+  <code>EXAMPLE</code>
+
+	<div>
+		<label>Select multiples from a list</label>
+
+		<div class="checklist">
+    	<ul>
+      	<li>
+      		<input id="multi_checklist1" type="checkbox" name="checklist2">
+      		<label class="collection_radio_buttons" for="multi_checklist1">Yes</label>
+      	</li>
+      	<li>
+      		<input id="multi_checklist2" type="checkbox" name="checklist2">
+      		<label class="collection_radio_buttons" for="multi_checklist2">No</label>
+     		</li>
+    	</ul>
+    </div>
+	</div>
+
+  <code>EXAMPLE</code>
+
+	<div>
+		<label>Select one option dropdown</label>
+
+    <div class="field_dropdown">
+			<h4 class="toggle">Select one</h4>
+
+      <ul class="checklist">
+				<li>
+					<input id="dropdown1" type="radio" name="dropdown">
+					<label for="dropdown1" class="collection_radio_buttons">Select this option</label>
+				</li>
+
+      	<li>
+					<input id="dropdown2" type="radio" name="dropdown">
+					<label for="dropdown2" class="collection_radio_buttons">Select an option</label>
+				</li>
+
+      	<li>
+					<input id="dropdown3" type="radio" name="dropdown">
+					<label for="dropdown3" class="collection_radio_buttons">Select another option</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+  <hr>
+
+	<h2>Label-in text fields</h2>
+
+	<p>Useful for when you want to condense the form layout, like on a login form. Succinct labels must be used.</p>
+
+  <div class="label-in">
+  	<label for="labelin_input1">Email</label>
+  	<input type="text" id="labelin_input1" placeholder="john@example.com">
+  </div>
+
+  <div class="label-in">
+  	<label for="labelin_input2">Password</label>
+  	<input type="password" id="labelin_input2">
+  </div>
+
+  <code>EXAMPLE</code>
+
+  <hr>
+
+  <h2>Submit button</h2>
+
+  <div class="submit">
+  	<input type="submit" value="Submit button">
+  </div>
+
+  <code>EXAMPLE</code>
 </div>
