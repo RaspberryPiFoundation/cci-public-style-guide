@@ -1,28 +1,35 @@
+//  Page Background
+$athens-grey:          #f5f6f9;
+$athens-grey-light:    lighten($athens-grey, 10);
+$athens-grey-dark:     darken($athens-grey, 10);
 
-//	Color Palette
-$color-danger:      #ff5252;
-$color-danger-d:    darken($color-danger, 10);
+//  Default Text
+$mine-shaft:          #333;
+$mine-shaft-lighter:  rgba($mine-shaft, 0.3);
+$mine-shaft-light:    rgba($mine-shaft, 0.6);
+$mine-shaft-dark:     darken($mine-shaft, 10);
 
-$color-default:     #333;
-$color-default-m:   #e0e0e0;
-$color-default-l:   #f5f6f9;
+//  Default Box Borders
+$alto:                #e0e0e0;
+$alto-light:          lighten($alto, 10);
+$alto-dark:           darken($alto, 10);
 
-$color-primary:     #5290d2;
-$color-primary-d:   darken($color-primary, 10);
+//	Red Danger
+$sunset-orange:       #ff5252;
+$sunset-orange-light: lighten($sunset-orange, 10);
+$sunset-orange-dark:  darken($sunset-orange, 10);
 
-$color-success:     #393;
-$color-success-d:   darken($color-success, 10);
+//  Blue Highlight
+$havelock-blue:       #5290d2;
+$havelock-blue-light: lighten($havelock-blue, 10);
+$havelock-blue-dark:  darken($havelock-blue, 10);
 
-$color-warning:     #fff578;
-$color-warning-d:   #f17f1a;
+//  Code Club Green
+$apple:               #393;
+$apple-light:         lighten($apple, 10);
+$apple-dark:          darken($apple, 10);
 
-//	Colors
-$color-text:      $color-default;
-$color-bg:        $color-default-l;
-$color-borders:   $color-default-m;
-
-$color-highlight: $color-primary;
-
-$color-links:         $color-success;
-$color-links-active:  $color-success-d;
-$color-links-visited: $color-success-d;
+//  Yellow Warning
+$paris-daisy:         #fff578;
+$paris-daisy-light:   lighten($paris-daisy, 10);
+$paris-daisy-dark:    darken($paris-daisy, 10);
