@@ -1,34 +1,27 @@
 @mixin margin($top: null, $right: null, $bottom: null, $left: null) {
   @if ($right == null and $bottom == null and $left == null) {
-    @debug 'Applying margin to all sides';
     @include rem('margin', $top);
   }
   @else {
     @if ($top != null) {
-      @debug 'Applying margin to TOP';
       @include margin-top($top);
     }
 
     @if ($right != null) {
-      @debug 'Applying margin to RIGHT';
       @include margin-right($right);
     }
 
     @if ($bottom != null) {
-      @debug 'Applying margin to BOTTOM';
       @include margin-bottom($bottom);
     }
     @else if ($top != null) {
-      @debug 'Applying margin to BOTTOM using TOP value';
       @include margin-bottom($top);
     }
 
     @if ($left != null) {
-      @debug 'Applying margin to LEFT';
       @include margin-left($left);
     }
     @else if ($right != null) {
-      @debug 'Applying margin to LEFT using RIGHT value';
       @include margin-left($right);
     }
   }
