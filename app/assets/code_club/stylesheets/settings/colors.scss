@@ -1,35 +1,23 @@
-//  Page Background
-$athens-grey:          #f5f6f9;
-$athens-grey-light:    lighten($athens-grey, 10);
-$athens-grey-dark:     darken($athens-grey, 10);
+//  Greyscale Palette
+$grey:          #333333;
+$grey-med:      #848484;
+$grey-light:    #C2C2C2;
+$grey-lighter:  #E0E0E0;
+$grey-lightest: #F5F6F9;
 
-//  Default Text
-$mine-shaft:          #333;
-$mine-shaft-lighter:  rgba($mine-shaft, 0.3);
-$mine-shaft-light:    rgba($mine-shaft, 0.6);
-$mine-shaft-dark:     darken($mine-shaft, 10);
+//  Color Palette
+$red:           #FF5252;
+$red-light:     #F2918B;
+$red-dark:      #EE4D3A;
 
-//  Default Box Borders
-$alto:                #e0e0e0;
-$alto-light:          lighten($alto, 10);
-$alto-dark:           darken($alto, 10);
+$blue:          #5290D2;
+$blue-light:    #80ACDB;
+$blue-dark:     #3B7ABC;
 
-//	Red Danger
-$sunset-orange:       #ff5252;
-$sunset-orange-light: lighten($sunset-orange, 10);
-$sunset-orange-dark:  darken($sunset-orange, 10);
+$green:         #339933;
+$green-light:   #67B542;
+$green-dark:    #3D6D27;
 
-//  Blue Highlight
-$havelock-blue:       #5290d2;
-$havelock-blue-light: lighten($havelock-blue, 10);
-$havelock-blue-dark:  darken($havelock-blue, 10);
-
-//  Code Club Green
-$apple:               #393;
-$apple-light:         lighten($apple, 10);
-$apple-dark:          darken($apple, 10);
-
-//  Yellow Warning
-$paris-daisy:         #fff578;
-$paris-daisy-light:   lighten($paris-daisy, 10);
-$paris-daisy-dark:    darken($paris-daisy, 10);
+$yellow:        #FFF578;
+$yellow-light:  #FFF5AF;
+$yellow-dark:   #FFEB56;
