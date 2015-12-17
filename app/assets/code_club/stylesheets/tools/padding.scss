@@ -1,0 +1,40 @@
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+  @if ($right == null and $bottom == null and $left == null) {
+    @debug 'Applying margin to all sides';
+    @include rem('padding', $top);
+  }
+  @else {
+    @if ($top != null) {
+      @debug 'Applying margin to TOP';
+      @include padding-top($top);
+    }
+
+    @if ($right != null) {
+      @debug 'Applying margin to RIGHT';
+      @include padding-right($right);
+    }
+
+    @if ($bottom != null) {
+      @debug 'Applying margin to BOTTOM';
+      @include padding-bottom($bottom);
+    }
+    @else if ($top != null) {
+      @debug 'Applying margin to BOTTOM using TOP value';
+      @include padding-bottom($top);
+    }
+
+    @if ($left != null) {
+      @debug 'Applying margin to LEFT';
+      @include padding-left($left);
+    }
+    @else if ($right != null) {
+      @debug 'Applying margin to LEFT using RIGHT value';
+      @include padding-left($right);
+    }
+  }
+}
+
+@mixin padding-top($value)    { @include rem('padding-top',    $value); }
+@mixin padding-right($value)  { @include rem('padding-right',  $value); }
+@mixin padding-bottom($value) { @include rem('padding-bottom', $value); }
+@mixin padding-left($value)   { @include rem('padding-left',   $value); }
