@@ -4,11 +4,11 @@
 }
 
   .sg-header {
-    background: #333;
+    background: $mine-shaft;
     flex-basis: 20%;
   }
 
   .sg-content-wrapper {
     flex-basis: 80%;
-    padding:    2em 4rem;
+    @include padding($padding-big, $padding-biggest);
   }
