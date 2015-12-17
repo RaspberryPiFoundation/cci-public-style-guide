@@ -1,3 +1,5 @@
+include ColorsHelper
+
 class PagesController < ApplicationController
 
   before_filter :set_section_exists
@@ -10,6 +12,10 @@ class PagesController < ApplicationController
 
   def show
     if @page_has_view
+      if @page.path == 'colour-palette'
+        @colors = colors
+      end
+
       return render :show, :layout => @layout
     end
 
