@@ -4,7 +4,8 @@ code {
   @include rem('border-radius', $border-radius-xx-small);
   color:         $grey-med;
   font-family:   $font-family-monospace;
-	@include rem('font-size', $font-size-base * 0.9);
+	@include line-height($font-size-small, $line-height-large);
+	@include rem('font-size', $font-size-small);
   @include padding($padding-xx-small);
   white-space:   nowrap;
   word-break:    normal;
