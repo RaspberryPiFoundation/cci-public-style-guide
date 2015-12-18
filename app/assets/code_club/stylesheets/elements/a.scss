@@ -1,6 +1,7 @@
 a {
 	color:           $green;
 	cursor:          pointer;
+	font-weight:     $font-weight-bold;
 	text-decoration: underline;
 
 	&:active,
