@@ -19,6 +19,8 @@
     .sg-navigation-link {
       color:           #999;
       display:         block;
+      @include rem('font-size', $font-size-small);
+      font-weight:     $font-weight-base;
       line-height:     2.25rem;
       padding-left:    1rem;
       text-decoration: none;
