@@ -10,5 +10,5 @@
 
   .sg-content-wrapper {
     flex-basis: 80%;
-    @include padding($padding-big, $padding-biggest);
+    @include padding($padding-large, $padding-xx-large);
   }

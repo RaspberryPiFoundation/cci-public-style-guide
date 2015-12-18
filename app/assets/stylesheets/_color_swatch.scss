@@ -5,7 +5,7 @@
   .sg-swatch {
     float:      left;
     list-style: none;
-    @include margin-bottom($margin-big);
+    @include margin-bottom($margin-large);
     width:      20%;
   }
 
@@ -17,11 +17,11 @@
 
     .sg-swatch__sample {
       border: 1px solid $grey-lighter;
-      @include rem('border-radius', $border-radius-subtlest);
+      @include rem('border-radius', $border-radius-xx-small);
       display: block;
       height:  5rem;
       @include margin(0, $margin-base, $margin-base, 0);
-      @include padding($padding-base, $padding-big);
+      @include padding($padding-base, $padding-large);
     }
 
     .sg-swatch__hex {

@@ -4,6 +4,6 @@ hr {
   border:     0;
   color:      $grey-light;
   height:     1px;
-  @include rem('margin-bottom', $margin-big);
-  @include rem('margin-top',    $margin-bigger);
+  @include rem('margin-bottom', $margin-large);
+  @include rem('margin-top',    $margin-x-large);
 }
