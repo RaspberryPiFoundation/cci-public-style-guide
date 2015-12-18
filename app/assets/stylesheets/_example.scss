@@ -1,0 +1,13 @@
+.sg-example {
+  border: 1px solid $grey-lighter;
+  box-shadow: inset 0 0 5px 0 $grey-lightest;
+  @include rem('border-radius', $border-radius-x-small);
+  @include padding($padding-base);
+}
+
+  .sg-example-heading {
+    @include h5;
+    color:          $grey-med;
+    font-weight:    $font-weight-bold;
+    text-transform: uppercase;
+  }
