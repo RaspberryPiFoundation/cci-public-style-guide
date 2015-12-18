@@ -21,12 +21,12 @@
 		<h3 class="sg-example-heading">Example</h3>
 
 		<% for header in 1..6 do %>
-			<%= "<h#{header}>A nationwide network of volunteer-led after school coding clubs for children aged 9–11</h#{header}>".html_safe %>
+			<%= "<h#{header}>h#{header}: A nationwide network of volunteer-led after school coding clubs for children aged 9–11</h#{header}>".html_safe %>
 		<% end %>
 
 		<code class="sg-code">
 			<% for header in 1..6 do %>
-				<%= "&lt;h#{header}&gt;Heading Level #{header}&lt;/h#{header}&gt;".html_safe %><br>
+				<%= "&lt;h#{header}&gt;h#{header}: Heading Level #{header}&lt;/h#{header}&gt;".html_safe %><br>
 			<% end %>
 		</code>
 	</div>
