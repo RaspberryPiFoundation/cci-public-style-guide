@@ -7,12 +7,10 @@ a {
 	&:active,
 	&:focus,
 	&:hover {
-		color:           $green-light;
 		text-decoration: none;
 	}
 
 	&:visited {
-		color:           $green-dark;
 		text-decoration: none;
 	}
 }
