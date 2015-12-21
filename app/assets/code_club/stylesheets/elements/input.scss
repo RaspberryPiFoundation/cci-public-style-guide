@@ -2,18 +2,18 @@ input {
 	font-family: $font-family-primary;
 
 	::-webkit-input-placeholder {
-		color: $grey-lighter;
+		color: $grey-x-light;
 	}
 
 	:-moz-placeholder {
-		color: $grey-lighter;
+		color: $grey-x-light;
 	}
 
 	::-moz-placeholder {
-		color: $grey-lighter;
+		color: $grey-x-light;
 	}
 
 	:-ms-input-placeholder {
-		color: $grey-lighter;
+		color: $grey-x-light;
 	}
 }
