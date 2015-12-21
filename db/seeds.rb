@@ -3,8 +3,7 @@ Section.create!([
   { path: "the-basics", title: "The Basics", order: 20,  show_in_nav: true  },
   { path: "layout",     title: "Layout",     order: 30,  show_in_nav: true  },
   { path: "styles",     title: "Styles",     order: 40,  show_in_nav: true  },
-  { path: "components", title: "Components", order: 50,  show_in_nav: true  },
-  { path: "modules",    title: "Modules",    order: 60,  show_in_nav: true  },
+  { path: "modules",    title: "Modules",    order: 50,  show_in_nav: true  },
   { path: "examples",   title: "Examples",   order: 100, show_in_nav: false }
 ])
 
@@ -16,17 +15,17 @@ Page.create!([
   { path: "sample-pages",     title: "Sample Pages",     order: 20, section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
 
   { path: "typography",       title: "Typography",       order: 10, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "lists",            title: "Lists",            order: 20, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "tables",           title: "Tables",           order: 30, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "icons",            title: "Icons",            order: 20, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "buttons",          title: "Buttons",          order: 30, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "forms",            title: "Forms",            order: 40, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "lists",            title: "Lists",            order: 50, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "tables",           title: "Tables",           order: 60, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "alerts",           title: "Alerts",           order: 70, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
 
-  { path: "icons",            title: "Icons",            order: 10, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "buttons",          title: "Buttons",          order: 20, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "forms",            title: "Forms",            order: 30, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "alerts",           title: "Alerts",           order: 40, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "cards",            title: "Cards",            order: 10, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "hero-blocks",      title: "Hero Blocks",      order: 20, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "navigation",       title: "Navigation",       order: 30, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "faq-list",         title: "FAQ List",         order: 40, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
 
-  { path: "cards",            title: "Cards",            order: 10, section_id: 6, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "hero-blocks",      title: "Hero Blocks",      order: 20, section_id: 6, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "navigation",       title: "Navigation",       order: 30, section_id: 6, show_in_nav: true, example_page: false, back_page_id: nil },
-
-  { path: "menu",             title: "Menu",             order: 10, section_id: 7, show_in_nav: true, example_page: true,  back_page_id: 7   }
+  { path: "menu",             title: "Menu",             order: 10, section_id: 6, show_in_nav: true, example_page: true,  back_page_id: 7   }
 ])
