@@ -3,6 +3,37 @@
   padding-left: 0;
 }
 
-  .c-list--plain li {
-    list-style-type: none;
+  .c-list__item {
+    margin-left:  0;
+    padding-left: 0;
   }
+
+    .c-list__item--plain {
+      list-style-type: none;
+    }
+
+    .c-list__item--bulleted {
+      background: url('../images/bullet.svg') left 0.2rem no-repeat;
+      @include rem('background-size', $font-size-small);
+      list-style-type: none;
+      @include padding-left($padding-base * 1.25);
+
+      &.c-list__item--large {
+        @include rem('background-size', $font-size-base);
+        background-position: left 0.1rem;
+        background-size:     $font-size-large * 1px;
+        list-style-type:     none;
+        @include margin-bottom($margin-base);
+        @include padding-left($padding-large);
+      }
+    }
+
+    .c-list__item--horiz {
+      list-style: none;
+      float:      left;
+      @include margin-left($margin-base);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
