@@ -1,0 +1,16 @@
+.c-def-list {}
+
+  .c-def-list__term {
+    border-top: 1px solid $grey-x-light;
+    clear: both;
+    float: left;
+    @include padding($padding-small, 0);
+    width: 30%;
+  }
+
+  .c-def-list__definition {
+    border-top: 1px solid $grey-x-light;
+    float: left;
+    @include padding($padding-small, 0);
+    width: 70%;
+  }
