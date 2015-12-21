@@ -1,0 +1,30 @@
+.c-alert {
+  background:  $grey-light;
+  color:       #fff;
+  display:     block;
+  font-weight: $font-weight-bold;
+  @include margin-bottom($margin-large);
+  @include padding($padding-small);
+  text-align:  center;
+}
+
+  .c-alert--success {
+    background: $green;
+  }
+
+  .c-alert--info {
+    background: $blue;
+  }
+  .c-alert--warning {
+    background: $yellow;
+    color:      $grey;
+  }
+  .c-alert--error {
+    background: $red;
+  }
+
+  .c-alert--inline {
+    @include rem('border-radius', $border-radius-small);
+    text-align:    left;
+    @include margin-bottom($margin-base);
+  }
