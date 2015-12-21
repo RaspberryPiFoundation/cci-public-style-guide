@@ -404,14 +404,14 @@ gulp.task('release', ['git_actions'], function () {
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
-  gulp.watch(app_assets_config.fonts.source       + '/*',      ['app_fonts']);
-  gulp.watch(app_assets_config.images.source      + '/*',      ['app_images']);
+  gulp.watch(app_assets_config.fonts.source       + '/**',     ['app_fonts']);
+  gulp.watch(app_assets_config.images.source      + '/**',     ['app_images']);
   gulp.watch(app_assets_config.javascripts.source + '/*.js',   ['app_javascripts']);
   gulp.watch(app_assets_config.stylesheets.source + '/*.scss', ['app_stylesheets']);
 
   //  Style guide assets
-  gulp.watch(cc_assets_config.fonts.source       + '/*',         ['cc_fonts']);
-  gulp.watch(cc_assets_config.images.source      + '/*',         ['cc_images']);
+  gulp.watch(cc_assets_config.fonts.source       + '/**',        ['cc_fonts']);
+  gulp.watch(cc_assets_config.images.source      + '/**',        ['cc_images']);
   gulp.watch(cc_assets_config.javascripts.source + '/**/*.js',   ['cc_javascripts']);
   gulp.watch(cc_assets_config.stylesheets.source + '/**/*.scss', ['cc_stylesheets']);
 });
