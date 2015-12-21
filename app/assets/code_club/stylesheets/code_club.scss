@@ -6,6 +6,7 @@
 //  Settings
 @import 'settings/colors';
 @import 'settings/font-faces';
+@import 'settings/icons';
 @import 'settings/responsive-breakpoints';
 @import 'settings/typography';
 @import 'settings/border-radii';
@@ -55,6 +56,7 @@
 
 //  Components
 @import 'components/button';
+@import 'components/icon';
 @import 'components/lede';
 @import 'components/meta';
 

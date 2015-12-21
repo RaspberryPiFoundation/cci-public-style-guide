@@ -1,0 +1,21 @@
+.c-icon {
+  display: inline-block;
+  @include square($icon-size-base);
+}
+
+  .c-icon--x-small  { @include square($icon-size-x-small);  }
+  .c-icon--small    { @include square($icon-size-small);    }
+  .c-icon--large    { @include square($icon-size-large);    }
+  .c-icon--x-large  { @include square($icon-size-x-large);  }
+
+  .c-icon__image {
+    height: 100%;
+    width:  100%;
+  }
+
+    .c-icon__image--danger  .c-icon__path { fill: $red;        }
+    .c-icon__image--primary .c-icon__path { fill: $blue;       }
+    .c-icon__image--success .c-icon__path { fill: $green;      }
+    .c-icon__image--warning .c-icon__path { fill: $yellow;     }
+    .c-icon__image--light   .c-icon__path { fill: $grey-med;   }
+    .c-icon__image--muted   .c-icon__path { fill: $grey-light; }
