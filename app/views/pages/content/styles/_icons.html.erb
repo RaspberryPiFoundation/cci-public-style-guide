@@ -1,13 +1,11 @@
 <div class="sg-panel">
-  <p>The Code Club icon set is a set of SVG images, with HTML classes for sizing and coloring.</p>
-
-  <hr>
-
   <h2>Available icons</h2>
+
+  <p>The Code Club icon set is a set of SVG images, with HTML classes for sizing.</p>
 
   <ul class="c-list c-list--plain">
     <% for icon in icons %>
-      <li><span class="c-icon"><%= image_tag "images/icons/#{icon}.svg", :alt => '', :class => 'c-icon__image' %></span> <code><%= icon %></code></li>
+      <li class="c-list__item c-list__item--plain"><span class="c-icon"><%= image_tag "images/icons/#{icon}.svg", :alt => '', :class => 'c-icon__image' %></span> <code><%= icon %></code></li>
     <% end %>
   </ul>
 
@@ -25,7 +23,7 @@
   </ul>
 
   <div class="sg-example">
-    <h3 class="sg-example-heading">Example</h3>
+    <h3 class="sg-example__heading">Example</h3>
 
     <p>
       <span class="c-icon c-icon--x-small"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
@@ -35,7 +33,7 @@
       <span class="c-icon c-icon--x-large"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
     </p>
 
-    <code class="sg-code">
+    <code class="sg-example__code">
       &lt;span class="c-icon c-icon--x-small"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
       &lt;span class="c-icon c-icon--small"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
       &lt;span class="c-icon"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
