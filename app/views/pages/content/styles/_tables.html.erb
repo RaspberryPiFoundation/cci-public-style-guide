@@ -1,88 +1,155 @@
-<div class="layout margin-double">
-  <div class="col col1of1 pad2 bubble">
+<div class="sg-panel">
+  <h3>Grid Table</h3>
 
-    <h3>Default table styles</h3>
+  <div class="sg-example">
+    <h3 class="sg-example__heading">Example</h3>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Project 1: Rock Band</th>
-          <th>Project 2: Lost in Space</th>
-          <th>Project 3: Ghostbusters</th>
-          <th>Project 4: ChatBot</th>
-          <th>Project 5: Paint Box</th>
-          <th>Project 6: Boat Race</th>
+    <table class="c-grid-table">
+      <thead class="c-grid-table__head">
+        <tr class="c-grid-table__head-row">
+          <th class="c-grid-table__col-heading"></th>
+          <th class="c-grid-table__col-heading">Rock Band</th>
+          <th class="c-grid-table__col-heading">Lost in Space</th>
+          <th class="c-grid-table__col-heading">Ghostbusters</th>
+          <th class="c-grid-table__col-heading">ChatBot</th>
+          <th class="c-grid-table__col-heading">Paint Box</th>
+          <th class="c-grid-table__col-heading">Boat Race</th>
         </tr>
       </thead>
-      <tbody class="center">
-          <tr><th scope="row">Sequencing</th>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
+      <tbody class="c-grid-table__body">
+        <tr class="c-grid-table__body-row">
+          <th class="c-grid-table__row-heading" scope="row">Sequencing</th>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
         </tr>
-        <tr>
-          <th scope="row">Repetition</th>
-          <td></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
+        <tr class="c-grid-table__body-row">
+          <th class="c-grid-table__row-heading" scope="row">Repetition</th>
+          <td class="c-grid-table__cell"></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
         </tr>
-        <tr>
-          <th scope="row">Variables</th>
-          <td></td>
-          <td></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-        </tr>
-        <tr>
-          <th scope="row">Selection</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-        </tr>
-        <tr>
-          <th scope="row">Boolean Operators</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-          <td><%= image_tag '/assets/code_club/images/icons/tick.svg', :class => "icon" %></td>
-        </tr>
-        <tr>
-          <th scope="row">Data Structures</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row">Functions</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr class="c-grid-table__body-row">
+          <th class="c-grid-table__row-heading" scope="row">Variables</th>
+          <td class="c-grid-table__cell"></td>
+          <td class="c-grid-table__cell"></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
+          <td class="c-grid-table__cell"><span class="c-icon c-icon--x-small"><%= image_tag "images/icons/tick.svg", :alt => '', :class => 'c-icon__image' %></span></td>
         </tr>
       </tbody>
     </table>
 
-    <br>
-    <p>Note: This is copied roughly from <a href="https://www.codeclubprojects.org/en-GB/curriculum/">the projects site</a>; how tables work over there are great.</p>
+    <code class="sg-example__code">
+      &lt;table class="c-grid-table"&gt;<br>
+      &nbsp;&nbsp;&lt;thead class="c-grid-table__head"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-grid-table__head-row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;Rock Band&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;Lost in Space&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;Ghostbusters&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;ChatBot&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;Paint Box&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__col-heading"&gt;Boat Race&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&lt;/thead&gt;<br>
+      &nbsp;&nbsp;&lt;tbody class="c-grid-table__body"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-grid-table__body-row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__row-heading" scope="row"&gt;Sequencing&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-grid-table__body-row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__row-heading" scope="row"&gt;Repetition&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-grid-table__body-row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-grid-table__row-heading" scope="row"&gt;Variables&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-grid-table__cell"&gt;&lt;span class="c-icon c-icon--x-small"&gt;&lt;img slt="" src="/images/icons/tick.svg" class"c-icon__image"&gt;&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&lt;/tbody&gt;<br>
+      &lt;/table&gt;
+    </code>
+  </div>
 
+  <hr>
+
+  <h2>Listings Table</h2>
+
+  <div class="sg-example">
+    <h3 class="sg-example__heading">Example</h3>
+
+    <table class="c-strip-table">
+      <tbody class="c-strip-table__body">
+        <tr class="c-strip-table__row">
+          <th class="c-strip-table__heading">St Mary's Catholic Primary School</th>
+          <td class="c-strip-table__cell"><span class="meta">0.4 miles away</span></td>
+          <td class="c-strip-table__cell"><a href="#">Contact Club Host</a></td>
+        </tr>
+        <tr class="c-strip-table__row">
+          <th class="c-strip-table__heading">Sherwood Library</th>
+          <td class="c-strip-table__cell"><span class="meta">0.8 miles away</span></td>
+          <td class="c-strip-table__cell"><a href="#">Contact Club Host</a></td>
+        </tr>
+        <tr class="c-strip-table__row">
+          <th class="c-strip-table__heading">Hyson Green Primary School</th>
+          <td class="c-strip-table__cell"><span class="meta">1 mile away</span></td>
+          <td class="c-strip-table__cell"><a href="#">Contact Club Host</a></td>
+        </tr>
+        <tr class="c-strip-table__row">
+          <th class="c-strip-table__heading">Westdale Infant School</th>
+          <td class="c-strip-table__cell"><span class="meta">1.2 miles away</span></td>
+          <td class="c-strip-table__cell"><a href="#">Contact Club Host</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <code class="sg-example__code">
+      &lt;table class="c-strip-table"&gt;<br>
+      &nbsp;&nbsp;&lt;tbody class="c-strip-table__body"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-strip-table__row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-strip-table__heading"&gt;St Mary's Catholic Primary School&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;span class="meta"&gt;0.4 miles away&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;a href="#"&gt;Contact Club Host&lt;/a&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-strip-table__row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-strip-table__heading"&gt;Sherwood Library&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;span class="meta"&gt;0.8 miles away&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;a href="#"&gt;Contact Club Host&lt;/a&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-strip-table__row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-strip-table__heading"&gt;Hyson Green Primary School&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;span class="meta"&gt;1 mile away&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;a href="#"&gt;Contact Club Host&lt;/a&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="c-strip-table__row"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="c-strip-table__heading"&gt;Westdale Infant School&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;span class="meta"&gt;1.2 miles away&lt;/span&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="c-strip-table__cell"&gt;&lt;a href="#"&gt;Contact Club Host&lt;/a&gt;&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&lt;/tbody&gt;<br>
+      &lt;/table&gt;
+    </code>
   </div>
 </div>
