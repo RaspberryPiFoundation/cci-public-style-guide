@@ -1,0 +1,25 @@
+.c-strip-table {
+  border-collapse: collapse;
+  @include margin-bottom($margin-large);
+  width:           100%;
+}
+
+  .c-strip-table__body {
+    border-bottom: 1px solid $grey-x-light;
+  }
+
+    .c-strip-table__row {
+      border-top: 1px solid $grey-x-light;
+    }
+
+    .c-strip-table__heading {
+      @include padding($padding-base);
+      text-align: left;
+      width: 50%;
+    }
+
+    .c-strip-table__cell {
+      @include padding($padding-base, 0);
+      text-align: center;
+      width: 25%;
+    }
