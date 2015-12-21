@@ -1,256 +1,44 @@
-<div class="layout">
-  <div class="col col1of1 pad2 bubble">
+<div class="sg-panel">
+  <p>The Code Club icon set is a set of SVG images, with HTML classes for sizing and coloring.</p>
 
-    <p>Icons should be delivered as SVGs and coloured using CSS.</p>
+  <hr>
 
-    <br>
+  <h2>Available icons</h2>
 
-    <div class="layout">
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-left</span>
+  <% for icon in icons %>
+    <span class="c-icon"><%= image_tag "images/icons/#{icon}.svg", :alt => '', :class => 'c-icon__image' %></span>
+  <% end %>
 
-        <div class="img">
-          <%= image_tag 'images/icons/arrow-left.svg' %>
-        </div>
-      </div>
+  <hr>
 
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-right</span>
+  <h2>Sizing icons</h2>
 
-        <div class="img">
-          <%= image_tag 'images/icons/arrow-right.svg' %>
-        </div>
-      </div>
+  <p>The following modifiers are available for altering icon sizes:</p>
 
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-up</span>
+  <ul>
+    <li><code>.c-icon--x-small</code></li>
+    <li><code>.c-icon--small</code></li>
+    <li><code>.c-icon--large</code></li>
+    <li><code>.c-icon--x-large</code></li>
+  </ul>
 
-        <div class="img">
-          <%= image_tag 'images/icons/arrow-up.svg' %>
-        </div>
-      </div>
+  <div class="sg-example">
+    <h3 class="sg-example-heading">Example</h3>
 
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-down</span>
+    <p>
+      <span class="c-icon c-icon--x-small"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
+      <span class="c-icon c-icon--small"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
+      <span class="c-icon"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
+      <span class="c-icon c-icon--large"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
+      <span class="c-icon c-icon--x-large"><%= image_tag "images/icons/star.svg", :alt => '', :class => 'c-icon__image' %></span>
+    </p>
 
-        <div class="img">
-          <%= image_tag 'images/icons/arrow-down.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-circle-left</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/arrow-circle-left.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-circle-right</span>
-        <div class="img">
-            <%= image_tag 'images/icons/arrow-circle-right.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-circle-up</span>
-        <div class="img">
-            <%= image_tag 'images/icons/arrow-circle-up.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-circle-down</span>
-        <div class="img">
-            <%= image_tag 'images/icons/arrow-circle-down.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-fill-left</span>
-        <div class="img">
-            <%= image_tag 'images/icons/arrow-fill-left.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-fill-right</span>
-        <div class="img">
-            <%= image_tag 'images/icons/arrow-fill-right.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-fill-up</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/arrow-fill-up.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">arrow-fill-down</span>
-        <div class="img">
-            <%= image_tag 'images/icons/arrow-fill-down.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">info</span>
-        <div class="img">
-            <%= image_tag 'images/icons/info.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">info-fill</span>
-        <div class="img">
-            <%= image_tag 'images/icons/info-fill.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">archive</span>
-        <div class="img">
-            <%= image_tag 'images/icons/archive.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">download</span>
-        <div class="img">
-            <%= image_tag 'images/icons/download.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">document</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/document.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">note</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/note.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">feedback</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/feedback.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">star</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/star.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">tick</span>
-        <div class="img">
-            <%= image_tag 'images/icons/tick.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">help</span>
-        <div class="img">
-            <%= image_tag 'images/icons/help.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">email</span>
-        <div class="img">
-            <%= image_tag 'images/icons/email.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">warning</span>
-        <div class="img">
-            <%= image_tag 'images/icons/warning.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">plus</span>
-        <div class="img">
-            <%= image_tag 'images/icons/plus.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">plus-circle</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/plus-circle.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">search</span>
-        <div class="img">
-            <%= image_tag 'images/icons/search.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">projects-resrc</span>
-        <div class="img">
-            <%= image_tag 'images/icons/projects-resrc.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">volunteers</span>
-        <div class="img">
-            <%= image_tag 'images/icons/volunteers.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">settings</span>
-        <div class="img">
-            <%= image_tag 'images/icons/settings.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">lock</span>
-        <div class="img">
-            <%= image_tag 'images/icons/lock.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">location</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/location.svg' %>
-        </div>
-      </div>
-
-      <div class="col col1of4 margin-one">
-        <span class="mono">error</span>
-
-        <div class="img">
-          <%= image_tag 'images/icons/error.svg' %>
-        </div>
-      </div>
-    </div>
-
-
+    <code class="sg-code">
+      &lt;span class="c-icon c-icon--x-small"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--small"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--large"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--x-large"&gt;&lt;img alt="" class="c-icon__image" src="/assets/images/icons/star.svg"&gt;&lt;/span&gt;<br>
+    </code>
   </div>
 </div>
