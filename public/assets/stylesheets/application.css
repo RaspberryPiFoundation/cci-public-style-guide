@@ -86,6 +86,9 @@
 .sg-navigation-link {
   color: #999;
   display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
   line-height: 2.25rem;
   padding-left: 1rem;
   text-decoration: none; }
@@ -117,18 +120,18 @@
   padding: 16px;
   padding: 1rem; }
 
-.sg-example-heading {
+.sg-example__heading {
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem;
   color: #848484;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase; }
 
-.sg-code {
+.sg-example__code {
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
