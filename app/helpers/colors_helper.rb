@@ -5,8 +5,8 @@ module ColorsHelper
         'grey':          '333333',
         'grey-med':      '848484',
         'grey-light':    'C2C2C2',
-        'grey-lighter':  'E0E0E0',
-        'grey-lightest': 'F5F6F9'
+        'grey-x-light':  'E0E0E0',
+        'grey-xx-light': 'F5F6F9'
       },
       'highlights': {
         'blue':          '5290D2',
