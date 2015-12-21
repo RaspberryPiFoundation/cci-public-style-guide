@@ -1,4 +1,7 @@
-$border-radius:          $font-size-base;
-$border-radius-small:    $border-radius * 0.75;
-$border-radius-x-small:  $border-radius * 0.5;
-$border-radius-xx-small: $border-radius * 0.25;
+$border-radius-base:     $font-size-base;
+$border-radius-xx-large: $border-radius-base * 3;
+$border-radius-x-large:  $border-radius-base * 2;
+$border-radius-large:    $border-radius-base * 1.5;
+$border-radius-small:    $border-radius-base * 0.75;
+$border-radius-x-small:  $border-radius-base * 0.5;
+$border-radius-xx-small: $border-radius-base * 0.25;
