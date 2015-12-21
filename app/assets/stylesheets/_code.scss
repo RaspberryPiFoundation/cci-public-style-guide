@@ -1,4 +1,4 @@
-.sg-code {
+.sg-example__code {
   @include rem('border-radius', $border-radius-x-small);
   display: block;
   @include padding($padding-x-small);

@@ -5,7 +5,7 @@
   @include padding($padding-base);
 }
 
-  .sg-example-heading {
+  .sg-example__heading {
     @include h5;
     color:          $grey-med;
     font-weight:    $font-weight-bold;
