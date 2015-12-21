@@ -18,13 +18,13 @@
 	<h2>Headings</h2>
 
 	<div class="sg-example">
-		<h3 class="sg-example-heading">Example</h3>
+		<h3 class="sg-example__heading">Example</h3>
 
 		<% for header in 1..6 do %>
 			<%= "<h#{header}>h#{header}: A nationwide network of volunteer-led after school coding clubs for children aged 9–11</h#{header}>".html_safe %>
 		<% end %>
 
-		<code class="sg-code">
+		<code class="sg-example__code">
 			<% for header in 1..6 do %>
 				<%= "&lt;h#{header}&gt;h#{header}: Heading Level #{header}&lt;/h#{header}&gt;".html_safe %><br>
 			<% end %>
@@ -39,12 +39,12 @@
 	<p>On smaller devices the base font sizing remains the same but the headings will decrease in relative size.</p>
 
 	<div class="sg-example">
-		<h3 class="sg-example-heading">Example</h3>
+		<h3 class="sg-example__heading">Example</h3>
 
 		<p>Lorem ipsum dolor sit amet, duo nostro ocurreret abhorreant at, his ut errem vocibus suscipit, veniam nonumy eu duo. Sea et wisi decore, cu verterem hendrerit mel. Latine deleniti vim an, vim an congue nostrum definitiones. Ipsum tibique salutandi sed at. Id mundi graece percipit usu, commune deleniti ad eum.</p>
 		<p>An his paulo vocibus praesent. An odio voluptaria reformidans vis, ad est odio apeirian, per soleat ponderum signiferumque ne. Idque consectetuer ius ei, mea affert vivendo voluptatibus ei. Accumsan noluisse mea cu, nostrum fastidii ex has. Ad congue docendi sit, an melius bonorum laboramus eam, hinc commodo laoreet in vim.</p>
 
-		<code class="sg-code">
+		<code class="sg-example__code">
 			&lt;p&gt;...&lt;/p&gt;
 		</code>
 	</div>
@@ -52,11 +52,11 @@
 	<p>Smaller items can be set in 14px. Useful for meta information, notes, etc</p>
 
 	<div class="sg-example">
-		<h3 class="sg-example-heading">Example</h3>
+		<h3 class="sg-example__heading">Example</h3>
 
 		<p class="c-meta">Smaller items can be set in 14px. Useful for meta information, notes, etc</p>
 
-		<code class="sg-code">
+		<code class="sg-example__code">
 			&lt;p class="c-meta"&gt;...&lt;/p&gt;
 		</code>
 	</div>
@@ -64,11 +64,11 @@
 	<p>There is a larger class which is useful for presenting introductory pieces of text, callouts, or similar.</p>
 
 	<div class="sg-example">
-		<h3 class="sg-example-heading">Example</h3>
+		<h3 class="sg-example__heading">Example</h3>
 
 		<p class="c-lede">There is a larger class which is useful for presenting introductory pieces of text, callouts, or similar.</p>
 
-		<code class="sg-code">
+		<code class="sg-example__code">
 			&lt;p class="c-lede"&gt;...&lt;/p&gt;
 		</code>
 	</div>
@@ -80,14 +80,14 @@
 	<p>For aligning text on an ad-hoc basis, the following utility classes can be used.</p>
 
 	<div class="sg-example">
-		<h3 class="sg-example-heading">Example</h3>
+		<h3 class="sg-example__heading">Example</h3>
 
-
-		<code class="sg-code">
 		<p class="u-text--left">Left aligned text</p>
 		<p class="u-text--center">Center aligned text</p>
 		<p class="u-text--right">Right aligned text</p>
 		<p class="u-text--justify">Justified text</p>
+
+		<code class="sg-example__code">
 			&lt;p class="u-text--left"&gt;Left aligned text&lt;/p&gt;<br>
 			&lt;p class="u-text--center"&gt;Center aligned text&lt;/p&gt;<br>
 			&lt;p class="u-text--right"&gt;Right aligned text&lt;/p&gt;<br>
@@ -99,25 +99,47 @@
 
 	<h2>Colour Adjustment Utilities</h2>
 
-	<p>The following utility classes will allow you to change the colour of your text.</p>
+	<p>The following utility classes will allow you to change the colour of your text. Be careful to display text on a contrasting background to aid readability.</p>
 
 	<div class="sg-example">
-		<h3 class="sg-example-heading">Example</h3>
+		<h3 class="sg-example__heading">Example</h3>
 
-		<p class="u-text-danger">Danger text colour</p>
-		<p class="u-text-primary">Primary text colour</p>
-		<p class="u-text-success">Success text colour</p>
-		<p class="u-text-warning">Warning text colour</p>
-		<p class="u-text-light" style="background: #333;">Light text colour</p>
-		<p class="u-text-muted">Muted text colour</p>
+		<p class="u-color--grey">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--grey-med">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--grey-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--grey-x-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--grey-xx-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--red">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--red-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--red-dark">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--blue">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--blue-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--blue-dark">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--green">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--green-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--green-dark">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--yellow">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--yellow-light">Lorem Ipsum dolor sit amet</p>
+		<p class="u-color--yellow-dark">Lorem Ipsum dolor sit amet</p>
 
-		<code class="sg-code">
-			&lt;p class="u-text-danger"&gt;Danger text colour&lt;/p&gt;<br>
-			&lt;p class="u-text-primary"&gt;Primary text colour&lt;/p&gt;<br>
-			&lt;p class="u-text-success"&gt;Success text colour&lt;/p&gt;<br>
-			&lt;p class="u-text-warning"&gt;Warning text colour&lt;/p&gt;<br>
-			&lt;p class="u-text-light"&gt;Light text colour&lt;/p&gt;<br>
-			&lt;p class="u-text-muted"&gt;Muted text colour&lt;/p&gt;
+		<code class="sg-example__code">
+			&lt;p class="u-color--grey"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--grey-med"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--grey-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--grey-x-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--grey-xx-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--red"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--red-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--red-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--blue"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--blue-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--blue-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--green"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--green-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--green-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--yellow"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--yellow-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
+			&lt;p class="u-color--yellow-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;
 		</code>
 	</div>
 </div>
