@@ -1,4 +1,5 @@
 include ColorsHelper
+include IconsHelper
 
 class PagesController < ApplicationController
 
@@ -9,13 +10,10 @@ class PagesController < ApplicationController
   before_filter :set_back_page_for_examples
   before_filter :set_page_has_view
   before_filter :set_layout
+  before_filter :set_view_vars
 
   def show
     if @page_has_view
-      if @page.path == 'colour-palette'
-        @colors = colors
-      end
-
       return render :show, :layout => @layout
     end
 
@@ -60,4 +58,12 @@ class PagesController < ApplicationController
     Section.where(:path => params[:section]).exists? || not_found
   end
 
+  def set_view_vars
+    case @page.path
+    when 'colour-palette'
+      @colors = colors
+    when 'icons'
+      @icons = icons
+    end
+  end
 end
