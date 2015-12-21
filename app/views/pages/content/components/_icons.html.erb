@@ -5,15 +5,17 @@
 
   <h2>Available icons</h2>
 
-  <% for icon in icons %>
-    <span class="c-icon"><%= image_tag "images/icons/#{icon}.svg", :alt => '', :class => 'c-icon__image' %></span>
-  <% end %>
+  <ul class="c-list c-list--plain">
+    <% for icon in icons %>
+      <li><span class="c-icon"><%= image_tag "images/icons/#{icon}.svg", :alt => '', :class => 'c-icon__image' %></span> <code><%= icon %></code></li>
+    <% end %>
+  </ul>
 
   <hr>
 
   <h2>Sizing icons</h2>
 
-  <p>The following modifiers are available for altering icon sizes:</p>
+  <p>The default icon size is equivalent to 20px in width and height. The following modifiers are available for altering icon sizes:</p>
 
   <ul>
     <li><code>.c-icon--x-small</code></li>
