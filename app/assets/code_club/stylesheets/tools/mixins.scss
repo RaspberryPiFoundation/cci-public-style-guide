@@ -70,3 +70,8 @@
 		@content;
 	}
 }
+
+@mixin square($size) {
+  @include rem('height', $size);
+  @include rem('width',  $size);
+}
