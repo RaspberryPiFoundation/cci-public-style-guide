@@ -10,8 +10,9 @@
   .c-icon--x-large  { @include square($icon-size-x-large);  }
 
   .c-icon__image {
-    height: 100%;
-    width:  100%;
+    display: block;
+    height:  100%;
+    width:   100%;
   }
 
     .c-icon__image--danger  .c-icon__path { fill: $red;        }
