@@ -1,0 +1,22 @@
+.c-form {}
+
+  .c-form__fieldset {}
+
+  .c-form__label {
+    color:          $grey-med;
+    display:        block;
+    @include rem('font-size', $font-size-small);
+    @include margin-bottom($margin-small);
+    vertical-align: middle
+  }
+
+  .c-form__input {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-base;
+    border: 1px solid $grey-x-light;
+    @include rem('border-radius', $border-radius-x-small);
+    @include padding($padding-small);
+    display: block;
+    outline: 0;
+    width: 100%;
+  }
