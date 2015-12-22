@@ -11,3 +11,7 @@
     font-weight:    $font-weight-bold;
     text-transform: uppercase;
   }
+
+  .sg-example__preview {
+    @include margin-bottom($margin-base);
+  }
