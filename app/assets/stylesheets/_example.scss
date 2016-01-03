@@ -17,5 +17,11 @@
   }
 
   .sg-example__card {
-    width: 32%;
+    float:       left;
+    margin-left: 2%;
+    width:       32%;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
