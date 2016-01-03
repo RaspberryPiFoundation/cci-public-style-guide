@@ -4,12 +4,16 @@
 */
 
 //  Settings
-@import 'settings/colors';
 @import 'settings/font-faces';
-@import 'settings/icons';
-@import 'settings/responsive-breakpoints';
 @import 'settings/typography';
+
 @import 'settings/border-radii';
+@import 'settings/border-sizes';
+@import 'settings/colors';
+@import 'settings/icons';
+@import 'settings/margins';
+@import 'settings/paddings';
+@import 'settings/responsive-breakpoints';
 
 //  Tools
 @import 'tools/functions';
