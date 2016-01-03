@@ -1,7 +1,7 @@
 .c-button {
   @include rem('border-radius', $border-radius-large);
   background:      $grey-med;
-  border:          3px solid $grey-med;
+  border:          $border-size-x-large solid $grey-med;
   display:         inline-block;
   color:           #fff;
   text-decoration: none;

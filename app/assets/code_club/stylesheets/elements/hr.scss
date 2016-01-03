@@ -3,7 +3,7 @@ hr {
   background: $grey-light;
   border:     0;
   color:      $grey-light;
-  height:     1px;
+  height:     $border-size-base;
   @include rem('margin-bottom', $margin-large);
   @include rem('margin-top',    $margin-x-large);
 }

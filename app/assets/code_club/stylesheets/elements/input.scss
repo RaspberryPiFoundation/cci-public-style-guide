@@ -1,5 +1,6 @@
 input {
-	font-family: $font-family-primary;
+	font-family:    $font-family-primary;
+	vertical-align: middle;
 
 	::-webkit-input-placeholder {
 		color: $grey-x-light;

@@ -5,11 +5,11 @@
 }
 
   .c-strip-table__body {
-    border-bottom: 1px solid $grey-x-light;
+    border-bottom: $border-size-base solid $grey-x-light;
   }
 
     .c-strip-table__row {
-      border-top: 1px solid $grey-x-light;
+      border-top: $border-size-base solid $grey-x-light;
     }
 
     .c-strip-table__heading {

@@ -27,7 +27,7 @@
       }
 
       .c-grid-table__cell {
-        border:         2px solid $grey-x-light;
+        border:         $border-size-large solid $grey-x-light;
         @include padding($padding-base, 0);
         text-align:     center;
         vertical-align: middle;
