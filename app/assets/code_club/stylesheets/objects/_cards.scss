@@ -1,0 +1,30 @@
+.o-card {
+  background: #FFF;
+  border: $border-size-base solid $grey-x-light;
+  @include rem('border-radius', $border-radius-small);
+}
+
+  .o-card__heading {
+    border-bottom: $border-size-base solid $grey-x-light;
+    @include h4;
+    @include padding($padding-small);
+    text-align: center;
+  }
+
+  .o-card__body {
+    @include padding($padding-small);
+  }
+
+  .o-card__footer {
+    border-top: $border-size-base solid $grey-x-light;
+    @include padding($padding-small);
+    text-align: center;
+  }
+
+    .o-card__footer-link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }

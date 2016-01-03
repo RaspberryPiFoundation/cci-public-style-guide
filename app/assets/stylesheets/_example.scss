@@ -15,3 +15,7 @@
   .sg-example__preview {
     @include margin-bottom($margin-base);
   }
+
+  .sg-example__card {
+    width: 32%;
+  }
