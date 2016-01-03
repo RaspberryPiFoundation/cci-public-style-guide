@@ -131,6 +131,10 @@
   font-weight: 500;
   text-transform: uppercase; }
 
+.sg-example__preview {
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+
 .sg-example__code {
   border-radius: 8px;
   border-radius: 0.5rem;

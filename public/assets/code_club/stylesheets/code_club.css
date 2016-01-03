@@ -1285,6 +1285,7 @@ code {
   color: #848484;
   font-family: Monaco, "Andale Mono", monospace;
   line-height: 1.96429;
+  overflow-x: scroll;
   font-size: 14px;
   font-size: 0.875rem;
   padding: 4px;
@@ -1392,7 +1393,8 @@ i {
   font-style: italic; }
 
 input {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif; }
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  vertical-align: middle; }
   input ::-webkit-input-placeholder {
     color: #E0E0E0; }
   input :-moz-placeholder {
@@ -1482,8 +1484,8 @@ ul {
   background: #FF5252; }
 
 .c-alert--inline {
-  border-radius: 12px;
-  border-radius: 0.75rem;
+  border-radius: 8px;
+  border-radius: 0.5rem;
   text-align: left;
   margin-bottom: 16px;
   margin-bottom: 1rem; }
@@ -1727,6 +1729,79 @@ ul {
   padding-left: 0rem;
   width: 70%; }
 
+.c-form__label {
+  color: #848484;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  vertical-align: middle; }
+
+.c-form__label--error {
+  color: #FF5252; }
+
+.c-form__label--inline {
+  display: inline;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+
+.c-form__input {
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-weight: 300;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  padding: 12px;
+  padding: 0.75rem;
+  display: block;
+  outline: 0;
+  vertical-align: middle;
+  width: 100%; }
+
+.c-form__input--error {
+  border-color: #FF5252; }
+
+.c-form__textarea {
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-weight: 300;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  padding: 12px;
+  padding: 0.75rem;
+  display: block;
+  outline: 0;
+  width: 100%;
+  vertical-align: middle; }
+
+.c-form__input-group {
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  border-radius: 0.75rem; }
+
+.c-form__input-group-checkbox:checked + .c-form__input-group-label {
+  background-image: url("../images/checkbox_checked.svg"); }
+
+.c-form__input-group-radio:checked + .c-form__input-group-label {
+  background-image: url("../images/checkbox_checked.svg"); }
+
+.c-form__input-group-label {
+  background: url("../images/checkbox_empty.svg") 15px center no-repeat;
+  border-top: 1px solid #E0E0E0;
+  cursor: pointer;
+  display: block;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  padding-left: 48px;
+  padding-left: 3rem; }
+  .c-form__input-group-label:first-of-type {
+    border-top: none; }
+
 .c-grid-table {
   border-collapse: collapse;
   margin-bottom: 32px;
@@ -1966,7 +2041,7 @@ ul {
 .u-invisible {
   visibility: hidden; }
 
-.u-visually-hidden {
+.u-visually-hidden, .c-form__input-group-checkbox, .c-form__input-group-radio {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
