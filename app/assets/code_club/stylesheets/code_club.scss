@@ -28,9 +28,6 @@
 @import 'generic/box-sizing';
 @import 'generic/clearfixed-elements';
 
-//  Objects
-@import 'objects/cards';
-
 //  Elements
 @import 'elements/_html-body';
 @import 'elements/a';
@@ -70,6 +67,9 @@
 @import 'components/list';
 @import 'components/meta';
 @import 'components/strip-table';
+
+//  Objects
+@import 'objects/cards';
 
 //  Utilities
 @import 'utilities/background-color';
