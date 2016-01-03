@@ -1,22 +1,36 @@
 <div class="sg-panel">
-  <ul>
-    <li>Should advice on button language (instead of using "Submit" or "Done", use "Contact host" or "Request session")</li>
-    <li>We should prioritise these button styles; eg solid green is a page's primary action, inverted colours is the standard button, etc)</li>
-  </ul>
+  <h2>How to Use Buttons</h2>
+
+  <p>Button styles can be applied to standard links or the <code>button</code> element.</p>
 
 	<div class="sg-example">
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-  		<p><button class="c-button" type="submit">Button</button></p>
+  		<p><button class="c-button">Button</button></p>
   		<p><a class="c-button" href="#">Button as Link</a></p>
     </div>
 
 		<code class="sg-example__code">
-			&lt;button class="c-button" type="submit"&gt;Button&lt;/button&gt;<br>
+			&lt;button class="c-button"&gt;Button&lt;/button&gt;<br>
 			&lt;a class="c-button" href="#"&gt;Button as Link&lt;/a&gt;
 		</code>
 	</div>
+
+  <p><strong>You should not use the <code>&lt;input type="button"&gt;</code> element. If you need a button in a form, use the <code>button</code> element as shown.</p>
+
+  <h3>Some notes on button usage</h3>
+
+  <p>Always try to make your button label as descriptive as possible, while also keeping it as short as possible. For example, if you had a button in a form that sent a message to a Code Club host, the text "Contact Host" is much better than "Submit". The user has a much clearer understanding of what will happen when they click the button.</p>
+
+  <p>There are several available styles for colouring buttons. They are available to allow you to style buttons in any way you might imagine, but remember to follow these two golden rules:</p>
+
+  <ul>
+    <li>A page or form's primary action must use the green style.</li>
+    <li>Any desctructive actions must use the red style.</li>
+  </ul>
+
+  <p>See below for the full list of colour options.</p>
 
 	<hr>
 
@@ -28,75 +42,75 @@
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-  		<p><button class="c-button c-button--grey" type="submit">Grey Button</button></p>
-  		<p><button class="c-button c-button--grey-med" type="submit">Grey Med Button</button></p>
-  		<p><button class="c-button c-button--grey-light" type="submit">Grey Light Button</button></p>
-  		<p><button class="c-button c-button--grey-x-light" type="submit">Grey Lighter Button</button></p>
-  		<p><button class="c-button c-button--grey-xx-light" type="submit">Grey Lightest Button</button></p>
-  		<p><button class="c-button c-button--red" type="submit">Red Button</button></p>
-  		<p><button class="c-button c-button--red-light" type="submit">Red Light Button</button></p>
-  		<p><button class="c-button c-button--red-dark" type="submit">Red Dark Button</button></p>
-  		<p><button class="c-button c-button--blue" type="submit">Blue Button</button></p>
-  		<p><button class="c-button c-button--blue-light" type="submit">Blue Light Button</button></p>
-  		<p><button class="c-button c-button--blue-dark" type="submit">Blue Dark Button</button></p>
-  		<p><button class="c-button c-button--green" type="submit">Green Button</button></p>
-  		<p><button class="c-button c-button--green-light" type="submit">Green Light Button</button></p>
-  		<p><button class="c-button c-button--green-dark" type="submit">Green Dark Button</button></p>
-  		<p><button class="c-button c-button--yellow" type="submit">Yellow Button</button></p>
-  		<p><button class="c-button c-button--yellow-light" type="submit">Yellow Light Button</button></p>
-  		<p><button class="c-button c-button--yellow-dark" type="submit">Yellow Dark Button</button></p>
+  		<p><button class="c-button c-button--grey">Grey Button</button></p>
+  		<p><button class="c-button c-button--grey-med">Grey Med Button</button></p>
+  		<p><button class="c-button c-button--grey-light">Grey Light Button</button></p>
+  		<p><button class="c-button c-button--grey-x-light u-color--grey">Grey Lighter Button</button></p>
+  		<p><button class="c-button c-button--grey-xx-light u-color--grey">Grey Lightest Button</button></p>
+  		<p><button class="c-button c-button--red">Red Button</button></p>
+  		<p><button class="c-button c-button--red-light">Red Light Button</button></p>
+  		<p><button class="c-button c-button--red-dark">Red Dark Button</button></p>
+  		<p><button class="c-button c-button--blue">Blue Button</button></p>
+  		<p><button class="c-button c-button--blue-light">Blue Light Button</button></p>
+  		<p><button class="c-button c-button--blue-dark">Blue Dark Button</button></p>
+  		<p><button class="c-button c-button--green">Green Button</button></p>
+  		<p><button class="c-button c-button--green-light">Green Light Button</button></p>
+  		<p><button class="c-button c-button--green-dark">Green Dark Button</button></p>
+  		<p><button class="c-button c-button--yellow">Yellow Button</button></p>
+  		<p><button class="c-button c-button--yellow-light">Yellow Light Button</button></p>
+  		<p><button class="c-button c-button--yellow-dark">Yellow Dark Button</button></p>
     </div>
 
 		<code class="sg-example__code">
-			&lt;button class="c-button c-button--grey" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--grey"&gt;<br>
       &nbsp;&nbsp;Grey Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-med" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--grey-med"&gt;<br>
       &nbsp;&nbsp;Grey Med Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--grey-light"&gt;<br>
       &nbsp;&nbsp;Grey Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-x-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--grey-x-light u-color--grey"&gt;<br>
       &nbsp;&nbsp;Grey Lighter Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-xx-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--grey-xx-light u-color--grey"&gt;<br>
       &nbsp;&nbsp;Grey Lightest Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--red" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--red"&gt;<br>
       &nbsp;&nbsp;Red Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--red-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--red-light"&gt;<br>
       &nbsp;&nbsp;Red Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--red-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--red-dark"&gt;<br>
       &nbsp;&nbsp;Red Dark Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--blue" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--blue"&gt;<br>
       &nbsp;&nbsp;Blue Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--blue-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--blue-light"&gt;<br>
       &nbsp;&nbsp;Blue Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--blue-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--blue-dark"&gt;<br>
       &nbsp;&nbsp;Blue Dark Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--green" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--green"&gt;<br>
       &nbsp;&nbsp;Green Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--green-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--green-light"&gt;<br>
       &nbsp;&nbsp;Green Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--green-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--green-dark"&gt;<br>
       &nbsp;&nbsp;Green Dark Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--yellow" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--yellow"&gt;<br>
       &nbsp;&nbsp;Yellow Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--yellow-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--yellow-light"&gt;<br>
       &nbsp;&nbsp;Yellow Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--yellow-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button--yellow-dark"&gt;<br>
       &nbsp;&nbsp;Yellow Dark Button<br>
       &lt;/button&gt;
 		</code>
@@ -110,75 +124,75 @@
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-  		<p><button class="c-button c-button--hollow c-button--grey" type="submit">Grey Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-med" type="submit">Grey Med Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-light" type="submit">Grey Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-x-light" type="submit">Grey Lighter Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-xx-light" type="submit">Grey Lightest Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--red" type="submit">Red Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--red-light" type="submit">Red Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--red-dark" type="submit">Red Dark Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--blue" type="submit">Blue Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--blue-light" type="submit">Blue Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--blue-dark" type="submit">Blue Dark Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--green" type="submit">Green Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--green-light" type="submit">Green Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--green-dark" type="submit">Green Dark Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--yellow" type="submit">Yellow Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--yellow-light" type="submit">Yellow Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--yellow-dark" type="submit">Yellow Dark Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--grey">Grey Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--grey-med">Grey Med Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--grey-light">Grey Light Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--grey-x-light">Grey Lighter Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--grey-xx-light">Grey Lightest Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--red">Red Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--red-light">Red Light Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--red-dark">Red Dark Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--blue">Blue Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--blue-light">Blue Light Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--blue-dark">Blue Dark Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--green">Green Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--green-light">Green Light Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--green-dark">Green Dark Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--yellow">Yellow Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--yellow-light">Yellow Light Button</button></p>
+  		<p><button class="c-button c-button--hollow c-button--yellow-dark">Yellow Dark Button</button></p>
     </div>
 
 		<code class="sg-example__code">
-			&lt;button class="c-button c-button-hollow c-button--grey" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--grey"&gt;<br>
       &nbsp;&nbsp;Grey Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--grey-med" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--grey-med"&gt;<br>
       &nbsp;&nbsp;Grey Med Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--grey-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--grey-light"&gt;<br>
       &nbsp;&nbsp;Grey Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--grey-x-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--grey-x-light"&gt;<br>
       &nbsp;&nbsp;Grey Lighter Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--grey-xx-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--grey-xx-light"&gt;<br>
       &nbsp;&nbsp;Grey Lightest Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--red" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--red"&gt;<br>
       &nbsp;&nbsp;Red Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--red-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--red-light"&gt;<br>
       &nbsp;&nbsp;Red Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--red-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--red-dark"&gt;<br>
       &nbsp;&nbsp;Red Dark Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--blue" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--blue"&gt;<br>
       &nbsp;&nbsp;Blue Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--blue-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--blue-light"&gt;<br>
       &nbsp;&nbsp;Blue Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--blue-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--blue-dark"&gt;<br>
       &nbsp;&nbsp;Blue Dark Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--green" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--green"&gt;<br>
       &nbsp;&nbsp;Green Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--green-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--green-light"&gt;<br>
       &nbsp;&nbsp;Green Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--green-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--green-dark"&gt;<br>
       &nbsp;&nbsp;Green Dark Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--yellow" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--yellow"&gt;<br>
       &nbsp;&nbsp;Yellow Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--yellow-light" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--yellow-light"&gt;<br>
       &nbsp;&nbsp;Yellow Light Button<br>
       &lt;/button&gt;<br>
-			&lt;button class="c-button c-button-hollow c-button--yellow-dark" type="submit"&gt;<br>
+			&lt;button class="c-button c-button-hollow c-button--yellow-dark"&gt;<br>
       &nbsp;&nbsp;Yellow Dark Button<br>
       &lt;/button&gt;
 		</code>
