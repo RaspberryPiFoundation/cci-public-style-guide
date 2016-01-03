@@ -28,3 +28,78 @@
         text-decoration: underline;
       }
     }
+
+.o-course-card {
+  background: #FFF;
+}
+
+  .o-course-card__link {
+    @include rem('border-radius', $border-radius-small);
+    color:           $grey-med;
+    display:         block;
+    overflow:        hidden;
+    text-align:      center;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0 0 10px $grey-med;
+    }
+  }
+
+    .o-course-card__link--generic {
+      border: $border-size-base solid $grey-x-light;
+
+      &:hover {
+        border-color: $grey-light;
+      }
+    }
+
+    .o-course-card__link--scratch {
+      background: #ec8313;
+      border:     none;
+      color:      #FFF;
+    }
+
+    .o-course-card__link--webdev  {
+      background: #2396dd;
+      border:     none;
+      color:      #FFF;
+    }
+
+    .o-course-card__link--python  {
+      background: #00c394;
+      border:     none;
+      color:      #FFF;
+    }
+
+  .o-course-card__body {
+    background-position: center center;
+    background-repeat:   repeat;
+    @include padding($padding-x-large, $padding-small);
+  }
+
+    .o-course-card__body--scratch {
+      background-image: url('../images/project-cards/scratch.svg');
+    }
+
+    .o-course-card__body--webdev {
+      background-image: url('../images/project-cards/webdev.png');
+    }
+
+    .o-course-card__body--python {
+      background-image: url('../images/project-cards/python.svg');
+    }
+
+  .o-course-card__title {
+    margin: 0;
+  }
+
+  .o-course-card__footer {
+    @include rem('font-size', $font-size-small);
+    font-weight: $font-weight-light;
+    @include padding($padding-small);
+  }
+
+    .o-course-card__footer--generic {
+      border-top: $border-size-base solid $grey-x-light;
+    }
