@@ -1,9 +1,14 @@
 //  Import styleguide variables
-@import '../code_club/stylesheets/settings/colors';
 @import '../code_club/stylesheets/settings/font-faces';
-@import '../code_club/stylesheets/settings/responsive-breakpoints';
 @import '../code_club/stylesheets/settings/typography';
+
 @import '../code_club/stylesheets/settings/border-radii';
+@import '../code_club/stylesheets/settings/border-sizes';
+@import '../code_club/stylesheets/settings/colors';
+@import '../code_club/stylesheets/settings/icons';
+@import '../code_club/stylesheets/settings/margins';
+@import '../code_club/stylesheets/settings/paddings';
+@import '../code_club/stylesheets/settings/responsive-breakpoints';
 
 //  Import styleguide mixins
 @import '../code_club/stylesheets/tools/functions';
