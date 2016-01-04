@@ -1706,6 +1706,55 @@ ul {
   border-radius: 48px;
   border-radius: 3rem; }
 
+.c-logo {
+  display: inline-block;
+  margin: 0;
+  padding: 6px;
+  padding: 0.375rem; }
+
+.c-logo--stacked {
+  text-align: center;
+  max-width: 120px;
+  max-width: 7.5rem; }
+
+.c-logo__link {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle; }
+
+.c-logo__image {
+  display: inline-block;
+  float: left;
+  vertical-align: middle; }
+
+.c-logo__image--stacked {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.c-logo__appendix {
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 60px;
+  line-height: 3.75rem;
+  text-indent: 6px;
+  text-indent: 0.375rem;
+  vertical-align: middle; }
+
+.c-logo__appendix--stacked {
+  display: block;
+  float: none;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-indent: 0; }
+
 .c-def-list__term {
   border-top: 1px solid #E0E0E0;
   clear: both;
@@ -2119,6 +2168,43 @@ ul {
   line-height: 1.20833;
   margin-bottom: 16px;
   margin-bottom: 1rem; }
+
+.o-banner {
+  background: #fff;
+  border-bottom: 1px solid #E0E0E0; }
+
+.o-banner__inner {
+  margin: 0 auto;
+  max-width: 75em; }
+  .o-banner__inner .c-logo {
+    float: left; }
+
+.o-navigation {
+  float: right; }
+
+.o-navigation__list {
+  margin: 0;
+  padding: 6px;
+  padding: 0.375rem; }
+
+.o-navigation__item {
+  float: left;
+  list-style: none;
+  margin: 0;
+  margin-left: 16px;
+  margin-left: 1rem;
+  padding: 0; }
+
+.o-navigation__link {
+  display: block;
+  line-height: 3.75;
+  text-decoration: none; }
+  .o-navigation__link.c-button {
+    line-height: inherit;
+    margin-top: 8px;
+    margin-top: 0.5rem; }
+  .o-navigation__link.is-current {
+    font-weight: 500; }
 
 .u-background--grey {
   background-color: #333333 !important; }
