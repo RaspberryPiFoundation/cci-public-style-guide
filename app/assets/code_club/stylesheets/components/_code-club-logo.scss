@@ -1,34 +1,34 @@
-.o-logo {
+.c-logo {
   display: inline-block;
   margin:  0;
   @include padding($logo-padding);
 }
 
-  .o-logo--stacked {
+  .c-logo--stacked {
     text-align: center;
     @include rem('max-width', $logo-size * 2);
   }
 
-  .o-logo__link {
+  .c-logo__link {
     display:         inline-block;
     text-decoration: none;
     vertical-align:  middle;
   }
 
-  .o-logo__image {
+  .c-logo__image {
     display:        inline-block;
     float:          left;
     vertical-align: middle;
   }
 
-    .o-logo__image--stacked {
+    .c-logo__image--stacked {
       display:      block;
       float:        none;
       margin-left:  auto;
       margin-right: auto;
     }
 
-  .o-logo__appendix {
+  .c-logo__appendix {
     display:        inline-block;
     float:          left;
     @include rem('font-size', 18);
@@ -38,7 +38,7 @@
     vertical-align: middle;
   }
 
-    .o-logo__appendix--stacked {
+    .c-logo__appendix--stacked {
       display: block;
       float:   none;
       @include margin-top($logo-padding);
