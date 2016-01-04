@@ -1943,7 +1943,7 @@ ul {
   .c-list__item--horiz:first-child {
     margin-left: 0; }
 
-.c-meta {
+.c-meta, .o-project-card__meta {
   font-size: 14px;
   font-size: 0.875rem; }
 
@@ -2077,6 +2077,44 @@ ul {
 
 .o-course-card__footer--generic {
   border-top: 1px solid #E0E0E0; }
+
+.o-project-card {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  border-radius: 0.75rem;
+  overflow: hidden; }
+  .o-project-card:hover {
+    box-shadow: 0 0 10px #848484; }
+
+.o-project-card__link {
+  color: #333333;
+  display: block;
+  text-decoration: none; }
+  .o-project-card__link:hover {
+    border-color: #C2C2C2; }
+
+.o-project-card__image {
+  display: block;
+  max-width: 100%; }
+
+.o-project-card__body {
+  padding-top: 32px;
+  padding-top: 2rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  padding-left: 12px;
+  padding-left: 0.75rem; }
+
+.o-project-card__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.20833;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
 
 .u-background--grey {
   background-color: #333333 !important; }
