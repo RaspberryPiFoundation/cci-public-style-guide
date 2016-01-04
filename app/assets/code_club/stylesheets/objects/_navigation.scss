@@ -1,0 +1,45 @@
+.o-banner {
+  background:    #fff;
+  border-bottom: $border-size-base solid $grey-x-light;
+}
+
+  .o-banner__inner {
+    margin:    0 auto;
+    max-width: $break-wide;
+
+    .c-logo {
+      float: left;
+    }
+  }
+
+  .o-navigation {
+    float: right;
+  }
+
+    .o-navigation__list {
+      margin:  0;
+      @include padding($logo-padding);
+    }
+
+      .o-navigation__item {
+        float:      left;
+        list-style: none;
+        margin:     0;
+        @include margin-left($margin-base);
+        padding:    0;
+      }
+
+      .o-navigation__link {
+        display:         block;
+        @include line_height($font-size-base, $logo-size);
+        text-decoration: none;
+
+        &.c-button {
+          line-height: inherit;
+          @include margin-top($margin-x-small);
+        }
+
+        &.is-current {
+          font-weight: $font-weight-bold;
+        }
+      }
