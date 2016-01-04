@@ -90,6 +90,11 @@
       background-image: url('../images/project-cards/python.svg');
     }
 
+  .o-course-card__image {
+    display:   block;
+    max-width: 100%;
+  }
+
   .o-course-card__title {
     margin: 0;
   }
