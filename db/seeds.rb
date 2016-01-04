@@ -14,7 +14,8 @@ Page.create!([
   { path: "grid-system",      title: "Grid System",      order: 10, section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "sample-pages",     title: "Sample Pages",     order: 20, section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
 
-  { path: "typography",       title: "Typography",       order: 10, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "code-club-logo",   title: "Code Club Logo",   order: 10, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "typography",       title: "Typography",       order: 20, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "icons",            title: "Icons",            order: 30, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "buttons",          title: "Buttons",          order: 40, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "forms",            title: "Forms",            order: 50, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
@@ -22,10 +23,9 @@ Page.create!([
   { path: "tables",           title: "Tables",           order: 70, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "alerts",           title: "Alerts",           order: 80, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
 
-  { path: "code-club-logo",   title: "Code Club Logo",   order: 10, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "navigation",       title: "Navigation",       order: 20, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "hero-blocks",      title: "Hero Blocks",      order: 30, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "cards",            title: "Cards",            order: 40, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "navigation",       title: "Navigation",       order: 10, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "hero-blocks",      title: "Hero Blocks",      order: 20, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "cards",            title: "Cards",            order: 30, section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
 
   { path: "menu",             title: "Menu",             order: 10, section_id: 6, show_in_nav: true, example_page: true,  back_page_id: 7   }
 ])
