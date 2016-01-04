@@ -219,147 +219,152 @@
     </code>
   </div>
 
-  <h3>Generic Project Cards</h3>
+  <h3>Generic Course Cards</h3>
 
   <p>The following are examples only. <strong>The following logos are not included in the downloadable styles</strong>.</p>
 
-  <div class="sg-example__preview">
-    <div class="sg-example__card">
+  <div class="sg-example">
+    <h4 class="sg-example__heading">Example</h4>
 
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--generic" href="#">
-          <div class="o-course-card__body o-course-card__body--generic">
-            <%= image_tag '/assets/images/course-twsu.png' %>
-          </div>
+    <div class="sg-example__preview">
+      <div class="sg-example__card">
 
-          <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
-        </a>
+        <div class="o-course-card">
+          <a class="o-course-card__link o-course-card__link--generic" href="#">
+            <div class="o-course-card__body o-course-card__body--generic">
+              <%= image_tag '/assets/images/course-twsu.png' %>
+            </div>
+
+            <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
+          </a>
+        </div>
+
       </div>
 
+      <div class="sg-example__card">
+
+        <div class="o-course-card">
+          <a class="o-course-card__link o-course-card__link--generic" href="#">
+            <div class="o-course-card__body o-course-card__body--generic">
+              <%= image_tag '/assets/images/course-microbit.png' %>
+            </div>
+
+            <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="sg-example__card">
+
+        <div class="o-course-card">
+          <a class="o-course-card__link o-course-card__link--generic" href="#">
+            <div class="o-course-card__body o-course-card__body--generic">
+              <%= image_tag '/assets/images/course-code-kingdoms.png' %>
+            </div>
+
+            <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
+          </a>
+        </div>
+
+      </div>
     </div>
 
-    <div class="sg-example__card">
+    <code class="sg-example__code">
+      &lt;div class="o-course-card"&gt;<br>
+      &nbsp;&nbsp;&lt;a class="o-course-card__link o-course-card__link--generic" href="#"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__body o-course-card__body--generic"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" src="example.png"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__footer o-course-card__footer--generic"&gt;4 projects&lt;/div&gt;<br>
+      &nbsp;&nbsp;&lt;/a&gt;<br>
+      &lt;/div&gt;<br>
+    </code>
+  </div>
 
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--generic" href="#">
-          <div class="o-course-card__body o-course-card__body--generic">
-            <%= image_tag '/assets/images/course-microbit.png' %>
-          </div>
+  <hr>
 
-          <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
-        </a>
+  <h2>Project Cards</h2>
+
+  <p>
+    The following cards are for linking to individual projects within your courses. The biggest difference is that they
+    contain a banner image, but other than that they're assembled in much the same way as basic cards, with the content
+    being comprised of generic typographical elements where possible.
+  </p>
+
+  <p>
+    The images used here are for the purposes of this example. They will not be included in the downloadable assets.
+  </p>
+
+  <div class="sg-example">
+    <h3 class="sg-example__heading">Example</h3>
+
+    <div class="sg-example__preview">
+      <div class="sg-example__card">
+
+        <div class="o-project-card">
+          <a class="o-project-card__link" href="#">
+            <%= image_tag "/assets/images/project_123.png", :class => "o-project-card__image" %>
+
+            <div class="o-project-card__body">
+              <div class="o-project-card__meta">Project 1</div>
+              <div class="o-project-card__title">Teaching Turtles</div>
+              <p>Learn more about drawing with the turtle.</p>
+              <p class="u-text--right u-color--green">Start</p>
+            </div>
+          </a>
+        </div>
+
       </div>
 
+      <div class="sg-example__card">
+
+        <div class="o-project-card">
+          <a class="o-project-card__link" href="#">
+            <%= image_tag "/assets/images/project_turtle.png", :class => "o-project-card__image" %>
+
+            <div class="o-project-card__body">
+              <div class="o-project-card__meta">Project 2</div>
+              <div class="o-project-card__title">Turtles</div>
+              <p>Learn how to use a turtle to draw awesome shapes and patterns.</p>
+              <p class="u-text--right u-color--green">Start</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="sg-example__card">
+
+        <div class="o-project-card">
+          <a class="o-project-card__link" href="#">
+            <%= image_tag "/assets/images/project_maze.png", :class => "o-project-card__image" %>
+
+            <div class="o-project-card__body">
+              <div class="o-project-card__meta">Project 3</div>
+              <div class="o-project-card__title">RPG</div>
+              <p>Design and code your own RPG maze game.</p>
+              <p class="u-text--right u-color--green">Start</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
     </div>
 
-    <div class="sg-example__card">
-
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--generic" href="#">
-          <div class="o-course-card__body o-course-card__body--generic">
-            <%= image_tag '/assets/images/course-code-kingdoms.png' %>
-          </div>
-
-          <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
-        </a>
-      </div>
-
-    </div>
+    <code class="sg-example__code">
+      &lt;div class="o-project-card"&gt;<br>
+      &nbsp;&nbsp;&lt;a class="o-project-card__link" href="#"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="o-project-card__image" alt="" src="/assets/images/project_123.png"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-project-card__body"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-project-card__meta"&gt;Project 1&lt;/div&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-project-card__title"&gt;Teaching Turtles&lt;/div&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Learn more about drawing with the turtle.&lt;/p&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="u-text--right u-color--green"&gt;Start&lt;/p&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+      &nbsp;&nbsp;&lt;/a&gt;<br>
+      &lt;/div&gt;
+    </code>
   </div>
-
-  <code class="sg-example__code">
-    &lt;div class="o-course-card"&gt;<br>
-    &nbsp;&nbsp;&lt;a class="o-course-card__link o-course-card__link--generic" href="#"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__body o-course-card__body--generic"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" src="example.png"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__footer o-course-card__footer--generic"&gt;4 projects&lt;/div&gt;<br>
-    &nbsp;&nbsp;&lt;/a&gt;<br>
-    &lt;/div&gt;<br>
-  </code>
-</div>
-
-
-<div class="layout">
-  <div class="col col1of1">
-
-    <h3>[Project] Feature cards</h3>
-
-    <ul>
-      <li>Features an illustration</li>
-      <li>Background colour</li>
-      <li>intro copy</li>
-      <li>start/more link</li>
-      <li>Cards can also inculde addtional tags such as NEW! or SAMPLE</li>
-    </ul>
-
-  </div>
-</div>
-
-<div class="layout">
-
-  <div class="card bubble col col1of3 link feature">
-    <a href="#">
-
-      <%= image_tag '/assets/images/project_123.png', :class => "" %>
-
-      <div class="pad1 pady3">
-
-        <h4 class="small margin-half">Project 1</h4>
-
-        <h3 class="weight-300">Teaching turtles</h3>
-
-        <p>Learn more about drawing with the turtle.</p>
-
-        <div class="action right">
-          <span class="link icon right arrow-circle-right">Start</span>
-        </div>
-      </div>
-
-    </a>
-  </div>
-
-  <div class="card bubble col col1of3 link feature">
-    <a href="#">
-
-      <%= image_tag '/assets/images/project_turtle.png', :class => "" %>
-
-      <div class="pad1 pady3">
-
-        <h4 class="small margin-half">Project 2</h4>
-
-        <h3 class="weight-300">Turtles</h3>
-
-        <p>Learn how to use a turtle to draw awesome shapes and patterns.</p>
-
-        <div class="action right">
-          <span class="link icon right arrow-circle-right">Start</span>
-        </div>
-      </div>
-
-    </a>
-  </div>
-
-  <div class="card bubble col col1of3 link feature">
-    <a href="#">
-
-      <%= image_tag '/assets/images/project_maze.png', :class => "" %>
-
-      <div class="pad1 pady3">
-
-        <h4 class="small margin-half">Project 3</h4>
-
-        <h3 class="weight-300">RPG</h3>
-
-        <p>Design and code your own RPG maze game.</p>
-
-        <div class="action right">
-          <span class="link icon right arrow-circle-right">Start</span>
-        </div>
-      </div>
-
-    </a>
-  </div>
-
 </div>

@@ -103,3 +103,41 @@
     .o-course-card__footer--generic {
       border-top: $border-size-base solid $grey-x-light;
     }
+
+.o-project-card {
+  background: #FFF;
+  border: $border-size-base solid $grey-x-light;
+  @include rem('border-radius', $border-radius-small);
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 0 10px $grey-med;
+  }
+}
+
+  .o-project-card__link {
+    color:           $grey;
+    display:         block;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $grey-light;
+    }
+  }
+
+    .o-project-card__image {
+      display:   block;
+      max-width: 100%;
+    }
+
+    .o-project-card__body {
+      @include padding($padding-large, $padding-small, $padding-small);
+    }
+
+    .o-project-card__meta {
+      @extend .c-meta;
+    }
+
+    .o-project-card__title {
+      @include h3;
+    }
