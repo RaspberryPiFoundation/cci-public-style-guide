@@ -1753,6 +1753,7 @@ ul {
   line-height: 3.75rem;
   text-indent: 6px;
   text-indent: 0.375rem;
+  text-transform: uppercase;
   vertical-align: middle; }
 
 .c-logo__appendix--stacked {

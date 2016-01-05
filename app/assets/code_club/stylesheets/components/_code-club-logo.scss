@@ -35,6 +35,7 @@
     font-style:     normal;
     @include rem('line-height', $logo-size);
     @include rem('text-indent', $logo-padding);
+    text-transform: uppercase;
     vertical-align: middle;
   }
 
