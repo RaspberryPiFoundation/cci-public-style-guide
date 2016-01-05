@@ -1,0 +1,22 @@
+.o-hero {
+  background: $green;
+  color:      $white;
+  text-align: center;
+  @include padding($padding-xxx-large, $padding-xx-large);
+}
+
+  .o-hero__subtitle {
+    max-width: 100%;
+  }
+
+  .o-hero__list {
+    display: inline-block;
+    margin:  0;
+    padding: 0;
+  }
+
+    .o-hero__item {
+      float:      left;
+      list-style: none;
+      @include margin(0, $margin-small);
+    }
