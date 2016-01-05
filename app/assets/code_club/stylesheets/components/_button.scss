@@ -3,7 +3,7 @@
   background:      $grey-med;
   border:          $border-size-x-large solid $grey-med;
   display:         inline-block;
-  color:           #fff;
+  color:           $white;
   text-align:      center;
   text-decoration: none;
   @include padding($padding-x-small, $padding-large);
@@ -26,9 +26,10 @@
   &.c-button--yellow        { background: $yellow;        border-color: $yellow;        }
   &.c-button--yellow-light  { background: $yellow-light;  border-color: $yellow-light;  }
   &.c-button--yellow-dark   { background: $yellow-dark;   border-color: $yellow-dark;   }
+  &.c-button--white         { background: $white;         border-color: $white;         }
 
   &:hover {
-    background: #fff;
+    background: $white;
     color:      $grey-med;
 
     &.c-button--grey          { color: $grey;          }
@@ -48,6 +49,7 @@
     &.c-button--yellow        { color: $yellow;        }
     &.c-button--yellow-light  { color: $yellow-light;  }
     &.c-button--yellow-dark   { color: $yellow-dark;   }
+    &.c-button--white         { color: $white;         }
   }
 
   &[disabled],
@@ -58,7 +60,7 @@
   }
 
   &.c-button--hollow {
-    background: #fff;
+    background: none;
     color:      $grey-med;
 
     &.c-button--grey          { color: $grey;          }
@@ -78,9 +80,10 @@
     &.c-button--yellow        { color: $yellow;        }
     &.c-button--yellow-light  { color: $yellow-light;  }
     &.c-button--yellow-dark   { color: $yellow-dark;   }
+    &.c-button--white         { color: $white;         }
 
     &:hover {
-      color:      #fff;
+      color:      $white;
       background: $grey-med;
 
       &.c-button--grey          { background: $grey;          }
@@ -100,6 +103,7 @@
       &.c-button--yellow        { background: $yellow;        }
       &.c-button--yellow-light  { background: $yellow-light;  }
       &.c-button--yellow-dark   { background: $yellow-dark;   }
+      &.c-button--white         { background: $white;        color: $green; }
     }
   }
 }

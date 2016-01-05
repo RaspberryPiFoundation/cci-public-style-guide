@@ -1,5 +1,5 @@
 .o-card {
-  background: #FFF;
+  background: $white;
   border: $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-small);
 }
@@ -30,7 +30,7 @@
     }
 
 .o-course-card {
-  background: #FFF;
+  background: $white;
 }
 
   .o-course-card__link {
@@ -57,19 +57,19 @@
     .o-course-card__link--scratch {
       background: #ec8313;
       border:     none;
-      color:      #FFF;
+      color:      $white;
     }
 
     .o-course-card__link--webdev  {
       background: #2396dd;
       border:     none;
-      color:      #FFF;
+      color:      $white;
     }
 
     .o-course-card__link--python  {
       background: #00c394;
       border:     none;
-      color:      #FFF;
+      color:      $white;
     }
 
   .o-course-card__body {
@@ -110,7 +110,7 @@
     }
 
 .o-project-card {
-  background: #FFF;
+  background: $white;
   border: $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-small);
   overflow: hidden;
