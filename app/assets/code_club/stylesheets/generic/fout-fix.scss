@@ -1,0 +1,30 @@
+a,
+blockquote,
+button,
+cite,
+code,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label,
+li,
+p,
+span,
+textarea,
+td,
+th {
+  .wf-loading & {
+    visibility: hidden;
+  }
+
+  .wf-active   &,
+  .wf-inactive & {
+    visibility: visible;
+  }
+}
