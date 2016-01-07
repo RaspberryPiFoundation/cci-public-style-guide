@@ -4,7 +4,10 @@
 Rails.application.config.assets.version = '1.1'
 
 # Add additional assets to the asset load path
-Rails.application.config.assets.paths << "#{Rails.root}/app/assets/code_club"
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/code_club/fonts"
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/code_club/images"
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/code_club/javascripts"
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/code_club/stylesheets"
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
