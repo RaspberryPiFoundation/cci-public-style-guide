@@ -1,13 +1,17 @@
 <div class="sg-panel">
   <h2>Available Icons</h2>
 
-  <p>The Code Club icon set is a set of SVG images, with HTML classes for sizing.</p>
+  <p>The basic icon takes the following form:</p>
 
-  <ul class="c-list c-list--plain">
+  <p><code>&lt;span class="c-icon c-icon--ICON-NAME-HERE"&gt;&lt;/span&gt;</code></p>
+
+  <p>Where you see "ICON NAME HERE" in the above example, replace that text with one of the following values:</p>
+
+  <ul class="sg-icon-list">
     <% for icon in icons %>
-      <li class="c-list__item c-list__item--plain">
+      <li class="sg-icon-list__item">
         <span class="c-icon c-icon--<%= icon %>"></span>
-        <code>&lt;span class="c-icon c-icon--<%= icon %>"&gt;&lt;/span&gt;</code>
+        <code><%= icon %></code>
       </li>
     <% end %>
   </ul>
