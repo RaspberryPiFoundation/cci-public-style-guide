@@ -59,11 +59,7 @@ class PagesController < ApplicationController
   end
 
   def set_view_vars
-    case @page.path
-    when 'colour-palette'
-      @colors = colors
-    when 'icons'
-      @icons = icons
-    end
+    @colors = colors
+    @icons  = icons
   end
 end

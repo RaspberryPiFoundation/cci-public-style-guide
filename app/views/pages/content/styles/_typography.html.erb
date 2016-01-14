@@ -115,43 +115,13 @@
 		<h3 class="sg-example__heading">Example</h3>
 
 		<div class="sg-example__preview">
-			<p class="u-color--grey">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--grey-med">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--grey-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--grey-x-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--grey-xx-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--red">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--red-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--red-dark">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--blue">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--blue-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--blue-dark">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--green">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--green-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--green-dark">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--yellow">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--yellow-light">Lorem Ipsum dolor sit amet</p>
-			<p class="u-color--yellow-dark">Lorem Ipsum dolor sit amet</p>
+			<% @colors[:palette].each do |name, value| %>
+			<p class="u-color--<%= name %>">Lorem Ipsum dolor sit amet</p>
+			<% end %>
 		</div>
 
 		<code class="sg-example__code">
-			&lt;p class="u-color--grey"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--grey-med"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--grey-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--grey-x-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--grey-xx-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--red"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--red-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--red-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--blue"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--blue-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--blue-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--green"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--green-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--green-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--yellow"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--yellow-light"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br>
-			&lt;p class="u-color--yellow-dark"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;
+			<% @colors[:palette].each do |name, value| %>&lt;p class="u-color--<%= name %>"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br><% end %>
 		</code>
 	</div>
 </div>

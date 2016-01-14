@@ -42,77 +42,15 @@
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-  		<p><button class="c-button c-button--grey">Grey Button</button></p>
-  		<p><button class="c-button c-button--grey-med">Grey Med Button</button></p>
-  		<p><button class="c-button c-button--grey-light">Grey Light Button</button></p>
-  		<p><button class="c-button c-button--grey-x-light u-color--grey">Grey Lighter Button</button></p>
-  		<p><button class="c-button c-button--grey-xx-light u-color--grey">Grey Lightest Button</button></p>
-  		<p><button class="c-button c-button--red">Red Button</button></p>
-  		<p><button class="c-button c-button--red-light">Red Light Button</button></p>
-  		<p><button class="c-button c-button--red-dark">Red Dark Button</button></p>
-  		<p><button class="c-button c-button--blue">Blue Button</button></p>
-  		<p><button class="c-button c-button--blue-light">Blue Light Button</button></p>
-  		<p><button class="c-button c-button--blue-dark">Blue Dark Button</button></p>
-  		<p><button class="c-button c-button--green">Green Button</button></p>
-  		<p><button class="c-button c-button--green-light">Green Light Button</button></p>
-  		<p><button class="c-button c-button--green-dark">Green Dark Button</button></p>
-  		<p><button class="c-button c-button--yellow">Yellow Button</button></p>
-  		<p><button class="c-button c-button--yellow-light">Yellow Light Button</button></p>
-  		<p><button class="c-button c-button--yellow-dark">Yellow Dark Button</button></p>
+      <% @colors[:palette].each do |name, value| %>
+  		<p><button class="c-button c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
+      <% end %>
     </div>
 
 		<code class="sg-example__code">
-			&lt;button class="c-button c-button--grey"&gt;<br>
-      &nbsp;&nbsp;Grey Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-med"&gt;<br>
-      &nbsp;&nbsp;Grey Med Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-light"&gt;<br>
-      &nbsp;&nbsp;Grey Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-x-light u-color--grey"&gt;<br>
-      &nbsp;&nbsp;Grey Lighter Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--grey-xx-light u-color--grey"&gt;<br>
-      &nbsp;&nbsp;Grey Lightest Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--red"&gt;<br>
-      &nbsp;&nbsp;Red Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--red-light"&gt;<br>
-      &nbsp;&nbsp;Red Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--red-dark"&gt;<br>
-      &nbsp;&nbsp;Red Dark Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--blue"&gt;<br>
-      &nbsp;&nbsp;Blue Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--blue-light"&gt;<br>
-      &nbsp;&nbsp;Blue Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--blue-dark"&gt;<br>
-      &nbsp;&nbsp;Blue Dark Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--green"&gt;<br>
-      &nbsp;&nbsp;Green Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--green-light"&gt;<br>
-      &nbsp;&nbsp;Green Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--green-dark"&gt;<br>
-      &nbsp;&nbsp;Green Dark Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--yellow"&gt;<br>
-      &nbsp;&nbsp;Yellow Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--yellow-light"&gt;<br>
-      &nbsp;&nbsp;Yellow Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--yellow-dark"&gt;<br>
-      &nbsp;&nbsp;Yellow Dark Button<br>
-      &lt;/button&gt;
+      <% @colors[:palette].each do |name, value| %>
+			&lt;button class="c-button c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
+      <% end %>
 		</code>
 	</div>
 
@@ -124,77 +62,15 @@
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-  		<p><button class="c-button c-button--hollow c-button--grey">Grey Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-med">Grey Med Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-light">Grey Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-x-light">Grey Lighter Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--grey-xx-light">Grey Lightest Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--red">Red Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--red-light">Red Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--red-dark">Red Dark Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--blue">Blue Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--blue-light">Blue Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--blue-dark">Blue Dark Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--green">Green Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--green-light">Green Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--green-dark">Green Dark Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--yellow">Yellow Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--yellow-light">Yellow Light Button</button></p>
-  		<p><button class="c-button c-button--hollow c-button--yellow-dark">Yellow Dark Button</button></p>
+      <% @colors[:palette].each do |name, value| %>
+  		<p><button class="c-button c-button--hollow c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
+      <% end %>
     </div>
 
 		<code class="sg-example__code">
-			&lt;button class="c-button c-button--hollow c-button--grey"&gt;<br>
-      &nbsp;&nbsp;Grey Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--grey-med"&gt;<br>
-      &nbsp;&nbsp;Grey Med Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--grey-light"&gt;<br>
-      &nbsp;&nbsp;Grey Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--grey-x-light"&gt;<br>
-      &nbsp;&nbsp;Grey Lighter Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--grey-xx-light"&gt;<br>
-      &nbsp;&nbsp;Grey Lightest Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--red"&gt;<br>
-      &nbsp;&nbsp;Red Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--red-light"&gt;<br>
-      &nbsp;&nbsp;Red Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--red-dark"&gt;<br>
-      &nbsp;&nbsp;Red Dark Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--blue"&gt;<br>
-      &nbsp;&nbsp;Blue Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--blue-light"&gt;<br>
-      &nbsp;&nbsp;Blue Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--blue-dark"&gt;<br>
-      &nbsp;&nbsp;Blue Dark Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--green"&gt;<br>
-      &nbsp;&nbsp;Green Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--green-light"&gt;<br>
-      &nbsp;&nbsp;Green Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--green-dark"&gt;<br>
-      &nbsp;&nbsp;Green Dark Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--yellow"&gt;<br>
-      &nbsp;&nbsp;Yellow Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--yellow-light"&gt;<br>
-      &nbsp;&nbsp;Yellow Light Button<br>
-      &lt;/button&gt;<br>
-			&lt;button class="c-button c-button--hollow c-button--yellow-dark"&gt;<br>
-      &nbsp;&nbsp;Yellow Dark Button<br>
-      &lt;/button&gt;
+      <% @colors[:palette].each do |name, value| %>
+			&lt;button class="c-button c-button--hollow c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
+      <% end %>
 		</code>
 	</div>
 

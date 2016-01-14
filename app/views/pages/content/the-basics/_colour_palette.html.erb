@@ -1,23 +1,13 @@
 <div class="sg-panel">
-	<h2>Greyscale Palette</h2>
+	<h2>Available Palette</h2>
 
-	<%= render :partial => "pages/_partials/color_swatches", :locals => { :colors => @colors[:greyscale] } %>
-
-	<h2>Interaction colours</h2>
-
-	<h3>Highlights</h3>
-
-	<%= render :partial => "pages/_partials/color_swatches", :locals => { :colors => @colors[:highlights] } %>
-
-	<h3>Code Club Green / Success Messages / Default Links</h3>
-
-	<%= render :partial => "pages/_partials/color_swatches", :locals => { :colors => @colors[:success] } %>
-
-	<h3>Warnings</h3>
-
-	<%= render :partial => "pages/_partials/color_swatches", :locals => { :colors => @colors[:warning] } %>
-
-	<h3>Error Messages / Danger Indication</h3>
-
-	<%= render :partial => "pages/_partials/color_swatches", :locals => { :colors => @colors[:danger] } %>
+	<ul class="sg-swatches-list">
+	  <% @colors[:palette].each do |name, value| %>
+	  <li class="sg-swatch">
+	    <code class="sg-swatch__name"><%= name %></code>
+	    <span class="sg-swatch__sample u-background--<%= name %>"></span>
+	    <small class="sg-swatch__hex"><code>#<%= value %></code></small>
+	  </li>
+	  <% end %>
+	</ul>
 </div>
