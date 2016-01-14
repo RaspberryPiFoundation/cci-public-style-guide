@@ -1586,12 +1586,12 @@ ul {
   text-decoration: none;
   padding-top: 8px;
   padding-top: 0.5rem;
-  padding-right: 32px;
-  padding-right: 2rem;
+  padding-right: 16px;
+  padding-right: 1rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 32px;
-  padding-left: 2rem;
+  padding-left: 16px;
+  padding-left: 1rem;
   vertical-align: middle; }
   .c-button.c-button--grey {
     background: #333333;
