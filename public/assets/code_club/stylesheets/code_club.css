@@ -1490,6 +1490,7 @@ input {
     color: #E0E0E0; }
 
 label {
+  font-weight: 500;
   margin: 0; }
 
 ol {
@@ -2001,6 +2002,11 @@ ul {
   width: 20px;
   width: 1.25rem;
   vertical-align: middle; }
+
+.c-icon__image {
+  display: block;
+  height: 100%;
+  width: 100%; }
 
 .c-icon--arrow-down {
   background-image: url("../images/icons/arrow-down.svg"); }

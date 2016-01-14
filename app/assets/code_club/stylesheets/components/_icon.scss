@@ -6,6 +6,12 @@
   vertical-align:  middle;
 }
 
+  .c-icon__image {
+    display: block;
+    height:  100%;
+    width:   100%;
+  }
+
   .c-icon--arrow-down         { background-image: url('../images/icons/arrow-down.svg');         }
   .c-icon--arrow-left         { background-image: url('../images/icons/arrow-left.svg');         }
   .c-icon--arrow-right        { background-image: url('../images/icons/arrow-right.svg');        }
