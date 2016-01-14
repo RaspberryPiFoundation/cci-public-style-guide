@@ -15,17 +15,9 @@
   &.c-button--grey-x-light  { background: $grey-x-light;  border-color: $grey-x-light;  }
   &.c-button--grey-xx-light { background: $grey-xx-light; border-color: $grey-xx-light; }
   &.c-button--red           { background: $red;           border-color: $red;           }
-  &.c-button--red-light     { background: $red-light;     border-color: $red-light;     }
-  &.c-button--red-dark      { background: $red-dark;      border-color: $red-dark;      }
   &.c-button--blue          { background: $blue;          border-color: $blue;          }
-  &.c-button--blue-light    { background: $blue-light;    border-color: $blue-light;    }
-  &.c-button--blue-dark     { background: $blue-dark;     border-color: $blue-dark;     }
   &.c-button--green         { background: $green;         border-color: $green;         }
-  &.c-button--green-light   { background: $green-light;   border-color: $green-light;   }
-  &.c-button--green-dark    { background: $green-dark;    border-color: $green-dark;    }
   &.c-button--yellow        { background: $yellow;        border-color: $yellow;        }
-  &.c-button--yellow-light  { background: $yellow-light;  border-color: $yellow-light;  }
-  &.c-button--yellow-dark   { background: $yellow-dark;   border-color: $yellow-dark;   }
   &.c-button--white         { background: $white;         border-color: $white;         }
 
   &:hover {
@@ -38,17 +30,9 @@
     &.c-button--grey-x-light  { color: $grey-x-light;  }
     &.c-button--grey-xx-light { color: $grey-xx-light; }
     &.c-button--red           { color: $red;           }
-    &.c-button--red-light     { color: $red-light;     }
-    &.c-button--red-dark      { color: $red-dark;      }
     &.c-button--blue          { color: $blue;          }
-    &.c-button--blue-light    { color: $blue-light;    }
-    &.c-button--blue-dark     { color: $blue-dark;     }
     &.c-button--green         { color: $green;         }
-    &.c-button--green-light   { color: $green-light;   }
-    &.c-button--green-dark    { color: $green-dark;    }
     &.c-button--yellow        { color: $yellow;        }
-    &.c-button--yellow-light  { color: $yellow-light;  }
-    &.c-button--yellow-dark   { color: $yellow-dark;   }
     &.c-button--white         { color: $white;         }
   }
 
@@ -69,17 +53,9 @@
     &.c-button--grey-x-light  { color: $grey-x-light;  }
     &.c-button--grey-xx-light { color: $grey-xx-light; }
     &.c-button--red           { color: $red;           }
-    &.c-button--red-light     { color: $red-light;     }
-    &.c-button--red-dark      { color: $red-dark;      }
     &.c-button--blue          { color: $blue;          }
-    &.c-button--blue-light    { color: $blue-light;    }
-    &.c-button--blue-dark     { color: $blue-dark;     }
     &.c-button--green         { color: $green;         }
-    &.c-button--green-light   { color: $green-light;   }
-    &.c-button--green-dark    { color: $green-dark;    }
     &.c-button--yellow        { color: $yellow;        }
-    &.c-button--yellow-light  { color: $yellow-light;  }
-    &.c-button--yellow-dark   { color: $yellow-dark;   }
     &.c-button--white         { color: $white;         }
 
     &:hover {
@@ -92,17 +68,9 @@
       &.c-button--grey-x-light  { background: $grey-x-light;  }
       &.c-button--grey-xx-light { background: $grey-xx-light; }
       &.c-button--red           { background: $red;           }
-      &.c-button--red-light     { background: $red-light;     }
-      &.c-button--red-dark      { background: $red-dark;      }
       &.c-button--blue          { background: $blue;          }
-      &.c-button--blue-light    { background: $blue-light;    }
-      &.c-button--blue-dark     { background: $blue-dark;     }
       &.c-button--green         { background: $green;         }
-      &.c-button--green-light   { background: $green-light;   }
-      &.c-button--green-dark    { background: $green-dark;    }
       &.c-button--yellow        { background: $yellow;        }
-      &.c-button--yellow-light  { background: $yellow-light;  }
-      &.c-button--yellow-dark   { background: $yellow-dark;   }
       &.c-button--white         { background: $white;        color: $green; }
     }
   }

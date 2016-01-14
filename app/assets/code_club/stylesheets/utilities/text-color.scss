@@ -4,17 +4,9 @@
 .u-color--grey-x-light  { color: $grey-x-light  !important; }
 .u-color--grey-xx-light { color: $grey-xx-light !important; }
 .u-color--red           { color: $red           !important; }
-.u-color--red-light     { color: $red-light     !important; }
-.u-color--red-dark      { color: $red-dark      !important; }
 .u-color--blue          { color: $blue          !important; }
-.u-color--blue-light    { color: $blue-light    !important; }
-.u-color--blue-dark     { color: $blue-dark     !important; }
 .u-color--green         { color: $green         !important; }
-.u-color--green-light   { color: $green-light   !important; }
-.u-color--green-dark    { color: $green-dark    !important; }
 .u-color--yellow        { color: $yellow        !important; }
-.u-color--yellow-light  { color: $yellow-light  !important; }
-.u-color--yellow-dark   { color: $yellow-dark   !important; }
 
 //	Link color modifiers
 a {
@@ -24,15 +16,7 @@ a {
 	.u-color--grey-x-light &,  &.u-color--grey-x-light  { color: $grey-x-light  !important; }
 	.u-color--grey-xx-light &, &.u-color--grey-xx-light { color: $grey-xx-light !important; }
 	.u-color--red &,           &.u-color--red           { color: $red           !important; }
-	.u-color--red-light &,     &.u-color--red-light     { color: $red-light     !important; }
-	.u-color--red-dark &,      &.u-color--red-dark      { color: $red-dark      !important; }
 	.u-color--blue &,          &.u-color--blue          { color: $blue          !important; }
-	.u-color--blue-light &,    &.u-color--blue-light    { color: $blue-light    !important; }
-	.u-color--blue-dark &,     &.u-color--blue-dark     { color: $blue-dark     !important; }
 	.u-color--green &,         &.u-color--green         { color: $green         !important; }
-	.u-color--green-light &,   &.u-color--green-light   { color: $green-light   !important; }
-	.u-color--green-dark &,    &.u-color--green-dark    { color: $green-dark    !important; }
 	.u-color--yellow &,        &.u-color--yellow        { color: $yellow        !important; }
-	.u-color--yellow-light &,  &.u-color--yellow-light  { color: $yellow-light  !important; }
-	.u-color--yellow-dark &,   &.u-color--yellow-dark   { color: $yellow-dark   !important; }
 }

@@ -55,19 +55,19 @@
     }
 
     .o-course-card__link--scratch {
-      background: #ec8313;
+      background: $card-orange;
       border:     none;
       color:      $white;
     }
 
     .o-course-card__link--webdev  {
-      background: #2396dd;
+      background: $card-blue;
       border:     none;
       color:      $white;
     }
 
     .o-course-card__link--python  {
-      background: #00c394;
+      background: $card-green;
       border:     none;
       color:      $white;
     }
