@@ -2402,16 +2402,13 @@ ul {
   width: 1px           !important; }
 
 .u-text--center {
-  text-align: center  !important; }
-
-.u-text--justify {
-  text-align: justify !important; }
+  text-align: center !important; }
 
 .u-text--left {
-  text-align: left    !important; }
+  text-align: left   !important; }
 
 .u-text--right {
-  text-align: right   !important; }
+  text-align: right  !important; }
 
 .u-color--grey {
   color: #333333 !important; }
