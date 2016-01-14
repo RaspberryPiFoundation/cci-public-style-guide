@@ -31,6 +31,7 @@
 	font-weight: $font-weight-h5;
 	@include line-height($font-size-h5, $line-height-h5);
 	@include margin-bottom($margin-bottom-h5);
+	text-transform: uppercase;
 }
 
 @mixin h6 {

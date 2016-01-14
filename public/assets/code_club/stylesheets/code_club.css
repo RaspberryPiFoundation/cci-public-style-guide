@@ -1454,7 +1454,8 @@ h5 {
   font-weight: 500;
   line-height: 1.21429;
   margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
+  margin-bottom: 0.875rem;
+  text-transform: uppercase; }
 
 h6 {
   font-size: 11px;
@@ -2502,7 +2503,8 @@ ul {
   font-weight: 500;
   line-height: 1.21429;
   margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
+  margin-bottom: 0.875rem;
+  text-transform: uppercase; }
 
 .u-h6 {
   font-size: 11px;
