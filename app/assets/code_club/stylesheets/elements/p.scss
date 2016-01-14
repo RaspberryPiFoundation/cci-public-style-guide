@@ -1,5 +1,5 @@
 p {
-	margin:    0;
+	margin:    0 auto;
 	@include rem('margin-bottom', $margin-base);
 	max-width: 40em;
 }

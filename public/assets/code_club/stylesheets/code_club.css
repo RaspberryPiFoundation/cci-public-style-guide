@@ -1502,7 +1502,7 @@ ol {
     margin-bottom: 0; }
 
 p {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   max-width: 40em; }
