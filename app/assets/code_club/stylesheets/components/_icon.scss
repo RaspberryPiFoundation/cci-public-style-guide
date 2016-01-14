@@ -1,7 +1,9 @@
 .c-icon {
-  display:        inline-block;
+  background:      center center no-repeat;
+  background-size: 100% 100%;
+  display:         inline-block;
   @include square($icon-size-base);
-  vertical-align: middle;
+  vertical-align:  middle;
 }
 
   .c-icon--x-small  { @include square($icon-size-x-small);  }
