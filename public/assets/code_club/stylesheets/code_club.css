@@ -1650,7 +1650,7 @@ ul {
       color: #FFF; }
   .c-button[disabled], .c-button.c-button--disabled {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.3;
     pointer-events: none; }
   .c-button.c-button--hollow {
     background: none;
