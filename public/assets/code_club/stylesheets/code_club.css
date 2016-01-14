@@ -2,7 +2,7 @@
  * code_club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-3
+ * @version v0.0.1-2
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1332,9 +1332,7 @@ a {
   font-weight: 500;
   text-decoration: underline; }
   a:active, a:focus, a:hover {
-    text-decoration: none; }
-  a:visited {
-    text-decoration: none; }
+    color: #333333; }
 
 address {
   font-style: normal; }
@@ -1504,7 +1502,7 @@ ol {
     margin-bottom: 0; }
 
 p {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   max-width: 40em; }
@@ -1995,12 +1993,113 @@ ul {
   vertical-align: middle; }
 
 .c-icon {
+  background: center center no-repeat;
+  background-size: 100% 100%;
   display: inline-block;
   height: 20px;
   height: 1.25rem;
   width: 20px;
   width: 1.25rem;
   vertical-align: middle; }
+
+.c-icon--arrow-down {
+  background-image: url("../images/icons/arrow-down.svg"); }
+
+.c-icon--arrow-left {
+  background-image: url("../images/icons/arrow-left.svg"); }
+
+.c-icon--arrow-right {
+  background-image: url("../images/icons/arrow-right.svg"); }
+
+.c-icon--arrow-up {
+  background-image: url("../images/icons/arrow-up.svg"); }
+
+.c-icon--arrow-circle-down {
+  background-image: url("../images/icons/arrow-circle-down.svg"); }
+
+.c-icon--arrow-circle-left {
+  background-image: url("../images/icons/arrow-circle-left.svg"); }
+
+.c-icon--arrow-circle-right {
+  background-image: url("../images/icons/arrow-circle-right.svg"); }
+
+.c-icon--arrow-circle-up {
+  background-image: url("../images/icons/arrow-circle-up.svg"); }
+
+.c-icon--arrow-fill-down {
+  background-image: url("../images/icons/arrow-fill-down.svg"); }
+
+.c-icon--arrow-fill-left {
+  background-image: url("../images/icons/arrow-fill-left.svg"); }
+
+.c-icon--arrow-fill-right {
+  background-image: url("../images/icons/arrow-fill-right.svg"); }
+
+.c-icon--arrow-fill-up {
+  background-image: url("../images/icons/arrow-fill-up.svg"); }
+
+.c-icon--info {
+  background-image: url("../images/icons/info.svg"); }
+
+.c-icon--info-fill {
+  background-image: url("../images/icons/info-fill.svg"); }
+
+.c-icon--archive {
+  background-image: url("../images/icons/archive.svg"); }
+
+.c-icon--document {
+  background-image: url("../images/icons/document.svg"); }
+
+.c-icon--download {
+  background-image: url("../images/icons/download.svg"); }
+
+.c-icon--email {
+  background-image: url("../images/icons/email.svg"); }
+
+.c-icon--error {
+  background-image: url("../images/icons/error.svg"); }
+
+.c-icon--feedback {
+  background-image: url("../images/icons/feedback.svg"); }
+
+.c-icon--help {
+  background-image: url("../images/icons/help.svg"); }
+
+.c-icon--lock {
+  background-image: url("../images/icons/lock.svg"); }
+
+.c-icon--location {
+  background-image: url("../images/icons/location.svg"); }
+
+.c-icon--note {
+  background-image: url("../images/icons/note.svg"); }
+
+.c-icon--plus {
+  background-image: url("../images/icons/plus.svg"); }
+
+.c-icon--plus-circle {
+  background-image: url("../images/icons/plus-circle.svg"); }
+
+.c-icon--projects-resrc {
+  background-image: url("../images/icons/projects-resrc.svg"); }
+
+.c-icon--search {
+  background-image: url("../images/icons/search.svg"); }
+
+.c-icon--settings {
+  background-image: url("../images/icons/settings.svg"); }
+
+.c-icon--star {
+  background-image: url("../images/icons/star.svg"); }
+
+.c-icon--tick {
+  background-image: url("../images/icons/tick.svg"); }
+
+.c-icon--volunteers {
+  background-image: url("../images/icons/volunteers.svg"); }
+
+.c-icon--warning {
+  background-image: url("../images/icons/warning.svg"); }
 
 .c-icon--x-small {
   height: 10px;
@@ -2025,29 +2124,6 @@ ul {
   height: 1.875rem;
   width: 30px;
   width: 1.875rem; }
-
-.c-icon__image {
-  display: block;
-  height: 100%;
-  width: 100%; }
-
-.c-icon__image--danger .c-icon__path {
-  fill: #FF5252; }
-
-.c-icon__image--primary .c-icon__path {
-  fill: #5290D2; }
-
-.c-icon__image--success .c-icon__path {
-  fill: #339933; }
-
-.c-icon__image--warning .c-icon__path {
-  fill: #FFF578; }
-
-.c-icon__image--light .c-icon__path {
-  fill: #848484; }
-
-.c-icon__image--muted .c-icon__path {
-  fill: #C2C2C2; }
 
 .c-lede {
   font-size: 20px;
@@ -2169,7 +2245,7 @@ ul {
   text-align: center;
   text-decoration: none; }
   .o-course-card__link:hover {
-    box-shadow: 0 0 10px #848484; }
+    box-shadow: 0 0 15px #C2C2C2; }
 
 .o-course-card__link--generic {
   border: 1px solid #E0E0E0; }
@@ -2236,7 +2312,7 @@ ul {
   border-radius: 0.75rem;
   overflow: hidden; }
   .o-project-card:hover {
-    box-shadow: 0 0 10px #848484; }
+    box-shadow: 0 0 15px #C2C2C2; }
 
 .o-project-card__link {
   color: #333333;

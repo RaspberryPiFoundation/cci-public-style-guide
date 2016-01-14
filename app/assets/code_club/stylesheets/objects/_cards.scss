@@ -1,6 +1,6 @@
 .o-card {
   background: $white;
-  border: $border-size-base solid $grey-x-light;
+  border:     $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-small);
 }
 
@@ -8,7 +8,7 @@
     border-bottom: $border-size-base solid $grey-x-light;
     @include h4;
     @include padding($padding-small);
-    text-align: center;
+    text-align:    center;
   }
 
   .o-card__body {
@@ -42,7 +42,7 @@
     text-decoration: none;
 
     &:hover {
-      box-shadow: 0 0 10px $grey-med;
+      box-shadow: 0 0 15px $grey-light;
     }
   }
 
@@ -116,7 +116,7 @@
   overflow: hidden;
 
   &:hover {
-    box-shadow: 0 0 10px $grey-med;
+    box-shadow: 0 0 15px $grey-light;
   }
 }
 
