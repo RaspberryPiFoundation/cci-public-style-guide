@@ -111,9 +111,9 @@
 
 .o-project-card {
   background: $white;
-  border: $border-size-base solid $grey-x-light;
+  border:     $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-small);
-  overflow: hidden;
+  overflow:   hidden;
 
   &:hover {
     box-shadow: 0 0 15px $grey-light;
