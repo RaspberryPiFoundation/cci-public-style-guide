@@ -6,10 +6,8 @@
   <ul class="c-list c-list--plain">
     <% for icon in icons %>
       <li class="c-list__item c-list__item--plain">
-        <span class="c-icon">
-          <img src="/assets/code_club/images/icons/<%= icon %>.svg" alt="" class="c-icon__image">
-        </span>
-        <code><%= icon %></code>
+        <span class="c-icon c-icon--<%= icon %>"></span>
+        <code>&lt;span class="c-icon c-icon--<%= icon %>"&gt;&lt;/span&gt;</code>
       </li>
     <% end %>
   </ul>
@@ -32,20 +30,20 @@
 
     <div class="sg-example__preview">
       <p>
-        <span class="c-icon c-icon--x-small"><img src="/assets/code_club/images/icons/star.svg" alt="" class="c-icon__image"></span>
-        <span class="c-icon c-icon--small"><img src="/assets/code_club/images/icons/star.svg" alt="" class="c-icon__image"></span>
-        <span class="c-icon"><img src="/assets/code_club/images/icons/star.svg" alt="" class="c-icon__image"></span>
-        <span class="c-icon c-icon--large"><img src="/assets/code_club/images/icons/star.svg" alt="" class="c-icon__image"></span>
-        <span class="c-icon c-icon--x-large"><img src="/assets/code_club/images/icons/star.svg" alt="" class="c-icon__image"></span>
+        <span class="c-icon c-icon--star c-icon--x-small"></span>
+        <span class="c-icon c-icon--star c-icon--small"></span>
+        <span class="c-icon c-icon--star"></span>
+        <span class="c-icon c-icon--star c-icon--large"></span>
+        <span class="c-icon c-icon--star c-icon--x-large"></span>
       </p>
     </div>
 
     <code class="sg-example__code">
-      &lt;span class="c-icon c-icon--x-small"&gt;&lt;img alt="" class="c-icon__image" src="/assets/code_club/images/icons/star.svg"&gt;&lt;/span&gt;<br>
-      &lt;span class="c-icon c-icon--small"&gt;&lt;img alt="" class="c-icon__image" src="/assets/code_club/images/icons/star.svg"&gt;&lt;/span&gt;<br>
-      &lt;span class="c-icon"&gt;&lt;img alt="" class="c-icon__image" src="/assets/code_club/images/icons/star.svg"&gt;&lt;/span&gt;<br>
-      &lt;span class="c-icon c-icon--large"&gt;&lt;img alt="" class="c-icon__image" src="/assets/code_club/images/icons/star.svg"&gt;&lt;/span&gt;<br>
-      &lt;span class="c-icon c-icon--x-large"&gt;&lt;img alt="" class="c-icon__image" src="/assets/code_club/images/icons/star.svg"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--star c-icon--x-small"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--star c-icon--small"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--star"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--star c-icon--large"&gt;&lt;/span&gt;<br>
+      &lt;span class="c-icon c-icon--star c-icon--x-large"&gt;&lt;/span&gt;<br>
     </code>
   </div>
 </div>
