@@ -48,11 +48,34 @@
 		<h4 class="sg-example__heading">Example</h4>
 
 		<div class="sg-example__preview">
-			<label class="c-form__label">Enter your email address again:</label>
+			<label class="c-form__label">Enter your email address again</label>
 		</div>
 
 		<code class="sg-example__code">
 			&lt;label class="c-form__label"&gt;Enter your email address again:&lt;/label&gt;
+		</code>
+	</div>
+
+	<p>
+		In cases where the label is also intended to denote an optional field, use the following extra markup. Without this "optional"
+		notice, it's assumed that all form fields are mandatory.
+	</p>
+
+	<div class="sg-example">
+		<h4 class="sg-example__heading">Example</h4>
+
+		<div class="sg-example__preview">
+			<label class="c-form__label">
+				Enter your email address again
+				<span class="c-form__optional">(optional)</span>
+			</label>
+		</div>
+
+		<code class="sg-example__code">
+			&lt;label class="c-form__label"&gt;<br>
+			&nbsp;&nbsp;Enter your email address again:<br>
+			&nbsp;&nbsp;&lt;span class="c-form__optional"&gt;(optional)&lt;/span&gt;<br>
+			&lt;/label&gt;
 		</code>
 	</div>
 

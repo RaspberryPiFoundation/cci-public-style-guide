@@ -1833,6 +1833,11 @@ ul {
   margin-bottom: 12px;
   margin-bottom: 0.75rem; }
 
+.c-form__optional {
+  color: #C2C2C2;
+  font-size: 12px;
+  font-size: 0.75rem; }
+
 .c-form__input {
   font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
