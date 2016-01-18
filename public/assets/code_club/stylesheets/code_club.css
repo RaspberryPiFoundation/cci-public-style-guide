@@ -2218,10 +2218,12 @@ ul {
   background-image: url("../images/project-cards/scratch.svg"); }
 
 .o-course-card__body--webdev {
-  background-image: url("../images/project-cards/webdev.png"); }
+  background-image: url("../images/project-cards/webdev.svg");
+  background-size: cover; }
 
 .o-course-card__body--python {
-  background-image: url("../images/project-cards/python.svg"); }
+  background-image: url("../images/project-cards/python.svg");
+  background-size: 35rem; }
 
 .o-course-card__image {
   display: block;
