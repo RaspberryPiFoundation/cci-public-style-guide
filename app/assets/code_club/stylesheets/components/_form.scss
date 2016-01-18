@@ -1,8 +1,6 @@
 .c-form {}
 
-  .c-form__fieldset {
-
-  }
+  .c-form__fieldset {}
 
   .c-form__label {
     color:          $grey-med;
@@ -37,6 +35,34 @@
     .c-form__input--error {
       border-color: $red;
     }
+
+  .c-form__select {
+    appearance:     none;
+    background:     none;
+    cursor:         pointer;
+    font-family:    $font-family-primary;
+    font-weight:    $font-weight-base;
+    border:         $border-size-base solid $grey-x-light;
+    @include rem('border-radius', $border-radius-x-small);
+    display:        block;
+    @include margin-bottom($margin-base);
+    @include padding($padding-small);
+    position:       relative;
+    outline:        0;
+    width:          100%;
+    vertical-align: middle;
+
+    &::before {
+      background: #fcc url('../../images/icons/arrow-down.svg') center center no-repeat;
+      content:    ' ';
+      display:    block;
+      height:     1rem;
+      position:   absolute;
+      right:      0;
+      top:        0;
+      width:      1rem;
+    }
+  }
 
   .c-form__textarea {
     font-family:    $font-family-primary;

@@ -1851,6 +1851,36 @@ ul {
 .c-form__input--error {
   border-color: #FF5252; }
 
+.c-form__select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  cursor: pointer;
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-weight: 300;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  display: block;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding: 12px;
+  padding: 0.75rem;
+  position: relative;
+  outline: 0;
+  width: 100%;
+  vertical-align: middle; }
+  .c-form__select::before {
+    background: #fcc url("../../images/icons/arrow-down.svg") center center no-repeat;
+    content: ' ';
+    display: block;
+    height: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem; }
+
 .c-form__textarea {
   font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
