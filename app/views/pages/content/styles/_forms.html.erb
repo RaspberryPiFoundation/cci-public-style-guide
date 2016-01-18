@@ -9,7 +9,12 @@
 		<code>enctype="multipart/form-data"</code> attribute to be present too.
 	</p>
 
-	<p>You should wrap your form's inner elements in one or more <code>fieldset</code> elements, each of which must contain a <code>legend</code> element for the purposes of describing the fields contained therein.</p>
+	<p>
+		You should wrap your form's inner elements in one or more <code>fieldset</code> elements.
+		If your form has multiple sections it may be beneficial to the user to include a <code>legend</code> element in each fieldset,
+		for the purposes of describing the fields contained therein. This may not be necessary on smaller, more focused forms, such as
+		a "log in" or "search" form.
+	</p>
 
 	<div class="sg-example">
 		<code class="sg-example__code">
@@ -22,6 +27,17 @@
 		</code>
 	</div>
 
+	<h3>A note about buttons</h3>
+
+	<p>
+		This page doesn't contain any examples of "submit" buttons or similar. When your forms need a button, use one of the options
+		shown on the <%= link_to "buttons", page_path('styles', 'buttons') %> page.
+	</p>
+
+	<p>
+		If a form is your page's primary action, then you should use a green button. If it performs a destructive action then use a red button.
+	</p>
+
 	<hr>
 
 	<h2>Basic Form Elements</h2>
@@ -32,11 +48,34 @@
 		<h4 class="sg-example__heading">Example</h4>
 
 		<div class="sg-example__preview">
-			<label class="c-form__label">Enter your email address again:</label>
+			<label class="c-form__label">Enter your email address again</label>
 		</div>
 
 		<code class="sg-example__code">
 			&lt;label class="c-form__label"&gt;Enter your email address again:&lt;/label&gt;
+		</code>
+	</div>
+
+	<p>
+		In cases where the label is also intended to denote an optional field, use the following extra markup. Without this "optional"
+		notice, it's assumed that all form fields are mandatory.
+	</p>
+
+	<div class="sg-example">
+		<h4 class="sg-example__heading">Example</h4>
+
+		<div class="sg-example__preview">
+			<label class="c-form__label">
+				Enter your email address again
+				<span class="c-form__optional">(optional)</span>
+			</label>
+		</div>
+
+		<code class="sg-example__code">
+			&lt;label class="c-form__label"&gt;<br>
+			&nbsp;&nbsp;Enter your email address again:<br>
+			&nbsp;&nbsp;&lt;span class="c-form__optional"&gt;(optional)&lt;/span&gt;<br>
+			&lt;/label&gt;
 		</code>
 	</div>
 
@@ -76,6 +115,24 @@
 
 		<code class="sg-example__code">
 			&lt;textarea class="c-form__textarea" id="whatevers_textarea" name="user[whatevers]" placeholder="Lorem ipsum dolor sit amet..." rows="5" cols="40"&gt;&lt;/textarea&gt;
+		</code>
+	</div>
+
+	<h3>Select Boxes</h3>
+
+	<div class="sg-example">
+		<h4 class="sg-example__heading">Example</h4>
+
+		<div class="sg-example__preview">
+			<select name="user[selection]" id="whatevers_select" class="c-form__select">
+				<option>Volunteer at a club</option>
+				<option>Find volunteers for my club</option>
+				<option>Find a public club</option>
+			</select>
+		</div>
+
+		<code class="sg-example__code">
+
 		</code>
 	</div>
 

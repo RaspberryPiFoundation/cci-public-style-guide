@@ -1,4 +1,6 @@
-.c-def-list {}
+.c-def-list {
+  max-width: 100%;
+}
 
   .c-def-list__term {
     border-top: $border-size-base solid $grey-x-light;

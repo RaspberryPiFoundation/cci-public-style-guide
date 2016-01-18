@@ -1,4 +1,5 @@
 cite {
-	display:    block;
-	text-align: right;
+	$color: $grey-med;
+	display:   block;
+	max-width: $line-length-max;
 }
