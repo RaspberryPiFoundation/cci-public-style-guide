@@ -2391,6 +2391,46 @@ ul {
   .o-nav__link.is-current {
     font-weight: 500; }
 
+.o-nav-stacked {
+  border: 1px solid #E0E0E0;
+  border-radius: 16px;
+  border-radius: 1rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-right: 0px;
+  margin-right: 0rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  margin-left: 0px;
+  margin-left: 0rem;
+  padding: 0; }
+
+.o-nav-stacked__list {
+  margin: 0;
+  padding: 0; }
+
+.o-nav-stacked__item {
+  border-top: 1px solid #E0E0E0;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .o-nav-stacked__item:first-child {
+    border: none; }
+
+.o-nav-stacked__link {
+  display: block;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  text-decoration: none; }
+  .o-nav-stacked__link.is-current {
+    font-weight: 500; }
+
 .u-background--grey {
   background-color: #333333 !important; }
 
