@@ -1343,7 +1343,8 @@ b {
 blockquote {
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  max-width: 40em; }
   blockquote p:before,
   blockquote p:after {
     display: inline-block;
@@ -1360,7 +1361,7 @@ button {
 
 cite {
   display: block;
-  text-align: right; }
+  max-width: 40em; }
 
 code {
   background: #F5F6F9;
@@ -1381,7 +1382,8 @@ code {
 dl {
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  max-width: 40em; }
   dl dd {
     margin: 0; }
   dl dt {
@@ -1414,7 +1416,8 @@ figure {
     display: block;
     max-width: 100%; }
   figure figcaption {
-    font-style: italic; }
+    font-style: italic;
+    max-width: 40em; }
 
 form {
   margin-bottom: 16px;
@@ -1507,7 +1510,8 @@ ol {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
   ol li {
-    list-style: decimal; }
+    list-style: decimal;
+    max-width: 40em; }
   ol ol, ol ul {
     margin-bottom: 0; }
 
@@ -1550,7 +1554,8 @@ ul {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
   ul li {
-    list-style: disc; }
+    list-style: disc;
+    max-width: 40em; }
   ul ol, ul ul {
     margin-bottom: 0; }
 
@@ -1788,6 +1793,9 @@ ul {
   font-size: 1rem;
   line-height: 1.2;
   text-indent: 0; }
+
+.c-def-list {
+  max-width: 100%; }
 
 .c-def-list__term {
   border-top: 1px solid #E0E0E0;
@@ -2113,6 +2121,7 @@ ul {
 
 .c-list {
   margin-left: 0;
+  max-width: 100%;
   padding-left: 0; }
 
 .c-list__item {
