@@ -2227,7 +2227,8 @@ ul {
   text-align: center;
   text-decoration: none; }
   .o-course-card__link:hover {
-    box-shadow: 0 0 15px #C2C2C2; }
+    box-shadow: 0 0 15px #C2C2C2;
+    color: #848484; }
 
 .o-course-card__link--generic {
   border: 1px solid #E0E0E0; }
@@ -2238,16 +2239,22 @@ ul {
   background: #E18932;
   border: none;
   color: #FFF; }
+  .o-course-card__link--scratch:hover {
+    color: #FFF; }
 
 .o-course-card__link--webdev {
   background: #3E98DA;
   border: none;
   color: #FFF; }
+  .o-course-card__link--webdev:hover {
+    color: #FFF; }
 
 .o-course-card__link--python {
   background: #54BB92;
   border: none;
   color: #FFF; }
+  .o-course-card__link--python:hover {
+    color: #FFF; }
 
 .o-course-card__body {
   background-position: center center;

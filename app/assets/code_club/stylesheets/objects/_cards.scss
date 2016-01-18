@@ -43,6 +43,7 @@
 
     &:hover {
       box-shadow: 0 0 15px $grey-light;
+      color:      $grey-med;
     }
   }
 
@@ -58,18 +59,30 @@
       background: $card-orange;
       border:     none;
       color:      $white;
+
+      &:hover {
+        color: $white;
+      }
     }
 
     .o-course-card__link--webdev  {
       background: $card-blue;
       border:     none;
       color:      $white;
+
+      &:hover {
+        color: $white;
+      }
     }
 
     .o-course-card__link--python  {
       background: $card-green;
       border:     none;
       color:      $white;
+
+      &:hover {
+        color: $white;
+      }
     }
 
   .o-course-card__body {
