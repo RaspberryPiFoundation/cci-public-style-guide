@@ -2279,6 +2279,7 @@ ul {
   margin: 0; }
 
 .o-course-card__footer {
+  background: rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 100;

@@ -101,6 +101,7 @@
   }
 
   .o-course-card__footer {
+    background:  rgba(0, 0, 0, 0.1);
     @include rem('font-size', $font-size-small);
     font-weight: $font-weight-light;
     @include padding($padding-small);
