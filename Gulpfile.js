@@ -65,32 +65,32 @@ var app_assets_config = {
 //  Set style guide assets configuration
 var cc_assets_config = {
   fonts: {
-    source:    'app/assets/code_club/fonts/**/*',
-    dest_dir:  'public/assets/code_club/fonts'
+    source:    'app/assets/code-club/fonts/**/*',
+    dest_dir:  'public/assets/code-club/fonts'
   },
   images: {
-    source:    'app/assets/code_club/images',
-    dest_dir:  'public/assets/code_club/images'
+    source:    'app/assets/code-club/images',
+    dest_dir:  'public/assets/code-club/images'
   },
   javascripts: {
-    source:    'app/assets/code_club/javascripts',
-    main:      'code_club.js',
-    dest_dir:  'public/assets/code_club/javascripts',
-    dest_file: 'code_club.js',
-    min_file:  'code_club.min.js'
+    source:    'app/assets/code-club/javascripts',
+    main:      'code-club.js',
+    dest_dir:  'public/assets/code-club/javascripts',
+    dest_file: 'code-club.js',
+    min_file:  'code-club.min.js'
   },
   stylesheets: {
-    source:    'app/assets/code_club/stylesheets',
-    main:      'code_club.scss',
-    dest_dir:  'public/assets/code_club/stylesheets',
-    dest_file: 'code_club.css',
-    min_file:  'code_club.min.css'
+    source:    'app/assets/code-club/stylesheets',
+    main:      'code-club.scss',
+    dest_dir:  'public/assets/code-club/stylesheets',
+    dest_file: 'code-club.css',
+    min_file:  'code-club.min.css'
   }
 };
 
 //  Set `dist` source and destination
 var dist_dirs = {
-  source: "./public/assets/code_club/**/*",
+  source: "./public/assets/code-club/**/*",
   dest:   "./dist/"
 };
 
@@ -379,7 +379,7 @@ gulp.task('copy_to_dist', ['release_assets_compile'], function () {
   return gulp.src(dist_dirs.source).pipe(gulp.dest(dist_dirs.dest));
 });
 
-gulp.task('git_actions', ['copy_to_dist'], function (callback) {
+gulp.task('release', ['copy_to_dist'], function (callback) {
   var tag_version = 'v' + pkg.version;
   var commit_msg  = 'Committing changes for ' + tag_version;
 
@@ -396,10 +396,6 @@ gulp.task('git_actions', ['copy_to_dist'], function (callback) {
     util.log(stderr);
     callback(err);
   });
-});
-
-gulp.task('release', ['git_actions'], function () {
-  // bower publish
 });
 
 

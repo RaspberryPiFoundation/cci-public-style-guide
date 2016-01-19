@@ -1,0 +1,125 @@
+.c-form {}
+
+  .c-form__fieldset {
+    border:     none;
+    border-top: $border-size-base solid $grey-xx-light;
+    @include padding($padding-base, 0);
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .c-form__label {
+    color:          $grey-med;
+    display:        block;
+    @include rem('font-size', $font-size-small);
+    @include margin-bottom($margin-small);
+    vertical-align: middle;
+  }
+
+    .c-form__label--error {
+      color: $red;
+    }
+
+    .c-form__label--inline {
+      display: inline;
+      @include margin-bottom($margin-small);
+    }
+
+  .c-form__optional {
+    color: $grey-light;
+    @include rem('font-size', $font-size-x-small);
+  }
+
+  .c-form__input {
+    background:     $white;
+    border:         $border-size-base solid $grey-x-light;
+    @include rem('border-radius', $border-radius-x-small);
+    display:        block;
+    font-family:    $font-family-primary;
+    font-weight:    $font-weight-base;
+    @include margin-bottom($margin-base);
+    @include padding($padding-small);
+    outline:        0;
+    vertical-align: middle;
+    width:          100%;
+
+    &:focus {
+      border-color: $grey-med;
+    }
+  }
+
+    .c-form__input--error {
+      border-color: $red;
+    }
+
+  .c-form__select {
+    appearance:     none;
+    background:     $white url('../images/select-arrow.svg') right center no-repeat;
+    cursor:         pointer;
+    font-family:    $font-family-primary;
+    font-weight:    $font-weight-base;
+    border:         $border-size-base solid $grey-x-light;
+    @include rem('border-radius', $border-radius-x-small);
+    display:        block;
+    @include margin-bottom($margin-base);
+    @include padding($padding-small);
+    position:       relative;
+    outline:        0;
+    width:          100%;
+    vertical-align: middle;
+
+    &:focus {
+      border-color: $grey-med;
+    }
+  }
+
+  .c-form__textarea {
+    background:     $white;
+    border:         $border-size-base solid $grey-x-light;
+    @include rem('border-radius', $border-radius-x-small);
+    display:        block;
+    font-family:    $font-family-primary;
+    font-weight:    $font-weight-base;
+    @include margin-bottom($margin-base);
+    @include padding($padding-small);
+    outline:        0;
+    width:          100%;
+    vertical-align: middle;
+
+    &:focus {
+      border-color: $grey-med;
+    }
+  }
+
+  .c-form__input-group {
+    background: $white;
+    border:     $border-size-base solid $grey-x-light;
+    @include rem('border-radius', $border-radius-small);
+  }
+
+    .c-form__input-group-checkbox,
+    .c-form__input-group-radio {
+      @extend .u-visually-hidden;
+
+      &:checked + .c-form__input-group-label {
+        background-image: url('../images/checkbox-checked.svg');
+      }
+
+      &:focus + .c-form__input-group-label {
+        background-color: $grey-xx-light;
+      }
+    }
+
+    .c-form__input-group-label {
+      background: url('../images/checkbox-empty.svg') 15px center no-repeat;
+      border-top: $border-size-base solid $grey-x-light;
+      cursor:     pointer;
+      display:    block;
+      @include padding($padding-small, $padding-small, $padding-small, $padding-x-large);
+
+      &:first-of-type {
+        border-top: none;
+      }
+    }

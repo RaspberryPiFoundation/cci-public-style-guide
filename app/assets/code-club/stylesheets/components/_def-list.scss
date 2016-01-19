@@ -1,0 +1,19 @@
+.c-def-list {
+  @include margin-bottom($margin-base);
+  max-width: 100%;
+}
+
+  .c-def-list__term {
+    border-top: $border-size-base solid $grey-x-light;
+    clear: both;
+    float: left;
+    @include padding($padding-small, 0);
+    width: 30%;
+  }
+
+  .c-def-list__definition {
+    border-top: $border-size-base solid $grey-x-light;
+    float: left;
+    @include padding($padding-small, 0);
+    width: 70%;
+  }
