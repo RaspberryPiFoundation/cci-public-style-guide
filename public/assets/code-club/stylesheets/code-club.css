@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-12
+ * @version v0.0.1-10
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1936,6 +1936,9 @@ ul {
 .c-form__input-group-radio:focus + .c-form__input-group-label {
   background-color: #F5F6F9; }
 
+.c-form__input-group-radio:checked + .c-form__input-group-label {
+  background-image: url("../images/radio-checked.svg"); }
+
 .c-form__input-group-label {
   background: url("../images/checkbox-empty.svg") 15px center no-repeat;
   border-top: 1px solid #E0E0E0;
@@ -1951,6 +1954,9 @@ ul {
   padding-left: 3rem; }
   .c-form__input-group-label:first-of-type {
     border-top: none; }
+
+.c-form__input-group-radio + .c-form__input-group-label {
+  background-image: url("../images/radio-empty.svg"); }
 
 .c-grid-table {
   border-collapse: collapse;

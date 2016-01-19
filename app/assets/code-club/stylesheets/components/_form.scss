@@ -112,6 +112,13 @@
       }
     }
 
+    .c-form__input-group-radio {
+      &:checked + .c-form__input-group-label {
+        background-image: url('../images/radio-checked.svg');
+      }
+    }
+
+
     .c-form__input-group-label {
       background: url('../images/checkbox-empty.svg') 15px center no-repeat;
       border-top: $border-size-base solid $grey-x-light;
@@ -122,4 +129,8 @@
       &:first-of-type {
         border-top: none;
       }
+    }
+
+    .c-form__input-group-radio + .c-form__input-group-label {
+      background-image: url('../images/radio-empty.svg');
     }
