@@ -1,6 +1,14 @@
 .c-form {}
 
-  .c-form__fieldset {}
+  .c-form__fieldset {
+    border:     none;
+    border-top: $border-size-base solid $grey-xx-light;
+    @include padding($padding-base, 0);
+
+    &:first-child {
+      border: none;
+    }
+  }
 
   .c-form__label {
     color:          $grey-med;
