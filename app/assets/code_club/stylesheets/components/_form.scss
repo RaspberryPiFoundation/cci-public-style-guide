@@ -55,7 +55,7 @@
 
   .c-form__select {
     appearance:     none;
-    background:     none;
+    background:     url('../../images/select-arrow.svg') right center no-repeat;
     cursor:         pointer;
     font-family:    $font-family-primary;
     font-weight:    $font-weight-base;
@@ -68,17 +68,6 @@
     outline:        0;
     width:          100%;
     vertical-align: middle;
-
-    &::before {
-      background: #fcc url('../../images/icons/arrow-down.svg') center center no-repeat;
-      content:    ' ';
-      display:    block;
-      height:     1rem;
-      position:   absolute;
-      right:      0;
-      top:        0;
-      width:      1rem;
-    }
 
     &:focus {
       border-color: $grey-med;
