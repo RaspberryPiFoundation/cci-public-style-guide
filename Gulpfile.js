@@ -304,9 +304,7 @@ gulp.task('app_assets', [
   'app_images',
   'app_javascripts',
   'app_stylesheets'
-], function (callback) {
-  callback();
-});
+]);
 
 
 
