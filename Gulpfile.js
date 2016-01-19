@@ -379,7 +379,7 @@ gulp.task('copy_to_dist', ['release_assets_compile'], function () {
   return gulp.src(dist_dirs.source).pipe(gulp.dest(dist_dirs.dest));
 });
 
-gulp.task('git_actions', ['copy_to_dist'], function (callback) {
+gulp.task('release', ['copy_to_dist'], function (callback) {
   var tag_version = 'v' + pkg.version;
   var commit_msg  = 'Committing changes for ' + tag_version;
 
@@ -392,14 +392,6 @@ gulp.task('git_actions', ['copy_to_dist'], function (callback) {
   ].join(' && ');
 
   return exec(git_commands, function(err, stdout, stderr) {
-    util.log(stdout);
-    util.log(stderr);
-    callback(err);
-  });
-});
-
-gulp.task('release', ['git_actions'], function (callback) {
-  return exec('bower publish', function(err, stdout, stderr) {
     util.log(stdout);
     util.log(stderr);
     callback(err);
