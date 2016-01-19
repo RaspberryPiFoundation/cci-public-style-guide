@@ -22,7 +22,7 @@ That will grab the latest release, and will download it to the default location 
 
 It's worth periodically checking to see if there's a new version of these assets available to download. We'll be adding new components and fixing browser-related issues as and when we need to, so the styles are definitely going to update.
 
-To see if a new release is available, run the following Bower command From your site's root directory:
+To see if a new release is available, run the following Bower command from your site's root directory:
 
 `bower list`
 
