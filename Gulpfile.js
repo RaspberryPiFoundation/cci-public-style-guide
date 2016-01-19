@@ -399,7 +399,11 @@ gulp.task('git_actions', ['copy_to_dist'], function (callback) {
 });
 
 gulp.task('release', ['git_actions'], function () {
-  // bower publish
+  return exec('bower publish', function(err, stdout, stderr) {
+    util.log(stdout);
+    util.log(stderr);
+    callback(err);
+  });
 });
 
 
