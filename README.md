@@ -20,9 +20,17 @@ That will grab the latest release, and will download it to the default location 
 
 ## Updating the assets
 
-Again, we'll perform this action with Bower. From your site's root directory in Terminal, run this command:
+It's worth periodically checking to see if there's a new version of these assets available to download. We'll be adding new components and fixing browser-related issues as and when we need to, so the styles are definitely going to update.
+
+To see if a new release is available, run the following Bower command From your site's root directory:
+
+`bower list`
+
+And if there's an update available, run this command to grab the latest styles:
 
 `bower update code-club`
+
+We'll try our best not to break existing components when we update, but sometimes that will be unavoidable. **Please make sure you test the updated styles on a development version of your site before updating the assets on a live website!**
 
 For more help with Bower and its related commands, please see the [documentation on the Bower website](http://bower.io).
 
