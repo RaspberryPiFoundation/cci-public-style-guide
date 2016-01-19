@@ -33,14 +33,14 @@ class ComponentGenerator < Rails::Generators::NamedBase
 
   def set_vars
     @assets_root   = "#{Rails.root}/app/assets"
-    @js_root       = "#{@assets_root}/javascripts/code_club"
-    @scss_root     = "#{@assets_root}/stylesheets/code_club"
+    @js_root       = "#{@assets_root}/javascripts/code-club"
+    @scss_root     = "#{@assets_root}/stylesheets/code-club"
 
     @config_root   = "#{Rails.root}/config/_components"
     @partials_root = "#{Rails.root}/app/views/_components"
 
-    @js_file       = "#{@js_root}/code_club.js"
-    @scss_file     = "#{@scss_root}/code_club.scss"
+    @js_file       = "#{@js_root}/code-club.js"
+    @scss_file     = "#{@scss_root}/code-club.scss"
 
     @description   = description
     @name          = name.sub(/^_/, '').underscore
@@ -74,7 +74,7 @@ class ComponentGenerator < Rails::Generators::NamedBase
   end
 
   def add_components_to_scss_and_js
-    puts "Adding #{@name}.scss to main code_club.scss file"
+    puts "Adding #{@name}.scss to main code-club.scss file"
 
     inject_into_file @scss_file, after: "//  Components\n" do
       "@import 'components/#{@name}';\n"
@@ -83,7 +83,7 @@ class ComponentGenerator < Rails::Generators::NamedBase
     puts ""
 
     if options.with_javascript?
-      puts "Adding #{@name}.js to main code_club.js file"
+      puts "Adding #{@name}.js to main code-club.js file"
 
       inject_into_file @js_file, after: "//  Import Modules from component JavaScript files\n" do
         "import * as #{@name} from 'components/#{@name}';\n"
