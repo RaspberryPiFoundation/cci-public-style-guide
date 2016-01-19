@@ -1872,6 +1872,8 @@ ul {
   outline: 0;
   vertical-align: middle;
   width: 100%; }
+  .c-form__input:focus {
+    border-color: #848484; }
 
 .c-form__input--error {
   border-color: #FF5252; }
@@ -1905,6 +1907,8 @@ ul {
     right: 0;
     top: 0;
     width: 1rem; }
+  .c-form__select:focus {
+    border-color: #848484; }
 
 .c-form__textarea {
   font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
@@ -1920,6 +1924,8 @@ ul {
   outline: 0;
   width: 100%;
   vertical-align: middle; }
+  .c-form__textarea:focus {
+    border-color: #848484; }
 
 .c-form__input-group {
   border: 1px solid #E0E0E0;
@@ -1929,8 +1935,14 @@ ul {
 .c-form__input-group-checkbox:checked + .c-form__input-group-label {
   background-image: url("../images/checkbox_checked.svg"); }
 
+.c-form__input-group-checkbox:focus + .c-form__input-group-label {
+  background-color: #F5F6F9; }
+
 .c-form__input-group-radio:checked + .c-form__input-group-label {
   background-image: url("../images/checkbox_checked.svg"); }
+
+.c-form__input-group-radio:focus + .c-form__input-group-label {
+  background-color: #F5F6F9; }
 
 .c-form__input-group-label {
   background: url("../images/checkbox_empty.svg") 15px center no-repeat;
