@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-11
+ * @version v0.0.1-10
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1861,12 +1861,13 @@ ul {
   font-size: 0.75rem; }
 
 .c-form__input {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
-  font-weight: 300;
+  background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-weight: 300;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding: 12px;
@@ -1884,7 +1885,7 @@ ul {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("../images/select-arrow.svg") right center no-repeat;
+  background: #FFF url("../images/select-arrow.svg") right center no-repeat;
   cursor: pointer;
   font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
@@ -1904,12 +1905,13 @@ ul {
     border-color: #848484; }
 
 .c-form__textarea {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
-  font-weight: 300;
+  background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
+  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-weight: 300;
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding: 12px;
@@ -1921,6 +1923,7 @@ ul {
     border-color: #848484; }
 
 .c-form__input-group {
+  background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
   border-radius: 0.75rem; }

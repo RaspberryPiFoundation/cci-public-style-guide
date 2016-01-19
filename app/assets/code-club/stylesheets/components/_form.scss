@@ -33,11 +33,12 @@
   }
 
   .c-form__input {
-    font-family:    $font-family-primary;
-    font-weight:    $font-weight-base;
+    background:     $white;
     border:         $border-size-base solid $grey-x-light;
     @include rem('border-radius', $border-radius-x-small);
     display:        block;
+    font-family:    $font-family-primary;
+    font-weight:    $font-weight-base;
     @include margin-bottom($margin-base);
     @include padding($padding-small);
     outline:        0;
@@ -55,7 +56,7 @@
 
   .c-form__select {
     appearance:     none;
-    background:     url('../images/select-arrow.svg') right center no-repeat;
+    background:     $white url('../images/select-arrow.svg') right center no-repeat;
     cursor:         pointer;
     font-family:    $font-family-primary;
     font-weight:    $font-weight-base;
@@ -75,11 +76,12 @@
   }
 
   .c-form__textarea {
-    font-family:    $font-family-primary;
-    font-weight:    $font-weight-base;
+    background:     $white;
     border:         $border-size-base solid $grey-x-light;
     @include rem('border-radius', $border-radius-x-small);
     display:        block;
+    font-family:    $font-family-primary;
+    font-weight:    $font-weight-base;
     @include margin-bottom($margin-base);
     @include padding($padding-small);
     outline:        0;
@@ -92,7 +94,8 @@
   }
 
   .c-form__input-group {
-    border: $border-size-base solid $grey-x-light;
+    background: $white;
+    border:     $border-size-base solid $grey-x-light;
     @include rem('border-radius', $border-radius-small);
   }
 
