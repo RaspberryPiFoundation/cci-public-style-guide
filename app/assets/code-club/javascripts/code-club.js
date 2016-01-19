@@ -1,2 +1,2 @@
 //  Import Modules from component JavaScript files
-import * as another from 'components/another';
+//  import * as another from 'components/foo';
