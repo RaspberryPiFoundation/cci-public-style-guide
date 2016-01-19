@@ -1932,20 +1932,16 @@ ul {
   border-radius: 12px;
   border-radius: 0.75rem; }
 
-.c-form__input-group-checkbox:checked + .c-form__input-group-label {
-  background-image: url("../images/checkbox_checked.svg"); }
-
-.c-form__input-group-checkbox:focus + .c-form__input-group-label {
-  background-color: #F5F6F9; }
-
+.c-form__input-group-checkbox:checked + .c-form__input-group-label,
 .c-form__input-group-radio:checked + .c-form__input-group-label {
-  background-image: url("../images/checkbox_checked.svg"); }
+  background-image: url("../images/checkbox-checked.svg"); }
 
+.c-form__input-group-checkbox:focus + .c-form__input-group-label,
 .c-form__input-group-radio:focus + .c-form__input-group-label {
   background-color: #F5F6F9; }
 
 .c-form__input-group-label {
-  background: url("../images/checkbox_empty.svg") 15px center no-repeat;
+  background: url("../images/checkbox-empty.svg") 15px center no-repeat;
   border-top: 1px solid #E0E0E0;
   cursor: pointer;
   display: block;
@@ -2544,7 +2540,8 @@ ul {
 .u-invisible {
   visibility: hidden !important; }
 
-.u-visually-hidden, .c-form__input-group-checkbox, .c-form__input-group-radio {
+.u-visually-hidden, .c-form__input-group-checkbox,
+.c-form__input-group-radio {
   border: 0             !important;
   clip: rect(0 0 0 0) !important;
   height: 1px           !important;

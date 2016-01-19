@@ -107,23 +107,12 @@
     @include rem('border-radius', $border-radius-small);
   }
 
-    .c-form__input-group-checkbox {
-      @extend .u-visually-hidden;
-
-      &:checked + .c-form__input-group-label {
-        background-image: url('../images/checkbox_checked.svg');
-      }
-
-      &:focus + .c-form__input-group-label {
-        background-color: $grey-xx-light;
-      }
-    }
-
+    .c-form__input-group-checkbox,
     .c-form__input-group-radio {
       @extend .u-visually-hidden;
 
       &:checked + .c-form__input-group-label {
-        background-image: url('../images/checkbox_checked.svg');
+        background-image: url('../images/checkbox-checked.svg');
       }
 
       &:focus + .c-form__input-group-label {
@@ -132,7 +121,7 @@
     }
 
     .c-form__input-group-label {
-      background: url('../images/checkbox_empty.svg') 15px center no-repeat;
+      background: url('../images/checkbox-empty.svg') 15px center no-repeat;
       border-top: $border-size-base solid $grey-x-light;
       cursor:     pointer;
       display:    block;
