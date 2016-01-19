@@ -150,7 +150,8 @@
     }
 
     .o-project-card__body {
-      border: $border-size-base solid $grey-x-light;
+      border:       solid $grey-x-light;
+      border-width: 0 $border-size-base $border-size-base $border-size-base;
       @include padding($padding-large, $padding-small, $padding-small);
     }
 
