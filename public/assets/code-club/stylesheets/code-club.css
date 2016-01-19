@@ -2353,7 +2353,6 @@ ul {
 
 .o-project-card {
   background: #FFF;
-  border: 1px solid #E0E0E0;
   border-radius: 12px;
   border-radius: 0.75rem;
   overflow: hidden; }
@@ -2372,6 +2371,8 @@ ul {
   max-width: 100%; }
 
 .o-project-card__body {
+  border: solid #E0E0E0;
+  border-width: 0 1px 1px 1px;
   padding-top: 32px;
   padding-top: 2rem;
   padding-right: 12px;
