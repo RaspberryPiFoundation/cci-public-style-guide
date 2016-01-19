@@ -2245,19 +2245,19 @@ ul {
 
 .o-card__heading {
   border-bottom: 1px solid #E0E0E0;
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.05556;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
   padding: 12px;
   padding: 0.75rem;
   text-align: center; }
 
 .o-card__body {
-  padding: 12px;
-  padding: 0.75rem; }
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  padding-left: 16px;
+  padding-left: 1rem; }
 
 .o-card__footer {
   border-top: 1px solid #E0E0E0;
@@ -2360,11 +2360,12 @@ ul {
     box-shadow: 0 0 15px #C2C2C2; }
 
 .o-project-card__link {
-  color: #333333;
+  color: #848484;
   display: block;
   text-decoration: none; }
   .o-project-card__link:hover {
-    border-color: #C2C2C2; }
+    border-color: #C2C2C2;
+    color: #848484; }
 
 .o-project-card__image {
   display: block;
@@ -2381,6 +2382,9 @@ ul {
   padding-bottom: 0.75rem;
   padding-left: 12px;
   padding-left: 0.75rem; }
+
+.o-project-card__meta {
+  line-height: 2; }
 
 .o-project-card__title {
   font-size: 24px;

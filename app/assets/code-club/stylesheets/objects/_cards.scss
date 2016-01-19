@@ -6,13 +6,12 @@
 
   .o-card__heading {
     border-bottom: $border-size-base solid $grey-x-light;
-    @include h4;
     @include padding($padding-small);
     text-align:    center;
   }
 
   .o-card__body {
-    @include padding($padding-small);
+    @include padding($padding-small, $padding-base);
   }
 
   .o-card__footer {
@@ -135,12 +134,13 @@
 }
 
   .o-project-card__link {
-    color:           $grey;
+    color:           $grey-med;
     display:         block;
     text-decoration: none;
 
     &:hover {
       border-color: $grey-light;
+      color:        $grey-med;
     }
   }
 
@@ -157,6 +157,7 @@
 
     .o-project-card__meta {
       @extend .c-meta;
+      line-height: 2;
     }
 
     .o-project-card__title {
