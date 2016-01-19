@@ -398,7 +398,7 @@ gulp.task('git_actions', ['copy_to_dist'], function (callback) {
   });
 });
 
-gulp.task('release', ['git_actions'], function () {
+gulp.task('release', ['git_actions'], function (callback) {
   return exec('bower publish', function(err, stdout, stderr) {
     util.log(stdout);
     util.log(stderr);
