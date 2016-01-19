@@ -205,7 +205,7 @@ function process_javascripts(config, minify) {
 
   stream = stream.pipe(header(banner, {
     dest_file: minify ? config.min_file : config.dest_file,
-    pkg:       pkg
+    pkg:       require('./package.json')
   })).on('end', function () {
     progress('Creating banner', main);
   });
@@ -272,7 +272,7 @@ function process_stylesheets(config, minify) {
 
   stream = stream.pipe(header(banner, {
     dest_file: minify ? config.min_file : config.dest_file,
-    pkg:       pkg
+    pkg:       require('./package.json')
   })).on('end', function () {
     progress('Creating banner', main);
   });
