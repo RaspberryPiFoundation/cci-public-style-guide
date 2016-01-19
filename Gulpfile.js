@@ -235,7 +235,7 @@ function process_stylesheets(config, minify) {
   }
 
   var autoprefixer = require('gulp-autoprefixer');
-  var minify_css   = require('gulp-minify-css');
+  var cssnano      = require('gulp-cssnano');
   var sass         = require('gulp-sass');
 
   var main      = config.main;
@@ -261,7 +261,7 @@ function process_stylesheets(config, minify) {
   });
 
   if (minify) {
-    stream = stream.pipe(minify_css()).on('end', function () {
+    stream = stream.pipe(cssnano()).on('end', function () {
       progress('Minifying Compiled Styles', main);
     });
 
@@ -387,7 +387,8 @@ gulp.task('git_actions', ['copy_to_dist'], function (callback) {
     'git add .',
     'git commit -m "' + commit_msg + '"',
     'git tag -a ' + tag_version + ' -m "Tagging as ' + tag_version + '"',
-    'git push origin master --tags'
+    'git push origin master --tags',
+    'git push public master --tags'
   ].join(' && ');
 
   return exec(git_commands, function(err, stdout, stderr) {
