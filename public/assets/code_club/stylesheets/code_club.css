@@ -1793,6 +1793,8 @@ ul {
   text-indent: 0; }
 
 .c-def-list {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
   max-width: 100%; }
 
 .c-def-list__term {
@@ -2421,8 +2423,6 @@ ul {
     line-height: inherit;
     margin-top: 8px;
     margin-top: 0.5rem; }
-  .o-nav__link.is-current {
-    font-weight: 500; }
 
 .o-nav-stacked {
   border: 1px solid #E0E0E0;
@@ -2462,7 +2462,7 @@ ul {
   padding-left: 1rem;
   text-decoration: none; }
   .o-nav-stacked__link.is-current {
-    font-weight: 500; }
+    color: #333333; }
 
 .o-nav-horiz {
   background: #fff;
@@ -2485,7 +2485,7 @@ ul {
   padding: 1rem;
   text-decoration: none; }
   .o-nav-horiz__link.is-current {
-    font-weight: 500; }
+    color: #333333; }
 
 .u-background--grey {
   background-color: #333333 !important; }

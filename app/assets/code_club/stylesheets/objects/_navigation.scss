@@ -38,10 +38,6 @@
           line-height: inherit;
           @include margin-top($margin-x-small);
         }
-
-        &.is-current {
-          font-weight: $font-weight-bold;
-        }
       }
 
   .o-nav-stacked {
@@ -73,7 +69,7 @@
           text-decoration: none;
 
           &.is-current {
-            font-weight: $font-weight-bold;
+            color: $grey;
           }
         }
 
@@ -101,6 +97,6 @@
           text-decoration: none;
 
           &.is-current {
-            font-weight: $font-weight-bold;
+            color: $grey;
           }
         }
