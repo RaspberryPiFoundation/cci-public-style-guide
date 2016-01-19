@@ -7,7 +7,7 @@
   ],
   "homepage": "https://github.com/CodeClubWorld/style-guide.git",
   "moduleType": [],
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "Capfile",
