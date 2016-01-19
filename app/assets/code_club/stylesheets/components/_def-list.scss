@@ -1,4 +1,5 @@
 .c-def-list {
+  @include margin-bottom($margin-base);
   max-width: 100%;
 }
 
