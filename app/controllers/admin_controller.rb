@@ -1,15 +1,15 @@
 class AdminController < ApplicationController
 
-  before_filter :authenticate_admin_user!, :except => [:login]
+  before_filter :restrict_to_development!
 
   def index
     @sections = Section.all
   end
 
-  def login
-    if user_is_authenticated?
-      redirect_to :admin_index
-    end
+  protected
+
+  def restrict_to_development!
+    not_found unless Rails.env.development?
   end
 
 end
