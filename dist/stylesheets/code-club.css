@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-13
+ * @version v0.0.1-14
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2112,6 +2112,30 @@ ul {
 
 .c-icon--warning {
   background-image: url("../images/icons/warning.svg"); }
+
+.c-icon--warning {
+  background-image: url("../images/icons/warning.svg"); }
+
+.c-icon--warning {
+  background-image: url("../images/icons/warning.svg"); }
+
+.c-icon--warning {
+  background-image: url("../images/icons/warning.svg"); }
+
+.c-icon--warning {
+  background-image: url("../images/icons/warning.svg"); }
+
+.c-icon--tick-circle-white {
+  background-image: url("../images/icons/tick-circle-white.svg"); }
+
+.c-icon--info-fill-white {
+  background-image: url("../images/icons/info-fill-white.svg"); }
+
+.c-icon--warning-orange {
+  background-image: url("../images/icons/warning-orange.svg"); }
+
+.c-icon--error-white {
+  background-image: url("../images/icons/error-white.svg"); }
 
 .c-icon--x-small {
   height: 10px;
