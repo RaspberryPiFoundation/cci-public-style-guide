@@ -37,3 +37,11 @@ For more help with Bower and its related commands, please see the [documentation
 ### Need more help? Want to suggest something?
 
 If you think something is missing from the styleguide, you'd like to suggest improvements to something that's already there, or if you're just plain stuck and you need help, please email Code Club at [support@codeclub.org.uk](mailto:support@codeclub.org.uk) and we'll see what we can do!
+
+## Legal Stuff
+
+Copyright (c) 2016 Code Club World Ltd.
+
+- [License](LICENSE.txt)
+- [Contributing](CONTRIBUTING.txt)
+
