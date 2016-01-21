@@ -1,7 +1,8 @@
 .sg-example {
-  border: 1px solid $grey-x-light;
-  box-shadow: inset 0 0 5px 0 $grey-xx-light;
+  border:        1px solid $grey-x-light;
+  box-shadow:    inset 0 0 5px 0 $grey-xx-light;
   @include rem('border-radius', $border-radius-x-small);
+  margin-bottom: 2rem;
   @include padding($padding-base);
 }
 

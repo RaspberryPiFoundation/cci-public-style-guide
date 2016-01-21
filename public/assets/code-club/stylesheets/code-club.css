@@ -1792,6 +1792,22 @@ ul {
   line-height: 1.2;
   text-indent: 0; }
 
+.content-panel {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 16px;
+  border-radius: 1rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-right: 64px;
+  padding-right: 4rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+  padding-left: 64px;
+  padding-left: 4rem; }
+
 .c-def-list {
   margin-bottom: 16px;
   margin-bottom: 1rem;
