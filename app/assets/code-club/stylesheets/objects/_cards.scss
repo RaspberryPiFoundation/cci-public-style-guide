@@ -125,6 +125,7 @@
 
 .o-project-card {
   background: $white;
+  border:     none;
   @include rem('border-radius', $border-radius-small);
   overflow:   hidden;
 
@@ -151,6 +152,8 @@
 
     .o-project-card__body {
       border:       solid $grey-x-light;
+      @include rem('border-bottom-right-radius', $border-radius-small);
+      @include rem('border-bottom-left-radius',  $border-radius-small);
       border-width: 0 $border-size-base $border-size-base $border-size-base;
       @include padding($padding-large, $padding-small, $padding-small);
     }

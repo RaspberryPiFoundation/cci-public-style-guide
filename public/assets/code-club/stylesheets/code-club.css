@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-17
+ * @version v0.0.1-16
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2391,6 +2391,7 @@ ul {
 
 .o-project-card {
   background: #FFF;
+  border: none;
   border-radius: 12px;
   border-radius: 0.75rem;
   overflow: hidden; }
@@ -2411,6 +2412,10 @@ ul {
 
 .o-project-card__body {
   border: solid #E0E0E0;
+  border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 0.75rem;
   border-width: 0 1px 1px 1px;
   padding-top: 32px;
   padding-top: 2rem;
