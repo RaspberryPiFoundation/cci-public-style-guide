@@ -335,15 +335,15 @@ gulp.task('all_assets', [
 gulp.task('bump_version_number', function () {
   var bump = require('gulp-bump');
 
-  var release_type = 'prerelease';
+  var type = 'prerelease';
 
-  if (undefined !== util.env.release_type) {
-    release_type = util.env.release_type;
+  if (undefined !== util.env.type) {
+    type = util.env.type;
   }
 
   var stream = gulp.src('./package.json')
     .pipe(bump({
-      type: release_type
+      type: type
     }))
     .pipe(gulp.dest('./')).on('end', function () {
       //  Get package again because the one in memory now has an old version number
