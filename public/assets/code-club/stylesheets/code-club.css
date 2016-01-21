@@ -2000,19 +2000,14 @@ ul {
   vertical-align: middle; }
 
 .c-icon {
-  background: center center no-repeat;
-  background-size: 100% 100%;
+  background: center top no-repeat;
+  background-size: 100% auto;
   display: inline-block;
   height: 20px;
   height: 1.25rem;
   width: 20px;
   width: 1.25rem;
   vertical-align: middle; }
-
-.c-icon__image {
-  display: block;
-  height: 100%;
-  width: 100%; }
 
 .c-icon--arrow-down {
   background-image: url("../images/icons/arrow-down.svg"); }
@@ -2050,14 +2045,14 @@ ul {
 .c-icon--arrow-fill-up {
   background-image: url("../images/icons/arrow-fill-up.svg"); }
 
-.c-icon--info {
-  background-image: url("../images/icons/info.svg"); }
-
-.c-icon--info-fill {
-  background-image: url("../images/icons/info-fill.svg"); }
-
 .c-icon--archive {
   background-image: url("../images/icons/archive.svg"); }
+
+.c-icon--calendar {
+  background-image: url("../images/icons/calendar.svg"); }
+
+.c-icon--close {
+  background-image: url("../images/icons/close.svg"); }
 
 .c-icon--document {
   background-image: url("../images/icons/document.svg"); }
@@ -2077,11 +2072,17 @@ ul {
 .c-icon--help {
   background-image: url("../images/icons/help.svg"); }
 
-.c-icon--lock {
-  background-image: url("../images/icons/lock.svg"); }
+.c-icon--info {
+  background-image: url("../images/icons/info.svg"); }
+
+.c-icon--info-fill {
+  background-image: url("../images/icons/info-fill.svg"); }
 
 .c-icon--location {
   background-image: url("../images/icons/location.svg"); }
+
+.c-icon--lock {
+  background-image: url("../images/icons/lock.svg"); }
 
 .c-icon--note {
   background-image: url("../images/icons/note.svg"); }
@@ -2092,8 +2093,8 @@ ul {
 .c-icon--plus-circle {
   background-image: url("../images/icons/plus-circle.svg"); }
 
-.c-icon--projects-resrc {
-  background-image: url("../images/icons/projects-resrc.svg"); }
+.c-icon--projects {
+  background-image: url("../images/icons/projects.svg"); }
 
 .c-icon--search {
   background-image: url("../images/icons/search.svg"); }
@@ -2107,59 +2108,96 @@ ul {
 .c-icon--tick {
   background-image: url("../images/icons/tick.svg"); }
 
+.c-icon--tick-circle {
+  background-image: url("../images/icons/tick-circle.svg"); }
+
+.c-icon--video-play {
+  background-image: url("../images/icons/video-play.svg"); }
+
 .c-icon--volunteers {
   background-image: url("../images/icons/volunteers.svg"); }
 
 .c-icon--warning {
   background-image: url("../images/icons/warning.svg"); }
 
-.c-icon--warning {
-  background-image: url("../images/icons/warning.svg"); }
+.c-icon--grey {
+  background-position: center -20px; }
 
-.c-icon--warning {
-  background-image: url("../images/icons/warning.svg"); }
+.c-icon--white {
+  background-position: center -40px; }
 
-.c-icon--warning {
-  background-image: url("../images/icons/warning.svg"); }
+.c-icon--green {
+  background-position: center -60px; }
 
-.c-icon--warning {
-  background-image: url("../images/icons/warning.svg"); }
+.c-icon--blue {
+  background-position: center -80px; }
 
-.c-icon--tick-circle-white {
-  background-image: url("../images/icons/tick-circle-white.svg"); }
-
-.c-icon--info-fill-white {
-  background-image: url("../images/icons/info-fill-white.svg"); }
-
-.c-icon--warning-orange {
-  background-image: url("../images/icons/warning-orange.svg"); }
-
-.c-icon--error-white {
-  background-image: url("../images/icons/error-white.svg"); }
+.c-icon--red {
+  background-position: center -100px; }
 
 .c-icon--x-small {
   height: 10px;
   height: 0.625rem;
   width: 10px;
   width: 0.625rem; }
+  .c-icon--x-small.c-icon--grey {
+    background-position: center -10px; }
+  .c-icon--x-small.c-icon--white {
+    background-position: center -20px; }
+  .c-icon--x-small.c-icon--green {
+    background-position: center -30px; }
+  .c-icon--x-small.c-icon--blue {
+    background-position: center -40px; }
+  .c-icon--x-small.c-icon--red {
+    background-position: center -50px; }
 
 .c-icon--small {
   height: 15px;
   height: 0.9375rem;
   width: 15px;
   width: 0.9375rem; }
+  .c-icon--small.c-icon--grey {
+    background-position: center -15px; }
+  .c-icon--small.c-icon--white {
+    background-position: center -30px; }
+  .c-icon--small.c-icon--green {
+    background-position: center -45px; }
+  .c-icon--small.c-icon--blue {
+    background-position: center -60px; }
+  .c-icon--small.c-icon--red {
+    background-position: center -75px; }
 
 .c-icon--large {
   height: 25px;
   height: 1.5625rem;
   width: 25px;
   width: 1.5625rem; }
+  .c-icon--large.c-icon--grey {
+    background-position: center -25px; }
+  .c-icon--large.c-icon--white {
+    background-position: center -50px; }
+  .c-icon--large.c-icon--green {
+    background-position: center -75px; }
+  .c-icon--large.c-icon--blue {
+    background-position: center -100px; }
+  .c-icon--large.c-icon--red {
+    background-position: center -125px; }
 
 .c-icon--x-large {
   height: 30px;
   height: 1.875rem;
   width: 30px;
   width: 1.875rem; }
+  .c-icon--x-large.c-icon--grey {
+    background-position: center -30px; }
+  .c-icon--x-large.c-icon--white {
+    background-position: center -60px; }
+  .c-icon--x-large.c-icon--green {
+    background-position: center -90px; }
+  .c-icon--x-large.c-icon--blue {
+    background-position: center -120px; }
+  .c-icon--x-large.c-icon--red {
+    background-position: center -150px; }
 
 .c-lede {
   font-size: 20px;
