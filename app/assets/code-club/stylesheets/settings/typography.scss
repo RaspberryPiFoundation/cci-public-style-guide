@@ -3,6 +3,7 @@
 $font-weight-light: 100;
 $font-weight-base:  300;
 $font-weight-bold:  500;
+$font-weight-extra-bold:  700;
 
 //	Basic elements configuration
 $font-size-base:     16;
@@ -27,34 +28,34 @@ $line-length-max:      40em;
 $font-size-h1:       48;
 $font-weight-h1:     $font-weight-bold;
 $line-height-h1:     48;
-$margin-bottom-h1:   14;
+$margin-bottom-h1:   30;
 
 //  H2
 $font-size-h2:       36;
 $font-weight-h2:     $font-weight-bold;
-$line-height-h2:     43;
-$margin-bottom-h2:   14;
+$line-height-h2:     40;
+$margin-bottom-h2:   20;
 
 //  H3
 $font-size-h3:       24;
 $font-weight-h3:     $font-weight-bold;
-$line-height-h3:     29;
-$margin-bottom-h3:   16;
+$line-height-h3:     30;
+$margin-bottom-h3:   20;
 
 //  H4
 $font-size-h4:       18;
-$font-weight-h4:     $font-weight-bold;
-$line-height-h4:     19;
+$font-weight-h4:     $font-weight-extra-bold;
+$line-height-h4:     24;
 $margin-bottom-h4:   16;
 
 //  H5
 $font-size-h5:       14;
-$font-weight-h5:     $font-weight-bold;
+$font-weight-h5:     $font-weight-extra-bold;
 $line-height-h5:     17;
 $margin-bottom-h5:   14;
 
 //  H6
-$font-size-h6:       11;
+$font-size-h6:       13;
 $font-weight-h6:     $font-weight-bold;
 $line-height-h6:     17;
 $margin-bottom-h6:   14;

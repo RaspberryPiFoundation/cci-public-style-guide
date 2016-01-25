@@ -21,15 +21,21 @@
 		<h3 class="sg-example__heading">Example</h3>
 
 		<div class="sg-example__preview">
-			<% for header in 1..6 do %>
-				<%= "<h#{header}>h#{header}: A nationwide network of volunteer-led after school coding clubs for children aged 9–11</h#{header}>".html_safe %>
-			<% end %>
+			<h1>Page heading</h1>
+      <h2>Secondary heading</h2>
+      <h3>Tertiary heading</h3>
+      <h4>Sub heading</h4>
+      <h5>Small heading</h5>
+      <h6>Micro heading</h6>
 		</div>
 
 		<code class="sg-example__code">
-			<% for header in 1..6 do %>
-				<%= "&lt;h#{header}&gt;h#{header}: Heading Level #{header}&lt;/h#{header}&gt;".html_safe %><br>
-			<% end %>
+			&#x3C;h1&#x3E;Page heading&#x3C;/h1&#x3E;<br>
+      &#x3C;h2&#x3E;Secondary heading&#x3C;/h2&#x3E;<br>
+      &#x3C;h3&#x3E;Tertiary heading&#x3C;/h3&#x3E;<br>
+      &#x3C;h4&#x3E;Sub heading&#x3C;/h4&#x3E;<br>
+      &#x3C;h5&#x3E;Small heading&#x3C;/h5&#x3E;<br>
+      &#x3C;h6&#x3E;Micro heading&#x3C;/h6&#x3E;
 		</code>
 	</div>
 
