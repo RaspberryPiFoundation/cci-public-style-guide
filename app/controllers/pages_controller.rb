@@ -14,7 +14,7 @@ class PagesController < ApplicationController
 
   def show
     if @page_has_view
-      return render :show, :layout => @layout
+      render :show, :layout => @layout, :locals => { :colors => @colors, :icons => @icons } and return
     end
 
     # Still here? 404.

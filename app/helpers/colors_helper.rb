@@ -7,10 +7,10 @@ module ColorsHelper
         'grey-light':    'C2C2C2',
         'grey-x-light':  'E0E0E0',
         'grey-xx-light': 'F5F6F9',
-        'blue':          '5290D2',
         'green':         '339933',
+        'blue':          '5290D2',
         'yellow':        'FFF578',
-        'red':           'FF5252',
+        'red':           'FF5252'
       },
       'private': {
         'blue-grey-dark': '2E3946',

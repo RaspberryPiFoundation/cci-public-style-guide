@@ -42,13 +42,13 @@
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-      <% @colors[:palette].each do |name, value| %>
+      <% colors[:palette].each do |name, value| %>
   		<p><button class="c-button c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
       <% end %>
     </div>
 
 		<code class="sg-example__code">
-      <% @colors[:palette].each do |name, value| %>
+      <% colors[:palette].each do |name, value| %>
 			&lt;button class="c-button c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
       <% end %>
 		</code>
@@ -62,13 +62,13 @@
 		<h3 class="sg-example__heading">Example</h3>
 
     <div class="sg-example__preview">
-      <% @colors[:palette].each do |name, value| %>
+      <% colors[:palette].each do |name, value| %>
   		<p><button class="c-button c-button--hollow c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
       <% end %>
     </div>
 
 		<code class="sg-example__code">
-      <% @colors[:palette].each do |name, value| %>
+      <% colors[:palette].each do |name, value| %>
 			&lt;button class="c-button c-button--hollow c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
       <% end %>
 		</code>

@@ -4,10 +4,13 @@ class Admin::SectionsController < AdminController
   # GET /admin/sections/new
   def new
     @section = Section.new
+
+    render :new, :locals => { :section => @section }
   end
 
   # GET /admin/sections/1/edit
   def edit
+    render :edit, :locals => { :section => @section }
   end
 
   # POST /admin/sections
@@ -17,7 +20,7 @@ class Admin::SectionsController < AdminController
     if @section.save
       redirect_to :admin_index, notice: 'Section was successfully created.'
     else
-      render :new
+      render :new, :locals => { :section => @section }
     end
   end
 
@@ -26,7 +29,7 @@ class Admin::SectionsController < AdminController
     if @section.update(section_params)
       redirect_to :admin_index, notice: 'Section was successfully updated.'
     else
-      render :edit
+      render :edit, :locals => { :section => @section }
     end
   end
 

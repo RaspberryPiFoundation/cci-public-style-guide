@@ -1,7 +1,7 @@
 <h1>New Section</h1>
 
-<%= form_for(@section, :url => admin_sections_path) do |f| %>
-  <%= render :partial => 'form', :locals => { :f => f } %>
+<%= form_for(section, :url => admin_sections_path) do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f, :section => section } %>
 <% end %>
 
 <%= link_to 'Back', admin_sections_path %>

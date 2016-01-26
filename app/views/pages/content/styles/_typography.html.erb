@@ -119,13 +119,13 @@
 		<h3 class="sg-example__heading">Example</h3>
 
 		<div class="sg-example__preview">
-			<% @colors[:palette].each do |name, value| %>
+			<% colors[:palette].each do |name, value| %>
 			<p class="u-color--<%= name %>">Lorem Ipsum dolor sit amet</p>
 			<% end %>
 		</div>
 
 		<code class="sg-example__code">
-			<% @colors[:palette].each do |name, value| %>&lt;p class="u-color--<%= name %>"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br><% end %>
+			<% colors[:palette].each do |name, value| %>&lt;p class="u-color--<%= name %>"&lt;Lorem Ipsum dolor sit amet&lt;/p&gt;<br><% end %>
 		</code>
 	</div>
 

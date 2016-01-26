@@ -3,7 +3,7 @@ class AdminController < ApplicationController
   before_filter :restrict_to_development!
 
   def index
-    @sections = Section.all
+    render :index, :locals => { :sections => Section.all } and return
   end
 
   protected

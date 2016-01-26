@@ -9,6 +9,7 @@ class Admin::PagesController < AdminController
 
   # GET /admin/pages/1/edit
   def edit
+    render :edit, :locals => { :page => @page, :sections => @sections } and return
   end
 
   # POST /admin/pages
