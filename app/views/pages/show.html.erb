@@ -1,6 +1,6 @@
 
-<% if !@page.is_example_page? %>
-  <h1 class="u-text--center"><%= @page.title %></h1>
+<% if !page.is_example_page? %>
+  <h1 class="u-text--center"><%= page.title %></h1>
 <% end %>
 
-<%= render "pages/content/#{@page.section.path}/#{@page_partial}" %>
+<%= render :partial => page.partial_path %>

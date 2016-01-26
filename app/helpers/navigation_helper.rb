@@ -26,7 +26,6 @@ module NavigationHelper
     list_items = ""
 
     section.pages.shown_in_nav.each do |page|
-
       list_items << content_tag(:li, :class => 'sg-navigation-item') do
         link_class = 'sg-navigation-link'
         link_class << current_page_class(section.path, page.path)
