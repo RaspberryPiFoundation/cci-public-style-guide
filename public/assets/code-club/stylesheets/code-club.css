@@ -1997,12 +1997,16 @@ ul {
   margin-bottom: 2rem;
   width: 100%; }
 
+.c-grid-table__head {
+  border: none; }
+
 .c-grid-table__col-heading {
   font-weight: 100;
   font-size: 14px;
   font-size: 0.875rem;
   padding-bottom: 16px;
   padding-bottom: 1rem;
+  text-align: center;
   vertical-align: middle; }
 
 .c-grid-table__row-heading {
