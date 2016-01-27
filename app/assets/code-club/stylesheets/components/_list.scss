@@ -14,15 +14,15 @@
     }
 
     .c-list__item--bulleted {
-      background: url('../images/bullet.svg') left 0.2rem no-repeat;
-      @include rem('background-size', $font-size-small);
+      background: url('../images/bullet.svg') left 0.4rem no-repeat;
+      @include rem('background-size', $font-size-x-small);
       list-style-type: none;
       @include padding-left($padding-base * 1.25);
 
       &.c-list__item--large {
         @include rem('background-size', $font-size-base);
-        background-position: left 0.1rem;
-        background-size:     $font-size-large * 1px;
+        background-position: left 0.2rem;
+        background-size:     $font-size-base * 1px;
         list-style-type:     none;
         @include margin-bottom($margin-base);
         @include padding-left($padding-large);

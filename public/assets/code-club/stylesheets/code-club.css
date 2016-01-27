@@ -1861,8 +1861,8 @@ ul {
 
 .c-form__optional {
   color: #C2C2C2;
-  font-size: 12px;
-  font-size: 0.75rem; }
+  font-size: 10px;
+  font-size: 0.625rem; }
 
 .c-form__input {
   background: #FFF;
@@ -2220,17 +2220,17 @@ ul {
   list-style-type: none; }
 
 .c-list__item--bulleted {
-  background: url("../images/bullet.svg") left 0.2rem no-repeat;
-  background-size: 14px;
-  background-size: 0.875rem;
+  background: url("../images/bullet.svg") left 0.4rem no-repeat;
+  background-size: 10px;
+  background-size: 0.625rem;
   list-style-type: none;
   padding-left: 20px;
   padding-left: 1.25rem; }
   .c-list__item--bulleted.c-list__item--large {
     background-size: 16px;
     background-size: 1rem;
-    background-position: left 0.1rem;
-    background-size: 20px;
+    background-position: left 0.2rem;
+    background-size: 16px;
     list-style-type: none;
     margin-bottom: 16px;
     margin-bottom: 1rem;
