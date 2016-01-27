@@ -1,8 +1,8 @@
 .o-hero {
   background: $green;
   color:      $white;
-  text-align: center;
   @include padding($padding-xxx-large, $padding-xx-large);
+  text-align: center;
 }
 
   .o-hero__subtitle {
