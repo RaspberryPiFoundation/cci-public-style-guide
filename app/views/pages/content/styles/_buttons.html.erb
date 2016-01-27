@@ -1,126 +1,123 @@
-<div class="c-content-panel">
-  <h2>How to Use Buttons</h2>
+<h2>How to Use Buttons</h2>
 
-  <p>Button styles can be applied to standard links or the <code>button</code> element.</p>
+<p>Button styles can be applied to standard links or the <code>button</code> element.</p>
 
-	<div class="sg-example">
-		<h3 class="sg-example__heading">Example</h3>
+<div class="sg-example">
+	<h3 class="sg-example__heading">Example</h3>
 
-    <div class="sg-example__preview">
-  		<p><button class="c-button">Button</button></p>
-  		<p><a class="c-button" href="#">Button as Link</a></p>
-    </div>
+  <div class="sg-example__preview">
+		<p><button class="c-button">Button</button></p>
+		<p><a class="c-button" href="#">Button as Link</a></p>
+  </div>
 
-		<code class="sg-example__code">
-			&lt;button class="c-button"&gt;Button&lt;/button&gt;<br>
-			&lt;a class="c-button" href="#"&gt;Button as Link&lt;/a&gt;
-		</code>
-	</div>
+	<code class="sg-example__code">
+		&lt;button class="c-button"&gt;Button&lt;/button&gt;<br>
+		&lt;a class="c-button" href="#"&gt;Button as Link&lt;/a&gt;
+	</code>
+</div>
 
-  <p><strong>You should not use the <code>&lt;input type="button"&gt;</code> element</strong>. If you need a button in a form, use the <code>button</code> element as shown.</p>
+<p><strong>You should not use the <code>&lt;input type="button"&gt;</code> element</strong>. If you need a button in a form, use the <code>button</code> element as shown.</p>
 
-  <h3>Some notes on button usage</h3>
+<h3>Some notes on button usage</h3>
 
-  <p>Always try to make your button label as descriptive as possible, while also keeping it as short as possible. For example, if you had a button in a form that sent a message to a Code Club host, the text "Contact Host" is much better than "Submit". The user has a much clearer understanding of what will happen when they click the button.</p>
+<p>Always try to make your button label as descriptive as possible, while also keeping it as short as possible. For example, if you had a button in a form that sent a message to a Code Club host, the text "Contact Host" is much better than "Submit". The user has a much clearer understanding of what will happen when they click the button.</p>
 
-  <p>There are several available styles for colouring buttons. They are available to allow you to style buttons in any way you might imagine, but remember to follow these two golden rules:</p>
+<p>There are several available styles for colouring buttons. They are available to allow you to style buttons in any way you might imagine, but remember to follow these two golden rules:</p>
 
-  <ul>
-    <li>A page or form's primary action must use the green style.</li>
-    <li>Any desctructive actions must use the red style.</li>
-  </ul>
+<ul>
+  <li>A page or form's primary action must use the green style.</li>
+  <li>Any desctructive actions must use the red style.</li>
+</ul>
 
-  <p>See below for the full list of colour options.</p>
+<p>See below for the full list of colour options.</p>
 
-	<hr>
+<hr>
 
-	<h2>Colouring Buttons</h2>
+<h2>Colouring Buttons</h2>
 
-	<p>Buttons can be styled with any colour in the palette. Be careful to have appropriate contrast between the color of the button and its background.</p>
+<p>Buttons can be styled with any colour in the palette. Be careful to have appropriate contrast between the color of the button and its background.</p>
 
-	<div class="sg-example">
-		<h3 class="sg-example__heading">Example</h3>
+<div class="sg-example">
+	<h3 class="sg-example__heading">Example</h3>
 
-    <div class="sg-example__preview">
-      <% colors[:palette].each do |name, value| %>
-  		<p><button class="c-button c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
-      <% end %>
-    </div>
+  <div class="sg-example__preview">
+    <% colors[:palette].each do |name, value| %>
+		<p><button class="c-button c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
+    <% end %>
+  </div>
 
-		<code class="sg-example__code">
-      <% colors[:palette].each do |name, value| %>
-			&lt;button class="c-button c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
-      <% end %>
-		</code>
-	</div>
+	<code class="sg-example__code">
+    <% colors[:palette].each do |name, value| %>
+		&lt;button class="c-button c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
+    <% end %>
+	</code>
+</div>
 
-	<hr>
+<hr>
 
-	<h2>Hollow Buttons</h2>
+<h2>Hollow Buttons</h2>
 
-	<div class="sg-example">
-		<h3 class="sg-example__heading">Example</h3>
+<div class="sg-example">
+	<h3 class="sg-example__heading">Example</h3>
 
-    <div class="sg-example__preview">
-      <% colors[:palette].each do |name, value| %>
-  		<p><button class="c-button c-button--hollow c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
-      <% end %>
-    </div>
+  <div class="sg-example__preview">
+    <% colors[:palette].each do |name, value| %>
+		<p><button class="c-button c-button--hollow c-button--<%= name %>"><%= name %> - #<%= value %></button></p>
+    <% end %>
+  </div>
 
-		<code class="sg-example__code">
-      <% colors[:palette].each do |name, value| %>
-			&lt;button class="c-button c-button--hollow c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
-      <% end %>
-		</code>
-	</div>
+	<code class="sg-example__code">
+    <% colors[:palette].each do |name, value| %>
+		&lt;button class="c-button c-button--hollow c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
+    <% end %>
+	</code>
+</div>
 
-	<hr>
+<hr>
 
-	<h2>Miscellaneous Button Options</h2>
+<h2>Miscellaneous Button Options</h2>
 
-	<p>Buttons can contain icons, dim when disbaled, can have a more squared border radius, and have a couple of sizing options too.</p>
-	<p>These styles can be mixed-and-matched in a variety of configurations.</p>
+<p>Buttons can contain icons, dim when disbaled, can have a more squared border radius, and have a couple of sizing options too.</p>
+<p>These styles can be mixed-and-matched in a variety of configurations.</p>
 
-	<div class="sg-example">
-		<h3 class="sg-example__heading">Example</h3>
+<div class="sg-example">
+	<h3 class="sg-example__heading">Example</h3>
 
-    <div class="sg-example__preview">
-  		<p>
-  			<button class="c-button c-button--hollow c-button--green">
-  				<span class="c-icon c-icon--star"></span>
-  				Button with an icon
-  			</button>
-  		</p>
-  	  <p><a class="c-button c-button--green c-button--disabled" href="#">Disabled button</a></p>
-  	  <p><a class="c-button c-button--blue c-button--squared" href="#">A squared button</a></p>
-  		<p><a class="c-button c-button--red c-button--large" href="#">A large button</a></p>
-  		<p><a class="c-button c-button--grey c-button--x-large" href="#">An extra large button</a></p>
-      <p><a class="c-button c-button--block" href="#">A button that fills the width of its parent</a></p>
-    </div>
+  <div class="sg-example__preview">
+		<p>
+			<button class="c-button c-button--hollow c-button--green">
+				<span class="c-icon c-icon--star"></span>
+				Button with an icon
+			</button>
+		</p>
+	  <p><a class="c-button c-button--green c-button--disabled" href="#">Disabled button</a></p>
+	  <p><a class="c-button c-button--blue c-button--squared" href="#">A squared button</a></p>
+		<p><a class="c-button c-button--red c-button--large" href="#">A large button</a></p>
+		<p><a class="c-button c-button--grey c-button--x-large" href="#">An extra large button</a></p>
+    <p><a class="c-button c-button--block" href="#">A button that fills the width of its parent</a></p>
+  </div>
 
-		<code class="sg-example__code">
-			&lt;button class="c-button"&gt;<br>
-			&nbsp;&nbsp;&lt;span class="c-icon"&gt;<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--star"&gt;&lt;/span&gt;<br>
-			&nbsp;&nbsp;&lt;/span&gt;<br>
-			&nbsp;&nbsp;Button with an icon<br>
-			&lt;/button&gt;<br>
-		  &lt;a class="c-button c-button--green c-button--disabled" href="#"&gt;<br>
-      &nbsp;&nbsp;Disabled button<br>
-      &lt;/a&gt;<br>
-		  &lt;a class="c-button c-button--blue c-button--squared" href="#"&gt;<br>
-      &nbsp;&nbsp;A squared button<br>
-      &lt;/a&gt;<br>
-			&lt;a class="c-button c-button--red c-button--large" href="#"&gt;<br>
-      &nbsp;&nbsp;A large button<br>
-      &lt;/a&gt;<br>
-			&lt;a class="c-button c-button--grey c-button--x-large" href="#"&gt;<br>
-      &nbsp;&nbsp;An extra large button<br>
-      &lt;/a&gt;<br>
-      &lt;a class="c-button c-button--block" href="#"&gt;<br>
-      &nbsp;&nbsp;A button that fills the width of its parent<br>
-      &lt;/a&gt;
-		</code>
-	</div>
-
+	<code class="sg-example__code">
+		&lt;button class="c-button"&gt;<br>
+		&nbsp;&nbsp;&lt;span class="c-icon"&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--star"&gt;&lt;/span&gt;<br>
+		&nbsp;&nbsp;&lt;/span&gt;<br>
+		&nbsp;&nbsp;Button with an icon<br>
+		&lt;/button&gt;<br>
+	  &lt;a class="c-button c-button--green c-button--disabled" href="#"&gt;<br>
+    &nbsp;&nbsp;Disabled button<br>
+    &lt;/a&gt;<br>
+	  &lt;a class="c-button c-button--blue c-button--squared" href="#"&gt;<br>
+    &nbsp;&nbsp;A squared button<br>
+    &lt;/a&gt;<br>
+		&lt;a class="c-button c-button--red c-button--large" href="#"&gt;<br>
+    &nbsp;&nbsp;A large button<br>
+    &lt;/a&gt;<br>
+		&lt;a class="c-button c-button--grey c-button--x-large" href="#"&gt;<br>
+    &nbsp;&nbsp;An extra large button<br>
+    &lt;/a&gt;<br>
+    &lt;a class="c-button c-button--block" href="#"&gt;<br>
+    &nbsp;&nbsp;A button that fills the width of its parent<br>
+    &lt;/a&gt;
+	</code>
 </div>

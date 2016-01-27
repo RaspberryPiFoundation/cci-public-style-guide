@@ -1,6 +1,7 @@
-
 <% if !page.is_example_page? %>
   <h1 class="u-text--center"><%= page.title %></h1>
 <% end %>
 
-<%= render :partial => page.partial_path %>
+<div class="c-content-panel">
+  <%= render :partial => page.partial_path %>
+</div>

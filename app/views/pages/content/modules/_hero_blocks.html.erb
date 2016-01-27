@@ -1,80 +1,78 @@
-<div class="c-content-panel">
-  <h2>An Overview</h2>
+<h2>An Overview</h2>
 
-  <p>
-    Hero blocks sit at the top of some pages across our websites. They act as a way to introduce the
-    content below. Hero blocks can vary from a simple block colour to an image background, they can also
-    include buttons and download resources (for pages that contain projects).
-  </p>
+<p>
+  Hero blocks sit at the top of some pages across our websites. They act as a way to introduce the
+  content below. Hero blocks can vary from a simple block colour to an image background, they can also
+  include buttons and download resources (for pages that contain projects).
+</p>
 
-  <p>
-    These blocks are full width, and will always center their content. These examples are width-limited to the size of their parent element,
-    but check the <%= link_to "sample pages", page_path('layout', 'sample-pages') %> to see how they should be used in the context of a full page.
-  </p>
+<p>
+  These blocks are full width, and will always center their content. These examples are width-limited to the size of their parent element,
+  but check the <%= link_to "sample pages", page_path('layout', 'sample-pages') %> to see how they should be used in the context of a full page.
+</p>
 
-  <p>For countries, a hero block can be made up from the following elements:</p>
+<p>For countries, a hero block can be made up from the following elements:</p>
 
-  <ul>
-    <li>A background block, color of <code>$green</code></li>
-    <li>Title. A short h1 page heading</li>
-    <li>An introductory sentence. Describing briefly the content of the page</li>
-    <li>A useful list of button links. For linking to key downloads/resources. Not section navigation (see <%= link_to("Navigation", page_path('structure', 'nav')) %>)</li>
-  </ul>
+<ul>
+  <li>A background block, color of <code>$green</code></li>
+  <li>Title. A short h1 page heading</li>
+  <li>An introductory sentence. Describing briefly the content of the page</li>
+  <li>A useful list of button links. For linking to key downloads/resources. Not section navigation (see <%= link_to("Navigation", page_path('structure', 'nav')) %>)</li>
+</ul>
 
-  <p>Internally, we will have a few extra options:</p>
+<p>Internally, we will have a few extra options:</p>
 
-  <ul>
-    <li>An alternative background colour</li>
-    <li>A background image. Can either stretch or tile. The text must remain legible. Not rendered on mobile devices</li>
-  </ul>
+<ul>
+  <li>An alternative background colour</li>
+  <li>A background image. Can either stretch or tile. The text must remain legible. Not rendered on mobile devices</li>
+</ul>
 
-  <div class="sg-example">
-    <h3 class="sg-example__heading">Example</h3>
+<div class="sg-example">
+  <h3 class="sg-example__heading">Example</h3>
 
-    <div class="sg-example__preview">
-      <div class="o-hero">
-        <h1 class="o-hero__title">Page Title Would Go Here</h1>
-      </div>
+  <div class="sg-example__preview">
+    <div class="o-hero">
+      <h1 class="o-hero__title">Page Title Would Go Here</h1>
     </div>
-
-    <code class="sg-example__code">
-      &lt;div class="o-hero"&gt;<br>
-      &nbsp;&nbsp;&lt;h1&gt;Page Title Would Go Here&lt;/h1&gt;<br>
-      &lt;/div&gt;
-    </code>
   </div>
 
-  <hr>
+  <code class="sg-example__code">
+    &lt;div class="o-hero"&gt;<br>
+    &nbsp;&nbsp;&lt;h1&gt;Page Title Would Go Here&lt;/h1&gt;<br>
+    &lt;/div&gt;
+  </code>
+</div>
 
-  <h2>Hero With Background Image</h2>
+<hr>
 
-  <p>TODO: Need to discuss this with Greg W</p>
+<h2>Hero With Background Image</h2>
 
-  <div class="sg-example">
-    <h3 class="sg-example__heading">Example</h3>
+<p>TODO: Need to discuss this with Greg W</p>
 
-    <div class="sg-example__preview">
-      <div class="o-hero">
-      	<h1 class="o-hero__title">Page Title Would Go Here</h1>
+<div class="sg-example">
+  <h3 class="sg-example__heading">Example</h3>
 
-        <p class="o-hero__subtitle">This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
+  <div class="sg-example__preview">
+    <div class="o-hero">
+    	<h1 class="o-hero__title">Page Title Would Go Here</h1>
 
-        <ul class="o-hero__list">
-          <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A download</a></li>
-          <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A link to a PDF</a></li>
-        </ul>
-      </div>
+      <p class="o-hero__subtitle">This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
+
+      <ul class="o-hero__list">
+        <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A download</a></li>
+        <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A link to a PDF</a></li>
+      </ul>
     </div>
-
-    <code class="sg-example__code">
-      &lt;div class="o-hero"&gt;<br>
-      &nbsp;&nbsp;&lt;h1 class="o-hero__title"&gt;Page Title Would Go Here&lt;/h1&gt;<br>
-      &nbsp;&nbsp;&lt;p class="o-hero__subtitle"&gt;This hero block has a brief sentence which is great for introducing the content that will feature on the below page.&lt;/p&gt;<br>
-      &nbsp;&nbsp;&lt;ul class="o-hero__list"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-hero__item"&gt;&lt;a href="#" class="c-button c-button--hollow c-button--white"&gt;A download&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-hero__item"&gt;&lt;a href="#" class="c-button c-button--hollow c-button--white"&gt;A link to a PDF&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&lt;/ul&gt;<br>
-      &lt;/div&gt;
-    </code>
   </div>
+
+  <code class="sg-example__code">
+    &lt;div class="o-hero"&gt;<br>
+    &nbsp;&nbsp;&lt;h1 class="o-hero__title"&gt;Page Title Would Go Here&lt;/h1&gt;<br>
+    &nbsp;&nbsp;&lt;p class="o-hero__subtitle"&gt;This hero block has a brief sentence which is great for introducing the content that will feature on the below page.&lt;/p&gt;<br>
+    &nbsp;&nbsp;&lt;ul class="o-hero__list"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-hero__item"&gt;&lt;a href="#" class="c-button c-button--hollow c-button--white"&gt;A download&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-hero__item"&gt;&lt;a href="#" class="c-button c-button--hollow c-button--white"&gt;A link to a PDF&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;/ul&gt;<br>
+    &lt;/div&gt;
+  </code>
 </div>

@@ -1,148 +1,146 @@
-<div class="c-content-panel">
-  <h2>Types of Navigation</h2>
+<h2>Types of Navigation</h2>
 
-  <p>There are three different types of navigation menus that can be employed:</p>
+<p>There are three different types of navigation menus that can be employed:</p>
 
-  <dl class="c-def-list">
-    <dt class="c-def-list__term">Primary navigation</dt>
-    <dd class="c-def-list__definition">Top-level site-wide navigation; always present at the very top of every page. Also houses the Code Club logo.</dd>
-    <dt class="c-def-list__term">Section navigation</dt>
-    <dd class="c-def-list__definition">In-section navigation; for providing links to sub-pages within a section (eg in the About section, there may be sub-pages for Team, Contact &amp; Jobs)</dd>
-    <dt class="c-def-list__term">Menu navigation</dt>
-    <dd class="c-def-list__definition">Navigation for screens using the <%= link_to("menu layout", page_path('structure', 'layout')) %></dd>
-  </dl>
+<dl class="c-def-list">
+  <dt class="c-def-list__term">Primary navigation</dt>
+  <dd class="c-def-list__definition">Top-level site-wide navigation; always present at the very top of every page. Also houses the Code Club logo.</dd>
+  <dt class="c-def-list__term">Section navigation</dt>
+  <dd class="c-def-list__definition">In-section navigation; for providing links to sub-pages within a section (eg in the About section, there may be sub-pages for Team, Contact &amp; Jobs)</dd>
+  <dt class="c-def-list__term">Menu navigation</dt>
+  <dd class="c-def-list__definition">Navigation for screens using the <%= link_to("menu layout", page_path('structure', 'layout')) %></dd>
+</dl>
 
-  <h3>Primary navigation</h3>
+<h3>Primary navigation</h3>
 
-  <ul>
-    <li>Consistent on every Code Club website</li>
-    <li>Use the logo anchor to link to the homepage, no need for a link</li>
-    <li>On handheld devices the menu condenses into a hamburger menu interface, which when triggered slides the menu in from the left</li>
-    <li>Use only one instance of the emphasis style if required</li>
-  </ul>
+<ul>
+  <li>Consistent on every Code Club website</li>
+  <li>Use the logo anchor to link to the homepage, no need for a link</li>
+  <li>On handheld devices the menu condenses into a hamburger menu interface, which when triggered slides the menu in from the left</li>
+  <li>Use only one instance of the emphasis style if required</li>
+</ul>
 
-  <div class="sg-example">
-    <h3 class="sg-example__heading">Example</h3>
+<div class="sg-example">
+  <h3 class="sg-example__heading">Example</h3>
 
-    <div class="sg-example__preview">
-      <header class="o-banner" role="banner">
-        <div class="o-banner__inner">
-          <figure class="c-logo">
-    				<a href="#" class="c-logo__link">
-    					<img src="/assets/code-club/images/code-club-logo.svg" alt="" class="c-logo__image">
-    					<figcaption class="c-logo__appendix">United Kingdom</figcaption>
-    				</a>
-    			</figure>
+  <div class="sg-example__preview">
+    <header class="o-banner" role="banner">
+      <div class="o-banner__inner">
+        <figure class="c-logo">
+  				<a href="#" class="c-logo__link">
+  					<img src="/assets/code-club/images/code-club-logo.svg" alt="" class="c-logo__image">
+  					<figcaption class="c-logo__appendix">United Kingdom</figcaption>
+  				</a>
+  			</figure>
 
-          <nav class="o-nav" role="navigation">
-            <ul class="o-nav__list">
-              <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
-              <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
-              <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
-              <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
-              <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
-
-    <code class="sg-example__code">
-      &lt;header class="o-banner" role="banner"&gt;<br>
-      &nbsp;&nbsp;&lt;div class="o-banner__inner"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;figure class="c-logo"&gt;<br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="c-logo__link"&gt;<br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="c-logo__image" src="/bower_components/code-club/dist/images/code-club-logo.svg"&gt;<br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption class="c-logo__appendix"&gt;United Kingdom&lt;/figcaption&gt;<br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/figure&gt;<br>
-      <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="o-nav" role="navigation"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="o-nav__list"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Projects&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Your Club Hub&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link c-button c-button--hollow c-button--green" href="#"&gt;Sign Out&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
-      &nbsp;&nbsp;&lt;/header&gt;
-    </code>
+        <nav class="o-nav" role="navigation">
+          <ul class="o-nav__list">
+            <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
+            <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   </div>
 
-  <hr>
+  <code class="sg-example__code">
+    &lt;header class="o-banner" role="banner"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="o-banner__inner"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;figure class="c-logo"&gt;<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="c-logo__link"&gt;<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="c-logo__image" src="/bower_components/code-club/dist/images/code-club-logo.svg"&gt;<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption class="c-logo__appendix"&gt;United Kingdom&lt;/figcaption&gt;<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+  	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/figure&gt;<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="o-nav" role="navigation"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="o-nav__list"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Projects&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Your Club Hub&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link c-button c-button--hollow c-button--green" href="#"&gt;Sign Out&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+    &nbsp;&nbsp;&lt;/header&gt;
+  </code>
+</div>
 
-  <h2>Stacked Navigation</h2>
+<hr>
 
-  <p>
-    The stacked navigation style is ideal for use in a page's sidebar for navigation within a section of your site. It will always expand
-    to 100% of its parent container's width.
-  </p>
+<h2>Stacked Navigation</h2>
 
-  <div class="sg-example">
-    <h3 class="sg-example__heading">Example</h3>
+<p>
+  The stacked navigation style is ideal for use in a page's sidebar for navigation within a section of your site. It will always expand
+  to 100% of its parent container's width.
+</p>
 
-    <div class="sg-example__preview">
-      <nav class="o-nav-stacked">
-        <ul class="o-nav-stacked__list">
-          <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Club Hub</a></li>
-          <li class="o-nav-stacked__item"><a class="o-nav-stacked__link is-current" href="#">Profile</a></li>
-          <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Another Page</a></li>
-          <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Change Password</a></li>
-          <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">More Links</a></li>
-          <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Projects or Something</a></li>
-        </ul>
-      </nav>
-    </div>
+<div class="sg-example">
+  <h3 class="sg-example__heading">Example</h3>
 
-    <code class="sg-example__code">
-      &lt;nav class="o-nav-stacked"&gt;<br>
-      &nbsp;&nbsp;&lt;ul class="o-nav-stacked__list"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Club Hub&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link is-current" href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Another Page&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Change Password&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;More Links&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Projects or Something&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&lt;/ul&gt;<br>
-      &lt;/nav&gt;
-    </code>
+  <div class="sg-example__preview">
+    <nav class="o-nav-stacked">
+      <ul class="o-nav-stacked__list">
+        <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Club Hub</a></li>
+        <li class="o-nav-stacked__item"><a class="o-nav-stacked__link is-current" href="#">Profile</a></li>
+        <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Another Page</a></li>
+        <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Change Password</a></li>
+        <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">More Links</a></li>
+        <li class="o-nav-stacked__item"><a class="o-nav-stacked__link" href="#">Projects or Something</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <hr>
+  <code class="sg-example__code">
+    &lt;nav class="o-nav-stacked"&gt;<br>
+    &nbsp;&nbsp;&lt;ul class="o-nav-stacked__list"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Club Hub&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link is-current" href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Another Page&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Change Password&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;More Links&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-stacked__item"&gt;&lt;a class="o-nav-stacked__link" href="#"&gt;Projects or Something&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;/ul&gt;<br>
+    &lt;/nav&gt;
+  </code>
+</div>
 
-  <h2>Horizontal Navigation</h2>
+<hr>
 
-  <p>
-    Normally for use under a hero banner, the horizontal navigation is useful for pages without a sidebar that still has a few sub-pages.
-  </p>
+<h2>Horizontal Navigation</h2>
 
-  <p>
-    Text links are always center aligned, and the element will also take up 100% of its parent container. It's designed with the intention that
-    its parent will be as high up in the HTML document heirarchy as possible.
-  </p>
+<p>
+  Normally for use under a hero banner, the horizontal navigation is useful for pages without a sidebar that still has a few sub-pages.
+</p>
 
-  <div class="sg-example">
-    <h3 class="sg-example__heading">Example</h3>
+<p>
+  Text links are always center aligned, and the element will also take up 100% of its parent container. It's designed with the intention that
+  its parent will be as high up in the HTML document heirarchy as possible.
+</p>
 
-    <div class="sg-example__preview">
-      <nav class="o-nav-horiz">
-        <ul class="o-nav-horiz__list">
-          <li class="o-nav-horiz__item"><a class="o-nav-horiz__link is-current">Projects &amp; Resources</a></li>
-          <li class="o-nav-horiz__item"><a class="o-nav-horiz__link">Manage Volunteers</a></li>
-          <li class="o-nav-horiz__item"><a class="o-nav-horiz__link">Club Settings</a></li>
-        </ul>
-      </nav>
-    </div>
+<div class="sg-example">
+  <h3 class="sg-example__heading">Example</h3>
 
-    <code class="sg-example__code">
-      &lt;nav class="o-nav-horiz"&gt;<br>
-      &nbsp;&nbsp;&lt;ul class="o-nav-horiz__list"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-horiz__item"&gt;&lt;a class="o-nav-horiz__link is-current"&gt;Projects &amp; Resources&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-horiz__item"&gt;&lt;a class="o-nav-horiz__link"&gt;Manage Volunteers&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-horiz__item"&gt;&lt;a class="o-nav-horiz__link"&gt;Club Settings&lt;/a&gt;&lt;/li&gt;<br>
-      &nbsp;&nbsp;&lt;/ul&gt;<br>
-      &lt;/nav&gt;
-    </code>
+  <div class="sg-example__preview">
+    <nav class="o-nav-horiz">
+      <ul class="o-nav-horiz__list">
+        <li class="o-nav-horiz__item"><a class="o-nav-horiz__link is-current">Projects &amp; Resources</a></li>
+        <li class="o-nav-horiz__item"><a class="o-nav-horiz__link">Manage Volunteers</a></li>
+        <li class="o-nav-horiz__item"><a class="o-nav-horiz__link">Club Settings</a></li>
+      </ul>
+    </nav>
   </div>
+
+  <code class="sg-example__code">
+    &lt;nav class="o-nav-horiz"&gt;<br>
+    &nbsp;&nbsp;&lt;ul class="o-nav-horiz__list"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-horiz__item"&gt;&lt;a class="o-nav-horiz__link is-current"&gt;Projects &amp; Resources&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-horiz__item"&gt;&lt;a class="o-nav-horiz__link"&gt;Manage Volunteers&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav-horiz__item"&gt;&lt;a class="o-nav-horiz__link"&gt;Club Settings&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;/ul&gt;<br>
+    &lt;/nav&gt;
+  </code>
 </div>
