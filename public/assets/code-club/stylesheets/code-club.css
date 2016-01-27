@@ -1605,16 +1605,13 @@ ul {
   background: #848484; }
 
 .c-badge--grey-light {
-  background: #C2C2C2;
-  color: #333333; }
+  background: #C2C2C2; }
 
 .c-badge--grey-x-light {
-  background: #E0E0E0;
-  color: #333333; }
+  background: #E0E0E0; }
 
 .c-badge--grey-xx-light {
-  background: #F5F6F9;
-  color: #333333; }
+  background: #F5F6F9; }
 
 .c-badge--red {
   background: #FF5252; }
@@ -1626,11 +1623,16 @@ ul {
   background: #339933; }
 
 .c-badge--yellow {
-  background: #FFF578;
-  color: #333333; }
+  background: #FFF578; }
 
 .c-badge--white {
   background: #FFF; }
+
+.c-badge--grey-light,
+.c-badge--grey-x-light,
+.c-badge--grey-xx-light,
+.c-badge--yellow {
+  color: #333333; }
 
 .c-button {
   border-radius: 24px;
