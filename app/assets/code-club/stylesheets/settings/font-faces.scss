@@ -1,23 +1,4 @@
-//  Include webfonts
-@font-face {
-    font-family: 'Palanquin';
-    font-weight: 300;
-    src:         url('../fonts/Palanquin/Palanquin-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Palanquin';
-    font-weight: 500;
-    src:         url('../fonts/Palanquin/Palanquin-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Palanquin';
-    font-weight: 700;
-    src:         url('../fonts/Palanquin/Palanquin-Bold.ttf') format('truetype');
-}
-
 //	Font Families
-$font-family-primary:   'museo-sans-rounded', Palanquin, Calibri, Roboto, Verdana, sans-serif;
-$font-family-secondary: 'museo-sans-rounded', Palanquin, Calibri, Roboto, Verdana, sans-serif;
+$font-family-primary:   'museo-sans-rounded', Calibri, Roboto, Verdana, sans-serif;
+$font-family-secondary: 'museo-sans-rounded', Calibri, Roboto, Verdana, sans-serif;
 $font-family-monospace: Monaco, 'Andale Mono', monospace;
