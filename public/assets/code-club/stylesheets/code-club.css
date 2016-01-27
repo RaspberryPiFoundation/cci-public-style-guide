@@ -9,21 +9,6 @@
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
 */
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 300;
-  src: url("../fonts/Palanquin/Palanquin-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 500;
-  src: url("../fonts/Palanquin/Palanquin-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 700;
-  src: url("../fonts/Palanquin/Palanquin-Bold.ttf") format("truetype"); }
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -1326,7 +1311,7 @@ html {
 
 body {
   color: #333333;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 300;
@@ -1368,7 +1353,7 @@ blockquote {
 
 button {
   border: none;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 500; }
 
 cite {
@@ -1488,7 +1473,7 @@ i {
   font-style: italic; }
 
 input {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   vertical-align: middle; }
   input ::-webkit-input-placeholder {
     color: #E0E0E0; }
@@ -1525,7 +1510,7 @@ pre {
   margin-bottom: 1rem; }
 
 select {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif; }
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif; }
 
 strong {
   font-weight: 500; }
@@ -1540,7 +1525,7 @@ table {
     margin: 0; }
 
 textarea {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   resize: vertical; }
 
 time {
@@ -1882,7 +1867,7 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -1903,7 +1888,7 @@ ul {
           appearance: none;
   background: #FFF url("../images/select-arrow.svg") right center no-repeat;
   cursor: pointer;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
@@ -1926,7 +1911,7 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
   margin-bottom: 16px;
   margin-bottom: 1rem;
