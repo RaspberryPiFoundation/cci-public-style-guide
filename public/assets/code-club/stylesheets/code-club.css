@@ -1590,6 +1590,14 @@ ul {
   padding-bottom: 0.5rem;
   padding-left: 16px;
   padding-left: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
   vertical-align: middle; }
   .c-button.c-button--grey {
     background: #333333;
@@ -1703,27 +1711,45 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem; }
 
+.c-button--small {
+  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  border-radius: 32px;
+  border-radius: 2rem; }
+
 .c-button--large {
-  padding-top: 16px;
-  padding-top: 1rem;
-  padding-right: 32px;
-  padding-right: 2rem;
-  padding-bottom: 16px;
-  padding-bottom: 1rem;
-  padding-left: 32px;
-  padding-left: 2rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
   border-radius: 32px;
   border-radius: 2rem; }
 
 .c-button--x-large {
-  padding-top: 32px;
-  padding-top: 2rem;
-  padding-right: 48px;
-  padding-right: 3rem;
-  padding-bottom: 32px;
-  padding-bottom: 2rem;
-  padding-left: 48px;
-  padding-left: 3rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
   border-radius: 48px;
   border-radius: 3rem; }
 

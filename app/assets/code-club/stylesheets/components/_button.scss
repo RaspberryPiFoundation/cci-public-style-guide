@@ -7,6 +7,7 @@
   text-align:      center;
   text-decoration: none;
   @include padding($padding-x-small, $padding-base);
+  @include padding($button-padding-x-large--y, $button-padding-x-large--x);
   vertical-align:  middle;
 
   &.c-button--grey          { background: $grey;          border-color: $grey;          }
@@ -78,5 +79,21 @@
 
   .c-button--block   { display: block; }
   .c-button--squared { @include rem('border-radius', $border-radius-x-small); }
-  .c-button--large   { @include padding($padding-base,  $padding-large);   @include rem('border-radius', $border-radius-x-large);  }
-  .c-button--x-large { @include padding($padding-large, $padding-x-large); @include rem('border-radius', $border-radius-xx-large); }
+
+  .c-button--small {
+    @include rem('font-size', $button-font-size-small);
+    @include padding($button-padding-small--y, $button-padding-small--x);
+    @include rem('border-radius', $border-radius-x-large);
+  }
+
+  .c-button--large {
+    @include rem('font-size', $button-font-size-large);
+    @include padding($button-padding-large--y, $button-padding-large--x);
+    @include rem('border-radius', $border-radius-x-large);
+  }
+
+  .c-button--x-large {
+    @include rem('font-size', $button-font-size-x-large);
+    @include padding($button-padding-x-large--y, $button-padding-x-large--x);
+    @include rem('border-radius', $border-radius-xx-large);
+  }

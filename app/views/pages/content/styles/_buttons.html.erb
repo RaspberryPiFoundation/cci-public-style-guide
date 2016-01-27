@@ -75,9 +75,32 @@
 
 <hr>
 
+<h2>Sizing Buttons</h2>
+
+<p>
+	Buttons come in four sizes. Small, normal, large and extra large.
+</p>
+
+<div class="sg-example">
+	<h3 class="sg-example__heading">Example</h3>
+
+  <div class="sg-example__preview">
+		<p><button class="c-button c-button--small c-button--green">Small Button</button></p>
+		<p><button class="c-button c-button--green">Normal Button</button></p>
+		<p><button class="c-button c-button--large c-button--green">Large Button</button></p>
+		<p><button class="c-button c-button--x-large c-button--green">Extra Large Button</button></p>
+  </div>
+
+	<code class="sg-example__code">
+    <% colors[:palette].each do |name, value| %>
+		&lt;button class="c-button c-button--hollow c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
+    <% end %>
+	</code>
+</div>
+
 <h2>Miscellaneous Button Options</h2>
 
-<p>Buttons can contain icons, dim when disbaled, can have a more squared border radius, and have a couple of sizing options too.</p>
+<p>Buttons can contain icons, dim when disabled, can have a more squared border radius, and have a couple of sizing options too.</p>
 <p>These styles can be mixed-and-matched in a variety of configurations.</p>
 
 <div class="sg-example">
@@ -86,21 +109,19 @@
   <div class="sg-example__preview">
 		<p>
 			<button class="c-button c-button--hollow c-button--green">
-				<span class="c-icon c-icon--star"></span>
+				<span class="c-icon c-icon--small c-icon--star c-icon--green"></span>
 				Button with an icon
 			</button>
 		</p>
 	  <p><a class="c-button c-button--green c-button--disabled" href="#">Disabled button</a></p>
 	  <p><a class="c-button c-button--blue c-button--squared" href="#">A squared button</a></p>
-		<p><a class="c-button c-button--red c-button--large" href="#">A large button</a></p>
-		<p><a class="c-button c-button--grey c-button--x-large" href="#">An extra large button</a></p>
     <p><a class="c-button c-button--block" href="#">A button that fills the width of its parent</a></p>
   </div>
 
 	<code class="sg-example__code">
 		&lt;button class="c-button"&gt;<br>
 		&nbsp;&nbsp;&lt;span class="c-icon"&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--star"&gt;&lt;/span&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--star c-icon--green"&gt;&lt;/span&gt;<br>
 		&nbsp;&nbsp;&lt;/span&gt;<br>
 		&nbsp;&nbsp;Button with an icon<br>
 		&lt;/button&gt;<br>
@@ -109,12 +130,6 @@
     &lt;/a&gt;<br>
 	  &lt;a class="c-button c-button--blue c-button--squared" href="#"&gt;<br>
     &nbsp;&nbsp;A squared button<br>
-    &lt;/a&gt;<br>
-		&lt;a class="c-button c-button--red c-button--large" href="#"&gt;<br>
-    &nbsp;&nbsp;A large button<br>
-    &lt;/a&gt;<br>
-		&lt;a class="c-button c-button--grey c-button--x-large" href="#"&gt;<br>
-    &nbsp;&nbsp;An extra large button<br>
     &lt;/a&gt;<br>
     &lt;a class="c-button c-button--block" href="#"&gt;<br>
     &nbsp;&nbsp;A button that fills the width of its parent<br>
