@@ -6,7 +6,6 @@
   color:           $white;
   text-align:      center;
   text-decoration: none;
-  @include padding($padding-x-small, $padding-base);
   @include padding($button-padding-x-large--y, $button-padding-x-large--x);
   vertical-align:  middle;
 
