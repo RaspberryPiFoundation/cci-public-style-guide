@@ -25,6 +25,7 @@ Page.create!([
   { path: "lists",            title: "Lists",            order: 80,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "tables",           title: "Tables",           order: 90,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "alerts",           title: "Alerts",           order: 100, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "badges",           title: "Badges",           order: 110, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
 
   { path: "navigation",       title: "Navigation",       order: 10,  section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "hero-blocks",      title: "Hero Blocks",      order: 20,  section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },

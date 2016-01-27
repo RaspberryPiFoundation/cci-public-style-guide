@@ -1,0 +1,21 @@
+.c-badge {
+  @include rem('border-radius', $border-radius-x-small);
+  background:      $grey-med;
+  display:         inline-block;
+  color:           $white;
+  @include rem('font-size', $font-size-small);
+  @include padding($padding-xx-small, $padding-small);
+  text-transform:  uppercase;
+  vertical-align:  middle;
+}
+
+  .c-badge--grey          { background: $grey;          }
+  .c-badge--grey-med      { background: $grey-med;      }
+  .c-badge--grey-light    { background: $grey-light;    color: $grey; }
+  .c-badge--grey-x-light  { background: $grey-x-light;  color: $grey; }
+  .c-badge--grey-xx-light { background: $grey-xx-light; color: $grey; }
+  .c-badge--red           { background: $red;           }
+  .c-badge--blue          { background: $blue;          }
+  .c-badge--green         { background: $green;         }
+  .c-badge--yellow        { background: $yellow;        color: $grey; }
+  .c-badge--white         { background: $white;         }

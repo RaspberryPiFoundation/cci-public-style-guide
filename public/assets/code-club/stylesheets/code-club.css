@@ -1579,6 +1579,59 @@ ul {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
+.c-badge {
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  background: #848484;
+  display: inline-block;
+  color: #FFF;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  text-transform: uppercase;
+  vertical-align: middle; }
+
+.c-badge--grey {
+  background: #333333; }
+
+.c-badge--grey-med {
+  background: #848484; }
+
+.c-badge--grey-light {
+  background: #C2C2C2;
+  color: #333333; }
+
+.c-badge--grey-x-light {
+  background: #E0E0E0;
+  color: #333333; }
+
+.c-badge--grey-xx-light {
+  background: #F5F6F9;
+  color: #333333; }
+
+.c-badge--red {
+  background: #FF5252; }
+
+.c-badge--blue {
+  background: #5290D2; }
+
+.c-badge--green {
+  background: #339933; }
+
+.c-badge--yellow {
+  background: #FFF578;
+  color: #333333; }
+
+.c-badge--white {
+  background: #FFF; }
+
 .c-button {
   border-radius: 24px;
   border-radius: 1.5rem;
@@ -1588,14 +1641,6 @@ ul {
   color: #FFF;
   text-align: center;
   text-decoration: none;
-  padding-top: 8px;
-  padding-top: 0.5rem;
-  padding-right: 16px;
-  padding-right: 1rem;
-  padding-bottom: 8px;
-  padding-bottom: 0.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
   padding-top: 8px;
   padding-top: 0.5rem;
   padding-right: 16px;
