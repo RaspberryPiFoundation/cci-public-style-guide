@@ -1,6 +1,7 @@
 class Page < ActiveRecord::Base
   include Hideable
   include Orderable
+  include Viewable
 
   belongs_to :section
 
@@ -11,10 +12,6 @@ class Page < ActiveRecord::Base
 
   def back_page
     Page.find(@page.back_page_id) if is_example_page?
-  end
-
-  def has_view?
-    File.exists?(view)
   end
 
   def is_example_page?
@@ -28,10 +25,6 @@ class Page < ActiveRecord::Base
   def set_default_example_page_value
     self.example_page = false if example_page.nil?
     true
-  end
-
-  def view_filename
-    path.gsub("-", "_")
   end
 
   def view
