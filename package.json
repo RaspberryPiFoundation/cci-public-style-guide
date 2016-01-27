@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/style-guide.git"
   },
-  "license": "UNLICENSED",
+  "license": "GPL-3.0",
   "devDependencies": {
     "babel-preset-es2015": "^6.1.2",
     "gulp": "^3.9.0",
