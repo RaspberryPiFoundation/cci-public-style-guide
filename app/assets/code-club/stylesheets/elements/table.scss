@@ -1,12 +1,19 @@
 table {
 	border-collapse: collapse;
 	@include rem('margin-bottom', $margin-base);
+	width:           100%;
 
 	thead {
+		border-bottom: $border-size-base solid $grey-x-light;
 		font-weight: bold;
+	}
+
+	th {
+		text-align: left;
 	}
 
 	td, th {
 		margin: 0;
+		@include padding($padding-x-small);
 	}
 }

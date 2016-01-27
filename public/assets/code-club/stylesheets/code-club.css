@@ -1518,11 +1518,17 @@ strong {
 table {
   border-collapse: collapse;
   margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%; }
   table thead {
+    border-bottom: 1px solid #E0E0E0;
     font-weight: bold; }
+  table th {
+    text-align: left; }
   table td, table th {
-    margin: 0; }
+    margin: 0;
+    padding: 8px;
+    padding: 0.5rem; }
 
 textarea {
   font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;

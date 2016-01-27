@@ -4,7 +4,9 @@
   width:           100%;
 }
 
-  .c-grid-table__head {}
+  .c-grid-table__head {
+    border: none;
+  }
 
     .c-grid-table__head-row {}
 
@@ -12,6 +14,7 @@
         font-weight:    $font-weight-light;
         @include rem('font-size', $font-size-small);
         @include padding-bottom($padding-base);
+        text-align:     center;
         vertical-align: middle;
       }
 
