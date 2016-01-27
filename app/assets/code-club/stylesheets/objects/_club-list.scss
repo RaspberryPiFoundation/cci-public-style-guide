@@ -1,0 +1,33 @@
+.o-club-list {
+  padding: 0;
+}
+
+  .o-club-list__item {
+    background: $white;
+    border:     $border-size-base solid $grey-x-light;
+    list-style: none;
+    @include margin-bottom($margin-base);
+    max-width:  100%;
+    @include rem('border-radius', $border-radius-x-small);
+    @include padding($padding-small);
+    position:   relative;
+  }
+
+    .o-club-list__badge {
+      @include rem('left', -($margin-x-small));
+      position: absolute;
+      @include rem('top',  -($margin-small));
+    }
+
+    .o-club-list__button {
+      float: right;
+    }
+
+    .o-club-list__meta {
+      display: block;
+    }
+
+    .o-club-list__title {
+      @include rem('font-size', $font-size-h4);
+      float:  left;
+    }

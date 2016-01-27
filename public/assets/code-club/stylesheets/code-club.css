@@ -2547,6 +2547,40 @@ ul {
   margin-bottom: 20px;
   margin-bottom: 1.25rem; }
 
+.o-club-list {
+  padding: 0; }
+
+.o-club-list__item {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  list-style: none;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  padding: 12px;
+  padding: 0.75rem;
+  position: relative; }
+
+.o-club-list__badge {
+  left: -8px;
+  left: -0.5rem;
+  position: absolute;
+  top: -12px;
+  top: -0.75rem; }
+
+.o-club-list__button {
+  float: right; }
+
+.o-club-list__meta {
+  display: block; }
+
+.o-club-list__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  float: left; }
+
 .o-hero {
   background: #339933;
   color: #FFF;
