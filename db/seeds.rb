@@ -12,7 +12,7 @@ Page.create!([
   { path: "colour-palette",   title: "Colour Palette",   order: 20,  section_id: 2, show_in_nav: true, example_page: false, back_page_id: nil },
 
   { path: "grid-system",      title: "Grid System",      order: 10,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
-#  { path: "page-skeleton",    title: "Page Skeleton",    order: 20,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "page-skeleton",    title: "Page Skeleton",    order: 20,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
   { path: "sample-pages",     title: "Sample Pages",     order: 30,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
 
   { path: "code-club-logo",   title: "Code Club Logo",   order: 10,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
