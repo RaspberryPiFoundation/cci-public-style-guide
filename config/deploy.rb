@@ -34,8 +34,9 @@ set :linked_files,  fetch(:linked_files, []).push('config/database.yml')
 set :linked_dirs,   fetch(:linked_dirs,  []).push('log', 'tmp/pids', 'tmp/sockets', 'public/system')
 
 # Notifications
-#set :slack_webhook,      'https://hooks.slack.com/services/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'
-#set :slack_run_starting, false
+set :slack_webhook,      'https://hooks.slack.com/services/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'
+set :slack_run_starting, false
+set :slack_run_failed,   false
 #set :newrelic_user,      ENV['USERNAME']
 
 #after "deploy:updated",  'newrelic:notice_deployment'
