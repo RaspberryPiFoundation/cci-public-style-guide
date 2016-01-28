@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'puma',      '~> 2.14.0'
 gem 'redcarpet', '~> 3.3.3'
 gem 'rails',     '4.2.5.1'
+gem 'uglifier',  '~> 2.7.2'
 gem 'mysql2',    '~> 0.3.18'
 
 group :development, :test do
