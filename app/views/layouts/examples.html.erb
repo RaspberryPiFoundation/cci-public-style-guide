@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<%= render 'shared/head' %>
+    <script>document.documentElement.className += ' wf-loading';</script>
+
+    <title>Code Club Style Guide</title>
+
+    <link rel="shortcut icon" href="/assets/code-club/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/icon.png">
+    <meta name="msapplication-TileColor" content="#F5F6F9">
+    <meta name="msapplication-TileImage" content="/assets/images/favicons/icon.png">
+    <link rel="icon" href="/assets/images/favicons/icon.png" sizes="32x32">
+
+    <!-- Add your additional styles after this include code-club.min.css -->
+    <%= stylesheet_link_tag '/assets/code-club/stylesheets/code-club.min', :media => 'all' %>
   </head>
 
-  <body class="example">
-    <div class="body_wrap">
-      <header id="nav_pri">
-      	<h1 class="brand">
-          <%= link_to :home do %>
-      		  <span>Code Club</span> <small>Example menu layout</small>
-          <% end %>
-      	</h1>
+  <body>
+    <header class="o-banner">
+      <div class="o-banner__inner">
+        <div class="c-logo">
+          <a href="#" class="c-logo__link">
+            <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
+            <div class="c-logo__appendix">United Kingdom</div>
+          </a>
+        </div>
 
-      	<nav class="pri">
-      		<ul>
-      			<li>
-              <%= link_to "Back to #{@back_page.title}", page_path(@back_page.section.path, @back_page.path) %>
-            </li>
-      		</ul>
-      	</nav>
-      </header>
+        <nav class="o-nav">
+          <ul class="o-nav__list">
+            <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
+            <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <%= yield %>
-    </div>
+    <%= yield %>
 
-    <%= render 'shared/footer' %>
+    <script>
+      (function(d){
+        var config = {kitId: 'pus1ntw',scriptTimeout: 3000,async: true},
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' %>
+    <%= javascript_include_tag '/assets/code-club/javascripts/code-club.min' %>
   </body>
 </html>
