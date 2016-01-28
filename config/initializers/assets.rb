@@ -4,11 +4,6 @@
 Rails.application.config.assets.version = '1.1'
 
 # Add additional assets to the asset load path
-Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/fonts"
 Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/images"
 Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/javascripts"
 Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/stylesheets"
-
-# Precompile additional assets.
-# application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
