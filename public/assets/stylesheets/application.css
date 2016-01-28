@@ -2,24 +2,9 @@
  * application.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-16
+ * @version v0.0.1-20
  * @link https://styleguide.codeclubworld.org/
  */
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 300;
-  src: url("../fonts/Palanquin/Palanquin-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 500;
-  src: url("../fonts/Palanquin/Palanquin-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 700;
-  src: url("../fonts/Palanquin/Palanquin-Bold.ttf") format("truetype"); }
-
 .sg-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -114,7 +99,7 @@
 .sg-example__heading {
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem;
