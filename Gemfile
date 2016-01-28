@@ -24,7 +24,7 @@ group :development do
   gem 'capistrano',             require: false
   gem 'capistrano-rvm',         require: false
   gem 'capistrano3-puma',       require: false
-  gem 'slackistrano',           '~> 0.1.9', require: false
+  gem 'slackistrano',           '0.1.9', require: false
   gem 'spring',                 require: false
 end
 
