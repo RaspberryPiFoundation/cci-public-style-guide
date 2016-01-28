@@ -1,7 +1,7 @@
 module NavigationHelper
 
   def render_navigation
-    @html = '<nav class="sg-navigation" role="navigation">'
+    @html = '<nav class="sg-navigation">'
 
     Section.shown_in_nav.each do |section|
       make_navigation_section(section)
