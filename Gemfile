@@ -6,8 +6,6 @@ gem 'mysql2',    '~> 0.3.18'
 gem 'puma',      '~> 2.14.0'
 gem 'rails',     '4.2.5.1'
 gem 'redcarpet', '~> 3.3.3'
-gem 'sass',      '~> 3.4.21'
-gem 'uglifier',  '~> 2.7.2'
 
 group :development, :test do
   gem 'byebug'
