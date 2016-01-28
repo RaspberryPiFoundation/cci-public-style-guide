@@ -355,7 +355,7 @@ gulp.task('release', ['copy_to_dist'], function (callback) {
   var commit_msg  = 'Committing changes for ' + tag_version;
 
   var git_commands = [
-    'git add .',
+    'git add . -A',
     'git commit -m "' + commit_msg + '"',
     'git tag -a ' + tag_version + ' -m "Tagging as ' + tag_version + '"',
     'git push origin master --tags',
