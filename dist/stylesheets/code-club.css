@@ -2,28 +2,13 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-20
+ * @version v0.0.1-22
  * @link https://styleguide.codeclubworld.org/
  */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
 */
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 300;
-  src: url("../fonts/Palanquin/Palanquin-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 500;
-  src: url("../fonts/Palanquin/Palanquin-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Palanquin';
-  font-weight: 700;
-  src: url("../fonts/Palanquin/Palanquin-Bold.ttf") format("truetype"); }
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -1326,7 +1311,7 @@ html {
 
 body {
   color: #333333;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 300;
@@ -1368,7 +1353,7 @@ blockquote {
 
 button {
   border: none;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 500; }
 
 cite {
@@ -1430,47 +1415,47 @@ h1 {
   font-size: 3rem;
   font-weight: 500;
   line-height: 1;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem; }
 
 h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 1.19444;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
+  line-height: 1.25;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem; }
 
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.20833;
-  margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  line-height: 1.25;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
 
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.05556;
+  font-weight: 700;
+  line-height: 1.33333;
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
 h5 {
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem;
   text-transform: uppercase; }
 
 h6 {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
-  line-height: 1.54545;
+  line-height: 1.30769;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
@@ -1488,7 +1473,7 @@ i {
   font-style: italic; }
 
 input {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   vertical-align: middle; }
   input ::-webkit-input-placeholder {
     color: #E0E0E0; }
@@ -1525,7 +1510,7 @@ pre {
   margin-bottom: 1rem; }
 
 select {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif; }
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif; }
 
 strong {
   font-weight: 500; }
@@ -1533,14 +1518,20 @@ strong {
 table {
   border-collapse: collapse;
   margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%; }
   table thead {
+    border-bottom: 1px solid #E0E0E0;
     font-weight: bold; }
+  table th {
+    text-align: left; }
   table td, table th {
-    margin: 0; }
+    margin: 0;
+    padding: 8px;
+    padding: 0.5rem; }
 
 textarea {
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   resize: vertical; }
 
 time {
@@ -1587,6 +1578,61 @@ ul {
   text-align: left;
   margin-bottom: 16px;
   margin-bottom: 1rem; }
+
+.c-badge {
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  background: #848484;
+  display: inline-block;
+  color: #FFF;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  text-transform: uppercase;
+  vertical-align: middle; }
+
+.c-badge--grey {
+  background: #333333; }
+
+.c-badge--grey-med {
+  background: #848484; }
+
+.c-badge--grey-light {
+  background: #C2C2C2; }
+
+.c-badge--grey-x-light {
+  background: #E0E0E0; }
+
+.c-badge--grey-xx-light {
+  background: #F5F6F9; }
+
+.c-badge--red {
+  background: #FF5252; }
+
+.c-badge--blue {
+  background: #5290D2; }
+
+.c-badge--green {
+  background: #339933; }
+
+.c-badge--yellow {
+  background: #FFF578; }
+
+.c-badge--white {
+  background: #FFF; }
+
+.c-badge--grey-light,
+.c-badge--grey-x-light,
+.c-badge--grey-xx-light,
+.c-badge--yellow {
+  color: #333333; }
 
 .c-button {
   border-radius: 24px;
@@ -1718,27 +1764,45 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem; }
 
+.c-button--small {
+  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  border-radius: 32px;
+  border-radius: 2rem; }
+
 .c-button--large {
-  padding-top: 16px;
-  padding-top: 1rem;
-  padding-right: 32px;
-  padding-right: 2rem;
-  padding-bottom: 16px;
-  padding-bottom: 1rem;
-  padding-left: 32px;
-  padding-left: 2rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
   border-radius: 32px;
   border-radius: 2rem; }
 
 .c-button--x-large {
-  padding-top: 32px;
-  padding-top: 2rem;
-  padding-right: 48px;
-  padding-right: 3rem;
-  padding-bottom: 32px;
-  padding-bottom: 2rem;
-  padding-left: 48px;
-  padding-left: 3rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
   border-radius: 48px;
   border-radius: 3rem; }
 
@@ -1873,8 +1937,8 @@ ul {
 
 .c-form__optional {
   color: #C2C2C2;
-  font-size: 12px;
-  font-size: 0.75rem; }
+  font-size: 10px;
+  font-size: 0.625rem; }
 
 .c-form__input {
   background: #FFF;
@@ -1882,7 +1946,7 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -1903,7 +1967,7 @@ ul {
           appearance: none;
   background: #FFF url("../images/select-arrow.svg") right center no-repeat;
   cursor: pointer;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
@@ -1926,7 +1990,7 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem;
   display: block;
-  font-family: "museo-sans-rounded", Palanquin, Calibri, Roboto, Verdana, sans-serif;
+  font-family: "museo-sans-rounded", Calibri, Roboto, Verdana, sans-serif;
   font-weight: 300;
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -1980,12 +2044,16 @@ ul {
   margin-bottom: 2rem;
   width: 100%; }
 
+.c-grid-table__head {
+  border: none; }
+
 .c-grid-table__col-heading {
   font-weight: 100;
   font-size: 14px;
   font-size: 0.875rem;
   padding-bottom: 16px;
   padding-bottom: 1rem;
+  text-align: center;
   vertical-align: middle; }
 
 .c-grid-table__row-heading {
@@ -2232,17 +2300,17 @@ ul {
   list-style-type: none; }
 
 .c-list__item--bulleted {
-  background: url("../images/bullet.svg") left 0.2rem no-repeat;
-  background-size: 14px;
-  background-size: 0.875rem;
+  background: url("../images/bullet.svg") left 0.4rem no-repeat;
+  background-size: 10px;
+  background-size: 0.625rem;
   list-style-type: none;
   padding-left: 20px;
   padding-left: 1.25rem; }
   .c-list__item--bulleted.c-list__item--large {
     background-size: 16px;
     background-size: 1rem;
-    background-position: left 0.1rem;
-    background-size: 20px;
+    background-position: left 0.2rem;
+    background-size: 16px;
     list-style-type: none;
     margin-bottom: 16px;
     margin-bottom: 1rem;
@@ -2260,6 +2328,32 @@ ul {
 .c-meta, .o-project-card__meta {
   font-size: 14px;
   font-size: 0.875rem; }
+
+.c-page-block {
+  background: #F5F6F9;
+  border-bottom: 1px solid #E0E0E0;
+  border-top: 1px solid #E0E0E0;
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-right: 0px;
+  padding-right: 0rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+  padding-left: 0px;
+  padding-left: 0rem; }
+
+.c-page-block--alt-block {
+  background: #FFF;
+  border: none; }
+
+.c-page-block--action-block {
+  background: #5290D2;
+  border: none;
+  color: #FFF; }
+  .c-page-block--action-block a {
+    color: #FFF; }
+    .c-page-block--action-block a:hover {
+      color: #FFF; }
 
 .c-strip-table {
   border-collapse: collapse;
@@ -2449,14 +2543,47 @@ ul {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.20833;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+
+.o-club-list {
+  padding: 0; }
+
+.o-club-list__item {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  list-style: none;
   margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  padding: 12px;
+  padding: 0.75rem;
+  position: relative; }
+
+.o-club-list__badge {
+  left: -8px;
+  left: -0.5rem;
+  position: absolute;
+  top: -12px;
+  top: -0.75rem; }
+
+.o-club-list__button {
+  float: right; }
+
+.o-club-list__meta {
+  display: block; }
+
+.o-club-list__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  float: left; }
 
 .o-hero {
   background: #339933;
   color: #FFF;
-  text-align: center;
   padding-top: 80px;
   padding-top: 5rem;
   padding-right: 64px;
@@ -2464,7 +2591,8 @@ ul {
   padding-bottom: 80px;
   padding-bottom: 5rem;
   padding-left: 64px;
-  padding-left: 4rem; }
+  padding-left: 4rem;
+  text-align: center; }
 
 .o-hero__subtitle {
   max-width: 100%; }
@@ -2645,13 +2773,15 @@ ul {
   width: 1px           !important; }
 
 .u-text--center {
+  margin-left: auto   !important;
+  margin-right: auto   !important;
   text-align: center !important; }
 
 .u-text--left {
-  text-align: left   !important; }
+  text-align: left  !important; }
 
 .u-text--right {
-  text-align: right  !important; }
+  text-align: right !important; }
 
 .u-color--grey {
   color: #333333 !important; }
@@ -2712,47 +2842,47 @@ ul {
   font-size: 3rem;
   font-weight: 500;
   line-height: 1;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem; }
 
 .u-h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 1.19444;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
+  line-height: 1.25;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem; }
 
 .u-h3 {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.20833;
-  margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  line-height: 1.25;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
 
 .u-h4 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.05556;
+  font-weight: 700;
+  line-height: 1.33333;
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
 .u-h5 {
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem;
   text-transform: uppercase; }
 
 .u-h6 {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
-  line-height: 1.54545;
+  line-height: 1.30769;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
