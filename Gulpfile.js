@@ -38,10 +38,6 @@ var banner = ['/**',
 
 //  Set website assets configuration
 var app_assets_config = {
-  fonts: {
-    source:    'app/assets/fonts/**/*',
-    dest_dir:  'public/assets/fonts'
-  },
   images: {
     source:    'app/assets/images',
     dest_dir:  'public/assets/images'
@@ -64,10 +60,6 @@ var app_assets_config = {
 
 //  Set style guide assets configuration
 var cc_assets_config = {
-  fonts: {
-    source:    'app/assets/code-club/fonts/**/*',
-    dest_dir:  'public/assets/code-club/fonts'
-  },
   images: {
     source:    'app/assets/code-club/images',
     dest_dir:  'public/assets/code-club/images'
@@ -113,18 +105,6 @@ function progress(message, file) {
   }
 
   return util.log('- ' + message);
-}
-
-
-
-//  Master font compilation function
-function process_fonts(config) {
-  var stream = gulp.src(config.source)
-    .pipe(gulp.dest(config.dest_dir)).on('end', function () {
-      progress('Copied fonts');
-    });
-
-  return stream;
 }
 
 
@@ -295,7 +275,6 @@ function process_stylesheets(config, minify) {
 
 
 //  Application assets tasks
-gulp.task('app_fonts',       function () { return process_fonts(app_assets_config.fonts);             });
 gulp.task('app_images',      function () { return process_images(app_assets_config.images);           });
 gulp.task('app_javascripts', function () { return process_javascripts(app_assets_config.javascripts); });
 gulp.task('app_stylesheets', function () { return process_stylesheets(app_assets_config.stylesheets); });
@@ -309,13 +288,11 @@ gulp.task('app_assets', [
 
 
 //  Style guide assets tasks
-gulp.task('cc_fonts',       function () { return process_fonts(cc_assets_config.fonts);             });
 gulp.task('cc_images',      function () { return process_images(cc_assets_config.images);           });
 gulp.task('cc_javascripts', function () { return process_javascripts(cc_assets_config.javascripts); });
 gulp.task('cc_stylesheets', function () { return process_stylesheets(cc_assets_config.stylesheets); });
 
 gulp.task('cc_assets', [
-  'cc_fonts',
   'cc_images',
   'cc_javascripts',
   'cc_stylesheets'
@@ -353,11 +330,7 @@ gulp.task('bump_version_number', function () {
   return stream;
 });
 
-gulp.task('release_cc_fonts', ['bump_version_number'], function () {
-  return process_fonts(cc_assets_config.fonts);
-});
-
-gulp.task('release_cc_images', ['release_cc_fonts'], function () {
+gulp.task('release_cc_images', ['bump_version_number'], function () {
   return process_images(cc_assets_config.images);
 });
 
@@ -401,13 +374,11 @@ gulp.task('release', ['copy_to_dist'], function (callback) {
 //  Generic tasks
 gulp.task('watch', function () {
   //  Application assets
-  gulp.watch(app_assets_config.fonts.source       + '/**',     ['app_fonts']);
   gulp.watch(app_assets_config.images.source      + '/**',     ['app_images']);
   gulp.watch(app_assets_config.javascripts.source + '/*.js',   ['app_javascripts']);
   gulp.watch(app_assets_config.stylesheets.source + '/*.scss', ['app_stylesheets']);
 
   //  Style guide assets
-  gulp.watch(cc_assets_config.fonts.source       + '/**',        ['cc_fonts']);
   gulp.watch(cc_assets_config.images.source      + '/**',        ['cc_images']);
   gulp.watch(cc_assets_config.javascripts.source + '/**/*.js',   ['cc_javascripts']);
   gulp.watch(cc_assets_config.stylesheets.source + '/**/*.scss', ['cc_stylesheets']);
