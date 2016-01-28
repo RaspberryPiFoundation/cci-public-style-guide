@@ -124,7 +124,7 @@ GEM
     seed_dump (3.2.4)
       activerecord (>= 4)
       activesupport (>= 4)
-    slackistrano (2.0.1)
+    slackistrano (0.1.12)
       capistrano (>= 3.0.1)
       json
     spring (1.6.2)
@@ -168,7 +168,7 @@ DEPENDENCIES
   rails-dev-tweaks
   redcarpet (~> 3.3.3)
   seed_dump
-  slackistrano
+  slackistrano (~> 0.1.9)
   spring
   web-console (~> 2.0)
 
