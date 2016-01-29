@@ -1,6 +1,7 @@
 .sg-example__code {
   @include rem('border-radius', $border-radius-x-small);
-  display: block;
+  display:   inline-block;
   @include padding($padding-x-small);
-  width:   100%;
+  max-width: 860px;
+  width:     100%;
 }

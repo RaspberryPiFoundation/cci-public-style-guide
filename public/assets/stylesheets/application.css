@@ -2,7 +2,7 @@
  * application.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-20
+ * @version v0.0.1-26
  * @link https://styleguide.codeclubworld.org/
  */
 .sg-body {
@@ -122,9 +122,10 @@
 .sg-example__code {
   border-radius: 8px;
   border-radius: 0.5rem;
-  display: block;
+  display: inline-block;
   padding: 8px;
   padding: 0.5rem;
+  max-width: 860px;
   width: 100%; }
 
 .sg-fig-desc {
