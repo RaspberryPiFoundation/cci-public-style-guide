@@ -1,9 +1,36 @@
 .o-hero {
   background: $green;
   color:      $white;
-  @include padding($padding-xxx-large, $padding-xx-large);
-  text-align: center;
 }
+
+  .o-hero__nav {
+    @include padding($padding-x-small, $padding-xx-small);
+  }
+
+    .o-hero__nav--left {
+      float: left;
+    }
+
+    .o-hero__nav--right {
+      float: right;
+    }
+
+  .o-hero__nav-link {
+    display: inline-block;
+    color:   $white;
+    @include margin(0, $margin-xx-small);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  .o-hero__body {
+    @include padding($padding-xxx-large, $padding-xx-large);
+    text-align: center;
+  }
 
   .o-hero__subtitle {
     max-width: 100%;

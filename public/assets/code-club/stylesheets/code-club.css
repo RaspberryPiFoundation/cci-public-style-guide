@@ -2653,7 +2653,39 @@ ul {
 
 .o-hero {
   background: #339933;
+  color: #FFF; }
+
+.o-hero__nav {
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 4px;
+  padding-right: 0.25rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 4px;
+  padding-left: 0.25rem; }
+
+.o-hero__nav--left {
+  float: left; }
+
+.o-hero__nav--right {
+  float: right; }
+
+.o-hero__nav-link {
+  display: inline-block;
   color: #FFF;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-right: 4px;
+  margin-right: 0.25rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  margin-left: 4px;
+  margin-left: 0.25rem; }
+  .o-hero__nav-link:hover, .o-hero__nav-link:active, .o-hero__nav-link:focus {
+    color: #FFF; }
+
+.o-hero__body {
   padding-top: 80px;
   padding-top: 5rem;
   padding-right: 64px;
