@@ -2409,6 +2409,8 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
+  .c-page-block + .c-page-block {
+    border-top: none; }
 
 .c-page-block--alt-block {
   background: #FFF;
