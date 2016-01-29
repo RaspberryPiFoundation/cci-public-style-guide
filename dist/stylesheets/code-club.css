@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-26
+ * @version v0.0.1-27
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2329,6 +2329,74 @@ ul {
   font-size: 14px;
   font-size: 0.875rem; }
 
+.c-nav-toggle__input {
+  display: none; }
+  .c-nav-toggle__input:checked ~ .c-nav-toggle__label:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 24px; }
+  .c-nav-toggle__input:checked ~ .c-nav-toggle__label span {
+    opacity: 0; }
+  .c-nav-toggle__input:checked ~ .c-nav-toggle__label:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 24px; }
+  .c-nav-toggle__input:checked ~ .c-nav-toggle__nav-container .o-nav {
+    background: orange !important;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .c-nav-toggle__input:checked ~ .c-nav-toggle__page-container {
+    -webkit-transform: translate3d(-260px, 0, 0);
+            transform: translate3d(-260px, 0, 0);
+    pointer-events: none; }
+
+.c-nav-toggle__label {
+  background: #339933;
+  border-radius: 4px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 30px;
+  right: 15px;
+  position: absolute;
+  top: 21px;
+  width: 30px; }
+  @media only screen and (min-width: 64em * em) {
+    .c-nav-toggle__label {
+      display: none; } }
+  .c-nav-toggle__label:before, .c-nav-toggle__label span, .c-nav-toggle__label:after {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background: #fff;
+    border-radius: 4px;
+    content: ' ';
+    display: block;
+    height: 4px;
+    left: 6px;
+    opacity: 1;
+    position: absolute;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-transform-origin: 2px 2px;
+            transform-origin: 2px 2px;
+    width: 18px; }
+  .c-nav-toggle__label:before {
+    top: 6px; }
+  .c-nav-toggle__label span {
+    top: 13px; }
+  .c-nav-toggle__label:after {
+    top: 20px; }
+
+.c-nav-toggle__nav-container .o-nav {
+  background: #fcc;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5); }
+
+.c-nav-toggle__page-container {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
 .c-page-block {
   background: #F5F6F9;
   border-bottom: 1px solid #E0E0E0;
@@ -2341,6 +2409,8 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
+  .c-page-block + .c-page-block {
+    border-top: none; }
 
 .c-page-block--alt-block {
   background: #FFF;
@@ -2583,7 +2653,39 @@ ul {
 
 .o-hero {
   background: #339933;
+  color: #FFF; }
+
+.o-hero__nav {
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 4px;
+  padding-right: 0.25rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 4px;
+  padding-left: 0.25rem; }
+
+.o-hero__nav--left {
+  float: left; }
+
+.o-hero__nav--right {
+  float: right; }
+
+.o-hero__nav-link {
+  display: inline-block;
   color: #FFF;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-right: 4px;
+  margin-right: 0.25rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  margin-left: 4px;
+  margin-left: 0.25rem; }
+  .o-hero__nav-link:hover, .o-hero__nav-link:active, .o-hero__nav-link:focus {
+    color: #FFF; }
+
+.o-hero__body {
   padding-top: 80px;
   padding-top: 5rem;
   padding-right: 64px;

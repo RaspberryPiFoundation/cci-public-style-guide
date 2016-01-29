@@ -3,7 +3,11 @@
   <head>
     <script>document.documentElement.className += ' wf-loading';</script>
 
+    <meta charset="UTF-8">
+
     <title>Code Club Style Guide</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="/assets/code-club/images/favicons/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/icon.png">
@@ -16,28 +20,33 @@
   </head>
 
   <body>
-    <header class="o-banner">
-      <div class="o-banner__inner">
-        <div class="c-logo">
-          <a href="#" class="c-logo__link">
-            <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
-            <div class="c-logo__appendix">United Kingdom</div>
-          </a>
+    <input class="c-nav-toggle__input" id="off-canvas-nav-toggle-input" type="checkbox">
+    <label class="c-nav-toggle__label" for="off-canvas-nav-toggle-input" href="#"><span></span></label>
+
+    <div class=" c-nav-toggle__page-container">
+      <header class="o-banner">
+        <div class="o-banner__inner">
+          <div class="c-logo">
+            <a href="#" class="c-logo__link">
+              <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
+              <div class="c-logo__appendix">United Kingdom</div>
+            </a>
+          </div>
+
+          <nav class="o-nav">
+            <ul class="o-nav__list">
+              <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
+              <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <nav class="o-nav">
-          <ul class="o-nav__list">
-            <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
-            <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <%= yield %>
+      <%= yield %>
+    </div>
 
     <script>
       (function(d){
