@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119175033) do
+ActiveRecord::Schema.define(version: 20160201191137) do
 
   create_table "pages", force: :cascade do |t|
     t.string   "path",         limit: 255
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20151119175033) do
     t.integer  "section_id",   limit: 4
     t.boolean  "show_in_nav"
     t.boolean  "example_page"
-    t.integer  "back_page_id", limit: 4
   end
 
   add_index "pages", ["section_id"], name: "index_pages_on_section_id", using: :btree

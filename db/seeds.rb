@@ -8,29 +8,30 @@ Section.create!([
 ])
 
 Page.create!([
-  { path: "brand-guidelines", title: "Brand Guidelines", order: 10,  section_id: 2, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "colour-palette",   title: "Colour Palette",   order: 20,  section_id: 2, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "brand-guidelines",     title: "Brand Guidelines",      order: 10,  section_id: 2, show_in_nav: true, example_page: false },
+  { path: "colour-palette",       title: "Colour Palette",        order: 20,  section_id: 2, show_in_nav: true, example_page: false },
 
-  { path: "grid-system",      title: "Grid System",      order: 10,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "page-skeleton",    title: "Page Skeleton",    order: 20,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "sample-pages",     title: "Sample Pages",     order: 30,  section_id: 3, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "grid-system",          title: "Grid System",           order: 10,  section_id: 3, show_in_nav: true, example_page: false },
+  { path: "page-skeleton",        title: "Page Skeleton",         order: 20,  section_id: 3, show_in_nav: true, example_page: false },
+  { path: "example-pages",        title: "Example Pages",         order: 30,  section_id: 3, show_in_nav: true, example_page: false },
 
-  { path: "code-club-logo",   title: "Code Club Logo",   order: 10,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "typography",       title: "Typography",       order: 20,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "page-blocks",      title: "Page Blocks",      order: 30,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "content-panels",   title: "Content Panels",   order: 40,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "icons",            title: "Icons",            order: 50,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "buttons",          title: "Buttons",          order: 60,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "forms",            title: "Forms",            order: 70,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "lists",            title: "Lists",            order: 80,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "tables",           title: "Tables",           order: 90,  section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "alerts",           title: "Alerts",           order: 100, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "badges",           title: "Badges",           order: 110, section_id: 4, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "code-club-logo",       title: "Code Club Logo",        order: 10,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "typography",           title: "Typography",            order: 20,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "page-blocks",          title: "Page Blocks",           order: 30,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "content-panels",       title: "Content Panels",        order: 40,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "icons",                title: "Icons",                 order: 50,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "buttons",              title: "Buttons",               order: 60,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "forms",                title: "Forms",                 order: 70,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "lists",                title: "Lists",                 order: 80,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "tables",               title: "Tables",                order: 90,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "alerts",               title: "Alerts",                order: 100, section_id: 4, show_in_nav: true, example_page: false },
+  { path: "badges",               title: "Badges",                order: 110, section_id: 4, show_in_nav: true, example_page: false },
 
-  { path: "navigation",       title: "Navigation",       order: 10,  section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "hero-blocks",      title: "Hero Blocks",      order: 20,  section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "club-list",        title: "Club List",        order: 30,  section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
-  { path: "cards",            title: "Cards",            order: 40,  section_id: 5, show_in_nav: true, example_page: false, back_page_id: nil },
+  { path: "main-navigation",      title: "Main Navigation",       order: 10,  section_id: 5, show_in_nav: true, example_page: false },
+  { path: "secondary-navigation", title: "Secondary Navigation",  order: 20,  section_id: 5, show_in_nav: true, example_page: false },
+  { path: "hero-blocks",          title: "Hero Blocks",           order: 30,  section_id: 5, show_in_nav: true, example_page: false },
+  { path: "club-list",            title: "Club List",             order: 40,  section_id: 5, show_in_nav: true, example_page: false },
+  { path: "cards",                title: "Cards",                 order: 50,  section_id: 5, show_in_nav: true, example_page: false },
 
-  { path: "menu",             title: "Menu",             order: 10,  section_id: 6, show_in_nav: true, example_page: true,  back_page_id: 7   }
+  { path: "menu",                 title: "Menu",                  order: 10,  section_id: 6, show_in_nav: true, example_page: true  }
 ])
