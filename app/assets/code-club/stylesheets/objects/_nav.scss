@@ -55,11 +55,11 @@
         }
     }
 
-    .o-nav--stacked & {
-      @include stacked-banner-nav;
-      padding: 0;
+    @include respond-to('regular') {
+      .o-nav--stacked & {
+        @include stacked-banner-nav;
+        padding: 0;
 
-      @include respond-to('regular') {
         .c-logo {
           float: none;
         }
