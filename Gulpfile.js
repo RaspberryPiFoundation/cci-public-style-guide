@@ -22,7 +22,8 @@ var rename     = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 var util       = require('gulp-util');
 
-
+//  Should we be minifying asets on compilation?
+var minify_assets = false;
 
 //  Set banner template
 var banner = ['/**',
@@ -163,9 +164,11 @@ function process_javascripts(config, minify) {
       progress('Begin Compilation', main);
     });
 
-  stream = stream.pipe(sourcemaps.init()).on('end', function () {
-    progress('Init Sourcemap', main);
-  });
+  if (minify) {
+    stream = stream.pipe(sourcemaps.init()).on('end', function () {
+      progress('Init Sourcemap', main);
+    });
+  }
 
   stream = stream.pipe(babel({
     presets: ['es2015']
@@ -190,16 +193,18 @@ function process_javascripts(config, minify) {
     progress('Creating banner', main);
   });
 
-  stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
-    progress('Generating Sourcemap', main);
-  });
+  if (minify) {
+    stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
+      progress('Generating Sourcemap', main);
+    });
+  }
 
   stream = stream.pipe(gulp.dest(dest_dir)).on('end', function () {
     progress('Writing file to ' + dest_dir, main);
     notify(main + ' compiled');
   }).on('error', handleError);
 
-  if (!minify) {
+  if (!minify && minify_assets) {
     stream = process_javascripts(config, true);
   }
 
@@ -228,9 +233,11 @@ function process_stylesheets(config, minify) {
       progress('Begin Compilation', main);
     });
 
-  stream = stream.pipe(sourcemaps.init()).on('end', function () {
-    progress('Init Sourcemap', main);
-  });
+  if (minify) {
+    stream = stream.pipe(sourcemaps.init()).on('end', function () {
+      progress('Init Sourcemap', main);
+    });
+  }
 
   stream = stream.pipe(sass()).on('end', function () {
     progress('Compile Sass', main);
@@ -257,15 +264,17 @@ function process_stylesheets(config, minify) {
     progress('Creating banner', main);
   });
 
-  stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
-    progress('Generating Sourcemap', main);
-  });
+  if (minify) {
+    stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
+      progress('Generating Sourcemap', main);
+    });
+  }
 
   stream = stream.pipe(gulp.dest(dest_dir)).on('end', function () {
     progress('Writing file to ' + dest_dir, main);
   }).on('error', handleError);
 
-  if (!minify) {
+  if (!minify && minify_assets) {
     stream = process_stylesheets(config, true);
   }
 
@@ -309,7 +318,13 @@ gulp.task('all_assets', [
 
 
 //  Release tasks
-gulp.task('bump_version_number', function () {
+gulp.task('set_release_vars'), function (callback) {
+  minify_assets = true;
+
+  return callback();
+}
+
+gulp.task('bump_version_number', ['set_release_vars'], function () {
   var bump = require('gulp-bump');
 
   var type = 'prerelease';
