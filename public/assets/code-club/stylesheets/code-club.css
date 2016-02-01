@@ -1,3 +1,10 @@
+/**
+ * code-club.css
+ * 
+ * Code Club Style Guide - A collection of UI components for styling Code Club websites
+ * @version v0.0.1-31
+ * @link https://styleguide.codeclubworld.org/
+ */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -2735,47 +2742,47 @@ ul {
       .o-nav__inner .o-nav__link:active, .o-nav__inner .o-nav__link:focus, .o-nav__inner .o-nav__link:hover {
         color: #333333;
         text-decoration: underline; } }
-  .o-nav--stacked .o-nav__inner {
-    padding: 0; }
-    .o-nav--stacked .o-nav__inner .c-logo {
-      display: block;
-      text-align: center; }
-    .o-nav--stacked .o-nav__inner .c-logo__image {
-      float: none; }
-    .o-nav--stacked .o-nav__inner .c-logo__appendix {
-      display: block;
-      float: none;
-      margin-top: 6px;
-      margin-top: 0.375rem;
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 1.2;
-      text-indent: 0; }
-    .o-nav--stacked .o-nav__inner .o-nav__list-container {
-      background: none;
-      display: inline-block;
-      opacity: 1;
-      position: static;
-      text-align: center; }
-    .o-nav--stacked .o-nav__inner .o-nav__list {
-      font-size: 16px;
-      font-size: 1rem;
-      position: static;
-      -webkit-transform: none;
-              transform: none; }
-    .o-nav--stacked .o-nav__inner .o-nav__item {
-      display: inline-block;
-      list-style: none; }
-    .o-nav--stacked .o-nav__inner .o-nav__link {
-      color: #339933;
-      display: inline-block;
-      padding: 8px;
-      padding: 0.5rem; }
-      .o-nav--stacked .o-nav__inner .o-nav__link:active, .o-nav--stacked .o-nav__inner .o-nav__link:focus, .o-nav--stacked .o-nav__inner .o-nav__link:hover {
+  @media only screen and (min-width: 64em) {
+    .o-nav--stacked .o-nav__inner {
+      padding: 0; }
+      .o-nav--stacked .o-nav__inner .c-logo {
+        display: block;
+        text-align: center; }
+      .o-nav--stacked .o-nav__inner .c-logo__image {
+        float: none; }
+      .o-nav--stacked .o-nav__inner .c-logo__appendix {
+        display: block;
+        float: none;
+        margin-top: 6px;
+        margin-top: 0.375rem;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.2;
+        text-indent: 0; }
+      .o-nav--stacked .o-nav__inner .o-nav__list-container {
         background: none;
-        color: #333333;
-        text-decoration: underline; }
-    @media only screen and (min-width: 64em) {
+        display: inline-block;
+        opacity: 1;
+        position: static;
+        text-align: center; }
+      .o-nav--stacked .o-nav__inner .o-nav__list {
+        font-size: 16px;
+        font-size: 1rem;
+        position: static;
+        -webkit-transform: none;
+                transform: none; }
+      .o-nav--stacked .o-nav__inner .o-nav__item {
+        display: inline-block;
+        list-style: none; }
+      .o-nav--stacked .o-nav__inner .o-nav__link {
+        color: #339933;
+        display: inline-block;
+        padding: 8px;
+        padding: 0.5rem; }
+        .o-nav--stacked .o-nav__inner .o-nav__link:active, .o-nav--stacked .o-nav__inner .o-nav__link:focus, .o-nav--stacked .o-nav__inner .o-nav__link:hover {
+          background: none;
+          color: #333333;
+          text-decoration: underline; }
       .o-nav--stacked .o-nav__inner .c-logo {
         float: none; }
       .o-nav--stacked .o-nav__inner .o-nav__list-container {
