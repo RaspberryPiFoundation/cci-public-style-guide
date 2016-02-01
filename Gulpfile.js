@@ -374,6 +374,11 @@ gulp.task('release', ['copy_to_dist'], function (callback) {
 
   var git_commands = [
     'git add ./dist -A',
+    'git add ./package.json',
+    'git add ./bower.json',
+    'git add ./CONTRIBUTING.txt',
+    'git add ./LICENSE.txt',
+    'git add ./README.md',
     'git commit -m "' + commit_msg + '"',
     'git tag -a ' + tag_version + ' -m "Tagging as ' + tag_version + '"',
     'git push origin master --tags',
