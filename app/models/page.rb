@@ -8,11 +8,6 @@ class Page < ActiveRecord::Base
   before_save :set_default_example_page_value
 
   validates_presence_of :path, :title, :section_id
-  validates_presence_of :back_page_id, :if => :is_example_page?
-
-  def back_page
-    Page.find(@page.back_page_id) if is_example_page?
-  end
 
   def is_example_page?
     example_page
