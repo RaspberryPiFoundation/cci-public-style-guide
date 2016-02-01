@@ -1,4 +1,10 @@
 
+@mixin align-element-vert {
+  position:  relative !important;
+  top:       50% !important;
+  transform: translateY(-50%) !important;
+}
+
 @mixin clearfix {
   &:after {
     content: "";
@@ -46,8 +52,8 @@
 }
 
 @mixin respond-to($media) {
-	$measurement: 'min-width' !default;
-	$value:       $break-wide !default;
+	$measurement: 'max-width'   !default;
+	$value:       $break-narrow !default;
 
   @if $media == 'tiny' {
     $measurement: 'max-width';
