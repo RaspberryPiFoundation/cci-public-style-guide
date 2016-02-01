@@ -22,7 +22,6 @@
     "packages.json",
     "Procfile",
     "Rakefile",
-    "README.rdoc",
     "bower_components",
     "app",
     "bin",
