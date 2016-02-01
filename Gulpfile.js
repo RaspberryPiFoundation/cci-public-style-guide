@@ -7,23 +7,32 @@
 'use strict';
 
 //  Load generic node stuff
-var exec   = require('child_process').exec;
-var reload = require('require-reload')(require);
+var exec          = require('child_process').exec;
+var reload        = require('require-reload')(require);
 
 //  Load package.json as JSON object
-var pkg  = require('./package.json');
+var pkg           = require('./package.json');
 
-//  Load Gulp Dependencies
-var gulp       = require('gulp');
-var header     = require('gulp-header');
-var notify     = require('gulp-notify');
-var plumber    = require('gulp-plumber');
-var rename     = require('gulp-rename');
-var sourcemaps = require('gulp-sourcemaps');
-var util       = require('gulp-util');
+//  Load Gulp and its dependencies
+var gulp          = require('gulp');
+
+var autoprefixer  = require('gulp-autoprefixer');
+var babel         = require('gulp-babel');
+var cssnano       = require('gulp-cssnano');
+var header        = require('gulp-header');
+var imagemin      = require('gulp-imagemin');
+var notify        = require('gulp-notify');
+var plumber       = require('gulp-plumber');
+var pngquant      = require('imagemin-pngquant');
+var rename        = require('gulp-rename');
+var sass          = require('gulp-sass');
+var sourcemaps    = require('gulp-sourcemaps');
+var uglify        = require('gulp-uglify');
+var util          = require('gulp-util');
 
 //  Should we be minifying asets on compilation?
 var minify_assets = false;
+var write_banners = false;
 
 //  Set banner template
 var banner = ['/**',
@@ -112,9 +121,6 @@ function progress(message, file) {
 
 //  Master Images processing function
 function process_images(config) {
-  var imagemin = require('gulp-imagemin');
-  var pngquant = require('imagemin-pngquant');
-
   var dest_dir = config.dest_dir;
 
   var stream = gulp.src(config.source + '/**/*')
@@ -151,9 +157,6 @@ function process_javascripts(config, minify) {
     minify = false;
   }
 
-  var babel  = require('gulp-babel');
-  var uglify = require('gulp-uglify');
-
   var main     = config.main;
   var dest_dir = config.dest_dir;
 
@@ -186,12 +189,14 @@ function process_javascripts(config, minify) {
     });
   }
 
-  stream = stream.pipe(header(banner, {
-    dest_file: minify ? config.min_file : config.dest_file,
-    pkg:       require('./package.json')
-  })).on('end', function () {
-    progress('Creating banner', main);
-  });
+  if (write_banners) {
+    stream = stream.pipe(header(banner, {
+      dest_file: minify ? config.min_file : config.dest_file,
+      pkg:       require('./package.json')
+    })).on('end', function () {
+      progress('Creating banner', main);
+    });
+  }
 
   if (minify) {
     stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
@@ -218,10 +223,6 @@ function process_stylesheets(config, minify) {
   if (undefined === minify) {
     minify = false;
   }
-
-  var autoprefixer = require('gulp-autoprefixer');
-  var cssnano      = require('gulp-cssnano');
-  var sass         = require('gulp-sass');
 
   var main      = config.main;
   var dest_dir  = config.dest_dir;
@@ -257,12 +258,14 @@ function process_stylesheets(config, minify) {
     });
   }
 
-  stream = stream.pipe(header(banner, {
-    dest_file: minify ? config.min_file : config.dest_file,
-    pkg:       require('./package.json')
-  })).on('end', function () {
-    progress('Creating banner', main);
-  });
+  if (write_banners) {
+    stream = stream.pipe(header(banner, {
+      dest_file: minify ? config.min_file : config.dest_file,
+      pkg:       require('./package.json')
+    })).on('end', function () {
+      progress('Creating banner', main);
+    });
+  }
 
   if (minify) {
     stream = stream.pipe(sourcemaps.write('.')).on('end', function () {
@@ -320,6 +323,7 @@ gulp.task('all_assets', [
 //  Release tasks
 gulp.task('set_release_vars'), function (callback) {
   minify_assets = true;
+  write_banners = true;
 
   return callback();
 }
