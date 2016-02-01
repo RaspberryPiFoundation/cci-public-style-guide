@@ -18,6 +18,7 @@ var gulp          = require('gulp');
 
 var autoprefixer  = require('gulp-autoprefixer');
 var babel         = require('gulp-babel');
+var bump          = require('gulp-bump');
 var cssnano       = require('gulp-cssnano');
 var header        = require('gulp-header');
 var imagemin      = require('gulp-imagemin');
@@ -321,16 +322,14 @@ gulp.task('all_assets', [
 
 
 //  Release tasks
-gulp.task('set_release_vars'), function (callback) {
+gulp.task('set_release_vars', function (callback) {
   minify_assets = true;
   write_banners = true;
 
   return callback();
-}
+});
 
 gulp.task('bump_version_number', ['set_release_vars'], function () {
-  var bump = require('gulp-bump');
-
   var type = 'prerelease';
 
   if (undefined !== util.env.type) {
@@ -384,6 +383,7 @@ gulp.task('release', ['copy_to_dist'], function (callback) {
   return exec(git_commands, function(err, stdout, stderr) {
     util.log(stdout);
     util.log(stderr);
+
     callback(err);
   });
 });
