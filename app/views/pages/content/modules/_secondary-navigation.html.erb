@@ -1,78 +1,15 @@
-<h2>Types of Navigation</h2>
+<h2>Types of Secondary Navigation</h2>
 
-<p>There are three different types of navigation menus that can be employed:</p>
+<p>There are two different types of secondary navigation menus that can be employed:</p>
 
 <dl class="c-def-list">
-  <dt class="c-def-list__term">Primary navigation</dt>
-  <dd class="c-def-list__definition">Top-level site-wide navigation; always present at the very top of every page. Also houses the Code Club logo.</dd>
   <dt class="c-def-list__term">Section navigation</dt>
   <dd class="c-def-list__definition">In-section navigation; for providing links to sub-pages within a section (eg in the About section, there may be sub-pages for Team, Contact &amp; Jobs)</dd>
   <dt class="c-def-list__term">Menu navigation</dt>
   <dd class="c-def-list__definition">Navigation for screens using the <%= link_to("menu layout", page_path('structure', 'layout')) %></dd>
 </dl>
 
-<h3>Primary navigation</h3>
-
-<ul>
-  <li>Consistent on every Code Club website</li>
-  <li>Use the logo anchor to link to the homepage, no need for a link</li>
-  <li>On handheld devices the menu condenses into a hamburger menu interface, which when triggered slides the menu in from the left</li>
-  <li>Use only one instance of the emphasis style if required</li>
-</ul>
-
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <header class="o-banner">
-      <div class="o-banner__inner">
-        <div class="c-logo">
-  				<a href="#" class="c-logo__link">
-  					<img src="/assets/code-club/images/code-club-logo.svg" alt="" class="c-logo__image">
-  					<div class="c-logo__appendix">United Kingdom</div>
-  				</a>
-  			</div>
-
-        <nav class="o-nav">
-          <ul class="o-nav__list">
-            <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
-            <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  </div>
-
-  <code class="sg-example__code">
-    &lt;header class="o-banner"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-banner__inner"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="c-logo"&gt;<br>
-  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="c-logo__link"&gt;<br>
-  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="c-logo__image" src="/bower_components/code-club/dist/images/code-club-logo.svg"&gt;<br>
-  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="c-logo__appendix"&gt;United Kingdom&lt;/div&gt;<br>
-  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-  	&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="o-nav"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="o-nav__list"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Projects&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link" href="#"&gt;Your Club Hub&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-nav__item"&gt;&lt;a class="o-nav__link c-button c-button--hollow c-button--green" href="#"&gt;Sign Out&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/header&gt;
-  </code>
-</div>
-
-<hr>
-
-<h2>Stacked Navigation</h2>
+<h3>Stacked Navigation</h3>
 
 <p>
   The stacked navigation style is ideal for use in a page's sidebar for navigation within a section of your site. It will always expand
@@ -111,7 +48,7 @@
 
 <hr>
 
-<h2>Horizontal Navigation</h2>
+<h3>Horizontal Navigation</h3>
 
 <p>
   Normally for use under a hero banner, the horizontal navigation is useful for pages without a sidebar that still has a few sub-pages.
