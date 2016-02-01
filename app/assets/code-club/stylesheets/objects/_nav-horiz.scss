@@ -1,0 +1,28 @@
+
+  .o-nav-horiz {
+    background:    #fff;
+    border-bottom: $border-size-base solid $grey-x-light;
+    text-align:    center;
+  }
+
+    .o-nav-horiz__list {
+      margin:  0;
+      padding: 0;
+    }
+
+      .o-nav-horiz__item {
+        display:    inline-block;
+        list-style: none;
+        margin:     0;
+        padding:    0;
+      }
+
+        .o-nav-horiz__link {
+          display:         block;
+          @include padding($padding-base);
+          text-decoration: none;
+
+          &.is-current {
+            color: $grey;
+          }
+        }
