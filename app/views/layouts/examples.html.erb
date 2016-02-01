@@ -15,38 +15,36 @@
     <meta name="msapplication-TileImage" content="/assets/images/favicons/icon.png">
     <link rel="icon" href="/assets/images/favicons/icon.png" sizes="32x32">
 
-    <!-- Add your additional styles after this include code-club.min.css -->
-    <%= stylesheet_link_tag '/assets/code-club/stylesheets/code-club.min', :media => 'all' %>
+    <!-- Add your additional styles after this include code-club.css -->
+    <%= stylesheet_link_tag '/assets/code-club/stylesheets/code-club', :media => 'all' %>
   </head>
 
   <body>
-    <input class="c-nav-toggle__input" id="off-canvas-nav-toggle-input" type="checkbox">
-    <label class="c-nav-toggle__label" for="off-canvas-nav-toggle-input" href="#"><span></span></label>
-
-    <div class=" c-nav-toggle__page-container">
-      <header class="o-banner">
-        <div class="o-banner__inner">
-          <div class="c-logo">
-            <a href="#" class="c-logo__link">
-              <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
-              <div class="c-logo__appendix">United Kingdom</div>
-            </a>
-          </div>
-
-          <nav class="o-nav">
-            <ul class="o-nav__list">
-              <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
-              <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
-              <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
-              <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
-              <li class="o-nav__item"><a class="o-nav__link c-button c-button--hollow c-button--green" href="#">Sign Out</a></li>
-            </ul>
-          </nav>
+    <header class="o-nav">
+      <div class="o-nav__inner">
+        <div class="c-logo">
+          <a href="#" class="c-logo__link">
+            <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
+            <div class="c-logo__appendix">United Kingdom</div>
+          </a>
         </div>
-      </header>
 
-      <%= yield %>
-    </div>
+        <input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
+        <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input" href="#"><span></span></label>
+
+        <nav class="o-nav__list-container">
+          <ul class="o-nav__list">
+            <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <%= yield %>
 
     <script>
       (function(d){
