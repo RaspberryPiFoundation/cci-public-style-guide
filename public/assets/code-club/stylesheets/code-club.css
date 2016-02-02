@@ -2,11 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
-<<<<<<< HEAD
  * @version v0.0.1-20
-=======
- * @version v0.0.1-37
->>>>>>> 77253e6b23c63395de7bf3680c534d74bacc71b5
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1444,10 +1440,10 @@ h5 {
   text-transform: uppercase; }
 
 h6 {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.30769;
+  line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
@@ -3079,10 +3075,10 @@ ul {
   text-transform: uppercase; }
 
 .u-h6 {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.30769;
+  line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
