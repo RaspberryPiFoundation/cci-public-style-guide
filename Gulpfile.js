@@ -383,6 +383,7 @@ gulp.task('release', ['copy_to_dist'], function (callback) {
 
   var git_commands = [
     'git add ./dist -A',
+    'git add ./public -A',
     'git add ./package.json',
     'git add ./bower.json',
     'git add ./CONTRIBUTING.txt',
