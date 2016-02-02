@@ -387,11 +387,8 @@ gulp.task('release_assets_compile', ['release_cc_stylesheets'], function (callba
 });
 
 gulp.task('clear_old_assets', ['release_assets_compile'], function (callback) {
-  return exec('rm -rf ./dist/*', function(err, stdout, stderr) {
-    util.log(stdout);
-    util.log(stderr);
-
-    callback(err);
+  return exec('rm -rf ./dist/*', function () {
+    return callback();
   });
 });
 
@@ -421,7 +418,7 @@ gulp.task('release', ['copy_to_dist'], function (callback) {
     util.log(stdout);
     util.log(stderr);
 
-    callback(err);
+    return callback(err);
   });
 });
 
