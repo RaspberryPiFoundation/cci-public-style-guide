@@ -126,7 +126,7 @@ function progress(message, file) {
 
 //  Master html compilation function
 function process_html(config) {
-  var stream = gulp.src(config.source)
+  var stream = gulp.src(config.source + '/**/*')
     .pipe(gulp.dest(config.dest_dir)).on('end', function () {
       progress('Copied HTML');
     });
@@ -432,7 +432,7 @@ gulp.task('watch', function () {
   gulp.watch(app_assets_config.stylesheets.source + '/*.scss', ['app_stylesheets']);
 
   //  Style guide assets
-  gulp.watch(cc_assets_config.html.source        + '/**/*.html', ['cc_html']);
+  gulp.watch(cc_assets_config.html.source        + '/**',        ['cc_html']);
   gulp.watch(cc_assets_config.images.source      + '/**',        ['cc_images']);
   gulp.watch(cc_assets_config.javascripts.source + '/**/*.js',   ['cc_javascripts']);
   gulp.watch(cc_assets_config.stylesheets.source + '/**/*.scss', ['cc_stylesheets']);
