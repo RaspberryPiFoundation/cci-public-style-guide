@@ -15,8 +15,8 @@
     <meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png">
     <link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32">
 
-    <!-- Add any additional styles after this include code-club.css -->
-    <%= stylesheet_link_tag '/bower_components/code-club/dist/stylesheets/code-club', :media => 'all' %>
+    <!-- Add any additional styles after the code-club.min.css styles -->
+    <link href="/bower_components/code-club/dist/stylesheets/code-club.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -30,7 +30,7 @@
         </div>
 
         <input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
-        <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input" href="#"><span></span></label>
+        <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input"><span></span></label>
 
         <nav class="o-nav__list-container">
           <ul class="o-nav__list">
@@ -49,6 +49,7 @@
       YOUR PAGE CONTENTS HERE
     -->
 
+    <!-- Load fonts from Typekit -->
     <script>
       (function(d){
         var config = {kitId: 'pus1ntw',scriptTimeout: 3000,async: true},
@@ -56,7 +57,10 @@
       })(document);
     </script>
 
-    <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js' %>
-    <%= javascript_include_tag '/bower_components/code-club/dist/javascripts/code-club.min' %>
+    <!-- Include jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- Add any additional scripts after the code-club.min.js script -->
+    <script src="/bower_components/code-club/dist/javascripts/code-club.min.js"></script>
   </body>
 </html>
