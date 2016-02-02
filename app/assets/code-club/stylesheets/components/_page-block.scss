@@ -2,7 +2,7 @@
   background:    $grey-xx-light;
   border-bottom: $border-size-base solid $grey-x-light;
   border-top:    $border-size-base solid $grey-x-light;
-  @include padding($padding-x-large, 0);
+  @include padding($padding-xx-large, 0);
 
   + .c-page-block {
     border-top: none;

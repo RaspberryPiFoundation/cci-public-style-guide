@@ -21,7 +21,7 @@
       display: block;
       height:  5rem;
       @include margin(0, $margin-base, $margin-base, 0);
-      @include padding($padding-base, $padding-large);
+      @include padding($padding-base, $padding-x-large);
     }
 
     .sg-swatch__hex {

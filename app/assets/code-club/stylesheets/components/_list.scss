@@ -25,7 +25,7 @@
         background-size:     $font-size-base * 1px;
         list-style-type:     none;
         @include margin-bottom($margin-base);
-        @include padding-left($padding-large);
+        @include padding-left($padding-x-large);
       }
     }
 

@@ -87,7 +87,7 @@
   .o-course-card__body {
     background-position: center center;
     background-repeat:   repeat;
-    @include padding($padding-x-large, $padding-small);
+    @include padding($padding-xx-large, $padding-small);
   }
 
     .o-course-card__body--scratch {
@@ -157,7 +157,7 @@
       @include rem('border-bottom-right-radius', $border-radius-small);
       @include rem('border-bottom-left-radius',  $border-radius-small);
       border-width: 0 $border-size-base $border-size-base $border-size-base;
-      @include padding($padding-med, $padding-small, $padding-small);
+      @include padding($padding-large, $padding-small, $padding-small);
       font-weight:$font-weight-base;
     }
 

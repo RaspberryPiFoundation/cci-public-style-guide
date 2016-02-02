@@ -124,7 +124,7 @@
       border-top: $border-size-base solid $grey-x-light;
       cursor:     pointer;
       display:    block;
-      @include padding($padding-small, $padding-small, $padding-small, $padding-x-large);
+      @include padding($padding-small, $padding-small, $padding-small, $padding-xx-large);
 
       &:first-of-type {
         border-top: none;

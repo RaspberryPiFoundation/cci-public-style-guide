@@ -3,5 +3,5 @@
   border:     $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-base);
   @include margin-bottom($margin-large);
-  @include padding($padding-x-large, $padding-xx-large);
+  @include padding($padding-xx-large, $padding-xxx-large);
 }
