@@ -44,9 +44,10 @@
         background-color: rgba($green, 0);
         position:         fixed;
 
-        span { opacity: 0; }
+        &:before, span, &:after { background: $white; }
 
-				&:before { transform: rotate(45deg);  width: 24px; }
+        &:before { transform: rotate(45deg);  width: 24px; }
+        span     { opacity: 0; }
         &:after  { transform: rotate(-45deg); width: 24px; }
 			}
 
@@ -58,7 +59,6 @@
   }
 
   .o-nav__toggle-label {
-  	background: $green;
   	@include rem('border-radius', $border-radius-xx-small);
   	cursor:     pointer;
   	height:     30px;
@@ -75,7 +75,7 @@
 
   	&:before, span, &:after {
   		backface-visibility: hidden;
-  		background:          #fff;
+  		background:          $green;
   		border-radius:       4px;
   		content:             ' ';
   		display:             block;

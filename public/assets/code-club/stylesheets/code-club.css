@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-20
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -585,19 +578,22 @@ th {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
 
 .middle-xs {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  -ms-grid-row-align: center;
+      align-items: center; }
 
 .bottom-xs {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
-  align-items: flex-end; }
+  -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
 
 .around-xs {
   -webkit-justify-content: space-around;
@@ -770,17 +766,20 @@ th {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    align-items: flex-start; }
+    -ms-grid-row-align: flex-start;
+        align-items: flex-start; }
   .middle-sm {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    -ms-grid-row-align: center;
+        align-items: center; }
   .bottom-sm {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    align-items: flex-end; }
+    -ms-grid-row-align: flex-end;
+        align-items: flex-end; }
   .around-sm {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -949,17 +948,20 @@ th {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    align-items: flex-start; }
+    -ms-grid-row-align: flex-start;
+        align-items: flex-start; }
   .middle-md {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    -ms-grid-row-align: center;
+        align-items: center; }
   .bottom-md {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    align-items: flex-end; }
+    -ms-grid-row-align: flex-end;
+        align-items: flex-end; }
   .around-md {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -1128,17 +1130,20 @@ th {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    align-items: flex-start; }
+    -ms-grid-row-align: flex-start;
+        align-items: flex-start; }
   .middle-lg {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    -ms-grid-row-align: center;
+        align-items: center; }
   .bottom-lg {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    align-items: flex-end; }
+    -ms-grid-row-align: flex-end;
+        align-items: flex-end; }
   .around-lg {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -2678,16 +2683,16 @@ ul {
   .o-nav__toggle-input:checked ~ .o-nav__toggle-label {
     background-color: rgba(51, 153, 51, 0);
     position: fixed; }
-    .o-nav__toggle-input:checked ~ .o-nav__toggle-label span {
-      opacity: 0; }
+    .o-nav__toggle-input:checked ~ .o-nav__toggle-label:before, .o-nav__toggle-input:checked ~ .o-nav__toggle-label span, .o-nav__toggle-input:checked ~ .o-nav__toggle-label:after {
+      background: #FFF; }
     .o-nav__toggle-input:checked ~ .o-nav__toggle-label:before {
       -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
               transform: rotate(45deg);
       width: 24px; }
+    .o-nav__toggle-input:checked ~ .o-nav__toggle-label span {
+      opacity: 0; }
     .o-nav__toggle-input:checked ~ .o-nav__toggle-label:after {
       -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
               transform: rotate(-45deg);
       width: 24px; }
   .o-nav__toggle-input:checked ~ .o-nav__list-container {
@@ -2695,7 +2700,6 @@ ul {
     opacity: 1; }
 
 .o-nav__toggle-label {
-  background: #339933;
   border-radius: 4px;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -2713,7 +2717,7 @@ ul {
   .o-nav__toggle-label:before, .o-nav__toggle-label span, .o-nav__toggle-label:after {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    background: #fff;
+    background: #339933;
     border-radius: 4px;
     content: ' ';
     display: block;
@@ -2724,7 +2728,6 @@ ul {
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     -webkit-transform-origin: 2px 2px;
-        -ms-transform-origin: 2px 2px;
             transform-origin: 2px 2px;
     width: 18px; }
   .o-nav__toggle-label:before {
@@ -2735,7 +2738,7 @@ ul {
     top: 20px; }
 
 .o-nav__list-container {
-  background: rgba(51, 153, 51, 0.75);
+  background: rgba(51, 51, 51, 0.9);
   height: 100%;
   left: -100%;
   opacity: 0;
@@ -2752,7 +2755,6 @@ ul {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 20px;
   font-size: 1.25rem;
@@ -2776,7 +2778,7 @@ ul {
   transition: all 0.1s ease-in-out; }
   .o-nav__link:active, .o-nav__link:focus, .o-nav__link:hover {
     background: #FFF;
-    color: #339933;
+    color: #333333;
     text-decoration: none; }
 
 @media only screen and (min-width: 48em) and (max-width: 64em) {
@@ -2791,7 +2793,6 @@ ul {
     font-size: 1rem;
     position: static;
     -webkit-transform: none;
-        -ms-transform: none;
             transform: none; }
   .o-nav__item {
     display: inline-block;
@@ -2822,7 +2823,6 @@ ul {
     font-size: 1rem;
     position: static;
     -webkit-transform: none;
-        -ms-transform: none;
             transform: none; }
   .o-nav__item {
     float: left;
@@ -3087,5 +3087,3 @@ ul {
 
 .u-text--uppercase {
   text-transform: uppercase !important; }
-
-/*# sourceMappingURL=code-club.css.map */
