@@ -25,7 +25,8 @@ Page.create!([
   { path: "lists",                title: "Lists",                 order: 80,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "tables",               title: "Tables",                order: 90,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "alerts",               title: "Alerts",                order: 100, section_id: 4, show_in_nav: true, example_page: false },
-  { path: "badges",               title: "Badges",                order: 110, section_id: 4, show_in_nav: true, example_page: false },
+  { path: "info-panels",          title: "Info Panels",           order: 110, section_id: 4, show_in_nav: true, example_page: false },
+  { path: "badges",               title: "Badges",                order: 120, section_id: 4, show_in_nav: true, example_page: false },
 
   { path: "main-navigation",      title: "Main Navigation",       order: 10,  section_id: 5, show_in_nav: true, example_page: false },
   { path: "secondary-navigation", title: "Secondary Navigation",  order: 20,  section_id: 5, show_in_nav: true, example_page: false },

@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-37
+ * @version v0.0.1-38
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1452,10 +1452,10 @@ h5 {
   text-transform: uppercase; }
 
 h6 {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.30769;
+  line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
@@ -1765,8 +1765,8 @@ ul {
   border-radius: 0.5rem; }
 
 .c-button--small {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   padding-top: 8px;
   padding-top: 0.5rem;
   padding-right: 16px;
@@ -1779,30 +1779,32 @@ ul {
   border-radius: 2rem; }
 
 .c-button--large {
-  font-size: 16px;
-  font-size: 1rem;
+  border-width: 3px;
+  font-size: 22px;
+  font-size: 1.375rem;
   padding-top: 8px;
   padding-top: 0.5rem;
-  padding-right: 16px;
-  padding-right: 1rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
+  padding-left: 32px;
+  padding-left: 2rem;
   border-radius: 32px;
   border-radius: 2rem; }
 
 .c-button--x-large {
-  font-size: 16px;
-  font-size: 1rem;
+  border-width: 3px;
+  font-size: 30px;
+  font-size: 1.875rem;
   padding-top: 8px;
   padding-top: 0.5rem;
-  padding-right: 16px;
-  padding-right: 1rem;
+  padding-right: 48px;
+  padding-right: 3rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
+  padding-left: 48px;
+  padding-left: 3rem;
   border-radius: 48px;
   border-radius: 3rem; }
 
@@ -2688,12 +2690,14 @@ ul {
   .o-nav__toggle-input:checked ~ .o-nav__toggle-label {
     background-color: rgba(51, 153, 51, 0);
     position: fixed; }
-    .o-nav__toggle-input:checked ~ .o-nav__toggle-label span {
-      opacity: 0; }
+    .o-nav__toggle-input:checked ~ .o-nav__toggle-label:before, .o-nav__toggle-input:checked ~ .o-nav__toggle-label span, .o-nav__toggle-input:checked ~ .o-nav__toggle-label:after {
+      background: #FFF; }
     .o-nav__toggle-input:checked ~ .o-nav__toggle-label:before {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       width: 24px; }
+    .o-nav__toggle-input:checked ~ .o-nav__toggle-label span {
+      opacity: 0; }
     .o-nav__toggle-input:checked ~ .o-nav__toggle-label:after {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
@@ -2703,7 +2707,6 @@ ul {
     opacity: 1; }
 
 .o-nav__toggle-label {
-  background: #339933;
   border-radius: 4px;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -2721,7 +2724,7 @@ ul {
   .o-nav__toggle-label:before, .o-nav__toggle-label span, .o-nav__toggle-label:after {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    background: #fff;
+    background: #339933;
     border-radius: 4px;
     content: ' ';
     display: block;
@@ -2742,7 +2745,7 @@ ul {
     top: 20px; }
 
 .o-nav__list-container {
-  background: rgba(51, 153, 51, 0.75);
+  background: rgba(51, 51, 51, 0.9);
   height: 100%;
   left: -100%;
   opacity: 0;
@@ -2782,7 +2785,7 @@ ul {
   transition: all 0.1s ease-in-out; }
   .o-nav__link:active, .o-nav__link:focus, .o-nav__link:hover {
     background: #FFF;
-    color: #339933;
+    color: #333333;
     text-decoration: none; }
 
 @media only screen and (min-width: 48em) and (max-width: 64em) {
@@ -3079,10 +3082,10 @@ ul {
   text-transform: uppercase; }
 
 .u-h6 {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.30769;
+  line-height: 1.21429;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
