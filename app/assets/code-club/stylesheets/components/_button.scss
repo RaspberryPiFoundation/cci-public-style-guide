@@ -6,7 +6,7 @@
   color:           $white;
   text-align:      center;
   text-decoration: none;
-  @include padding($button-padding-x-large--y, $button-padding-x-large--x);
+  @include padding($button-padding-x-large--y, $button-padding-base--x);
   vertical-align:  middle;
 
   &.c-button--grey          { background: $grey;          border-color: $grey;          }
@@ -86,12 +86,14 @@
   }
 
   .c-button--large {
+    border-width: $border-size-x-large;
     @include rem('font-size', $button-font-size-large);
     @include padding($button-padding-large--y, $button-padding-large--x);
     @include rem('border-radius', $border-radius-x-large);
   }
 
   .c-button--x-large {
+    border-width: $border-size-x-large;
     @include rem('font-size', $button-font-size-x-large);
     @include padding($button-padding-x-large--y, $button-padding-x-large--x);
     @include rem('border-radius', $border-radius-xx-large);
