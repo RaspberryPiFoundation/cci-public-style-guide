@@ -9,7 +9,7 @@
     @include margin-bottom($margin-base);
     max-width:  100%;
     @include rem('border-radius', $border-radius-x-small);
-    @include padding($padding-small);
+    @include padding($padding-base);
     position:   relative;
   }
 

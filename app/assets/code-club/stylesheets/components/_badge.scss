@@ -1,10 +1,11 @@
 .c-badge {
-  @include rem('border-radius', $border-radius-x-small);
+  @include rem('border-radius', $border-radius-xx-small);
   background:      $grey-med;
   display:         inline-block;
   color:           $white;
-  @include rem('font-size', $font-size-small);
-  @include padding($padding-xx-small, $padding-small);
+  font-weight:     $font-weight-bold;
+  @include rem('font-size', $font-size-x-small);
+  @include padding($padding-xx-small, $padding-x-small);
   text-transform:  uppercase;
   vertical-align:  middle;
 }
