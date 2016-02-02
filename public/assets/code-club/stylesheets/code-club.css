@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-20
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -2422,7 +2415,7 @@ ul {
   text-align: center;
   text-decoration: none; }
   .o-course-card__link:hover {
-    box-shadow: 0 0 15px #C2C2C2;
+    box-shadow: 0 0 15px #E0E0E0;
     color: #848484; }
 
 .o-course-card__link--generic {
@@ -2475,7 +2468,8 @@ ul {
 
 .o-course-card__image {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto; }
 
 .o-course-card__title {
   margin: 0; }
@@ -2489,7 +2483,8 @@ ul {
   padding: 0.75rem; }
 
 .o-course-card__footer--generic {
-  border-top: 1px solid #E0E0E0; }
+  border-top: 1px solid #E0E0E0;
+  background: transparent; }
 
 .o-project-card {
   background: #FFF;
@@ -2501,12 +2496,12 @@ ul {
     box-shadow: 0 0 15px #C2C2C2; }
 
 .o-project-card__link {
-  color: #848484;
+  color: #333333;
   display: block;
   text-decoration: none; }
   .o-project-card__link:hover {
     border-color: #C2C2C2;
-    color: #848484; }
+    color: #333333; }
 
 .o-project-card__image {
   display: block;
@@ -2519,17 +2514,19 @@ ul {
   border-bottom-left-radius: 12px;
   border-bottom-left-radius: 0.75rem;
   border-width: 0 1px 1px 1px;
-  padding-top: 32px;
-  padding-top: 2rem;
+  padding-top: 19.2px;
+  padding-top: 1.2rem;
   padding-right: 12px;
   padding-right: 0.75rem;
   padding-bottom: 12px;
   padding-bottom: 0.75rem;
   padding-left: 12px;
-  padding-left: 0.75rem; }
+  padding-left: 0.75rem;
+  font-weight: 300; }
 
 .o-project-card__meta {
-  line-height: 2; }
+  line-height: 2;
+  font-weight: 500; }
 
 .o-project-card__title {
   font-size: 24px;
@@ -3087,5 +3084,3 @@ ul {
 
 .u-text--uppercase {
   text-transform: uppercase !important; }
-
-/*# sourceMappingURL=code-club.css.map */
