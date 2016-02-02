@@ -94,7 +94,7 @@
   }
 
   .o-nav__list-container {
-    background:      rgba($green, 0.75);
+    background:      rgba($grey, 0.9);
     height:          100%;
     left:            -100%;
     opacity:         0;
@@ -131,7 +131,7 @@
     &:focus,
     &:hover {
       background:      $white;
-      color:           $green;
+      color:           $grey;
       text-decoration: none;
     }
   }
