@@ -71,6 +71,10 @@ var app_assets_config = {
 
 //  Set style guide assets configuration
 var cc_assets_config = {
+  html: {
+    source:    'app/assets/code-club/html',
+    dest_dir:  'public/assets/code-club/html'
+  },
   images: {
     source:    'app/assets/code-club/images',
     dest_dir:  'public/assets/code-club/images'
@@ -116,6 +120,18 @@ function progress(message, file) {
   }
 
   return util.log('- ' + message);
+}
+
+
+
+//  Master html compilation function
+function process_html(config) {
+  var stream = gulp.src(config.source)
+    .pipe(gulp.dest(config.dest_dir)).on('end', function () {
+      progress('Copied HTML');
+    });
+
+  return stream;
 }
 
 
@@ -301,11 +317,13 @@ gulp.task('app_assets', [
 
 
 //  Style guide assets tasks
+gulp.task('cc_html',        function () { return process_html(cc_assets_config.html);               });
 gulp.task('cc_images',      function () { return process_images(cc_assets_config.images);           });
 gulp.task('cc_javascripts', function () { return process_javascripts(cc_assets_config.javascripts); });
 gulp.task('cc_stylesheets', function () { return process_stylesheets(cc_assets_config.stylesheets); });
 
 gulp.task('cc_assets', [
+  'cc_html',
   'cc_images',
   'cc_javascripts',
   'cc_stylesheets'
@@ -348,7 +366,11 @@ gulp.task('bump_version_number', ['set_release_vars'], function () {
   return stream;
 });
 
-gulp.task('release_cc_images', ['bump_version_number'], function () {
+gulp.task('release_cc_html', ['bump_version_number'], function () {
+  return process_html(cc_assets_config.html);
+});
+
+gulp.task('release_cc_images', ['release_cc_html'], function () {
   return process_images(cc_assets_config.images);
 });
 
@@ -413,6 +435,7 @@ gulp.task('watch', function () {
   gulp.watch(app_assets_config.stylesheets.source + '/*.scss', ['app_stylesheets']);
 
   //  Style guide assets
+  gulp.watch(cc_assets_config.html.source        + '/**/*.html', ['cc_html']);
   gulp.watch(cc_assets_config.images.source      + '/**',        ['cc_images']);
   gulp.watch(cc_assets_config.javascripts.source + '/**/*.js',   ['cc_javascripts']);
   gulp.watch(cc_assets_config.stylesheets.source + '/**/*.scss', ['cc_stylesheets']);
