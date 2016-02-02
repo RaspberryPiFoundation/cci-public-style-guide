@@ -9,79 +9,29 @@
 
     @media only screen and (min-width: $break-narrow) and (max-width: $break-regular) {
       @include padding($padding-small, $padding-small, 0);
-      @include stacked-banner-nav;
+
+      .c-logo {
+        display:    block;
+        text-align: center;
+      }
+
+      .c-logo__image {
+        float: none;
+      }
+
+      .c-logo__appendix {
+        display: block;
+        float:   none;
+        @include margin-top($logo-padding);
+        @include rem('font-size', 16);
+        line-height: 1.2;
+        text-indent: 0;
+      }
     }
 
     @include respond-to('regular') {
       .c-logo {
         float: left;
-      }
-
-      .o-nav__list-container {
-        background: none;
-        float:      right;
-        height:     auto;
-        opacity:    1;
-        @include padding($logo-padding);
-        position:   static;
-        width:      auto;
-      }
-
-        .o-nav__list {
-          display:   block;
-          @include font-size($font-size-base);
-          position:  static;
-          transform: none;
-        }
-
-        .o-nav__item {
-          float: left;
-          @include margin(0, 0, 0, $margin-base);
-        }
-
-        .o-nav__link {
-          color:           $green;
-          display:         inline-block;
-          @include line_height($font-size-base, $logo-size);
-          @include padding(0);
-          text-decoration: none;
-
-          &:active,
-          &:focus,
-          &:hover {
-            color:           $grey;
-            text-decoration: underline;
-          }
-        }
-    }
-
-    @include respond-to('regular') {
-      .o-nav--stacked & {
-        @include stacked-banner-nav;
-        padding: 0;
-
-        .c-logo {
-          float: none;
-        }
-
-        .o-nav__list-container {
-          display: block;
-          float:   none;
-          width:   100%;
-        }
-
-        .o-nav__list {
-          width: 100%;
-        }
-
-          .o-nav__item {
-            float:  none;
-            margin: 0;
-          }
-
-          .o-nav__link {
-            line-height: 1;
-          }
       }
     }
   }
@@ -156,80 +106,106 @@
     z-index:         500;
   }
 
-    .o-nav__list {
-      @include align-element-vert;
-      @include font-size($font-size-large);
-      margin:     0;
-      padding:    0;
+  .o-nav__list {
+    @include align-element-vert;
+    @include font-size($font-size-large);
+    margin:     0;
+    padding:    0;
+    text-align: center;
+  }
+
+  .o-nav__item {
+    list-style: none;
+  }
+
+  .o-nav__link {
+    background:      none;
+    color:           $white;
+    display:         block;
+    @include padding-top($padding-small);
+    @include padding-bottom($padding-small);
+    text-decoration: none;
+    transition:      all 0.1s ease-in-out;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background:      $white;
+      color:           $green;
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (min-width: $break-narrow) and (max-width: $break-regular) {
+    .o-nav__list-container {
+      background: none;
+      display:    inline-block;
+      opacity:    1;
+      position:   static;
       text-align: center;
     }
 
-      .o-nav__item {
-        list-style: none;
-      }
+    .o-nav__list {
+      @include font-size($font-size-base);
+      position:  static;
+      transform: none;
+    }
 
-      .o-nav__link {
+    .o-nav__item {
+      display:    inline-block;
+      list-style: none;
+    }
+
+    .o-nav__link {
+      color:   $green;
+      display: inline-block;
+      @include padding($padding-x-small);
+
+      &:active,
+      &:focus,
+      &:hover {
         background:      none;
-        color:           $white;
-        display:         block;
-        @include padding-top($padding-small);
-        @include padding-bottom($padding-small);
-        text-decoration: none;
-        transition:      all 0.1s ease-in-out;
-
-        &:active,
-        &:focus,
-        &:hover {
-          background:      $white;
-          color:           $green;
-          text-decoration: none;
-        }
+        color:           $grey;
+        text-decoration: underline;
       }
+    }
+  }
 
-// .o-banner {
-//   background:    $white;
-//   border-bottom: $border-size-base solid $grey-x-light;
-// }
-//
-//   .o-banner__inner {
-//     margin:    0 auto;
-//     max-width: $break-wide;
-//
-//     @include respond-to('wide') {
-//       .c-logo {
-//         float: left;
-//       }
-//     }
-//   }
-//
-//   .o-nav__wrapper {
-//     @include respond-to('wide') {
-//       float: right;
-//     }
-//   }
-//
-//     .o-nav__list {
-//       @include respond-to('wide') {
-//         margin:  0;
-//         @include padding($logo-padding);
-//       }
-//     }
-//
-//       .o-nav__item {
-//         float:      left;
-//         list-style: none;
-//         margin:     0;
-//         @include margin-left($margin-base);
-//         padding:    0;
-//       }
-//
-//       .o-nav__link {
-//         display:         block;
-//         @include line_height($font-size-base, $logo-size);
-//         text-decoration: none;
-//
-//         &.c-button {
-//           line-height: inherit;
-//           @include margin-top($margin-x-small);
-//         }
-//       }
+  @include respond-to('regular') {
+    .o-nav__list-container {
+      background: none;
+      float:      right;
+      height:     auto;
+      opacity:    1;
+      @include padding($logo-padding);
+      position:   static;
+      width:      auto;
+    }
+
+    .o-nav__list {
+      display:   block;
+      @include font-size($font-size-base);
+      position:  static;
+      transform: none;
+    }
+
+    .o-nav__item {
+      float: left;
+      @include margin(0, 0, 0, $margin-base);
+    }
+
+    .o-nav__link {
+      color:           $green;
+      display:         inline-block;
+      @include line_height($font-size-base, $logo-size);
+      @include padding(0);
+      text-decoration: none;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color:           $grey;
+        text-decoration: underline;
+      }
+    }
+  }
