@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>document.documentElement.className += ' wf-loading';</script>
+
+    <meta charset="UTF-8">
+
+    <title>Page Title Here - Code Club Country Name Here</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/bower_components/code-club/dist/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/bower_components/code-club/dist/images/favicons/icon.png">
+    <meta name="msapplication-TileColor" content="#F5F6F9">
+    <meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png">
+    <link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32">
+
+    <!-- Add any additional styles after this include code-club.css -->
+    <%= stylesheet_link_tag '/bower_components/code-club/dist/stylesheets/code-club', :media => 'all' %>
+  </head>
+
+  <body>
+    <header class="o-nav">
+      <div class="o-nav__inner">
+        <div class="c-logo">
+          <a href="/" class="c-logo__link">
+            <img alt="" class="c-logo__image" src="/bower_components/code-club/dist/images/code-club-logo.svg">
+            <div class="c-logo__appendix">Your Country Name</div>
+          </a>
+        </div>
+
+        <input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
+        <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input" href="#"><span></span></label>
+
+        <nav class="o-nav__list-container">
+          <ul class="o-nav__list">
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Replace</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">These</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">With</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Your</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Navigation</a></li>
+            <li class="o-nav__item"><a class="o-nav__link" href="#">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+      YOUR PAGE CONTENTS HERE
+    -->
+
+    <script>
+      (function(d){
+        var config = {kitId: 'pus1ntw',scriptTimeout: 3000,async: true},
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js' %>
+    <%= javascript_include_tag '/bower_components/code-club/dist/javascripts/code-club.min' %>
+  </body>
+</html>
