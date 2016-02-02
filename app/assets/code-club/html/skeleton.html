@@ -16,7 +16,7 @@
     <link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32">
 
     <!-- Add any additional styles after this include code-club.css -->
-    <%= stylesheet_link_tag '/bower_components/code-club/dist/stylesheets/code-club', :media => 'all' %>
+    <link href="/bower_components/code-club/dist/stylesheets/code-club.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -56,7 +56,7 @@
       })(document);
     </script>
 
-    <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js' %>
-    <%= javascript_include_tag '/bower_components/code-club/dist/javascripts/code-club.min' %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/bower_components/code-club/dist/javascripts/code-club.min.js"></script>
   </body>
 </html>
