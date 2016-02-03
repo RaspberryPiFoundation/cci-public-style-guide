@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-40
+ * @version v0.0.1-41
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2188,6 +2188,18 @@ ul {
 .c-icon--settings {
   background-image: url("../images/icons/settings.svg"); }
 
+.c-icon--social-facebook {
+  background-image: url("../images/icons/social-facebook.svg"); }
+
+.c-icon--social-google {
+  background-image: url("../images/icons/social-google.svg"); }
+
+.c-icon--social-twitter {
+  background-image: url("../images/icons/social-twitter.svg"); }
+
+.c-icon--social-youtube {
+  background-image: url("../images/icons/social-youtube.svg"); }
+
 .c-icon--star {
   background-image: url("../images/icons/star.svg"); }
 
@@ -2625,6 +2637,61 @@ ul {
   font-size: 18px;
   font-size: 1.125rem;
   float: left; }
+
+.o-footer {
+  background: #333333;
+  color: #FFF;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 100; }
+
+.o-footer__inner {
+  margin: 0 auto;
+  max-width: 75em;
+  padding-top: 80px;
+  padding-top: 5rem;
+  padding-right: 0px;
+  padding-right: 0rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+  padding-left: 0px;
+  padding-left: 0rem; }
+
+.o-footer__heading {
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem; }
+
+.o-footer__list {
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+  padding: 0; }
+
+.o-footer__list-item {
+  line-height: 1.57143;
+  list-style: none; }
+
+.o-footer__list-link {
+  color: #FFF;
+  font-weight: 100;
+  text-decoration: none; }
+  .o-footer__list-link:active, .o-footer__list-link:focus, .o-footer__list-link:hover {
+    color: #FFF;
+    text-decoration: underline; }
+
+.o-footer__social-list {
+  margin: 0;
+  padding: 0;
+  text-align: right; }
+
+.o-footer__social-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-left: 4px;
+  margin-left: 0.25rem; }
+
+.o-footer__social-list-link {
+  display: block; }
 
 .o-hero {
   background: #339933;
