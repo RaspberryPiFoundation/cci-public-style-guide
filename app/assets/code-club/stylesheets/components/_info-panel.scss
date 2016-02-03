@@ -1,0 +1,37 @@
+.c-info {
+  background:  rgba($blue, 0.1);
+  border:      $border-size-base solid $blue;
+  @include rem('border-radius', $border-radius-small);
+  color:       $blue;
+  @include font-size($font-size-small);
+  @include margin-bottom($margin-base);
+  @include padding($padding-small);
+}
+
+  .c-info--success {
+    background:   rgba($green, 0.1);
+    border-color: $green;
+    color:        $green;
+  }
+
+  .c-info--warning {
+    background:   $yellow;
+    border-color: $yellow;
+    color:        $grey;
+  }
+
+  .c-info--error {
+    background:   rgba($red, 0.1);
+    border-color: $red;
+    color:        $red;
+  }
+
+  .c-info__icon,
+  .c-info__body {
+    float: left;
+  }
+
+  .c-info__icon {
+    @include margin-right($margin-x-small);
+    vertical-align: top;
+  }
