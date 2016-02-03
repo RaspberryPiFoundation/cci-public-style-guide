@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-39
+ * @version v0.0.1-40
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -3020,6 +3020,9 @@ ul {
   margin-left: auto   !important;
   margin-right: auto   !important;
   text-align: center !important; }
+  .u-text--center li, .u-text--center p {
+    margin-left: auto !important;
+    margin-right: auto !important; }
 
 .u-text--left {
   text-align: left  !important; }
