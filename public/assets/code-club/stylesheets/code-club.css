@@ -2231,36 +2231,36 @@ ul {
     background-position: center -50px; }
 
 .c-icon--small {
-  height: 15px;
-  height: 0.9375rem;
-  width: 15px;
-  width: 0.9375rem; }
+  height: 16px;
+  height: 1rem;
+  width: 16px;
+  width: 1rem; }
   .c-icon--small.c-icon--grey {
-    background-position: center -15px; }
+    background-position: center -16px; }
   .c-icon--small.c-icon--white {
-    background-position: center -30px; }
+    background-position: center -32px; }
   .c-icon--small.c-icon--green {
-    background-position: center -45px; }
+    background-position: center -48px; }
   .c-icon--small.c-icon--blue {
-    background-position: center -60px; }
+    background-position: center -64px; }
   .c-icon--small.c-icon--red {
-    background-position: center -75px; }
+    background-position: center -80px; }
 
 .c-icon--large {
-  height: 25px;
-  height: 1.5625rem;
-  width: 25px;
-  width: 1.5625rem; }
+  height: 26px;
+  height: 1.625rem;
+  width: 26px;
+  width: 1.625rem; }
   .c-icon--large.c-icon--grey {
-    background-position: center -25px; }
+    background-position: center -26px; }
   .c-icon--large.c-icon--white {
-    background-position: center -50px; }
+    background-position: center -52px; }
   .c-icon--large.c-icon--green {
-    background-position: center -75px; }
+    background-position: center -78px; }
   .c-icon--large.c-icon--blue {
-    background-position: center -100px; }
+    background-position: center -104px; }
   .c-icon--large.c-icon--red {
-    background-position: center -125px; }
+    background-position: center -130px; }
 
 .c-icon--x-large {
   height: 30px;
@@ -2277,6 +2277,43 @@ ul {
     background-position: center -120px; }
   .c-icon--x-large.c-icon--red {
     background-position: center -150px; }
+
+.c-info {
+  background: rgba(82, 144, 210, 0.1);
+  border: 1px solid #5290D2;
+  border-radius: 12px;
+  border-radius: 0.75rem;
+  color: #5290D2;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding: 12px;
+  padding: 0.75rem; }
+
+.c-info--success {
+  background: rgba(51, 153, 51, 0.1);
+  border-color: #339933;
+  color: #339933; }
+
+.c-info--warning {
+  background: #FFF578;
+  border-color: #FFF578;
+  color: #333333; }
+
+.c-info--error {
+  background: rgba(255, 82, 82, 0.1);
+  border-color: #FF5252;
+  color: #FF5252; }
+
+.c-info__icon,
+.c-info__body {
+  float: left; }
+
+.c-info__icon {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  vertical-align: top; }
 
 .c-lede {
   font-size: 20px;
