@@ -28,6 +28,7 @@
     "config",
     "db",
     "lib",
+    "log",
     "node_modules",
     "public",
     "test",
