@@ -1,47 +1,85 @@
+<p>
+  When your page requires an additional, highlited piece of information for the user that isn't necessarily the result of
+  an action they have performed, use an info panel. If you are providing feedback from the server based on an action the
+  user just took, use an <%= link_to 'alert', page_path('styles', 'alerts') %> instead.
+</p>
+
 <div class="sg-example">
   <h3 class="sg-example__heading">Example</h3>
 
   <div class="sg-example__preview">
-    <div class="c-info c-info--success">
-      <span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"></span>
-      This is a success alert.
+    <div class="c-info">
+      <div class="c-info__icon">
+        <span class="c-icon c-icon--small c-icon--info-fill c-icon--blue"></span>
+      </div>
+      <div class="c-info__body">
+        This is an information panel. Use these to notify the user of things with text and an icon. They're useful.
+      </div>
     </div>
 
-    <div class="c-info c-info--info">
-      <span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
-      This is an information alert.
+    <div class="c-info c-info--success">
+      <div class="c-info__icon">
+        <span class="c-icon c-icon--small c-icon--info c-icon--green"></span>
+      </div>
+      <div class="c-info__body">
+        This is an information panel. Use these to notify the user of things with text and an icon. They're useful.
+      </div>
     </div>
 
     <div class="c-info c-info--warning">
-      <span class="c-icon c-icon--small c-icon--warning"></span>
-      This is a warning message.
+      <div class="c-info__icon">
+        <span class="c-icon c-icon--small c-icon--warning"></span>
+      </div>
+      <div class="c-info__body">
+        This is an information panel. Use these to notify the user of things with text and an icon. They're useful.
+      </div>
     </div>
 
     <div class="c-info c-info--error">
-      <span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
-      This is an error. Please enter the correct information so we can continue.
+      <div class="c-info__icon">
+        <span class="c-icon c-icon--small c-icon--error c-icon--red"></span>
+      </div>
+      <div class="c-info__body">
+        This is an information panel. Use these to notify the user of things with text and an icon. They're useful.
+      </div>
     </div>
   </div>
 
   <code class="sg-example__code">
-    &lt;div class="c-info c-info--success"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is a success alert.<br>
+    &lt;div class="c-info"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="c-info__icon"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--info-fill c-icon--blue"&gt;&lt;/span&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="c-info__body"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;This is an information panel. Use these to notify the user of things with text and an icon. They're useful.<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
     &lt;/div&gt;<br>
     <br>
-    &lt;div class="c-info c-info--info"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--info-fill c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is an information alert.<br>
+    &lt;div class="c-info c-info--success"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="c-info__icon"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--info c-icon--green"&gt;&lt;/span&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="c-info__body"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;This is an information panel. Use these to notify the user of things with text and an icon. They're useful.<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
     &lt;/div&gt;<br>
     <br>
     &lt;div class="c-info c-info--warning"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--warning"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is a warning message.<br>
+    &nbsp;&nbsp;&lt;div class="c-info__icon"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--warning"&gt;&lt;/span&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="c-info__body"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;This is an information panel. Use these to notify the user of things with text and an icon. They're useful.<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
     &lt;/div&gt;<br>
     <br>
     &lt;div class="c-info c-info--error"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--error c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is an error. Please enter the correct information so we can continue.<br>
+    &nbsp;&nbsp;&lt;div class="c-info__icon"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--error c-icon--red"&gt;&lt;/span&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="c-info__body"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;This is an information panel. Use these to notify the user of things with text and an icon. They're useful.<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
     &lt;/div&gt;
   </code>
 </div>
