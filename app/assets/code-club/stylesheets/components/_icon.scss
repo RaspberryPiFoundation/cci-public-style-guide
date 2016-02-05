@@ -48,48 +48,48 @@
   .c-icon--volunteers         { background-image: url('../images/icons/volunteers.svg');         }
   .c-icon--warning            { background-image: url('../images/icons/warning.svg');            }
 
-  .c-icon--grey  { background-position: center ($icon-size-base * -1px); }
-  .c-icon--white { background-position: center ($icon-size-base * -2px); }
-  .c-icon--green { background-position: center ($icon-size-base * -3px); }
-  .c-icon--blue  { background-position: center ($icon-size-base * -4px); }
-  .c-icon--red   { background-position: center ($icon-size-base * -5px); }
+  .c-icon--grey-dark { background-position: center ($icon-size-base * -1px); }
+  .c-icon--white     { background-position: center ($icon-size-base * -2px); }
+  .c-icon--green     { background-position: center ($icon-size-base * -3px); }
+  .c-icon--blue      { background-position: center ($icon-size-base * -4px); }
+  .c-icon--red       { background-position: center ($icon-size-base * -5px); }
 
-  .c-icon--x-small  {
+  .c-icon--x-small {
     @include square($icon-size-x-small);
 
-    &.c-icon--grey  { background-position: center ($icon-size-x-small * -1px); }
-    &.c-icon--white { background-position: center ($icon-size-x-small * -2px); }
-    &.c-icon--green { background-position: center ($icon-size-x-small * -3px); }
-    &.c-icon--blue  { background-position: center ($icon-size-x-small * -4px); }
-    &.c-icon--red   { background-position: center ($icon-size-x-small * -5px); }
+    &.c-icon--grey-dark { background-position: center ($icon-size-x-small * -1px); }
+    &.c-icon--white     { background-position: center ($icon-size-x-small * -2px); }
+    &.c-icon--green     { background-position: center ($icon-size-x-small * -3px); }
+    &.c-icon--blue      { background-position: center ($icon-size-x-small * -4px); }
+    &.c-icon--red       { background-position: center ($icon-size-x-small * -5px); }
   }
 
-  .c-icon--small    {
+  .c-icon--small {
     @include square($icon-size-small);
 
-    &.c-icon--grey  { background-position: center ($icon-size-small * -1px); }
-    &.c-icon--white { background-position: center ($icon-size-small * -2px); }
-    &.c-icon--green { background-position: center ($icon-size-small * -3px); }
-    &.c-icon--blue  { background-position: center ($icon-size-small * -4px); }
-    &.c-icon--red   { background-position: center ($icon-size-small * -5px); }
+    &.c-icon--grey-dark { background-position: center ($icon-size-small * -1px); }
+    &.c-icon--white     { background-position: center ($icon-size-small * -2px); }
+    &.c-icon--green     { background-position: center ($icon-size-small * -3px); }
+    &.c-icon--blue      { background-position: center ($icon-size-small * -4px); }
+    &.c-icon--red       { background-position: center ($icon-size-small * -5px); }
   }
 
-  .c-icon--large    {
+  .c-icon--large {
     @include square($icon-size-large);
 
-    &.c-icon--grey  { background-position: center ($icon-size-large * -1px); }
-    &.c-icon--white { background-position: center ($icon-size-large * -2px); }
-    &.c-icon--green { background-position: center ($icon-size-large * -3px); }
-    &.c-icon--blue  { background-position: center ($icon-size-large * -4px); }
-    &.c-icon--red   { background-position: center ($icon-size-large * -5px); }
+    &.c-icon--grey-dark { background-position: center ($icon-size-large * -1px); }
+    &.c-icon--white     { background-position: center ($icon-size-large * -2px); }
+    &.c-icon--green     { background-position: center ($icon-size-large * -3px); }
+    &.c-icon--blue      { background-position: center ($icon-size-large * -4px); }
+    &.c-icon--red       { background-position: center ($icon-size-large * -5px); }
   }
 
-  .c-icon--x-large  {
+  .c-icon--x-large {
     @include square($icon-size-x-large);
 
-    &.c-icon--grey  { background-position: center ($icon-size-x-large * -1px); }
-    &.c-icon--white { background-position: center ($icon-size-x-large * -2px); }
-    &.c-icon--green { background-position: center ($icon-size-x-large * -3px); }
-    &.c-icon--blue  { background-position: center ($icon-size-x-large * -4px); }
-    &.c-icon--red   { background-position: center ($icon-size-x-large * -5px); }
+    &.c-icon--grey-dark { background-position: center ($icon-size-x-large * -1px); }
+    &.c-icon--white     { background-position: center ($icon-size-x-large * -2px); }
+    &.c-icon--green     { background-position: center ($icon-size-x-large * -3px); }
+    &.c-icon--blue      { background-position: center ($icon-size-x-large * -4px); }
+    &.c-icon--red       { background-position: center ($icon-size-x-large * -5px); }
   }

@@ -2,7 +2,7 @@ module ColorsHelper
   def colors
     {
       'palette': {
-        'grey':          '333333',
+        'grey-dark':     '333333',
         'grey-med':      '848484',
         'grey-light':    'C2C2C2',
         'grey-x-light':  'E0E0E0',

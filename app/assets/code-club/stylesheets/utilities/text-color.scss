@@ -1,4 +1,4 @@
-.u-color--grey          { color: $grey          !important; }
+.u-color--grey-dark     { color: $grey-dark     !important; }
 .u-color--grey-med      { color: $grey-med      !important; }
 .u-color--grey-light    { color: $grey-light    !important; }
 .u-color--grey-x-light  { color: $grey-x-light  !important; }
@@ -10,7 +10,7 @@
 
 //	Link color modifiers
 a {
-	.u-color--grey &,          &.u-color--grey          { color: $grey          !important; }
+	.u-color--grey-dark &,     &.u-color--grey-dark     { color: $grey-dark     !important; }
 	.u-color--grey-med &,      &.u-color--grey-med      { color: $grey-med      !important; }
 	.u-color--grey-light &,    &.u-color--grey-light    { color: $grey-light    !important; }
 	.u-color--grey-x-light &,  &.u-color--grey-x-light  { color: $grey-x-light  !important; }

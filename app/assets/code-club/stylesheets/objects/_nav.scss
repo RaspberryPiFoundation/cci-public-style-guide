@@ -20,8 +20,8 @@
       }
 
       .c-logo__appendix {
-        display: block;
-        float:   none;
+        display:     block;
+        float:       none;
         @include margin-top($logo-padding);
         @include rem('font-size', 16);
         line-height: 1.2;
@@ -94,7 +94,7 @@
   }
 
   .o-nav__list-container {
-    background:      rgba($grey, 0.9);
+    background:      rgba($grey-dark, 0.9);
     height:          100%;
     left:            -100%;
     opacity:         0;
@@ -131,7 +131,7 @@
     &:focus,
     &:hover {
       background:      $white;
-      color:           $grey;
+      color:           $grey-dark;
       text-decoration: none;
     }
   }
@@ -165,7 +165,7 @@
       &:focus,
       &:hover {
         background:      none;
-        color:           $grey;
+        color:           $grey-dark;
         text-decoration: underline;
       }
     }
@@ -204,7 +204,7 @@
       &:active,
       &:focus,
       &:hover {
-        color:           $grey;
+        color:           $grey-dark;
         text-decoration: underline;
       }
     }

@@ -9,7 +9,7 @@
   @include padding($button-padding-x-large--y, $button-padding-base--x);
   vertical-align:  middle;
 
-  &.c-button--grey          { background: $grey;          border-color: $grey;          }
+  &.c-button--grey-dark     { background: $grey-dark;     border-color: $grey-dark;     }
   &.c-button--grey-med      { background: $grey-med;      border-color: $grey-med;      }
   &.c-button--grey-light    { background: $grey-light;    border-color: $grey-light;    }
   &.c-button--grey-x-light  { background: $grey-x-light;  border-color: $grey-x-light;  }
@@ -24,7 +24,7 @@
     background: $white;
     color:      $grey-med;
 
-    &.c-button--grey          { color: $grey;          }
+    &.c-button--grey-dark     { color: $grey-dark;     }
     &.c-button--grey-med      { color: $grey-med;      }
     &.c-button--grey-light    { color: $grey-light;    }
     &.c-button--grey-x-light  { color: $grey-x-light;  }
@@ -47,7 +47,7 @@
     background: none;
     color:      $grey-med;
 
-    &.c-button--grey          { color: $grey;          }
+    &.c-button--grey-dark     { color: $grey-dark;     }
     &.c-button--grey-med      { color: $grey-med;      }
     &.c-button--grey-light    { color: $grey-light;    }
     &.c-button--grey-x-light  { color: $grey-x-light;  }
@@ -62,7 +62,7 @@
       color:      $white;
       background: $grey-med;
 
-      &.c-button--grey          { background: $grey;          }
+      &.c-button--grey-dark     { background: $grey-dark;     }
       &.c-button--grey-med      { background: $grey-med;      }
       &.c-button--grey-light    { background: $grey-light;    }
       &.c-button--grey-x-light  { background: $grey-x-light;  }
@@ -71,7 +71,7 @@
       &.c-button--blue          { background: $blue;          }
       &.c-button--green         { background: $green;         }
       &.c-button--yellow        { background: $yellow;        }
-      &.c-button--white         { background: $white;        color: $green; }
+      &.c-button--white         { background: $white; color: $green; }
     }
   }
 }

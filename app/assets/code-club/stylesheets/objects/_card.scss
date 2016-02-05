@@ -105,8 +105,8 @@
 
   .o-course-card__image {
     display:   block;
+    margin:    0 auto;
     max-width: 100%;
-    margin:0 auto;
   }
 
   .o-course-card__title {
@@ -121,8 +121,8 @@
   }
 
     .o-course-card__footer--generic {
+      background: transparent;
       border-top: $border-size-base solid $grey-x-light;
-      background:transparent;
     }
 
 .o-project-card {
@@ -137,13 +137,13 @@
 }
 
   .o-project-card__link {
-    color:           $grey;
+    color:           $grey-dark;
     display:         block;
     text-decoration: none;
 
     &:hover {
       border-color: $grey-light;
-      color:        $grey;
+      color:        $grey-dark;
     }
   }
 
@@ -156,15 +156,15 @@
       border:       solid $grey-x-light;
       @include rem('border-bottom-right-radius', $border-radius-small);
       @include rem('border-bottom-left-radius',  $border-radius-small);
-      border-width: 0 $border-size-base $border-size-base $border-size-base;
+      border-width: 0 $border-size-base $border-size-base;
+      font-weight:  $font-weight-base;
       @include padding($padding-large, $padding-small, $padding-small);
-      font-weight:$font-weight-base;
     }
 
     .o-project-card__meta {
       @extend .c-meta;
+      font-weight: $font-weight-bold;
       line-height: 2;
-      font-weight:$font-weight-bold;
     }
 
     .o-project-card__title {

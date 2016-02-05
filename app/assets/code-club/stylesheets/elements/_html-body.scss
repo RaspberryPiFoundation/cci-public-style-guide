@@ -6,7 +6,7 @@ html {
 }
 
 	body {
-		color:            $grey;
+		color:            $grey-dark;
 		font-family:      $font-family-primary;
 		@include font-size($font-size-base);
 		font-weight:      $font-weight-base;
