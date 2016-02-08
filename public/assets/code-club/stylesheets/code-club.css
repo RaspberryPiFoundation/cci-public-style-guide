@@ -2435,7 +2435,9 @@ ul {
   background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
-  border-radius: 0.75rem; }
+  border-radius: 0.75rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
 
 .o-card__heading {
   border-bottom: 1px solid #E0E0E0;
