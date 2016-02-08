@@ -2431,13 +2431,34 @@ ul {
   text-align: center;
   width: 25%; }
 
+.o-card-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 75em; }
+
 .o-card {
   background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
   border-radius: 0.75rem;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-right: 0px;
+  margin-right: 0rem;
   margin-bottom: 16px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: 16px;
+  margin-left: 1rem; }
+  .o-card:first-child {
+    margin-left: 0; }
 
 .o-card__heading {
   border-bottom: 1px solid #E0E0E0;
@@ -2467,7 +2488,22 @@ ul {
     text-decoration: underline; }
 
 .o-course-card {
-  background: #FFF; }
+  background: #FFF;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-right: 0px;
+  margin-right: 0rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  margin-left: 16px;
+  margin-left: 1rem; }
+  .o-course-card:first-child {
+    margin-left: 0; }
 
 .o-course-card__link {
   border-radius: 12px;
@@ -2554,7 +2590,22 @@ ul {
   border: none;
   border-radius: 12px;
   border-radius: 0.75rem;
-  overflow: hidden; }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-right: 0px;
+  margin-right: 0rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  margin-left: 16px;
+  margin-left: 1rem;
+  overflow: hidden;
+  padding: 0; }
+  .o-project-card:first-child {
+    margin-left: 0; }
   .o-project-card:hover {
     box-shadow: 0 0 15px #C2C2C2; }
 

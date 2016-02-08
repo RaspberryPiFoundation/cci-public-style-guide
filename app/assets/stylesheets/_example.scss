@@ -16,13 +16,3 @@
   .sg-example__preview {
     @include margin-bottom($margin-base);
   }
-
-  .sg-example__card {
-    float:       left;
-    margin-left: 2%;
-    width:       32%;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-  }
