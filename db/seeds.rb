@@ -35,5 +35,6 @@ Page.create!([
   { path: "cards",                title: "Cards",                 order: 50,  section_id: 5, show_in_nav: true, example_page: false },
   { path: "footer",               title: "Footer",                order: 60,  section_id: 5, show_in_nav: true, example_page: false },
 
-  { path: "menu",                 title: "Menu",                  order: 10,  section_id: 6, show_in_nav: true, example_page: true  }
+  { path: "stacked-content",      title: "Stacked Content",       order: 10,  section_id: 6, show_in_nav: true, example_page: true  },
+  { path: "column-content",       title: "Column Content",        order: 20,  section_id: 6, show_in_nav: true, example_page: true  }
 ])
