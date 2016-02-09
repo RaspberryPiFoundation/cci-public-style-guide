@@ -1,10 +1,10 @@
 Section.create!([
-  { path: "home",       title: "Home",       order: 10,  show_in_nav: false },
-  { path: "the-basics", title: "The Basics", order: 20,  show_in_nav: true  },
-  { path: "layout",     title: "Layout",     order: 30,  show_in_nav: true  },
-  { path: "styles",     title: "Styles",     order: 40,  show_in_nav: true  },
-  { path: "modules",    title: "Modules",    order: 50,  show_in_nav: true  },
-  { path: "examples",   title: "Examples",   order: 100, show_in_nav: false }
+  { path: "home",          title: "Home",          order: 10,  show_in_nav: false },
+  { path: "the-basics",    title: "The Basics",    order: 20,  show_in_nav: true  },
+  { path: "layout",        title: "Layout",        order: 30,  show_in_nav: true  },
+  { path: "styles",        title: "Styles",        order: 40,  show_in_nav: true  },
+  { path: "modules",       title: "Modules",       order: 50,  show_in_nav: true  },
+  { path: "example-pages", title: "Example Pages", order: 100, show_in_nav: false }
 ])
 
 Page.create!([
