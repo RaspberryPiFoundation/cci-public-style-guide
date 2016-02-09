@@ -25,7 +25,7 @@ class PagesController < ApplicationController
 
   def set_layout
     if @page.is_example_page?
-      @layout = 'examples'
+      @layout = 'example-page'
     else
       @layout = 'application'
     end
