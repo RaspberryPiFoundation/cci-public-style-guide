@@ -1,172 +1,199 @@
-.o-card {
-  background: $white;
-  border:     $border-size-base solid $grey-x-light;
-  @include rem('border-radius', $border-radius-small);
+.o-card-container {
+  display:   flex;
+  margin:    0 auto;
+  max-width: $break-wide;
 }
 
-  .o-card__heading {
-    border-bottom: $border-size-base solid $grey-x-light;
-    @include padding($padding-small);
-    text-align:    center;
+  .o-card {
+    background: $white;
+    border:     $border-size-base solid $grey-x-light;
+    @include rem('border-radius', $border-radius-small);
+    flex:       1;
+    padding:    0;
+    @include margin(0, 0, $margin-base, $margin-base);
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
-  .o-card__body {
-    @include padding($padding-small, $padding-base);
+    .o-card__heading {
+      border-bottom: $border-size-base solid $grey-x-light;
+      @include padding($padding-small);
+      text-align:    center;
+    }
+
+    .o-card__body {
+      @include padding($padding-small, $padding-base);
+    }
+
+    .o-card__footer {
+      border-top: $border-size-base solid $grey-x-light;
+      @include padding($padding-small);
+      text-align: center;
+    }
+
+      .o-card__footer-link {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+  .o-course-card {
+    background: $white;
+    flex:       1;
+    padding:    0;
+    @include margin(0, 0, $margin-base, $margin-base);
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
-  .o-card__footer {
-    border-top: $border-size-base solid $grey-x-light;
-    @include padding($padding-small);
-    text-align: center;
-  }
-
-    .o-card__footer-link {
+    .o-course-card__link {
+      @include rem('border-radius', $border-radius-small);
+      color:           $grey-med;
+      display:         block;
+      overflow:        hidden;
+      text-align:      center;
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline;
+        box-shadow: 0 0 15px $grey-x-light;
+        color:      $grey-med;
       }
     }
 
-.o-course-card {
-  background: $white;
-}
+      .o-course-card__link--generic {
+        border: $border-size-base solid $grey-x-light;
 
-  .o-course-card__link {
-    @include rem('border-radius', $border-radius-small);
-    color:           $grey-med;
-    display:         block;
-    overflow:        hidden;
-    text-align:      center;
-    text-decoration: none;
-
-    &:hover {
-      box-shadow: 0 0 15px $grey-x-light;
-      color:      $grey-med;
-    }
-  }
-
-    .o-course-card__link--generic {
-      border: $border-size-base solid $grey-x-light;
-
-      &:hover {
-        border-color: $grey-light;
+        &:hover {
+          border-color: $grey-light;
+        }
       }
-    }
 
-    .o-course-card__link--scratch {
-      background: $card-orange;
-      border:     none;
-      color:      $white;
+      .o-course-card__link--scratch {
+        background: $card-orange;
+        border:     none;
+        color:      $white;
 
-      &:hover {
-        color: $white;
+        &:hover {
+          color: $white;
+        }
       }
-    }
 
-    .o-course-card__link--webdev  {
-      background: $card-blue;
-      border:     none;
-      color:      $white;
+      .o-course-card__link--webdev  {
+        background: $card-blue;
+        border:     none;
+        color:      $white;
 
-      &:hover {
-        color: $white;
+        &:hover {
+          color: $white;
+        }
       }
-    }
 
-    .o-course-card__link--python  {
-      background: $card-green;
-      border:     none;
-      color:      $white;
+      .o-course-card__link--python  {
+        background: $card-green;
+        border:     none;
+        color:      $white;
 
-      &:hover {
-        color: $white;
+        &:hover {
+          color: $white;
+        }
       }
+
+    .o-course-card__body {
+      background-position: center center;
+      background-repeat:   repeat;
+      @include padding($padding-xx-large, $padding-small);
     }
 
-  .o-course-card__body {
-    background-position: center center;
-    background-repeat:   repeat;
-    @include padding($padding-xx-large, $padding-small);
-  }
+      .o-course-card__body--scratch {
+        background-image: url('../images/project-cards/scratch.svg');
+      }
 
-    .o-course-card__body--scratch {
-      background-image: url('../images/project-cards/scratch.svg');
-    }
+      .o-course-card__body--webdev {
+        background-image: url('../images/project-cards/webdev.svg');
+        background-size: cover;
+      }
 
-    .o-course-card__body--webdev {
-      background-image: url('../images/project-cards/webdev.svg');
-      background-size: cover;
-    }
+      .o-course-card__body--python {
+        background-image: url('../images/project-cards/python.svg');
+      }
 
-    .o-course-card__body--python {
-      background-image: url('../images/project-cards/python.svg');
-    }
-
-  .o-course-card__image {
-    display:   block;
-    max-width: 100%;
-    margin:0 auto;
-  }
-
-  .o-course-card__title {
-    margin: 0;
-  }
-
-  .o-course-card__footer {
-    background:  rgba(0, 0, 0, 0.1);
-    @include rem('font-size', $font-size-small);
-    font-weight: $font-weight-light;
-    @include padding($padding-small);
-  }
-
-    .o-course-card__footer--generic {
-      border-top: $border-size-base solid $grey-x-light;
-      background:transparent;
-    }
-
-.o-project-card {
-  background: $white;
-  border:     none;
-  @include rem('border-radius', $border-radius-small);
-  overflow:   hidden;
-
-  &:hover {
-    box-shadow: 0 0 15px $grey-light;
-  }
-}
-
-  .o-project-card__link {
-    color:           $grey;
-    display:         block;
-    text-decoration: none;
-
-    &:hover {
-      border-color: $grey-light;
-      color:        $grey;
-    }
-  }
-
-    .o-project-card__image {
+    .o-course-card__image {
       display:   block;
+      margin:    0 auto;
       max-width: 100%;
     }
 
-    .o-project-card__body {
-      border:       solid $grey-x-light;
-      @include rem('border-bottom-right-radius', $border-radius-small);
-      @include rem('border-bottom-left-radius',  $border-radius-small);
-      border-width: 0 $border-size-base $border-size-base $border-size-base;
-      @include padding($padding-large, $padding-small, $padding-small);
-      font-weight:$font-weight-base;
+    .o-course-card__title {
+      margin: 0;
     }
 
-    .o-project-card__meta {
-      @extend .c-meta;
-      line-height: 2;
-      font-weight:$font-weight-bold;
+    .o-course-card__footer {
+      background:  rgba(0, 0, 0, 0.1);
+      @include rem('font-size', $font-size-small);
+      font-weight: $font-weight-light;
+      @include padding($padding-small);
     }
 
-    .o-project-card__title {
-      @include h3;
+      .o-course-card__footer--generic {
+        background: transparent;
+        border-top: $border-size-base solid $grey-x-light;
+      }
+
+  .o-project-card {
+    background: $white;
+    border:     none;
+    @include rem('border-radius', $border-radius-small);
+    flex:       1;
+    @include margin(0, 0, $margin-base, $margin-base);
+    overflow:   hidden;
+    padding:    0;
+
+    &:first-child {
+      margin-left: 0;
     }
+
+    &:hover {
+      box-shadow: 0 0 15px $grey-light;
+    }
+  }
+
+    .o-project-card__link {
+      color:           $grey-dark;
+      display:         block;
+      text-decoration: none;
+
+      &:hover {
+        border-color: $grey-light;
+        color:        $grey-dark;
+      }
+    }
+
+      .o-project-card__image {
+        display:   block;
+        max-width: 100%;
+      }
+
+      .o-project-card__body {
+        border:       solid $grey-x-light;
+        @include rem('border-bottom-right-radius', $border-radius-small);
+        @include rem('border-bottom-left-radius',  $border-radius-small);
+        border-width: 0 $border-size-base $border-size-base;
+        font-weight:  $font-weight-base;
+        @include padding($padding-large, $padding-small, $padding-small);
+      }
+
+      .o-project-card__meta {
+        @extend .c-meta;
+        font-weight: $font-weight-bold;
+        line-height: 2;
+      }
+
+      .o-project-card__title {
+        @include h3;
+      }

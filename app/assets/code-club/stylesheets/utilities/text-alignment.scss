@@ -1,8 +1,13 @@
 //  Text alignment modifiers
-.u-text--center  {
+.u-text--center {
   margin-left:  auto   !important;
   margin-right: auto   !important;
   text-align:   center !important;
+
+  li, p {
+    margin-left:  auto !important;
+    margin-right: auto !important;
+  }
 }
 
 .u-text--left  { text-align: left  !important; }

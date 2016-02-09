@@ -1,8 +1,8 @@
 .o-nav-stacked {
-  border: $border-size-base solid $grey-x-light;
+  border:  $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-base);
   @include margin(0, 0, $margin-base);
-  padding:       0;
+  padding: 0;
 }
 
   .o-nav-stacked__list {
@@ -29,6 +29,6 @@
 
         &.is-current {
           background: url('../images/stacked-nav-is-current.svg') right center no-repeat;
-          color:      $grey;
+          color:      $grey-dark;
         }
       }

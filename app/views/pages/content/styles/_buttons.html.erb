@@ -78,7 +78,7 @@
 <h2>Sizing Buttons</h2>
 
 <p>
-	Buttons come in four sizes. Small, normal, large and extra large.
+	Buttons come in four sizes. Small, normal, large and extra large. The
 </p>
 
 <div class="sg-example">
@@ -92,9 +92,10 @@
   </div>
 
 	<code class="sg-example__code">
-    <% colors[:palette].each do |name, value| %>
-		&lt;button class="c-button c-button--hollow c-button--<%= name %>"&gt;<%= name %> - #<%= value %>&lt;/button&gt;<br>
-    <% end %>
+		&lt;button class="c-button c-button--small c-button--green"&gt;Small Button&lt;/button&gt;<br>
+		&lt;button class="c-button c-button--green"&gt;Normal Button&lt;/button&gt;<br>
+		&lt;button class="c-button c-button--large c-button--green"&gt;Large Button&lt;/button&gt;<br>
+		&lt;button class="c-button c-button--x-large c-button--green"&gt;Extra Large Button&lt;/button&gt;
 	</code>
 </div>
 

@@ -33,6 +33,7 @@ Page.create!([
   { path: "hero-blocks",          title: "Hero Blocks",           order: 30,  section_id: 5, show_in_nav: true, example_page: false },
   { path: "club-list",            title: "Club List",             order: 40,  section_id: 5, show_in_nav: true, example_page: false },
   { path: "cards",                title: "Cards",                 order: 50,  section_id: 5, show_in_nav: true, example_page: false },
+  { path: "footer",               title: "Footer",                order: 60,  section_id: 5, show_in_nav: true, example_page: false },
 
   { path: "menu",                 title: "Menu",                  order: 10,  section_id: 6, show_in_nav: true, example_page: true  }
 ])

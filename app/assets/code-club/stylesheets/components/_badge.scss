@@ -10,7 +10,7 @@
   vertical-align:  middle;
 }
 
-  .c-badge--grey          { background: $grey;          }
+  .c-badge--grey-dark     { background: $grey-dark;     }
   .c-badge--grey-med      { background: $grey-med;      }
   .c-badge--grey-light    { background: $grey-light;    }
   .c-badge--grey-x-light  { background: $grey-x-light;  }
@@ -25,5 +25,5 @@
   .c-badge--grey-x-light,
   .c-badge--grey-xx-light,
   .c-badge--yellow {
-    color: $grey;
+    color: $grey-dark;
   }
