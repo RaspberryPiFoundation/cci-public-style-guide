@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-44
+ * @version v0.0.1-45
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -571,8 +571,7 @@ th {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center; }
+  justify-content: center; }
 
 .end-xs {
   -webkit-box-pack: end;
@@ -1338,9 +1337,13 @@ b {
   font-weight: 500; }
 
 blockquote {
+  background: #F5F6F9;
+  border-left: 2px solid #E0E0E0;
   margin: 0;
   margin-bottom: 16px;
   margin-bottom: 1rem;
+  padding: 12px;
+  padding: 0.75rem;
   max-width: 40em; }
   blockquote p:before,
   blockquote p:after {
@@ -1348,8 +1351,10 @@ blockquote {
     line-height: 0; }
   blockquote p:first-child:before {
     content: '\201C'; }
-  blockquote p:last-of-type:after {
-    content: '\201D'; }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+    blockquote p:last-of-type:after {
+      content: '\201D'; }
 
 button {
   border: none;
@@ -1580,21 +1585,22 @@ ul {
   margin-bottom: 1rem; }
 
 .c-badge {
-  border-radius: 8px;
-  border-radius: 0.5rem;
+  border-radius: 4px;
+  border-radius: 0.25rem;
   background: #848484;
   display: inline-block;
   color: #FFF;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-weight: 500;
+  font-size: 12px;
+  font-size: 0.75rem;
   padding-top: 4px;
   padding-top: 0.25rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
+  padding-right: 8px;
+  padding-right: 0.5rem;
   padding-bottom: 4px;
   padding-bottom: 0.25rem;
-  padding-left: 12px;
-  padding-left: 0.75rem;
+  padding-left: 8px;
+  padding-left: 0.5rem;
   text-transform: uppercase;
   vertical-align: middle; }
 
@@ -1645,12 +1651,12 @@ ul {
   text-decoration: none;
   padding-top: 8px;
   padding-top: 0.5rem;
-  padding-right: 16px;
-  padding-right: 1rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
   vertical-align: middle; }
   .c-button.c-button--grey-dark {
     background: #333333;
@@ -1784,12 +1790,12 @@ ul {
   font-size: 1.375rem;
   padding-top: 8px;
   padding-top: 0.5rem;
-  padding-right: 48px;
-  padding-right: 3rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 48px;
-  padding-left: 3rem;
+  padding-left: 32px;
+  padding-left: 2rem;
   border-radius: 32px;
   border-radius: 2rem; }
 
@@ -1799,12 +1805,12 @@ ul {
   font-size: 1.875rem;
   padding-top: 8px;
   padding-top: 0.5rem;
-  padding-right: 48px;
-  padding-right: 3rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 48px;
-  padding-left: 3rem;
+  padding-left: 32px;
+  padding-left: 2rem;
   border-radius: 48px;
   border-radius: 3rem; }
 
@@ -2382,8 +2388,6 @@ ul {
 
 .c-page-block {
   background: #F5F6F9;
-  border-bottom: 1px solid #E0E0E0;
-  border-top: 1px solid #E0E0E0;
   padding-top: 48px;
   padding-top: 3rem;
   padding-right: 0px;
@@ -2392,12 +2396,13 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
-  .c-page-block + .c-page-block {
-    border-top: none; }
 
 .c-page-block--alt-block {
   background: #FFF;
-  border: none; }
+  border-bottom: 1px solid #E0E0E0;
+  border-top: 1px solid #E0E0E0; }
+  .c-page-block--alt-block + .c-page-block--alt-block {
+    border-top: none; }
 
 .c-page-block--action-block {
   background: #5290D2;
@@ -2669,8 +2674,8 @@ ul {
   max-width: 100%;
   border-radius: 8px;
   border-radius: 0.5rem;
-  padding: 12px;
-  padding: 0.75rem;
+  padding: 16px;
+  padding: 1rem;
   position: relative; }
 
 .o-club-list__badge {
@@ -2736,11 +2741,13 @@ ul {
 .o-footer__social-list-item {
   display: inline-block;
   list-style: none;
-  margin-left: 4px;
-  margin-left: 0.25rem; }
+  margin-left: 8px;
+  margin-left: 0.5rem; }
 
 .o-footer__social-list-link {
   display: block; }
+  .o-footer__social-list-link:hover, .o-footer__social-list-link:active, .o-footer__social-list-link:focus {
+    opacity: 0.5; }
 
 .o-hero {
   background: #339933;
@@ -2772,9 +2779,13 @@ ul {
   margin-bottom: 0px;
   margin-bottom: 0rem;
   margin-left: 4px;
-  margin-left: 0.25rem; }
+  margin-left: 0.25rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-decoration: none; }
   .o-hero__nav-link:hover, .o-hero__nav-link:active, .o-hero__nav-link:focus {
-    color: #FFF; }
+    color: #FFF;
+    text-decoration: underline; }
 
 .o-hero__body {
   padding-top: 80px;
@@ -2785,7 +2796,10 @@ ul {
   padding-bottom: 5rem;
   padding-left: 64px;
   padding-left: 4rem;
-  text-align: center; }
+  text-align: center;
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto; }
 
 .o-hero__subtitle {
   max-width: 100%; }
