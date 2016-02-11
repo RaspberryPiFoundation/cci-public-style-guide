@@ -36,6 +36,7 @@
     background:     $white;
     border:         $border-size-base solid $grey-x-light;
     @include rem('border-radius', $border-radius-x-small);
+    color:          $grey-dark;
     display:        block;
     font-family:    $font-family-primary;
     font-weight:    $font-weight-base;

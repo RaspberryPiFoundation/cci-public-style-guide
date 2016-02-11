@@ -1,33 +1,33 @@
-@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+@mixin padding($top: null, $right: null, $bottom: null, $left: null, $important: null) {
   @if ($right == null and $bottom == null and $left == null) {
     @include rem('padding', $top);
   }
   @else {
     @if ($top != null) {
-      @include padding-top($top);
+      @include padding-top($top, $important);
     }
 
     @if ($right != null) {
-      @include padding-right($right);
+      @include padding-right($right, $important);
     }
 
     @if ($bottom != null) {
-      @include padding-bottom($bottom);
+      @include padding-bottom($bottom, $important);
     }
     @else if ($top != null) {
-      @include padding-bottom($top);
+      @include padding-bottom($top, $important);
     }
 
     @if ($left != null) {
-      @include padding-left($left);
+      @include padding-left($left, $important);
     }
     @else if ($right != null) {
-      @include padding-left($right);
+      @include padding-left($right, $important);
     }
   }
 }
 
-@mixin padding-top($value)    { @include rem('padding-top',    $value); }
-@mixin padding-right($value)  { @include rem('padding-right',  $value); }
-@mixin padding-bottom($value) { @include rem('padding-bottom', $value); }
-@mixin padding-left($value)   { @include rem('padding-left',   $value); }
+@mixin padding-top($value,    $important: null) { @include rem('padding-top',    $value, $important); }
+@mixin padding-right($value,  $important: null) { @include rem('padding-right',  $value, $important); }
+@mixin padding-bottom($value, $important: null) { @include rem('padding-bottom', $value, $important); }
+@mixin padding-left($value,   $important: null) { @include rem('padding-left',   $value, $important); }

@@ -4,16 +4,18 @@
 }
 
   .o-hero__nav {
+    margin:    0 auto;
+    max-width: $break-wide;
     @include padding($padding-x-small, $padding-xx-small);
   }
 
-    .o-hero__nav--left {
-      float: left;
-    }
+  .o-hero__nav-left {
+    float: left;
+  }
 
-    .o-hero__nav--right {
-      float: right;
-    }
+  .o-hero__nav-right {
+    float: right;
+  }
 
   .o-hero__nav-link {
     display: inline-block;

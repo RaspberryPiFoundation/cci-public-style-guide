@@ -1,0 +1,39 @@
+.u-margin--base            { @include margin($margin-base,            $important: true); }
+.u-margin--xx-small        { @include margin($margin-xx-small,        $important: true); }
+.u-margin--x-small         { @include margin($margin-x-small,         $important: true); }
+.u-margin--small           { @include margin($margin-small,           $important: true); }
+.u-margin--large           { @include margin($margin-large,           $important: true); }
+.u-margin--x-large         { @include margin($margin-x-large,         $important: true); }
+.u-margin--xx-large        { @include margin($margin-xx-large,        $important: true); }
+
+.u-margin-top--base        { @include margin-top($margin-base,        $important: true); }
+.u-margin-top--xx-small    { @include margin-top($margin-xx-small,    $important: true); }
+.u-margin-top--x-small     { @include margin-top($margin-x-small,     $important: true); }
+.u-margin-top--small       { @include margin-top($margin-small,       $important: true); }
+.u-margin-top--large       { @include margin-top($margin-large,       $important: true); }
+.u-margin-top--x-large     { @include margin-top($margin-x-large,     $important: true); }
+.u-margin-top--xx-large    { @include margin-top($margin-xx-large,    $important: true); }
+
+.u-margin-right--base      { @include margin-right($margin-base,      $important: true); }
+.u-margin-right--xx-small  { @include margin-right($margin-xx-small,  $important: true); }
+.u-margin-right--x-small   { @include margin-right($margin-x-small,   $important: true); }
+.u-margin-right--small     { @include margin-right($margin-small,     $important: true); }
+.u-margin-right--large     { @include margin-right($margin-large,     $important: true); }
+.u-margin-right--x-large   { @include margin-right($margin-x-large,   $important: true); }
+.u-margin-right--xx-large  { @include margin-right($margin-xx-large,  $important: true); }
+
+.u-margin-bottom--base     { @include margin-bottom($margin-base,     $important: true); }
+.u-margin-bottom--xx-small { @include margin-bottom($margin-xx-small, $important: true); }
+.u-margin-bottom--x-small  { @include margin-bottom($margin-x-small,  $important: true); }
+.u-margin-bottom--small    { @include margin-bottom($margin-small,    $important: true); }
+.u-margin-bottom--large    { @include margin-bottom($margin-large,    $important: true); }
+.u-margin-bottom--x-large  { @include margin-bottom($margin-x-large,  $important: true); }
+.u-margin-bottom--xx-large { @include margin-bottom($margin-xx-large, $important: true); }
+
+.u-margin-left--base       { @include margin-left($margin-base,       $important: true); }
+.u-margin-left--xx-small   { @include margin-left($margin-xx-small,   $important: true); }
+.u-margin-left--x-small    { @include margin-left($margin-x-small,    $important: true); }
+.u-margin-left--small      { @include margin-left($margin-small,      $important: true); }
+.u-margin-left--large      { @include margin-left($margin-large,      $important: true); }
+.u-margin-left--x-large    { @include margin-left($margin-x-large,    $important: true); }
+.u-margin-left--xx-large   { @include margin-left($margin-xx-large,   $important: true); }
