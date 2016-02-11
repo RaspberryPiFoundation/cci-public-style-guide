@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-45
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -2754,6 +2747,8 @@ ul {
   color: #FFF; }
 
 .o-hero__nav {
+  margin: 0 auto;
+  max-width: 75em;
   padding-top: 8px;
   padding-top: 0.5rem;
   padding-right: 4px;
@@ -2763,10 +2758,10 @@ ul {
   padding-left: 4px;
   padding-left: 0.25rem; }
 
-.o-hero__nav--left {
+.o-hero__nav-left {
   float: left; }
 
-.o-hero__nav--right {
+.o-hero__nav-right {
   float: right; }
 
 .o-hero__nav-link {
