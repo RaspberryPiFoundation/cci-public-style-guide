@@ -26,6 +26,55 @@
 	</code>
 </div>
 
+<h3>Labels or Placeholders?</h3>
+
+<p>
+	In order to maximise the accessibility and usability of your forms, all input fields should have an accompanying <code>&lt;label&gt;</code>
+	element. According to the HTML specification:
+</p>
+
+<blockquote>
+	<p>The placeholder attribute represents a short hint (a word or short phrase) intended to aid the user with data entry.
+	A hint could be a sample value or a brief description of the expected format.</p>
+	<p>&hellip;</p>
+	<p>The placeholder attribute should not be used as an alternative to a label.</p>
+</blockquote>
+
+<p>
+	I short, this means that your <code>&lt;input&gt;</code> fields should have a <code>&lt;label&gt;</code> to indicate
+	<em>the content your user is required to enter</em>, and an optional placeholder with an <em>example of that data</em>.
+</p>
+
+<p>
+	Here are a couple of examples. First, the <span class="u-color--red">bad</span>:
+</p>
+
+<div class="sg-example">
+	<h4 class="sg-example__heading">Example</h4>
+
+	<div class="sg-example__preview">
+		<input class="c-form__input" id="label_example" name="user[whatevers]" placeholder="Enter your email address" type="email">
+	</div>
+</div>
+
+<p>
+	And the correct way to show a form field with a label:
+</p>
+
+<div class="sg-example">
+	<h4 class="sg-example__heading">Example</h4>
+
+	<div class="sg-example__preview">
+		<label class="c-form__label" for="label_example">Enter your email address</label>
+		<input class="c-form__input" id="label_example" name="user[whatevers]" placeholder="example@domain.com" type="email">
+	</div>
+</div>
+
+<p>
+	Please also make sure that your labels and inputs are semantically associated with one another using a <code>for</code> attribute on
+	the label that corresponds with the <code>id</code> attribute on the intended input.
+</p>
+
 <h3>A note about buttons</h3>
 
 <p>
