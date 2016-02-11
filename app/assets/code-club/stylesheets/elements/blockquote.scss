@@ -1,8 +1,10 @@
 blockquote {
-	margin:    0;
+	background:  $grey-xx-light;
+	border-left: $border-size-large solid $grey-x-light;
+	margin:      0;
 	@include rem('margin-bottom', $margin-base);
-	max-width: $line-length-max;
-
+	@include padding($padding-small);
+	max-width:   $line-length-max;
 
 	p:before,
 	p:after {
@@ -14,7 +16,11 @@ blockquote {
 		content: '\201C';
 	}
 
-	p:last-of-type:after {
-		content: '\201D';
+	p:last-of-type {
+		margin-bottom: 0;
+
+		&:after {
+			content: '\201D';
+		}
 	}
 }
