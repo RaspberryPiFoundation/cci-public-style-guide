@@ -19,17 +19,23 @@
     display: inline-block;
     color:   $white;
     @include margin(0, $margin-xx-small);
+    @include rem('font-size', $font-size-small);
+    text-decoration: none;
 
     &:hover,
     &:active,
     &:focus {
       color: $white;
+      text-decoration: underline;
     }
   }
 
   .o-hero__body {
     @include padding($padding-xxxx-large, $padding-xxx-large);
     text-align: center;
+    max-width:55em;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .o-hero__subtitle {

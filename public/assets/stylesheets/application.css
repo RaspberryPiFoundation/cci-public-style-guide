@@ -103,13 +103,6 @@
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
-.sg-example__card {
-  float: left;
-  margin-left: 2%;
-  width: 32%; }
-  .sg-example__card:first-of-type {
-    margin-left: 0; }
-
 .sg-example__code {
   border-radius: 8px;
   border-radius: 0.5rem;

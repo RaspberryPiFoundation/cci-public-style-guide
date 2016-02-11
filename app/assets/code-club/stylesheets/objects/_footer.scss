@@ -43,9 +43,16 @@
     .o-footer__social-list-item {
       display:    inline-block;
       list-style: none;
-      @include margin-left($margin-xx-small);
+      @include margin-left($margin-x-small);
     }
 
       .o-footer__social-list-link {
         display: block;
+
+        &:hover,
+        &:active,
+        &:focus {
+          opacity:0.5;
+        }
+
       }
