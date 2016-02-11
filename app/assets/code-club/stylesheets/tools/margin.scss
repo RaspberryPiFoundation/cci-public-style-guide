@@ -1,33 +1,33 @@
-@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+@mixin margin($top: null, $right: null, $bottom: null, $left: null, $important: null) {
   @if ($right == null and $bottom == null and $left == null) {
     @include rem('margin', $top);
   }
   @else {
     @if ($top != null) {
-      @include margin-top($top);
+      @include margin-top($top, $important);
     }
 
     @if ($right != null) {
-      @include margin-right($right);
+      @include margin-right($right, $important);
     }
 
     @if ($bottom != null) {
-      @include margin-bottom($bottom);
+      @include margin-bottom($bottom, $important);
     }
     @else if ($top != null) {
-      @include margin-bottom($top);
+      @include margin-bottom($top, $important);
     }
 
     @if ($left != null) {
-      @include margin-left($left);
+      @include margin-left($left, $important);
     }
     @else if ($right != null) {
-      @include margin-left($right);
+      @include margin-left($right, $important);
     }
   }
 }
 
-@mixin margin-top($value)    { @include rem('margin-top',    $value); }
-@mixin margin-right($value)  { @include rem('margin-right',  $value); }
-@mixin margin-bottom($value) { @include rem('margin-bottom', $value); }
-@mixin margin-left($value)   { @include rem('margin-left',   $value); }
+@mixin margin-top($value,    $important: null) { @include rem('margin-top',    $value, $important); }
+@mixin margin-right($value,  $important: null) { @include rem('margin-right',  $value, $important); }
+@mixin margin-bottom($value, $important: null) { @include rem('margin-bottom', $value, $important); }
+@mixin margin-left($value,   $important: null) { @include rem('margin-left',   $value, $important); }
