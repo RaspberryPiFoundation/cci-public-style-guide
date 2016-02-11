@@ -7,6 +7,7 @@
     background: $white;
     border-bottom: $border-size-base solid $grey-x-light;
     border-top:    $border-size-base solid $grey-x-light;
+
     + .c-page-block--alt-block {
       border-top: none;
     }
