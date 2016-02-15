@@ -25,4 +25,15 @@
         color: $white;
       }
     }
+
+    .c-button--action-button {
+      background:   $white;
+      border-color: $white;
+      color:        $blue;
+
+      &:hover {
+        color:      $white;
+        background: $blue;
+      }
+    }
   }

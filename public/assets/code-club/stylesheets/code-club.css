@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-49
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -1765,14 +1758,6 @@ ul {
         background: #FFF;
         color: #339933; }
 
-.c-button--action-button {
-  background: #FFF;
-  border-color: #FFF;
-  color: #5290D2; }
-  .c-button--action-button:hover {
-    color: #FFF;
-    background: #5290D2; }
-
 .c-button--block {
   display: block; }
 
@@ -2426,6 +2411,13 @@ ul {
     color: #FFF; }
     .c-page-block--action-block a:hover {
       color: #FFF; }
+  .c-page-block--action-block .c-button--action-button {
+    background: #FFF;
+    border-color: #FFF;
+    color: #5290D2; }
+    .c-page-block--action-block .c-button--action-button:hover {
+      color: #FFF;
+      background: #5290D2; }
 
 .c-strip-table {
   border-collapse: collapse;
