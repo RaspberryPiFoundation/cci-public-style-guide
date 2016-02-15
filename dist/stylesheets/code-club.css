@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v0.0.1-47
+ * @version v0.0.1-48
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1555,6 +1555,8 @@ ul {
 
 .c-alert {
   background: #C2C2C2;
+  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #FFF;
   display: block;
   font-weight: 500;
@@ -2015,7 +2017,9 @@ ul {
   background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
-  border-radius: 0.75rem; }
+  border-radius: 0.75rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
 
 .c-form__input-group-checkbox:checked + .c-form__input-group-label,
 .c-form__input-group-radio:checked + .c-form__input-group-label {
@@ -3050,6 +3054,7 @@ ul {
     color: #333333; }
 
 .o-nav-stacked {
+  background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 16px;
   border-radius: 1rem;
