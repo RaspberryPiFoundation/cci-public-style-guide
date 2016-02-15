@@ -1758,6 +1758,14 @@ ul {
         background: #FFF;
         color: #339933; }
 
+.c-button--action-button {
+  background: #FFF;
+  border-color: #FFF;
+  color: #5290D2; }
+  .c-button--action-button:hover {
+    color: #FFF;
+    background: #5290D2; }
+
 .c-button--block {
   display: block; }
 
