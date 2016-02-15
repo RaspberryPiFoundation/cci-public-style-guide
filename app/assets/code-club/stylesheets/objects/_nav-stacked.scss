@@ -1,8 +1,9 @@
 .o-nav-stacked {
-  border:  $border-size-base solid $grey-x-light;
+  background: $white;
+  border:     $border-size-base solid $grey-x-light;
   @include rem('border-radius', $border-radius-base);
   @include margin(0, 0, $margin-base);
-  padding: 0;
+  padding:    0;
 }
 
   .o-nav-stacked__list {
