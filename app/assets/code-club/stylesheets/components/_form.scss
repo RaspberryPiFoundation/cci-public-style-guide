@@ -99,6 +99,7 @@
     border:     $border-size-base solid $grey-x-light;
     @include rem('border-radius', $border-radius-small);
     @include margin-bottom($margin-base);
+    overflow:   hidden;
   }
 
     .c-form__input-group-checkbox,
