@@ -348,7 +348,7 @@ gulp.task('set_release_vars', function (callback) {
 });
 
 gulp.task('bump_version_number', ['set_release_vars'], function () {
-  var type = 'prerelease';
+  var type = 'patch';
 
   if (undefined !== util.env.type) {
     type = util.env.type;
