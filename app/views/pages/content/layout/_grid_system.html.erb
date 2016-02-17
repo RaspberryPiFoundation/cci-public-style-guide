@@ -4,24 +4,28 @@
   The Code Club assets contain <%= link_to "Flexbox Grid", "http://flexboxgrid.com" %>
   to provide a responsive grid system. Head over to <%= link_to "flexboxgrid.com", "http://flexboxgrid.com" %>
   for full documentation about how to use it. However, before employing the grid
-  please be mindful of the following DOs and DON'Ts.
+  please be mindful of the following <strong>DO</strong>s and <strong>DON'T</strong>s.
 </p>
 
 <h3>DO</h3>
 
 <ul>
   <li>
-    Use it! If you find yourself writing styles to create a layout, there's a
-    very good chance that you could achieve the same results with the grid system.
+    <strong>DO</strong> use it! If you find yourself writing your own CSS to create a
+    page layout, there's a very good chance that you could achieve the same results
+    with the grid system.
   </li>
+
   <li>
-    Keep it <em>simple</em>. While we do encourage creative use of these assets,
-    it's important to maximise legibility of your content. With that in mind,
-    don't let your layouts become too complicated!
+    <strong>DO</strong> keep it simple. While we do encourage creative use of
+    these assets, it's important to maximise legibility of your content. With
+    that in mind, don't let your layouts become too complicated!
   </li>
+
   <li>
-    Think responsively. Flexbox Grid provides many options for controlling how your
-    grid's rows and columns react based on the user's browser width.
+    <strong>DO</strong> think responsively. Flexbox Grid provides many options
+    for controlling how your grid's rows and columns react based on the user's
+    browser width.
   </li>
 </ul>
 
@@ -29,16 +33,17 @@
 
 <ul>
   <li>
-    Be sure to always use grid classes by themselves. Don't combine styleguide-specific
-    classes on the same element as a grid component.
+    <strong>DON'T</strong> use styleguide-specific classes on the same element
+    as a grid component.
   </li>
+
   <li>
-    Use it correctly! Wrap your <code>col</code>s in <code>row</code>s, and your
-    <code>row</code>s in a <code>container</code>.
+    <strong>DON'T</strong> nest elements incorrectly! Be sure to wrap your
+    <code>col</code>s in <code>row</code>s, and your <code>row</code>s in a
+    <code>container</code>.
   </li>
+
   <li>
-    Use it with <%= link_to "cards", page_path('modules', 'cards') %>. They have
-    their own <code>.o-card-container</code> wrapper element. Check the documentation
-    on cards for more details.
+    <strong>DON'T</strong> use it to display <%= link_to "horizontal navigation", page_path('modules', 'secondary-navigation') %>.
   </li>
 </ul>

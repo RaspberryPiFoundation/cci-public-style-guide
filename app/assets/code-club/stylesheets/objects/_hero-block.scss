@@ -4,8 +4,6 @@
 }
 
   .o-hero__nav {
-    margin:    0 auto;
-    max-width: $break-wide;
     @include padding($padding-x-small, $padding-xx-small);
   }
 
@@ -34,10 +32,9 @@
 
   .o-hero__body {
     @include padding($padding-xxxx-large, $padding-xxx-large);
+    max-width:  $hero-body-max-width;
+    margin:     0 auto;
     text-align: center;
-    max-width:55em;
-    margin-left:auto;
-    margin-right:auto;
   }
 
   .o-hero__subtitle {
