@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.0
+ * @version v1.0.1
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2461,8 +2461,7 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  max-width: 75em; }
+  width: 100%; }
 
 .o-card {
   background: #FFF;
@@ -2767,8 +2766,6 @@ ul {
   color: #FFF; }
 
 .o-hero__nav {
-  margin: 0 auto;
-  max-width: 75em;
   padding-top: 8px;
   padding-top: 0.5rem;
   padding-right: 4px;
@@ -2811,10 +2808,9 @@ ul {
   padding-bottom: 5rem;
   padding-left: 64px;
   padding-left: 4rem;
-  text-align: center;
   max-width: 55em;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .o-hero__subtitle {
   max-width: 100%; }
