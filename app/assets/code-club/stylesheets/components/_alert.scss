@@ -1,10 +1,8 @@
 .c-alert {
   background:  $grey-light;
-  @include rem('border-radius', $border-radius-x-small);
   color:       $white;
   display:     block;
   font-weight: $font-weight-bold;
-  @include margin-bottom($margin-large);
   @include padding($padding-small);
   text-align:  center;
 }
