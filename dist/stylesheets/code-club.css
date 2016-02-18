@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.1
+ * @version v1.0.2
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1257,6 +1257,17 @@ th,
 th {
   visibility: visible; }
 
+.container {
+  max-width: 75em;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  padding-left: 20px;
+  padding-left: 1.25rem; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -1555,13 +1566,9 @@ ul {
 
 .c-alert {
   background: #C2C2C2;
-  border-radius: 8px;
-  border-radius: 0.5rem;
   color: #FFF;
   display: block;
   font-weight: 500;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
   padding: 12px;
   padding: 0.75rem;
   text-align: center; }
@@ -2835,37 +2842,21 @@ ul {
 .o-nav {
   background: #FFF;
   border-bottom: 1px solid #E0E0E0; }
-
-.o-nav__inner {
-  margin: 0 auto;
-  max-width: 75em; }
+  .o-nav .c-logo {
+    padding: 8px;
+    padding: 0.5rem; }
   @media only screen and (min-width: 48em) and (max-width: 64em) {
-    .o-nav__inner {
-      padding-top: 12px;
-      padding-top: 0.75rem;
-      padding-right: 12px;
-      padding-right: 0.75rem;
-      padding-bottom: 0px;
-      padding-bottom: 0rem;
-      padding-left: 12px;
-      padding-left: 0.75rem; }
-      .o-nav__inner .c-logo {
-        display: block;
-        text-align: center; }
-      .o-nav__inner .c-logo__image {
-        float: none; }
-      .o-nav__inner .c-logo__appendix {
-        display: block;
-        float: none;
-        margin-top: 6px;
-        margin-top: 0.375rem;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.2;
-        text-indent: 0; } }
-  @media only screen and (min-width: 64em) {
-    .o-nav__inner .c-logo {
-      float: left; } }
+    .o-nav .c-logo__image {
+      float: none; }
+    .o-nav .c-logo__appendix {
+      display: block;
+      float: none;
+      margin-top: 6px;
+      margin-top: 0.375rem;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.2;
+      text-indent: 0; } }
 
 .o-nav__toggle-input {
   display: none; }
@@ -2999,7 +2990,6 @@ ul {
 @media only screen and (min-width: 64em) {
   .o-nav__list-container {
     background: none;
-    float: right;
     height: auto;
     opacity: 1;
     padding: 6px;
@@ -3008,6 +2998,7 @@ ul {
     width: auto; }
   .o-nav__list {
     display: block;
+    float: right;
     font-size: 16px;
     font-size: 1rem;
     position: static;
