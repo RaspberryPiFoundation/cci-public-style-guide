@@ -21,26 +21,28 @@
 
   <body>
     <header class="o-nav">
-      <div class="o-nav__inner">
-        <div class="c-logo">
-          <a href="/" class="c-logo__link">
-            <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
-            <div class="c-logo__appendix">Example page</div>
-          </a>
+      <div class="container">
+        <div class="row center-sm start-md between-md">
+          <div class="col-xs-12 col-sm-12 col-md-3 c-logo">
+            <a href="/" class="c-logo__link">
+              <img alt="" class="c-logo__image" src="/assets/code-club/images/code-club-logo.svg">
+              <div class="c-logo__appendix">Example page</div>
+            </a>
+          </div>
+
+          <input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
+          <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input"><span></span></label>
+
+          <nav class="o-nav__list-container col-md-9">
+            <ul class="o-nav__list">
+              <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
+              <li class="o-nav__item"><a class="o-nav__link" href="#">Sign Out</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <input class="o-nav__toggle-input" id="off-canvas-nav-toggle-input" type="checkbox">
-        <label class="o-nav__toggle-label" for="off-canvas-nav-toggle-input"><span></span></label>
-
-        <nav class="o-nav__list-container">
-          <ul class="o-nav__list">
-            <li class="o-nav__item"><a class="o-nav__link" href="#">About</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Projects</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Contact</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Your Club Hub</a></li>
-            <li class="o-nav__item"><a class="o-nav__link" href="#">Sign Out</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
