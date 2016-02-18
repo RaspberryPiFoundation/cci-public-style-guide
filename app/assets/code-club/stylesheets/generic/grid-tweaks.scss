@@ -1,5 +1,4 @@
-.container,
-.container-fluid {
+.container {
   max-width: $break-wide;
-  @include padding(0, $padding-x-small);
+  @include padding(0, $padding-large);
 }
