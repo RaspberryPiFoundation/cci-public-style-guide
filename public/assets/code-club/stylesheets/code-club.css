@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.3
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -1258,7 +1251,7 @@ th {
   visibility: visible; }
 
 .container {
-  max-width: 75em;
+  max-width: 75rem;
   padding-top: 0px;
   padding-top: 0rem;
   padding-right: 20px;
@@ -2845,7 +2838,7 @@ ul {
   .o-nav .c-logo {
     padding: 8px;
     padding: 0.5rem; }
-  @media only screen and (min-width: 48em) and (max-width: 64em) {
+  @media only screen and (min-width: 48rem) and (max-width: 64rem) {
     .o-nav .c-logo__image {
       float: none; }
     .o-nav .c-logo__appendix {
@@ -2891,7 +2884,7 @@ ul {
   transition: all 0.25s ease-in-out;
   width: 30px;
   z-index: 1000; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 48rem) {
     .o-nav__toggle-label {
       display: none; } }
   .o-nav__toggle-label:before, .o-nav__toggle-label span, .o-nav__toggle-label:after {
@@ -2961,7 +2954,7 @@ ul {
     color: #333333;
     text-decoration: none; }
 
-@media only screen and (min-width: 48em) and (max-width: 64em) {
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
   .o-nav__list-container {
     background: none;
     display: inline-block;
@@ -2987,7 +2980,7 @@ ul {
       color: #333333;
       text-decoration: underline; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64rem) {
   .o-nav__list-container {
     background: none;
     height: auto;
