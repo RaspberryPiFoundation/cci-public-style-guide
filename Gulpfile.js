@@ -396,7 +396,13 @@ gulp.task('copy_to_dist', ['clear_old_assets'], function () {
   return gulp.src(dist_dirs.source).pipe(gulp.dest(dist_dirs.dest));
 });
 
-gulp.task('release', ['copy_to_dist'], function (callback) {
+gulp.task('remove_sourcemaps', ['copy_to_dist'], function (callback) {
+  return exec('find ./dist -name "*.map" -type f -delete', function () {
+    return callback();
+  });
+});
+
+gulp.task('release', ['remove_sourcemaps'], function (callback) {
   var tag_version = 'v' + pkg.version;
   var commit_msg  = 'Committing changes for ' + tag_version;
 
