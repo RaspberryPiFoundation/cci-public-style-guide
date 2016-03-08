@@ -38,6 +38,7 @@
   }
 
   .o-hero__subtitle {
+    @include rem('font-size', $font-size-large);
     max-width: 100%;
   }
 
