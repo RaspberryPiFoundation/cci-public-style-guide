@@ -4,7 +4,6 @@ blockquote {
 	margin:      0;
 	@include rem('margin-bottom', $margin-base);
 	@include padding($padding-small);
-	max-width:   $line-length-max;
 
 	p:before,
 	p:after {

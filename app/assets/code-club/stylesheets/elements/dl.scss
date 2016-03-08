@@ -1,7 +1,6 @@
 dl {
-	margin:    0;
+	margin: 0;
 	@include rem('margin-bottom', $margin-base);
-	max-width: $line-length-max;
 
 	dd {
     margin: 0;
