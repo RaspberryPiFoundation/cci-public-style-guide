@@ -1,7 +1,7 @@
 .c-button {
   @include rem('border-radius', $border-radius-large);
   background:      $grey-med;
-  border:          $border-size-large solid $grey-med;
+  border:          $border-size-x-large solid $grey-med;
   display:         inline-block;
   color:           $white;
   text-align:      center;
@@ -80,6 +80,7 @@
   .c-button--squared { @include rem('border-radius', $border-radius-x-small); }
 
   .c-button--small {
+    border-width: $border-size-large;
     @include rem('font-size', $button-font-size-small);
     @include padding($button-padding-small--y, $button-padding-small--x);
     @include rem('border-radius', $border-radius-x-large);
@@ -93,7 +94,7 @@
   }
 
   .c-button--x-large {
-    border-width: $border-size-x-large;
+    border-width: $border-size-xx-large;
     @include rem('font-size', $button-font-size-x-large);
     @include padding($button-padding-x-large--y, $button-padding-x-large--x);
     @include rem('border-radius', $border-radius-xx-large);

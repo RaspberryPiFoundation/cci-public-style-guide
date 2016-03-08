@@ -1347,8 +1347,7 @@ blockquote {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding: 12px;
-  padding: 0.75rem;
-  max-width: 40em; }
+  padding: 0.75rem; }
   blockquote p:before,
   blockquote p:after {
     display: inline-block;
@@ -1366,8 +1365,7 @@ button {
   font-weight: 500; }
 
 cite {
-  display: block;
-  max-width: 40em; }
+  display: block; }
 
 code {
   background: #F5F6F9;
@@ -1388,8 +1386,7 @@ code {
 dl {
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  max-width: 40em; }
+  margin-bottom: 1rem; }
   dl dd {
     margin: 0; }
   dl dt {
@@ -1408,8 +1405,7 @@ figure {
     display: block;
     max-width: 100%; }
   figure figcaption {
-    font-style: italic;
-    max-width: 40em; }
+    font-style: italic; }
 
 form {
   margin-bottom: 16px;
@@ -1502,16 +1498,14 @@ ol {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
   ol li {
-    list-style: decimal;
-    max-width: 40em; }
+    list-style: decimal; }
   ol ol, ol ul {
     margin-bottom: 0; }
 
 p {
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  max-width: 40em; }
+  margin-bottom: 1rem; }
 
 pre {
   margin: 0;
@@ -1552,8 +1546,7 @@ ul {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
   ul li {
-    list-style: disc;
-    max-width: 40em; }
+    list-style: disc; }
   ul ol, ul ul {
     margin-bottom: 0; }
 
@@ -1646,7 +1639,7 @@ ul {
   border-radius: 24px;
   border-radius: 1.5rem;
   background: #848484;
-  border: 2px solid #848484;
+  border: 3px solid #848484;
   display: inline-block;
   color: #FFF;
   text-align: center;
@@ -1773,6 +1766,7 @@ ul {
   border-radius: 0.5rem; }
 
 .c-button--small {
+  border-width: 2px;
   font-size: 12px;
   font-size: 0.75rem;
   padding-top: 8px;
@@ -1802,7 +1796,7 @@ ul {
   border-radius: 2rem; }
 
 .c-button--x-large {
-  border-width: 3px;
+  border-width: 4px;
   font-size: 30px;
   font-size: 1.875rem;
   padding-top: 8px;
