@@ -2722,6 +2722,13 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
+  .o-footer a {
+    color: #FFF;
+    font-weight: 100;
+    text-decoration: none; }
+    .o-footer a:active, .o-footer a:focus, .o-footer a:hover {
+      color: #FFF;
+      text-decoration: underline; }
 
 .o-footer__heading {
   font-weight: 500;
@@ -2736,14 +2743,6 @@ ul {
 .o-footer__list-item {
   line-height: 1.57143;
   list-style: none; }
-
-.o-footer__list-link {
-  color: #FFF;
-  font-weight: 100;
-  text-decoration: none; }
-  .o-footer__list-link:active, .o-footer__list-link:focus, .o-footer__list-link:hover {
-    color: #FFF;
-    text-decoration: underline; }
 
 .o-footer__social-list {
   margin: 0;

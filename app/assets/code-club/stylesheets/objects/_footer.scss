@@ -4,6 +4,19 @@
   @include font-size($font-size-small);
   font-weight: $font-weight-light;
   @include padding($padding-xxxx-large, 0, $padding-xx-large);
+
+  a {
+    color:           $white;
+    font-weight:     $font-weight-light;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color:           $white;
+      text-decoration: underline;
+    }
+  }
 }
 
   .o-footer__heading {
@@ -20,19 +33,6 @@
       @include line-height($font-size-small, $line-height-base);
       list-style: none;
     }
-
-      .o-footer__list-link {
-        color:           $white;
-        font-weight:     $font-weight-light;
-        text-decoration: none;
-
-        &:active,
-        &:focus,
-        &:hover {
-          color:           $white;
-          text-decoration: underline;
-        }
-      }
 
   .o-footer__social-list {
     margin:     0;
