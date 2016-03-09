@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.5
+ * @version v1.0.6
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1354,8 +1354,7 @@ blockquote {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding: 12px;
-  padding: 0.75rem;
-  max-width: 40em; }
+  padding: 0.75rem; }
   blockquote p:before,
   blockquote p:after {
     display: inline-block;
@@ -1373,8 +1372,7 @@ button {
   font-weight: 500; }
 
 cite {
-  display: block;
-  max-width: 40em; }
+  display: block; }
 
 code {
   background: #F5F6F9;
@@ -1395,8 +1393,7 @@ code {
 dl {
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  max-width: 40em; }
+  margin-bottom: 1rem; }
   dl dd {
     margin: 0; }
   dl dt {
@@ -1415,8 +1412,7 @@ figure {
     display: block;
     max-width: 100%; }
   figure figcaption {
-    font-style: italic;
-    max-width: 40em; }
+    font-style: italic; }
 
 form {
   margin-bottom: 16px;
@@ -1509,16 +1505,14 @@ ol {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
   ol li {
-    list-style: decimal;
-    max-width: 40em; }
+    list-style: decimal; }
   ol ol, ol ul {
     margin-bottom: 0; }
 
 p {
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  max-width: 40em; }
+  margin-bottom: 1rem; }
 
 pre {
   margin: 0;
@@ -1559,8 +1553,7 @@ ul {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
   ul li {
-    list-style: disc;
-    max-width: 40em; }
+    list-style: disc; }
   ul ol, ul ul {
     margin-bottom: 0; }
 
@@ -1653,7 +1646,7 @@ ul {
   border-radius: 24px;
   border-radius: 1.5rem;
   background: #848484;
-  border: 2px solid #848484;
+  border: 3px solid #848484;
   display: inline-block;
   color: #FFF;
   text-align: center;
@@ -1780,6 +1773,7 @@ ul {
   border-radius: 0.5rem; }
 
 .c-button--small {
+  border-width: 2px;
   font-size: 12px;
   font-size: 0.75rem;
   padding-top: 8px;
@@ -1809,7 +1803,7 @@ ul {
   border-radius: 2rem; }
 
 .c-button--x-large {
-  border-width: 3px;
+  border-width: 4px;
   font-size: 30px;
   font-size: 1.875rem;
   padding-top: 8px;
@@ -2729,6 +2723,13 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
+  .o-footer a {
+    color: #FFF;
+    font-weight: 100;
+    text-decoration: none; }
+    .o-footer a:active, .o-footer a:focus, .o-footer a:hover {
+      color: #FFF;
+      text-decoration: underline; }
 
 .o-footer__heading {
   font-weight: 500;
@@ -2744,24 +2745,28 @@ ul {
   line-height: 1.57143;
   list-style: none; }
 
-.o-footer__list-link {
-  color: #FFF;
-  font-weight: 100;
-  text-decoration: none; }
-  .o-footer__list-link:active, .o-footer__list-link:focus, .o-footer__list-link:hover {
-    color: #FFF;
-    text-decoration: underline; }
-
 .o-footer__social-list {
-  margin: 0;
-  padding: 0;
-  text-align: right; }
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  margin-right: 0px;
+  margin-right: 0rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  margin-left: 0px;
+  margin-left: 0rem;
+  padding: 0; }
+  @media only screen and (min-width: 64rem) {
+    .o-footer__social-list {
+      margin: 0;
+      text-align: right; } }
 
 .o-footer__social-list-item {
   display: inline-block;
   list-style: none;
   margin-left: 8px;
   margin-left: 0.5rem; }
+  .o-footer__social-list-item:first-child {
+    margin-left: 0; }
 
 .o-footer__social-list-link {
   display: block; }
@@ -2820,6 +2825,8 @@ ul {
   text-align: center; }
 
 .o-hero__subtitle {
+  font-size: 20px;
+  font-size: 1.25rem;
   max-width: 100%; }
 
 .o-hero__list {
