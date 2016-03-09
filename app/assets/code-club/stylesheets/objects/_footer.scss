@@ -35,15 +35,23 @@
     }
 
   .o-footer__social-list {
-    margin:     0;
-    padding:    0;
-    text-align: right;
+    @include margin($margin-x-small, 0, 0);
+    padding: 0;
+
+    @include respond-to('regular') {
+      margin:     0;
+      text-align: right;
+    }
   }
 
     .o-footer__social-list-item {
       display:    inline-block;
       list-style: none;
       @include margin-left($margin-x-small);
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
 
       .o-footer__social-list-link {
