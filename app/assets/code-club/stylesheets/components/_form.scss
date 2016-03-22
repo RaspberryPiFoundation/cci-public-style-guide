@@ -96,6 +96,11 @@
       @include rem('width', $input-width-base);
     }
 
+    .c-form__select--width-xs { @include rem('width', $select-width-x-small); }
+    .c-form__select--width-s  { @include rem('width', $select-width-small);   }
+    .c-form__select--width-l  { @include rem('width', $select-width-large);   }
+    .c-form__select--width-xl { @include rem('width', $select-width-x-large); }
+
   .c-form__textarea {
     background:     $white;
     border:         $border-size-base solid $grey-x-light;
