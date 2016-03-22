@@ -119,6 +119,10 @@
     }
   }
 
+    .c-form__textarea--error {
+      border-color: $red;
+    }
+
   .c-form__input-group {
     background: $white;
     border:     $border-size-base solid $grey-x-light;
@@ -145,7 +149,6 @@
         background-image: url('../images/radio-checked.svg');
       }
     }
-
 
     .c-form__input-group-label {
       background: url('../images/checkbox-empty.svg') 15px center no-repeat;
