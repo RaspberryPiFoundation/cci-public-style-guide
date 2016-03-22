@@ -60,6 +60,11 @@
       @include rem('width', $input-width-base);
     }
 
+    .c-form__input--width-xs { @include rem('width', $input-width-x-small); }
+    .c-form__input--width-s  { @include rem('width', $input-width-small);   }
+    .c-form__input--width-l  { @include rem('width', $input-width-large);   }
+    .c-form__input--width-xl { @include rem('width', $input-width-x-large); }
+
   .c-form__select {
     appearance:     none;
     background:     $white url('../images/select-arrow.svg') right center no-repeat;
