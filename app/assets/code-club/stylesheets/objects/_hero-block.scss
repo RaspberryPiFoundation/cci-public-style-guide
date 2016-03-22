@@ -4,7 +4,7 @@
 }
 
   .o-hero__nav {
-    @include padding($padding-x-small, $padding-xx-small);
+    @include padding($padding-x-small, 0);
   }
 
   .o-hero__nav-left {
