@@ -90,6 +90,12 @@
       border-color: $red;
     }
 
+    .c-form__select--inline {
+      display: inline;
+      @include margin-right($margin-x-small);
+      @include rem('width', $input-width-base);
+    }
+
   .c-form__textarea {
     background:     $white;
     border:         $border-size-base solid $grey-x-light;
