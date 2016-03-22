@@ -1,5 +1,11 @@
-$input-width-base:    $font-size-base   * 10;
-$input-width-x-small: $input-width-base * 0.5;
-$input-width-small:   $input-width-base * 0.75;
-$input-width-large:   $input-width-base * 1.25;
-$input-width-x-large: $input-width-base * 1.5;
+$input-width-base:     $font-size-base    * 10;
+$input-width-x-small:  $input-width-base  * 0.5;
+$input-width-small:    $input-width-base  * 0.75;
+$input-width-large:    $input-width-base  * 1.25;
+$input-width-x-large:  $input-width-base  * 1.5;
+
+$select-width-base:    $font-size-base    * 10;
+$select-width-x-small: $select-width-base * 0.5;
+$select-width-small:   $select-width-base * 0.75;
+$select-width-large:   $select-width-base * 1.25;
+$select-width-x-large: $select-width-base * 1.5;
