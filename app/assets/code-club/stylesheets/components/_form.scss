@@ -29,7 +29,6 @@
 
   .c-form__optional {
     color: $grey-light;
-    @include rem('font-size', $font-size-xx-small);
   }
 
   .c-form__input {
