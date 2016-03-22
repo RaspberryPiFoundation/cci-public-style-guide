@@ -54,6 +54,12 @@
       border-color: $red;
     }
 
+    .c-form__input--inline {
+      display: inline;
+      @include margin-right($margin-x-small);
+      @include rem('width', $input-width-base);
+    }
+
   .c-form__select {
     appearance:     none;
     background:     $white url('../images/select-arrow.svg') right center no-repeat;
