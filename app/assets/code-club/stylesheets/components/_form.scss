@@ -86,6 +86,10 @@
     }
   }
 
+    .c-form__select--error {
+      border-color: $red;
+    }
+
   .c-form__textarea {
     background:     $white;
     border:         $border-size-base solid $grey-x-light;
