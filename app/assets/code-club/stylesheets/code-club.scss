@@ -28,9 +28,11 @@
 
 //  Generic Styles
 @import 'generic/normalize';
-@import 'generic/fout-fix';
+
 @import 'generic/box-sizing';
 @import 'generic/clearfixed-elements';
+@import 'generic/fout-fix';
+@import 'generic/grid';
 
 //  Elements
 @import 'elements/_html-body';
