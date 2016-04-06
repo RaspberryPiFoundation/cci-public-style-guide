@@ -1,16 +1,22 @@
 module ExamplesHelper
 
-  def render_example(render_code = true, &block)
+  def render_example(options, &block)
+    options = {
+      :with_code => true,
+      :only_code => false
+    }.merge(options)
+
     content_tag(:div, :class => 'sg-example') do
       output = ''
+      output << content_tag(:div, 'Example', :class => 'sg-example__heading')
 
-      output << content_tag(:div, 'Example', :class => 'sg-example__preview')
-
-      output << content_tag(:div, :class => 'sg-example__preview') do
-        yield
+      if !options[:only_code]
+        output << content_tag(:div, :class => 'sg-example__preview') do
+          yield
+        end
       end
 
-      if render_code
+      if options[:with_code]
         output << content_tag(:code, :class => 'sg-example__code') do
           convert_code(capture(&block))
         end
