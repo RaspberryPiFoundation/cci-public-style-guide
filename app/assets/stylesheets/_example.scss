@@ -15,4 +15,8 @@
 
   .sg-example__preview {
     @include margin-bottom($margin-base);
+
+    &:last-child {
+      margin: 0;
+    }
   }
