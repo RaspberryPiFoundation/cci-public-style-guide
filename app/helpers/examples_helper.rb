@@ -1,6 +1,6 @@
 module ExamplesHelper
 
-  def render_example(options, &block)
+  def render_example(options = {}, &block)
     options = {
       :with_code => true,
       :only_code => false
