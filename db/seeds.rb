@@ -37,5 +37,6 @@ Page.create!([
   { path: "footer",               title: "Footer",                order: 60,  section_id: 5, show_in_nav: true, example_page: false },
 
   { path: "stacked-content",      title: "Stacked Content",       order: 10,  section_id: 6, show_in_nav: true, example_page: true  },
-  { path: "column-content",       title: "Column Content",        order: 20,  section_id: 6, show_in_nav: true, example_page: true  }
+  { path: "column-content",       title: "Column Content",        order: 20,  section_id: 6, show_in_nav: true, example_page: true  },
+  { path: "grid-demo",            title: "Grid Demo",             order: 30,  section_id: 6, show_in_nav: true, example_page: true  }
 ])
