@@ -1,4 +1,5 @@
 include ColorsHelper
+include ExamplesHelper
 include IconsHelper
 
 class PagesController < ApplicationController
