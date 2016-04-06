@@ -102,6 +102,8 @@
 .sg-example__preview {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
+  .sg-example__preview:last-child {
+    margin: 0; }
 
 .sg-example__code {
   border-radius: 8px;
