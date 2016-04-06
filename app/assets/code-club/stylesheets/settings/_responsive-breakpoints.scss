@@ -1,0 +1,8 @@
+//  Tablet portrait and narrower: 37.5rem * 16px = 600px
+$break-narrow:  37.5rem;
+
+//  Tablet landscape, laptops, and wider: 56.25rem * 6px = 900px
+$break-regular: 56.25rem;
+
+//  Wider screens: 75rem * 16px = 1200px
+$break-wide:    75rem;
