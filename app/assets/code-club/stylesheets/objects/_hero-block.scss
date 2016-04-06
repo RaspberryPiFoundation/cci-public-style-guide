@@ -25,16 +25,22 @@
     &:hover,
     &:active,
     &:focus {
-      color: $white;
+      color:           $white;
       text-decoration: underline;
     }
   }
 
   .o-hero__body {
-    @include padding($padding-xxxx-large, $padding-xxx-large);
+    @include padding($padding-xxxx-large, 0);
     max-width:  $hero-body-max-width;
     margin:     0 auto;
     text-align: center;
+  }
+
+  .o-hero__title {
+    &:last-child {
+      margin: 0;
+    }
   }
 
   .o-hero__subtitle {
