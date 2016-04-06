@@ -35,6 +35,12 @@ module ExamplesHelper
     # Replace spaces with non-breaking spaces
     html.gsub!(' ', '&nbsp;')
 
+    # Replace references to local assets with path from bower package
+    location_local = 'assets/code-club/'
+    location_bower = 'bower_components/code-club/dist/'
+
+    html.gsub!(location_local, location_bower)
+
     return raw html
   end
 
