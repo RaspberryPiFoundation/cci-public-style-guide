@@ -10,22 +10,12 @@
   the default style for text in these blocks.
 </p>
 
-<div class="sg-example">
-	<h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="c-page-block">
-      <h4 class="u-text--center">Page Block Example</h4>
-      <p class="u-text--center">Scelerisque a a sit ac tellus dignissim porta dis ac scelerisque et phasellus vel a sapien a dapibus inceptos phasellus consectetur felis. Suspendisse volutpat dui adipiscing adipiscing adipiscing ultrices tortor nostra a vehicula eros quisque euismod iaculis a urna amet a a in parturient cubilia elementum.</p>
-    </div>
-  </div>
-
-	<code class="sg-example__code">
-    &lt;div class="c-page-block"&gt;<br>
-    &nbsp;&nbsp;...<br>
-    &lt;/div&gt;
-	</code>
+<%= render_example do %>
+<div class="c-page-block">
+  <h4 class="u-text--center">Page Block Example</h4>
+  <p class="u-text--center">Scelerisque a a sit ac tellus dignissim porta dis ac scelerisque et phasellus vel a sapien a dapibus inceptos phasellus consectetur felis. Suspendisse volutpat dui adipiscing adipiscing adipiscing ultrices tortor nostra a vehicula eros quisque euismod iaculis a urna amet a a in parturient cubilia elementum.</p>
 </div>
+<% end %>
 
 <hr>
 
@@ -38,22 +28,12 @@
   difficult to see in this example, but you can see one illustrated on the <%= link_to 'example pages', page_path('layout', 'example-pages') %>.
 </p>
 
-<div class="sg-example">
-	<h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="c-page-block c-page-block--alt-block">
-      <h4 class="u-text--center">Alternative Page Block Example</h4>
-      <p class="u-text--center">Scelerisque a a sit ac tellus dignissim porta dis ac scelerisque et phasellus vel a sapien a dapibus inceptos phasellus consectetur felis. Suspendisse volutpat dui adipiscing adipiscing adipiscing ultrices tortor nostra a vehicula eros quisque euismod iaculis a urna amet a a in parturient cubilia elementum.</p>
-    </div>
-  </div>
-
-	<code class="sg-example__code">
-    &lt;div class="c-page-block c-page-block--alt-block"&gt;<br>
-    &nbsp;&nbsp;...<br>
-    &lt;/div&gt;
-	</code>
+<%= render_example do %>
+<div class="c-page-block c-page-block--alt-block">
+  <h4 class="u-text--center">Alternative Page Block Example</h4>
+  <p class="u-text--center">Scelerisque a a sit ac tellus dignissim porta dis ac scelerisque et phasellus vel a sapien a dapibus inceptos phasellus consectetur felis. Suspendisse volutpat dui adipiscing adipiscing adipiscing ultrices tortor nostra a vehicula eros quisque euismod iaculis a urna amet a a in parturient cubilia elementum.</p>
 </div>
+<% end %>
 
 <hr>
 
@@ -71,20 +51,9 @@
   block. Use that extra class for any button in an action block.
 </p>
 
-<div class="sg-example">
-	<h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="c-page-block c-page-block--action-block">
-      <h4 class="u-text--center">Action Block Example</h4>
-      <p class="u-text--center"><a class="c-button c-button--action-button c-button--large" href="#">Sign up</a></p>
-    </div>
-  </div>
-
-	<code class="sg-example__code">
-    &lt;div class="c-page-block c-page-block--action-block"&gt;<br>
-    &nbsp;&nbsp;&lt;h4 class="u-text--center"&gt;Action Block EXample&lt;/h4&gt;<br>
-    &nbsp;&nbsp;&lt;p class="u-text--center"&gt;&lt;a class="c-button c-button--action-button c-button--large" href="#"&gt;Sign up&lt;/a&gt;&lt;/p&gt;<br>
-    &lt;/div&gt;
-	</code>
+<%= render_example do %>
+<div class="c-page-block c-page-block--action-block">
+  <h4 class="u-text--center">Action Block Example</h4>
+  <p class="u-text--center"><a class="c-button c-button--action-button c-button--large" href="#">Sign up</a></p>
 </div>
+<% end %>

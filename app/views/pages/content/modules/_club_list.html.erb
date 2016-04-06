@@ -2,56 +2,31 @@
   Use this module when you want to show a user a list of clubs that they are involved with, either as a host or a volunteer.
 </p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <ul class="o-club-list">
-      <li class="o-club-list__item">
-        <div class="o-club-list__title">
-          Knavesmire Primary School
-          <span class="o-club-list__meta c-meta">Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY</span>
-        </div>
-
-        <span class="o-club-list__badge c-badge c-badge--green">Active</span>
-
-        <a href="#" class="o-club-list__button c-button c-button--hollow c-button--green">View Club</a>
-      </li>
-
-      <li class="o-club-list__item">
-        <div class="o-club-list__title">
-          Knavesmire Primary School
-          <span class="o-club-list__meta c-meta">Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY</span>
-        </div>
-
-        <span class="o-club-list__badge c-badge c-badge--green">Active</span>
-
-        <a href="#" class="o-club-list__button c-button c-button--hollow c-button--green">View Club</a>
-      </li>
-
-      <li class="o-club-list__item">
-        <div class="o-club-list__title">
-          Knavesmire Primary School
-          <span class="o-club-list__meta c-meta">Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY</span>
-        </div>
-
-        <span class="o-club-list__badge c-badge c-badge--green">Active</span>
-
-        <a href="#" class="o-club-list__button c-button c-button--hollow c-button--green">View Club</a>
-      </li>
-    </ul>
-  </div>
-
-  <code class="sg-example__code">
-    &lt;ul class="o-club-list"&gt;<br>
-    &nbsp;&nbsp;&lt;li class="o-club-list__item"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-club-list__title"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;Knavesmire Primary School<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="o-club-list__meta c-meta"&gt;Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY&lt;/span&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&lt;span class="o-club-list__badge c-badge c-badge--green"&gt;Active&lt;/span&gt;<br>
-    &nbsp;&nbsp;&lt;a href="#" class="o-club-list__button c-button c-button--hollow c-button--green"&gt;View Club&lt;/a&gt;<br>
-    &nbsp;&nbsp;&lt;/li&gt;
-    &lt;/ul&gt;
-  </code>
-</div>
+<%= render_example do %>
+<ul class="o-club-list">
+  <li class="o-club-list__item">
+    <div class="o-club-list__title">
+      Knavesmire Primary School
+      <span class="o-club-list__meta c-meta">Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY</span>
+    </div>
+    <span class="o-club-list__badge c-badge c-badge--green">Active</span>
+    <a href="#" class="o-club-list__button c-button c-button--hollow c-button--green">View Club</a>
+  </li>
+  <li class="o-club-list__item">
+    <div class="o-club-list__title">
+      Knavesmire Primary School
+      <span class="o-club-list__meta c-meta">Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY</span>
+    </div>
+    <span class="o-club-list__badge c-badge c-badge--green">Active</span>
+    <a href="#" class="o-club-list__button c-button c-button--hollow c-button--green">View Club</a>
+  </li>
+  <li class="o-club-list__item">
+    <div class="o-club-list__title">
+      Knavesmire Primary School
+      <span class="o-club-list__meta c-meta">Trafalgar Street, York, York, Yorkshire and Humber, YO23 1HY</span>
+    </div>
+    <span class="o-club-list__badge c-badge c-badge--green">Active</span>
+    <a href="#" class="o-club-list__button c-button c-button--hollow c-button--green">View Club</a>
+  </li>
+</ul>
+<% end %>

@@ -8,25 +8,6 @@
   <li>Project cards</li>
 </ul>
 
-<p>We'll tackle each of those in a second, but first an important note:</p>
-
-<p>
-  <strong>In order for your cards to appear in neat rows, you must wrap row with the following:</strong>
-</p>
-
-<p>
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;...<br>
-    &lt;/div&gt;
-  </code>
-</p>
-
-<p>
-  Any cards inside an <code>o-card-container</code> will automatically space themselves out to fill the space evenly.
-  <strong>We recommend no more than four cards in one container</strong>.
-</p>
-
 <hr>
 
 <h2>Basic Cards</h2>
@@ -35,177 +16,124 @@
 
 <p>These cards are largely style-agnostic, relying on standard typographical elements and component styles in order to build up the contents of each. At their most basic level, an info card allows you to define if heading, body and footer.</p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
+<%= render_example do %>
+<div class="o-card-container">
+  <div class="o-card">
+    <div class="o-card__heading">Beware of:</div>
 
-  <div class="sg-example__preview">
-    <div class="o-card-container">
-      <div class="o-card">
-        <div class="o-card__heading">Beware of:</div>
-
-        <div class="o-card__body">
-          <ul class="c-list c-list--bulleted">
-            <li class="c-list__item c-list__item--bulleted">The dog</li>
-            <li class="c-list__item c-list__item--bulleted">The lion</li>
-            <li class="c-list__item c-list__item--bulleted">The hulk</li>
-          </ul>
-        </div>
-
-        <div class="o-card__footer"><a class="o-card__footer-link" href="#">Find out more</a></div>
-      </div>
-
-      <div class="o-card">
-        <div class="o-card__heading">Beware of:</div>
-
-        <div class="o-card__body">
-          <ul class="c-list c-list--bulleted">
-            <li class="c-list__item c-list__item--bulleted">The dog</li>
-            <li class="c-list__item c-list__item--bulleted">The lion</li>
-            <li class="c-list__item c-list__item--bulleted">The hulk</li>
-          </ul>
-        </div>
-
-        <div class="o-card__footer"><a class="o-card__footer-link" href="#">Find out more</a></div>
-      </div>
-
-      <div class="o-card">
-        <div class="o-card__heading">Beware of:</div>
-
-        <div class="o-card__body">
-          <ul class="c-list c-list--bulleted">
-            <li class="c-list__item c-list__item--bulleted">The dog</li>
-            <li class="c-list__item c-list__item--bulleted">The lion</li>
-            <li class="c-list__item c-list__item--bulleted">The hulk</li>
-          </ul>
-        </div>
-
-        <div class="o-card__footer"><a class="o-card__footer-link" href="#">Find out more</a></div>
-      </div>
+    <div class="o-card__body">
+      <ul class="c-list c-list--bulleted">
+        <li class="c-list__item c-list__item--bulleted">The dog</li>
+        <li class="c-list__item c-list__item--bulleted">The lion</li>
+        <li class="c-list__item c-list__item--bulleted">The hulk</li>
+      </ul>
     </div>
+
+    <div class="o-card__footer"><a class="o-card__footer-link" href="#">Find out more</a></div>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-card__heading"&gt;Beware of:&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-card__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="c-list c-list--bulleted"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="c-list__item c-list__item--bulleted"&gt;The dog&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="c-list__item c-list__item--bulleted"&gt;The lion&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="c-list__item c-list__item--bulleted"&gt;The hulk&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-card__footer"&gt;&lt;a class="o-card__footer-link" href="#"&gt;Find out more&lt;/a&gt;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-card">
+    <div class="o-card__heading">Beware of:</div>
+
+    <div class="o-card__body">
+      <ul class="c-list c-list--bulleted">
+        <li class="c-list__item c-list__item--bulleted">The dog</li>
+        <li class="c-list__item c-list__item--bulleted">The lion</li>
+        <li class="c-list__item c-list__item--bulleted">The hulk</li>
+      </ul>
+    </div>
+
+    <div class="o-card__footer"><a class="o-card__footer-link" href="#">Find out more</a></div>
+  </div>
+
+  <div class="o-card">
+    <div class="o-card__heading">Beware of:</div>
+
+    <div class="o-card__body">
+      <ul class="c-list c-list--bulleted">
+        <li class="c-list__item c-list__item--bulleted">The dog</li>
+        <li class="c-list__item c-list__item--bulleted">The lion</li>
+        <li class="c-list__item c-list__item--bulleted">The hulk</li>
+      </ul>
+    </div>
+
+    <div class="o-card__footer"><a class="o-card__footer-link" href="#">Find out more</a></div>
+  </div>
 </div>
+<% end %>
 
 <h3>Cards with Secondary Call-To-Action</h3>
 
 <p>In some cases you may require cards that each have a primary and secondary call to action. A button in the body and plain link in the card's footer is a good way to achieve this.</p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="o-card-container">
-      <div class="o-card">
-        <div class="o-card__body">
-          <h4>Lauren Holt</h4>
-          <p class="c-meta">0.4 miles away</p>
-          <a href="" class="c-button c-button--block c-button--hollow c-button--green">Contact Volunteer</a>
-        </div>
-        <div class="o-card__footer">
-          <a class="o-card__footer-link" href="#">Add volunteer to club</a>
-        </div>
-      </div>
-
-      <div class="o-card">
-        <div class="o-card__body">
-          <h4>Lauren Holt</h4>
-          <p class="c-meta">0.4 miles away</p>
-          <a href="" class="c-button c-button--block c-button--hollow c-button--green">Contact Volunteer</a>
-        </div>
-        <div class="o-card__footer">
-          <a class="o-card__footer-link" href="#">Add volunteer to club</a>
-        </div>
-      </div>
-
-      <div class="o-card">
-        <div class="o-card__body">
-          <h4>Lauren Holt</h4>
-          <p class="c-meta">0.4 miles away</p>
-          <a href="" class="c-button c-button--block c-button--hollow c-button--green">Contact Volunteer</a>
-        </div>
-        <div class="o-card__footer">
-          <a class="o-card__footer-link" href="#">Add volunteer to club</a>
-        </div>
-      </div>
+<%= render_example do %>
+<div class="o-card-container">
+  <div class="o-card">
+    <div class="o-card__body">
+      <h4>Lauren Holt</h4>
+      <p class="c-meta">0.4 miles away</p>
+      <a href="" class="c-button c-button--block c-button--hollow c-button--green">Contact Volunteer</a>
+    </div>
+    <div class="o-card__footer">
+      <a class="o-card__footer-link" href="#">Add volunteer to club</a>
     </div>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-card__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;St Mary's Catholic Primary School&lt;/h4&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="c-meta">0.4 miles away&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="u-text--center"&gt;&lt;a href="#"&gt;Contact Club Host&lt;/a>&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-card">
+    <div class="o-card__body">
+      <h4>Lauren Holt</h4>
+      <p class="c-meta">0.4 miles away</p>
+      <a href="" class="c-button c-button--block c-button--hollow c-button--green">Contact Volunteer</a>
+    </div>
+    <div class="o-card__footer">
+      <a class="o-card__footer-link" href="#">Add volunteer to club</a>
+    </div>
+  </div>
+
+  <div class="o-card">
+    <div class="o-card__body">
+      <h4>Lauren Holt</h4>
+      <p class="c-meta">0.4 miles away</p>
+      <a href="" class="c-button c-button--block c-button--hollow c-button--green">Contact Volunteer</a>
+    </div>
+    <div class="o-card__footer">
+      <a class="o-card__footer-link" href="#">Add volunteer to club</a>
+    </div>
+  </div>
 </div>
+<% end %>
 
 <h3>Even More Basic Cards</h3>
 
 <p>On occasion you'll find that your cards don't need a heading or footer. Just omit them and use basic typographical styles to build the content of the card:</p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="o-card-container">
-      <div class="o-card">
-        <div class="o-card__body">
-          <h4>St Mary's Catholic Primary School</h4>
-          <p class="c-meta">0.4 miles away</p>
-          <p class="u-text--center"><a href="#">Contact Club Host</a></p>
-        </div>
-      </div>
-
-      <div class="o-card">
-        <div class="o-card__body">
-          <h4>St Mary's Catholic Primary School</h4>
-          <p class="c-meta">0.4 miles away</p>
-          <p class="u-text--center"><a href="#">Contact Club Host</a></p>
-        </div>
-      </div>
-
-      <div class="o-card">
-        <div class="o-card__body">
-          <h4>St Mary's Catholic Primary School</h4>
-          <p class="c-meta">0.4 miles away</p>
-          <p class="u-text--center"><a href="#">Contact Club Host</a></p>
-        </div>
-      </div>
+<%= render_example do %>
+<div class="o-card-container">
+  <div class="o-card">
+    <div class="o-card__body">
+      <h4>St Mary's Catholic Primary School</h4>
+      <p class="c-meta">0.4 miles away</p>
+      <p class="u-text--center"><a href="#">Contact Club Host</a></p>
     </div>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-card__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;St Mary's Catholic Primary School&lt;/h4&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="c-meta">0.4 miles away&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="u-text--center"&gt;&lt;a href="#"&gt;Contact Club Host&lt;/a>&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-card">
+    <div class="o-card__body">
+      <h4>St Mary's Catholic Primary School</h4>
+      <p class="c-meta">0.4 miles away</p>
+      <p class="u-text--center"><a href="#">Contact Club Host</a></p>
+    </div>
+  </div>
+
+  <div class="o-card">
+    <div class="o-card__body">
+      <h4>St Mary's Catholic Primary School</h4>
+      <p class="c-meta">0.4 miles away</p>
+      <p class="u-text--center"><a href="#">Contact Club Host</a></p>
+    </div>
+  </div>
 </div>
+<% end %>
 
 <hr>
 
@@ -215,129 +143,76 @@
 
 <p>There are three primary styles for the Scratch, HTML/CSS and Python courses, and one more generic style for any other projects.</p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="o-card-container">
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--scratch" href="#">
-          <div class="o-course-card__body o-course-card__body--scratch">
-            <h2 class="o-course-card__title">Scratch</h2>
-          </div>
-          <div class="o-course-card__footer">32 projects</div>
-        </a>
+<%= render_example do %>
+<div class="o-card-container">
+  <div class="o-course-card">
+    <a class="o-course-card__link o-course-card__link--scratch" href="#">
+      <div class="o-course-card__body o-course-card__body--scratch">
+        <h2 class="o-course-card__title">Scratch</h2>
       </div>
-
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--webdev" href="#">
-          <div class="o-course-card__body o-course-card__body--webdev">
-            <h2 class="o-course-card__title">HTML &amp; CSS</h2>
-          </div>
-
-          <div class="o-course-card__footer">16 projects</div>
-        </a>
-      </div>
-
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--python" href="#">
-          <div class="o-course-card__body o-course-card__body--python">
-            <h2 class="o-course-card__title">Python</h2>
-          </div>
-
-          <div class="o-course-card__footer">24 projects</div>
-        </a>
-      </div>
-    </div>
+      <div class="o-course-card__footer">32 projects</div>
+    </a>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-course-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="o-course-card__link o-course-card__link--scratch" href="#"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__body o-course-card__body--scratch"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="o-course-card__title"&gt;Scratch&lt;/h2&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__footer"&gt;32 projects&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    <br>
-    &nbsp;&nbsp;&lt;div class="o-course-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="o-course-card__link o-course-card__link--webdev" href="#"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__body o-course-card__body--webdev"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="o-course-card__title"&gt;HTML &amp; CSS&lt;/h2&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__footer"&gt;16 projects&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    <br>
-    &nbsp;&nbsp;&lt;div class="o-course-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="o-course-card__link o-course-card__link--python" href="#"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__body o-course-card__body--python"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="o-course-card__title"&gt;Python&lt;/h2&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__footer"&gt;24 projects&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-course-card">
+    <a class="o-course-card__link o-course-card__link--webdev" href="#">
+      <div class="o-course-card__body o-course-card__body--webdev">
+        <h2 class="o-course-card__title">HTML &amp; CSS</h2>
+      </div>
+
+      <div class="o-course-card__footer">16 projects</div>
+    </a>
+  </div>
+
+  <div class="o-course-card">
+    <a class="o-course-card__link o-course-card__link--python" href="#">
+      <div class="o-course-card__body o-course-card__body--python">
+        <h2 class="o-course-card__title">Python</h2>
+      </div>
+
+      <div class="o-course-card__footer">24 projects</div>
+    </a>
+  </div>
 </div>
+<% end %>
 
 <h3>Generic Course Cards</h3>
 
 <p>The following are examples only. <strong>The following logos are not included in the downloadable styles</strong>.</p>
 
-<div class="sg-example">
-  <h4 class="sg-example__heading">Example</h4>
-
-  <div class="sg-example__preview">
-    <div class="o-card-container">
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--generic" href="#">
-          <div class="o-course-card__body o-course-card__body--generic">
-            <%= image_tag '/assets/images/course-twsu.png', :class => 'o-course-card__image' %>
-          </div>
-
-          <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
-        </a>
+<%= render_example do %>
+<div class="o-card-container">
+  <div class="o-course-card">
+    <a class="o-course-card__link o-course-card__link--generic" href="#">
+      <div class="o-course-card__body o-course-card__body--generic">
+        <%= image_tag '/assets/images/course-twsu.png', :class => 'o-course-card__image' %>
       </div>
 
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--generic" href="#">
-          <div class="o-course-card__body o-course-card__body--generic">
-            <%= image_tag '/assets/images/course-microbit.png', :class => 'o-course-card__image' %>
-          </div>
-
-          <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
-        </a>
-      </div>
-
-      <div class="o-course-card">
-        <a class="o-course-card__link o-course-card__link--generic" href="#">
-          <div class="o-course-card__body o-course-card__body--generic">
-            <%= image_tag '/assets/images/course-code-kingdoms.png', :class => 'o-course-card__image' %>
-          </div>
-
-          <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
-        </a>
-      </div>
-    </div>
+      <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
+    </a>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-course-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="o-course-card__link o-course-card__link--generic" href="#"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__body o-course-card__body--generic"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" src="example.png"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-course-card__footer o-course-card__footer--generic"&gt;4 projects&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-course-card">
+    <a class="o-course-card__link o-course-card__link--generic" href="#">
+      <div class="o-course-card__body o-course-card__body--generic">
+        <%= image_tag '/assets/images/course-microbit.png', :class => 'o-course-card__image' %>
+      </div>
+
+      <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
+    </a>
+  </div>
+
+  <div class="o-course-card">
+    <a class="o-course-card__link o-course-card__link--generic" href="#">
+      <div class="o-course-card__body o-course-card__body--generic">
+        <%= image_tag '/assets/images/course-code-kingdoms.png', :class => 'o-course-card__image' %>
+      </div>
+
+      <div class="o-course-card__footer o-course-card__footer--generic">4 projects</div>
+    </a>
+  </div>
 </div>
+<% end %>
 
 <hr>
 
@@ -353,73 +228,51 @@
   The images used here are for the purposes of this example. They will not be included in the downloadable assets.
 </p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
+<%= render_example do %>
+<div class="o-card-container">
+  <div class="o-project-card">
+    <a class="o-project-card__link" href="#">
+      <%= image_tag "/assets/images/project_123.png", :class => "o-project-card__image" %>
 
-  <div class="sg-example__preview">
-    <div class="o-card-container">
-      <div class="o-project-card">
-        <a class="o-project-card__link" href="#">
-          <%= image_tag "/assets/images/project_123.png", :class => "o-project-card__image" %>
-
-          <div class="o-project-card__body">
-            <div class="o-project-card__meta">Project 1</div>
-            <div class="o-project-card__title">Teaching Turtles</div>
-            <p>Learn more about drawing with the turtle.</p>
-            <p class="u-text--right u-color--green">
-              Start <span class="c-icon c-icon--arrow-circle-right c-icon--green"></span>
-            </p>
-          </div>
-        </a>
+      <div class="o-project-card__body">
+        <div class="o-project-card__meta">Project 1</div>
+        <div class="o-project-card__title">Teaching Turtles</div>
+        <p>Learn more about drawing with the turtle.</p>
+        <p class="u-text--right u-color--green">
+          Start <span class="c-icon c-icon--arrow-circle-right c-icon--green"></span>
+        </p>
       </div>
-
-      <div class="o-project-card">
-        <a class="o-project-card__link" href="#">
-          <%= image_tag "/assets/images/project_turtle.png", :class => "o-project-card__image" %>
-
-          <div class="o-project-card__body">
-            <div class="o-project-card__meta">Project 2</div>
-            <div class="o-project-card__title">Turtles</div>
-            <p>Learn how to use a turtle to draw awesome shapes and patterns.</p>
-            <p class="u-text--right u-color--green">
-              Start <span class="c-icon c-icon--arrow-circle-right c-icon--green"></span>
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <div class="o-project-card">
-        <a class="o-project-card__link" href="#">
-          <%= image_tag "/assets/images/project_maze.png", :class => "o-project-card__image" %>
-
-          <div class="o-project-card__body">
-            <div class="o-project-card__meta">Project 3</div>
-            <div class="o-project-card__title">RPG</div>
-            <p>Design and code your own RPG maze game.</p>
-            <p class="u-text--right u-color--green">
-              Start <span class="c-icon c-icon--arrow-circle-right c-icon--green"></span>
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
+    </a>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-card-container"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-project-card"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="o-project-card__link" href="#"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="o-project-card__image" alt="" src="/assets/images/project_123.png"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-project-card__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-project-card__meta"&gt;Project 1&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-project-card__title"&gt;Teaching Turtles&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Learn more about drawing with the turtle.&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="u-text--right u-color--green"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start &lt;span class="c-icon c-icon--arrow-circle-right c-icon--green"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-project-card">
+    <a class="o-project-card__link" href="#">
+      <%= image_tag "/assets/images/project_turtle.png", :class => "o-project-card__image" %>
+
+      <div class="o-project-card__body">
+        <div class="o-project-card__meta">Project 2</div>
+        <div class="o-project-card__title">Turtles</div>
+        <p>Learn how to use a turtle to draw awesome shapes and patterns.</p>
+        <p class="u-text--right u-color--green">
+          Start <span class="c-icon c-icon--arrow-circle-right c-icon--green"></span>
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <div class="o-project-card">
+    <a class="o-project-card__link" href="#">
+      <%= image_tag "/assets/images/project_maze.png", :class => "o-project-card__image" %>
+
+      <div class="o-project-card__body">
+        <div class="o-project-card__meta">Project 3</div>
+        <div class="o-project-card__title">RPG</div>
+        <p>Design and code your own RPG maze game.</p>
+        <p class="u-text--right u-color--green">
+          Start <span class="c-icon c-icon--arrow-circle-right c-icon--green"></span>
+        </p>
+      </div>
+    </a>
+  </div>
 </div>
+<% end %>

@@ -3,53 +3,27 @@
 <p>These sit directly below the primary navigation and are used to notify the user of page-load event, such as a form success or error. They cannot be used with hero blocks.</p>
 <p>Alerts carry four different types of message: Success, information, warning or error. These four states each feature a different colour and a different icon.</p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="c-alert c-alert--success">
-      <span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"></span>
-      This is a success alert.
-    </div>
-
-    <div class="c-alert c-alert--info">
-      <span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
-      This is an information alert.
-    </div>
-
-    <div class="c-alert c-alert--warning">
-      <span class="c-icon c-icon--small c-icon--warning"></span>
-      This is a warning message.
-    </div>
-
-    <div class="c-alert c-alert--error">
-      <span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
-      This is an error. Please enter the correct information so we can continue.
-    </div>
-  </div>
-
-  <code class="sg-example__code">
-    &lt;div class="c-alert c-alert--success"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is a success alert.<br>
-    &lt;/div&gt;<br>
-    <br>
-    &lt;div class="c-alert c-alert--info"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--info-fill c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is an information alert.<br>
-    &lt;/div&gt;<br>
-    <br>
-    &lt;div class="c-alert c-alert--warning"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--warning"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is a warning message.<br>
-    &lt;/div&gt;<br>
-    <br>
-    &lt;div class="c-alert c-alert--error"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--error c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is an error. Please enter the correct information so we can continue.<br>
-    &lt;/div&gt;
-  </code>
+<%= render_example do %>
+<div class="c-alert c-alert--success">
+  <span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"></span>
+  This is a success alert.
 </div>
+
+<div class="c-alert c-alert--info">
+  <span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
+  This is an information alert.
+</div>
+
+<div class="c-alert c-alert--warning">
+  <span class="c-icon c-icon--small c-icon--warning"></span>
+  This is a warning message.
+</div>
+
+<div class="c-alert c-alert--error">
+  <span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
+  This is an error. Please enter the correct information so we can continue.
+</div>
+<% end %>
 
 <hr>
 
@@ -57,50 +31,24 @@
 
 <p>Inline alerts can be used within the content areas, such as in forms. They can be used to highlight a certain requirement or action before the user commits.</p>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="c-alert c-alert--inline c-alert--success">
-      <span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"></span>
-      This is a success alert.
-    </div>
-
-    <div class="c-alert c-alert--inline c-alert--info">
-      <span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
-      This is an information alert.
-    </div>
-
-    <div class="c-alert c-alert--inline c-alert--warning">
-      <span class="c-icon c-icon--small c-icon--warning"></span>
-      This is a warning message.
-    </div>
-
-    <div class="c-alert c-alert--inline c-alert--error">
-      <span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
-      This is an error. Please enter the correct information so we can continue.
-    </div>
-  </div>
-
-  <code class="sg-example__code">
-    &lt;div class="c-alert c-alert--inline c-alert--success"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is a success alert.<br>
-    &lt;/div&gt;<br>
-    <br>
-    &lt;div class="c-alert c-alert--inline c-alert--info"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--info-fill c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is an information alert.<br>
-    &lt;/div&gt;<br>
-    <br>
-    &lt;div class="c-alert c-alert--inline c-alert--warning"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--warning"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is a warning message.<br>
-    &lt;/div&gt;<br>
-    <br>
-    &lt;div class="c-alert c-alert--inline c-alert--error"&gt;<br>
-    &nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--error c-icon--white"&gt;&lt;/span&gt;<br>
-    &nbsp;&nbsp;This is an error. Please enter the correct information so we can continue.<br>
-    &lt;/div&gt;
-  </code>
+<%= render_example do %>
+<div class="c-alert c-alert--inline c-alert--success">
+  <span class="c-icon c-icon--small c-icon--tick-circle c-icon--white"></span>
+  This is a success alert.
 </div>
+
+<div class="c-alert c-alert--inline c-alert--info">
+  <span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
+  This is an information alert.
+</div>
+
+<div class="c-alert c-alert--inline c-alert--warning">
+  <span class="c-icon c-icon--small c-icon--warning"></span>
+  This is a warning message.
+</div>
+
+<div class="c-alert c-alert--inline c-alert--error">
+  <span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
+  This is an error. Please enter the correct information so we can continue.
+</div>
+<% end %>

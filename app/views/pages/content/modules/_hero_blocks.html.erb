@@ -27,104 +27,57 @@
   <li>A background image. Can either stretch or tile. The text must remain legible. Not rendered on mobile devices</li>
 </ul>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="o-hero">
+<%= render_example do %>
+<div class="o-hero">
+  <div class="c-grid">
+    <div class="c-col--12">
       <div class="o-hero__body">
         <h1 class="o-hero__title">Page Title Would Go Here</h1>
       </div>
     </div>
   </div>
-
-  <code class="sg-example__code">
-    &lt;div class="o-hero"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-hero__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Page Title Would Go Here&lt;/h1&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
 </div>
+<% end %>
 
 <hr>
 
 <h2>Hero With Top Navigation</h2>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <div class="o-hero">
-      <div class="o-hero__nav">
-        <div class="o-hero__nav-left">
-          <a href="#" class="o-hero__nav-link">This is a link</a>
-          <a href="#" class="o-hero__nav-link">So is this</a>
-          <a href="#" class="o-hero__nav-link">Here's another</a>
-        </div>
-        <div class="o-hero__nav-right">
-          <a href="#" class="o-hero__nav-link">Some Other Link</a>
-        </div>
-      </div>
-
-      <div class="o-hero__body">
-        <h1 class="o-hero__title">Page Title Would Go Here</h1>
-      </div>
+<%= render_example do %>
+<div class="o-hero">
+  <div class="o-hero__nav">
+    <div class="o-hero__nav-left">
+      <a href="#" class="o-hero__nav-link">This is a link</a>
+      <a href="#" class="o-hero__nav-link">So is this</a>
+      <a href="#" class="o-hero__nav-link">Here's another</a>
+    </div>
+    <div class="o-hero__nav-right">
+      <a href="#" class="o-hero__nav-link">Some Other Link</a>
     </div>
   </div>
 
-  <code class="sg-example__code">
-    &lt;div class="o-hero"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-hero__nav"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-hero__nav-left"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="o-hero__nav-link"&gt;This is a link&lt;/a&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="o-hero__nav-link"&gt;So is this&lt;/a&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="o-hero__nav-link"&gt;Here's another&lt;/a&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="o-hero__nav-right"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="o-hero__nav-link"&gt;Some Other Link&lt;/a&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &nbsp;&nbsp;<br>
-    &nbsp;&nbsp;&lt;div class="o-hero__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="o-hero__title"&gt;Page Title Would Go Here&lt;/h1&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;<br>
-    &lt;/div&gt;
-  </code>
+  <div class="o-hero__body">
+    <h1 class="o-hero__title">Page Title Would Go Here</h1>
+  </div>
 </div>
+<% end %>
 
 <hr>
 
 <h2>Hero With Background Image</h2>
 
-<div class="sg-example">
-  <h3 class="sg-example__heading">Example</h3>
+<%= render_example do %>
+<div class="o-hero">
+  <div class="o-hero__body">
+    <h1 class="o-hero__title">Page Title Would Go Here</h1>
 
-  <div class="sg-example__preview">
-    <div class="o-hero">
-      <div class="o-hero__body">
-      	<h1 class="o-hero__title">Page Title Would Go Here</h1>
+    <p class="o-hero__subtitle">This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
 
-        <p class="o-hero__subtitle">This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
-
-        <ul class="o-hero__list">
-          <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A download</a></li>
-          <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A link to a PDF</a></li>
-        </ul>
-      </div>
-    </div>
+    <ul class="o-hero__list">
+      <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A download</a></li>
+      <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A link to a PDF</a></li>
+    </ul>
   </div>
-
-  <code class="sg-example__code">
-    &lt;div class="o-hero"&gt;<br>
-    &nbsp;&nbsp;&lt;div class="o-hero__body"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="o-hero__title"&gt;Page Title Would Go Here&lt;/h1&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="o-hero__subtitle"&gt;This hero block has a brief sentence which is great for introducing the content that will feature on the below page.&lt;/p&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="o-hero__list"&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-hero__item"&gt;&lt;a href="#" class="c-button c-button--hollow c-button--white"&gt;A download&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="o-hero__item"&gt;&lt;a href="#" class="c-button c-button--hollow c-button--white"&gt;A link to a PDF&lt;/a&gt;&lt;/li&gt;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
-    &nbsp;&nbsp;&lt;/div&gt;
-    &lt;/div&gt;
-  </code>
+</div>
+<% end %>
 </div>

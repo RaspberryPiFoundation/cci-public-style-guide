@@ -1,27 +1,17 @@
 <h2>What are they for?</h2>
 
 <p>
-	Badfes are used to highlight a particular piece of meta data relating to a bigger object. Think of when you have unread
-	notifications on a mobile app, when your device will mark the app's icon with a badge containing the number of unread notifications.
+  Badges are used to highlight a particular piece of meta data relating to a bigger object. Think of when you have unread
+  notifications on a mobile app, when your device will mark the app's icon with a badge containing the number of unread notifications.
 </p>
 
 <p>
-	We also use badges to denote the state of a Code Club, to show that they either pending activation, or active. You may find other uses.
-	They come in a variety of colors, but only one size.
+  We also use badges to denote the state of a Code Club, to show that they either pending activation, or active. You may find other uses.
+  They come in a variety of colors, but only one size.
 </p>
 
-<div class="sg-example">
-	<h3 class="sg-example__heading">Example</h3>
-
-  <div class="sg-example__preview">
-    <% colors[:palette].each do |name, value| %>
-		<p><span class="c-badge c-badge--<%= name %>"><%= name %></span></p>
-    <% end %>
-  </div>
-
-	<code class="sg-example__code">
-    <% colors[:palette].each do |name, value| %>
-		&lt;span class="c-badge c-badge--<%= name %>"&gt;<%= name %>&lt;/span&gt;<br>
-    <% end %>
-	</code>
-</div>
+<%= render_example do %>
+<% colors[:palette].each do |name, value| %>
+<p><span class="c-badge c-badge--<%= name %>"><%= name %></span></p>
+<% end %>
+<% end %>

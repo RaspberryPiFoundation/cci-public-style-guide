@@ -1,89 +1,95 @@
+<input class="c-form__input c-form__input--inline c-form__input--width-xs" placeholder="xs"><br>
+<input class="c-form__input c-form__input--inline c-form__input--width-s"  placeholder="s"><br>
+<input class="c-form__input c-form__input--inline"                         placeholder="default"><br>
+<input class="c-form__input c-form__input--inline c-form__input--width-l"  placeholder="l"><br>
+<input class="c-form__input c-form__input--inline c-form__input--width-xl" placeholder="xl">
+
+<hr>
+
 <h2>Basic Form Markup</h2>
 
 <p>Although it doesn't trigger any currently presentational styles, all forms must begin and end with the following markup.</p>
 
 <p>
-	You'll need to ensure that your form's <code>method</code> and <code>action</code>
-	attributes are correct too, and any forms handling file uploads will require the
-	<code>enctype="multipart/form-data"</code> attribute to be present too.
+  You'll need to ensure that your form's <code>method</code> and <code>action</code>
+  attributes are correct too, and any forms handling file uploads will require the
+  <code>enctype="multipart/form-data"</code> attribute to be present too.
 </p>
 
 <p>
-	You should wrap your form's inner elements in one or more <code>fieldset</code> elements.
-	If your form has multiple sections it may be beneficial to the user to include a <code>legend</code> element in each fieldset,
-	for the purposes of describing the fields contained therein. This may not be necessary on smaller, more focused forms, such as
-	a "log in" or "search" form.
+  You should wrap your form's inner elements in one or more <code>fieldset</code> elements.
+  If your form has multiple sections it may be beneficial to the user to include a <code>legend</code> element in each fieldset,
+  for the purposes of describing the fields contained therein. This may not be necessary on smaller, more focused forms, such as
+  a "log in" or "search" form.
 </p>
 
-<div class="sg-example">
-	<code class="sg-example__code">
-		&lt;form class="c-form"&gt;<br>
-		&nbsp;&nbsp;&lt;fieldset class="c-form__fieldset"&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend class="c-form__legend"&gt;Form Legend Text&lt;/legend&gt;<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;...<br>
-		&nbsp;&nbsp;&lt;/fieldset&gt;<br>
-		&lt;/form&gt;
-	</code>
-</div>
+<%= render_example(:only_code => true) do %>
+<form class="c-form">
+  <fieldset class="c-form__fieldset">
+    <legend class="c-form__legend">Form Legend Text</legend>
+    ...
+  </fieldset>
+</form>
+<% end %>
 
 <h3>Labels or Placeholders?</h3>
 
 <p>
-	In order to maximise the accessibility and usability of your forms, all input fields should have an accompanying <code>&lt;label&gt;</code>
-	element. According to the HTML specification:
+  In order to maximise the accessibility and usability of your forms, all input fields should have an accompanying <code>&lt;label&gt;</code>
+  element. According to the <%= link_to 'WHATWG HTML specification', 'https://developers.whatwg.org/common-input-element-attributes.html#the-placeholder-attribute' %>:
 </p>
 
 <blockquote>
-	<p>The placeholder attribute represents a short hint (a word or short phrase) intended to aid the user with data entry.
-	A hint could be a sample value or a brief description of the expected format.</p>
-	<p>&hellip;</p>
-	<p>The placeholder attribute should not be used as an alternative to a label.</p>
+  <p>
+    The placeholder attribute represents a <em>short</em> hint (a word or short phrase) intended to
+    aid the user with data entry when the control has no value. A hint could be a sample value or a
+    brief description of the expected format.
+  </p>
+
+  <p>&hellip;</p>
+
+  <p>
+    The placeholder attribute should not be used as an alternative to a label. For a longer hint or
+    other advisory text, the title attribute is more appropriate.
+  </p>
 </blockquote>
 
 <p>
-	I short, this means that your <code>&lt;input&gt;</code> fields should have a <code>&lt;label&gt;</code> to indicate
-	<em>the content your user is required to enter</em>, and an optional placeholder with an <em>example of that data</em>.
+  I short, this means that your <code>&lt;input&gt;</code> fields should have a <code>&lt;label&gt;</code> to indicate
+  <em>the content your user is required to enter</em>, and an optional placeholder with an <em>example of that data</em>.
 </p>
 
 <p>
-	Here are a couple of examples. First, the <span class="u-color--red">bad</span>:
+  Here are a couple of examples. First, the <span class="u-color--red">bad</span>:
 </p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<input class="c-form__input" id="label_example" name="user[whatevers]" placeholder="Enter your email address" type="email">
-	</div>
-</div>
+<%= render_example(:with_code => false) do %>
+<input class="c-form__input" id="label_example" name="user[whatevers]" placeholder="Enter your email address" type="email">
+<% end %>
 
 <p>
-	And the correct way to show a form field with a label:
+  And the correct way to show a form field with a label:
 </p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label" for="label_example">Enter your email address</label>
-		<input class="c-form__input" id="label_example" name="user[whatevers]" placeholder="example@domain.com" type="email">
-	</div>
-</div>
+<%= render_example(:with_code => false) do %>
+<label class="c-form__label" for="label_example">Enter your email address</label>
+<input class="c-form__input" id="label_example" name="user[whatevers]" placeholder="example@domain.com" type="email">
+<% end %>
 
 <p>
-	Please also make sure that your labels and inputs are semantically associated with one another using a <code>for</code> attribute on
-	the label that corresponds with the <code>id</code> attribute on the intended input.
+  Please also make sure that your labels and inputs are semantically associated with one another using a <code>for</code> attribute on
+  the label that corresponds with the <code>id</code> attribute on the intended input.
 </p>
 
 <h3>A note about buttons</h3>
 
 <p>
-	This page doesn't contain any examples of "submit" buttons or similar. When your forms need a button, use one of the options
-	shown on the <%= link_to "buttons", page_path('styles', 'buttons') %> page.
+  This page doesn't contain any examples of "submit" buttons or similar. When your forms need a button, use one of the options
+  shown on the <%= link_to "buttons", page_path('styles', 'buttons') %> page.
 </p>
 
 <p>
-	If a form is your page's primary action, then you should use a green button. If it performs a destructive action then use a red button.
+  If a form is your page's primary action, then you should use a green button. If it performs a destructive action then use a red button.
 </p>
 
 <hr>
@@ -92,187 +98,94 @@
 
 <h3>Labels</h3>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label">Enter your email address again</label>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;label class="c-form__label"&gt;Enter your email address again:&lt;/label&gt;
-	</code>
-</div>
+<%= render_example do %>
+<label class="c-form__label">Enter your email address again</label>
+<% end %>
 
 <p>
-	In cases where the label is also intended to denote an optional field, use the following extra markup. Without this "optional"
-	notice, it's assumed that all form fields are mandatory.
+  In cases where the label is also intended to denote an optional field, use the following extra markup. Without this "optional"
+  notice, it's assumed that all form fields are mandatory.
 </p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label">
-			Enter your email address again
-			<span class="c-form__optional">(optional)</span>
-		</label>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;Enter your email address again:<br>
-		&nbsp;&nbsp;&lt;span class="c-form__optional"&gt;(optional)&lt;/span&gt;<br>
-		&lt;/label&gt;
-	</code>
-</div>
+<%= render_example do %>
+<label class="c-form__label">
+  Enter your email address again
+  <span class="c-form__optional">(optional)</span>
+</label>
+<% end %>
 
 <h3>Basic Input Fields</h3>
 
 <p>
-	This style should be used for any field that accepts a free input of alphanumeric characters. It can
-	contain an optional placeholder, where browser support exists.
+  This style should be used for any field that accepts a free input of alphanumeric characters. It can
+  contain an optional placeholder, where browser support exists.
 </p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="text">
-	</div>
-
-	<code class="sg-example__code">
-		&lt;input class="c-form__input" id="whatevers_input" name="user[whatevers]" placeholder="example@domain.com" type="text"&gt;
-	</code>
-</div>
+<%= render_example do %>
+<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="text">
+<% end %>
 
 <h3>Textareas</h3>
 
 <p>
-	When creating your textareas, remember to set the <code>rows</code> and <code>cols</code> attributes to suitable numbers.
-	Defining the number of <code>cols</code> is purely in the interests of valid markup, as the style will always stretch to the full width of
-	its parent.
+  When creating your textareas, remember to set the <code>rows</code> and <code>cols</code> attributes to suitable numbers.
+  Defining the number of <code>cols</code> is purely in the interests of valid markup, as the style will always stretch to the full width of
+  its parent.
 </p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<textarea class="c-form__textarea" id="whatevers_textarea" name="user[whatevers]" placeholder="Lorem ipsum dolor sit amet..." rows="5" cols="40"></textarea>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;textarea class="c-form__textarea" id="whatevers_textarea" name="user[whatevers]" placeholder="Lorem ipsum dolor sit amet..." rows="5" cols="40"&gt;&lt;/textarea&gt;
-	</code>
-</div>
+<%= render_example do %>
+<textarea class="c-form__textarea" id="whatevers_textarea" name="user[whatevers]" placeholder="Lorem ipsum dolor sit amet..." rows="5" cols="40"></textarea>
+<% end %>
 
 <h3>Select Boxes</h3>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<select name="user[selection]" id="whatevers_select" class="c-form__select">
-			<option>Volunteer at a club</option>
-			<option>Find volunteers for my club</option>
-			<option>Find a public club</option>
-		</select>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;select name="user[selection]" id="whatevers_select" class="c-form__select"&gt;<br>
-		&nbsp;&nbsp;&lt;option&gt;Volunteer at a club&lt;/option&gt;<br>
-		&nbsp;&nbsp;&lt;option&gt;Find volunteers for my club&lt;/option&gt;<br>
-		&nbsp;&nbsp;&lt;option&gt;Find a public club&lt;/option&gt;<br>
-		&lt;/select&gt;
-	</code>
-</div>
+<%= render_example do %>
+<select name="user[selection]" id="whatevers_select" class="c-form__select">
+  <option>Volunteer at a club</option>
+  <option>Find volunteers for my club</option>
+  <option>Find a public club</option>
+</select>
+<% end %>
 
 <h3>Checkboxes</h3>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label">
-			<input name="user[terms_accepted]" type="checkbox" value="true" checked="checked">
-			Please accept our Terms of Service
-		</label>
-		<label class="c-form__label">
-			<input name="user[newsletter_signup]" type="checkbox" value="true">
-			Would you like to subscribe to our newsletter?
-		</label>
-		<label class="c-form__label">
-			<input name="user[other]" type="checkbox" value="true">
-			Some other question?
-		</label>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;&lt;input name="user[terms_accepted]" type="checkbox" value="true" checked="checked"&gt;<br>
-		&nbsp;&nbsp;Checkbox text goes here<br>
-		&lt;/label&gt;<br>
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;&lt;input name="user[newsletter_signup]" type="checkbox" value="true"&gt;<br>
-		&nbsp;&nbsp;Would you like to subscribe to our newsletter?<br>
-		&lt;/label&gt;<br>
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;&lt;input name="user[other]" type="checkbox" value="true"&gt;<br>
-		&nbsp;&nbsp;Some other question?<br>
-		&lt;/label&gt;
-	</code>
-</div>
+<%= render_example do %>
+<label class="c-form__label">
+  <input name="user[terms_accepted]" type="checkbox" value="true" checked="checked">
+  Please accept our Terms of Service
+</label>
+<label class="c-form__label">
+  <input name="user[newsletter_signup]" type="checkbox" value="true">
+  Would you like to subscribe to our newsletter?
+</label>
+<label class="c-form__label">
+  <input name="user[other]" type="checkbox" value="true">
+  Some other question?
+</label>
+<% end %>
 
 <h3>Radio Buttons</h3>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label">
-			<input name="user[options]" type="radio" value="1" checked="checked">
-			This is the first possible answer of three.
-		</label>
-		<label class="c-form__label">
-			<input name="user[options]" type="radio" value="2">
-			And here's the second.
-		</label>
-		<label class="c-form__label">
-			<input name="user[options]" type="radio" value="3">
-			Would you look at that? It's the third option!
-		</label>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;&lt;input name="user[options]" type="radio" value="1" checked="checked"&gt;<br>
-		&nbsp;&nbsp;This is the first possible answer of three.<br>
-		&lt;/label&gt;<br>
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;&lt;input name="user[options]" type="radio" value="2"&gt;<br>
-		&nbsp;&nbsp;And here's the second.<br>
-		&lt;/label&gt;<br>
-		&lt;label class="c-form__label"&gt;<br>
-		&nbsp;&nbsp;&lt;input name="user[options]" type="radio" value="3"&gt;<br>
-		&nbsp;&nbsp;Would you look at that? It's the third option!<br>
-		&lt;/label&gt;
-	</code>
-</div>
+<%= render_example do %>
+<label class="c-form__label">
+  <input name="user[options]" type="radio" value="1" checked="checked">
+  This is the first possible answer of three.
+</label>
+<label class="c-form__label">
+  <input name="user[options]" type="radio" value="2">
+  And here's the second.
+</label>
+<label class="c-form__label">
+  <input name="user[options]" type="radio" value="3">
+  Would you look at that? It's the third option!
+</label>
+<% end %>
 
 <h3>File Upload Inputs</h3>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="file">
-	</div>
-
-	<code class="sg-example__code">
-		&lt;input class="c-form__input" id="whatevers_input" name="user[whatevers]" type="file"&gt;
-	</code>
-</div>
+<%= render_example do %>
+<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="file">
+<% end %>
 
 <hr>
 
@@ -282,27 +195,14 @@
 
 <p>Occasionally you'll need to provide the user with guidance on what kind of information your form's inputs expect. You can use the <%= link_to "alert", page_path('styles', 'alerts') %> component to achieve this.</p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label" for="whatevers">Email Address</label>
-		<div class="c-alert c-alert--info c-alert--inline">
-			<span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
-			If you are a teacher please use your school email address
-		</div>
-		<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email">
-	</div>
-
-	<code class="sg-example__code">
-		&lt;label class="c-form__label" for="whatevers"&gt;Email Address&lt;/label&gt;<br>
-		&lt;div class="c-alert c-alert--info c-alert--inline"&gt;<br>
-		&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--info-fill c-icon--white"&gt;&lt;/span&gt;<br>
-		&nbsp;&nbsp;If you are a teacher please use your school email address<br>
-		&lt;/div&gt;<br>
-		&lt;input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email"&gt;
-	</code>
+<%= render_example do %>
+<label class="c-form__label" for="whatevers">Email Address</label>
+<div class="c-alert c-alert--info c-alert--inline">
+  <span class="c-icon c-icon--small c-icon--info-fill c-icon--white"></span>
+  If you are a teacher please use your school email address
 </div>
+<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email">
+<% end %>
 
 <h3>Error Highlighting</h3>
 
@@ -310,27 +210,14 @@
 
 <p>It's often a good idea to also notify the user that errors have occured in a separate alert at the top of the page, but this might not be necessary if your form and its inline errors are the focus of the page, for example on a dedicated "log in" screen.</p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<label class="c-form__label c-form__label--error" for="whatevers">Email Address</label>
-		<div class="c-alert c-alert--error c-alert--inline">
-			<span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
-			Please provide a valid email address
-		</div>
-		<input class="c-form__input c-form__input--error" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email" value="user@hotmial">
-	</div>
-
-	<code class="sg-example__code">
-		&lt;label class="c-form__label" for="whatevers"&gt;Email Address&lt;/label&gt;<br>
-		&lt;div class="c-alert c-alert--info c-alert--inline"&gt;<br>
-		&nbsp;&nbsp;&lt;span class="c-icon c-icon--small c-icon--error c-icon--white"&gt;&lt;/span&gt;<br>
-		&nbsp;&nbsp;If you are a teacher please use your school email address<br>
-		&lt;/div&gt;<br>
-		&lt;input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email"&gt;
-	</code>
+<%= render_example do %>
+<label class="c-form__label c-form__label--error" for="whatevers">Email Address</label>
+<div class="c-alert c-alert--error c-alert--inline">
+  <span class="c-icon c-icon--small c-icon--error c-icon--white"></span>
+  Please provide a valid email address
 </div>
+<input class="c-form__input c-form__input--error" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email" value="user@hotmial">
+<% end %>
 
 <hr>
 
@@ -340,58 +227,28 @@
 
 <p>When you need a group of stylised checkboxes, use the following markup. Be careful to ensure that your labels' <code>for</code> attribute matches its corresponding input's <code>id</code> attribute.</p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<div class="c-form__input-group">
-			<input class="c-form__input-group-checkbox" id="input-group-checkbox-1" name="user[terms_accepted]" type="checkbox" value="true" checked="checked">
-			<label class="c-form__input-group-label" for="input-group-checkbox-1">Please accept our Terms of Service</label>
-			<input class="c-form__input-group-checkbox" id="input-group-checkbox-2" name="user[newsletter_signup]" type="checkbox" value="true">
-			<label class="c-form__input-group-label" for="input-group-checkbox-2">Would you like to subscribe to our newsletter?</label>
-			<input class="c-form__input-group-checkbox" id="input-group-checkbox-3" name="user[other]" type="checkbox" value="true">
-			<label class="c-form__input-group-label" for="input-group-checkbox-3">Some other question?</label>
-		</div>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;div class="c-form__input-group"&gt;<br>
-		&nbsp;&nbsp;&lt;input class="c-form__input-group-checkbox" id="input-group-checkbox-1" name="user[terms_accepted]" type="checkbox" value="true" checked="checked"&gt;<br>
-		&nbsp;&nbsp;&lt;label class="c-form__input-group-label" for="input-group-checkbox-1"&gt;Please accept our Terms of Service&lt;/label&gt;<br>
-		&nbsp;&nbsp;&lt;input class="c-form__input-group-checkbox" id="input-group-checkbox-2" name="user[newsletter_signup]" type="checkbox" value="true"&gt;<br>
-		&nbsp;&nbsp;&lt;label class="c-form__input-group-label" for="input-group-checkbox-2"&gt;Would you like to subscribe to our newsletter?&lt;/label&gt;<br>
-		&nbsp;&nbsp;&lt;input class="c-form__input-group-checkbox" id="input-group-checkbox-3" name="user[other]" type="checkbox" value="true"&gt;<br>
-		&nbsp;&nbsp;&lt;label class="c-form__input-group-label" for="input-group-checkbox-3"&gt;Some other question?&lt;/label&gt;<br>
-		&lt;/div&gt;
-	</code>
+<%= render_example do %>
+<div class="c-form__input-group">
+  <input class="c-form__input-group-checkbox" id="input-group-checkbox-1" name="user[terms_accepted]" type="checkbox" value="true" checked="checked">
+  <label class="c-form__input-group-label" for="input-group-checkbox-1">Please accept our Terms of Service</label>
+  <input class="c-form__input-group-checkbox" id="input-group-checkbox-2" name="user[newsletter_signup]" type="checkbox" value="true">
+  <label class="c-form__input-group-label" for="input-group-checkbox-2">Would you like to subscribe to our newsletter?</label>
+  <input class="c-form__input-group-checkbox" id="input-group-checkbox-3" name="user[other]" type="checkbox" value="true">
+  <label class="c-form__input-group-label" for="input-group-checkbox-3">Some other question?</label>
 </div>
+<% end %>
 
 <h3>Radio Input Group</h3>
 
 <p>You can achieve a similar effect to the checkbox group with a series of radio inputs.</p>
 
-<div class="sg-example">
-	<h4 class="sg-example__heading">Example</h4>
-
-	<div class="sg-example__preview">
-		<div class="c-form__input-group">
-			<input class="c-form__input-group-radio" id="input-group-radio-1" name="user[options]" type="radio" value="1" checked="checked">
-			<label class="c-form__input-group-label" for="input-group-radio-1">This is the first possible answer of three.</label>
-			<input class="c-form__input-group-radio" id="input-group-radio-2" name="user[options]" type="radio" value="2">
-			<label class="c-form__input-group-label" for="input-group-radio-2">And here's the second.</label>
-			<input class="c-form__input-group-radio" id="input-group-radio-3" name="user[options]" type="radio" value="3">
-			<label class="c-form__input-group-label" for="input-group-radio-3">Would you look at that? It's the third option!</label>
-		</div>
-	</div>
-
-	<code class="sg-example__code">
-		&lt;div class="c-form__input-group"&gt;<br>
-		&nbsp;&nbsp;&lt;input class="c-form__input-group-radio" id="input-group-radio-1" name="user[options]" type="radio" value="1" checked="checked"&gt;<br>
-		&nbsp;&nbsp;&lt;label class="c-form__input-group-label" for="input-group-radio-1"&gt;This is the first possible answer of three.&lt;/label&gt;<br>
-		&nbsp;&nbsp;&lt;input class="c-form__input-group-radio" id="input-group-radio-2" name="user[options]" type="radio" value="2"&gt;<br>
-		&nbsp;&nbsp;&lt;label class="c-form__input-group-label" for="input-group-radio-2"&gt;And here's the second.&lt;/label&gt;<br>
-		&nbsp;&nbsp;&lt;input class="c-form__input-group-radio" id="input-group-radio-3" name="user[options]" type="radio" value="3"&gt;<br>
-		&nbsp;&nbsp;&lt;label class="c-form__input-group-label" for="input-group-radio-3"&gt;Would you look at that? It's the third option!&lt;/label&gt;<br>
-		&lt;/div&gt;
-	</code>
+<%= render_example do %>
+<div class="c-form__input-group">
+  <input class="c-form__input-group-radio" id="input-group-radio-1" name="user[options]" type="radio" value="1" checked="checked">
+  <label class="c-form__input-group-label" for="input-group-radio-1">This is the first possible answer of three.</label>
+  <input class="c-form__input-group-radio" id="input-group-radio-2" name="user[options]" type="radio" value="2">
+  <label class="c-form__input-group-label" for="input-group-radio-2">And here's the second.</label>
+  <input class="c-form__input-group-radio" id="input-group-radio-3" name="user[options]" type="radio" value="3">
+  <label class="c-form__input-group-label" for="input-group-radio-3">Would you look at that? It's the third option!</label>
 </div>
+<% end %>
