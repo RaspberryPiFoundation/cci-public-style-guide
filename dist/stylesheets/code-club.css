@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.7
+ * @version v1.0.8
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2253,10 +2253,17 @@ ul {
 .o-hero__title:last-child {
   margin: 0; }
 
+.o-hero__title--sentence {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem; }
+
 .o-hero__subtitle {
   font-size: 20px;
-  font-size: 1.25rem;
-  max-width: 100%; }
+  font-size: 1.25rem; }
 
 .o-hero__list {
   display: inline-block;
