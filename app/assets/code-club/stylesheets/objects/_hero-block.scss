@@ -43,9 +43,12 @@
     }
   }
 
+    .o-hero__title--sentence {
+      @include h2;
+    }
+
   .o-hero__subtitle {
     @include rem('font-size', $font-size-large);
-    max-width: 100%;
   }
 
   .o-hero__list {

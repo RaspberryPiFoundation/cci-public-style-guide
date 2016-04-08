@@ -20,13 +20,6 @@
   <li>A useful list of button links. For linking to key downloads/resources. Not section navigation (see <%= link_to("Navigation", page_path('structure', 'nav')) %>)</li>
 </ul>
 
-<p>Internally, we will have a few extra options:</p>
-
-<ul>
-  <li>An alternative background colour</li>
-  <li>A background image. Can either stretch or tile. The text must remain legible. Not rendered on mobile devices</li>
-</ul>
-
 <%= render_example do %>
 <div class="o-hero">
   <div class="c-grid">
@@ -39,6 +32,24 @@
 </div>
 <% end %>
 
+<p>
+  There is also an optional style for if your page title is slightly more sentence-like in structure:
+</p>
+
+<%= render_example do %>
+<div class="o-hero">
+  <div class="c-grid">
+    <div class="c-col--12">
+      <div class="o-hero__body">
+        <h1 class="o-hero__title o-hero__title--sentence">
+          A nationwide network of volunteer-led after<br>
+          school coding clubs for children aged 9–11
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
 <hr>
 
 <h2>Hero With Top Navigation</h2>
