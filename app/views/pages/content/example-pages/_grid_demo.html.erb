@@ -2,13 +2,14 @@
   .grid-demo {
     margin-bottom: 3rem;
   }
-  .grid-demo .c-col {
-    background: rgba(51, 153, 51, 0.1);
-    border:     2px solid #393;
-    border-radius: 0.5rem;
-    padding:    1rem 0;
-    text-align: center;
-  }
+
+    .grid-demo .c-col {
+      background:    rgba(51, 153, 51, 0.1);
+      border:        2px solid #393;
+      border-radius: 0.5rem;
+      padding:       1rem 0;
+      text-align:    center;
+    }
 </style>
 
 <div class="c-page-block">
@@ -21,12 +22,6 @@
   </div>
 
   <div class="grid-demo">
-    <% for num in 1..12 %>
-      <div class="c-grid">
-        <div class="c-col c-col--<%= num %>"><% if num > 1 %><code>.c-col--<%= num %></code><% else %><code>.c-col</code><% end %></div>
-      </div>
-    <% end %>
-
     <div class="c-grid">
       <% 12.times do %><div class="c-col c-col--1"><code>.c-col</code></div><% end %>
     </div>
@@ -60,19 +55,15 @@
 
   <div class="grid-demo">
     <div class="c-grid">
-      <div class="c-col c-col--9"><code>.c-col--9</code></div>
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
-    </div>
-
-    <div class="c-grid">
       <div class="c-col c-col--3"><code>.c-col--3</code></div>
       <div class="c-col c-col--3"><code>.c-col--3</code></div>
       <div class="c-col c-col--6"><code>.c-col--6</code></div>
     </div>
 
     <div class="c-grid">
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--2"><code>.c-col--2</code></div>
       <div class="c-col c-col--8"><code>.c-col--8</code></div>
+      <div class="c-col c-col--2"><code>.c-col--2</code></div>
     </div>
 
     <div class="c-grid">
@@ -80,6 +71,26 @@
       <div class="c-col c-col--3"><code>.c-col--3</code></div>
       <div class="c-col c-col--4"><code>.c-col--4</code></div>
     </div>
+
+    <% for num in 1..11 %>
+      <div class="c-grid">
+        <div class="c-col c-col--<%= num %>">
+          <% if num > 1 %>
+            <code>.c-col--<%= num %></code>
+          <% else %>
+            <code>.c-col</code>
+          <% end %>
+        </div>
+
+        <div class="c-col c-col--<%= 12 - num %>">
+          <% if 12 - num > 1 %>
+            <code>.c-col--<%= 12 - num %></code>
+          <% else %>
+            <code>.c-col</code>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
   </div>
 
   <div class="c-grid">
@@ -95,13 +106,13 @@
     </div>
 
     <div class="c-grid c-grid--h-start">
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
     </div>
 
     <div class="c-grid c-grid--h-start">
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
     </div>
 
     <div class="c-grid c-grid--h-start">
@@ -124,13 +135,13 @@
     </div>
 
     <div class="c-grid c-grid--h-center">
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
     </div>
 
     <div class="c-grid c-grid--h-center">
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
     </div>
 
     <div class="c-grid c-grid--h-center">
@@ -153,13 +164,13 @@
     </div>
 
     <div class="c-grid c-grid--h-end">
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
-      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
     </div>
 
     <div class="c-grid c-grid--h-end">
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
-      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
     </div>
 
     <div class="c-grid c-grid--h-end">
@@ -208,6 +219,14 @@
       <div class="c-col c-col--4">Well what do you know.</div>
       <div class="c-col c-col--4">The<br>bottom<br>of<br>the<br>grid.</div>
       <div class="c-col c-col--4">Can't<br>say<br>we<br>didn't<br>see<br>that<br>coming.</div>
+    </div>
+  </div>
+
+  <div class="c-grid">
+    <div class="c-col c-col--12">
+      <p class="u-text--center">
+        <%= link_to "Back to  the Grid documentation page", page_path('layout', 'grid-system'), :class => "c-button c-button--green" %>
+      </p>
     </div>
   </div>
 </div>
