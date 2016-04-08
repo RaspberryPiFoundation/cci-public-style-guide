@@ -34,11 +34,11 @@ set :linked_files,  fetch(:linked_files, []).push('config/database.yml')
 set :linked_dirs,   fetch(:linked_dirs,  []).push('log', 'tmp/pids', 'tmp/sockets', 'public/system')
 
 # Notifications
-# set :slack_webhook,      'https://hooks.slack.com/services/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'
-# set :slack_run_starting, false
-# set :slack_run_failed,   false
-# set :slack_msg_finished, "#{ENV['USERNAME']} deployed branch *#{fetch :branch}* of #{fetch :application} to server *#{fetch :rails_env}*"
-# set :slack_msg_failed,   "#{ENV['USERNAME']} failed to deployed branch *#{fetch :branch}* of #{fetch :application} to server *#{fetch :rails_env}*"
+set :slack_webhook,      'https://hooks.slack.com/services/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'
+set :slack_run_starting, false
+set :slack_run_failed,   false
+set :slack_msg_finished, "#{ENV['USERNAME']} deployed branch *#{fetch :branch}* of #{fetch :application} to server *#{fetch :rails_env}*"
+set :slack_msg_failed,   "#{ENV['USERNAME']} failed to deployed branch *#{fetch :branch}* of #{fetch :application} to server *#{fetch :rails_env}*"
 #set :newrelic_user,      ENV['USERNAME']
 
 #after "deploy:updated",  'newrelic:notice_deployment'
