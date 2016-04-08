@@ -1,26 +1,17 @@
 .o-nav {
   background:    $white;
   border-bottom: $border-size-base solid $grey-x-light;
-
-  .c-logo {
-    @include padding($padding-x-small);
-  }
-
-  @media only screen and (min-width: $break-narrow) and (max-width: $break-regular) {
-    .c-logo__image {
-      float: none;
-    }
-
-    .c-logo__appendix {
-      display:     block;
-      float:       none;
-      @include margin-top($logo-padding);
-      @include rem('font-size', 16);
-      line-height: 1.2;
-      text-indent: 0;
-    }
-  }
 }
+
+  .o-nav__container {
+    margin:    0 auto;
+    max-width: 1400px;
+    padding:   0 5%;
+
+    .c-logo {
+      @include padding($padding-x-small);
+    }
+  }
 
   .o-nav__toggle-input {
 	  display: none;
@@ -123,6 +114,28 @@
   }
 
   @media only screen and (min-width: $break-narrow) and (max-width: $break-regular) {
+    .o-nav__container {
+      .c-logo {
+        display:    block;
+        float:      none;
+        margin:     0 auto;
+        text-align: center;
+      }
+
+      .c-logo__image {
+        float: none;
+      }
+
+      .c-logo__appendix {
+        display:     block;
+        float:       none;
+        @include margin-top($logo-padding);
+        @include rem('font-size', 16);
+        line-height: 1.2;
+        text-indent: 0;
+      }
+    }
+
     .o-nav__list-container {
       background: none;
       display:    inline-block;
@@ -158,21 +171,32 @@
   }
 
   @include respond-to('regular') {
+    .o-nav__container {
+      padding: 0 8%;
+    }
+
+    .c-logo {
+      float: left;
+    }
+
     .o-nav__list-container {
       background: none;
+      display:    inline;
+      float:      right;
       height:     auto;
+      left:       auto;
       opacity:    1;
-      @include padding($logo-padding);
+      @include padding($padding-x-small);
       position:   static;
+      transition: none;
       width:      auto;
     }
 
     .o-nav__list {
-      display:   block;
-      float:     right;
       @include font-size($font-size-base);
-      position:  static;
-      transform: none;
+      position:   static;
+      text-align: left;
+      transform:  none;
     }
 
     .o-nav__item {
