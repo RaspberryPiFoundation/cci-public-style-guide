@@ -84,7 +84,36 @@
 
   <div class="c-grid">
     <div class="c-col c-col--12">
-      <h2 class="u-text--center">Center Aligning Columns</h2>
+      <h2 class="u-text--center">Left Alignment</h2>
+    </div>
+  </div>
+
+  <div class="grid-demo">
+    <div class="c-grid c-grid--h-start">
+      <div class="c-col c-col--5"><code>.c-col--5</code></div>
+      <div class="c-col c-col--5"><code>.c-col--5</code></div>
+    </div>
+
+    <div class="c-grid c-grid--h-start">
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+    </div>
+
+    <div class="c-grid c-grid--h-start">
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+    </div>
+
+    <div class="c-grid c-grid--h-start">
+      <div class="c-col c-col--2"><code>.c-col--2</code></div>
+      <div class="c-col c-col--2"><code>.c-col--2</code></div>
+      <div class="c-col c-col--6"><code>.c-col--6</code></div>
+    </div>
+  </div>
+
+  <div class="c-grid">
+    <div class="c-col c-col--12">
+      <h2 class="u-text--center">Center Alignment</h2>
     </div>
   </div>
 
@@ -109,17 +138,40 @@
       <div class="c-col c-col--2"><code>.c-col--2</code></div>
       <div class="c-col c-col--6"><code>.c-col--6</code></div>
     </div>
-
-    <% 11.downto(1) do |num| %>
-      <div class="c-grid c-grid--h-center">
-        <div class="c-col c-col--<%= num %>"><% if num > 1 %><code>.c-col--<%= num %></code><% else %><code>.c-col</code><% end %></div>
-      </div>
-    <% end %>
   </div>
 
   <div class="c-grid">
     <div class="c-col c-col--12">
-      <h2 class="u-text--center">Vertical column alignment</h2>
+      <h2 class="u-text--center">Right Alignment</h2>
+    </div>
+  </div>
+
+  <div class="grid-demo">
+    <div class="c-grid c-grid--h-end">
+      <div class="c-col c-col--5"><code>.c-col--5</code></div>
+      <div class="c-col c-col--5"><code>.c-col--5</code></div>
+    </div>
+
+    <div class="c-grid c-grid--h-end">
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+      <div class="c-col c-col--4"><code>.c-col--4</code></div>
+    </div>
+
+    <div class="c-grid c-grid--h-end">
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+      <div class="c-col c-col--3"><code>.c-col--3</code></div>
+    </div>
+
+    <div class="c-grid c-grid--h-end">
+      <div class="c-col c-col--2"><code>.c-col--2</code></div>
+      <div class="c-col c-col--2"><code>.c-col--2</code></div>
+      <div class="c-col c-col--6"><code>.c-col--6</code></div>
+    </div>
+  </div>
+
+  <div class="c-grid">
+    <div class="c-col c-col--12">
+      <h2 class="u-text--center">Vertical Top Alignment</h2>
     </div>
   </div>
 
@@ -129,13 +181,29 @@
       <div class="c-col c-col--4">We're<br>at<br>the<br>top<br>of<br>the<br>grid</div>
       <div class="c-col c-col--4">And<br>it<br>doesn't<br>even<br>matter<br>how<br>tall<br>we<br>are!</div>
     </div>
+  </div>
 
+  <div class="c-grid">
+    <div class="c-col c-col--12">
+      <h2 class="u-text--center">Vertical Center Alignment</h2>
+    </div>
+  </div>
+
+  <div class="grid-demo">
     <div class="c-grid c-grid--v-center">
       <div class="c-col c-col--4">Oh what's this?</div>
       <div class="c-col c-col--4">Now<br>we're<br>in<br>the<br>vertical<br>center<br>of<br>the<br>grid?</div>
       <div class="c-col c-col--4">What<br>madness<br>is<br>this?</div>
     </div>
+  </div>
 
+  <div class="c-grid">
+    <div class="c-col c-col--12">
+      <h2 class="u-text--center">Vertical Bottom Alignment</h2>
+    </div>
+  </div>
+
+  <div class="grid-demo">
     <div class="c-grid c-grid--v-bottom">
       <div class="c-col c-col--4">Well what do you know.</div>
       <div class="c-col c-col--4">The<br>bottom<br>of<br>the<br>grid.</div>
