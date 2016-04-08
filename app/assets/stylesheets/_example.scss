@@ -4,6 +4,10 @@
   @include rem('border-radius', $border-radius-x-small);
   margin-bottom: 2rem;
   @include padding($padding-base);
+
+  .c-grid {
+    padding: 0 !important;
+  }
 }
 
   .sg-example__heading {
