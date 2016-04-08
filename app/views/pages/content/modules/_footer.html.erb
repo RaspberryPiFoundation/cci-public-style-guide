@@ -1,3 +1,8 @@
-<%= render_example do %>
+<p>
+  There isn't quite enough space here to comfortably show the footer in use.
+  Take a look at one of the <%= link_to 'example pages', page_path('layout', 'example-pages') %> to see it.
+</p>
+
+<%= render_example :only_code => true do %>
 <%= render :partial => '_components/footer' %>
 <% end %>
