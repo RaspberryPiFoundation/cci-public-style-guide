@@ -32,7 +32,7 @@
   <div class="c-grid">
     <div class="c-col--12">
       <div class="o-hero__body">
-        <h1 class="o-hero__title">Page Title Would Go Here</h1>
+        <h1 class="o-hero__title">Page Title Goes Here</h1>
       </div>
     </div>
   </div>
@@ -45,19 +45,28 @@
 
 <%= render_example do %>
 <div class="o-hero">
-  <div class="o-hero__nav">
-    <div class="o-hero__nav-left">
-      <a href="#" class="o-hero__nav-link">This is a link</a>
-      <a href="#" class="o-hero__nav-link">So is this</a>
-      <a href="#" class="o-hero__nav-link">Here's another</a>
-    </div>
-    <div class="o-hero__nav-right">
-      <a href="#" class="o-hero__nav-link">Some Other Link</a>
+  <div class="c-grid">
+    <div class="c-col--12">
+      <div class="o-hero__nav">
+        <div class="o-hero__nav-left">
+          <a href="#" class="o-hero__nav-link">This is a link</a>
+          <a href="#" class="o-hero__nav-link">So is this</a>
+          <a href="#" class="o-hero__nav-link">Here's another</a>
+        </div>
+
+        <div class="o-hero__nav-right">
+          <a href="#" class="o-hero__nav-link">Some Other Link</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="o-hero__body">
-    <h1 class="o-hero__title">Page Title Would Go Here</h1>
+  <div class="c-grid c-grid--h-center">
+    <div class="c-col c-col--8">
+      <div class="o-hero__body">
+        <h1 class="o-hero__title">Page Title Goes Here</h1>
+      </div>
+    </div>
   </div>
 </div>
 <% end %>
@@ -68,16 +77,19 @@
 
 <%= render_example do %>
 <div class="o-hero">
-  <div class="o-hero__body">
-    <h1 class="o-hero__title">Page Title Would Go Here</h1>
+  <div class="c-grid c-grid--h-center">
+    <div class="c-col c-col--8">
+      <div class="o-hero__body">
+        <h1 class="o-hero__title">Page Title Would Go Here</h1>
 
-    <p class="o-hero__subtitle">This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
+        <p class="o-hero__subtitle">This hero block has a brief sentence which is great for introducing the content that will feature on the below page.</p>
 
-    <ul class="o-hero__list">
-      <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A download</a></li>
-      <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A link to a PDF</a></li>
-    </ul>
+        <ul class="o-hero__list">
+          <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A download</a></li>
+          <li class="o-hero__item"><a href="#" class="c-button c-button--hollow c-button--white">A link to a PDF</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 <% end %>
-</div>
