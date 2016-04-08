@@ -86,7 +86,8 @@
   margin-bottom: 2rem;
   padding: 16px;
   padding: 1rem; }
-  .sg-example .c-grid {
+  .sg-example .c-grid,
+  .sg-example .o-nav__container {
     padding: 0 !important; }
 
 .sg-example__heading {
