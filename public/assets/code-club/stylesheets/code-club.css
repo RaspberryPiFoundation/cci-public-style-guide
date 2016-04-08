@@ -514,7 +514,7 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 87.5rem;
   padding: 0 5%; }
 
 .c-grid--h-start {
@@ -615,7 +615,7 @@ th {
           align-self: baseline; }
 
 /* tablet-portait */
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .c-grid {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -646,7 +646,7 @@ th {
             flex-basis: 96%; } }
 
 /* tablet-landscape/desktop */
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
   .c-grid {
     padding: 0 8%; }
   .c-col {
