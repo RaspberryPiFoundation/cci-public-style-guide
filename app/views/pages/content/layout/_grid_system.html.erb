@@ -1,49 +1,67 @@
 <h2>How to Grid!</h2>
 
 <p>
-  The Code Club assets contain <%= link_to "Flexbox Grid", "http://flexboxgrid.com" %>
-  to provide a responsive grid system. Head over to <%= link_to "flexboxgrid.com", "http://flexboxgrid.com" %>
-  for full documentation about how to use it. However, before employing the grid
-  please be mindful of the following <strong>DO</strong>s and <strong>DON'T</strong>s.
+  Our grid system uses <%= link_to 'CSS Flexbox', 'https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/' %> to control
+  the layout of the different sections of content and elements your sites will be built from.
 </p>
 
-<h3>DO</h3>
+<p>
+  The grid is built to contain up to 12 columns, and responds to differing viewport widths by
+  adjusting the widths of columns to keep things feeling comfortable and legible.
+</p>
 
-<ul>
-  <li>
-    <strong>DO</strong> use it! If you find yourself writing your own CSS to create a
-    page layout, there's a very good chance that you could achieve the same results
-    with the grid system.
-  </li>
+<p>
+  <%= link_to "Take a look at a demo of the grid system", page_path('example-pages', 'grid-demo'), :class => "c-button c-button--green" %>
+</p>
 
-  <li>
-    <strong>DO</strong> keep it simple. While we do encourage creative use of
-    these assets, it's important to maximise legibility of your content. With
-    that in mind, don't let your layouts become too complicated!
-  </li>
+<hr>
 
-  <li>
-    <strong>DO</strong> think responsively. Flexbox Grid provides many options
-    for controlling how your grid's rows and columns react based on the user's
-    browser width.
-  </li>
-</ul>
+<h3>A Basic Grid</h3>
 
-<h3>DON'T</h3>
+<p>
+  In its purest form, a grid looks like this:
+</p>
 
-<ul>
-  <li>
-    <strong>DON'T</strong> use styleguide-specific classes on the same element
-    as a grid component.
-  </li>
+<%= render_example :only_code => true do %>
+<div class="c-grid">
+  <div class="c-col c-col--12">
+    ...
+  </div>
+</div>
+<% end %>
 
-  <li>
-    <strong>DON'T</strong> nest elements incorrectly! Be sure to wrap your
-    <code>col</code>s in <code>row</code>s, and your <code>row</code>s in a
-    <code>container</code>.
-  </li>
+<p>
+  That will create a grid <strong>row</strong> (<code>.c-grid</code>) with one <strong>column</strong>
+  (<code>.c-col</code>), that spans all 12 columns (<code>.c-col--12</code>)
+</p>
 
-  <li>
-    <strong>DON'T</strong> use it to display <%= link_to "horizontal navigation", page_path('modules', 'secondary-navigation') %>.
-  </li>
-</ul>
+<p>
+  Other column widths are specified the same way:
+</p>
+
+<%= render_example :only_code => true do %>
+<div class="c-grid">
+  <% for i in 1..12 do %>
+  <div class="c-col c-col--<%= i %>"> ... </div>
+  <% end %>
+</div>
+<% end %>
+
+<p>
+  Grid columns can be combined in any combination to create your layouts, just remember that <strong>a column
+  will always appear on the same row as the previous column if there is space for it to fit</strong>.
+</p>
+
+<p>
+  If you find that you need to start a new row, then close your current <code>.c-grid</code> and open a new one.
+</p>
+
+<hr>
+
+<h3>Grid Column Alignment</h3>
+
+<p>
+  Groups of columns can be aligned vertically or horizontally. Examples of the options available can be found on
+  <%= link_to 'the grid demo page', page_path('example-pages', 'grid-demo') %> - view the page source for the HTML
+  you'll need to achieve these results.
+</p>
