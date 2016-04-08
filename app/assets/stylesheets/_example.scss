@@ -5,7 +5,8 @@
   margin-bottom: 2rem;
   @include padding($padding-base);
 
-  .c-grid {
+  .c-grid,
+  .o-nav__container {
     padding: 0 !important;
   }
 }
