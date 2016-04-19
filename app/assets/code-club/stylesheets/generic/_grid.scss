@@ -1,7 +1,7 @@
 .c-grid {
   align-items:     flex-start;
   display:         flex;
-  flex-direction:  column;
+  flex-wrap:       wrap;
   justify-content: space-between;
   margin:          0 auto;
   max-width:       $break-wide;
@@ -20,7 +20,7 @@
   .c-grid--v-baseline { align-items:     baseline;      }
 
   .c-col {
-    flex-grow:     0;
+    flex:          1 0 100%;
     margin-bottom: 5%;
     overflow:      hidden;
   }
@@ -34,13 +34,10 @@
 
 /* tablet-portait */
 @media (min-width: $break-narrow) {
-  .c-grid {
-    flex-direction: row;
-    flex-wrap:      wrap;
+  .c-col {
+    margin: 2%;
   }
 
-    .c-col {
-      margin: 2%;
     }
 
       .c-col--2 {
