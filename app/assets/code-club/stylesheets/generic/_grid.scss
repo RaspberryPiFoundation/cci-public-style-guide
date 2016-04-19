@@ -38,24 +38,29 @@
     margin: 2%;
   }
 
+    .c-col--1 {
+      flex-basis: 21%;
     }
 
-      .c-col--2 {
-        flex-basis: 29%;
-      }
+    .c-col--2 {
+      flex-basis: 29%;
+    }
 
-      .c-col--3,
-      .c-col--4 {
-        flex-basis: 46%;
-      }
+    .c-col--3,
+    .c-col--4 {
+      flex-basis: 46%;
+    }
 
-      .c-col--5,
-      .c-col--6,
-      .c-col--8,
-      .c-col--9,
-      .c-col--12 {
-        flex-basis: 96%;
-      }
+    .c-col--5,
+    .c-col--6,
+    .c-col--7,
+    .c-col--8,
+    .c-col--9,
+    .c-col--10,
+    .c-col--11,
+    .c-col--12 {
+      flex-basis: 96%;
+    }
 }
 
 /* tablet-landscape/desktop */
