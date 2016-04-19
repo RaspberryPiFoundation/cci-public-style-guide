@@ -35,7 +35,9 @@
 /* tablet-portait */
 @media (min-width: $break-narrow) {
   .c-col {
-    margin: 2%;
+    flex-grow:   0;
+    flex-shrink: 1;
+    margin:      2%;
   }
 
     .c-col--1 {
