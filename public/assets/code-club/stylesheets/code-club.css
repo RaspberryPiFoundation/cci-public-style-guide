@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.10
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -507,6 +500,9 @@ th {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1843,7 +1839,10 @@ ul {
   font-size: 0.875rem; }
 
 .c-page-block {
-  background: #F5F6F9;
+  background-color: #F5F6F9;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
   padding-top: 48px;
   padding-top: 3rem;
   padding-right: 0px;

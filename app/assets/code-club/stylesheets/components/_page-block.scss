@@ -1,5 +1,8 @@
 .c-page-block {
-  background:    $grey-xx-light;
+  background-color:    $grey-xx-light;
+  background-position: center center;
+  background-repeat:   none;
+  background-size:     cover;
   @include padding($padding-xx-large, 0);
 }
 
