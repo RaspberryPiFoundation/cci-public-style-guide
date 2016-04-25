@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.10
+ * @version v1.0.11
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -507,6 +507,9 @@ th {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1843,7 +1846,10 @@ ul {
   font-size: 0.875rem; }
 
 .c-page-block {
-  background: #F5F6F9;
+  background-color: #F5F6F9;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
   padding-top: 48px;
   padding-top: 3rem;
   padding-right: 0px;
