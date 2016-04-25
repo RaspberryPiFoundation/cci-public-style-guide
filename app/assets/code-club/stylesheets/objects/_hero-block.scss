@@ -1,6 +1,9 @@
 .o-hero {
-  background: $green;
-  color:      $white;
+  background-color:    $green;
+  background-position: center center;
+  background-repeat:   none;
+  background-size:     cover;
+  color:               $white;
 }
 
   .o-hero__nav {
