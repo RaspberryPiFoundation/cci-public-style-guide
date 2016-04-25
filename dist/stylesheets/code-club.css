@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.12
+ * @version v1.0.13
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1860,14 +1860,14 @@ ul {
   padding-left: 0rem; }
 
 .c-page-block--alt-block {
-  background: #FFF;
+  background-color: #FFF;
   border-bottom: 1px solid #E0E0E0;
   border-top: 1px solid #E0E0E0; }
   .c-page-block--alt-block + .c-page-block--alt-block {
     border-top: none; }
 
 .c-page-block--action-block {
-  background: #5290D2;
+  background-color: #5290D2;
   border: none;
   color: #FFF; }
   .c-page-block--action-block a {
