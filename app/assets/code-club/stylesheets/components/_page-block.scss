@@ -7,9 +7,9 @@
 }
 
   .c-page-block--alt-block {
-    background: $white;
-    border-bottom: $border-size-base solid $grey-x-light;
-    border-top:    $border-size-base solid $grey-x-light;
+    background-color: $white;
+    border-bottom:    $border-size-base solid $grey-x-light;
+    border-top:       $border-size-base solid $grey-x-light;
 
     + .c-page-block--alt-block {
       border-top: none;
@@ -17,9 +17,9 @@
   }
 
   .c-page-block--action-block {
-    background: $blue;
-    border:     none;
-    color:      $white;
+    background-color: $blue;
+    border:           none;
+    color:            $white;
 
     a {
       color: $white;
