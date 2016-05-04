@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.16
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -503,10 +496,6 @@ th {
   visibility: visible; }
 
 .c-grid {
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   background-position: center center;
   background-repeat: none;
   background-size: cover;
@@ -597,7 +586,6 @@ th {
   margin-bottom: 5%;
   overflow: hidden; }
 
-/* Column height and vertical alignment overrides */
 .c-col--top {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
@@ -623,8 +611,7 @@ th {
       -ms-flex-item-align: baseline;
           align-self: baseline; }
 
-/* tablet-portait */
-@media (min-width: 37.5rem) {
+@media only screen and (min-width: 37.5rem) {
   .c-col {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
@@ -659,8 +646,7 @@ th {
         -ms-flex-preferred-size: 96%;
             flex-basis: 96%; } }
 
-/* tablet-landscape/desktop */
-@media (min-width: 56.25rem) {
+@media only screen and (min-width: 56.25rem) {
   .c-grid {
     padding: 0 8%; }
   .c-col {
@@ -1218,6 +1204,94 @@ ul {
   padding-left: 2rem;
   border-radius: 48px;
   border-radius: 3rem; }
+
+.c-card {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  border-radius: 0.75rem;
+  padding: 0; }
+
+.c-card__body {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  padding-left: 16px;
+  padding-left: 1rem; }
+  .c-card__body > :last-child {
+    margin-bottom: 0; }
+
+.c-card__footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 12px;
+  padding: 0.75rem;
+  text-align: center; }
+
+.c-card__image {
+  display: block;
+  max-width: 100%; }
+
+.c-card__link {
+  text-decoration: none; }
+  .c-card__link:hover {
+    text-decoration: underline; }
+
+.c-card__course {
+  color: #848484; }
+
+.c-card__course--scratch,
+.c-card__course--webdev,
+.c-card__course--python {
+  color: #FFF; }
+  .c-card__course--scratch .c-card__footer,
+  .c-card__course--webdev .c-card__footer,
+  .c-card__course--python .c-card__footer {
+    border: 0; }
+
+.c-card__course--scratch {
+  background: #E18932; }
+
+.c-card__course--webdev {
+  background: #3E98DA; }
+
+.c-card__course--python {
+  background: #54BB92; }
+
+.c-card__course-link {
+  color: #F5F6F9;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none; }
+  .c-card__course-link:hover {
+    text-decoration: underline; }
+
+.c-card__course-title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+  color: #FFF;
+  left: 0;
+  margin: 0;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  width: 100%; }
 
 .c-logo {
   display: inline-block;
@@ -1846,6 +1920,14 @@ ul {
   background-size: 10px;
   background-size: 0.625rem;
   list-style-type: none;
+  margin-top: 4px;
+  margin-top: 0.25rem;
+  margin-right: 0px;
+  margin-right: 0rem;
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
+  margin-left: 0px;
+  margin-left: 0rem;
   padding-left: 20px;
   padding-left: 1.25rem; }
   .c-list__item--bulleted.c-list__item--large {
@@ -1854,8 +1936,6 @@ ul {
     background-position: left 0.2rem;
     background-size: 16px;
     list-style-type: none;
-    margin-bottom: 16px;
-    margin-bottom: 1rem;
     padding-left: 32px;
     padding-left: 2rem; }
 
@@ -1867,7 +1947,7 @@ ul {
   .c-list__item--horiz:first-child {
     margin-left: 0; }
 
-.c-meta, .o-project-card__meta {
+.c-meta {
   font-size: 14px;
   font-size: 0.875rem; }
 
@@ -1937,205 +2017,6 @@ ul {
   padding-left: 0rem;
   text-align: center;
   width: 25%; }
-
-.o-card {
-  background: #FFF;
-  border: 1px solid #E0E0E0;
-  border-radius: 12px;
-  border-radius: 0.75rem;
-  padding: 0;
-  margin-top: 0px;
-  margin-top: 0rem;
-  margin-right: 0px;
-  margin-right: 0rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  margin-left: 16px;
-  margin-left: 1rem; }
-  .o-card:first-child {
-    margin-left: 0; }
-
-.o-card__heading {
-  border-bottom: 1px solid #E0E0E0;
-  padding: 12px;
-  padding: 0.75rem;
-  text-align: center; }
-
-.o-card__body {
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-right: 16px;
-  padding-right: 1rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem;
-  padding-left: 16px;
-  padding-left: 1rem; }
-
-.o-card__footer {
-  border-top: 1px solid #E0E0E0;
-  padding: 12px;
-  padding: 0.75rem;
-  text-align: center; }
-
-.o-card__footer-link {
-  text-decoration: none; }
-  .o-card__footer-link:hover {
-    text-decoration: underline; }
-
-.o-course-card {
-  background: #FFF;
-  padding: 0;
-  margin-top: 0px;
-  margin-top: 0rem;
-  margin-right: 0px;
-  margin-right: 0rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  margin-left: 16px;
-  margin-left: 1rem; }
-  .o-course-card:first-child {
-    margin-left: 0; }
-
-.o-course-card__link {
-  border-radius: 12px;
-  border-radius: 0.75rem;
-  color: #848484;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  text-decoration: none; }
-  .o-course-card__link:hover {
-    box-shadow: 0 0 15px #E0E0E0;
-    color: #848484; }
-
-.o-course-card__link--generic {
-  border: 1px solid #E0E0E0; }
-  .o-course-card__link--generic:hover {
-    border-color: #C2C2C2; }
-
-.o-course-card__link--scratch {
-  background: #E18932;
-  border: none;
-  color: #FFF; }
-  .o-course-card__link--scratch:hover {
-    color: #FFF; }
-
-.o-course-card__link--webdev {
-  background: #3E98DA;
-  border: none;
-  color: #FFF; }
-  .o-course-card__link--webdev:hover {
-    color: #FFF; }
-
-.o-course-card__link--python {
-  background: #54BB92;
-  border: none;
-  color: #FFF; }
-  .o-course-card__link--python:hover {
-    color: #FFF; }
-
-.o-course-card__body {
-  background-position: center center;
-  background-repeat: repeat;
-  padding-top: 48px;
-  padding-top: 3rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  padding-bottom: 48px;
-  padding-bottom: 3rem;
-  padding-left: 12px;
-  padding-left: 0.75rem; }
-
-.o-course-card__body--scratch {
-  background-image: url("../images/project-cards/scratch.svg"); }
-
-.o-course-card__body--webdev {
-  background-image: url("../images/project-cards/webdev.svg");
-  background-size: cover; }
-
-.o-course-card__body--python {
-  background-image: url("../images/project-cards/python.svg"); }
-
-.o-course-card__image {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%; }
-
-.o-course-card__title {
-  margin: 0; }
-
-.o-course-card__footer {
-  background: rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 100;
-  padding: 12px;
-  padding: 0.75rem; }
-
-.o-course-card__footer--generic {
-  background: transparent;
-  border-top: 1px solid #E0E0E0; }
-
-.o-project-card {
-  background: #FFF;
-  border: none;
-  border-radius: 12px;
-  border-radius: 0.75rem;
-  margin-top: 0px;
-  margin-top: 0rem;
-  margin-right: 0px;
-  margin-right: 0rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  margin-left: 16px;
-  margin-left: 1rem;
-  overflow: hidden;
-  padding: 0; }
-  .o-project-card:first-child {
-    margin-left: 0; }
-  .o-project-card:hover {
-    box-shadow: 0 0 15px #C2C2C2; }
-
-.o-project-card__link {
-  color: #333333;
-  display: block;
-  text-decoration: none; }
-  .o-project-card__link:hover {
-    border-color: #C2C2C2;
-    color: #333333; }
-
-.o-project-card__image {
-  display: block;
-  max-width: 100%; }
-
-.o-project-card__body {
-  border: solid #E0E0E0;
-  border-bottom-right-radius: 12px;
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 12px;
-  border-bottom-left-radius: 0.75rem;
-  border-width: 0 1px 1px;
-  font-weight: 300;
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem;
-  padding-left: 12px;
-  padding-left: 0.75rem; }
-
-.o-project-card__meta {
-  font-weight: 500;
-  line-height: 2; }
-
-.o-project-card__title {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem; }
 
 .o-club-list {
   padding: 0; }
@@ -2407,7 +2288,7 @@ ul {
   z-index: 500; }
 
 .o-nav__list {
-  position: relative;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
