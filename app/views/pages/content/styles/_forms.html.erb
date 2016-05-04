@@ -114,7 +114,43 @@
 </p>
 
 <%= render_example do %>
-<input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="text">
+<input class="c-form__input" name="user[name]" placeholder="Grace Hopper" type="text">
+<% end %>
+
+<h3>Input Sizes</h3>
+
+<p>
+  By default all inputs are displayed at 100% width of their containing element.
+  If you need more control over your input sizes then use the following classes:
+</p>
+
+<ul>
+  <li><code>c-form__input--width-xs</code></li>
+  <li><code>c-form__input--width-s</code></li>
+  <li><code>c-form__input--width-l</code></li>
+  <li><code>c-form__input--width-xl</code></li>
+  <li><code>c-form__input--width-xxl</code></li>
+</ul>
+
+<%= render_example(:with_code => false) do %>
+<input class="c-form__input c-form__input--width-xs"  name="user[name]" placeholder="Grace Hopper" type="text">
+<input class="c-form__input c-form__input--width-s"   name="user[name]" placeholder="Grace Hopper" type="text">
+<input class="c-form__input c-form__input--width-l"   name="user[name]" placeholder="Grace Hopper" type="text">
+<input class="c-form__input c-form__input--width-xl"  name="user[name]" placeholder="Grace Hopper" type="text">
+<input class="c-form__input c-form__input--width-xxl" name="user[name]" placeholder="Grace Hopper" type="text">
+<% end %>
+
+<h3>Inline Inputs</h3>
+
+<p>
+  Input fields are set to behave as a <em>block level element</em>. To override
+  this behavior use the <code>c-form__input--inline</code> class.
+</p>
+
+<%= render_example(:show_code => false) do %>
+  <% 5.times do %>
+   <input class="c-form__input c-form__input--inline c-form__input--width-s"   name="user[name]" placeholder="Grace Hopper" type="text">
+  <% end %>
 <% end %>
 
 <h3>Textareas</h3>
@@ -137,6 +173,65 @@
   <option>Find volunteers for my club</option>
   <option>Find a public club</option>
 </select>
+<% end %>
+
+<h3>Select Box Sizes</h3>
+
+<p>
+  Just like regular inputs, select boxes can be sized with the following classes:
+</p>
+
+<ul>
+  <li><code>c-form__select--width-xs</code></li>
+  <li><code>c-form__select--width-s</code></li>
+  <li><code>c-form__select--width-l</code></li>
+  <li><code>c-form__select--width-xl</code></li>
+  <li><code>c-form__select--width-xxl</code></li>
+</ul>
+
+<%= render_example(:with_code => false) do %>
+<select name="user[selection]" id="whatevers_select" class="c-form__select c-form__select--width-xs">
+  <option>Volunteer at a club</option>
+  <option>Find volunteers for my club</option>
+  <option>Find a public club</option>
+</select>
+<select name="user[selection]" id="whatevers_select" class="c-form__select c-form__select--width-s">
+  <option>Volunteer at a club</option>
+  <option>Find volunteers for my club</option>
+  <option>Find a public club</option>
+</select>
+<select name="user[selection]" id="whatevers_select" class="c-form__select c-form__select--width-l">
+  <option>Volunteer at a club</option>
+  <option>Find volunteers for my club</option>
+  <option>Find a public club</option>
+</select>
+<select name="user[selection]" id="whatevers_select" class="c-form__select c-form__select--width-xl">
+  <option>Volunteer at a club</option>
+  <option>Find volunteers for my club</option>
+  <option>Find a public club</option>
+</select>
+<select name="user[selection]" id="whatevers_select" class="c-form__select c-form__select--width-xxl">
+  <option>Volunteer at a club</option>
+  <option>Find volunteers for my club</option>
+  <option>Find a public club</option>
+</select>
+<% end %>
+
+<h3>Inline Select Boxes</h3>
+
+<p>
+  Select boxes are set to behave as a <em>block level element</em>. To override
+  this behavior use the <code>c-form__select--inline</code> class.
+</p>
+
+<%= render_example(:with_code => false) do %>
+  <% 5.times do %>
+    <select name="user[selection]" id="whatevers_select" class="c-form__select c-form__select--inline c-form__select--width-s">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+  <% end %>
 <% end %>
 
 <h3>Checkboxes</h3>
