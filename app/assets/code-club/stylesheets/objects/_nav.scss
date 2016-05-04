@@ -84,7 +84,7 @@
   }
 
   .o-nav__list {
-    @include align-element-vert;
+    @include align-element-vertically;
     @include font-size($font-size-large);
     margin:     0;
     padding:    0;
