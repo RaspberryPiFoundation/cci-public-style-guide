@@ -1,8 +1,19 @@
 
-@mixin align-element-vert {
-  position:  relative;
+@mixin align-element-vertically {
+  position:  absolute;
   top:       50%;
   transform: translateY(-50%);
+}
+
+@mixin align-element-horizontally {
+  position:  absolute;
+  left:      50%;
+  transform: translateX(-50%);
+}
+
+@mixin align-element-center {
+  @include align-element-vertically;
+  @include align-element-horizontally;
 }
 
 @mixin clearfix {
