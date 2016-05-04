@@ -1,5 +1,4 @@
 .c-grid {
-  align-items:         flex-start;
   background-position: center center;
   background-repeat:   none;
   background-size:     cover;
@@ -22,21 +21,19 @@
   .c-grid--v-stretch  { align-items:     stretch;       }
   .c-grid--v-baseline { align-items:     baseline;      }
 
-  .c-col {
-    flex:          1 0 100%;
-    margin-bottom: 5%;
-    overflow:      hidden;
-  }
+.c-col {
+  flex:          1 0 100%;
+  margin-bottom: 5%;
+  overflow:      hidden;
+}
 
-    /* Column height and vertical alignment overrides */
-    .c-col--top         { align-self:  flex-start; }
-    .c-col--center      { align-self:  center;     }
-    .c-col--bottom      { align-self:  flex-end;   }
-    .c-col--stretch     { align-self:  stretch;    }
-    .c-col--baseline    { align-self:  baseline;   }
+  .c-col--top         { align-self:  flex-start; }
+  .c-col--center      { align-self:  center;     }
+  .c-col--bottom      { align-self:  flex-end;   }
+  .c-col--stretch     { align-self:  stretch;    }
+  .c-col--baseline    { align-self:  baseline;   }
 
-/* tablet-portait */
-@media (min-width: $break-narrow) {
+@include respond-to('narrow') {
   .c-col {
     flex-grow:   0;
     flex-shrink: 1;
@@ -68,26 +65,25 @@
     }
 }
 
-/* tablet-landscape/desktop */
-@media (min-width: $break-regular) {
+@include respond-to('regular') {
   .c-grid {
     padding: 0 8%;
   }
 
-    .c-col {
-      margin: 1%;
-    }
+  .c-col {
+    margin: 1%;
+  }
 
-      .c-col--1  { flex-basis: 6%;    }
-      .c-col--2  { flex-basis: 14.5%; }
-      .c-col--3  { flex-basis: 23%;   }
-      .c-col--4  { flex-basis: 31%;   }
-      .c-col--5  { flex-basis: 39.5%; }
-      .c-col--6  { flex-basis: 48%;   }
-      .c-col--7  { flex-basis: 56%;   }
-      .c-col--8  { flex-basis: 64.5%; }
-      .c-col--9  { flex-basis: 73%;   }
-      .c-col--10 { flex-basis: 81%;   }
-      .c-col--11 { flex-basis: 89.5%; }
-      .c-col--12 { flex-basis: 100%;  }
+    .c-col--1  { flex-basis: 6%;    }
+    .c-col--2  { flex-basis: 14.5%; }
+    .c-col--3  { flex-basis: 23%;   }
+    .c-col--4  { flex-basis: 31%;   }
+    .c-col--5  { flex-basis: 39.5%; }
+    .c-col--6  { flex-basis: 48%;   }
+    .c-col--7  { flex-basis: 56%;   }
+    .c-col--8  { flex-basis: 64.5%; }
+    .c-col--9  { flex-basis: 73%;   }
+    .c-col--10 { flex-basis: 81%;   }
+    .c-col--11 { flex-basis: 89.5%; }
+    .c-col--12 { flex-basis: 100%;  }
 }
