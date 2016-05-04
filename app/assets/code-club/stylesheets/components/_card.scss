@@ -1,0 +1,73 @@
+.c-card {
+  background: $white;
+  border:     $border-size-base solid $grey-x-light;
+  @include rem('border-radius', $border-radius-small);
+  padding:    0;
+}
+
+  .c-card__body {
+    @include padding($padding-small, $padding-base);
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .c-card__footer {
+    border-top: $border-size-base solid $grey-x-light;
+    @include padding($padding-small);
+    text-align: center;
+  }
+
+  .c-card__image {
+    display:   block;
+    max-width: 100%;
+  }
+
+  .c-card__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .c-card__course {
+    color: $grey-med;
+  }
+
+    .c-card__course--scratch,
+    .c-card__course--webdev,
+    .c-card__course--python {
+      color: $white;
+
+      .c-card__footer {
+        border: 0;
+      }
+    }
+
+    .c-card__course--scratch { background: $card-orange; }
+    .c-card__course--webdev  { background: $card-blue;   }
+    .c-card__course--python  { background: $card-green;  }
+
+    .c-card__course-link {
+      color:           $grey-xx-light;
+      display:         block;
+      position:        relative;
+      text-align:      center;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+      .c-card__course-title {
+        @include align-element-vertically;
+        @include h2;
+        color:  $white;
+        left:   0;
+        margin: 0;
+        @include padding(0, $padding-small);
+        width:  100%;
+      }
