@@ -1862,6 +1862,9 @@ ul {
   .c-icon--x-large.c-icon--red {
     background-position: center -150px; }
 
+.c-image {
+  width: 100%; }
+
 .c-info {
   background: rgba(82, 144, 210, 0.1);
   border: 1px solid #5290D2;
