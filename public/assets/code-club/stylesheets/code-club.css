@@ -1947,6 +1947,21 @@ ul {
   .c-list__item--horiz:first-child {
     margin-left: 0; }
 
+.c-icon-list {
+  padding: 0; }
+
+.c-icon-list__item {
+  background-position: left top;
+  background-repeat: no-repeat;
+  list-style: none;
+  padding-left: 32px;
+  padding-left: 2rem;
+  position: relative; }
+  .c-icon-list__item .c-icon {
+    position: absolute;
+    left: 0;
+    top: 0; }
+
 .c-meta {
   font-size: 14px;
   font-size: 0.875rem; }
@@ -2067,7 +2082,7 @@ ul {
   padding-left: 0px;
   padding-left: 0rem; }
   .o-footer a {
-    color: #FFF;
+    color: #E0E0E0;
     font-weight: 100;
     text-decoration: none; }
     .o-footer a:active, .o-footer a:focus, .o-footer a:hover {
@@ -2075,6 +2090,8 @@ ul {
       text-decoration: underline; }
 
 .o-footer__heading {
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 8px;
   margin-bottom: 0.5rem; }

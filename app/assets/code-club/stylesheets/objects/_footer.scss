@@ -6,7 +6,7 @@
   @include padding($padding-xxxx-large, 0, $padding-xx-large);
 
   a {
-    color:           $white;
+    color:           $grey-x-light;
     font-weight:     $font-weight-light;
     text-decoration: none;
 
@@ -20,6 +20,7 @@
 }
 
   .o-footer__heading {
+    @include font-size($font-size-base);
     font-weight: $font-weight-bold;
     @include margin-bottom($margin-x-small);
   }
