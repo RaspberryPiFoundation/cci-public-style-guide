@@ -5,5 +5,8 @@ Rails.application.config.assets.version = '1.1'
 
 # Add additional assets to the asset load path
 Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/images"
+Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/images/favicons"
+Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/images/icons"
+Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/images/project-cards"
 Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/javascripts"
 Rails.application.config.assets.paths << "#{Rails.root}/public/assets/code-club/stylesheets"
