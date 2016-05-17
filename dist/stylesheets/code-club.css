@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.19
+ * @version v1.0.20
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1943,7 +1943,9 @@ ul {
     margin-left: 0px;
     margin-left: 0rem; }
   .c-icon-list__item .c-icon-list__text {
-    float: left; }
+    float: left;
+    line-height: 26px;
+    line-height: 1.625rem; }
 
 .c-meta {
   font-size: 14px;
