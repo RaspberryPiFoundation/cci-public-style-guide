@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.18
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -507,14 +500,11 @@ th {
   background-repeat: none;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
@@ -523,124 +513,103 @@ th {
 
 .c-grid--h-start {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
 .c-grid--h-center {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
 .c-grid--h-end {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
 .c-grid--h-between {
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
 .c-grid--h-around {
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .c-grid--v-top {
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
               -ms-grid-row-align: flex-start;
           align-items: flex-start; }
 
 .c-grid--v-center {
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
               -ms-grid-row-align: center;
           align-items: center; }
 
 .c-grid--v-bottom {
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
       -ms-flex-align: end;
               -ms-grid-row-align: flex-end;
           align-items: flex-end; }
 
 .c-grid--v-stretch {
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
               -ms-grid-row-align: stretch;
           align-items: stretch; }
 
 .c-grid--v-baseline {
   -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
       -ms-flex-align: baseline;
               -ms-grid-row-align: baseline;
           align-items: baseline; }
 
 .c-col {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 100%;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   margin-bottom: 5%;
   overflow: hidden; }
 
 .c-col--top {
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start; }
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
 
 .c-col--center {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center; }
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .c-col--bottom {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end; }
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 
 .c-col--stretch {
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-          align-self: stretch; }
+  -ms-flex-item-align: stretch;
+      align-self: stretch; }
 
 .c-col--baseline {
-  -webkit-align-self: baseline;
-      -ms-flex-item-align: baseline;
-          align-self: baseline; }
+  -ms-flex-item-align: baseline;
+      align-self: baseline; }
 
 @media only screen and (min-width: 37.5rem) {
   .c-col {
     -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    -webkit-flex-shrink: 1;
-        -ms-flex-negative: 1;
-            flex-shrink: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     margin: 2%; }
   .c-col--1 {
-    -webkit-flex-basis: 21%;
-        -ms-flex-preferred-size: 21%;
-            flex-basis: 21%; }
+    -ms-flex-preferred-size: 21%;
+        flex-basis: 21%; }
   .c-col--2 {
-    -webkit-flex-basis: 29%;
-        -ms-flex-preferred-size: 29%;
-            flex-basis: 29%; }
+    -ms-flex-preferred-size: 29%;
+        flex-basis: 29%; }
   .c-col--3,
   .c-col--4 {
-    -webkit-flex-basis: 46%;
-        -ms-flex-preferred-size: 46%;
-            flex-basis: 46%; }
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%; }
   .c-col--5,
   .c-col--6,
   .c-col--7,
@@ -649,9 +618,8 @@ th {
   .c-col--10,
   .c-col--11,
   .c-col--12 {
-    -webkit-flex-basis: 96%;
-        -ms-flex-preferred-size: 96%;
-            flex-basis: 96%; } }
+    -ms-flex-preferred-size: 96%;
+        flex-basis: 96%; } }
 
 @media only screen and (min-width: 56.25rem) {
   .c-grid {
@@ -659,53 +627,41 @@ th {
   .c-col {
     margin: 1%; }
   .c-col--1 {
-    -webkit-flex-basis: 6%;
-        -ms-flex-preferred-size: 6%;
-            flex-basis: 6%; }
+    -ms-flex-preferred-size: 6%;
+        flex-basis: 6%; }
   .c-col--2 {
-    -webkit-flex-basis: 14.5%;
-        -ms-flex-preferred-size: 14.5%;
-            flex-basis: 14.5%; }
+    -ms-flex-preferred-size: 14.5%;
+        flex-basis: 14.5%; }
   .c-col--3 {
-    -webkit-flex-basis: 23%;
-        -ms-flex-preferred-size: 23%;
-            flex-basis: 23%; }
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%; }
   .c-col--4 {
-    -webkit-flex-basis: 31%;
-        -ms-flex-preferred-size: 31%;
-            flex-basis: 31%; }
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%; }
   .c-col--5 {
-    -webkit-flex-basis: 39.5%;
-        -ms-flex-preferred-size: 39.5%;
-            flex-basis: 39.5%; }
+    -ms-flex-preferred-size: 39.5%;
+        flex-basis: 39.5%; }
   .c-col--6 {
-    -webkit-flex-basis: 48%;
-        -ms-flex-preferred-size: 48%;
-            flex-basis: 48%; }
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%; }
   .c-col--7 {
-    -webkit-flex-basis: 56%;
-        -ms-flex-preferred-size: 56%;
-            flex-basis: 56%; }
+    -ms-flex-preferred-size: 56%;
+        flex-basis: 56%; }
   .c-col--8 {
-    -webkit-flex-basis: 64.5%;
-        -ms-flex-preferred-size: 64.5%;
-            flex-basis: 64.5%; }
+    -ms-flex-preferred-size: 64.5%;
+        flex-basis: 64.5%; }
   .c-col--9 {
-    -webkit-flex-basis: 73%;
-        -ms-flex-preferred-size: 73%;
-            flex-basis: 73%; }
+    -ms-flex-preferred-size: 73%;
+        flex-basis: 73%; }
   .c-col--10 {
-    -webkit-flex-basis: 81%;
-        -ms-flex-preferred-size: 81%;
-            flex-basis: 81%; }
+    -ms-flex-preferred-size: 81%;
+        flex-basis: 81%; }
   .c-col--11 {
-    -webkit-flex-basis: 89.5%;
-        -ms-flex-preferred-size: 89.5%;
-            flex-basis: 89.5%; }
+    -ms-flex-preferred-size: 89.5%;
+        flex-basis: 89.5%; }
   .c-col--12 {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%; } }
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 
 a {
   color: #339933;
@@ -1964,13 +1920,23 @@ ul {
   background-position: left top;
   background-repeat: no-repeat;
   list-style: none;
-  padding-left: 32px;
-  padding-left: 2rem;
   position: relative; }
+  .c-icon-list__item:after {
+    content: "";
+    display: table;
+    clear: both; }
   .c-icon-list__item .c-icon {
-    position: absolute;
-    left: 0;
-    top: 0; }
+    float: left;
+    margin-top: 0px;
+    margin-top: 0rem;
+    margin-right: 12px;
+    margin-right: 0.75rem;
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
+    margin-left: 0px;
+    margin-left: 0rem; }
+  .c-icon-list__item .c-icon-list__text {
+    float: left; }
 
 .c-meta {
   font-size: 14px;
@@ -2835,6 +2801,34 @@ ul {
 .u-padding-left--xx-large {
   padding-left: 48px !important;
   padding-left: 3rem !important; }
+
+.u-rounded--xx-large {
+  border-radius: 48px;
+  border-radius: 3rem; }
+
+.u-rounded--x-large {
+  border-radius: 32px;
+  border-radius: 2rem; }
+
+.u-rounded--large {
+  border-radius: 24px;
+  border-radius: 1.5rem; }
+
+.u-rounded {
+  border-radius: 16px;
+  border-radius: 1rem; }
+
+.u-rounded--small {
+  border-radius: 12px;
+  border-radius: 0.75rem; }
+
+.u-rounded--x-small {
+  border-radius: 8px;
+  border-radius: 0.5rem; }
+
+.u-rounded--xx-small {
+  border-radius: 4px;
+  border-radius: 0.25rem; }
 
 .u-text--center {
   margin-left: auto   !important;
