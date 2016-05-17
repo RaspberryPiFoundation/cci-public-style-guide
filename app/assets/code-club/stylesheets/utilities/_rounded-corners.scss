@@ -1,0 +1,7 @@
+.u-rounded--xx-large { @include rem('border-radius', $border-radius-xx-large); }
+.u-rounded--x-large  { @include rem('border-radius', $border-radius-x-large);  }
+.u-rounded--large    { @include rem('border-radius', $border-radius-large);    }
+.u-rounded           { @include rem('border-radius', $border-radius-base);     }
+.u-rounded--small    { @include rem('border-radius', $border-radius-small);    }
+.u-rounded--x-small  { @include rem('border-radius', $border-radius-x-small);  }
+.u-rounded--xx-small { @include rem('border-radius', $border-radius-xx-small); }
