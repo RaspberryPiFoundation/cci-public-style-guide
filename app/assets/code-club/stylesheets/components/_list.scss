@@ -38,3 +38,25 @@
         margin-left: 0;
       }
     }
+
+    .c-icon-list {
+      padding: 0;
+    }
+
+      .c-icon-list__item {
+        @include clearfix;
+        background-position: left top;
+        background-repeat:   no-repeat;
+        list-style:          none;
+        position:            relative;
+
+        .c-icon {
+          float: left;
+          @include margin(0, $margin-small, $margin-small, 0);
+        }
+
+        .c-icon-list__text {
+          float: left;
+          @include rem('line-height', $icon-size-large);
+        }
+      }

@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.19
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -1943,7 +1936,9 @@ ul {
     margin-left: 0px;
     margin-left: 0rem; }
   .c-icon-list__item .c-icon-list__text {
-    float: left; }
+    float: left;
+    line-height: 26px;
+    line-height: 1.625rem; }
 
 .c-meta {
   font-size: 14px;
