@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.20
+ * @version v1.0.21
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2003,8 +2003,7 @@ ul {
 .c-strip-table__heading {
   padding: 16px;
   padding: 1rem;
-  text-align: left;
-  width: 50%; }
+  text-align: left; }
 
 .c-strip-table__cell {
   padding-top: 16px;
@@ -2015,8 +2014,7 @@ ul {
   padding-bottom: 1rem;
   padding-left: 0px;
   padding-left: 0rem;
-  text-align: center;
-  width: 25%; }
+  text-align: left; }
 
 .o-club-list {
   padding: 0; }
