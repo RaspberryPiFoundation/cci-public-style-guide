@@ -15,11 +15,9 @@
     .c-strip-table__heading {
       @include padding($padding-base);
       text-align: left;
-      width: 50%;
     }
 
     .c-strip-table__cell {
       @include padding($padding-base, 0);
-      text-align: center;
-      width: 25%;
+      text-align: left;
     }

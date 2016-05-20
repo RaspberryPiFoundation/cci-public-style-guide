@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.20
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -2003,8 +1996,7 @@ ul {
 .c-strip-table__heading {
   padding: 16px;
   padding: 1rem;
-  text-align: left;
-  width: 50%; }
+  text-align: left; }
 
 .c-strip-table__cell {
   padding-top: 16px;
@@ -2015,8 +2007,7 @@ ul {
   padding-bottom: 1rem;
   padding-left: 0px;
   padding-left: 0rem;
-  text-align: center;
-  width: 25%; }
+  text-align: left; }
 
 .o-club-list {
   padding: 0; }
