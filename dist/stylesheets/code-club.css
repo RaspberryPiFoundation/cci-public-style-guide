@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.21
+ * @version v1.0.22
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -504,8 +504,7 @@ th {
 
 .c-grid {
   background-position: center center;
-  background-repeat: none;
-  background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2119,9 +2118,17 @@ ul {
 .o-hero {
   background-color: #339933;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #FFF; }
+
+.o-hero--bg-top,
+.o-hero--bg-top .c-grid {
+  background-position: center top; }
+
+.o-hero--bg-bottom,
+.o-hero--bg-bottom .c-grid {
+  background-position: center bottom; }
 
 .o-hero__nav {
   padding-top: 8px;
