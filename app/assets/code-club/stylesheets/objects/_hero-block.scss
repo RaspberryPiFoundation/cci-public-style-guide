@@ -6,6 +6,16 @@
   color:               $white;
 }
 
+  .o-hero--bg-top,
+  .o-hero--bg-top .c-grid {
+    background-position: center top;
+  }
+
+  .o-hero--bg-bottom,
+  .o-hero--bg-bottom .c-grid {
+    background-position: center bottom;
+  }
+
   .o-hero__nav {
     @include padding($padding-x-small, 0);
   }
