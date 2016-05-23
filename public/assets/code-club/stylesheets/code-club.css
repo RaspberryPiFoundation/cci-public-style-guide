@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.22
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -505,6 +498,7 @@ th {
 .c-grid {
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2119,7 +2113,7 @@ ul {
   background-color: #339933;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   color: #FFF; }
 
 .o-hero--bg-top,
