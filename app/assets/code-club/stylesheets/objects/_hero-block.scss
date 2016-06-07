@@ -6,6 +6,12 @@
   color:               $white;
 }
 
+  @include respond-to('wide') {
+    .o-hero {
+      @include rem('min-height', $hero-body-min-height);
+    }
+  }
+
   .o-hero--bg-top,
   .o-hero--bg-top .c-grid {
     background-position: center top;
