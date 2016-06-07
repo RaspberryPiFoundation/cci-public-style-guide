@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.26
+ * @version v1.0.27
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2132,6 +2132,10 @@ ul {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFF; }
+
+@media only screen and (max-width: 56.24rem) {
+  .o-hero {
+    background-image: none !important; } }
 
 @media only screen and (min-width: 87.5rem) {
   .o-hero {
