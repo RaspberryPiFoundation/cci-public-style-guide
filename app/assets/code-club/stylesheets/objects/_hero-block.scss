@@ -6,6 +6,12 @@
   color:               $white;
 }
 
+  @media only screen and (max-width: 56.24rem) {
+    .o-hero {
+      background-image: none !important;
+    }
+  }
+
   @include respond-to('wide') {
     .o-hero {
       @include rem('min-height', $hero-body-min-height);
