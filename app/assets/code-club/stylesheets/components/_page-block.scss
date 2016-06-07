@@ -1,9 +1,13 @@
 .c-page-block {
   background-color:    $grey-xx-light;
   background-position: center center;
-  background-repeat:   none;
+  background-repeat:   no-repeat;
   background-size:     cover;
   @include padding($padding-xx-large, 0);
+
+  ~ .c-page-block {
+    border-bottom: none;
+  }
 }
 
   .c-page-block--alt-block {

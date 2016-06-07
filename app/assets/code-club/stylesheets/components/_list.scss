@@ -48,15 +48,17 @@
         background-position: left top;
         background-repeat:   no-repeat;
         list-style:          none;
+        @include margin-bottom($margin-small);
+        @include padding-left($padding-x-large);
         position:            relative;
 
         .c-icon {
-          float: left;
-          @include margin(0, $margin-small, $margin-small, 0);
+          left:     0;
+          position: absolute;
+          top:      0;
         }
 
         .c-icon-list__text {
-          float: left;
           @include rem('line-height', $icon-size-large);
         }
       }
