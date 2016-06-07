@@ -1957,6 +1957,17 @@ ul {
   .c-page-block ~ .c-page-block {
     border-bottom: none; }
 
+.c-page-block__bg-repeat {
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: left top; }
+
+.c-page-block__bg-repeat-x {
+  background-repeat: repeat-x; }
+
+.c-page-block__bg-repeat-y {
+  background-repeat: repeat-y; }
+
 .c-page-block--alt-block {
   background-color: #FFF;
   border-bottom: 1px solid #E0E0E0;
