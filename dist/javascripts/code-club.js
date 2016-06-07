@@ -2,7 +2,7 @@
  * code-club.js
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.24
+ * @version v1.0.25
  * @link https://styleguide.codeclubworld.org/
  */
 //  Import Modules from component JavaScript files

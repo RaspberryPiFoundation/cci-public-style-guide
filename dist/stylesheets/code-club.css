@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.24
+ * @version v1.0.25
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1927,23 +1927,20 @@ ul {
   background-position: left top;
   background-repeat: no-repeat;
   list-style: none;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  padding-left: 32px;
+  padding-left: 2rem;
   position: relative; }
   .c-icon-list__item:after {
     content: "";
     display: table;
     clear: both; }
   .c-icon-list__item .c-icon {
-    float: left;
-    margin-top: 0px;
-    margin-top: 0rem;
-    margin-right: 12px;
-    margin-right: 0.75rem;
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem;
-    margin-left: 0px;
-    margin-left: 0rem; }
+    left: 0;
+    position: absolute;
+    top: 0; }
   .c-icon-list__item .c-icon-list__text {
-    float: left;
     line-height: 26px;
     line-height: 1.625rem; }
 
@@ -1954,7 +1951,7 @@ ul {
 .c-page-block {
   background-color: #F5F6F9;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 48px;
   padding-top: 3rem;
@@ -1964,6 +1961,19 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
+  .c-page-block ~ .c-page-block {
+    border-bottom: none; }
+
+.c-page-block__bg-repeat {
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: left top; }
+
+.c-page-block__bg-repeat-x {
+  background-repeat: repeat-x; }
+
+.c-page-block__bg-repeat-y {
+  background-repeat: repeat-y; }
 
 .c-page-block--alt-block {
   background-color: #FFF;
