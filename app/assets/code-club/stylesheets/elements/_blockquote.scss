@@ -1,25 +1,7 @@
 blockquote {
-	background:  $grey-xx-light;
-	border-left: $border-size-large solid $grey-x-light;
-	margin:      0;
+	color:  $grey-dark;
+	@include font-size($font-size-large);
+	@include line-height($font-size-large, $line-height-large);
+	margin: 0;
 	@include rem('margin-bottom', $margin-base);
-	@include padding($padding-small);
-
-	p:before,
-	p:after {
-		display:     inline-block;
-		line-height: 0;
-	}
-
-	p:first-child:before {
-		content: '\201C';
-	}
-
-	p:last-of-type {
-		margin-bottom: 0;
-
-		&:after {
-			content: '\201D';
-		}
-	}
 }

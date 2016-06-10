@@ -1,4 +1,6 @@
 cite {
-	$color:  $grey-med;
-	display: block;
+	color:      $grey-med;
+	display:    block;
+	font-style: normal;
+	@include margin-bottom($margin-base);
 }
