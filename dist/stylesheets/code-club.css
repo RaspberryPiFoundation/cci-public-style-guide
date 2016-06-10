@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.27
+ * @version v1.0.28
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -685,23 +685,13 @@ b {
   font-weight: 500; }
 
 blockquote {
-  background: #F5F6F9;
-  border-left: 2px solid #E0E0E0;
+  color: #333333;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.375;
   margin: 0;
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  padding: 12px;
-  padding: 0.75rem; }
-  blockquote p:before,
-  blockquote p:after {
-    display: inline-block;
-    line-height: 0; }
-  blockquote p:first-child:before {
-    content: '\201C'; }
-  blockquote p:last-of-type {
-    margin-bottom: 0; }
-    blockquote p:last-of-type:after {
-      content: '\201D'; }
+  margin-bottom: 1rem; }
 
 button {
   border: none;
@@ -709,7 +699,11 @@ button {
   font-weight: 500; }
 
 cite {
-  display: block; }
+  color: #848484;
+  display: block;
+  font-style: normal;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
 
 code {
   background: #F5F6F9;
