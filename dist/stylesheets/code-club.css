@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.29
+ * @version v1.0.30
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1947,6 +1947,7 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 1px solid #E0E0E0;
   padding-top: 48px;
   padding-top: 3rem;
   padding-right: 0px;
@@ -1955,8 +1956,11 @@ ul {
   padding-bottom: 3rem;
   padding-left: 0px;
   padding-left: 0rem; }
-  .c-page-block ~ .c-page-block {
-    border-bottom: none; }
+  .c-page-block:first-of-type {
+    border: none; }
+  .c-page-block:not(.c-page-block--alt-block):not(.c-page-block--action-block) + .c-page-block:not(.c-page-block--alt-block):not(.c-page-block--action-block) {
+    border: none;
+    padding-top: 0; }
 
 .c-page-block__bg-repeat {
   background-size: auto;
@@ -1970,11 +1974,10 @@ ul {
   background-repeat: repeat-y; }
 
 .c-page-block--alt-block {
-  background-color: #FFF;
-  border-bottom: 1px solid #E0E0E0;
-  border-top: 1px solid #E0E0E0; }
+  background-color: #FFF; }
   .c-page-block--alt-block + .c-page-block--alt-block {
-    border-top: none; }
+    border-top: none;
+    padding-top: 0; }
 
 .c-page-block--action-block {
   background-color: #5290D2;
@@ -1991,6 +1994,8 @@ ul {
     .c-page-block--action-block .c-button--action-button:hover {
       color: #FFF;
       background: #5290D2; }
+  .c-page-block--action-block + .c-page-block--action-block {
+    padding-top: 0; }
 
 .c-strip-table {
   border-collapse: collapse;
