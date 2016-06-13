@@ -3,10 +3,16 @@
   background-position: center center;
   background-repeat:   no-repeat;
   background-size:     cover;
+  border-top:          1px solid $grey-x-light;
   @include padding($padding-xx-large, 0);
 
-  ~ .c-page-block {
-    border-bottom: none;
+  &:first-of-type {
+    border: none;
+  }
+
+  &:not(.c-page-block--alt-block, .c-page-block--action-block) + .c-page-block:not(.c-page-block--alt-block, .c-page-block--action-block) {
+    border:      none;
+    padding-top: 0;
   }
 }
 
@@ -21,11 +27,10 @@
 
   .c-page-block--alt-block {
     background-color: $white;
-    border-bottom:    $border-size-base solid $grey-x-light;
-    border-top:       $border-size-base solid $grey-x-light;
 
     + .c-page-block--alt-block {
-      border-top: none;
+      border-top:  none;
+      padding-top: 0;
     }
   }
 
@@ -51,5 +56,9 @@
         color:      $white;
         background: $blue;
       }
+    }
+
+    + .c-page-block--action-block {
+      padding-top: 0;
     }
   }
