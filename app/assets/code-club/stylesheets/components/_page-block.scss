@@ -6,7 +6,7 @@
   border-top:          1px solid $grey-x-light;
   @include padding($padding-xx-large, 0);
 
-  &:first-of-type {
+  &:first-child {
     border: none;
   }
 
@@ -15,6 +15,11 @@
     padding-top: 0;
   }
 }
+
+  .o-hero      + .c-page-block,
+  .o-nav-horiz + .c-page-block {
+    border: none;
+  }
 
   .c-page-block__bg-repeat {
     background-size:     auto;
