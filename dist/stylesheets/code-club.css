@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.28
+ * @version v1.0.29
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2427,9 +2427,12 @@ ul {
       text-decoration: underline; } }
 
 .o-nav-horiz {
-  background: #fff;
+  background: #FFF;
   border-bottom: 1px solid #E0E0E0;
   text-align: center; }
+
+.o-nav-horiz--alt {
+  background: #F5F6F9; }
 
 .o-nav-horiz__list {
   margin: 0;
