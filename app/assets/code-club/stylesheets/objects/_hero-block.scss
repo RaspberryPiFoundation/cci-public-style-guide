@@ -12,7 +12,7 @@
     }
   }
 
-  @include respond-to('wide') {
+  @include respond-to('regular') {
     .o-hero {
       @include rem('min-height', $hero-body-min-height);
     }
