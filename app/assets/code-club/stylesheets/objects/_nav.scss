@@ -84,11 +84,14 @@
   }
 
   .o-nav__list {
-    @include align-element-vertically;
     @include font-size($font-size-large);
+    left:       50%;
     margin:     0;
     padding:    0;
+    position:   absolute;
     text-align: center;
+    top:        50%;
+    transform:  translate(-50%, -50%);
   }
 
   .o-nav__item {
