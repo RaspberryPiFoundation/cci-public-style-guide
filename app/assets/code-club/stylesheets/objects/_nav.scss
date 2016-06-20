@@ -92,6 +92,7 @@
     text-align: center;
     top:        50%;
     transform:  translate(-50%, -50%);
+    width:      100%;
   }
 
   .o-nav__item {
@@ -200,6 +201,7 @@
       position:   static;
       text-align: left;
       transform:  none;
+      width:      auto;
     }
 
     .o-nav__item {
