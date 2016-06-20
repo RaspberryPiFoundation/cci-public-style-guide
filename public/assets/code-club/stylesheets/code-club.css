@@ -2122,17 +2122,12 @@ ul {
   background-color: #339933;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFF; }
 
 @media only screen and (max-width: 56.24rem) {
   .o-hero {
     background-image: none !important; } }
-
-@media only screen and (min-width: 56.25rem) {
-  .o-hero {
-    min-height: 350px;
-    min-height: 21.875rem; } }
 
 .o-hero--bg-top,
 .o-hero--bg-top .c-grid {
@@ -2188,6 +2183,15 @@ ul {
   max-width: 55em;
   margin: 0 auto;
   text-align: center; }
+
+@media only screen and (max-width: 56.24rem) {
+  .o-hero__body {
+    background-image: none !important; } }
+
+@media only screen and (min-width: 56.25rem) {
+  .o-hero__body {
+    min-height: 350px;
+    min-height: 21.875rem; } }
 
 .o-hero__title:last-child {
   margin: 0; }

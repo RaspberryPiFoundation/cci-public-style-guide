@@ -2,19 +2,13 @@
   background-color:    $green;
   background-position: center center;
   background-repeat:   no-repeat;
-  background-size:     100% auto;
+  background-size:     cover;
   color:               $white;
 }
 
   @media only screen and (max-width: 56.24rem) {
     .o-hero {
       background-image: none !important;
-    }
-  }
-
-  @include respond-to('regular') {
-    .o-hero {
-      @include rem('min-height', $hero-body-min-height);
     }
   }
 
@@ -61,6 +55,18 @@
     margin:     0 auto;
     text-align: center;
   }
+
+    @media only screen and (max-width: 56.24rem) {
+      .o-hero__body {
+        background-image: none !important;
+      }
+    }
+
+    @include respond-to('regular') {
+      .o-hero__body {
+        @include rem('min-height', $hero-body-min-height);
+      }
+    }
 
   .o-hero__title {
     &:last-child {
