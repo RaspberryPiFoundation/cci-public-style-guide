@@ -12,12 +12,8 @@
       border-top: $border-size-base solid $grey-x-light;
     }
 
+    .c-strip-table__cell,
     .c-strip-table__heading {
-      @include padding($padding-base);
-      text-align: left;
-    }
-
-    .c-strip-table__cell {
-      @include padding($padding-base, 0);
+      @include padding($padding-base, $padding-x-small);
       text-align: left;
     }
