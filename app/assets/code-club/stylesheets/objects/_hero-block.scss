@@ -12,16 +12,6 @@
     }
   }
 
-  .o-hero--bg-top,
-  .o-hero--bg-top .c-grid {
-    background-position: center top;
-  }
-
-  .o-hero--bg-bottom,
-  .o-hero--bg-bottom .c-grid {
-    background-position: center bottom;
-  }
-
   .o-hero__nav {
     @include padding($padding-x-small, 0);
   }
@@ -49,22 +39,41 @@
     }
   }
 
-  .o-hero__body {
-    @include padding($padding-xxxx-large, 0);
-    max-width:  $hero-body-max-width;
-    margin:     0 auto;
-    text-align: center;
+  .o-hero__bg {
+    background-position: center center;
+    background-repeat:   no-repeat;
+    background-size:     100% auto;
   }
 
+    .o-hero--bg-top    { background-position: center top;    }
+    .o-hero--bg-bottom { background-position: center bottom; }
+
+    @include respond-to('regular') {
+      .o-hero__bg {
+        @include rem('min-height', $hero-body-min-height);
+      }
+    }
+
     @media only screen and (max-width: 56.24rem) {
-      .o-hero__body {
+      .o-hero__bg {
         background-image: none !important;
       }
     }
 
+  .o-hero__body {
+    text-align: center;
+    @include padding($padding-large, 0);
+  }
+
+  @include respond-to('narrow') {
+    .o-hero__body {
+      @include padding($padding-xxx-large, 0);
+    }
+  }
+
     @include respond-to('regular') {
       .o-hero__body {
-        @include rem('min-height', $hero-body-min-height);
+        padding: 0;
       }
     }
 

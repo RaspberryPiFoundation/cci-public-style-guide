@@ -496,9 +496,6 @@ th {
   visibility: visible; }
 
 .c-grid {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2129,14 +2126,6 @@ ul {
   .o-hero {
     background-image: none !important; } }
 
-.o-hero--bg-top,
-.o-hero--bg-top .c-grid {
-  background-position: center top; }
-
-.o-hero--bg-bottom,
-.o-hero--bg-bottom .c-grid {
-  background-position: center bottom; }
-
 .o-hero__nav {
   padding-top: 8px;
   padding-top: 0.5rem;
@@ -2171,27 +2160,51 @@ ul {
     color: #FFF;
     text-decoration: underline; }
 
-.o-hero__body {
-  padding-top: 80px;
-  padding-top: 5rem;
-  padding-right: 0px;
-  padding-right: 0rem;
-  padding-bottom: 80px;
-  padding-bottom: 5rem;
-  padding-left: 0px;
-  padding-left: 0rem;
-  max-width: 55em;
-  margin: 0 auto;
-  text-align: center; }
+.o-hero__bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+
+.o-hero--bg-top {
+  background-position: center top; }
+
+.o-hero--bg-bottom {
+  background-position: center bottom; }
+
+@media only screen and (min-width: 56.25rem) {
+  .o-hero__bg {
+    min-height: 350px;
+    min-height: 21.875rem; } }
 
 @media only screen and (max-width: 56.24rem) {
-  .o-hero__body {
+  .o-hero__bg {
     background-image: none !important; } }
+
+.o-hero__body {
+  text-align: center;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-right: 0px;
+  padding-right: 0rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  padding-left: 0px;
+  padding-left: 0rem; }
+
+@media only screen and (min-width: 37.5rem) {
+  .o-hero__body {
+    padding-top: 64px;
+    padding-top: 4rem;
+    padding-right: 0px;
+    padding-right: 0rem;
+    padding-bottom: 64px;
+    padding-bottom: 4rem;
+    padding-left: 0px;
+    padding-left: 0rem; } }
 
 @media only screen and (min-width: 56.25rem) {
   .o-hero__body {
-    min-height: 350px;
-    min-height: 21.875rem; } }
+    padding: 0; } }
 
 .o-hero__title:last-child {
   margin: 0; }
