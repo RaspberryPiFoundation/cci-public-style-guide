@@ -99,3 +99,59 @@
     @include padding($button-padding-x-large--y, $button-padding-x-large--x);
     @include rem('border-radius', $border-radius-xx-large);
   }
+
+.c-button-group {
+  display:         flex;
+  justify-content: flex-start;
+  margin:          0 auto;
+  @include margin-bottom($margin-base);
+
+  .c-button {
+    border-color:  darken($grey-med, 5%);
+    border-radius: 0;
+    border-width:  0 1px;
+
+    &:first-child {
+      @include rem('border-bottom-left-radius', $border-radius-large);
+      border-left: none;
+      @include rem('border-top-left-radius',    $border-radius-large);
+    }
+
+    &:last-child {
+      @include rem('border-bottom-right-radius', $border-radius-large);
+      border-right: none;
+      @include rem('border-top-right-radius',    $border-radius-large);
+    }
+
+    &.c-button--grey-dark     { border-color: darken($grey-dark,     5%); }
+    &.c-button--grey-med      { border-color: darken($grey-med,      5%); }
+    &.c-button--grey-light    { border-color: darken($grey-light,    5%); }
+    &.c-button--grey-x-light  { border-color: darken($grey-x-light,  5%); }
+    &.c-button--grey-xx-light { border-color: darken($grey-xx-light, 5%); }
+    &.c-button--red           { border-color: darken($red,           5%); }
+    &.c-button--blue          { border-color: darken($blue,          5%); }
+    &.c-button--green         { border-color: darken($green,         5%); }
+    &.c-button--yellow        { border-color: darken($yellow,        5%); }
+    &.c-button--white         { border-color: darken($white,         5%); }
+
+    &:hover,
+    &.c-button__selected {
+      color:      $white;
+      background: darken($grey-med, 5%);
+
+      &.c-button--grey-dark     { background: darken($grey-dark,     5%); }
+      &.c-button--grey-med      { background: darken($grey-med,      5%); }
+      &.c-button--grey-light    { background: darken($grey-light,    5%); }
+      &.c-button--grey-x-light  { background: darken($grey-x-light,  5%); }
+      &.c-button--grey-xx-light { background: darken($grey-xx-light, 5%); }
+      &.c-button--red           { background: darken($red,           5%); }
+      &.c-button--blue          { background: darken($blue,          5%); }
+      &.c-button--green         { background: darken($green,         5%); }
+      &.c-button--yellow        { background: darken($yellow,        5%); }
+      &.c-button--white         { background: darken($white,         5%); }
+    }
+  }
+}
+
+  .c-button-group__center { justify-content: center;   }
+  .c-button-group__right  { justify-content: flex-end; }

@@ -75,3 +75,19 @@
 <p><a class="c-button c-button--blue c-button--squared" href="#">A squared button</a></p>
 <p><a class="c-button c-button--block" href="#">A button that fills the width of its parent</a></p>
 <% end %>
+
+<hr>
+
+<h2>Button Groups</h2>
+
+<p>Occasionally you may want to provide a toggle or option-based set of buttons. Use a <code>c-button-group</code> to achieve this.</p>
+
+<%= render_example do %>
+<% colors[:palette].each do |name, value| %>
+<div class="c-button-group c-button-group__center">
+  <a class="c-button c-button--<%= name %> c-button__selected" href="#">Button 1</a>
+  <a class="c-button c-button--<%= name %>" href="#">Button 2</a>
+  <a class="c-button c-button--<%= name %>" href="#">Button 3</a>
+</div>
+<% end %>
+<% end %>
