@@ -169,7 +169,6 @@
       &:hover {
         background:      none;
         color:           $grey-dark;
-        text-decoration: underline;
       }
     }
   }
@@ -210,17 +209,15 @@
     }
 
     .o-nav__link {
-      color:           $green;
-      display:         inline-block;
+      color:   $green;
+      display: inline-block;
       @include line_height($font-size-base, $logo-size);
       @include padding(0);
-      text-decoration: none;
 
       &:active,
       &:focus,
       &:hover {
-        color:           $grey-dark;
-        text-decoration: underline;
+        color: $grey-dark;
       }
     }
   }
