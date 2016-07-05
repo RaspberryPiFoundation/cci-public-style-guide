@@ -20,6 +20,8 @@
   &.c-button--yellow        { background: $yellow;        border-color: $yellow;        }
   &.c-button--white         { background: $white;         border-color: $white;         }
 
+  &:active,
+  &:focus,
   &:hover {
     background: $white;
     color:      $grey-med;
@@ -58,6 +60,8 @@
     &.c-button--yellow        { color: $yellow;        }
     &.c-button--white         { color: $white;         }
 
+    &:active,
+    &:focus,
     &:hover {
       color:      $white;
       background: $grey-med;
@@ -134,6 +138,8 @@
     &.c-button--yellow        { border-color: darken($yellow,        5%); }
     &.c-button--white         { border-color: darken($white,         5%); }
 
+    &:active,
+    &:focus,
     &:hover,
     &.c-button__selected {
       color:      $white;

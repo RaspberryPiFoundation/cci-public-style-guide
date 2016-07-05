@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.37
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -1042,28 +1035,28 @@ ul {
   .c-button.c-button--white {
     background: #FFF;
     border-color: #FFF; }
-  .c-button:hover {
+  .c-button:active, .c-button:focus, .c-button:hover {
     background: #FFF;
     color: #848484; }
-    .c-button:hover.c-button--grey-dark {
+    .c-button:active.c-button--grey-dark, .c-button:focus.c-button--grey-dark, .c-button:hover.c-button--grey-dark {
       color: #333333; }
-    .c-button:hover.c-button--grey-med {
+    .c-button:active.c-button--grey-med, .c-button:focus.c-button--grey-med, .c-button:hover.c-button--grey-med {
       color: #848484; }
-    .c-button:hover.c-button--grey-light {
+    .c-button:active.c-button--grey-light, .c-button:focus.c-button--grey-light, .c-button:hover.c-button--grey-light {
       color: #C2C2C2; }
-    .c-button:hover.c-button--grey-x-light {
+    .c-button:active.c-button--grey-x-light, .c-button:focus.c-button--grey-x-light, .c-button:hover.c-button--grey-x-light {
       color: #E0E0E0; }
-    .c-button:hover.c-button--grey-xx-light {
+    .c-button:active.c-button--grey-xx-light, .c-button:focus.c-button--grey-xx-light, .c-button:hover.c-button--grey-xx-light {
       color: #F5F6F9; }
-    .c-button:hover.c-button--red {
+    .c-button:active.c-button--red, .c-button:focus.c-button--red, .c-button:hover.c-button--red {
       color: #FF5252; }
-    .c-button:hover.c-button--blue {
+    .c-button:active.c-button--blue, .c-button:focus.c-button--blue, .c-button:hover.c-button--blue {
       color: #5290D2; }
-    .c-button:hover.c-button--green {
+    .c-button:active.c-button--green, .c-button:focus.c-button--green, .c-button:hover.c-button--green {
       color: #339933; }
-    .c-button:hover.c-button--yellow {
+    .c-button:active.c-button--yellow, .c-button:focus.c-button--yellow, .c-button:hover.c-button--yellow {
       color: #FFF578; }
-    .c-button:hover.c-button--white {
+    .c-button:active.c-button--white, .c-button:focus.c-button--white, .c-button:hover.c-button--white {
       color: #FFF; }
   .c-button[disabled], .c-button.c-button--disabled {
     cursor: pointer;
@@ -1092,28 +1085,28 @@ ul {
       color: #FFF578; }
     .c-button.c-button--hollow.c-button--white {
       color: #FFF; }
-    .c-button.c-button--hollow:hover {
+    .c-button.c-button--hollow:active, .c-button.c-button--hollow:focus, .c-button.c-button--hollow:hover {
       color: #FFF;
       background: #848484; }
-      .c-button.c-button--hollow:hover.c-button--grey-dark {
+      .c-button.c-button--hollow:active.c-button--grey-dark, .c-button.c-button--hollow:focus.c-button--grey-dark, .c-button.c-button--hollow:hover.c-button--grey-dark {
         background: #333333; }
-      .c-button.c-button--hollow:hover.c-button--grey-med {
+      .c-button.c-button--hollow:active.c-button--grey-med, .c-button.c-button--hollow:focus.c-button--grey-med, .c-button.c-button--hollow:hover.c-button--grey-med {
         background: #848484; }
-      .c-button.c-button--hollow:hover.c-button--grey-light {
+      .c-button.c-button--hollow:active.c-button--grey-light, .c-button.c-button--hollow:focus.c-button--grey-light, .c-button.c-button--hollow:hover.c-button--grey-light {
         background: #C2C2C2; }
-      .c-button.c-button--hollow:hover.c-button--grey-x-light {
+      .c-button.c-button--hollow:active.c-button--grey-x-light, .c-button.c-button--hollow:focus.c-button--grey-x-light, .c-button.c-button--hollow:hover.c-button--grey-x-light {
         background: #E0E0E0; }
-      .c-button.c-button--hollow:hover.c-button--grey-xx-light {
+      .c-button.c-button--hollow:active.c-button--grey-xx-light, .c-button.c-button--hollow:focus.c-button--grey-xx-light, .c-button.c-button--hollow:hover.c-button--grey-xx-light {
         background: #F5F6F9; }
-      .c-button.c-button--hollow:hover.c-button--red {
+      .c-button.c-button--hollow:active.c-button--red, .c-button.c-button--hollow:focus.c-button--red, .c-button.c-button--hollow:hover.c-button--red {
         background: #FF5252; }
-      .c-button.c-button--hollow:hover.c-button--blue {
+      .c-button.c-button--hollow:active.c-button--blue, .c-button.c-button--hollow:focus.c-button--blue, .c-button.c-button--hollow:hover.c-button--blue {
         background: #5290D2; }
-      .c-button.c-button--hollow:hover.c-button--green {
+      .c-button.c-button--hollow:active.c-button--green, .c-button.c-button--hollow:focus.c-button--green, .c-button.c-button--hollow:hover.c-button--green {
         background: #339933; }
-      .c-button.c-button--hollow:hover.c-button--yellow {
+      .c-button.c-button--hollow:active.c-button--yellow, .c-button.c-button--hollow:focus.c-button--yellow, .c-button.c-button--hollow:hover.c-button--yellow {
         background: #FFF578; }
-      .c-button.c-button--hollow:hover.c-button--white {
+      .c-button.c-button--hollow:active.c-button--white, .c-button.c-button--hollow:focus.c-button--white, .c-button.c-button--hollow:hover.c-button--white {
         background: #FFF;
         color: #339933; }
 
@@ -1215,28 +1208,28 @@ ul {
       border-color: #fff35f; }
     .c-button-group .c-button.c-button--white {
       border-color: #f2f2f2; }
-    .c-button-group .c-button:hover, .c-button-group .c-button.c-button__selected {
+    .c-button-group .c-button:active, .c-button-group .c-button:focus, .c-button-group .c-button:hover, .c-button-group .c-button.c-button__selected {
       color: #FFF;
       background: #777777; }
-      .c-button-group .c-button:hover.c-button--grey-dark, .c-button-group .c-button.c-button__selected.c-button--grey-dark {
+      .c-button-group .c-button:active.c-button--grey-dark, .c-button-group .c-button:focus.c-button--grey-dark, .c-button-group .c-button:hover.c-button--grey-dark, .c-button-group .c-button.c-button__selected.c-button--grey-dark {
         background: #262626; }
-      .c-button-group .c-button:hover.c-button--grey-med, .c-button-group .c-button.c-button__selected.c-button--grey-med {
+      .c-button-group .c-button:active.c-button--grey-med, .c-button-group .c-button:focus.c-button--grey-med, .c-button-group .c-button:hover.c-button--grey-med, .c-button-group .c-button.c-button__selected.c-button--grey-med {
         background: #777777; }
-      .c-button-group .c-button:hover.c-button--grey-light, .c-button-group .c-button.c-button__selected.c-button--grey-light {
+      .c-button-group .c-button:active.c-button--grey-light, .c-button-group .c-button:focus.c-button--grey-light, .c-button-group .c-button:hover.c-button--grey-light, .c-button-group .c-button.c-button__selected.c-button--grey-light {
         background: #b5b5b5; }
-      .c-button-group .c-button:hover.c-button--grey-x-light, .c-button-group .c-button.c-button__selected.c-button--grey-x-light {
+      .c-button-group .c-button:active.c-button--grey-x-light, .c-button-group .c-button:focus.c-button--grey-x-light, .c-button-group .c-button:hover.c-button--grey-x-light, .c-button-group .c-button.c-button__selected.c-button--grey-x-light {
         background: lightgray; }
-      .c-button-group .c-button:hover.c-button--grey-xx-light, .c-button-group .c-button.c-button__selected.c-button--grey-xx-light {
+      .c-button-group .c-button:active.c-button--grey-xx-light, .c-button-group .c-button:focus.c-button--grey-xx-light, .c-button-group .c-button:hover.c-button--grey-xx-light, .c-button-group .c-button.c-button__selected.c-button--grey-xx-light {
         background: #e5e8ef; }
-      .c-button-group .c-button:hover.c-button--red, .c-button-group .c-button.c-button__selected.c-button--red {
+      .c-button-group .c-button:active.c-button--red, .c-button-group .c-button:focus.c-button--red, .c-button-group .c-button:hover.c-button--red, .c-button-group .c-button.c-button__selected.c-button--red {
         background: #ff3939; }
-      .c-button-group .c-button:hover.c-button--blue, .c-button-group .c-button.c-button__selected.c-button--blue {
+      .c-button-group .c-button:active.c-button--blue, .c-button-group .c-button:focus.c-button--blue, .c-button-group .c-button:hover.c-button--blue, .c-button-group .c-button.c-button__selected.c-button--blue {
         background: #3e83cd; }
-      .c-button-group .c-button:hover.c-button--green, .c-button-group .c-button.c-button__selected.c-button--green {
+      .c-button-group .c-button:active.c-button--green, .c-button-group .c-button:focus.c-button--green, .c-button-group .c-button:hover.c-button--green, .c-button-group .c-button.c-button__selected.c-button--green {
         background: #2d862d; }
-      .c-button-group .c-button:hover.c-button--yellow, .c-button-group .c-button.c-button__selected.c-button--yellow {
+      .c-button-group .c-button:active.c-button--yellow, .c-button-group .c-button:focus.c-button--yellow, .c-button-group .c-button:hover.c-button--yellow, .c-button-group .c-button.c-button__selected.c-button--yellow {
         background: #fff35f; }
-      .c-button-group .c-button:hover.c-button--white, .c-button-group .c-button.c-button__selected.c-button--white {
+      .c-button-group .c-button:active.c-button--white, .c-button-group .c-button:focus.c-button--white, .c-button-group .c-button:hover.c-button--white, .c-button-group .c-button.c-button__selected.c-button--white {
         background: #f2f2f2; }
 
 .c-button-group__center {
