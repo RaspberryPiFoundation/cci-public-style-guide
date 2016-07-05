@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.36
+ * @version v1.0.37
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1168,6 +1168,86 @@ ul {
   padding-left: 2rem;
   border-radius: 48px;
   border-radius: 3rem; }
+
+.c-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+  .c-button-group .c-button {
+    border-color: #777777;
+    border-radius: 0;
+    border-width: 0 1px; }
+    .c-button-group .c-button:first-child {
+      border-bottom-left-radius: 24px;
+      border-bottom-left-radius: 1.5rem;
+      border-left: none;
+      border-top-left-radius: 24px;
+      border-top-left-radius: 1.5rem; }
+    .c-button-group .c-button:last-child {
+      border-bottom-right-radius: 24px;
+      border-bottom-right-radius: 1.5rem;
+      border-right: none;
+      border-top-right-radius: 24px;
+      border-top-right-radius: 1.5rem; }
+    .c-button-group .c-button.c-button--grey-dark {
+      border-color: #262626; }
+    .c-button-group .c-button.c-button--grey-med {
+      border-color: #777777; }
+    .c-button-group .c-button.c-button--grey-light {
+      border-color: #b5b5b5; }
+    .c-button-group .c-button.c-button--grey-x-light {
+      border-color: lightgray; }
+    .c-button-group .c-button.c-button--grey-xx-light {
+      border-color: #e5e8ef; }
+    .c-button-group .c-button.c-button--red {
+      border-color: #ff3939; }
+    .c-button-group .c-button.c-button--blue {
+      border-color: #3e83cd; }
+    .c-button-group .c-button.c-button--green {
+      border-color: #2d862d; }
+    .c-button-group .c-button.c-button--yellow {
+      border-color: #fff35f; }
+    .c-button-group .c-button.c-button--white {
+      border-color: #f2f2f2; }
+    .c-button-group .c-button:hover, .c-button-group .c-button.c-button__selected {
+      color: #FFF;
+      background: #777777; }
+      .c-button-group .c-button:hover.c-button--grey-dark, .c-button-group .c-button.c-button__selected.c-button--grey-dark {
+        background: #262626; }
+      .c-button-group .c-button:hover.c-button--grey-med, .c-button-group .c-button.c-button__selected.c-button--grey-med {
+        background: #777777; }
+      .c-button-group .c-button:hover.c-button--grey-light, .c-button-group .c-button.c-button__selected.c-button--grey-light {
+        background: #b5b5b5; }
+      .c-button-group .c-button:hover.c-button--grey-x-light, .c-button-group .c-button.c-button__selected.c-button--grey-x-light {
+        background: lightgray; }
+      .c-button-group .c-button:hover.c-button--grey-xx-light, .c-button-group .c-button.c-button__selected.c-button--grey-xx-light {
+        background: #e5e8ef; }
+      .c-button-group .c-button:hover.c-button--red, .c-button-group .c-button.c-button__selected.c-button--red {
+        background: #ff3939; }
+      .c-button-group .c-button:hover.c-button--blue, .c-button-group .c-button.c-button__selected.c-button--blue {
+        background: #3e83cd; }
+      .c-button-group .c-button:hover.c-button--green, .c-button-group .c-button.c-button__selected.c-button--green {
+        background: #2d862d; }
+      .c-button-group .c-button:hover.c-button--yellow, .c-button-group .c-button.c-button__selected.c-button--yellow {
+        background: #fff35f; }
+      .c-button-group .c-button:hover.c-button--white, .c-button-group .c-button.c-button__selected.c-button--white {
+        background: #f2f2f2; }
+
+.c-button-group__center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.c-button-group__right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .c-card {
   background: #FFF;
@@ -2404,8 +2484,7 @@ ul {
     padding: 0.5rem; }
     .o-nav__link:active, .o-nav__link:focus, .o-nav__link:hover {
       background: none;
-      color: #333333;
-      text-decoration: underline; } }
+      color: #333333; } }
 
 @media only screen and (min-width: 56.25rem) {
   .o-nav__container {
@@ -2448,11 +2527,9 @@ ul {
     display: inline-block;
     line-height: 3.75;
     padding: 0px;
-    padding: 0rem;
-    text-decoration: none; }
+    padding: 0rem; }
     .o-nav__link:active, .o-nav__link:focus, .o-nav__link:hover {
-      color: #333333;
-      text-decoration: underline; } }
+      color: #333333; } }
 
 .o-nav-horiz {
   background: #FFF;
