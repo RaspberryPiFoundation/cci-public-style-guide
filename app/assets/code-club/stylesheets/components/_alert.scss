@@ -5,6 +5,19 @@
   font-weight: $font-weight-bold;
   @include padding($padding-small);
   text-align:  center;
+
+  a,
+  a:active,
+  a:focus,
+  a:hover,
+  a:visited {
+    color: $white;
+  }
+
+  a:focus,
+  a:hover {
+    text-decoration: none;
+  }
 }
 
   .c-alert--success {
@@ -18,6 +31,14 @@
   .c-alert--warning {
     background: $yellow;
     color:      $grey-dark;
+
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+      color: $grey-dark;
+    }
   }
 
   .c-alert--error {
