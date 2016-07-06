@@ -4,4 +4,8 @@
   @include rem('border-radius', $border-radius-base);
   @include margin-bottom($margin-large);
   @include padding($padding-xx-large, $padding-xxx-large);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
