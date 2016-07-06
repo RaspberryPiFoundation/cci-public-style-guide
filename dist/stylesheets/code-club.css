@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.38
+ * @version v1.0.39
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1402,6 +1402,8 @@ ul {
   padding-bottom: 3rem;
   padding-left: 64px;
   padding-left: 4rem; }
+  .c-content-panel > *:last-child {
+    margin-bottom: 0; }
 
 .c-def-list {
   margin-bottom: 16px;
@@ -1437,6 +1439,8 @@ ul {
 
 .c-form {
   vertical-align: middle; }
+  .c-form > *:last-child {
+    margin-bottom: 0; }
 
 .c-form--inline {
   margin: 0; }
