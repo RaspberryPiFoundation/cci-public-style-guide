@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.40
+ * @version v1.0.41
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -910,7 +910,7 @@ ul {
     margin-bottom: 0; }
 
 .c-alert {
-  background: #C2C2C2;
+  background: #5290D2;
   color: #FFF;
   display: block;
   font-weight: 500;
@@ -927,11 +927,18 @@ ul {
   .c-alert a:hover {
     text-decoration: none; }
 
+.c-alert--error {
+  background: #FF5252; }
+
+.c-alert--inline {
+  border-radius: 8px;
+  border-radius: 0.5rem;
+  text-align: left;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+
 .c-alert--success {
   background: #339933; }
-
-.c-alert--info {
-  background: #5290D2; }
 
 .c-alert--warning {
   background: #FFF578;
@@ -942,16 +949,6 @@ ul {
   .c-alert--warning a:hover,
   .c-alert--warning a:visited {
     color: #333333; }
-
-.c-alert--error {
-  background: #FF5252; }
-
-.c-alert--inline {
-  border-radius: 8px;
-  border-radius: 0.5rem;
-  text-align: left;
-  margin-bottom: 16px;
-  margin-bottom: 1rem; }
 
 .c-badge {
   border-radius: 4px;
@@ -1940,6 +1937,20 @@ ul {
   margin-bottom: 1rem;
   padding: 12px;
   padding: 0.75rem; }
+  .c-info a,
+  .c-info a:active,
+  .c-info a:focus,
+  .c-info a:hover,
+  .c-info a:visited {
+    color: #FFF; }
+  .c-info a:focus,
+  .c-info a:hover {
+    text-decoration: none; }
+
+.c-info--error {
+  background: rgba(255, 82, 82, 0.1);
+  border-color: #FF5252;
+  color: #FF5252; }
 
 .c-info--success {
   background: rgba(51, 153, 51, 0.1);
@@ -1950,20 +1961,12 @@ ul {
   background: #FFF578;
   border-color: #FFF578;
   color: #333333; }
-
-.c-info--error {
-  background: rgba(255, 82, 82, 0.1);
-  border-color: #FF5252;
-  color: #FF5252; }
-
-.c-info__icon,
-.c-info__body {
-  float: left; }
-
-.c-info__icon {
-  margin-right: 8px;
-  margin-right: 0.5rem;
-  vertical-align: top; }
+  .c-info--warning a,
+  .c-info--warning a:active,
+  .c-info--warning a:focus,
+  .c-info--warning a:hover,
+  .c-info--warning a:visited {
+    color: #333333; }
 
 .c-lede {
   font-size: 20px;
