@@ -1,5 +1,5 @@
 .c-alert {
-  background:  $grey-light;
+  background:  $blue;
   color:       $white;
   display:     block;
   font-weight: $font-weight-bold;
@@ -20,12 +20,18 @@
   }
 }
 
-  .c-alert--success {
-    background: $green;
+  .c-alert--error {
+    background: $red;
   }
 
-  .c-alert--info {
-    background: $blue;
+  .c-alert--inline {
+    @include rem('border-radius', $border-radius-x-small);
+    text-align: left;
+    @include margin-bottom($margin-base);
+  }
+
+  .c-alert--success {
+    background: $green;
   }
 
   .c-alert--warning {
@@ -39,14 +45,4 @@
     a:visited {
       color: $grey-dark;
     }
-  }
-
-  .c-alert--error {
-    background: $red;
-  }
-
-  .c-alert--inline {
-    @include rem('border-radius', $border-radius-x-small);
-    text-align: left;
-    @include margin-bottom($margin-base);
   }
