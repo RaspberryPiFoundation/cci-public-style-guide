@@ -6,7 +6,26 @@
   @include font-size($font-size-small);
   @include margin-bottom($margin-base);
   @include padding($padding-small);
+
+  a,
+  a:active,
+  a:focus,
+  a:hover,
+  a:visited {
+    color: $white;
+  }
+
+  a:focus,
+  a:hover {
+    text-decoration: none;
+  }
 }
+
+  .c-info--error {
+    background:   rgba($red, 0.1);
+    border-color: $red;
+    color:        $red;
+  }
 
   .c-info--success {
     background:   rgba($green, 0.1);
@@ -18,20 +37,12 @@
     background:   $yellow;
     border-color: $yellow;
     color:        $grey-dark;
-  }
 
-  .c-info--error {
-    background:   rgba($red, 0.1);
-    border-color: $red;
-    color:        $red;
-  }
-
-  .c-info__icon,
-  .c-info__body {
-    float: left;
-  }
-
-  .c-info__icon {
-    @include margin-right($margin-x-small);
-    vertical-align: top;
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+      color: $grey-dark;
+    }
   }
