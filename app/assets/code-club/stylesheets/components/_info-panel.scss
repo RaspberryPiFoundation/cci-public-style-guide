@@ -12,7 +12,7 @@
   a:focus,
   a:hover,
   a:visited {
-    color: $white;
+    color: $blue;
   }
 
   a:focus,
@@ -25,12 +25,28 @@
     background:   rgba($red, 0.1);
     border-color: $red;
     color:        $red;
+
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+      color: $red;
+    }
   }
 
   .c-info--success {
     background:   rgba($green, 0.1);
     border-color: $green;
     color:        $green;
+
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+      color: $green;
+    }
   }
 
   .c-info--warning {
