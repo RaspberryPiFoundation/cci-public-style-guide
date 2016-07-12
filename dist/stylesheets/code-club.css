@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.41
+ * @version v1.0.42
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1942,7 +1942,7 @@ ul {
   .c-info a:focus,
   .c-info a:hover,
   .c-info a:visited {
-    color: #FFF; }
+    color: #5290D2; }
   .c-info a:focus,
   .c-info a:hover {
     text-decoration: none; }
@@ -1951,11 +1951,23 @@ ul {
   background: rgba(255, 82, 82, 0.1);
   border-color: #FF5252;
   color: #FF5252; }
+  .c-info--error a,
+  .c-info--error a:active,
+  .c-info--error a:focus,
+  .c-info--error a:hover,
+  .c-info--error a:visited {
+    color: #FF5252; }
 
 .c-info--success {
   background: rgba(51, 153, 51, 0.1);
   border-color: #339933;
   color: #339933; }
+  .c-info--success a,
+  .c-info--success a:active,
+  .c-info--success a:focus,
+  .c-info--success a:hover,
+  .c-info--success a:visited {
+    color: #339933; }
 
 .c-info--warning {
   background: #FFF578;
