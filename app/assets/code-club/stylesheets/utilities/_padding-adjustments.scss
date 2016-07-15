@@ -1,3 +1,4 @@
+.u-padding--none            { @include padding(0,                        $important: true); }
 .u-padding--base            { @include padding($padding-base,            $important: true); }
 .u-padding--xx-small        { @include padding($padding-xx-small,        $important: true); }
 .u-padding--x-small         { @include padding($padding-x-small,         $important: true); }
@@ -6,6 +7,7 @@
 .u-padding--x-large         { @include padding($padding-x-large,         $important: true); }
 .u-padding--xx-large        { @include padding($padding-xx-large,        $important: true); }
 
+.u-padding-top--none        { @include padding-top(0,                    $important: true); }
 .u-padding-top--base        { @include padding-top($padding-base,        $important: true); }
 .u-padding-top--xx-small    { @include padding-top($padding-xx-small,    $important: true); }
 .u-padding-top--x-small     { @include padding-top($padding-x-small,     $important: true); }
@@ -14,6 +16,7 @@
 .u-padding-top--x-large     { @include padding-top($padding-x-large,     $important: true); }
 .u-padding-top--xx-large    { @include padding-top($padding-xx-large,    $important: true); }
 
+.u-padding-right--none      { @include padding-right(0,                  $important: true); }
 .u-padding-right--base      { @include padding-right($padding-base,      $important: true); }
 .u-padding-right--xx-small  { @include padding-right($padding-xx-small,  $important: true); }
 .u-padding-right--x-small   { @include padding-right($padding-x-small,   $important: true); }
@@ -22,6 +25,7 @@
 .u-padding-right--x-large   { @include padding-right($padding-x-large,   $important: true); }
 .u-padding-right--xx-large  { @include padding-right($padding-xx-large,  $important: true); }
 
+.u-padding-bottom--none     { @include padding-bottom(0,                 $important: true); }
 .u-padding-bottom--base     { @include padding-bottom($padding-base,     $important: true); }
 .u-padding-bottom--xx-small { @include padding-bottom($padding-xx-small, $important: true); }
 .u-padding-bottom--x-small  { @include padding-bottom($padding-x-small,  $important: true); }
@@ -30,6 +34,7 @@
 .u-padding-bottom--x-large  { @include padding-bottom($padding-x-large,  $important: true); }
 .u-padding-bottom--xx-large { @include padding-bottom($padding-xx-large, $important: true); }
 
+.u-padding-left--none       { @include padding-left(0,                   $important: true); }
 .u-padding-left--base       { @include padding-left($padding-base,       $important: true); }
 .u-padding-left--xx-small   { @include padding-left($padding-xx-small,   $important: true); }
 .u-padding-left--x-small    { @include padding-left($padding-x-small,    $important: true); }
