@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.44
+ * @version v1.0.45
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1460,7 +1460,7 @@ ul {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   padding-left: 0; }
-  .c-form__fieldset:first-child {
+  .c-form__fieldset:first-of-type, .c-form__fieldset:first-child {
     border: none; }
 
 .c-form__label {
