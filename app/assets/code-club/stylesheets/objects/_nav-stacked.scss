@@ -32,4 +32,8 @@
           background: url('../images/stacked-nav-is-current.svg') right center no-repeat;
           color:      $grey-dark;
         }
+
+        &:hover {
+          background-color: $grey-xx-light;
+        }
       }
