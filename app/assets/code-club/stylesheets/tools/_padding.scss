@@ -1,6 +1,6 @@
 @mixin padding($top: null, $right: null, $bottom: null, $left: null, $important: null) {
   @if ($right == null and $bottom == null and $left == null) {
-    @include rem('padding', $top);
+    @include rem('padding', $top, $important);
   }
   @else {
     @if ($top != null) {
