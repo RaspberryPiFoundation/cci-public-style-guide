@@ -1,10 +1,11 @@
 .c-alert {
-  background:  $blue;
-  color:       $white;
-  display:     block;
-  font-weight: $font-weight-bold;
+  background:    $blue;
+  border-bottom: $border-size-base solid $white;
+  color:         $white;
+  display:       block;
+  font-weight:   $font-weight-bold;
   @include padding($padding-small);
-  text-align:  center;
+  text-align:    center;
 
   a,
   a:active,
@@ -25,6 +26,7 @@
   }
 
   .c-alert--inline {
+    border:     none;
     @include rem('border-radius', $border-radius-x-small);
     text-align: left;
     @include margin-bottom($margin-base);
