@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.45
+ * @version v1.0.46
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -911,6 +911,7 @@ ul {
 
 .c-alert {
   background: #5290D2;
+  border-bottom: 1px solid #FFF;
   color: #FFF;
   display: block;
   font-weight: 500;
@@ -931,6 +932,7 @@ ul {
   background: #FF5252; }
 
 .c-alert--inline {
+  border: none;
   border-radius: 8px;
   border-radius: 0.5rem;
   text-align: left;
