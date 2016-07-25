@@ -164,10 +164,11 @@
     }
 
     .c-form__input-group-label {
-      background: url('../images/checkbox-empty.svg') 15px center no-repeat;
-      border-top: $border-size-base solid $grey-x-light;
-      cursor:     pointer;
-      display:    block;
+      background:  url('../images/checkbox-empty.svg') 15px center no-repeat;
+      border-top:  $border-size-base solid $grey-x-light;
+      cursor:      pointer;
+      display:     block;
+      font-weight: $font-weight-base;
       @include padding($padding-small, $padding-small, $padding-small, $padding-xx-large);
 
       &:first-of-type {
