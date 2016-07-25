@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'mysql2',    '~> 0.3.18'
 gem 'puma',      '~> 2.14.0'
-gem 'rails',     '4.2.5.1'
+gem 'rails',     '~> 4.2.7'
 gem 'redcarpet', '~> 3.3.3'
 
 group :development, :test do
