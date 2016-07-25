@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.47
+ * @version v1.0.48
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1641,6 +1641,7 @@ ul {
   border-top: 1px solid #E0E0E0;
   cursor: pointer;
   display: block;
+  font-weight: 300;
   padding-top: 12px;
   padding-top: 0.75rem;
   padding-right: 12px;
