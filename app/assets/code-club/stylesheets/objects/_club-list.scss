@@ -3,6 +3,7 @@
 }
 
   .o-club-list__item {
+    @include clearfix;
     background: $white;
     border:     $border-size-base solid $grey-x-light;
     list-style: none;

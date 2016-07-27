@@ -13,30 +13,31 @@
   }
 
   .o-hero__nav {
+    @include clearfix;
     @include padding($padding-x-small, 0);
   }
 
-  .o-hero__nav-left {
-    float: left;
-  }
-
-  .o-hero__nav-right {
-    float: right;
-  }
-
-  .o-hero__nav-link {
-    display: inline-block;
-    color:   $white;
-    @include margin(0, $margin-xx-small);
-    @include rem('font-size', $font-size-small);
-    text-decoration: none;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color:           $white;
-      text-decoration: underline;
+    .o-hero__nav-left {
+      float: left;
     }
+
+    .o-hero__nav-right {
+      float: right;
+    }
+
+      .o-hero__nav-link {
+        display: inline-block;
+        color:   $white;
+        @include margin(0, $margin-xx-small);
+        @include rem('font-size', $font-size-small);
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color:           $white;
+          text-decoration: underline;
+        }
   }
 
   .o-hero__bg {
@@ -93,6 +94,7 @@
   }
 
   .o-hero__list {
+    @include clearfix;
     display: inline-block;
     margin:  0;
     padding: 0;
