@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.49
+ * @version v1.0.50
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -373,47 +373,6 @@ textarea {
 
 *, *:before, *:after {
   box-sizing: border-box; }
-
-address:after,
-article:after,
-aside:after,
-blockquote:after,
-body:after,
-canvas:after,
-dd:after,
-div:after,
-dl:after,
-fieldset:after,
-figcaption:after,
-figure:after,
-footer:after,
-form:after,
-h1:after,
-h2:after,
-h3:after,
-h4:after,
-h5:after,
-h6:after,
-header:after,
-hgroup:after,
-html:after,
-hr:after,
-li:after,
-main:after,
-nav:after,
-noscript:after,
-ol:after,
-output:after,
-p:after,
-pre:after,
-section:after,
-table:after,
-tfoot:after,
-ul:after,
-video:after {
-  content: "";
-  display: table;
-  clear: both; }
 
 .wf-loading a, .wf-loading
 blockquote, .wf-loading
@@ -1438,6 +1397,10 @@ ul {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   max-width: 100%; }
+  .c-def-list:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .c-def-list__term {
   border-top: 1px solid #E0E0E0;
@@ -1992,6 +1955,10 @@ ul {
   margin-left: 0;
   max-width: 100%;
   padding-left: 0; }
+  .c-list:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .c-list__item {
   margin-left: 0;
@@ -2154,6 +2121,10 @@ ul {
   padding: 16px;
   padding: 1rem;
   position: relative; }
+  .o-club-list__item:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .o-club-list__badge {
   left: -8px;
@@ -2252,6 +2223,10 @@ ul {
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
   padding-left: 0; }
+  .o-hero__nav:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .o-hero__nav-left {
   float: left; }
@@ -2338,6 +2313,10 @@ ul {
   display: inline-block;
   margin: 0;
   padding: 0; }
+  .o-hero__list:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .o-hero__item {
   float: left;
