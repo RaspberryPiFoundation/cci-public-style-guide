@@ -50,6 +50,7 @@
 
     @include respond-to('regular') {
       .o-hero__bg {
+        @include rem('height',     $hero-body-min-height);
         @include rem('min-height', $hero-body-min-height);
       }
     }

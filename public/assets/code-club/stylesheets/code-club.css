@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.48
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -509,8 +502,8 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -577,6 +570,7 @@ th {
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
   margin-bottom: 5%;
+  max-width: 100%;
   overflow: hidden; }
 
 .c-col--top {
@@ -609,14 +603,17 @@ th {
     margin: 2%; }
   .c-col--1 {
     -ms-flex-preferred-size: 21%;
-        flex-basis: 21%; }
+        flex-basis: 21%;
+    max-width: 21%; }
   .c-col--2 {
     -ms-flex-preferred-size: 29%;
-        flex-basis: 29%; }
+        flex-basis: 29%;
+    max-width: 29%; }
   .c-col--3,
   .c-col--4 {
     -ms-flex-preferred-size: 46%;
-        flex-basis: 46%; }
+        flex-basis: 46%;
+    max-width: 46%; }
   .c-col--5,
   .c-col--6,
   .c-col--7,
@@ -626,7 +623,8 @@ th {
   .c-col--11,
   .c-col--12 {
     -ms-flex-preferred-size: 96%;
-        flex-basis: 96%; } }
+        flex-basis: 96%;
+    max-width: 96%; } }
 
 @media only screen and (min-width: 56.25rem) {
   .c-grid {
@@ -635,40 +633,52 @@ th {
     margin: 1%; }
   .c-col--1 {
     -ms-flex-preferred-size: 6%;
-        flex-basis: 6%; }
+        flex-basis: 6%;
+    max-width: 6%; }
   .c-col--2 {
     -ms-flex-preferred-size: 14.5%;
-        flex-basis: 14.5%; }
+        flex-basis: 14.5%;
+    max-width: 14.5%; }
   .c-col--3 {
     -ms-flex-preferred-size: 23%;
-        flex-basis: 23%; }
+        flex-basis: 23%;
+    max-width: 23%; }
   .c-col--4 {
     -ms-flex-preferred-size: 31%;
-        flex-basis: 31%; }
+        flex-basis: 31%;
+    max-width: 31%; }
   .c-col--5 {
     -ms-flex-preferred-size: 39.5%;
-        flex-basis: 39.5%; }
+        flex-basis: 39.5%;
+    max-width: 39.5%; }
   .c-col--6 {
     -ms-flex-preferred-size: 48%;
-        flex-basis: 48%; }
+        flex-basis: 48%;
+    max-width: 48%; }
   .c-col--7 {
     -ms-flex-preferred-size: 56%;
-        flex-basis: 56%; }
+        flex-basis: 56%;
+    max-width: 56%; }
   .c-col--8 {
     -ms-flex-preferred-size: 64.5%;
-        flex-basis: 64.5%; }
+        flex-basis: 64.5%;
+    max-width: 64.5%; }
   .c-col--9 {
     -ms-flex-preferred-size: 73%;
-        flex-basis: 73%; }
+        flex-basis: 73%;
+    max-width: 73%; }
   .c-col--10 {
     -ms-flex-preferred-size: 81%;
-        flex-basis: 81%; }
+        flex-basis: 81%;
+    max-width: 81%; }
   .c-col--11 {
     -ms-flex-preferred-size: 89.5%;
-        flex-basis: 89.5%; }
+        flex-basis: 89.5%;
+    max-width: 89.5%; }
   .c-col--12 {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; } }
+        flex-basis: 100%;
+    max-width: 100%; } }
 
 a {
   color: #339933;
@@ -2271,6 +2281,8 @@ ul {
 
 @media only screen and (min-width: 56.25rem) {
   .o-hero__bg {
+    height: 350px;
+    height: 21.875rem;
     min-height: 350px;
     min-height: 21.875rem; } }
 
