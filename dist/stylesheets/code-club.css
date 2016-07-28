@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.51
+ * @version v1.0.52
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1458,10 +1458,11 @@ ul {
 .c-form__label--error {
   color: #FF5252; }
 
-.c-form__label--inline {
-  display: inline;
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem; }
+@media only screen and (min-width: 56.25rem) {
+  .c-form__label--inline {
+    display: inline;
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem; } }
 
 .c-form__optional {
   color: #C2C2C2; }
@@ -1488,36 +1489,32 @@ ul {
 .c-form__input--error {
   border-color: #FF5252; }
 
-.c-form__input--inline {
-  display: inline;
-  margin-top: 0;
-  margin-right: 8px;
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-  width: 160px;
-  width: 10rem; }
-
-.c-form__input--width-xs {
-  width: 80px;
-  width: 5rem; }
-
-.c-form__input--width-s {
-  width: 120px;
-  width: 7.5rem; }
-
-.c-form__input--width-l {
-  width: 200px;
-  width: 12.5rem; }
-
-.c-form__input--width-xl {
-  width: 240px;
-  width: 15rem; }
-
-.c-form__input--width-xxl {
-  width: 280px;
-  width: 17.5rem; }
+@media only screen and (min-width: 56.25rem) {
+  .c-form__input--inline {
+    display: inline;
+    margin-top: 0;
+    margin-right: 8px;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    width: 160px;
+    width: 10rem; }
+  .c-form__input--width-xs {
+    width: 80px;
+    width: 5rem; }
+  .c-form__input--width-s {
+    width: 120px;
+    width: 7.5rem; }
+  .c-form__input--width-l {
+    width: 200px;
+    width: 12.5rem; }
+  .c-form__input--width-xl {
+    width: 240px;
+    width: 15rem; }
+  .c-form__input--width-xxl {
+    width: 280px;
+    width: 17.5rem; } }
 
 .c-form__select {
   -webkit-appearance: none;
@@ -1545,36 +1542,32 @@ ul {
 .c-form__select--error {
   border-color: #FF5252; }
 
-.c-form__select--inline {
-  display: inline;
-  margin-top: 0;
-  margin-right: 8px;
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-  width: 160px;
-  width: 10rem; }
-
-.c-form__select--width-xs {
-  width: 80px;
-  width: 5rem; }
-
-.c-form__select--width-s {
-  width: 120px;
-  width: 7.5rem; }
-
-.c-form__select--width-l {
-  width: 200px;
-  width: 12.5rem; }
-
-.c-form__select--width-xl {
-  width: 240px;
-  width: 15rem; }
-
-.c-form__select--width-xxl {
-  width: 280px;
-  width: 17.5rem; }
+@media only screen and (min-width: 56.25rem) {
+  .c-form__select--inline {
+    display: inline;
+    margin-top: 0;
+    margin-right: 8px;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    width: 160px;
+    width: 10rem; }
+  .c-form__select--width-xs {
+    width: 80px;
+    width: 5rem; }
+  .c-form__select--width-s {
+    width: 120px;
+    width: 7.5rem; }
+  .c-form__select--width-l {
+    width: 200px;
+    width: 12.5rem; }
+  .c-form__select--width-xl {
+    width: 240px;
+    width: 15rem; }
+  .c-form__select--width-xxl {
+    width: 280px;
+    width: 17.5rem; } }
 
 .c-form__textarea {
   background: #FFF;
