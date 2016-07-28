@@ -1,3 +1,10 @@
+/**
+ * code-club.css
+ * 
+ * Code Club Style Guide - A collection of UI components for styling Code Club websites
+ * @version v1.0.53
+ * @link https://styleguide.codeclubworld.org/
+ */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -2641,13 +2648,33 @@ ul {
   position: absolute      !important;
   width: 1px           !important; }
 
+.u-font-size--xx-small {
+  font-size: 10px;
+  font-size: 0.625rem; }
+
+.u-font-size--x-small {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.u-font-size--small {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
 .u-font-size--base {
-  font-size: 48px;
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem; }
+  font-size: 16px;
+  font-size: 1rem; }
+
+.u-font-size--large {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.u-font-size--x-large {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+.u-font-size--xx-large {
+  font-size: 30px;
+  font-size: 1.875rem; }
 
 .u-h1 {
   font-size: 48px;

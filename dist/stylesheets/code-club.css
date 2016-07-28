@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.52
+ * @version v1.0.53
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -2648,6 +2648,83 @@ ul {
   position: absolute      !important;
   width: 1px           !important; }
 
+.u-font-size--xx-small {
+  font-size: 10px;
+  font-size: 0.625rem; }
+
+.u-font-size--x-small {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.u-font-size--small {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.u-font-size--base {
+  font-size: 16px;
+  font-size: 1rem; }
+
+.u-font-size--large {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.u-font-size--x-large {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+.u-font-size--xx-large {
+  font-size: 30px;
+  font-size: 1.875rem; }
+
+.u-h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem; }
+
+.u-h2 {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem; }
+
+.u-h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+
+.u-h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.33333;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+
+.u-h5 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.21429;
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
+  text-transform: uppercase; }
+
+.u-h6 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.21429;
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem; }
+
 .u-margin--none {
   margin: 0 !important; }
 
@@ -3053,55 +3130,6 @@ ul {
 
 .u-color--yellow a, a.u-color--yellow {
   color: #FFF578 !important; }
-
-.u-h1 {
-  font-size: 48px;
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem; }
-
-.u-h2 {
-  font-size: 32px;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem; }
-
-.u-h3 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem; }
-
-.u-h4 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.33333;
-  margin-bottom: 16px;
-  margin-bottom: 1rem; }
-
-.u-h5 {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.21429;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem;
-  text-transform: uppercase; }
-
-.u-h6 {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.21429;
-  margin-bottom: 14px;
-  margin-bottom: 0.875rem; }
 
 .u-text--lowercase {
   text-transform: lowercase !important; }
