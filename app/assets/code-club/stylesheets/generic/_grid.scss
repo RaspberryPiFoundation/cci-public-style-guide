@@ -23,7 +23,7 @@
 
   .c-col {
     flex:          1 0 100%;
-    margin-bottom: 5%;
+    margin-bottom: 5vw;
     max-width:     100%;
     overflow:      hidden;
   }
@@ -38,7 +38,7 @@
   .c-col {
     flex-grow:   0;
     flex-shrink: 1;
-    margin:      2%;
+    margin:      2vw 2%;
   }
 
     .c-col--1 {
@@ -76,7 +76,7 @@
   }
 
     .c-col {
-      margin: 1%;
+      margin: 1vw 1%;
     }
 
       .c-col--1  { flex-basis: 6%;    max-width: 6%;    }
