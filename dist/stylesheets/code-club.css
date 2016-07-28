@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.53
+ * @version v1.0.54
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -535,7 +535,7 @@ th {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
-  margin-bottom: 5%;
+  margin-bottom: 5vw;
   max-width: 100%;
   overflow: hidden; }
 
@@ -566,7 +566,7 @@ th {
             flex-grow: 0;
     -ms-flex-negative: 1;
         flex-shrink: 1;
-    margin: 2%; }
+    margin: 2vw 2%; }
   .c-col--1 {
     -ms-flex-preferred-size: 21%;
         flex-basis: 21%;
@@ -596,7 +596,7 @@ th {
   .c-grid {
     padding: 0 8%; }
   .c-col {
-    margin: 1%; }
+    margin: 1vw 1%; }
   .c-col--1 {
     -ms-flex-preferred-size: 6%;
         flex-basis: 6%;
