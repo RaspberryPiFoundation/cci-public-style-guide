@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.50
+ * @version v1.0.51
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1266,6 +1266,7 @@ ul {
 
 .c-card__image {
   display: block;
+  height: auto;
   width: 100%; }
 
 .c-card__link {
@@ -1890,6 +1891,7 @@ ul {
     background-position: center -150px; }
 
 .c-image {
+  height: auto;
   width: 100%; }
 
 .c-info {
