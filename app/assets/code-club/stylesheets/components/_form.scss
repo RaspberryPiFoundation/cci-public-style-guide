@@ -33,9 +33,11 @@
       color: $red;
     }
 
-    .c-form__label--inline {
-      display: inline;
-      @include margin-bottom($margin-small);
+    @include respond-to('regular') {
+      .c-form__label--inline {
+        display: inline;
+        @include margin-bottom($margin-small);
+      }
     }
 
   .c-form__optional {
@@ -65,17 +67,19 @@
       border-color: $red;
     }
 
-    .c-form__input--inline {
-      display: inline;
-      @include margin(0, $margin-x-small);
-      @include rem('width', $input-width-base);
-    }
+    @include respond-to('regular') {
+      .c-form__input--inline {
+        display: inline;
+        @include margin(0, $margin-x-small);
+        @include rem('width', $input-width-base);
+      }
 
-    .c-form__input--width-xs  { @include rem('width', $input-width-x-small);  }
-    .c-form__input--width-s   { @include rem('width', $input-width-small);    }
-    .c-form__input--width-l   { @include rem('width', $input-width-large);    }
-    .c-form__input--width-xl  { @include rem('width', $input-width-x-large);  }
-    .c-form__input--width-xxl { @include rem('width', $input-width-xx-large); }
+      .c-form__input--width-xs  { @include rem('width', $input-width-x-small);  }
+      .c-form__input--width-s   { @include rem('width', $input-width-small);    }
+      .c-form__input--width-l   { @include rem('width', $input-width-large);    }
+      .c-form__input--width-xl  { @include rem('width', $input-width-x-large);  }
+      .c-form__input--width-xxl { @include rem('width', $input-width-xx-large); }
+    }
 
   .c-form__select {
     appearance:     none;
@@ -102,17 +106,19 @@
       border-color: $red;
     }
 
-    .c-form__select--inline {
-      display: inline;
-      @include margin(0, $margin-x-small);
-      @include rem('width', $input-width-base);
-    }
+    @include respond-to('regular') {
+      .c-form__select--inline {
+        display: inline;
+        @include margin(0, $margin-x-small);
+        @include rem('width', $input-width-base);
+      }
 
-    .c-form__select--width-xs  { @include rem('width', $select-width-x-small);  }
-    .c-form__select--width-s   { @include rem('width', $select-width-small);    }
-    .c-form__select--width-l   { @include rem('width', $select-width-large);    }
-    .c-form__select--width-xl  { @include rem('width', $select-width-x-large);  }
-    .c-form__select--width-xxl { @include rem('width', $select-width-xx-large); }
+      .c-form__select--width-xs  { @include rem('width', $select-width-x-small);  }
+      .c-form__select--width-s   { @include rem('width', $select-width-small);    }
+      .c-form__select--width-l   { @include rem('width', $select-width-large);    }
+      .c-form__select--width-xl  { @include rem('width', $select-width-x-large);  }
+      .c-form__select--width-xxl { @include rem('width', $select-width-xx-large); }
+    }
 
   .c-form__textarea {
     background:     $white;
