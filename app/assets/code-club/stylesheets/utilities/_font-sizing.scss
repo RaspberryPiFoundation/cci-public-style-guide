@@ -1,0 +1,15 @@
+//  Font sizing modifiers
+.u-font-size--xx-small { @include font-size($font-size-xx-small); }
+.u-font-size--x-small  { @include font-size($font-size-x-small);  }
+.u-font-size--small    { @include font-size($font-size-small);    }
+.u-font-size--base     { @include font-size($font-size-base);     }
+.u-font-size--large    { @include font-size($font-size-large);    }
+.u-font-size--x-large  { @include font-size($font-size-x-large);  }
+.u-font-size--xx-large { @include font-size($font-size-xx-large); }
+
+.u-h1 { @include h1; }
+.u-h2 { @include h2; }
+.u-h3 { @include h3; }
+.u-h4 { @include h4; }
+.u-h5 { @include h5; }
+.u-h6 { @include h6; }
