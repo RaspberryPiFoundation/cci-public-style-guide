@@ -359,7 +359,7 @@ gulp.task('bump_version_number', ['set_release_vars'], function () {
       type: type
     }))
     .pipe(gulp.dest('./')).on('end', function () {
-      //  Get package again because the one in memory now has an old version number
+      //  Reload package.json because the one in memory now has an old version number
       pkg = reload('./package.json');
     });
 
@@ -396,7 +396,11 @@ gulp.task('copy_to_dist', ['clear_old_assets'], function () {
   return gulp.src(dist_dirs.source).pipe(gulp.dest(dist_dirs.dest));
 });
 
-gulp.task('remove_sourcemaps', ['copy_to_dist'], function (callback) {
+gulp.task('copy_changelog_to_dist', ['copy_to_dist'], function () {
+  return gulp.src('./CHANGELOG.md').pipe(gulp.dest(dist_dirs.dest));
+});
+
+gulp.task('remove_sourcemaps', ['copy_changelog_to_dist'], function (callback) {
   return exec('find ./dist -name "*.map" -type f -delete', function () {
     return callback();
   });
