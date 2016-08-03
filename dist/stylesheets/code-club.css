@@ -2,7 +2,7 @@
  * code-club.css
  * 
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.56
+ * @version v1.0.57
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -395,7 +395,7 @@ span, .wf-loading
 textarea, .wf-loading
 td, .wf-loading
 th {
-  visibility: hidden; }
+  opacity: 0; }
 
 .wf-active a,
 .wf-inactive a, .wf-active
@@ -459,7 +459,7 @@ td, .wf-active
 th,
 .wf-inactive
 th {
-  visibility: visible; }
+  opacity: 1; }
 
 .c-grid {
   background-position: center center;
@@ -2248,7 +2248,7 @@ ul {
 .o-hero__bg {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% auto; }
+  background-size: auto 100%; }
 
 .o-hero--bg-top {
   background-position: center top; }

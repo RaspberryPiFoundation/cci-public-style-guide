@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.57] - 2016-08-03
+### Changed
+- Hero Blocks - background-size values switched to correct order
+- Flash of unstyled text fix changed from `visibility` to `opacity`
+
 ## [1.0.56] - 2016-07-29
 ### Changed
 - CHANGELOG.md is now included with Bower bundle
@@ -12,6 +17,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Added CHANGELOG.md - you're reading it right now. Hi.
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.56...HEAD
-[1.0.56]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.55...v1.0.56
-[1.0.55]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.54...v1.0.55
+[Unreleased]: https://github.com/CodeClub/style-guide/compare/v1.0.56...HEAD
+[1.0.56]: https://github.com/CodeClub/style-guide/compare/v1.0.55...v1.0.56
+[1.0.55]: https://github.com/CodeClub/style-guide/compare/v1.0.54...v1.0.55
