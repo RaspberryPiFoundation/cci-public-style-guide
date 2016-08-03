@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.57] - 2016-08-03
+### Changed
+- Hero Blocks - background-size values switched to correct order
+- Flash of unstyled text fix changed from `visibility` to `opacity`
+
 ## [1.0.56] - 2016-07-29
 ### Changed
 - CHANGELOG.md is now included with Bower bundle
