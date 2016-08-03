@@ -20,11 +20,11 @@ textarea,
 td,
 th {
   .wf-loading & {
-    visibility: hidden;
+    opacity: 0;
   }
 
   .wf-active   &,
   .wf-inactive & {
-    visibility: visible;
+    opacity: 1;
   }
 }

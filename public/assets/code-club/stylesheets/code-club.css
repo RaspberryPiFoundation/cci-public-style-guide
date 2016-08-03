@@ -1,10 +1,3 @@
-/**
- * code-club.css
- * 
- * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.56
- * @link https://styleguide.codeclubworld.org/
- */
 /*
   These styles try to follow the ITCSS philosophy for organising styles, by csswizrdry.com
   http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731?page=1
@@ -395,7 +388,7 @@ span, .wf-loading
 textarea, .wf-loading
 td, .wf-loading
 th {
-  visibility: hidden; }
+  opacity: 0; }
 
 .wf-active a,
 .wf-inactive a, .wf-active
@@ -459,7 +452,7 @@ td, .wf-active
 th,
 .wf-inactive
 th {
-  visibility: visible; }
+  opacity: 1; }
 
 .c-grid {
   background-position: center center;
