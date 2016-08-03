@@ -2241,7 +2241,7 @@ ul {
 .o-hero__bg {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% auto; }
+  background-size: auto 100%; }
 
 .o-hero--bg-top {
   background-position: center top; }
