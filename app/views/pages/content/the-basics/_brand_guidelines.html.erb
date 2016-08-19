@@ -91,10 +91,10 @@
   <code>&lt;head&gt;</code> element.
 </p>
 
-<code class="sg-example__code">
-  &lt;link rel="shortcut icon" href="/bower_components/code-club/dist/images/favicons/favicon.ico"&gt;<br>
-  &lt;link rel="apple-touch-icon-precomposed" href="bower_components/code-club/dist/images/favicons/icon.png"&gt;<br>
-  &lt;meta name="msapplication-TileColor" content="#F5F6F9"&gt;<br>
-  &lt;meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png"&gt;<br>
-  &lt;link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32"&gt;
-</code>
+<%= render_example :only_code => true do %>
+<link rel="shortcut icon" href="/bower_components/code-club/dist/images/favicons/favicon.ico"><br>
+<link rel="apple-touch-icon-precomposed" href="bower_components/code-club/dist/images/favicons/icon.png"><br>
+<meta name="msapplication-TileColor" content="#F5F6F9"&gt;<br>
+<meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png"><br>
+<link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32">
+<% end %>

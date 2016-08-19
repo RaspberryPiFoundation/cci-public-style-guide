@@ -1,6 +1,11 @@
 module ExamplesHelper
 
   def render_example(options = {}, &block)
+
+    formatter = Rouge::Formatters::HTML.new
+    formatter = Rouge::Formatters::HTMLLinewise.new(formatter, class_format: 'line-%i')
+    lexer = Rouge::Lexers::HTML.new
+
     options = {
       :with_code => true,
       :only_code => false
@@ -18,12 +23,23 @@ module ExamplesHelper
 
       if options[:with_code]
         output << content_tag(:code, :class => 'sg-example__code') do
-          convert_code(capture(&block))
+          content_tag(:pre) do
+            render inline: Rouge.highlight(capture(&block), lexer, formatter)
+          end
         end
       end
 
       raw output
     end
+  end
+
+  def highlight_example(html)
+    render inline: Rouge.highlight(html, lexer, formatter)
+  end
+
+  def convert_tabs(html)
+    # Replace spaces with non-breaking spaces
+    html.gsub!(' ', ' ')
   end
 
   def convert_code(html)
