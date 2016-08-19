@@ -1,10 +1,10 @@
 module ExamplesHelper
 
-  def render_example(options = {}, &block)
+  def render_example(options = {}, type='html', &block)
 
     formatter = Rouge::Formatters::HTML.new
     formatter = Rouge::Formatters::HTMLLinewise.new(formatter, class_format: 'line-%i')
-    lexer = Rouge::Lexers::HTML.new
+    lexer = select_lexer(type)
 
     options = {
       :with_code => true,
@@ -33,13 +33,33 @@ module ExamplesHelper
     end
   end
 
-  def highlight_example(html)
-    render inline: Rouge.highlight(html, lexer, formatter)
+  def highlight_html_example(html, classes='')
+    highlight_example(html, type='html', classes)
   end
 
-  def convert_tabs(html)
-    # Replace spaces with non-breaking spaces
-    html.gsub!(' ', ' ')
+  def highlight_sass_example(sass, classes='')
+    highlight_example(sass, type='sass', classes)
+  end
+
+  def highlight_example(code, type='', classes='')
+    formatter = Rouge::Formatters::HTML.new
+    lexer = select_lexer(type)
+
+    content_tag(:code, :class => classes) do
+        render inline: Rouge.highlight(code, lexer, formatter)
+    end
+
+  end
+
+  def select_lexer(type)
+    case type
+      when 'sass'
+        Rouge::Lexers::Sass.new
+      when 'html'
+        Rouge::Lexers::HTML.new
+      else
+        Rouge::Lexers::Shell.new
+    end
   end
 
   def convert_code(html)
@@ -65,5 +85,6 @@ module ExamplesHelper
 
     return raw html
   end
+
 
 end

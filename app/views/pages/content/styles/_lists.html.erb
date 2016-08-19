@@ -2,7 +2,8 @@
 
 <p>
   If you need an unordered, ordered, or definition list for inclusion in your site's regular body copy,
-  then use the <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, or <code>&lt;dl&gt;</code> elements <strong>without any extra HTML classes</strong>.
+  then use the <%= highlight_html_example("<ul>") %>, <%= highlight_html_example("<ol>") %>,
+  or <%= highlight_html_example("<dl>") %> elements <strong>without any extra HTML classes</strong>.
 </p>
 
 <p>
@@ -83,7 +84,7 @@
 <p>
   Each bullet has an accompanying icon, which is specified from <%= link_to "the range included
   in these assets", page_path('styles', 'icons') %>. Name it in your HTML class like this:
-  <code>c-list__item--icon-twitter</code>, where "twitter" is the name of the icon.
+  <%= highlight_sass_example('c-list__item--icon-twitter') %>, where "twitter" is the name of the icon.
   Change that word to any one of the available icons to customise your list items.
 </p>
 

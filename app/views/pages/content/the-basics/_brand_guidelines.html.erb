@@ -11,7 +11,8 @@
     <ul>
       <li>Don't alter logo colours or text</li>
       <li>Don't interrupt or overlay the circle mark with text or images</li>
-      <li>Always place the circle mark on a plain background, either <code>$white</code> or <code>$grey-dark</code></li>
+      <li>Always place the circle mark on a plain background, either <%= highlight_sass_example("$white") %> or
+        <%= highlight_sass_example("$grey-dark") %></li>
     </ul>
   </div>
 </div>
@@ -88,13 +89,13 @@
 
 <p>
   The assets package contains two images for these purposes. To use them, ensure that the following HTML is include in your documents'
-  <code>&lt;head&gt;</code> element.
+  <%= highlight_html_example("<head>") %> element.
 </p>
 
 <%= render_example :only_code => true do %>
 <link rel="shortcut icon" href="/bower_components/code-club/dist/images/favicons/favicon.ico"><br>
 <link rel="apple-touch-icon-precomposed" href="bower_components/code-club/dist/images/favicons/icon.png"><br>
-<meta name="msapplication-TileColor" content="#F5F6F9"&gt;<br>
+<meta name="msapplication-TileColor" content="#F5F6F9"><br>
 <meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png"><br>
 <link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32">
 <% end %>
