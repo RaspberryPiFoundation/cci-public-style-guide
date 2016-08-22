@@ -41,6 +41,10 @@ module ExamplesHelper
     highlight_example(sass, type='sass', classes)
   end
 
+  def highlight_css_example(sass, classes='')
+    highlight_example(sass, type='css', classes)
+  end
+
   def highlight_example(code, type='', classes='')
     formatter = Rouge::Formatters::HTML.new
     lexer = select_lexer(type)
@@ -54,7 +58,9 @@ module ExamplesHelper
   def select_lexer(type)
     case type
       when 'sass'
-        Rouge::Lexers::Sass.new
+        Rouge::Lexers::Scss.new
+      when 'css'
+        Rouge::Lexers::CSS.new
       when 'html'
         Rouge::Lexers::HTML.new
       else
