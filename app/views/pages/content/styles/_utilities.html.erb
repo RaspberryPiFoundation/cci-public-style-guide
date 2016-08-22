@@ -1,0 +1,27 @@
+<h2>Change background colour</h2>
+
+<p>Add one of these classes to change background colour of element:</p>
+
+<ul>
+  <% extract_classes_from_file('_background-color.scss').each do |class_name|  %>
+      <li><%= highlight_sass_example(class_name) %></li>
+  <% end %>
+</ul>
+
+<%= render_example do %>
+  <ul>
+    <li class="u-background--yellow">Yellow</li>
+    <li class="u-background--green">Green</li>
+    <li class="u-background--blue">Blue</li>
+  </ul>
+<% end %>
+
+
+<p>Add one of these classes to change font size of element:</p>
+
+<ul>
+  <% extract_classes_from_file('_font-sizing.scss').each do |class_name|  %>
+      <li><%= highlight_sass_example(class_name) %></li>
+  <% end %>
+</ul>
+
