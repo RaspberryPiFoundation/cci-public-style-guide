@@ -3,14 +3,16 @@
 <p>Although it doesn't trigger any currently presentational styles, all forms must begin and end with the following markup.</p>
 
 <p>
-  You'll need to ensure that your form's <code>method</code> and <code>action</code>
+  You'll need to ensure that your form's <%= highlight_sass_example('method') %> and
+  <%= highlight_sass_example('action') %>
   attributes are correct too, and any forms handling file uploads will require the
-  <code>enctype="multipart/form-data"</code> attribute to be present too.
+  <%= highlight_sass_example('enctype="multipart/form-data";') %> attribute to be present too.
 </p>
 
 <p>
-  You should wrap your form's inner elements in one or more <code>fieldset</code> elements.
-  If your form has multiple sections it may be beneficial to the user to include a <code>legend</code> element in each fieldset,
+  You should wrap your form's inner elements in one or more <%= highlight_sass_example('fieldset') %> elements.
+  If your form has multiple sections it may be beneficial to the user to include a
+  <%= highlight_sass_example('legend') %> element in each fieldset,
   for the purposes of describing the fields contained therein. This may not be necessary on smaller, more focused forms, such as
   a "log in" or "search" form.
 </p>
@@ -27,7 +29,8 @@
 <h3>Labels or Placeholders?</h3>
 
 <p>
-  In order to maximise the accessibility and usability of your forms, all input fields should have an accompanying <code>&lt;label&gt;</code>
+  In order to maximise the accessibility and usability of your forms, all input fields should have an accompanying
+  <%= highlight_html_example('<label>') %>
   element. According to the <%= link_to 'WHATWG HTML specification', 'https://developers.whatwg.org/common-input-element-attributes.html#the-placeholder-attribute' %>:
 </p>
 
@@ -47,7 +50,8 @@
 </blockquote>
 
 <p>
-  I short, this means that your <code>&lt;input&gt;</code> fields should have a <code>&lt;label&gt;</code> to indicate
+  I short, this means that your <%= highlight_html_example('<input>') %> fields should have a
+  <%= highlight_html_example('<label>') %> to indicate
   <em>the content your user is required to enter</em>, and an optional placeholder with an <em>example of that data</em>.
 </p>
 
@@ -69,8 +73,9 @@
 <% end %>
 
 <p>
-  Please also make sure that your labels and inputs are semantically associated with one another using a <code>for</code> attribute on
-  the label that corresponds with the <code>id</code> attribute on the intended input.
+  Please also make sure that your labels and inputs are semantically associated with one another using a
+  <%= highlight_sass_example('for') %> attribute on the label that corresponds with the
+  <%= highlight_sass_example('id') %> attribute on the intended input.
 </p>
 
 <h3>A note about buttons</h3>
@@ -125,11 +130,11 @@
 </p>
 
 <ul>
-  <li><code>c-form__input--width-xs</code></li>
-  <li><code>c-form__input--width-s</code></li>
-  <li><code>c-form__input--width-l</code></li>
-  <li><code>c-form__input--width-xl</code></li>
-  <li><code>c-form__input--width-xxl</code></li>
+  <li><%= highlight_sass_example('c-form__input--width-xs') %></li>
+  <li><%= highlight_sass_example('c-form__input--width-s') %></li>
+  <li><%= highlight_sass_example('c-form__input--width-l') %></li>
+  <li><%= highlight_sass_example('c-form__input--width-xl') %></li>
+  <li><%= highlight_sass_example('c-form__input--width-xxl') %></li>
 </ul>
 
 <%= render_example(:with_code => false) do %>
@@ -144,7 +149,7 @@
 
 <p>
   Input fields are set to behave as a <em>block level element</em>. To override
-  this behavior use the <code>c-form__input--inline</code> class.
+  this behavior use the <%= highlight_sass_example('c-form__input--inline') %> class.
 </p>
 
 <%= render_example(:show_code => false) do %>
@@ -156,8 +161,10 @@
 <h3>Textareas</h3>
 
 <p>
-  When creating your textareas, remember to set the <code>rows</code> and <code>cols</code> attributes to suitable numbers.
-  Defining the number of <code>cols</code> is purely in the interests of valid markup, as the style will always stretch to the full width of
+  When creating your textareas, remember to set the <%= highlight_sass_example('rows') %>
+  and <%= highlight_sass_example('cols') %> attributes to suitable numbers.
+  Defining the number of <%= highlight_sass_example('cols') %> is purely in the interests of valid markup, as the
+  style will always stretch to the full width of
   its parent.
 </p>
 
@@ -182,11 +189,11 @@
 </p>
 
 <ul>
-  <li><code>c-form__select--width-xs</code></li>
-  <li><code>c-form__select--width-s</code></li>
-  <li><code>c-form__select--width-l</code></li>
-  <li><code>c-form__select--width-xl</code></li>
-  <li><code>c-form__select--width-xxl</code></li>
+  <li><%= highlight_sass_example('c-form__select--width-xs') %></li>
+  <li><%= highlight_sass_example('c-form__select--width-s') %></li>
+  <li><%= highlight_sass_example('c-form__select--width-l') %></li>
+  <li><%= highlight_sass_example('c-form__select--width-xl') %></li>
+  <li><%= highlight_sass_example('c-form__select--width-xxl') %></li>
 </ul>
 
 <%= render_example(:with_code => false) do %>
@@ -221,7 +228,7 @@
 
 <p>
   Select boxes are set to behave as a <em>block level element</em>. To override
-  this behavior use the <code>c-form__select--inline</code> class.
+  this behavior use the <%= highlight_sass_example('c-form__select--inline') %> class.
 </p>
 
 <%= render_example(:with_code => false) do %>
@@ -312,7 +319,9 @@
 
 <h3>Checkbox Group</h3>
 
-<p>When you need a group of stylised checkboxes, use the following markup. Be careful to ensure that your labels' <code>for</code> attribute matches its corresponding input's <code>id</code> attribute.</p>
+<p>When you need a group of stylised checkboxes, use the following markup. Be careful to ensure that your labels'
+  <%= highlight_sass_example('for') %> attribute matches its corresponding input's
+  <%= highlight_sass_example('id') %> attribute.</p>
 
 <%= render_example do %>
 <div class="c-form__input-group">

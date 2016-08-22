@@ -1,13 +1,14 @@
 <h2>How to Use Buttons</h2>
 
-<p>Button styles can be applied to standard links or the <code>button</code> element.</p>
+<p>Button styles can be applied to standard links or the <%= highlight_sass_example('button') %> element.</p>
 
 <%= render_example do %>
 <button class="c-button">Button</button>
 <a class="c-button" href="#">Button as Link</a>
 <% end %>
 
-<p><strong>You should not use the <code>&lt;input type="button"&gt;</code> element</strong>. If you need a button in a form, use the <code>button</code> element as shown.</p>
+<p><strong>You should not use the  <%= highlight_html_example('<input type="button">') %> element</strong>.
+  If you need a button in a form, use the <%= highlight_sass_example('button') %> element as shown.</p>
 
 <h3>Some notes on button usage</h3>
 
