@@ -2,7 +2,7 @@
 
 <p>The basic icon takes the following form:</p>
 
-<p><code>&lt;span class="c-icon c-icon--ICON-NAME-HERE"&gt;&lt;/span&gt;</code></p>
+<p><%= highlight_html_example('<span class="c-icon c-icon--ICON-NAME-HERE"></span>') %></p>
 
 <p>Where you see "ICON NAME HERE" in the above example, replace that text with one of the following values:</p>
 
@@ -10,7 +10,7 @@
   <% for icon in icons %>
     <li class="sg-icon-list__item">
       <span class="c-icon c-icon--<%= icon %>"></span>
-      <code><%= icon %></code>
+      <%= highlight_sass_example(icon) %></code>
     </li>
   <% end %>
 </ul>
@@ -25,10 +25,10 @@
 </p>
 
 <ul>
-  <li><code>.c-icon--white</code></li>
-  <li><code>.c-icon--green</code></li>
-  <li><code>.c-icon--blue</code></li>
-  <li><code>.c-icon--red</code></li>
+  <li><%= highlight_sass_example('.c-icon--white') %></li>
+  <li><%= highlight_sass_example('.c-icon--green') %></li>
+  <li><%= highlight_sass_example('.c-icon--blue') %></li>
+  <li><%= highlight_sass_example('.c-icon--red') %></li>
 </ul>
 
 <%= render_example do %>
@@ -43,10 +43,10 @@
 <p>The default icon size is equivalent to 20px in width and height. The following modifiers are available for altering icon sizes:</p>
 
 <ul>
-  <li><code>.c-icon--x-small</code></li>
-  <li><code>.c-icon--small</code></li>
-  <li><code>.c-icon--large</code></li>
-  <li><code>.c-icon--x-large</code></li>
+  <li><%= highlight_sass_example('.c-icon--x-small') %></li>
+  <li><%= highlight_sass_example('.c-icon--small') %></li>
+  <li><%= highlight_sass_example('.c-icon--large') %></li>
+  <li><%= highlight_sass_example('.c-icon--x-large') %></li>
 </ul>
 
 <%= render_example do %>
