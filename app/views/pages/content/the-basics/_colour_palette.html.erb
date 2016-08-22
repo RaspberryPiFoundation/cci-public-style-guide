@@ -3,7 +3,7 @@
 <ul class="sg-swatches-list">
   <% colors[:palette].each do |name, value| %>
   <li class="sg-swatch">
-    <%= highlight_sass_example("," + name.to_s, classes="sg-swatch__name") %>
+    <%= highlight_sass_example("." + name.to_s, classes="sg-swatch__name") %>
     <span class="sg-swatch__sample u-background--<%= name %>"></span>
     <small class="sg-swatch__hex">
       <%= highlight_css_example("#" + value) %>
