@@ -4,7 +4,8 @@ Section.create!([
   { path: "layout",        title: "Layout",        order: 30,  show_in_nav: true  },
   { path: "styles",        title: "Styles",        order: 40,  show_in_nav: true  },
   { path: "modules",       title: "Modules",       order: 50,  show_in_nav: true  },
-  { path: "example-pages", title: "Example Pages", order: 100, show_in_nav: false }
+  { path: "example-pages", title: "Example Pages", order: 100, show_in_nav: false },
+  { path: "utilities",     title: "Utility Classes", order: 60,  show_in_nav: true }
 ])
 
 Page.create!([
@@ -29,7 +30,6 @@ Page.create!([
   { path: "info-panels",          title: "Info Panels",           order: 120, section_id: 4, show_in_nav: true, example_page: false },
   { path: "badges",               title: "Badges",                order: 130, section_id: 4, show_in_nav: true, example_page: false },
   { path: "cards",                title: "Cards",                 order: 140, section_id: 4, show_in_nav: true, example_page: false },
-  { path: "utilities",            title: "Utilities",             order: 150, section_id: 4, show_in_nav: true, example_page: false },
 
   { path: "main-navigation",      title: "Main Navigation",       order: 10,  section_id: 5, show_in_nav: true, example_page: false },
   { path: "secondary-navigation", title: "Secondary Navigation",  order: 20,  section_id: 5, show_in_nav: true, example_page: false },
@@ -39,5 +39,11 @@ Page.create!([
 
   { path: "stacked-content",      title: "Stacked Content",       order: 10,  section_id: 6, show_in_nav: true, example_page: true  },
   { path: "column-content",       title: "Column Content",        order: 20,  section_id: 6, show_in_nav: true, example_page: true  },
-  { path: "grid-demo",            title: "Grid Demo",             order: 30,  section_id: 6, show_in_nav: true, example_page: true  }
+  { path: "grid-demo",            title: "Grid Demo",             order: 30,  section_id: 6, show_in_nav: true, example_page: true  },
+
+  { path: "background-color",     title: "Background Colors",     order: 10,  section_id: 7, show_in_nav: true, example_page: false },
+  { path: "text",                 title: "Text Modifications",    order: 20,  section_id: 7, show_in_nav: true, example_page: false },
+  { path: "margin",               title: "Margin",                order: 30,  section_id: 7, show_in_nav: true, example_page: false },
+  { path: "padding",              title: "Padding",               order: 40,  section_id: 7, show_in_nav: true, example_page: false },
+  { path: "other",                title: "Other Utility Classes", order: 50,  section_id: 7, show_in_nav: true, example_page: false }
 ])

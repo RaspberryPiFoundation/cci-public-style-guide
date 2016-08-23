@@ -88,13 +88,18 @@
   Change that word to any one of the available icons to customise your list items.
 </p>
 
+
+<% for icon in icons %>
+
+<p><%= highlight_sass_example(".c-icon--#{icon}") %></p>
+
 <%= render_example do %>
 <ul class="c-icon-list">
-  <% for icon in icons %>
   <li class="c-icon-list__item">
     <span class="c-icon c-icon--large c-icon--<%= icon %>"></span>
     <span class="c-icon-list__text">List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here</span>
   </li>
-  <% end %>
 </ul>
+<% end %>
+
 <% end %>

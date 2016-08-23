@@ -8,8 +8,8 @@ module UtilitiesHelper
     data = file.read
     file.close
 
-    matches = data.to_enum(:scan, /\.[a-zA-Z|-]+*/).map { Regexp.last_match }
-    matches.map  { |match| match[0] }
+    matches = data.to_enum(:scan, /u-[a-zA-Z0-9|-]+*/).map { Regexp.last_match }
+    matches.map { |match| match[0] }.uniq
   end
 
 end

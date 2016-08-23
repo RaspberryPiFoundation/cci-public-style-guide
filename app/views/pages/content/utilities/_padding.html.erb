@@ -1,0 +1,15 @@
+<h2>Change padding</h2>
+
+<p>Add one of these classes to change padding of an element </p>
+
+<% extract_classes_from_file('_padding-adjustments.scss').each do |class_name|  %>
+
+<p><%= highlight_sass_example(".#{class_name}") %></p>
+
+<%= render_example do %>
+<div class="c-col--1 u-background--green u-color--grey-xx-light <%= class_name %>">
+  Text
+</div>
+<% end %>
+
+<% end %>
