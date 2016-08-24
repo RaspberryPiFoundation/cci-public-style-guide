@@ -1,0 +1,28 @@
+<h2>Error Pages</h2>
+
+<p> On the error page only use one page block. Provide a brief description of the problem and what user should do.</p>
+
+<%= render_example do %>
+<div class="o-main">
+  <div class="c-page-block">
+    <div class="c-grid c-grid--h-center">
+      <div class="c-col c-col--6 u-text--center">
+        <h1 class="u-color--green">FOUR OH FOUR!</h1>
+
+        <p>
+          We couldn't find the page you were trying to find. Very sorry about that.
+        </p>
+
+        <p>
+          Please check the URL you were trying to visit and try again! Alternatively,
+          use the navigation up at the top of the page to find your way around.
+        </p>
+      </div>
+
+      <div class="c-col c-col--12 u-text--center">
+        <img alt="" src="/assets/error-page-illustration.png">
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
