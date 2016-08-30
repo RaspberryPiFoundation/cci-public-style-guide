@@ -2,16 +2,25 @@
 
 <p>Add one of these classes to change margin of an element </p>
 
-<% extract_classes_from_file('_margin-adjustments.scss').each do |class_name|  %>
+<% set_margin_classes() %>
 
-<p><%= highlight_sass_example(".#{class_name}") %></p>
-
-<%= render_example do %>
-<div class="c-grid u-background--grey-x-light">
-  <div class="c-grid c-col--1 u-background--green <%= class_name %>">
-    &nbsp;
-  </div>
-</div>
-<% end %>
-
-<% end %>
+<table class="c-strip-table">
+  <thead class="c-strip-table__head">
+    <tr class="c-strip-table__row">
+      <th class="c-strip-table__col-heading">Class</th>
+      <th class="c-strip-table__col-heading">Size</th>
+    </tr>
+  </thead>
+  <tbody class="c-strip-table__body">
+    <% @class_values.each do |key, value| %>
+      <tr class="c-strip-table__row">
+        <td class="c-strip-table__cell">
+          <% @class_prefixes.each do |class_prefix| %>
+            <%= highlight_sass_example("#{class_prefix}#{key}") %><br/>
+          <% end %>
+        </td>
+        <td class="c-strip-table__cell"><%= value.round %>px</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
