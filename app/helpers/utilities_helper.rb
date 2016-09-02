@@ -3,9 +3,9 @@ module UtilitiesHelper
 
   BASE = 16
 
-  def extract_classes_from_file(file_name)
+  def extract_classes_from_file(file_name, special_prefix='u-')
     data = File.read(File.join(Rails.root, 'app', 'assets', 'code-club', 'stylesheets', 'utilities', file_name))
-    matches = data.to_enum(:scan, /u-[a-zA-Z0-9|-]+*/).map { Regexp.last_match }
+    matches = data.to_enum(:scan, /#{special_prefix}[a-zA-Z0-9|-]+*/).map { Regexp.last_match }
     matches.map { |match| match[0] }.uniq
   end
 

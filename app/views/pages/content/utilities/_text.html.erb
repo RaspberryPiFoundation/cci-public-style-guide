@@ -1,10 +1,20 @@
 <h2>Text Modifications</h2>
 
-<p>To change text size:</p>
+<p>To change font size:</p>
 
 <%= render_example do %>
 <ul>
-<% extract_classes_from_file('_font-sizing.scss').each do |class_name|  %>
+<% extract_classes_from_file('_font-sizing.scss', 'u-font-size').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>
+
+<p>To change heading font size:</p>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_font-sizing.scss', 'u-h').each do |class_name|  %>
   <li class="<%= class_name %>">Text</li>
 <% end %>
 </ul>
