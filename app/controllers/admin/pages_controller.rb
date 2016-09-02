@@ -1,4 +1,6 @@
 class Admin::PagesController < AdminController
+  include UtilitiesHelper
+
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   before_action :set_sections, only: [:new, :edit]
 
