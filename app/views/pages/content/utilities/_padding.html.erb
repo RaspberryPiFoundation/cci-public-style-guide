@@ -2,8 +2,6 @@
 
 <p>Add one of these classes to change padding of an element </p>
 
-<% set_padding_classes() %>
-
 <table class="c-strip-table">
   <thead class="c-strip-table__head">
   <tr class="c-strip-table__row">
@@ -12,11 +10,11 @@
   </tr>
   </thead>
   <tbody class="c-strip-table__body">
-  <% @class_values.each do |key, value| %>
+  <% get_padding_classes().each do |suffix, value|  %>
       <tr class="c-strip-table__row">
         <td class="c-strip-table__cell">
-          <% @class_prefixes.each do |class_prefix| %>
-              <%= highlight_sass_example("#{class_prefix}#{key}") %><br/>
+          <%  get_location_prefixes_for('padding').each do |prefix| %>
+              <%= highlight_sass_example("#{prefix}#{suffix}") %><br/>
           <% end %>
         </td>
         <td class="c-strip-table__cell"><%= value.round %>px</td>
