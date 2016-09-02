@@ -1,8 +1,8 @@
 /**
  * code-club.css
- * 
+ *
  * Code Club Style Guide - A collection of UI components for styling Code Club websites
- * @version v1.0.58
+ * @version v1.0.61
  * @link https://styleguide.codeclubworld.org/
  */
 /*
@@ -1464,7 +1464,7 @@ ul {
     margin-bottom: 12px;
     margin-bottom: 0.75rem; } }
 
-.c-form__optional {
+.c-form__label-note {
   color: #C2C2C2; }
 
 .c-form__input {
