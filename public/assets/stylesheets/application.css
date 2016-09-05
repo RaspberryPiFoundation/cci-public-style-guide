@@ -5,22 +5,10 @@
 
 .sg-header {
   background: #333333;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0; }
+  width: 20%; }
 
 .sg-content-wrapper {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  width: 80%;
   padding-top: 32px;
   padding-top: 2rem;
   padding-right: 64px;
