@@ -1,0 +1,76 @@
+<h2>Stacked Content Page Layout</h2>
+
+<p>Content pages on Code Club websites are made from following ingredients:</p>
+
+<div class="sg-fig-desc">
+  <figure class="sg-fig-desc__figure">
+    <%= image_tag '/assets/images/layout-01.svg', :class => 'sg-fig-desc__image' %>
+  </figure>
+
+  <div class="sg-fig-desc__description">
+    <dl>
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">1</span> Header</dt>
+      <dd class="sg-fig-desc__description-list-content">
+        Houses the Code Club logo &amp; primary navigation.
+        <%= link_to("Navigation usage & styles", page_path('modules', 'navigation')) %>
+      </dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">2</span> Hero block</dt>
+      <dd class="sg-fig-desc__description-list-content">Sits directly under the Header. <%= link_to("Hero block usage & styles", page_path('modules', 'hero-blocks')) %></dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">3</span> Section nav</dt>
+      <dd class="sg-fig-desc__description-list-content">Optional. Sits directly under the Hero block</dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">4</span> Content blocks</dt>
+      <dd class="sg-fig-desc__description-list-content">Used to layout and break up chunks of content. See below for usage &amp; styles.</dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">5</span> Action block</dt>
+      <dd class="sg-fig-desc__description-list-content">Optional. Used to feature a pages primary action</dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">6</span> Footer</dt>
+      <dd class="sg-fig-desc__description-list-content">Present on every screen, the footer contains useful links, icon links to social media accounts &amp; any official/copyright statements</dd>
+    </dl>
+
+    <p><%= link_to "View example stacked content page", page_path('example-pages', 'stacked-content'), :class => "c-button c-button--green" %></p>
+  </div>
+</div>
+
+<hr>
+
+<h2>Column Content Page layout</h2>
+
+<p>The column layout is useful for sections where there is more user-interaction than content, for example logged-in account pages.</p>
+
+<div class="sg-fig-desc">
+  <figure class="sg-fig-desc__figure">
+    <%= image_tag '/assets/images/layout-02.svg', :class => 'sg-fig-desc__image' %>
+  </figure>
+
+  <div class="sg-fig-desc__description">
+    <dl class="sg-fig-desc__description-list">
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">1</span> Header</dt>
+      <dd class="sg-fig-desc__description-list-content">Same as content layout</dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">2</span> Menu items</dt>
+      <dd class="sg-fig-desc__description-list-content">E.g. Section-specific navigation list, or information panels</dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">3</span> Content</dt>
+      <dd class="sg-fig-desc__description-list-content">Stacked boxes of content</dd>
+
+      <dt class="sg-fig-desc__description-list-title"><span class="sg-fig-desc__badge">4</span> Footer</dt>
+      <dd class="sg-fig-desc__description-list-content">Same as content layout</dd>
+    </dl>
+
+    <p><%= link_to "View example column content page", page_path('example-pages', 'column-content'), :class => "c-button c-button--green" %></p>
+  </div>
+</div>
+
+<h2>Error Pages</h2>
+
+<p>On the error page only use one page block. Please also provide a brief description of the problem and what
+  the user should do. You can find an example of 404 page <a href="">here</a>.</p>
+<p>Please use <%= highlight_example('error-page-illustration.png') %> for illustration.</p>
+
+<%= render_example do%>
+<img src="/assets/code-club/images/error-page-illustration.png" alt=""/>
+<% end %>
