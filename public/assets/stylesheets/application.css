@@ -5,12 +5,10 @@
 
 .sg-header {
   background: #333333;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
+  width: 20%; }
 
 .sg-content-wrapper {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
+  width: 80%;
   padding-top: 32px;
   padding-top: 2rem;
   padding-right: 64px;
