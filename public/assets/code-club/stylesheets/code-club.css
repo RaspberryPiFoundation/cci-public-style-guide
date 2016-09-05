@@ -1107,7 +1107,7 @@ ul {
   border-radius: 8px;
   border-radius: 0.5rem; }
 
-.c-button--underline-text {
+.c-button--link {
   background: none;
   border: none;
   color: #C2C2C2;
@@ -1115,7 +1115,7 @@ ul {
   font-weight: 500;
   text-decoration: underline;
   padding: 0; }
-  .c-button--underline-text:active, .c-button--underline-text:focus, .c-button--underline-text:hover {
+  .c-button--link:active, .c-button--link:focus, .c-button--link:hover {
     color: #848484; }
 
 .c-button--small {

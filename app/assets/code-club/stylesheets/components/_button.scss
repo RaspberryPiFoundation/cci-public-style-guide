@@ -84,7 +84,7 @@
   .c-button--squared { @include rem('border-radius', $border-radius-x-small); }
 
 
-  .c-button--underline-text {
+  .c-button--link {
     background: none;
     border: none;
     color: $grey-light;
