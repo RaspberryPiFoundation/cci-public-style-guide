@@ -14,7 +14,6 @@
       flex-shrink: 0; }
 
 .sg-content-wrapper {
-  width: 80%;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
   -webkit-box-flex: 0;
