@@ -106,7 +106,7 @@
 <%= render_example do %>
 <label class="c-form__label">
   Enter your email address again
-  <span class="c-form__optional">(optional)</span>
+  <span class="c-form__label-note">(optional)</span>
 </label>
 <% end %>
 <h3>Basic Input Fields</h3>
@@ -310,6 +310,12 @@
 </div>
 <input class="c-form__input c-form__input--error" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email" value="user@hotmial">
 <% end %>
+
+Your can also use <%= highlight_sass_example('--error') %> with other form elements:
+<ul>
+  <li><%= highlight_sass_example('c-form__select--error') %></li>
+  <li><%= highlight_sass_example('c-form__textarea--error') %></li>
+</ul>
 
 <hr>
 
