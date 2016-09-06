@@ -24,7 +24,6 @@ var header        = require('gulp-header');
 var imagemin      = require('gulp-imagemin');
 var notify        = require('gulp-notify');
 var plumber       = require('gulp-plumber');
-var pngquant      = require('imagemin-pngquant');
 var rename        = require('gulp-rename');
 var sass          = require('gulp-sass');
 var sourcemaps    = require('gulp-sourcemaps');
@@ -147,15 +146,7 @@ function process_images(config) {
       progress(config.source + ' - Begin image compression');
     });
 
-  stream = stream.pipe(imagemin({
-    progressive: true,
-    svgoPlugins: [{
-      removeViewBox: false
-    }],
-    use: [
-      pngquant()
-    ]
-  })).on('end', function () {
+  stream = stream.pipe(imagemin()).on('end', function () {
     progress(config.dest_dir + ' - Images compressed');
   });
 
