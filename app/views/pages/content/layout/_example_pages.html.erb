@@ -64,3 +64,18 @@
     <p><%= link_to "View example column content page", page_path('example-pages', 'column-content'), :class => "c-button c-button--green" %></p>
   </div>
 </div>
+
+<h2>Error Pages</h2>
+
+<p>
+  On the error page only use one page block. Please also provide a brief description of the problem and what
+  the user should do. You can find an example of 404 page <a href="https://www.codeclub.org.uk/404.html">here</a>.
+</p>
+
+<p>Please use <%= highlight_example('error-page-illustration.png') %> for illustration.</p>
+
+<%= render_example with_code: false do %>
+<div class="u-text--center">
+  <%= image_tag "/assets/code-club/images/error-page-illustration.png", :alt => nil %>
+</div>
+<% end %>
