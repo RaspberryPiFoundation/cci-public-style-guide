@@ -28,4 +28,8 @@ module AssetsHelper
     url = AssetManifest.asset_path(url)
   end
 
+  def slugify(text)
+    text.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  end
+
 end
