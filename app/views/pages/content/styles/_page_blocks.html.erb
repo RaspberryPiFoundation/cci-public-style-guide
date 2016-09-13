@@ -1,4 +1,4 @@
-<h2>What are they?</h2>
+<%= render 'shared/section_heading', :title => "What are they?" %>
 
 <p>
   Page blocks help to introduce some structure to your pages by breaking content into separate chunks.
@@ -78,9 +78,9 @@
 
 <hr>
 
-<h2>Page Block Variants</h2>
+<%= render 'shared/section_heading', :title => "Page Block Variants" %>
 
-<h3>Alternative Background Color</h3>
+<%= render 'shared/section_heading', :title => "Alternative Background Color", :heading_tag => :h3 %>
 
 <p>
   This performs exactly the same function as the regular content block, except the background is white and it has no borders. It's a little
@@ -106,9 +106,9 @@
 
 <hr>
 
-<h2>Page Block Variants</h2>
+<%= render 'shared/section_heading', :title => "Page Block Variants" %>
 
-<h3>Action Blocks</h3>
+<%= render 'shared/section_heading', :title => "Action Blocks", :heading_tag => :h3 %>
 
 <p>
   Use the action block once per page to feature an action that a user may take,

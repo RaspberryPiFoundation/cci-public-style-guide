@@ -24,6 +24,7 @@ module IconsHelper
       'help',
       'info',
       'info-fill',
+      'link',
       'location',
       'lock',
       'note',

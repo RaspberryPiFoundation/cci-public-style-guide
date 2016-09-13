@@ -1,4 +1,4 @@
-<h2>How to Use Buttons</h2>
+<%= render 'shared/section_heading', :title => "How to Use Buttons" %>
 
 <p>Button styles can be applied to standard links or the <%= highlight_sass_example('button') %> element.</p>
 
@@ -25,7 +25,7 @@
 
 <hr>
 
-<h2>Colouring Buttons</h2>
+<%= render 'shared/section_heading', :title => "Colouring Buttons" %>
 
 <p>Buttons can be styled with any colour in the palette. Be careful to have appropriate contrast between the color of the button and its background.</p>
 
@@ -37,7 +37,7 @@
 
 <hr>
 
-<h2>Hollow Buttons</h2>
+<%= render 'shared/section_heading', :title => "Hollow Buttons" %>
 
 <%= render_example do %>
 <% colors[:palette].each do |name, value| %>
@@ -47,7 +47,7 @@
 
 <hr>
 
-<h2>Sizing Buttons</h2>
+<%= render 'shared/section_heading', :title => "Sizing Buttons" %>
 
 <p>
   Buttons come in four sizes. Small, normal, large and extra large. The
@@ -60,7 +60,7 @@
 <p><button class="c-button c-button--x-large c-button--green">Extra Large Button</button></p>
 <% end %>
 
-<h2>Miscellaneous Button Options</h2>
+<%= render 'shared/section_heading', :title => "Miscellaneous Button Options" %>
 
 <p>Buttons can contain icons, dim when disabled, can have a more squared border radius, and have a couple of sizing options too.</p>
 <p>These styles can be mixed-and-matched in a variety of configurations.</p>
@@ -84,7 +84,7 @@
 
 <hr>
 
-<h2>Button Groups</h2>
+<%= render 'shared/section_heading', :title => "Button Groups" %>
 
 <p>Occasionally you may want to provide a toggle or option-based set of buttons. Use a <code>c-button-group</code> to achieve this.</p>
 

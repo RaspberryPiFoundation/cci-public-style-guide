@@ -2,7 +2,7 @@
 
 <a name="<%= slug %>"></a>
 
-<h2>
-  <%= title %>
-  <a class="c-icon c-icon--star" href="#<%= slug %>"></a>
-</h2>
+<%= content_tag (defined?(heading_tag) ? heading_tag : :h2)  do %>
+    <%= title %>
+    <a class="c-icon c-icon--star" href="#<%= slug %>"></a>
+<% end %>

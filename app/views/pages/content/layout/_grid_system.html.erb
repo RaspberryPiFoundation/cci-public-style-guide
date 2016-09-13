@@ -1,4 +1,4 @@
-<h2>How to Grid!</h2>
+<%= render 'shared/section_heading', :title => "How to Grid!", :heading_tag => :h3 %>
 
 <p>
   Our grid system uses <%= link_to 'CSS Flexbox', 'https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/' %> to control
@@ -16,7 +16,7 @@
 
 <hr>
 
-<h3>A Basic Grid</h3>
+<%= render 'shared/section_heading', :title => "A Basic Grid", :heading_tag => :h3 %>
 
 <p>
   In its purest form, a grid looks like this:
@@ -59,7 +59,8 @@
 
 <hr>
 
-<h3>Grid Column Alignment</h3>
+
+<%= render 'shared/section_heading', :title => "Grid Column Alignment", :heading_tag => :h3 %>
 
 <p>
   Groups of columns can be aligned vertically or horizontally. Examples of the options available can be found on
