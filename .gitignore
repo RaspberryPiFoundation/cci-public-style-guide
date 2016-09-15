@@ -44,3 +44,5 @@ npm-debug.log
 
 # Ignore RubyMine folders
 .idea/*
+.rubocop-https---ccops1-codeclubworld-org-rubocop-master-yml
+.byebug_history

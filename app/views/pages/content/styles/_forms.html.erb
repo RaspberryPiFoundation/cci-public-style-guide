@@ -1,4 +1,4 @@
-<h2>Basic Form Markup</h2>
+<%= section_header('Basic Form Markup') %>
 
 <p>Although it doesn't trigger any currently presentational styles, all forms must begin and end with the following markup.</p>
 
@@ -26,7 +26,7 @@
 </form>
 <% end %>
 
-<h3>Labels or Placeholders?</h3>
+<%= section_header('Labels or Placeholders?', :h3) %>
 
 <p>
   In order to maximise the accessibility and usability of your forms, all input fields should have an accompanying
@@ -78,7 +78,7 @@
   <%= highlight_sass_example('id') %> attribute on the intended input.
 </p>
 
-<h3>A note about buttons</h3>
+<%= section_header('A note about buttons', :h3) %>
 
 <p>
   This page doesn't contain any examples of "submit" buttons or similar. When your forms need a button, use one of the options
@@ -91,9 +91,9 @@
 
 <hr>
 
-<h2>Basic Form Elements</h2>
+<%= section_header('Basic Form Elements') %>
 
-<h3>Labels</h3>
+<%= section_header('Labels', :h3) %>
 
 <%= render_example do %>
 <label class="c-form__label">Enter your email address again</label>
@@ -109,7 +109,7 @@
   <span class="c-form__label-note">(optional)</span>
 </label>
 <% end %>
-<h3>Basic Input Fields</h3>
+<%= section_header('Basic Input Fields', :h3) %>
 
 <p>
   This style should be used for any field that accepts a free input of alphanumeric characters. It can
@@ -120,7 +120,7 @@
 <input class="c-form__input" name="user[name]" placeholder="Grace Hopper" type="text">
 <% end %>
 
-<h3>Input Sizes</h3>
+<%= section_header('Input Sizes', :h3) %>
 
 <p>
   By default all inputs are displayed at 100% width of their containing element.
@@ -143,7 +143,7 @@
 <input class="c-form__input c-form__input--width-xxl" name="user[name]" placeholder="Grace Hopper" type="text">
 <% end %>
 
-<h3>Inline Inputs</h3>
+<%= section_header('Inline Inputs', :h3) %>
 
 <p>
   Input fields are set to behave as a <em>block level element</em>. To override
@@ -156,7 +156,7 @@
   <% end %>
 <% end %>
 
-<h3>Textareas</h3>
+<%= section_header('Textareas', :h3) %>
 
 <p>
   When creating your textareas, remember to set the <%= highlight_sass_example('rows') %>
@@ -170,7 +170,7 @@
 <textarea class="c-form__textarea" id="whatevers_textarea" name="user[whatevers]" placeholder="Lorem ipsum dolor sit amet..." rows="5" cols="40"></textarea>
 <% end %>
 
-<h3>Select Boxes</h3>
+<%= section_header('Select Boxes', :h3) %>
 
 <%= render_example do %>
 <select name="user[selection]" id="whatevers_select" class="c-form__select">
@@ -180,7 +180,7 @@
 </select>
 <% end %>
 
-<h3>Select Box Sizes</h3>
+<%= section_header('Select Box Sizes', :h3) %>
 
 <p>
   Just like regular inputs, select boxes can be sized with the following classes:
@@ -222,7 +222,7 @@
 </select>
 <% end %>
 
-<h3>Inline Select Boxes</h3>
+<%= section_header('Inline Select Boxes', :h3) %>
 
 <p>
   Select boxes are set to behave as a <em>block level element</em>. To override
@@ -239,7 +239,7 @@
   <% end %>
 <% end %>
 
-<h3>Checkboxes</h3>
+<%= section_header('Checkboxes', :h3) %>
 
 <%= render_example do %>
 <label class="c-form__label">
@@ -256,7 +256,7 @@
 </label>
 <% end %>
 
-<h3>Radio Buttons</h3>
+<%= section_header('Radio Buttons', :h3) %>
 
 <%= render_example do %>
 <label class="c-form__label">
@@ -273,7 +273,7 @@
 </label>
 <% end %>
 
-<h3>File Upload Inputs</h3>
+<%= section_header('File Upload Inputs', :h3) %>
 
 <%= render_example do %>
 <input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="file">
@@ -281,9 +281,9 @@
 
 <hr>
 
-<h2>Creating More Useful Forms</h2>
+<%= section_header('Creating More Useful Forms') %>
 
-<h3>Fields with Additional Information</h3>
+<%= section_header('Fields with Additional Information', :h3) %>
 
 <p>Occasionally you'll need to provide the user with guidance on what kind of information your form's inputs expect. You can use the <%= link_to "alert", page_path('styles', 'alerts') %> component to achieve this.</p>
 
@@ -296,7 +296,7 @@
 <input class="c-form__input" id="whatevers" name="user[whatevers]" placeholder="example@domain.com" type="email">
 <% end %>
 
-<h3>Error Highlighting</h3>
+<%= section_header('Error Highlighting', :h3) %>
 
 <p><%= link_to "Alerts", page_path('styles', 'alerts') %> can also be used to notify the user of data entry errors on individual fields.</p>
 
@@ -319,9 +319,9 @@ Your can also use <%= highlight_sass_example('--error') %> with other form eleme
 
 <hr>
 
-<h2>Extra form styles</h2>
+<%= section_header('Extra form styles') %>
 
-<h3>Checkbox Group</h3>
+<%= section_header('Checkbox Group', :h3) %>
 
 <p>When you need a group of stylised checkboxes, use the following markup. Be careful to ensure that your labels'
   <%= highlight_sass_example('for') %> attribute matches its corresponding input's
@@ -338,7 +338,7 @@ Your can also use <%= highlight_sass_example('--error') %> with other form eleme
 </div>
 <% end %>
 
-<h3>Radio Input Group</h3>
+<%= section_header('Radio Input Group', :h3) %>
 
 <p>You can achieve a similar effect to the checkbox group with a series of radio inputs.</p>
 

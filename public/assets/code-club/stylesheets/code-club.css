@@ -1754,6 +1754,9 @@ ul {
 .c-icon--info-fill {
   background-image: url("../images/icons/info-fill.svg"); }
 
+.c-icon--link {
+  background-image: url("../images/icons/link.svg"); }
+
 .c-icon--location {
   background-image: url("../images/icons/location.svg"); }
 
