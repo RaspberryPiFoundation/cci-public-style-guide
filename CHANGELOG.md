@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Added `c-button--link` which styles buttons as links.
+- Added `error-page-illustration.png` which is an image for error pages.
 
 ### Changed 
 - Required / optional in label now should be highlighted with class `c-form__label-note`
