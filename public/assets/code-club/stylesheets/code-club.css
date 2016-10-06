@@ -497,31 +497,26 @@ th {
 .c-grid--v-top {
   -webkit-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start; }
 
 .c-grid--v-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center; }
 
 .c-grid--v-bottom {
   -webkit-box-align: end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end; }
 
 .c-grid--v-stretch {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-              -ms-grid-row-align: stretch;
           align-items: stretch; }
 
 .c-grid--v-baseline {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
-              -ms-grid-row-align: baseline;
           align-items: baseline; }
 
 .c-col {
@@ -538,6 +533,7 @@ th {
 
 .c-col--center {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center; }
 
 .c-col--bottom {
@@ -546,6 +542,7 @@ th {
 
 .c-col--stretch {
   -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
       align-self: stretch; }
 
 .c-col--baseline {
@@ -1471,7 +1468,8 @@ ul {
 .c-form__label-note {
   color: #C2C2C2; }
 
-.c-form__input {
+.c-form__input,
+.c-form__search {
   background: #FFF;
   border: 1px solid #E0E0E0;
   border-radius: 8px;
@@ -1487,10 +1485,12 @@ ul {
   outline: 0;
   vertical-align: middle;
   width: 100%; }
-  .c-form__input:focus {
+  .c-form__input:focus,
+  .c-form__search:focus {
     border-color: #848484; }
 
-.c-form__input--error {
+.c-form__input--error,
+.c-form__search--error {
   border-color: #FF5252; }
 
 @media only screen and (min-width: 56.25rem) {
@@ -1519,6 +1519,13 @@ ul {
   .c-form__input--width-xxl {
     width: 280px;
     width: 17.5rem; } }
+
+.c-form__search {
+  background: url("../images/search.svg") left center no-repeat;
+  padding-left: 40px; }
+
+.c-form__search--error {
+  background-image: url("../images/search-red.svg"); }
 
 .c-form__select {
   -webkit-appearance: none;
