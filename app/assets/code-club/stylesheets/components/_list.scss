@@ -63,3 +63,33 @@
           @include rem('line-height', $icon-size-large);
         }
       }
+
+@import "../generic/_grid.scss";
+
+.c-image-list-item {
+  @extend .c-grid;
+  @extend .c-grid--h-center;
+  @extend .c-grid--v-center;
+}
+
+.c-image-list--image-area,
+.c-image-list--text-area {
+  @extend .c-col;
+}
+
+.c-image-list--image-area {
+  @extend .c-col--2;
+  text-align: center;
+}
+
+.c-image-list--text-area {
+  @extend .c-col--6;
+  text-align: left;
+}
+
+.c-image-list--title {
+  font-weight: bold;
+}
+
+
+
