@@ -9,3 +9,82 @@
     margin-bottom: 0;
   }
 }
+
+.c-instruction-panel {
+  @extend .c-content-panel;
+  @include padding($padding-large, $padding-x-large);
+  display: flex;
+  flex-wrap: wrap;
+
+  .c-instruction--title-block {
+    flex-basis: 35%;
+    flex-grow:  1;
+    flex-shrink: 1;
+  }
+
+  .c-instruction--illustration {
+    display:  inline;
+    float:    left;
+    position: static;
+    @include  padding-right($padding-x-small, $padding-small)
+  }
+
+  .c-instruction--step,
+  .c-instruction--title,
+  .c-instruction--summary {
+    display: block;
+    margin-bottom: 0;
+    margin-left:   $margin-xx-large;
+  }
+
+  .c-instruction--step {
+    @extend h5;
+    color: $grey-med;
+  }
+
+  .c-instruction--title {
+    @extend h3;
+    @include font-size($font-size-large);
+  }
+
+  .c-instruction--duration {
+    @extend h6;
+    color: $grey-light;
+  }
+
+  .c-instruction--text-block {
+    display:   flex;
+    flex-wrap: wrap;
+    flex-basis: 65%;
+    flex-grow:  2;
+    flex-shrink: 1;
+  }
+
+  .c-instruction--summary {
+    @include margin-bottom($margin-bottom-h1);
+    flex-basis:  100%;
+  }
+
+  ul.c-instruction--bullets {
+    display:     inline-block;
+    list-style:  none;
+    flex-basis:  50%;
+    flex-shrink: 1;
+    flex-grow:   2;
+    padding:     0;
+
+    li {
+      @extend .c-list__item;
+      @extend .c-list__item--bulleted;
+      list-style:    none;
+      margin-bottom: 0;
+    }
+
+    >li:first-child {
+      @extend h3;
+      @include font-size($font-size-base);
+      background: none;
+    }
+  }
+}
+
