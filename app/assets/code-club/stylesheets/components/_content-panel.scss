@@ -13,12 +13,12 @@
 .c-instruction-panel {
   @extend .c-content-panel;
   @include padding($padding-large, $padding-x-large);
-  display: flex;
+  display:   flex;
   flex-wrap: wrap;
 
   .c-instruction--title-block {
-    flex-basis: 35%;
-    flex-grow:  1;
+    flex-basis:  35%;
+    flex-grow:   1;
     flex-shrink: 1;
   }
 
@@ -32,7 +32,7 @@
   .c-instruction--step,
   .c-instruction--title,
   .c-instruction--summary {
-    display: block;
+    display:       block;
     margin-bottom: 0;
     margin-left:   $margin-xx-large;
   }
@@ -53,10 +53,10 @@
   }
 
   .c-instruction--text-block {
-    display:   flex;
-    flex-wrap: wrap;
-    flex-basis: 65%;
-    flex-grow:  2;
+    display:     flex;
+    flex-wrap:   wrap;
+    flex-basis:  65%;
+    flex-grow:   2;
     flex-shrink: 1;
   }
 
@@ -82,7 +82,7 @@
 
     >li:first-child {
       @extend h3;
-      @include font-size($font-size-base);
+      @include    font-size($font-size-base);
       background: none;
     }
   }
