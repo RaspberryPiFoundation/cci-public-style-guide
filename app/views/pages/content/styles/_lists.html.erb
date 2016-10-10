@@ -79,15 +79,7 @@
 </dl>
 <% end %>
 
-<%= section_header('Icon List') %>
-
-<p>
-  Each bullet has an accompanying icon, which is specified from <%= link_to "the range included
-  in these assets", page_path('styles', 'icons') %>. Name it in your HTML class like this:
-  <%= highlight_sass_example('c-list__item--icon-twitter') %>, where "twitter" is the name of the icon.
-  Change that word to any one of the available icons to customise your list items.
-</p>
-
+<hr>
 
 <%= section_header('Image List') %>
 
@@ -116,10 +108,21 @@
       </div>
       <div class="c-image-list--text-area">
         <span class="c-image-list--title">Title three</span>
-        duis mauris libero, commodo vel venenatis at, tempor nec ligula. 
+        duis mauris libero, commodo vel venenatis at, tempor nec ligula.
       </div>
     </div>
 <% end %>
+
+<hr>
+
+<%= section_header('Icon List') %>
+
+<p>
+  Each bullet has an accompanying icon, which is specified from <%= link_to "the range included
+  in these assets", page_path('styles', 'icons') %>. Name it in your HTML class like this:
+  <%= highlight_sass_example('c-list__item--icon-twitter') %>, where "twitter" is the name of the icon.
+  Change that word to any one of the available icons to customise your list items.
+</p>
 
 <%= render_example do %>
 <ul class="c-icon-list">
