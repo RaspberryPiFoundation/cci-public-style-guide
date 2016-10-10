@@ -2166,8 +2166,8 @@ ul {
   background-color: #5290D2;
   color: #FFF;
   margin: 50px 0;
-  position: relative;
   max-width: 100%;
+  position: relative;
   width: 25em; }
 
 .c-speech-bubble::after {
@@ -2208,14 +2208,14 @@ ul {
 .c-speech-bubble--right::after {
   right: 0; }
 
-.c-speech-bubble--bottom,
+.c-speech-bubble--bottom::after,
 .c-speech-bubble--bottom.c-speech-bubble--right::after {
   border-width: 1em 0 0 1em; }
 
 .c-speech-bubble--bottom.c-speech-bubble--left::after {
   border-width: 1em 1em 0 0; }
 
-.c-speech-bubble--top,
+.c-speech-bubble--top::after,
 .c-speech-bubble--top.c-speech-bubble--right::after {
   border-width: 0 0 1em 1em; }
 
