@@ -11,28 +11,32 @@
 </div>
 <% end %>
 
+<hr>
+
 <%= section_header('Instruction panel') %>
 <%= render_example do %>
+<style>
+  #instruction-panel-with-code-club-logo {
+    background-image: url(/assets/code-club/images/code-club-logo.svg);
+  }
+</style>
+
 <div class="c-instruction-panel">
-  <div class="c-instruction--title-block">
-    <img src="/assets/code-club/images/code-club-logo.svg" class="c-instruction--illustration">
-    <span class="c-instruction--step">Step 1</span>
-    <span class="c-instruction--title">Register</span>
-    <span class="c-instruction--duration">10 min</span>
+  <div id="instruction-panel-with-code-club-logo" class="c-instruction--title-block">
+    <span>Step 1</span>
+    <span>Register</span>
+    <span>10 min</span>
   </div>
   <div class="c-instruction--text-block">
-    <span class="c-instruction--summary">
-      Eu senectus commodo vulputate vestibulum id odio mollis vestibulum blandit
-      sapien a volutpat morbi parturient ullamcorper penatibus scelerisque magnis
-      faucibus curabitur consectetur dictumst semper. Sed sociosqu nullam tristique
-      vivamus etiam mi odio velit consectetur in et vestibulum ornare sodales suspendisse
-      bibendum turpis in et curabitur tempus a.</span>
-    <ul class="c-instruction--bullets">
+    Eu senectus commodo vulputate vestibulum id odio mollis vestibulum blandit
+    sapien a volutpat morbi parturient ullamcorper penatibus scelerisque magnis
+    faucibus curabitur consectetur dictumst semper.
+    <ul>
       <li>You need to:</li>
       <li>Submit the registration form</li>
       <li>Complete DBS check</li>
     </ul>
-    <ul class="c-instruction--bullets">
+    <ul>
       <li>We will provide:</li>
       <li>Resources</li>
     </ul>

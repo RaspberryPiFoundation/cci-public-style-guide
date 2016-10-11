@@ -378,19 +378,19 @@ h1, .wf-loading
 h2,
 .wf-loading
 h3,
-.wf-loading .c-instruction-panel .c-instruction--title,
-.c-instruction-panel .wf-loading .c-instruction--title,
-.wf-loading .c-instruction-panel ul.c-instruction--bullets > li:first-child,
-.c-instruction-panel .wf-loading ul.c-instruction--bullets > li:first-child, .wf-loading
+.wf-loading .c-instruction-panel .c-instruction--title-block :nth-child(2),
+.c-instruction-panel .c-instruction--title-block .wf-loading :nth-child(2),
+.wf-loading .c-instruction-panel ul > li:first-child,
+.c-instruction-panel .wf-loading ul > li:first-child, .wf-loading
 h4,
 .wf-loading
 h5,
-.wf-loading .c-instruction-panel .c-instruction--step,
-.c-instruction-panel .wf-loading .c-instruction--step,
+.wf-loading .c-instruction-panel .c-instruction--title-block :first-child,
+.c-instruction-panel .c-instruction--title-block .wf-loading :first-child,
 .wf-loading
 h6,
-.wf-loading .c-instruction-panel .c-instruction--duration,
-.c-instruction-panel .wf-loading .c-instruction--duration, .wf-loading
+.wf-loading .c-instruction-panel .c-instruction--title-block :nth-child(3),
+.c-instruction-panel .c-instruction--title-block .wf-loading :nth-child(3), .wf-loading
 input, .wf-loading
 label, .wf-loading
 li, .wf-loading
@@ -429,39 +429,39 @@ h2,
 h2,
 .wf-active
 h3,
-.wf-active .c-instruction-panel .c-instruction--title,
-.c-instruction-panel .wf-active .c-instruction--title,
-.wf-active .c-instruction-panel ul.c-instruction--bullets > li:first-child,
-.c-instruction-panel .wf-active ul.c-instruction--bullets > li:first-child,
+.wf-active .c-instruction-panel .c-instruction--title-block :nth-child(2),
+.c-instruction-panel .c-instruction--title-block .wf-active :nth-child(2),
+.wf-active .c-instruction-panel ul > li:first-child,
+.c-instruction-panel .wf-active ul > li:first-child,
 .wf-inactive
 h3,
-.wf-inactive .c-instruction-panel .c-instruction--title,
+.wf-inactive .c-instruction-panel .c-instruction--title-block :nth-child(2),
+.c-instruction-panel .c-instruction--title-block
+.wf-inactive :nth-child(2),
+.wf-inactive .c-instruction-panel ul > li:first-child,
 .c-instruction-panel
-.wf-inactive .c-instruction--title,
-.wf-inactive .c-instruction-panel ul.c-instruction--bullets > li:first-child,
-.c-instruction-panel
-.wf-inactive ul.c-instruction--bullets > li:first-child, .wf-active
+.wf-inactive ul > li:first-child, .wf-active
 h4,
 .wf-inactive
 h4,
 .wf-active
 h5,
-.wf-active .c-instruction-panel .c-instruction--step,
-.c-instruction-panel .wf-active .c-instruction--step,
+.wf-active .c-instruction-panel .c-instruction--title-block :first-child,
+.c-instruction-panel .c-instruction--title-block .wf-active :first-child,
 .wf-inactive
 h5,
-.wf-inactive .c-instruction-panel .c-instruction--step,
-.c-instruction-panel
-.wf-inactive .c-instruction--step,
+.wf-inactive .c-instruction-panel .c-instruction--title-block :first-child,
+.c-instruction-panel .c-instruction--title-block
+.wf-inactive :first-child,
 .wf-active
 h6,
-.wf-active .c-instruction-panel .c-instruction--duration,
-.c-instruction-panel .wf-active .c-instruction--duration,
+.wf-active .c-instruction-panel .c-instruction--title-block :nth-child(3),
+.c-instruction-panel .c-instruction--title-block .wf-active :nth-child(3),
 .wf-inactive
 h6,
-.wf-inactive .c-instruction-panel .c-instruction--duration,
-.c-instruction-panel
-.wf-inactive .c-instruction--duration, .wf-active
+.wf-inactive .c-instruction-panel .c-instruction--title-block :nth-child(3),
+.c-instruction-panel .c-instruction--title-block
+.wf-inactive :nth-child(3), .wf-active
 input,
 .wf-inactive
 input, .wf-active
@@ -749,7 +749,7 @@ form {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
-h1, h2, h3, .c-instruction-panel .c-instruction--title, .c-instruction-panel ul.c-instruction--bullets > li:first-child, h4, h5, .c-instruction-panel .c-instruction--step, h6, .c-instruction-panel .c-instruction--duration {
+h1, h2, h3, .c-instruction-panel .c-instruction--title-block :nth-child(2), .c-instruction-panel ul > li:first-child, h4, h5, .c-instruction-panel .c-instruction--title-block :first-child, h6, .c-instruction-panel .c-instruction--title-block :nth-child(3) {
   margin: 0;
   padding: 0; }
 
@@ -769,7 +769,7 @@ h2 {
   margin-bottom: 18px;
   margin-bottom: 1.125rem; }
 
-h3, .c-instruction-panel .c-instruction--title, .c-instruction-panel ul.c-instruction--bullets > li:first-child {
+h3, .c-instruction-panel .c-instruction--title-block :nth-child(2), .c-instruction-panel ul > li:first-child {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -785,7 +785,7 @@ h4 {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
-h5, .c-instruction-panel .c-instruction--step {
+h5, .c-instruction-panel .c-instruction--title-block :first-child {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -794,7 +794,7 @@ h5, .c-instruction-panel .c-instruction--step {
   margin-bottom: 0.875rem;
   text-transform: uppercase; }
 
-h6, .c-instruction-panel .c-instruction--duration {
+h6, .c-instruction-panel .c-instruction--title-block :nth-child(3) {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -1429,84 +1429,6 @@ ul {
   .c-content-panel > *:last-child, .c-instruction-panel > *:last-child {
     margin-bottom: 0; }
 
-.c-instruction-panel {
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  padding-right: 32px;
-  padding-right: 2rem;
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
-  padding-left: 32px;
-  padding-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .c-instruction-panel .c-instruction--title-block {
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-negative: 1;
-        flex-shrink: 1; }
-  .c-instruction-panel .c-instruction--illustration {
-    display: inline;
-    float: left;
-    position: static;
-    padding-right: 8px !important;
-    padding-right: 0.5rem !important; }
-  .c-instruction-panel .c-instruction--step,
-  .c-instruction-panel .c-instruction--title,
-  .c-instruction-panel .c-instruction--summary {
-    display: block;
-    margin-bottom: 0;
-    margin-left: 64; }
-  .c-instruction-panel .c-instruction--step {
-    color: #848484; }
-  .c-instruction-panel .c-instruction--title {
-    font-size: 20px;
-    font-size: 1.25rem; }
-  .c-instruction-panel .c-instruction--duration {
-    color: #C2C2C2; }
-  .c-instruction-panel .c-instruction--text-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 65%;
-        flex-basis: 65%;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    -ms-flex-negative: 1;
-        flex-shrink: 1; }
-  .c-instruction-panel .c-instruction--summary {
-    margin-bottom: 30px;
-    margin-bottom: 1.875rem;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; }
-  .c-instruction-panel ul.c-instruction--bullets {
-    display: inline-block;
-    list-style: none;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    padding: 0; }
-    .c-instruction-panel ul.c-instruction--bullets li {
-      list-style: none;
-      margin-bottom: 0; }
-    .c-instruction-panel ul.c-instruction--bullets > li:first-child {
-      font-size: 16px;
-      font-size: 1rem;
-      background: none; }
-
 .c-def-list {
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -2068,6 +1990,98 @@ ul {
   .c-info--warning a:visited {
     color: #333333; }
 
+.c-instruction-panel {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  padding-left: 32px;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .c-instruction-panel .c-instruction--title-block {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    margin-bottom: 1em;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1; }
+    .c-instruction-panel .c-instruction--title-block :first-child,
+    .c-instruction-panel .c-instruction--title-block :nth-child(2),
+    .c-instruction-panel .c-instruction--title-block :nth-child(3) {
+      display: block;
+      margin-bottom: 0;
+      padding-left: 55px; }
+    .c-instruction-panel .c-instruction--title-block :first-child {
+      color: #848484; }
+    .c-instruction-panel .c-instruction--title-block :nth-child(2) {
+      font-size: 20px;
+      font-size: 1.25rem; }
+    .c-instruction-panel .c-instruction--title-block :nth-child(3) {
+      color: #C2C2C2; }
+  .c-instruction-panel .c-instruction--text-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -ms-flex-negative: 1;
+        flex-shrink: 1; }
+  .c-instruction-panel ul {
+    margin-top: 32px;
+    margin-top: 2rem;
+    display: inline-block;
+    list-style: none;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    padding: 0 0.3em 0 0; }
+    .c-instruction-panel ul li {
+      list-style: none;
+      margin-bottom: 0; }
+    .c-instruction-panel ul > li:first-child {
+      font-size: 16px;
+      font-size: 1rem;
+      background: none; }
+
+@media screen and (min-width: 37.5rem) and (max-width: 56.25rem) {
+  .c-instruction-panel ul,
+  .c-instruction-panel .c-instruction--text-block,
+  .c-instruction-panel .c-instruction--title-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    background-position: right top; }
+  .c-instruction-panel .c-instruction--title-block {
+    margin-bottom: 1em; }
+    .c-instruction-panel .c-instruction--title-block :first-child,
+    .c-instruction-panel .c-instruction--title-block :nth-child(2),
+    .c-instruction-panel .c-instruction--title-block :nth-child(3) {
+      padding-left: 0; } }
+
 .c-lede {
   font-size: 20px;
   font-size: 1.25rem; }
@@ -2081,14 +2095,14 @@ ul {
     display: table;
     clear: both; }
 
-.c-list__item, .c-instruction-panel ul.c-instruction--bullets li {
+.c-list__item, .c-instruction-panel ul li {
   margin-left: 0;
   padding-left: 0; }
 
 .c-list__item--plain {
   list-style-type: none; }
 
-.c-list__item--bulleted, .c-instruction-panel ul.c-instruction--bullets li {
+.c-list__item--bulleted, .c-instruction-panel ul li {
   background: url("../images/bullet.svg") left 0.4rem no-repeat;
   background-size: 10px;
   background-size: 0.625rem;
@@ -2101,7 +2115,7 @@ ul {
   margin-left: 0;
   padding-left: 20px;
   padding-left: 1.25rem; }
-  .c-list__item--bulleted.c-list__item--large, .c-instruction-panel ul.c-instruction--bullets li.c-list__item--large {
+  .c-list__item--bulleted.c-list__item--large, .c-instruction-panel ul li.c-list__item--large {
     background-size: 16px;
     background-size: 1rem;
     background-position: left 0.2rem;

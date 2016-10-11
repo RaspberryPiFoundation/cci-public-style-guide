@@ -1,0 +1,100 @@
+$image_width: 50px;
+
+.c-instruction-panel {
+  @extend     .c-content-panel;
+  @include    padding($padding-large, $padding-x-large);
+  display:    flex;
+  flex-wrap:  wrap;
+
+  .c-instruction--title-block {
+    background-position: left top;
+    background-repeat:   no-repeat;
+    background-size:     $image_width $image_width;
+    margin-bottom:       1em;
+    flex-basis:          25%;
+    flex-grow:           1;
+    flex-shrink:         1;
+
+    :first-child,
+    :nth-child(2),
+    :nth-child(3) {
+      display:        block;
+      margin-bottom:  0;
+      padding-left:   $image_width + 5;
+    }
+
+    :first-child {
+      @extend h5;
+      color: $grey-med;
+    }
+
+    :nth-child(2) {
+      @extend h3;
+      @include font-size($font-size-large);
+    }
+
+    :nth-child(3) {
+      @extend h6;
+      color: $grey-light;
+    }
+
+  }
+
+  .c-instruction--text-block {
+    display:     flex;
+    flex-wrap:   wrap;
+    flex-basis:  75%;
+    flex-grow:   2;
+    flex-shrink: 1;
+  }
+
+  ul {
+    @include margin-top($margin-large);
+    display:      inline-block;
+    list-style:   none;
+    flex-basis:   50%;
+    flex-shrink:  1;
+    flex-grow:    2;
+    padding:      0 0.3em 0 0;
+
+    li {
+      @extend .c-list__item;
+      @extend .c-list__item--bulleted;
+      list-style:    none;
+      margin-bottom: 0;
+    }
+
+    >li:first-child {
+      @extend     h3;
+      @include    font-size($font-size-base);
+      background: none;
+    }
+  }
+}
+
+@media screen and (min-width: $break-narrow) and (max-width: $break-regular) {
+
+  .c-instruction-panel {
+
+    ul,
+    .c-instruction--text-block,
+    .c-instruction--title-block {
+      flex-basis:  100%;
+      flex-grow:   1;
+      flex-shrink: 1;
+      background-position: right top;
+    }
+
+    .c-instruction--title-block {
+      margin-bottom: 1em;
+
+      :first-child,
+      :nth-child(2),
+      :nth-child(3) {
+        padding-left: 0;
+      }
+    }
+
+  }
+
+}
