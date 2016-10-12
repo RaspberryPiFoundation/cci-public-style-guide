@@ -12,7 +12,7 @@
 
 <%= render_example do %>
 <header class="o-hero">
-  <h4>HERO</h4>
+  <h4 class="u-text--center">HERO</h4>
 </header>
 
 <nav class="o-nav-horiz">
@@ -138,3 +138,26 @@
   </div>
 </div>
 <% end %>
+
+<hr>
+
+<%= section_header('Partners Block') %>
+
+
+<%= render_example do %>
+    <div class="c-page-block u-text--center">
+      <h2>Our Partners</h2>
+      <div class="c-grid c-grid--h-center c-grid--v-center">
+        <div class="c-col c-col--2">
+          <img alt="" class="c-sponsor-logo" src="/assets/code-club/images/code-club-logo.svg">
+        </div>
+        <div class="c-col c-col--2">
+          <img alt="" class="c-sponsor-logo" src="/assets/code-club/images/code-club-logo.svg">
+        </div>
+        <div class="c-col c-col--2">
+          <img alt="" class="c-sponsor-logo" src="/assets/code-club/images/code-club-logo.svg">
+        </div>
+     </div>
+    </div>
+<% end %>
+

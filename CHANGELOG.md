@@ -7,8 +7,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Added `c-button--link` which styles buttons as links.
 - Added `error-page-illustration.png` which is an image for error pages.
 - Added `c-form__search` and `c-form__search--error`.
+- Added `.c-sponsor-logo`.
 - Added `c-speech-bubble`.
 
+>>>>>>> master
 
 ### Changed 
 - Required / optional in label now should be highlighted with class `c-form__label-note`
