@@ -2353,6 +2353,74 @@ ul {
   border-color: #339933;
   color: #FFF; }
 
+.c-speech-bubble {
+  padding-top: 8px;
+  padding-top: 0.5rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  background-color: #5290D2;
+  color: #FFF;
+  margin: 50px 0;
+  max-width: 100%;
+  position: relative;
+  width: 25em; }
+
+.c-speech-bubble::after {
+  content: "";
+  position: absolute;
+  border-width: 1em 0 0 1em;
+  border-style: solid;
+  border-color: #5290D2 transparent;
+  display: block;
+  right: 0;
+  width: 0; }
+
+.c-speech-bubble--x-small {
+  width: 12.5em; }
+
+.c-speech-bubble--small {
+  width: 18.75em; }
+
+.c-speech-bubble--large {
+  width: 37.5em; }
+
+.c-speech-bubble--x-large {
+  width: 50em; }
+
+.c-speech-bubble::after,
+.c-speech-bubble--bottom::after {
+  border-color: #5290D2 transparent;
+  bottom: -1em;
+  top: auto; }
+
+.c-speech-bubble--top::after {
+  bottom: auto;
+  top: -1em; }
+
+.c-speech-bubble--left::after {
+  left: 0; }
+
+.c-speech-bubble--right::after {
+  right: 0; }
+
+.c-speech-bubble--bottom::after,
+.c-speech-bubble--bottom.c-speech-bubble--right::after {
+  border-width: 1em 0 0 1em; }
+
+.c-speech-bubble--bottom.c-speech-bubble--left::after {
+  border-width: 1em 1em 0 0; }
+
+.c-speech-bubble--top::after,
+.c-speech-bubble--top.c-speech-bubble--right::after {
+  border-width: 0 0 1em 1em; }
+
+.c-speech-bubble--top.c-speech-bubble--left::after {
+  border-width: 0 1em 1em 0; }
+
 .c-strip-table {
   border-collapse: collapse;
   margin-bottom: 32px;
