@@ -19,7 +19,7 @@ Page.create!([
   { path: "code-club-logo",       title: "Code Club Logo",        order: 10,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "typography",           title: "Typography",            order: 20,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "page-blocks",          title: "Page Blocks",           order: 30,  section_id: 4, show_in_nav: true, example_page: false },
-  { path: "content-panels",       title: "Content Panels",        order: 40,  section_id: 4, show_in_nav: true, example_page: false },
+  { path: "panels",               title: "Panels",                order: 40,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "icons",                title: "Icons",                 order: 50,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "buttons",              title: "Buttons",               order: 60,  section_id: 4, show_in_nav: true, example_page: false },
   { path: "forms",                title: "Forms",                 order: 70,  section_id: 4, show_in_nav: true, example_page: false },
