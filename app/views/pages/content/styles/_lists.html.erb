@@ -79,6 +79,42 @@
 </dl>
 <% end %>
 
+<hr>
+
+<%= section_header('Image List') %>
+
+<%= render_example do %>
+    <div class="c-image-list-item">
+      <div class="c-image-list--image-area">
+        <img src="/assets/code-club/images/code-club-logo.svg">
+      </div>
+      <div class="c-image-list--text-area">
+        <span class="c-image-list--title">Title one</span>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, libero at semper malesuada.
+      </div>
+    </div>
+    <div class="c-image-list-item">
+      <div class="c-image-list--image-area">
+        <img src="/assets/code-club/images/code-club-logo.svg">
+      </div>
+      <div class="c-image-list--text-area">
+        <span class="c-image-list--title">Title two</span>
+        duis mauris libero, commodo vel venenatis at, tempor nec ligula.
+      </div>
+    </div>
+    <div class="c-image-list-item">
+      <div class="c-image-list--image-area">
+        <img src="/assets/code-club/images/code-club-logo.svg">
+      </div>
+      <div class="c-image-list--text-area">
+        <span class="c-image-list--title">Title three</span>
+        duis mauris libero, commodo vel venenatis at, tempor nec ligula.
+      </div>
+    </div>
+<% end %>
+
+<hr>
+
 <%= section_header('Icon List') %>
 
 <p>
@@ -88,17 +124,13 @@
   Change that word to any one of the available icons to customise your list items.
 </p>
 
-<% for icon in icons %>
-
-<p><%= highlight_sass_example(".c-icon--#{icon}") %></p>
-
 <%= render_example do %>
 <ul class="c-icon-list">
-  <li class="c-icon-list__item">
-    <span class="c-icon c-icon--large c-icon--<%= icon %>"></span>
-    <span class="c-icon-list__text">List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here</span>
-  </li>
+  <% for icon in icons %>
+    <li class="c-icon-list__item">
+      <span class="c-icon c-icon--large c-icon--<%= icon %>"></span>
+      <span class="c-icon-list__text">List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here List Item Text Goes Here</span>
+    </li>
+  <% end %>
 </ul>
-<% end %>
-
 <% end %>
