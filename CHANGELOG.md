@@ -2,18 +2,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.0.60] - 2016-10-12
 ### Added
 - Added `c-button--link` which styles buttons as links.
 - Added `error-page-illustration.png` which is an image for error pages.
 - Added `c-form__search` and `c-form__search--error`.
 - Added `c-speech-bubble`.
 
-
 ### Changed 
 - Required / optional in label now should be highlighted with class `c-form__label-note`
-
-
 
 ## [1.0.59] - 2016-08-23
 ### Changed
