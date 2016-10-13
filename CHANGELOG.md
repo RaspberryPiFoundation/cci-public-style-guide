@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.0.70] - 2016-10-13
+## [Unreleased]
 ### Added
 - Added `c-button--link` which styles buttons as links.
 - Added `error-page-illustration.png` which is an image for error pages.
@@ -33,7 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Added CHANGELOG.md - you're reading it right now. Hi.
 
-[1.0.60]: https://github.com/CodeClub/style-guide/compare/v1.0.59...v1.0.60
+[Unreleased]: https://github.com/CodeClub/style-guide/compare/v1.0.59...HEAD
 [1.0.59]: https://github.com/CodeClub/style-guide/compare/v1.0.58...v1.0.59
 [1.0.58]: https://github.com/CodeClub/style-guide/compare/v1.0.57...v1.0.58
 [1.0.57]: https://github.com/CodeClub/style-guide/compare/v1.0.56...v1.0.57
