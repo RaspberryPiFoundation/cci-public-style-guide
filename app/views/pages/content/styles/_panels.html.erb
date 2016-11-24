@@ -1,4 +1,4 @@
-<h2>What are they?</h2>
+<%= section_header('What are they?') %>
 
 <p>Content panels are exactly that - panels for your content. In fact, you're looking at one right now. The big white box with rounded corners that surrounds this very sentence and everything alongside it.</p>
 
@@ -8,5 +8,38 @@
   <p>Eu senectus commodo vulputate vestibulum id odio mollis vestibulum blandit sapien a volutpat morbi parturient ullamcorper penatibus scelerisque magnis faucibus curabitur consectetur dictumst semper. Sed sociosqu nullam tristique vivamus etiam mi odio velit consectetur in et vestibulum ornare sodales suspendisse bibendum turpis in et curabitur tempus a.</p>
   <p>Scelerisque a a sit ac tellus dignissim porta dis ac scelerisque et phasellus vel a sapien a dapibus inceptos phasellus consectetur felis. Suspendisse volutpat dui adipiscing adipiscing adipiscing ultrices tortor nostra a vehicula eros quisque euismod iaculis a urna amet a a in parturient cubilia elementum.</p>
   <p><a href="#" class="c-button c-button--green">Button</a></p>
+</div>
+<% end %>
+
+<hr>
+
+<%= section_header('Instruction panel') %>
+<%= render_example do %>
+<style>
+  #instruction-panel-with-code-club-logo {
+    background-image: url(/assets/code-club/images/code-club-logo.svg);
+  }
+</style>
+
+<div class="c-instruction-panel">
+  <div id="instruction-panel-with-code-club-logo" class="c-instruction--title-block">
+    <span>Step 1</span>
+    <span>Register</span>
+    <span>10 min</span>
+  </div>
+  <div class="c-instruction--text-block">
+    Eu senectus commodo vulputate vestibulum id odio mollis vestibulum blandit
+    sapien a volutpat morbi parturient ullamcorper penatibus scelerisque magnis
+    faucibus curabitur consectetur dictumst semper.
+    <ul>
+      <li>You need to:</li>
+      <li>Submit the registration form</li>
+      <li>Complete DBS check</li>
+    </ul>
+    <ul>
+      <li>We will provide:</li>
+      <li>Resources</li>
+    </ul>
+  </div>
 </div>
 <% end %>

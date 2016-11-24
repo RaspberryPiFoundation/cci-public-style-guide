@@ -1,0 +1,11 @@
+<%= section_header('Change background colour') %>
+
+<p>Add one of these classes to change background colour of an element:</p>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_background-color.scss').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>

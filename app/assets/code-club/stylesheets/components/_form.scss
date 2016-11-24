@@ -40,11 +40,12 @@
       }
     }
 
-  .c-form__optional {
+  .c-form__label-note  {
     color: $grey-light;
   }
 
-  .c-form__input {
+  .c-form__input,
+  .c-form__search {
     background:     $white;
     border:         $border-size-base solid $grey-x-light;
     @include rem('border-radius', $border-radius-x-small);
@@ -63,7 +64,8 @@
     }
   }
 
-    .c-form__input--error {
+    .c-form__input--error,
+    .c-form__search--error {
       border-color: $red;
     }
 
@@ -80,6 +82,16 @@
       .c-form__input--width-xl  { @include rem('width', $input-width-x-large);  }
       .c-form__input--width-xxl { @include rem('width', $input-width-xx-large); }
     }
+
+  .c-form__search {
+    background:   url('../images/search.svg') left center no-repeat;
+    padding-left: 40px;
+  }
+
+    .c-form__search--error {
+      background-image: url('../images/search-red.svg');
+    }
+
 
   .c-form__select {
     appearance:     none;

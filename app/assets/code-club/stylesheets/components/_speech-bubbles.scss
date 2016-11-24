@@ -1,0 +1,52 @@
+$base_size: 25em;
+
+.c-speech-bubble {
+  @include padding($padding-x-small, $padding-small);
+  background-color: $blue;
+  color:            $white;
+  margin:           50px 0;
+  max-width:        100%;
+  position:         relative;
+  width:            $base_size;
+}
+
+  .c-speech-bubble::after {
+    content:      "";
+    position:     absolute;
+    border-width: 1em 0 0 1em;
+    border-style: solid;
+    border-color: $blue transparent;
+    display:      block;
+    right:        0;
+    width:        0;
+  }
+
+  .c-speech-bubble--x-small { width: ($base_size * 0.5);  }
+  .c-speech-bubble--small   { width: ($base_size * 0.75); }
+  .c-speech-bubble--large   { width: ($base_size * 1.5);  }
+  .c-speech-bubble--x-large { width: ($base_size * 2);    }
+
+  .c-speech-bubble::after,
+  .c-speech-bubble--bottom::after     {
+    border-color: $blue transparent;
+    bottom: -1em;
+    top: auto;
+  }
+
+  .c-speech-bubble--top::after     {
+    bottom: auto;
+    top: -1em;
+  }
+
+  .c-speech-bubble--left::after  { left:  0; }
+  .c-speech-bubble--right::after { right: 0; }
+
+  .c-speech-bubble--bottom::after,
+  .c-speech-bubble--bottom.c-speech-bubble--right::after { border-width: 1em 0 0 1em; }
+  .c-speech-bubble--bottom.c-speech-bubble--left::after  { border-width: 1em 1em 0 0; }
+
+  .c-speech-bubble--top::after,
+  .c-speech-bubble--top.c-speech-bubble--right::after    { border-width: 0 0 1em 1em; }
+  .c-speech-bubble--top.c-speech-bubble--left::after     { border-width: 0 1em 1em 0; }
+
+

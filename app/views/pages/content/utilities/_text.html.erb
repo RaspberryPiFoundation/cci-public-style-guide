@@ -1,0 +1,64 @@
+<%= section_header('Text Modifications') %>
+
+<%= section_header('To change font size:', :h3) %>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_font-sizing.scss', 'u-font-size').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>
+
+<%= section_header('To change heading font size:', :h3) %>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_font-sizing.scss', 'u-h').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>
+
+
+<%= section_header('To change text color:', :h3) %>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_text-color.scss').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>
+
+
+<%= section_header('To transform text:', :h3) %>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_text-transformation.scss').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>
+
+
+<%= section_header('To change text weight:', :h3) %>
+
+<%= render_example do %>
+<ul>
+<% extract_classes_from_file('_text-weight.scss').each do |class_name|  %>
+  <li class="<%= class_name %>">Text</li>
+<% end %>
+</ul>
+<% end %>
+
+<%= section_header('To change text alignment:', :h3) %>
+
+<%= render_example do %>
+<div class="c-grid">
+<% extract_classes_from_file('_text-alignment.scss').each do |class_name|  %>
+  <div class="c-col c-col--4 u-background--green <%= class_name %>">Text</div>
+<% end %>
+</div>
+<% end %>

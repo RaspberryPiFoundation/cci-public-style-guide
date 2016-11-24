@@ -1,0 +1,24 @@
+<%= section_header('Change padding') %>
+
+<p>Add one of these classes to change padding of an element </p>
+
+<table class="c-strip-table">
+  <thead class="c-strip-table__head">
+  <tr class="c-strip-table__row">
+    <th class="c-strip-table__col-heading">Class</th>
+    <th class="c-strip-table__col-heading">Size</th>
+  </tr>
+  </thead>
+  <tbody class="c-strip-table__body">
+  <% get_padding_classes().each do |suffix, value|  %>
+      <tr class="c-strip-table__row">
+        <td class="c-strip-table__cell">
+          <%  get_location_prefixes_for('padding').each do |prefix| %>
+              <%= highlight_sass_example("#{prefix}#{suffix}") %><br/>
+          <% end %>
+        </td>
+        <td class="c-strip-table__cell"><%= value.round %>px</td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

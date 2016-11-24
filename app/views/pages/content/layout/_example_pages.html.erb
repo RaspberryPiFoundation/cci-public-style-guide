@@ -1,4 +1,4 @@
-<h2>Stacked Content Page Layout</h2>
+<%= section_header('Stacked Content Page Layout') %>
 
 <p>Content pages on Code Club websites are made from following ingredients:</p>
 
@@ -37,7 +37,7 @@
 
 <hr>
 
-<h2>Column Content Page layout</h2>
+<%= section_header('Column Content Page layout') %>
 
 <p>The column layout is useful for sections where there is more user-interaction than content, for example logged-in account pages.</p>
 
@@ -64,3 +64,20 @@
     <p><%= link_to "View example column content page", page_path('example-pages', 'column-content'), :class => "c-button c-button--green" %></p>
   </div>
 </div>
+
+<hr>
+
+<%= section_header('Error Pages') %>
+
+<p>
+  On the error page only use one page block. Please also provide a brief description of the problem and what
+  the user should do. You can find an example of 404 page <a href="https://www.codeclub.org.uk/404.html">here</a>.
+</p>
+
+<p>Please use <%= highlight_example('error-page-illustration.png') %> for illustration.</p>
+
+<%= render_example with_code: false do %>
+<div class="u-text--center">
+  <%= image_tag "/assets/code-club/images/error-page-illustration.png", :alt => nil %>
+</div>
+<% end %>

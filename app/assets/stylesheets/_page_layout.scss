@@ -5,10 +5,10 @@
 
   .sg-header {
     background: $grey-dark;
-    flex-basis: 20%;
+    width: 20%;
   }
 
   .sg-content-wrapper {
-    flex-basis: 80%;
+    width: 80%;
     @include padding($padding-x-large, $padding-xxx-large);
   }

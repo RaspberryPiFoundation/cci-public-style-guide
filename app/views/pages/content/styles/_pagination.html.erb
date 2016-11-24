@@ -1,0 +1,27 @@
+<p>
+  Pagination controls are left aligned by default, but they can be aligned
+  by applying one of the following classes to the <%= highlight_sass_example('.c-pagination') %> element:
+</p>
+
+<ul>
+  <li><%= highlight_sass_example('.c-pagination--left') %></li>
+  <li><%= highlight_sass_example('.c-pagination--center') %></li>
+  <li><%= highlight_sass_example('.c-pagination--right') %></li>
+</ul>
+
+<%= render_example do %>
+<nav class="c-pagination">
+  <span class="c-pagination__summary">Page 4 of 20</span>
+  <ul class="c-pagination__list">
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">1</a></li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">2</a></li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">3</a></li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link c-pagination__link--current">4</a></li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">5</a></li>
+    <li class="c-pagination__item">&hellip;</li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">18</a></li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">19</a></li>
+    <li class="c-pagination__item"><a href="#" class="c-pagination__link">20</a></li>
+  </ul>
+</nav>
+<% end %>

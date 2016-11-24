@@ -1,4 +1,4 @@
-<h2>What are they?</h2>
+<%= section_header('What are they?') %>
 
 <p>
   Page blocks help to introduce some structure to your pages by breaking content into separate chunks.
@@ -12,7 +12,7 @@
 
 <%= render_example do %>
 <header class="o-hero">
-  <h4>HERO</h4>
+  <h4 class="u-text--center">HERO</h4>
 </header>
 
 <nav class="o-nav-horiz">
@@ -78,9 +78,9 @@
 
 <hr>
 
-<h2>Page Block Variants</h2>
+<%= section_header('Page Block Variants') %>
 
-<h3>Alternative Background Color</h3>
+<%= section_header('Alternative Background Color', :h3) %>
 
 <p>
   This performs exactly the same function as the regular content block, except the background is white and it has no borders. It's a little
@@ -106,9 +106,9 @@
 
 <hr>
 
-<h2>Page Block Variants</h2>
+<%= section_header('Page Block Variants') %>
 
-<h3>Action Blocks</h3>
+<%= section_header('Action Blocks', :h3) %>
 
 <p>
   Use the action block once per page to feature an action that a user may take,
@@ -138,3 +138,26 @@
   </div>
 </div>
 <% end %>
+
+<hr>
+
+<%= section_header('Partners Block') %>
+
+
+<%= render_example do %>
+    <div class="c-page-block u-text--center">
+      <h2>Our Partners</h2>
+      <div class="c-grid c-grid--h-center c-grid--v-center">
+        <div class="c-col c-col--2">
+          <img alt="" class="c-sponsor-logo" src="/assets/code-club/images/code-club-logo.svg">
+        </div>
+        <div class="c-col c-col--2">
+          <img alt="" class="c-sponsor-logo" src="/assets/code-club/images/code-club-logo.svg">
+        </div>
+        <div class="c-col c-col--2">
+          <img alt="" class="c-sponsor-logo" src="/assets/code-club/images/code-club-logo.svg">
+        </div>
+     </div>
+    </div>
+<% end %>
+

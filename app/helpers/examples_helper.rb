@@ -1,6 +1,11 @@
 module ExamplesHelper
 
-  def render_example(options = {}, &block)
+  def render_example(options = {}, type='html', &block)
+
+    formatter = Rouge::Formatters::HTML.new
+    formatter = Rouge::Formatters::HTMLLinewise.new(formatter, class_format: 'line-%i')
+    lexer = select_lexer(type)
+
     options = {
       :with_code => true,
       :only_code => false
@@ -18,11 +23,48 @@ module ExamplesHelper
 
       if options[:with_code]
         output << content_tag(:code, :class => 'sg-example__code') do
-          convert_code(capture(&block))
+          content_tag(:pre) do
+            render inline: Rouge.highlight(capture(&block), lexer, formatter)
+          end
         end
       end
 
       raw output
+    end
+  end
+
+  def highlight_html_example(html, classes='')
+    highlight_example(html, type='html', classes)
+  end
+
+  def highlight_sass_example(sass, classes='')
+    highlight_example(sass, type='sass', classes)
+  end
+
+  def highlight_css_example(sass, classes='')
+    highlight_example(sass, type='css', classes)
+  end
+
+  def highlight_example(code, type='', classes='')
+    formatter = Rouge::Formatters::HTML.new
+    lexer = select_lexer(type)
+
+    content_tag(:code, :class => classes) do
+        render inline: Rouge.highlight(code, lexer, formatter)
+    end
+
+  end
+
+  def select_lexer(type)
+    case type
+      when 'sass'
+        Rouge::Lexers::Scss.new
+      when 'css'
+        Rouge::Lexers::CSS.new
+      when 'html'
+        Rouge::Lexers::HTML.new
+      else
+        Rouge::Lexers::Shell.new
     end
   end
 
@@ -49,5 +91,6 @@ module ExamplesHelper
 
     return raw html
   end
+
 
 end

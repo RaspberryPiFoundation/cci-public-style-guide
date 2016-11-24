@@ -1,4 +1,5 @@
 .sg-fig-desc {
+  @include clearfix;
   margin-bottom:  2rem;
   padding-bottom: 1rem;
 }
@@ -15,7 +16,9 @@
     width: 33rem;
   }
 
-    .sg-fig-desc__description-list {}
+    .sg-fig-desc__description-list {
+      @include clearfix;
+    }
 
       .sg-fig-desc__description-list-title {
         border-top:    1px solid #e0e0e0;

@@ -1,0 +1,39 @@
+<%= section_header('Round corners') %>
+
+<p>Add one of these classes to make corners round:</p>
+
+<%= render_example do %>
+
+<div class="c-grid">
+
+<% extract_classes_from_file('_rounded-corners.scss').each do |class_name|  %>
+  <div class="c-col c-col--1 u-background--green <%= class_name %>">&nbsp;</div>
+<% end %>
+
+</div>
+
+<% end %>
+
+<%= section_header('Element visibility') %>
+
+<%= render_example do %>
+
+<div class="c-grid">
+
+<% extract_classes_from_file('_element-visibility.scss').each do |class_name|  %>
+  <div class="c-col c-col--1 u-background--green <%= class_name %>">Text</div>
+<% end %>
+
+</div>
+
+<% end %>
+
+<%= section_header('Clearfix') %>
+
+<p>
+  You can add clearfix using <%= highlight_sass_example(".u-clearfix") %>
+</p>
+
+<%= section_header('Element Alignment') %>
+
+<p>Use <%= highlight_sass_example(".u-align-vert") %> to vertically align elements.<p>

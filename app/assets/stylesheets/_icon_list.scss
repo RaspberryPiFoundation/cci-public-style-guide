@@ -1,4 +1,5 @@
 .sg-icon-list {
+  @include clearfix;
   padding: 0;
 }
 

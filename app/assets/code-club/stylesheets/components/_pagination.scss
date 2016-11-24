@@ -1,0 +1,49 @@
+.c-pagination {
+  @include margin-bottom($margin-base);
+}
+
+  .c-pagination--left   { text-align: left;   }
+  .c-pagination--center { text-align: center; }
+  .c-pagination--right  { text-align: right;  }
+
+  .c-pagination__summary {
+    color: $grey-med;
+  }
+
+  .c-pagination__list {
+    display: inline-block;
+    @include margin(0, 0, 0, $margin-small);
+    padding: 0;
+  }
+
+    .c-pagination__item {
+      display:    inline-block;
+      list-style: none;
+      @include padding(0, $padding-xx-small);
+    }
+
+      .c-pagination__link {
+        background:      $white;
+        border:          $border-size-base solid $grey-x-light;
+        color:           $grey-med;
+        @include rem('border-radius', $border-radius-xx-small);
+        display:         inline-block;
+        @include padding(0, $padding-x-small);
+        @include rem('line-height', $line-height-large);
+        text-align:      center;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+          background: $grey-xx-light;
+          color:      $grey-med;
+        }
+      }
+
+        .c-pagination__link--current,
+        .c-pagination__link--current:focus,
+        .c-pagination__link--current:hover {
+          background:   $green;
+          border-color: $green;
+          color:        $white;
+        }

@@ -1,4 +1,4 @@
-<h2>How to use the Logomark</h2>
+<%= section_header('How to use the Logomark') %>
 
 <div class="sg-fig-desc">
   <figure class="sg-fig-desc__figure">
@@ -11,7 +11,9 @@
     <ul>
       <li>Don't alter logo colours or text</li>
       <li>Don't interrupt or overlay the circle mark with text or images</li>
-      <li>Always place the circle mark on a plain background, either <code>$white</code> or <code>$grey-dark</code></li>
+      <li>Always place the circle mark on a plain background, either
+        <%= highlight_sass_example("$white") %> or
+        <%= highlight_sass_example("$dark") %></li>
     </ul>
   </div>
 </div>
@@ -79,7 +81,7 @@
 
 <hr>
 
-<h2>Using the Logo as a Favicon</h2>
+<%= section_header('Using the Logo as a Favicon') %>
 
 <p>
   Each Code Club website must use the green Code Club logomark as its <a href="https://en.m.wikipedia.org/wiki/Favicon">favicon</a>.
@@ -88,13 +90,13 @@
 
 <p>
   The assets package contains two images for these purposes. To use them, ensure that the following HTML is include in your documents'
-  <code>&lt;head&gt;</code> element.
+  <%= highlight_html_example("<head>") %> element.
 </p>
 
-<code class="sg-example__code">
-  &lt;link rel="shortcut icon" href="/bower_components/code-club/dist/images/favicons/favicon.ico"&gt;<br>
-  &lt;link rel="apple-touch-icon-precomposed" href="bower_components/code-club/dist/images/favicons/icon.png"&gt;<br>
-  &lt;meta name="msapplication-TileColor" content="#F5F6F9"&gt;<br>
-  &lt;meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png"&gt;<br>
-  &lt;link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32"&gt;
-</code>
+<%= render_example :only_code => true do %>
+<link rel="shortcut icon" href="/bower_components/code-club/dist/images/favicons/favicon.ico"><br>
+<link rel="apple-touch-icon-precomposed" href="bower_components/code-club/dist/images/favicons/icon.png"><br>
+<meta name="msapplication-TileColor" content="#F5F6F9"><br>
+<meta name="msapplication-TileImage" content="/bower_components/code-club/dist/images/favicons/icon.png"><br>
+<link rel="icon" href="/bower_components/code-club/dist/images/favicons/icon.png" sizes="32x32">
+<% end %>

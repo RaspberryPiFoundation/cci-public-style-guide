@@ -1,4 +1,4 @@
-<h2>An Overview</h2>
+<%= section_header('An Overview') %>
 
 <p>
   Hero blocks sit at the top of some pages across our websites. They act as a way to introduce the
@@ -14,7 +14,7 @@
 <p>For countries, a hero block can be made up from the following elements:</p>
 
 <ul>
-  <li>A background block, color of <code>$green</code></li>
+  <li>A background block, color of <%= highlight_sass_example('green') %></li>
   <li>Title. A short h1 page heading</li>
   <li>An introductory sentence. Describing briefly the content of the page</li>
   <li>A useful list of button links. For linking to key downloads/resources. Not section navigation (see <%= link_to("Navigation", page_path('structure', 'nav')) %>)</li>
@@ -52,7 +52,7 @@
 <% end %>
 <hr>
 
-<h2>Hero With Top Navigation</h2>
+<%= section_header('Hero With Top Navigation') %>
 
 <%= render_example do %>
 <div class="o-hero">
@@ -84,7 +84,7 @@
 
 <hr>
 
-<h2>Hero With Background Image</h2>
+<%= section_header('Hero With Background Image') %>
 
 <%= render_example do %>
 <div class="o-hero">

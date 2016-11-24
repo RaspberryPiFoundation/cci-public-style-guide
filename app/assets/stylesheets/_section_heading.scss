@@ -1,0 +1,20 @@
+.sg-section-heading {}
+
+  .sg-section-heading__link {
+    color:           inherit;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      .sg-section-heading__icon {
+        display: block;
+      }
+    }
+  }
+
+  .sg-section-heading__icon {
+    display:   none;
+    position:  absolute;
+    top:       50%;
+    transform: translate(-100%, -50%);
+  }

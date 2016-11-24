@@ -1,7 +1,8 @@
-<h2>Default Table Styles</h2>
+<%= section_header('Default Table Styles') %>
 
 <p>
-  If you need a regular table for inclusion in your site's regular body copy, then use the <code>&lt;table&gt;</code>
+  If you need a regular table for inclusion in your site's regular body copy, then use the
+  <%= highlight_html_example('<table>') %>
   element and its relevant child elements <strong>without any extra HTML classes</strong>.
 </p>
 
@@ -11,7 +12,7 @@
 
 <hr>
 
-<h2>Grid Table</h2>
+<%= section_header('Grid Table') %>
 
 <%= render_example do %>
 <table class="c-grid-table">
@@ -60,7 +61,7 @@
 
 <hr>
 
-<h2>Listings Table</h2>
+<%= section_header('Listings Table') %>
 
 <%= render_example do %>
 <table class="c-strip-table">
