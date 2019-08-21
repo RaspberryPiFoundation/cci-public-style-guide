@@ -1,3 +1,9 @@
+# Archived
+
+The static output from this app is hosted on Netlify at: https://styleguide.codeclubworld.org/
+
+***
+
 # Code Club Style Guide
 
 ## What is This?
